@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest — 17 April 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 17 April 2026</h1>
+    <div class="meta">Week of 13&ndash;19 April 2026 &middot; Coverage window: last 24 hours</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> Anthropic retook the public leaderboard with Claude Opus 4.7, OpenAI opened a defensive-cyber variant of GPT-5.4, Google rebuilt Chrome's AI Mode around side-by-side browsing, and NVIDIA open-sourced the first AI model family aimed at quantum error correction. Regulators and researchers also weighed in: the Stanford 2026 AI Index landed this week, and Nature reported that top human scientists still outperform frontier agents on open-ended research tasks.
+  </div>
+
+  <h2>Frontier Model Releases</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Claude Opus 4.7 ships as most powerful generally-available model</h3>
+    <div class="byline">16 April 2026 &middot; Primary source: Anthropic / AWS / GitHub</div>
+    <p>
+      Anthropic released <strong>Claude Opus 4.7</strong> across Claude.ai, the API, Amazon Bedrock, Google Vertex AI, and Microsoft Foundry. The company reports a roughly 13% lift on coding benchmarks over Opus 4.6, up to 3&times; more production tasks resolved on internal agentic evaluations, high-resolution vision support to 3.75 MP, and a new tokenizer. Pricing matches Opus 4.6. Anthropic openly concedes the model trails its unreleased <em>Claude Mythos Preview</em>, which remains restricted under the new Project Glasswing cybersecurity initiative.
+    </p>
+    <ul class="sources">
+      <li><a href="https://aws.amazon.com/blogs/aws/introducing-anthropics-claude-opus-4-7-model-in-amazon-bedrock/">AWS: Introducing Claude Opus 4.7 in Amazon Bedrock</a> (primary)</li>
+      <li><a href="https://github.blog/changelog/2026-04-16-claude-opus-4-7-is-generally-available/">GitHub Changelog: Claude Opus 4.7 generally available</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/04/16/anthropic-claude-opus-4-7-model-mythos.html">CNBC: Anthropic rolls out Claude Opus 4.7, less risky than Mythos</a></li>
+      <li><a href="https://www.axios.com/2026/04/16/anthropic-claude-opus-model-mythos">Axios: Anthropic releases Opus 4.7, concedes it trails Mythos</a></li>
+      <li><a href="https://venturebeat.com/technology/anthropic-releases-claude-opus-4-7-narrowly-retaking-lead-for-most-powerful-generally-available-llm">VentureBeat: Opus 4.7 narrowly retakes lead</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>GPT-5.4-Cyber opens tiered access for defensive security teams</h3>
+    <div class="byline">16 April 2026 &middot; Primary source: OpenAI</div>
+    <p>
+      OpenAI released <strong>GPT-5.4-Cyber</strong>, a fine-tuned variant of GPT-5.4 with expanded defensive cyber capabilities, including binary reverse-engineering, and scaled its <strong>Trusted Access for Cyber (TAC)</strong> program to thousands of verified individual defenders and hundreds of teams. The model relaxes select capability restrictions for vetted users but keeps safeguards on offensive misuse. The move parallels Anthropic's Project Glasswing &mdash; an escalating bet that frontier labs, not governments, will supply the defensive edge against AI-assisted attackers.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/scaling-trusted-access-for-cyber-defense/">OpenAI: Scaling Trusted Access for Cyber Defense</a> (primary)</li>
+      <li><a href="https://www.axios.com/2026/04/14/openai-model-cyber-program-release">Axios: OpenAI rolls out tiered access to advanced AI cyber models</a></li>
+      <li><a href="https://releasebot.io/updates/openai">OpenAI April 2026 release notes</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Research &amp; Benchmarks</h2>
+
+  <article>
+    <h3><span class="tag">NVIDIA</span>Ising: first open AI model family for quantum computing</h3>
+    <div class="byline">14&ndash;16 April 2026 &middot; Primary source: NVIDIA Newsroom</div>
+    <p>
+      NVIDIA released <strong>Ising</strong>, an open-weights model family for quantum error correction and calibration, under Apache-style terms via Hugging Face and build.nvidia.com. <em>Ising Calibration</em> is a 35B-parameter vision-language model that compresses multi-day calibration workflows to hours. <em>Ising Decoding</em> variants are 3D CNNs that outperform the open-source pyMatching benchmark by up to 2.5&times; in speed and 3&times; in accuracy. Early adopters include Fermilab, Harvard, Lawrence Berkeley National Lab, IQM, and the UK NPL.
+    </p>
+    <ul class="sources">
+      <li><a href="https://nvidianews.nvidia.com/news/nvidia-launches-ising-the-worlds-first-open-ai-models-to-accelerate-the-path-to-useful-quantum-computers">NVIDIA Newsroom: Launching Ising</a> (primary)</li>
+      <li><a href="https://developer.nvidia.com/blog/nvidia-ising-introduces-ai-powered-workflows-to-build-fault-tolerant-quantum-systems/">NVIDIA Developer Blog: Ising workflows</a> (primary)</li>
+      <li><a href="https://www.nvidia.com/en-us/solutions/quantum-computing/ising/">NVIDIA Ising product page</a></li>
+      <li><a href="https://siliconangle.com/2026/04/14/nvidia-unveils-ising-ai-models-quantum-error-correction-calibration/">SiliconANGLE: Ising for decoding &amp; calibration</a></li>
+      <li><a href="https://thequantuminsider.com/2026/04/14/nvidia-launches-ising-the-worlds-first-open-ai-models-to-accelerate-the-path-to-useful-quantum-computers/">The Quantum Insider: coverage</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Nature</span>Top human scientists still beat frontier agents on open-ended research tasks</h3>
+    <div class="byline">This week &middot; Primary source: Nature</div>
+    <p>
+      A <em>Nature</em> feature reports that despite near-saturated SWE-bench Verified scores (up from 60% to nearly 100% in a year per the 2026 AI Index), leading AI agents still underperform expert human scientists on complex, open-ended research tasks &mdash; a tempering counterpoint to the agentic-hype cycle dominating April releases. The piece is being widely cited alongside Stanford's transparency warnings.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.nature.com/articles/d41586-026-01199-z">Nature: Human scientists trounce the best AI agents on complex tasks</a> (primary)</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Stanford HAI</span>2026 AI Index: capability up, transparency down, trust-gap widening</h3>
+    <div class="byline">13 April 2026 &middot; Primary source: Stanford HAI</div>
+    <p>
+      Stanford's Institute for Human-Centered AI published the <strong>2026 AI Index</strong> this week. Headline findings: generative AI reached 53% global population adoption in three years (faster than the PC or internet), SWE-bench Verified jumped from 60% to near 100% year-over-year, global corporate AI investment hit $581.7B in 2025 (+130% YoY), and the Foundation Model Transparency Index average fell from 58 to 40. The report also surfaces Grok 4's estimated 72,816 tCO<sub>2</sub>e training footprint.
+    </p>
+    <ul class="sources">
+      <li><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report">Stanford HAI: 2026 AI Index Report</a> (primary)</li>
+      <li><a href="https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report">Stanford HAI: 12 Takeaways</a> (primary)</li>
+      <li><a href="https://spectrum.ieee.org/state-of-ai-index-2026">IEEE Spectrum: State of AI Index 2026</a></li>
+    </ul>
+  </article>
+
+  <h2>Software Engineering &amp; Developer Tools</h2>
+
+  <article>
+    <h3><span class="tag">GitHub</span>Copilot CLI goes remote; &ldquo;Fix with Copilot&rdquo; lands for merge conflicts</h3>
+    <div class="byline">13&ndash;16 April 2026 &middot; Primary source: GitHub Changelog</div>
+    <p>
+      GitHub shipped <strong>remote-control Copilot CLI sessions</strong> in public preview: start with <code>copilot --remote</code> or <code>/remote</code> and monitor/steer the agent from github.com or the GitHub Mobile beta on iOS TestFlight and Google Play. GitHub also rolled out a <strong>Fix with Copilot</strong> button on pull-request pages that resolves merge conflicts in three clicks and runs the build/tests before pushing, plus a new AI-powered accessibility triage workflow built on Actions + Models APIs.
+    </p>
+    <ul class="sources">
+      <li><a href="https://github.blog/changelog/2026-04-13-remote-control-cli-sessions-on-web-and-mobile-in-public-preview/">GitHub Changelog: Remote Copilot CLI sessions</a> (primary)</li>
+      <li><a href="https://github.blog/changelog/month/04-2026/">GitHub Changelog: April 2026 index</a> (primary)</li>
+      <li><a href="https://github.com/orgs/community/discussions/191814">GitHub community discussion #191814</a></li>
+      <li><a href="https://www.infoq.com/news/2026/04/github-ai-accessibility-workflow/">InfoQ: GitHub AI accessibility workflow</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Google</span>Chrome AI Mode redesign: split-screen, cross-tab context, &ldquo;Skills&rdquo;</h3>
+    <div class="byline">16 April 2026 &middot; Primary source: Google Blog</div>
+    <p>
+      Google began rolling out the redesigned <strong>AI Mode in Chrome</strong> to English users in the US on desktop, Android, and iOS. Clicking a link in AI Mode now shrinks the conversation into a side panel so users can ask follow-ups against the open page or YouTube video without losing context. A new &ldquo;+&rdquo; menu lets users pull multiple tabs, images, and files into a single AI query. Earlier this week, Google also added <strong>Chrome Skills</strong> for saving reusable AI workflows.
+    </p>
+    <ul class="sources">
+      <li><a href="https://blog.google/products-and-platforms/products/search/ai-mode-chrome/">Google Blog: A new way to explore the web with AI Mode in Chrome</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/04/16/google-now-lets-you-explore-the-web-side-by-side-with-ai-mode/">TechCrunch: Side-by-side AI Mode</a></li>
+      <li><a href="https://9to5google.com/2026/04/16/google-ai-mode-chrome/">9to5Google: Deep Chrome integration</a></li>
+      <li><a href="https://techcrunch.com/2026/04/14/google-adds-ai-skills-to-chrome-to-help-you-save-favorite-workflows/">TechCrunch: Chrome AI Skills</a></li>
+    </ul>
+  </article>
+
+  <h2>Policy, Governance &amp; Industry Signals</h2>
+
+  <article>
+    <h3><span class="tag">Policy</span>EU AI Act countdown: full applicability on 2 August 2026</h3>
+    <div class="byline">Ongoing &middot; Primary source: European Commission</div>
+    <p>
+      With fewer than four months to full enforcement, the European Commission is finalising its Code of Practice on marking and labelling AI-generated content (first draft December 2025; expected final by June 2026). From 2 August 2026, AI systems used in recruitment, task allocation, and performance monitoring become <strong>high-risk</strong> and require risk assessments, bias testing, human oversight, and continuous monitoring. U.S. posture remains fragmented after President Trump's December 2025 executive order directing preemption of state AI laws that &ldquo;obstruct national competitiveness.&rdquo;
+    </p>
+    <ul class="sources">
+      <li><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">European Commission: AI Act regulatory framework</a> (primary)</li>
+      <li><a href="https://www.eversheds-sutherland.com/en/united-states/insights/gloabl-ai-bulletin-april-2026">Eversheds Sutherland: Global AI regulatory update, April 2026</a></li>
+      <li><a href="https://www.onetrust.com/blog/where-ai-regulation-is-heading-in-2026-a-global-outlook/">OneTrust: 2026 global regulatory outlook</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Defense</span>Google in talks with Pentagon on classified Gemini deployment</h3>
+    <div class="byline">16 April 2026 &middot; Reported</div>
+    <p>
+      Alphabet is in discussions with the U.S. Department of Defense to deploy <strong>Gemini</strong> in classified environments, according to reporting this week &mdash; a notable shift given Google's historical reticence on DoD work, and a continuation of Big Tech's pivot toward national-security revenue alongside OpenAI, Anthropic, and Microsoft.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.quiverquant.com/news/Google+in+Talks+With+Pentagon+to+Deploy+Gemini+AI+in+Classified+Settings+Amid+AI+Contract+Shifts">QuiverQuant: Google in talks with Pentagon over Gemini</a></li>
+      <li><a href="https://news.microsoft.com/source/2026/04/16/stellantis-accelerates-ai-led-strategy-and-digital-transformation-through-strategic-collaboration-with-microsoft-to-enhance-customer-experiences/">Microsoft Source: Stellantis + Microsoft AI collaboration</a> (primary, related enterprise signal)</li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This digest covers signals from the last ~24 hours of the week of 13&ndash;19 April 2026. Primary sources (company newsrooms, official changelogs, Nature, Stanford HAI, European Commission) are flagged inline. Secondary-source stories were corroborated with at least two additional outlets where the primary source was not directly available.</p>
+    <p>Generated 17 April 2026.</p>
+  </footer>
+</body>
+</html>
