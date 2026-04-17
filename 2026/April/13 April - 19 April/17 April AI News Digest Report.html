@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI News Digest — 17 April 2026</title>
+  <title>AI News Digest &mdash; 17 April 2026</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -93,139 +93,138 @@
   </header>
 
   <div class="lede">
-    <strong>Top-line:</strong> Anthropic retook the public leaderboard with Claude Opus 4.7, OpenAI opened a defensive-cyber variant of GPT-5.4, Google rebuilt Chrome's AI Mode around side-by-side browsing, and NVIDIA open-sourced the first AI model family aimed at quantum error correction. Regulators and researchers also weighed in: the Stanford 2026 AI Index landed this week, and Nature reported that top human scientists still outperform frontier agents on open-ended research tasks.
+    <strong>Top-line:</strong> Mozilla opened a new front in the enterprise-AI wars with a self-hostable open-source client, OpenAI shipped a sandboxed, harness-native rewrite of its Agents SDK, and Google added subagents to Gemini CLI. On the markets, Hangzhou's Manycore Tech roared 144% above its offer price in Hong Kong as the first publicly listed &ldquo;spatial intelligence&rdquo; company. Courts in New York and Michigan issued competing rulings on whether chats with ChatGPT and Claude are discoverable in litigation &mdash; a wake-up call for every enterprise rolling out AI internally.
   </div>
 
-  <h2>Frontier Model Releases</h2>
+  <h2>Open-Source &amp; Infrastructure</h2>
 
   <article>
-    <h3><span class="tag">Anthropic</span>Claude Opus 4.7 ships as most powerful generally-available model</h3>
-    <div class="byline">16 April 2026 &middot; Primary source: Anthropic / AWS / GitHub</div>
+    <h3><span class="tag">Mozilla</span>&ldquo;Thunderbolt&rdquo; launches as open-source, self-hostable enterprise AI client</h3>
+    <div class="byline">16 April 2026 &middot; Primary source: MZLA Technologies / Thunderbird Team</div>
     <p>
-      Anthropic released <strong>Claude Opus 4.7</strong> across Claude.ai, the API, Amazon Bedrock, Google Vertex AI, and Microsoft Foundry. The company reports a roughly 13% lift on coding benchmarks over Opus 4.6, up to 3&times; more production tasks resolved on internal agentic evaluations, high-resolution vision support to 3.75 MP, and a new tokenizer. Pricing matches Opus 4.6. Anthropic openly concedes the model trails its unreleased <em>Claude Mythos Preview</em>, which remains restricted under the new Project Glasswing cybersecurity initiative.
+      Mozilla's for-profit arm <strong>MZLA Technologies</strong> (the Thunderbird team) unveiled <strong>Thunderbolt</strong>, a new open-source &ldquo;AI client&rdquo; positioned as a sovereign alternative to Microsoft 365 Copilot, ChatGPT Enterprise, and Claude Enterprise. Thunderbolt is model-agnostic &mdash; it can point at a frontier API or at a locally hosted open-weights model &mdash; and uses <a href="https://github.com/deepset-ai/haystack">Deepset's Haystack</a> framework plus the <strong>MCP</strong> and <strong>ACP</strong> protocols for enterprise data and tool orchestration. Native apps for Linux, macOS, Windows, iOS, and Android ship alongside a web build; all code is on GitHub.
     </p>
     <ul class="sources">
-      <li><a href="https://aws.amazon.com/blogs/aws/introducing-anthropics-claude-opus-4-7-model-in-amazon-bedrock/">AWS: Introducing Claude Opus 4.7 in Amazon Bedrock</a> (primary)</li>
-      <li><a href="https://github.blog/changelog/2026-04-16-claude-opus-4-7-is-generally-available/">GitHub Changelog: Claude Opus 4.7 generally available</a> (primary)</li>
-      <li><a href="https://www.cnbc.com/2026/04/16/anthropic-claude-opus-4-7-model-mythos.html">CNBC: Anthropic rolls out Claude Opus 4.7, less risky than Mythos</a></li>
-      <li><a href="https://www.axios.com/2026/04/16/anthropic-claude-opus-model-mythos">Axios: Anthropic releases Opus 4.7, concedes it trails Mythos</a></li>
-      <li><a href="https://venturebeat.com/technology/anthropic-releases-claude-opus-4-7-narrowly-retaking-lead-for-most-powerful-generally-available-llm">VentureBeat: Opus 4.7 narrowly retakes lead</a></li>
+      <li><a href="https://linuxiac.com/thunderbird-team-unveils-thunderbolt-self-hostable-ai-client/">Linuxiac: Thunderbird Team Unveils Thunderbolt</a></li>
+      <li><a href="https://www.phoronix.com/news/Mozilla-Thunderbolt">Phoronix: Mozilla announces Thunderbolt open-source enterprise AI client</a></li>
+      <li><a href="https://www.theregister.com/2026/04/16/mozilla_thunderbolt_enterprise_ai_client">The Register: Mozilla takes on enterprise AI providers with Thunderbolt</a></li>
+      <li><a href="https://www.omgubuntu.co.uk/2026/04/mozilla-thunderbolt-ai-client">OMG! Ubuntu: Thunderbolt is Mozilla's open-source AI client</a></li>
+      <li><a href="https://www.deepset.ai/news/sovereign-ai-stack-mozilla-thunderbolt-haystack">Deepset: Sovereign AI stack with Thunderbolt + Haystack</a> (primary partner)</li>
     </ul>
   </article>
 
   <article>
-    <h3><span class="tag">OpenAI</span>GPT-5.4-Cyber opens tiered access for defensive security teams</h3>
-    <div class="byline">16 April 2026 &middot; Primary source: OpenAI</div>
+    <h3><span class="tag">Hugging Face</span>huggingface_hub 1.11.0 ships with agent-trace upload and HF Buckets</h3>
+    <div class="byline">16 April 2026 &middot; Primary source: PyPI / Hugging Face</div>
     <p>
-      OpenAI released <strong>GPT-5.4-Cyber</strong>, a fine-tuned variant of GPT-5.4 with expanded defensive cyber capabilities, including binary reverse-engineering, and scaled its <strong>Trusted Access for Cyber (TAC)</strong> program to thousands of verified individual defenders and hundreds of teams. The model relaxes select capability restrictions for vetted users but keeps safeguards on offensive misuse. The move parallels Anthropic's Project Glasswing &mdash; an escalating bet that frontier labs, not governments, will supply the defensive edge against AI-assisted attackers.
+      Hugging Face cut <strong>huggingface_hub 1.11.0</strong>, the client library used to push and pull models and datasets. The release lets developers upload agent traces from <strong>Claude Code, Codex, and Pi</strong> straight to Hugging Face Datasets, where the Hub auto-detects the trace format and tags a new <em>Traces</em> viewer. Spaces also gained <strong>persistent HF Buckets</strong> as mountable storage volumes, addressing a long-running complaint about ephemeral Space state. The release lands the same week Hugging Face is rolling out weekly minor drops of <strong>Transformers v5.x</strong>.
     </p>
     <ul class="sources">
-      <li><a href="https://openai.com/index/scaling-trusted-access-for-cyber-defense/">OpenAI: Scaling Trusted Access for Cyber Defense</a> (primary)</li>
-      <li><a href="https://www.axios.com/2026/04/14/openai-model-cyber-program-release">Axios: OpenAI rolls out tiered access to advanced AI cyber models</a></li>
-      <li><a href="https://releasebot.io/updates/openai">OpenAI April 2026 release notes</a></li>
+      <li><a href="https://pypi.org/project/huggingface-hub/">PyPI: huggingface_hub project page</a> (primary)</li>
+      <li><a href="https://github.com/huggingface/huggingface_hub/releases">GitHub: huggingface_hub releases</a> (primary)</li>
+      <li><a href="https://huggingface.co/blog/transformers-v5">Hugging Face Blog: Transformers v5 &mdash; Simple model definitions powering the AI ecosystem</a> (primary)</li>
     </ul>
   </article>
 
-  <h2>AI Research &amp; Benchmarks</h2>
+  <h2>Agent Platforms &amp; Developer Tools</h2>
 
   <article>
-    <h3><span class="tag">NVIDIA</span>Ising: first open AI model family for quantum computing</h3>
-    <div class="byline">14&ndash;16 April 2026 &middot; Primary source: NVIDIA Newsroom</div>
+    <h3><span class="tag">OpenAI</span>Agents SDK gets a native sandbox and model-native harness</h3>
+    <div class="byline">15&ndash;16 April 2026 &middot; Primary source: OpenAI</div>
     <p>
-      NVIDIA released <strong>Ising</strong>, an open-weights model family for quantum error correction and calibration, under Apache-style terms via Hugging Face and build.nvidia.com. <em>Ising Calibration</em> is a 35B-parameter vision-language model that compresses multi-day calibration workflows to hours. <em>Ising Decoding</em> variants are 3D CNNs that outperform the open-source pyMatching benchmark by up to 2.5&times; in speed and 3&times; in accuracy. Early adopters include Fermilab, Harvard, Lawrence Berkeley National Lab, IQM, and the UK NPL.
+      OpenAI shipped a substantial update to its <strong>Agents SDK</strong>: a <em>model-native harness</em> and a <em>native sandbox</em> that can run on the same host as the agent or be isolated to a separate machine for stronger durability and security guarantees. The release also adds configurable memory, standardized integrations, portable-workspace support, and built-in snapshotting for long-running agents. Python ships first; TypeScript support, plus <em>code mode</em> and subagents, will follow. The update targets enterprises that have been blocked on rolling out agents by security review.
     </p>
     <ul class="sources">
-      <li><a href="https://nvidianews.nvidia.com/news/nvidia-launches-ising-the-worlds-first-open-ai-models-to-accelerate-the-path-to-useful-quantum-computers">NVIDIA Newsroom: Launching Ising</a> (primary)</li>
-      <li><a href="https://developer.nvidia.com/blog/nvidia-ising-introduces-ai-powered-workflows-to-build-fault-tolerant-quantum-systems/">NVIDIA Developer Blog: Ising workflows</a> (primary)</li>
-      <li><a href="https://www.nvidia.com/en-us/solutions/quantum-computing/ising/">NVIDIA Ising product page</a></li>
-      <li><a href="https://siliconangle.com/2026/04/14/nvidia-unveils-ising-ai-models-quantum-error-correction-calibration/">SiliconANGLE: Ising for decoding &amp; calibration</a></li>
-      <li><a href="https://thequantuminsider.com/2026/04/14/nvidia-launches-ising-the-worlds-first-open-ai-models-to-accelerate-the-path-to-useful-quantum-computers/">The Quantum Insider: coverage</a></li>
-    </ul>
-  </article>
-
-  <article>
-    <h3><span class="tag">Nature</span>Top human scientists still beat frontier agents on open-ended research tasks</h3>
-    <div class="byline">This week &middot; Primary source: Nature</div>
-    <p>
-      A <em>Nature</em> feature reports that despite near-saturated SWE-bench Verified scores (up from 60% to nearly 100% in a year per the 2026 AI Index), leading AI agents still underperform expert human scientists on complex, open-ended research tasks &mdash; a tempering counterpoint to the agentic-hype cycle dominating April releases. The piece is being widely cited alongside Stanford's transparency warnings.
-    </p>
-    <ul class="sources">
-      <li><a href="https://www.nature.com/articles/d41586-026-01199-z">Nature: Human scientists trounce the best AI agents on complex tasks</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/">TechCrunch: OpenAI updates Agents SDK for safer enterprise agents</a></li>
+      <li><a href="https://www.helpnetsecurity.com/2026/04/16/openai-agents-sdk-harness-and-sandbox-update/">Help Net Security: Agents SDK adds sandbox for safer code execution</a></li>
+      <li><a href="https://www.ai-daily.news/articles/openai-updates-agents-sdk-with-enhanced-security-features">AI Daily: Agents SDK security features</a></li>
+      <li><a href="https://www.openlinksw.com/data/html/openai-agents-sdk-next-evolution-infographic.html">OpenLinkSW: Next evolution of the OpenAI Agents SDK</a></li>
     </ul>
   </article>
 
   <article>
-    <h3><span class="tag">Stanford HAI</span>2026 AI Index: capability up, transparency down, trust-gap widening</h3>
-    <div class="byline">13 April 2026 &middot; Primary source: Stanford HAI</div>
+    <h3><span class="tag">Google</span>Gemini CLI adds subagents for specialized, long-running tasks</h3>
+    <div class="byline">15&ndash;16 April 2026 &middot; Primary source: Gemini CLI docs / Google Developers Blog</div>
     <p>
-      Stanford's Institute for Human-Centered AI published the <strong>2026 AI Index</strong> this week. Headline findings: generative AI reached 53% global population adoption in three years (faster than the PC or internet), SWE-bench Verified jumped from 60% to near 100% year-over-year, global corporate AI investment hit $581.7B in 2025 (+130% YoY), and the Foundation Model Transparency Index average fell from 58 to 40. The report also surfaces Grok 4's estimated 72,816 tCO<sub>2</sub>e training footprint.
+      Google's <strong>Gemini CLI</strong> now supports <strong>subagents</strong> &mdash; specialized agents that operate inside a main CLI session and are designed to own narrow slices of a workflow such as deep codebase analysis, documentation lookup, or domain-specific reasoning. The feature mirrors the subagent patterns already used in Claude Code, and is available to any developer running Gemini CLI from the terminal. Google also published updated guidance on building agents with Gemini 3 and open-source frameworks the same week.
     </p>
     <ul class="sources">
-      <li><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report">Stanford HAI: 2026 AI Index Report</a> (primary)</li>
-      <li><a href="https://hai.stanford.edu/news/inside-the-ai-index-12-takeaways-from-the-2026-report">Stanford HAI: 12 Takeaways</a> (primary)</li>
-      <li><a href="https://spectrum.ieee.org/state-of-ai-index-2026">IEEE Spectrum: State of AI Index 2026</a></li>
+      <li><a href="https://geminicli.com/docs/core/subagents/">Gemini CLI docs: Subagents</a> (primary)</li>
+      <li><a href="https://developers.googleblog.com/building-ai-agents-with-google-gemini-3-and-open-source-frameworks/">Google Developers Blog: Building AI Agents with Gemini 3</a> (primary)</li>
+      <li><a href="https://github.com/tudoanh/gemini-cli-subagents">GitHub: gemini-cli-subagents reference implementation</a></li>
     </ul>
   </article>
 
-  <h2>Software Engineering &amp; Developer Tools</h2>
-
   <article>
-    <h3><span class="tag">GitHub</span>Copilot CLI goes remote; &ldquo;Fix with Copilot&rdquo; lands for merge conflicts</h3>
-    <div class="byline">13&ndash;16 April 2026 &middot; Primary source: GitHub Changelog</div>
+    <h3><span class="tag">GitHub</span>Manage agent skills directly from the GitHub CLI</h3>
+    <div class="byline">16 April 2026 &middot; Primary source: GitHub Changelog</div>
     <p>
-      GitHub shipped <strong>remote-control Copilot CLI sessions</strong> in public preview: start with <code>copilot --remote</code> or <code>/remote</code> and monitor/steer the agent from github.com or the GitHub Mobile beta on iOS TestFlight and Google Play. GitHub also rolled out a <strong>Fix with Copilot</strong> button on pull-request pages that resolves merge conflicts in three clicks and runs the build/tests before pushing, plus a new AI-powered accessibility triage workflow built on Actions + Models APIs.
+      GitHub shipped CLI support for <strong>agent skills</strong> &mdash; the portable packages of instructions, scripts, and resources that teach agents (Copilot, Claude Code, Cursor, Codex, Gemini CLI) how to perform a specific task. Teams can now list, install, and share skills from the terminal and pin them to a repository. It's the CLI half of the cross-vendor &ldquo;skills as first-class primitives&rdquo; push that dominated this week's Copilot roadmap conversation.
     </p>
     <ul class="sources">
-      <li><a href="https://github.blog/changelog/2026-04-13-remote-control-cli-sessions-on-web-and-mobile-in-public-preview/">GitHub Changelog: Remote Copilot CLI sessions</a> (primary)</li>
+      <li><a href="https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/">GitHub Changelog: Manage agent skills with GitHub CLI</a> (primary)</li>
       <li><a href="https://github.blog/changelog/month/04-2026/">GitHub Changelog: April 2026 index</a> (primary)</li>
-      <li><a href="https://github.com/orgs/community/discussions/191814">GitHub community discussion #191814</a></li>
-      <li><a href="https://www.infoq.com/news/2026/04/github-ai-accessibility-workflow/">InfoQ: GitHub AI accessibility workflow</a></li>
     </ul>
   </article>
 
   <article>
-    <h3><span class="tag">Google</span>Chrome AI Mode redesign: split-screen, cross-tab context, &ldquo;Skills&rdquo;</h3>
-    <div class="byline">16 April 2026 &middot; Primary source: Google Blog</div>
+    <h3><span class="tag">JetBrains</span>IntelliJ IDEA 2026.1 lands with Java 26 &amp; virtual-thread debugging</h3>
+    <div class="byline">This week &middot; Primary source: JetBrains</div>
     <p>
-      Google began rolling out the redesigned <strong>AI Mode in Chrome</strong> to English users in the US on desktop, Android, and iOS. Clicking a link in AI Mode now shrinks the conversation into a side panel so users can ask follow-ups against the open page or YouTube video without losing context. A new &ldquo;+&rdquo; menu lets users pull multiple tabs, images, and files into a single AI query. Earlier this week, Google also added <strong>Chrome Skills</strong> for saving reusable AI workflows.
+      JetBrains released <strong>IntelliJ IDEA 2026.1</strong>, the first major IDE update of the year, with day-one <strong>Java 26</strong> support, an overhauled debugger for <strong>virtual threads</strong>, new Kotlin language features, and a tighter Spring Data / Spring Debugger integration. New AI features round out the release, reflecting the industry-wide shift from single-file autocomplete toward project-level and agent-assisted refactoring.
     </p>
     <ul class="sources">
-      <li><a href="https://blog.google/products-and-platforms/products/search/ai-mode-chrome/">Google Blog: A new way to explore the web with AI Mode in Chrome</a> (primary)</li>
-      <li><a href="https://techcrunch.com/2026/04/16/google-now-lets-you-explore-the-web-side-by-side-with-ai-mode/">TechCrunch: Side-by-side AI Mode</a></li>
-      <li><a href="https://9to5google.com/2026/04/16/google-ai-mode-chrome/">9to5Google: Deep Chrome integration</a></li>
-      <li><a href="https://techcrunch.com/2026/04/14/google-adds-ai-skills-to-chrome-to-help-you-save-favorite-workflows/">TechCrunch: Chrome AI Skills</a></li>
+      <li><a href="https://blog.jetbrains.com/idea/2026/04/java-annotated-monthly-april-2026/">JetBrains: Java Annotated Monthly, April 2026</a> (primary)</li>
     </ul>
   </article>
 
-  <h2>Policy, Governance &amp; Industry Signals</h2>
+  <h2>Markets, Research &amp; Robotics</h2>
 
   <article>
-    <h3><span class="tag">Policy</span>EU AI Act countdown: full applicability on 2 August 2026</h3>
-    <div class="byline">Ongoing &middot; Primary source: European Commission</div>
+    <h3><span class="tag">IPO</span>Manycore Tech debuts on HKEX, closes 144% above offer as first listed &ldquo;spatial intelligence&rdquo; company</h3>
+    <div class="byline">17 April 2026 &middot; Primary source: PR Newswire / HKEX</div>
     <p>
-      With fewer than four months to full enforcement, the European Commission is finalising its Code of Practice on marking and labelling AI-generated content (first draft December 2025; expected final by June 2026). From 2 August 2026, AI systems used in recruitment, task allocation, and performance monitoring become <strong>high-risk</strong> and require risk assessments, bias testing, human oversight, and continuous monitoring. U.S. posture remains fragmented after President Trump's December 2025 executive order directing preemption of state AI laws that &ldquo;obstruct national competitiveness.&rdquo;
+      Hangzhou-based <strong>Manycore Tech</strong> (HKEX: 00068) listed at HKD 7.62 per share and closed day one at <strong>HKD 18.60</strong>, up 144%. Net proceeds landed near HKD 1.09 billion. The company bills itself as the world's first publicly listed spatial-intelligence pure-play and is pivoting from its 3D cloud-design origins to selling synthetic world-model training data to robotics and autonomous-vehicle makers &mdash; a market adjacent to NVIDIA's Cosmos strategy. Manycore is the first of Hangzhou's &ldquo;Six Little Dragons&rdquo; to tap public markets; Unitree is expected to follow on Shanghai later this year.
     </p>
     <ul class="sources">
-      <li><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">European Commission: AI Act regulatory framework</a> (primary)</li>
-      <li><a href="https://www.eversheds-sutherland.com/en/united-states/insights/gloabl-ai-bulletin-april-2026">Eversheds Sutherland: Global AI regulatory update, April 2026</a></li>
-      <li><a href="https://www.onetrust.com/blog/where-ai-regulation-is-heading-in-2026-a-global-outlook/">OneTrust: 2026 global regulatory outlook</a></li>
+      <li><a href="https://www.prnewswire.com/news-releases/manycore-tech-debuts-on-hkex-as-the-worlds-first-spatial-intelligence-company-302745593.html">PR Newswire: Manycore Tech debuts on HKEX</a> (primary)</li>
+      <li><a href="https://fortune.com/2026/04/16/manycore-ipo-hong-kong-shares-debut-victor-huang-jixun-foo/">Fortune: Manycore bets on spatial intelligence after HK IPO</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-04-16/nvidia-alum-rides-china-s-robotics-wave-to-150-million-debut">Bloomberg: NVIDIA alum rides China's robotics wave to $150M debut</a></li>
+      <li><a href="https://www.morningstar.com/news/pr-newswire/20260417cn37017/manycore-tech-debuts-on-hkex-as-the-worlds-first-spatial-intelligence-company">Morningstar: Manycore HKEX debut</a></li>
     </ul>
   </article>
 
   <article>
-    <h3><span class="tag">Defense</span>Google in talks with Pentagon on classified Gemini deployment</h3>
-    <div class="byline">16 April 2026 &middot; Reported</div>
+    <h3><span class="tag">Robotics</span>Roland Berger pegs humanoid robotics at a $4T long-term market</h3>
+    <div class="byline">15&ndash;16 April 2026 &middot; Primary source: Roland Berger</div>
     <p>
-      Alphabet is in discussions with the U.S. Department of Defense to deploy <strong>Gemini</strong> in classified environments, according to reporting this week &mdash; a notable shift given Google's historical reticence on DoD work, and a continuation of Big Tech's pivot toward national-security revenue alongside OpenAI, Anthropic, and Microsoft.
+      Consultancy <strong>Roland Berger</strong> released <em>Humanoid Robots 2026</em>, forecasting a long-term humanoid robotics market on the order of <strong>$4 trillion</strong> &mdash; comparable to today's global automotive industry. The report lands alongside a wave of commercial humanoid announcements this quarter from Boston Dynamics, Figure, NEURA, and Chinese entrants, plus Tesla's publicly disclosed plan to convert a U.S. auto-production line to Optimus. Expect the study to anchor humanoid-robot capex narratives in Q2 earnings calls.
     </p>
     <ul class="sources">
-      <li><a href="https://www.quiverquant.com/news/Google+in+Talks+With+Pentagon+to+Deploy+Gemini+AI+in+Classified+Settings+Amid+AI+Contract+Shifts">QuiverQuant: Google in talks with Pentagon over Gemini</a></li>
-      <li><a href="https://news.microsoft.com/source/2026/04/16/stellantis-accelerates-ai-led-strategy-and-digital-transformation-through-strategic-collaboration-with-microsoft-to-enhance-customer-experiences/">Microsoft Source: Stellantis + Microsoft AI collaboration</a> (primary, related enterprise signal)</li>
+      <li><a href="https://meyka.com/blog/humanoid-robots-april-16-4-trillion-market-reshapes-industry-1604/">Meyka: Humanoid Robots April 16 &mdash; $4T market</a></li>
+      <li><a href="https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots">NVIDIA Newsroom: Physical AI models + partner robots</a> (primary, adjacent)</li>
+      <li><a href="https://blogs.nvidia.com/blog/national-robotics-week-2026/">NVIDIA Blog: National Robotics Week 2026</a></li>
+    </ul>
+  </article>
+
+  <h2>Policy, Legal &amp; Risk</h2>
+
+  <article>
+    <h3><span class="tag">Legal</span>Competing federal rulings carve out the privilege status of AI chats</h3>
+    <div class="byline">15&ndash;16 April 2026 &middot; Primary source: U.S. District Courts (SDNY, E.D. Mich.)</div>
+    <p>
+      Two federal decisions landing in the same 24-hour window set up the first real circuit-level tension over AI-chat discovery. In <strong>United States v. Heppner</strong>, SDNY Judge Jed Rakoff held that a defendant's conversations with Anthropic's Claude were <em>not</em> shielded by attorney-client privilege or the work-product doctrine &mdash; reasoning that an AI tool is not an attorney and owes no duty of confidentiality. Hours later, an Eastern District of Michigan magistrate judge ruled that a <em>pro se</em> plaintiff did <em>not</em> have to hand over her ChatGPT chats in an employment suit, treating them as protected personal work product. More than a dozen major U.S. firms rushed client advisories warning that AI chats should now be assumed discoverable unless run through a privileged channel.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.claimsjournal.com/news/national/2026/04/16/336937.htm">Claims Journal: AI Ruling Prompts Warnings From Lawyers</a></li>
+      <li><a href="https://thedailyrecord.com/2026/04/15/us-judge-ai-chatbot-chats-used-securities-fraud/">Daily Record: U.S. judge &mdash; AI chatbot chats may be used in securities fraud case</a></li>
+      <li><a href="https://www.getvoibe.com/resources/ai-attorney-client-privilege-heppner-ruling/">Voibe: AI and attorney-client privilege after U.S. v. Heppner</a></li>
+      <li><a href="https://news.bloomberglaw.com/legal-exchange-insights-and-commentary/trumps-order-cant-stop-courts-from-shaping-ai-accountability">Bloomberg Law: Courts continue to shape AI accountability</a></li>
     </ul>
   </article>
 
   <footer>
-    <p><strong>Editorial notes:</strong> This digest covers signals from the last ~24 hours of the week of 13&ndash;19 April 2026. Primary sources (company newsrooms, official changelogs, Nature, Stanford HAI, European Commission) are flagged inline. Secondary-source stories were corroborated with at least two additional outlets where the primary source was not directly available.</p>
+    <p><strong>Editorial notes:</strong> This digest covers signals from the last ~24 hours of the week of 13&ndash;19 April 2026 and is deliberately scoped to stories <em>not</em> covered in the earlier 17 April edition (Claude Opus 4.7, GPT-5.4-Cyber, NVIDIA Ising, Stanford 2026 AI Index, Nature on AI scientists, GitHub Copilot CLI remote, Chrome AI Mode redesign, EU AI Act, Google&ndash;Pentagon Gemini). Primary sources (company newsrooms, PyPI, GitHub Changelog, Gemini CLI docs, HKEX filings, court dockets) are flagged inline. Secondary-source items (Roland Berger coverage, Mozilla Thunderbolt commentary) were corroborated with at least two additional outlets per source-quality rules.</p>
     <p>Generated 17 April 2026.</p>
   </footer>
 </body>
