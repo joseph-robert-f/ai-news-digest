@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 19 April 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 19 April 2026</h1>
+    <div class="meta">Week of 13&ndash;19 April 2026 &middot; Coverage window: last ~48 hours</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> A Chinese humanoid robot outran the human half-marathon world record in Beijing, OpenAI extended its frontier-reasoning play into the life sciences with <strong>GPT-Rosalind</strong>, Anthropic turned Opus 4.7 into a consumer design tool with <strong>Claude Design</strong>, and Cloudflare's <em>Agents Week</em> closed with a managed <strong>Agent Memory</strong> service. On the hardware side, Tesla's long-delayed AI5 tape-out split fabrication between Samsung and TSMC, while Anthropic's 3.5 GW TPU deal with Google and Broadcom reshapes the 2027 compute map.
+  </div>
+
+  <h2>Robotics &amp; Physical AI</h2>
+
+  <article>
+    <h3><span class="tag">Beijing</span>Humanoid robot breaks the human half-marathon world record</h3>
+    <div class="byline">19 April 2026 &middot; Primary source: Beijing Municipal Government / China Media Group</div>
+    <p>
+      At the second <strong>Beijing E-Town Humanoid Robot Half-Marathon</strong>, an autonomous humanoid running for <strong>Honor</strong> completed the 21 km course in <strong>50:26</strong> (~25 km/h average), finishing ahead of the top human entrant and beating Jacob Kiplimo's current men's world record of 57:20. A record <strong>112 teams</strong> competed, including five international teams from Germany, France and Brazil; autonomous-navigation entries accounted for ~40% of the field. Last year's inaugural winner needed more than 2h 30m on the same course &mdash; a staggering year-over-year delta in endurance, balance, and onboard perception.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.aljazeera.com/sports/2026/4/19/humanoid-robot-breaks-half-marathon-world-record-in-beijing">Al Jazeera: Humanoid robot breaks half-marathon world record in Beijing</a></li>
+      <li><a href="https://news.cgtn.com/news/2026-04-19/Humanoid-robot-breaks-half-marathon-record-in-Beijing-race-1MtcDztbOHS/p.html">CGTN: Humanoid robot breaks half-marathon record</a> (primary, event co-host)</li>
+      <li><a href="https://www.cnbc.com/2026/04/19/a-non-human-race-beijing-half-marathon-shows-how-far-robots-have-come.html">CNBC: Beijing half-marathon shows how far robots have come</a></li>
+      <li><a href="https://yournews.com/2026/04/19/6812333/humanoid-robot-outpaces-human-record-in-beijing-half-marathon-highlighting-chinas/">YourNews: Humanoid outpaces human record in Beijing</a></li>
+      <li><a href="https://anewz.tv/science/innovations-technology/19484/robots-outrun-humans-in-beijing-marathon-2026/news">Anewz: Chinese humanoids outrun humans in Beijing half-marathon</a></li>
+    </ul>
+  </article>
+
+  <h2>Frontier Model Releases</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>GPT-Rosalind: first Life Sciences model, limited-access research preview</h3>
+    <div class="byline">17&ndash;18 April 2026 &middot; Primary source: OpenAI</div>
+    <p>
+      OpenAI introduced <strong>GPT-Rosalind</strong>, a reasoning model purpose-built for biology, drug discovery, and translational medicine, named for DNA-structure pioneer Rosalind Franklin. The model was trained against 50 of the most common biological workflows with direct access to major public biological databases; OpenAI reports best-of-ten scores above the <em>95th percentile of human experts</em> on sequence-prediction tasks and ~84th percentile on generation. It launches as a U.S.-only research preview under a <em>Trusted Access</em> program, with Amgen, Moderna, the Allen Institute, and Thermo Fisher Scientific among the first partners. A Life Sciences plug-in for Codex ships alongside it.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/introducing-gpt-rosalind/">OpenAI: Introducing GPT-Rosalind for life sciences research</a> (primary)</li>
+      <li><a href="https://venturebeat.com/technology/openai-debuts-gpt-rosalind-a-new-limited-access-model-for-life-sciences-and-broader-codex-plugin-on-github">VentureBeat: OpenAI debuts GPT-Rosalind, broader Codex plugin on GitHub</a></li>
+      <li><a href="https://www.axios.com/2026/04/16/openai-models-life-sciences-drugs">Axios: OpenAI launches new AI model for life sciences research</a></li>
+      <li><a href="https://the-decoder.com/openai-launches-gpt-rosalind-a-reasoning-model-built-for-life-sciences-research/">The Decoder: GPT-Rosalind, a reasoning model for life sciences</a></li>
+      <li><a href="https://decrypt.co/364783/openai-gpt-rosalind-drug-discovery-life-sciences-model">Decrypt: OpenAI's Rosalind could shave years off drug discovery</a></li>
+      <li><a href="https://pharmaphorum.com/news/openai-introduces-gpt-rosalind-its-drug-discovery-ai">Pharmaphorum: OpenAI introduces GPT-Rosalind, its drug discovery AI</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Claude Design turns Opus 4.7 into a prototype &amp; deck generator</h3>
+    <div class="byline">17&ndash;18 April 2026 &middot; Primary source: Anthropic</div>
+    <p>
+      Anthropic launched <strong>Claude Design</strong>, an experimental product that converts text prompts into interactive prototypes, pitch decks, slides, one-pagers, and UI mockups &mdash; targeted at founders and PMs who lack a design background. It is powered by <strong>Claude Opus 4.7</strong>, whose new 2,576-px / 3.75-MP vision stack enables reference-image interpretation and higher-fidelity output than the 1.15-MP ceiling on Opus 4.6. The launch extends Anthropic's agentic-work push (following January's Claude Cowork) and puts it into direct competition with OpenAI's Canvas and Google's Gemini Canvas design workflows.
+    </p>
+    <ul class="sources">
+      <li><a href="https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/">TechCrunch: Anthropic launches Claude Design</a></li>
+      <li><a href="https://siliconangle.com/2026/04/17/anthropic-launches-claude-design-speed-graphic-design-projects/">SiliconANGLE: Claude Design to speed up graphic design projects</a></li>
+      <li><a href="https://www.engadget.com/ai/anthropic-now-has-a-design-assistant-too-150000903.html">Engadget: Anthropic now has a design assistant too</a></li>
+      <li><a href="https://thenextweb.com/news/canva-anthropic-claude-design-ai-powered-visual-suite">The Next Web: Canva and Anthropic launch Claude Design</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Infrastructure &amp; Agents</h2>
+
+  <article>
+    <h3><span class="tag">Cloudflare</span>Agents Week closes with managed <em>Agent Memory</em> in private beta</h3>
+    <div class="byline">13&ndash;18 April 2026 &middot; Primary source: Cloudflare</div>
+    <p>
+      Cloudflare wrapped up <strong>Agents Week 2026</strong> with the private beta of <strong>Agent Memory</strong>, a managed service that extracts, verifies, classifies, and stores memories from agent conversations so they can be retrieved without bloating the context window. It's accessible via Worker bindings or a REST API, with exportable data by default. The week also delivered network-performance improvements tuned for agentic traffic patterns and a consolidated "agent-first" release bundle spanning Workers AI, Durable Objects, and the Agents SDK &mdash; Cloudflare's clearest push yet to become the default control plane for long-running agents.
+    </p>
+    <ul class="sources">
+      <li><a href="https://blog.cloudflare.com/introducing-agent-memory/">Cloudflare: Agents that remember &mdash; introducing Agent Memory</a> (primary)</li>
+      <li><a href="https://www.cloudflare.com/agents-week/updates/">Cloudflare: Agents Week 2026 updates &amp; announcements</a> (primary)</li>
+      <li><a href="https://blog.cloudflare.com/welcome-to-agents-week/">Cloudflare: Welcome to Agents Week</a> (primary)</li>
+      <li><a href="https://www.theregister.com/2026/04/18/cloudflare_agent_memory/">The Register: Cloudflare can remember it for you wholesale</a></li>
+      <li><a href="https://www.vktr.com/ai-news/cloudflare-agents-week/">VKTR: Cloudflare Agents Week &mdash; major new tools for the agent-first internet</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Hardware &amp; Compute</h2>
+
+  <article>
+    <h3><span class="tag">Tesla</span>AI5 tape-out: dual-sourced at Samsung Taylor and TSMC Arizona</h3>
+    <div class="byline">15&ndash;16 April 2026 &middot; Primary source: Elon Musk / X</div>
+    <p>
+      Elon Musk confirmed on X that Tesla's in-house <strong>AI5</strong> self-driving accelerator has completed tape-out and been sent to fabrication. Production will be split between <strong>Samsung's Taylor, Texas fab</strong> and <strong>TSMC's Arizona fab</strong> &mdash; an all-U.S. footprint that aligns with the Trump-era CHIPS posture. Tesla claims ~40&times; total uplift over AI4 (roughly 8&times; compute and 9&times; memory), up to 192 GB of LPDDR5X from Samsung, with SK hynix supplying additional memory. Volume production is slated for late-2026 to mid-2027 &mdash; nearly two years behind Musk's original schedule.
+    </p>
+    <ul class="sources">
+      <li><a href="https://electrek.co/2026/04/15/tesla-ai5-chip-taped-out-musk-ai6-dojo3/">Electrek: Tesla taped out AI5 chip, Musk says &mdash; nearly 2 years behind schedule</a></li>
+      <li><a href="https://technode.com/2026/04/16/tesla-completes-ai5-chip-tape-out-to-be-manufactured-by-tsmc-and-samsung/">TechNode: Tesla completes AI5 chip tape-out</a></li>
+      <li><a href="https://www.trendforce.com/news/2026/04/16/news-tesla-ai5-reportedly-uses-sk-hynix-memory-samsung-lpddr5x-samsung-sf2t-process-applied-ahead-of-ai6/">TrendForce: AI5 reportedly uses SK hynix memory, Samsung LPDDR5X, SF2T process</a></li>
+      <li><a href="https://www.tomshardware.com/tech-industry/semiconductors/musk-confirms-tesla-ai5-and-ai6-will-be-made-at-samsung-and-tsmc">Tom's Hardware: Musk confirms AI5/AI6 dual-foundry strategy</a></li>
+      <li><a href="https://www.digitimes.com/news/a20260416VL211/tesla-chips-design-samsung-tsmc-production.html">Digitimes: AI5 tape-out signals dual sourcing with Samsung, TSMC</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>3.5 GW TPU deal with Google and Broadcom reshapes 2027 compute map</h3>
+    <div class="byline">Announced 6&ndash;7 April; analyst picked-up this week &middot; Primary source: Anthropic</div>
+    <p>
+      Anthropic confirmed a multi-gigawatt expansion with Google and Broadcom: <strong>3.5 GW</strong> of next-generation TPU capacity starting in 2027, on top of the 1 GW already coming online under its October 2025 Google Cloud agreement. The company says annualized run-rate revenue has now crossed <strong>$30 B</strong> (up from ~$9 B at year-end 2025). Analysts at Mizuho project $21 B in 2026 and $42 B in 2027 of Broadcom AI revenue will come from Anthropic alone &mdash; a concentration risk worth watching, but also a concrete counterweight to NVIDIA-only narratives.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/news/google-broadcom-partnership-compute">Anthropic: Expanding partnership with Google and Broadcom</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/04/06/broadcom-agrees-to-expanded-chip-deals-with-google-anthropic.html">CNBC: Broadcom agrees to expanded chip deals with Google, Anthropic</a></li>
+      <li><a href="https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/">TechCrunch: Anthropic ups compute deal with Google and Broadcom amid skyrocketing demand</a></li>
+      <li><a href="https://www.tomshardware.com/tech-industry/broadcom-expands-anthropic-deal-to-3-5gw-of-google-tpu-capacity-from-2027">Tom's Hardware: Broadcom to supply Anthropic with 3.5 GW of Google TPU capacity from 2027</a></li>
+    </ul>
+  </article>
+
+  <h2>Markets &amp; Industry Signals</h2>
+
+  <article>
+    <h3><span class="tag">Crunchbase</span>Q1 2026 smashes global venture record: $300 B, 80% of it AI</h3>
+    <div class="byline">Week of 13 April 2026 &middot; Primary source: Crunchbase News</div>
+    <p>
+      Crunchbase's Q1 2026 tally lands at <strong>~$300 B across 6,000 rounds</strong>, an all-time global-venture high. Four of the five largest venture rounds in history closed inside the quarter: <strong>OpenAI ($122 B)</strong>, <strong>Anthropic ($30 B)</strong>, <strong>xAI ($20 B)</strong>, and <strong>Waymo ($16 B)</strong> collectively absorbed ~65% of all global venture investment. AI companies accounted for ~$242 B &mdash; <strong>80%</strong> of the quarter's total &mdash; a concentration that dovetails with the Stanford 2026 AI Index's corporate-investment numbers and with this week's Broadcom/TPU capacity news.
+    </p>
+    <ul class="sources">
+      <li><a href="https://news.crunchbase.com/venture/record-breaking-funding-ai-global-q1-2026/">Crunchbase News: Q1 2026 shatters venture funding records</a> (primary)</li>
+      <li><a href="https://news.crunchbase.com/venture/foundational-ai-startup-funding-doubled-openai-anthropic-xai-q1-2026/">Crunchbase News: Foundational AI startup funding doubled all of 2025</a> (primary)</li>
+      <li><a href="https://openai.com/index/accelerating-the-next-phase-ai/">OpenAI: Raising $122 B to accelerate the next phase of AI</a> (primary for OpenAI figure)</li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This digest covers signals from roughly the last 48 hours of the week of 13&ndash;19 April 2026, avoiding overlap with the 17 April digest (Opus 4.7, GPT-5.4-Cyber, NVIDIA Ising, Stanford AI Index, Nature agents feature, Chrome AI Mode, GitHub remote Copilot CLI, EU AI Act countdown, Google/Pentagon Gemini). Primary sources (company newsrooms, Cloudflare engineering blog, OpenAI, Anthropic, Crunchbase News, Beijing event hosts) are flagged inline. Secondary-source stories were corroborated with at least two additional outlets where the primary source was unavailable for direct retrieval.</p>
+    <p>Generated 19 April 2026.</p>
+  </footer>
+</body>
+</html>
