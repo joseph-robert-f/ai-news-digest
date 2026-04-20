@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 20 April 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 20 April 2026</h1>
+    <div class="meta">Week of 20&ndash;26 April 2026 &middot; Coverage window: last ~24 hours</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> Vercel disclosed a weekend breach that ShinyHunters-adjacent actors are shopping for $2M &mdash; and the attack vector is a compromised <em>AI</em> tool, reigniting the supply-chain debate that dominated March. Cursor is reportedly closing a <strong>$2B round at a $50B valuation</strong> after touching $2B ARR in three years. Google is in talks with Marvell for two new custom AI silicon designs alongside its Broadcom TPU program, OpenAI is committing $20B+ to Cerebras with an equity kicker, and Tesla stood up its first <em>unsupervised</em> robotaxi service in Dallas and Houston. On the research side, UCL published a quantum-informed AI turbulence model in <em>Science Advances</em> that uses 100&times; less memory than the classical baseline.
+  </div>
+
+  <h2>Security &amp; Supply Chain</h2>
+
+  <article>
+    <h3><span class="tag">Vercel</span>Cloud-dev platform breach, tied to a third-party AI integration, hits DeFi frontends</h3>
+    <div class="byline">19&ndash;20 April 2026 &middot; Primary source: Vercel Knowledge Base bulletin</div>
+    <p>
+      Vercel confirmed on 19 April that an attacker gained unauthorized access to internal systems after compromising an employee's Google Workspace account via <strong>Context.ai</strong>, a third-party AI tool integrated as an OAuth app. Vercel says <em>sensitive</em> environment variables remained encrypted and that <strong>Next.js, Turbopack, and its other open-source projects are unaffected</strong>; Google Mandiant is leading the incident response. A BreachForums seller claiming affiliation with <strong>ShinyHunters</strong> has listed the data for <strong>$2 million</strong>, alleging internal DB contents, source code, GitHub tokens, NPM tokens, and 580 employee records; core ShinyHunters operators told BleepingComputer they are not involved. DeFi teams spent the weekend rotating API keys given Vercel's role hosting many crypto-app frontends.
+    </p>
+    <ul class="sources">
+      <li><a href="https://vercel.com/kb/bulletin/vercel-april-2026-security-incident">Vercel Knowledge Base: April 2026 security incident</a> (primary)</li>
+      <li><a href="https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/">BleepingComputer: Vercel confirms breach as hackers claim to be selling stolen data</a></li>
+      <li><a href="https://www.techradar.com/pro/security/weve-identified-a-security-incident-vercel-breach-confirmed-after-hackers-claim-stolen-data-for-sale-online">TechRadar Pro: Vercel breach confirmed after hackers claim stolen data for sale online</a></li>
+      <li><a href="https://www.coindesk.com/tech/2026/04/20/hack-at-vercel-sends-crypto-developers-scrambling-to-lock-down-api-keys">CoinDesk: Hack at Vercel sends crypto developers scrambling</a></li>
+      <li><a href="https://protos.com/vercel-breach-leaves-defi-frontends-dangling-on-a-2m-ransom/">Protos: Vercel breach leaves DeFi frontends dangling on a $2M ransom</a></li>
+      <li><a href="https://ambcrypto.com/significantly-accelerated-by-ai-vercel-breach-adds-to-aprils-crypto-attack-wave/">AMBCrypto: Vercel breach "significantly accelerated by AI"</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Aikido</span>Endpoint launches for developer devices after the worst supply-chain stretch in OSS history</h3>
+    <div class="byline">20 April 2026 &middot; Primary source: Aikido Security</div>
+    <p>
+      European cybersecurity unicorn <strong>Aikido</strong> shipped <strong>Endpoint</strong>, a lightweight agent that sits on developer workstations and inspects packages, IDE extensions, browser plugins, and AI tools <em>before</em> install. Any package published within the last 48 hours is held automatically &mdash; a direct counter to the March 2026 wave that saw TeamPCP chain stolen credentials across <strong>Trivy, KICS, LiteLLM, and Telnyx</strong> in under ten days and hijack the maintainer account of <strong>Axios</strong> (&gt;100M weekly downloads) to push poisoned versions 1.14.1 and 0.30.4. The Vercel incident the day before is already being cited as the latest data point in the argument that the dev laptop &mdash; not the registry &mdash; is the real weak link.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.aikido.dev/protect/endpoint-protection">Aikido Security: Endpoint protection for developer workstations</a> (primary)</li>
+      <li><a href="https://siliconangle.com/2026/04/20/aikido-security-debuts-endpoint-ai-native-developer-security/">SiliconANGLE: Aikido Security debuts Endpoint for AI-native developer security</a></li>
+      <li><a href="https://tech.eu/2026/04/20/aikido-launches-endpoint-to-secure-ai-native-developer-workflows/">Tech.eu: Aikido launches Endpoint to secure AI-native developer workflows</a></li>
+      <li><a href="https://www.manilatimes.net/2026/04/20/tmt-newswire/globenewswire/aikido-security-launches-endpoint-protection-for-developer-devices-as-software-supply-chain-attacks-hit-unprecedented-scale/2323823">Manila Times / GlobeNewswire: Aikido Endpoint launch release</a></li>
+      <li><a href="https://cloud.google.com/blog/topics/threat-intelligence/north-korea-threat-actor-targets-axios-npm-package">Google Cloud Threat Intelligence: North Korea-nexus actor compromises Axios npm package</a> (primary, supply-chain context)</li>
+      <li><a href="https://www.sans.org/blog/axios-npm-supply-chain-compromise-malicious-packages-remote-access-trojan">SANS Institute: Axios NPM supply-chain compromise delivers RAT</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Developer Tools &amp; Markets</h2>
+
+  <article>
+    <h3><span class="tag">Cursor</span>$2B round at ~$50B valuation after $2B ARR in three years</h3>
+    <div class="byline">17&ndash;19 April 2026 &middot; Primary reporting: TechCrunch / Bloomberg</div>
+    <p>
+      <strong>Cursor (Anysphere)</strong> is closing an oversubscribed round of at least <strong>$2 billion at a ~$50 billion valuation</strong>, nearly doubling the $29.3B it marked last November. The round is co-led by returning investors <strong>Andreessen Horowitz</strong> and <strong>Thrive Capital</strong>, with <strong>Battery Ventures</strong> as a new backer and <strong>NVIDIA</strong> as a strategic check. ARR trajectory: $100M (Jan 2025) &rarr; $500M (Jun 2025) &rarr; $1B (Nov 2025) &rarr; <strong>$2B in Feb 2026</strong>; management is guiding investors to &gt;$6B ARR by year-end. If those numbers hold, Cursor would be the fastest-scaling B2B software company on record, ahead of Slack, Zoom and Snowflake &mdash; and the clearest private-market validation that AI coding agents are the 2026 SaaS breakout category.
+    </p>
+    <ul class="sources">
+      <li><a href="https://techcrunch.com/2026/04/17/sources-cursor-in-talks-to-raise-2b-at-50b-valuation-as-enterprise-growth-surges/">TechCrunch: Cursor in talks to raise $2B+ at $50B valuation</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-04-17/ai-coding-startup-cursor-in-talks-to-raise-2-billion-in-funding">Bloomberg: Cursor in talks to raise $2B at over $50B value</a></li>
+      <li><a href="https://www.cnbc.com/2026/04/19/cursor-ai-2-billion-funding-round.html">CNBC: AI startup Cursor in talks to raise $2B at over $50B valuation</a></li>
+      <li><a href="https://thenextweb.com/news/cursor-anysphere-2-billion-funding-50-billion-valuation-ai-coding">The Next Web: Cursor to raise $2B at $50B valuation after hitting $2B ARR</a></li>
+      <li><a href="https://www.benzinga.com/markets/private-markets/26/04/51901426/ai-coding-startup-cursor-set-for-2-billion-funding-round-nearly-doubling-valuation-with-n">Benzinga: Cursor funding round with NVIDIA backing</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Hardware &amp; Compute</h2>
+
+  <article>
+    <h3><span class="tag">Google</span>Talks with Marvell on an inference TPU and a memory-processing unit</h3>
+    <div class="byline">19&ndash;20 April 2026 &middot; Primary reporting: The Information (via Reuters wire)</div>
+    <p>
+      Reuters' wire (KFGO) and The Information reported on Sunday that <strong>Alphabet</strong> is in talks with <strong>Marvell Technology</strong> to co-develop <em>two</em> new custom AI chips: an <strong>inference-optimized TPU</strong> and a <strong>memory-processing unit</strong> (MPU) that sits beside existing TPUs to tackle bandwidth and KV-cache bottlenecks. The MPU design is targeted to be finalized next year, with test production to follow. This is additive to Google's existing TPU program with <strong>Broadcom</strong> &mdash; the same program Anthropic just contracted 3.5&nbsp;GW against &mdash; and a clear signal that Google is diversifying its custom-silicon bench as Nvidia competition intensifies. Marvell shares popped on the report; the broader custom-ASIC market is projected to grow 45% in 2026.
+    </p>
+    <ul class="sources">
+      <li><a href="https://kfgo.com/2026/04/19/google-in-talks-with-marvell-to-build-new-ai-chips-the-information-reports/">Reuters via KFGO: Google in talks with Marvell to build new AI chips</a></li>
+      <li><a href="https://thenextweb.com/news/google-marvell-ai-chips-inference-tpu-broadcom">The Next Web: Google in talks with Marvell on AI inference chips alongside Broadcom TPU program</a></li>
+      <li><a href="https://www.businesstoday.in/technology/story/google-to-partner-with-marvell-to-develop-new-ai-chips-for-enhanced-efficiency-526421-2026-04-20">Business Today: Google to partner with Marvell to develop new AI chips</a></li>
+      <li><a href="https://seekingalpha.com/news/4576361-google-is-said-to-explore-new-ai-chip-partnership-with-marvell">Seeking Alpha: Google said to explore new AI chip partnership with Marvell</a></li>
+      <li><a href="https://www.benzinga.com/markets/tech/26/04/51904723/google-marvell-ai-chips-tpu-strategy-nvidia-competition-report">Benzinga: Google teams with Marvell on AI chips, doubles down on TPUs</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>$20B+ Cerebras commitment and equity warrants, ahead of Cerebras IPO</h3>
+    <div class="byline">17&ndash;18 April 2026 &middot; Primary reporting: The Information</div>
+    <p>
+      <strong>OpenAI</strong> has agreed to spend <strong>more than $20 billion</strong> with <strong>Cerebras Systems</strong> over three years for wafer-scale inference capacity &mdash; more than double the January deal and on top of <em>warrants</em> that could give OpenAI up to a <strong>~10%</strong> minority stake depending on spend. OpenAI is also committing roughly <strong>$1B</strong> to help fund Cerebras data-center build-out. The deal is central to Cerebras's push to list in Q2: last valued at $23.1B, the company is targeting a <strong>~$35B IPO valuation</strong> and a $3B primary. Alongside this week's Marvell news and Anthropic's Broadcom/TPU expansion, the signal is unambiguous: the 2026&ndash;2027 inference map will run on a lot more non-Nvidia silicon than the 2024&ndash;2025 map did.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.manilatimes.net/2026/04/18/business/foreign-business/openai-to-spend-more-than-20-billion-on-cerebras-chips-receive-stake/2322863">Manila Times / Reuters: OpenAI to spend $20B+ on Cerebras chips, receive stake</a></li>
+      <li><a href="https://www.gurufocus.com/news/8800280/openai-partners-with-cerebras-for-20-billion-deal-reducing-nvidia-dependency">GuruFocus: OpenAI partners with Cerebras for $20B deal, reducing Nvidia dependency</a></li>
+      <li><a href="https://cryptobriefing.com/openai-secures-20b-cerebras-chip-deal-gains-equity-stake/">Crypto Briefing: OpenAI secures $20B Cerebras chip deal, gains equity stake</a></li>
+      <li><a href="https://www.cxodigitalpulse.com/openai-commits-over-20-billion-to-cerebras-chips-in-massive-ai-infrastructure-push/">CXO Digitalpulse: OpenAI commits over $20B to Cerebras chips</a></li>
+      <li><a href="https://www.progressiverobot.com/2026/04/18/cerebras-files-for-ipo/">Progressive Robot: Cerebras files for IPO &mdash; 7 things to know from the S-1</a></li>
+    </ul>
+  </article>
+
+  <h2>Autonomy &amp; Robotics</h2>
+
+  <article>
+    <h3><span class="tag">Tesla</span>Unsupervised Robotaxi goes live in Dallas and Houston</h3>
+    <div class="byline">18&ndash;19 April 2026 &middot; Primary source: Tesla Robotaxi (X) / Tesla app</div>
+    <p>
+      Tesla opened its <strong>fully unsupervised</strong> Robotaxi service to the public in <strong>Dallas</strong> (~30&ndash;35 sq mi geofence covering Highland Park, Oak Lawn, parts of downtown) and <strong>North Houston</strong> (~12&ndash;15 sq mi around Willowbrook / Jersey Village). Model Y vehicles run with <em>no safety monitor in the driver's seat</em>, matching the configuration Tesla rolled out in Austin earlier this year and finally eliminating the front-seat chaperone that had been the main operational caveat against Waymo. Tesla now operates in three cities with roughly 573 vehicles; Waymo has been serving Dallas and Houston since February and is delivering ~500,000 paid rides per week across 10 U.S. cities. Q1 earnings drop Tuesday 22 April.
+    </p>
+    <ul class="sources">
+      <li><a href="https://electrek.co/2026/04/18/tesla-robotaxi-launches-dallas-houston-small-geofences/">Electrek: Tesla launches Robotaxi in Houston and Dallas with tiny geofences</a></li>
+      <li><a href="https://www.notateslaapp.com/news/4004/tesla-launches-unsupervised-robotaxi-service-in-dallas-and-houston">NotATeslaApp: Tesla launches unsupervised Robotaxi service in Dallas and Houston</a></li>
+      <li><a href="https://techcrunch.com/2026/04/18/tesla-brings-its-robotaxi-service-to-dallas-and-houston/">TechCrunch: Tesla brings its robotaxi service to Dallas and Houston</a></li>
+      <li><a href="https://www.teslarati.com/tesla-expands-unsupervised-robotaxi-service-two-new-cities/">Teslarati: Tesla expands Unsupervised Robotaxi service to two new cities</a></li>
+      <li><a href="https://teslanorth.com/2026/04/19/tesla-launches-unsupervised-robotaxi-service-in-dallas-and-houston/">TeslaNorth: Tesla launches unsupervised Robotaxi service in Dallas and Houston</a></li>
+    </ul>
+  </article>
+
+  <h2>Research &amp; Science</h2>
+
+  <article>
+    <h3><span class="tag">UCL</span>Quantum-informed AI beats classical ML on turbulence with 100&times; less memory</h3>
+    <div class="byline">17&ndash;18 April 2026 &middot; Primary source: <em>Science Advances</em> / UCL</div>
+    <p>
+      A team led by <strong>Prof. Peter Coveney</strong> at <strong>UCL</strong> published a paper in <em>Science Advances</em> showing that an AI model trained with features extracted from a <strong>20-qubit IQM quantum computer</strong> (linked to classical HPC at LRZ Munich) improves long-term turbulence forecasts by <strong>~20%</strong> while requiring <strong>roughly 100&times; less memory</strong> than the classical baseline. The authors frame it as the first practical demonstration of <em>quantum advantage</em> on a messy real-world dynamical system &mdash; applicable to climate/weather, cardiovascular flow modelling, and wind-farm siting. The result lands in the same week Google and Oratomic reported AI-accelerated quantum algorithms shortening the post-quantum cryptography timeline, suggesting quantum-assisted ML is graduating from demo to meaningful scientific tool faster than the 2024 consensus.
+    </p>
+    <ul class="sources">
+      <li><a href="https://phys.org/news/2026-04-quantum-ai-term-turbulence-memory.html">Phys.org: Quantum-informed AI improves long-term turbulence forecasts with far less memory</a></li>
+      <li><a href="https://www.miragenews.com/quantum-computer-boosts-ai-forecasts-1657634/">Mirage News: Quantum computer boosts AI forecasts</a></li>
+      <li><a href="https://www.nanotech-now.com/news.cgi?story_id=57627">Nanotechnology Now: Quantum computer improves AI predictions (UCL press)</a></li>
+      <li><a href="https://time.com/article/2026/04/07/ai-quantum-computing-advance/">TIME: AI helped spark a quantum breakthrough &mdash; Google / Oratomic context</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This digest covers signals from roughly the last 24 hours heading into 20 April 2026 and is deliberately scoped to avoid overlap with the 17 and 19 April editions (Opus 4.7 / Claude Design, GPT-Rosalind, Cloudflare Agents Week &amp; Agent Memory, Tesla AI5 tape-out, Anthropic 3.5&nbsp;GW TPU / Broadcom deal, Q1 Crunchbase funding tally, Mozilla Thunderbolt, huggingface_hub 1.11.0, OpenAI Agents SDK sandbox, Gemini CLI subagents, GitHub agent-skills CLI, IntelliJ 2026.1, Manycore Tech IPO, Roland Berger humanoid robotics, federal AI-privilege rulings, Stanford 2026 AI Index, NVIDIA Ising, the Beijing humanoid half-marathon). Primary sources (Vercel KB, TechCrunch/Bloomberg, Reuters wire, The Information via secondary wires, Tesla's Robotaxi channel, Aikido Security, <em>Science Advances</em> via UCL / phys.org) are flagged inline. Where the primary was paywalled or unreachable, at least two corroborating outlets were cited per source-quality rules.</p>
+    <p>Generated 20 April 2026.</p>
+  </footer>
+</body>
+</html>
