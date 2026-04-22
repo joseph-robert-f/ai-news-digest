@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 22 April 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 22 April 2026</h1>
+    <div class="meta">Week of 20&ndash;26 April 2026 &middot; Coverage window: last ~24 hours</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> <strong>Google Cloud Next &rsquo;26</strong> opens today in Las Vegas with Thomas Kurian&rsquo;s &ldquo;The agentic cloud&rdquo; keynote, ship-dating a redesigned Gemini Enterprise Agent Designer visual flow builder and the next turn of the TPU/inference stack. <strong>MIT Technology Review</strong> unveiled its inaugural <em>10 Things That Matter in AI Right Now</em> list yesterday at EmTech AI &mdash; a ground-truth map of what serious AI journalists will track in 2026. A <strong>pre-auth RCE in the marimo Python notebook</strong> (CVE-2026-39987) is under mass exploitation, with credential theft in under three minutes and NKAbuse malware payloads. <strong>ICLR 2026</strong> announced its 10 Outstanding Papers ahead of tomorrow&rsquo;s Rio opening &mdash; including a theory paper that argues DPO itself is misspecified. And after close today, <strong>Tesla reports Q1</strong> with a $22B consensus, a 50,000-car inventory overhang, and Robotaxi as the narrative anchor.
+  </div>
+
+  <h2>Cloud &amp; Agentic Infrastructure</h2>
+
+  <article>
+    <h3><span class="tag">Google</span>Cloud Next &rsquo;26 opens: &ldquo;The agentic cloud&rdquo; keynote, Agent Designer visual flow builder, ADK governance</h3>
+    <div class="byline">22 April 2026 &middot; Primary sources: Google Cloud Events, Google Cloud Blog</div>
+    <p>
+      Thomas Kurian opens <strong>Google Cloud Next &rsquo;26</strong> at Mandalay Bay this morning (9&ndash;10:30 AM PT) with a keynote titled &ldquo;<em>The agentic cloud</em>.&rdquo; Google is not pitching incremental Gemini features: the framing is that <strong>Gemini Enterprise becomes the orchestration, runtime, and governance layer for agents across every Workspace and Cloud product</strong>. Concrete shipping items previewed into the keynote include the <strong>Agent Designer visual flow builder</strong> (GA for new agents, with backward compatibility for existing ones), the <strong>Agent Development Kit (ADK)</strong> in Vertex AI with security blueprints that land under Gemini Enterprise governance, and next-gen TPU positioning tuned for long-running agent workloads rather than episodic training. Partner Summit ran yesterday; main conference days 22&ndash;24 April.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.googlecloudevents.com/next-vegas/session/4078789/opening-keynote-the-agentic-cloud">Google Cloud Events: Opening Keynote &mdash; The agentic cloud</a> (primary)</li>
+      <li><a href="https://www.googlecloudevents.com/next-vegas">Google Cloud Next &rsquo;26 &mdash; official event site</a> (primary)</li>
+      <li><a href="https://cloud.google.com/gemini-enterprise/agents">Google Cloud: AI Agents for Gemini Enterprise (ADK, Agent Designer)</a> (primary)</li>
+      <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/release-notes">Google Cloud: Gemini Enterprise release notes</a> (primary)</li>
+      <li><a href="https://fortune.com/2026/04/21/google-cloud-next-big-moment-big-technology/">Fortune: Google Cloud&rsquo;s next big moment</a></li>
+      <li><a href="https://biztechmagazine.com/article/2026/04/google-cloud-next-2026-what-expect-agentic-ai-major-theme">BizTech Magazine: What to expect at Cloud Next &rsquo;26</a></li>
+      <li><a href="https://www.itpro.com/cloud/cloud-computing/google-cloud-next-2026-googles-unique-advantages">IT Pro: Google&rsquo;s unique advantages at Next &rsquo;26</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Research &amp; Benchmarks</h2>
+
+  <article>
+    <h3><span class="tag">MIT Technology Review</span>&ldquo;10 Things That Matter in AI Right Now&rdquo; goes live</h3>
+    <div class="byline">21 April 2026 &middot; Primary source: MIT Technology Review</div>
+    <p>
+      MIT Technology Review published its inaugural <strong>10 Things That Matter in AI Right Now</strong> list yesterday, unveiled on stage at EmTech AI on the MIT campus and posted online the same day. Selected by the magazine&rsquo;s AI reporting team to set the coverage agenda for 2026, the list centers on movements rather than model drops: training humanoid robots from mass-scale human video; LLMs as a still-unspent resource (&ldquo;a lot of juice left to squeeze&rdquo;); AI-accelerated scamming and intrusion; AI systems that can perceive and act in the physical world; generative AI in military use and Big Tech / DoD entanglement; cooperating multi-agent systems; Chinese open-source models gaining global credibility; AI co-scientists that can autonomously carry out research; and a global backlash against unfettered AI development. The China open-source entry shipped as a standalone explainer alongside the main list.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.technologyreview.com/2026/04/21/1135643/10-ai-artificial-intelligence-trends-technologies-research-2026/">MIT Technology Review: 10 Things That Matter in AI Right Now (2026)</a> (primary)</li>
+      <li><a href="https://www.technologyreview.com/2026/04/21/1135486/roundtables-unveiling-the-10-things-that-matter-in-ai-right-now">MIT Technology Review: Roundtables &mdash; Unveiling the 10 Things list</a> (primary)</li>
+      <li><a href="https://www.technologyreview.com/2026/04/21/1135658/china-open-source-models-ai-artificial-intelligence/">MIT Technology Review: China&rsquo;s open-source bet</a> (primary companion piece)</li>
+      <li><a href="https://www.technologyreview.com/2026/04/14/1135298/coming-soon-10-things-that-matter-in-ai-right-now/">MIT Technology Review: Coming soon &mdash; the list</a> (primary preview)</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">ICLR 2026</span>Ten Outstanding Papers revealed ahead of Rio opening &mdash; DPO itself goes on trial</h3>
+    <div class="byline">21 April 2026 &middot; Primary source: ICLR / OpenReview</div>
+    <p>
+      <strong>ICLR 2026</strong> released its <strong>10 Outstanding Paper (Oral)</strong> selections ahead of the main program, which runs 23&ndash;27 April at Riocentro in Rio de Janeiro. The most talked-about entry is &ldquo;<strong>Why DPO is a Misspecified Estimator and How to Fix It</strong>&rdquo; (Gopalan, Ray Chowdhury, Banerjee; arXiv 2510.20413), which argues that Direct Preference Optimization &mdash; the default RLHF-replacement across most open-source labs &mdash; is statistically misspecified, and proposes a corrected estimator. <strong>SafeDPO</strong> offers a constrained alternative that balances helpfulness and safety without auxiliary reward networks. Other winners include <em>Common Corpus</em> (ethically-sourced LLM pre-training data), <em>Q-RAG</em> (multi-step retrieval via RL-trained embedders), <em>FIRE</em> (stability&ndash;plasticity reinitialization), <em>WebDevJudge</em> (LLM-as-a-judge for web development), and <em>MedAgentGym</em> (agentic biomedical training). The theme across the winners is a decisive shift from representation learning toward trajectory-level evaluation and alignment primitives.
+    </p>
+    <ul class="sources">
+      <li><a href="https://iclr.cc/">ICLR 2026 conference site</a> (primary)</li>
+      <li><a href="https://blog.iclr.cc/tag/awards/">ICLR Blog: Awards tag</a> (primary)</li>
+      <li><a href="https://openreview.net/forum?id=btEiAfnLsX">OpenReview: Why DPO is a Misspecified Estimator and How to Fix It</a> (primary)</li>
+      <li><a href="https://arxiv.org/abs/2510.20413">arXiv 2510.20413 &mdash; Gopalan et al., Why DPO is a Misspecified Estimator</a> (primary)</li>
+      <li><a href="https://github.com/XinyuLiuCs/iclr2026-oral-papers/blob/main/paper-list.md">ICLR 2026 Oral Paper list (community-maintained index)</a></li>
+      <li><a href="https://www.bohrium.com/blog/research-notes/iclr-2026-accepted-papers-highlights/">Bohrium: ICLR 2026 Outstanding Papers &amp; research-trend roundup</a></li>
+    </ul>
+  </article>
+
+  <h2>Software Engineering &amp; Security</h2>
+
+  <article>
+    <h3><span class="tag">Security</span>marimo pre-auth RCE (CVE-2026-39987) under mass exploitation &mdash; 10 hours from disclosure to working exploit</h3>
+    <div class="byline">8&ndash;16 April 2026 &middot; Primary sources: Sysdig Threat Research, Endor Labs, Resecurity</div>
+    <p>
+      A <strong>CVSS 9.3 pre-authenticated RCE</strong> in <strong>marimo</strong> &mdash; the open-source reactive Python notebook now embedded in many AI workflows &mdash; is under active exploitation. <strong>CVE-2026-39987</strong> lives at the <code>/terminal/ws</code> WebSocket endpoint, which only checks running mode and platform support and completely skips <code>validate_auth()</code>, handing any unauthenticated attacker a full PTY shell. <strong>Sysdig Threat Research</strong> observed real-world exploitation <strong>9h 41m after public disclosure on 8 April</strong>, with credential theft completed in under three minutes; 662 exploit events were recorded 11&ndash;14 April from 11 unique source IPs across 10 countries. Attackers drop a new variant of <strong>NKAbuse</strong>, a Go-based malware that abuses the NKN decentralized peer-to-peer protocol for C2, and target <code>.env</code> files and SSH private keys. All versions up to and including <strong>0.20.4</strong> are vulnerable; maintainers shipped the fix in <strong>0.23.0</strong>. Given marimo&rsquo;s AI-dev use profile, the compromise radius overlaps heavily with the supply-chain stories from last week (Vercel / Context.ai, axios npm).
+    </p>
+    <ul class="sources">
+      <li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39987">NVD: CVE-2026-39987 entry</a> (primary)</li>
+      <li><a href="https://www.endorlabs.com/learn/root-in-one-request-marimos-critical-pre-auth-rce-cve-2026-39987">Endor Labs: Root in One Request &mdash; marimo&rsquo;s critical pre-auth RCE</a> (primary technical)</li>
+      <li><a href="https://www.resecurity.com/blog/article/marimo-pre-auth-rce-via-unauthenticated-websocket-terminal-cve-2026-39987">Resecurity: marimo pre-auth RCE via unauthenticated WebSocket terminal</a> (primary technical)</li>
+      <li><a href="https://www.securityweek.com/critical-marimo-flaw-exploited-hours-after-public-disclosure/">SecurityWeek: Critical marimo flaw exploited hours after disclosure</a></li>
+      <li><a href="https://securityaffairs.com/190623/hacking/cve-2026-39987-marimo-rce-exploited-in-hours-after-disclosure.html">Security Affairs: CVE-2026-39987 exploited in hours</a></li>
+      <li><a href="https://www.scworld.com/brief/multiple-attacks-weaponizing-critical-marimo-rce-identified">SC Media: Multiple attacks weaponizing critical marimo RCE</a></li>
+      <li><a href="https://vulert.com/blog/marimo-rce-flaw-cve-2026-39987-exploited/">Vulert: marimo RCE flaw CVE-2026-39987 exploited</a></li>
+    </ul>
+  </article>
+
+  <h2>Markets &amp; Industry Signals</h2>
+
+  <article>
+    <h3><span class="tag">Tesla</span>Q1 2026 earnings drop after close: $22B consensus, 50K-car overhang, Robotaxi as narrative anchor</h3>
+    <div class="byline">22 April 2026 &middot; Reported; call today 4:30 PM CT</div>
+    <p>
+      Tesla reports <strong>Q1 2026</strong> after close today. Street consensus is <strong>$22.27B</strong> revenue (up from $19.34B a year ago) and <strong>$0.25 EPS</strong>; Tesla&rsquo;s internally generated forecast is lower at <strong>~$21.4B</strong>. Q1 deliveries came in at <strong>358,023 EVs</strong> (+6% YoY but under the 372,160 analyst expectation), and Tesla built roughly <strong>50,000 more cars than it sold</strong>. Energy storage deployments halved to <strong>8.8 GWh</strong> from Q4 2025&rsquo;s record 14.2 GWh &mdash; a notable reversal of the one consistent growth line in Tesla&rsquo;s business. Expect the call to pivot hard to AI: the newly-launched unsupervised <strong>Robotaxi in Dallas and Houston</strong> (19 April), the AI5 tape-out, and Optimus, against the backdrop of a ~38% YoY stock decline and GLJ Research&rsquo;s reiterated sell rating.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.tesla.com/en_us/investor-relations">Tesla Investor Relations &mdash; Q1 2026 webcast &amp; release hub</a> (primary)</li>
+      <li><a href="https://electrek.co/2026/04/21/tesla-tsla-q1-2026-earnings-preview-wall-street-expects-growth/">Electrek: Tesla Q1 2026 earnings preview</a></li>
+      <li><a href="https://www.notateslaapp.com/news/4022/teslas-q1-2026-earnings-call-how-to-listen-and-what-to-expect">NotATeslaApp: How to listen and what to expect</a></li>
+      <li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/261804129-tesla-q1-2026-earnings-preview-5-key-metrics-tradingkey">TradingKey: 50,000-unit inventory overhang, 5 metrics to watch</a></li>
+      <li><a href="https://www.marketpulse.com/markets/tesla-tsla-q1-2026-earnings-preview-is-the-ai-powerhouse-narrative-enough-to-offset-waning-auto-demand/">MarketPulse: Is the AI-powerhouse narrative enough?</a></li>
+      <li><a href="https://www.investing.com/news/analyst-ratings/glj-research-reiterates-tesla-stock-sell-rating-on-earnings-outlook-93CH-4628382">Investing.com: GLJ Research reiterates Tesla sell rating</a></li>
+    </ul>
+  </article>
+
+  <h2>Policy, Governance &amp; Industry Signals</h2>
+
+  <article>
+    <h3><span class="tag">Policy</span>Anthropic out-lobbies OpenAI in Q1, posting the biggest quarterly AI-lab spend on record</h3>
+    <div class="byline">21 April 2026 &middot; Primary source: U.S. federal lobbying disclosures (Senate LDA)</div>
+    <p>
+      Federal lobbying disclosures filed for Q1 2026 show <strong>Anthropic at $1.6M</strong> and <strong>OpenAI at $1.0M</strong> &mdash; record quarterly spends for both and the first time Anthropic has out-spent OpenAI. The backdrop, per Axios: Anthropic spent the quarter in public friction with the Pentagon over red lines and acceptable uses of its technology in classified settings, with Trump administration officials accusing the company of being &ldquo;woke,&rdquo; even as Anthropic pushed Claude Opus 4.7 and the restricted-access Mythos preview. The disclosures drop in the same week Anthropic closed the $25B Amazon expansion and the 3.5&nbsp;GW TPU deal with Google/Broadcom &mdash; confirming that the lab is now fighting its public-sector battles at a scale commensurate with its compute balance sheet. OpenAI&rsquo;s lobbying spend is also up sharply year-over-year as the IPO path approaches.
+    </p>
+    <ul class="sources">
+      <li><a href="https://lda.senate.gov/filings/public/filing/search/">U.S. Senate Lobbying Disclosure Act filings database</a> (primary)</li>
+      <li><a href="https://www.axios.com/2026/04/21/anthropic-outspends-openai-biggest-lobbying-quarter">Axios: Anthropic outspends OpenAI in biggest-ever lobbying quarter</a></li>
+      <li><a href="https://www.cnbc.com/2026/04/15/public-opinion-ai-data-centers-anthropic-openai-ipo.html">CNBC: Public opinion sours as Anthropic, OpenAI look to IPO (context)</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This digest covers signals from the last ~24 hours around 21&ndash;22 April 2026 and is intentionally scoped to avoid overlap with the 17, 19, 20, and 21 April editions (Claude Opus 4.7, GPT-5.4-Cyber, GPT-Rosalind, Claude Design, Cloudflare Agents Week / Agent Memory, NVIDIA Ising, Nature human-scientist benchmarks, Stanford 2026 AI Index, Chrome AI Mode, GitHub remote Copilot CLI, EU AI Act countdown, Beijing humanoid half-marathon, Tesla AI5 tape-out, Anthropic&nbsp;3.5&nbsp;GW TPU / Broadcom deal, Q1 Crunchbase funding, Vercel / Context.ai breach &amp; forensics, Aikido Endpoint, Cursor $50B round, Google&ndash;Marvell talks, OpenAI&ndash;Cerebras $20B, Tesla Robotaxi Dallas/Houston launch, UCL quantum-informed turbulence, Amazon&ndash;Anthropic $25B / 5&nbsp;GW deal, GPT-Image-2 rollout, Perplexity Computer for Enterprise, MIT Tech Review <em>preview</em> of the 10 Things list, ICLR 2026 preview, Google Cloud Next <em>preview</em>, Q1 earnings-parade preview). Primary sources (Google Cloud Events / Blog, MIT Technology Review, ICLR / OpenReview / arXiv, NVD, Endor Labs &amp; Resecurity, Tesla IR, U.S. Senate LDA) are flagged inline. Where the primary was unreachable or paywalled, at least two corroborating outlets were cited per source-quality rules.</p>
+    <p>Generated 22 April 2026.</p>
+  </footer>
+</body>
+</html>
