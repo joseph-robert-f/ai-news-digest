@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 26 April 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 26 April 2026</h1>
+    <div class="meta">Week of 20&ndash;26 April 2026 &middot; Coverage window: last ~48 hours</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> Alphabet committed up to <strong>$40 B</strong> to Anthropic plus 5 GW of TPU capacity, marking the largest single equity-and-compute deal in AI history and pushing Anthropic's secondary-market valuation to <strong>$350 B</strong>. China's <strong>DeepSeek V4</strong> dropped open-weights with a hybrid-attention architecture that needs only ~10% of V3.2's KV cache at 1 M tokens. <strong>Google Cloud Next '26</strong> closed with the Gemini Enterprise Agent Platform and 8th-gen TPU split into training/inference SKUs. <strong>OpenAI GPT-5.5</strong> hit GA in the API and went GA inside GitHub Copilot 24 hours later. And <strong>ICLR 2026</strong> in Rio handed its Outstanding Paper to a theoretical result that transformers are exponentially more succinct than RNNs and SSMs.
+  </div>
+
+  <h2>Capital &amp; Compute</h2>
+
+  <article>
+    <h3><span class="tag">Alphabet</span>Google to invest up to $40 B in Anthropic; commits 5 GW of TPU capacity</h3>
+    <div class="byline">24&ndash;25 April 2026 &middot; Primary source: Bloomberg, confirmed by Anthropic / Google</div>
+    <p>
+      Alphabet will invest <strong>$10 B in cash now</strong> at a <strong>$350 B post-money valuation</strong>, with up to <strong>$30 B more</strong> tied to performance milestones &mdash; a structure unprecedented in AI venture deals. Google also committed <strong>5 gigawatts</strong> of TPU capacity to Anthropic over the next five years (a step beyond the 3.5 GW Broadcom-mediated deal disclosed earlier this month). The investment lands four days after Amazon agreed to put <strong>up to $25 B</strong> more into Anthropic, taking Anthropic's combined hyperscaler-backed compute commitments past 7 GW. Anthropic confirmed run-rate revenue has crossed <strong>$30 B</strong> annualized, up from ~$9 B at year-end 2025. Notable: the deal effectively makes Google a major equity holder in its largest model-side competitor while locking in TPU demand visibility through 2030.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic">Bloomberg: Google Plans to Invest Up to $40 Billion in Anthropic</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/">TechCrunch: Google to invest up to $40 B in Anthropic in cash and compute</a></li>
+      <li><a href="https://www.cnbc.com/2026/04/24/google-to-invest-up-to-40-billion-in-anthropic-as-search-giant-spreads-its-ai-bets.html">CNBC: Google to invest up to $40 B in Anthropic as search giant spreads its AI bets</a></li>
+      <li><a href="https://www.axios.com/2026/04/24/google-amazon-anthropic-investment">Axios: Google's $40 B Anthropic move is Big Tech's latest huge AI bet</a></li>
+      <li><a href="https://www.cnbc.com/2026/04/20/amazon-invest-up-to-25-billion-in-anthropic-part-of-ai-infrastructure.html">CNBC: Amazon to invest up to another $25 B in Anthropic</a> (companion deal)</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Google Cloud</span>Cloud Next '26 closes: Gemini Enterprise Agent Platform, TPU 8t/8i split</h3>
+    <div class="byline">22&ndash;24 April 2026 &middot; Primary source: Google Cloud / Sundar Pichai</div>
+    <p>
+      Google's annual Cloud Next concluded with the <strong>Gemini Enterprise Agent Platform</strong> (a successor to Vertex AI) bringing a no-code <em>Agent Designer</em>, an <em>Inbox</em> for cross-agent activity, long-running sandboxed agents, Skills, Projects, and first-class access to 200+ models including Gemini 3.1 Pro, Gemma 4, Lyria 3, and Anthropic's Claude family. Hardware-side, Google split its 8th-gen TPU into two SKUs &mdash; <strong>TPU 8t</strong> for training and <strong>TPU 8i</strong> for inference, with 1,152 inference TPUs per pod and 3&times; on-chip SRAM versus the prior generation. The keynote also pushed Google's <strong>A2A (Agent-to-Agent) protocol</strong> and Workspace Studio as a full-stack play against OpenAI and Anthropic platform tools.
+    </p>
+    <ul class="sources">
+      <li><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-sundar-pichai/">Google: Sundar Pichai shares news from Google Cloud Next 2026</a> (primary)</li>
+      <li><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/google-cloud-next-26-recap/">Google: 7 highlights and announcements from Google Cloud Next '26</a> (primary)</li>
+      <li><a href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up">Google Cloud Blog: Cloud Next 2026 wrap-up</a> (primary)</li>
+      <li><a href="https://thenextweb.com/news/google-cloud-next-ai-agents-agentic-era">The Next Web: AI agents, A2A protocol, Workspace Studio, full-stack bet against OpenAI and Anthropic</a></li>
+      <li><a href="https://virtualizationreview.com/articles/2026/04/24/google-cloud-next-26-gemini-enterprise-agent-platform-leads-ai-centric-news.aspx">Virtualization Review: Gemini Enterprise Agent Platform leads AI-centric news</a></li>
+    </ul>
+  </article>
+
+  <h2>Frontier Model Releases</h2>
+
+  <article>
+    <h3><span class="tag">DeepSeek</span>V4 Pro &amp; V4 Flash launch: Hybrid Attention, 10% of V3.2's KV cache at 1 M tokens</h3>
+    <div class="byline">24 April 2026 &middot; Primary source: DeepSeek API Docs / Hugging Face</div>
+    <p>
+      DeepSeek released its <strong>V4 Pro</strong> (1.6 T-parameter MoE) and <strong>V4 Flash</strong> models open-weights on Hugging Face, claiming top-tier coding, world-knowledge, and agentic-task scores among open-source systems. The headline architectural change is <strong>Hybrid Attention</strong>, which composes <em>Compressed Sparse Attention</em> (KV-cache compression at 4&times;, then sparse top-k retrieval via a lightning indexer; top-1024 in V4-Pro, top-512 in V4-Flash) with <em>Heavily Compressed Attention</em>. Net effect at 1 M-token context: <strong>~27% of V3.2's per-token inference FLOPs</strong> and <strong>~10% of its KV cache</strong>. Coming a year to the day after V3 broke the foundation-model price floor, V4 sets a new bar for cost-efficient long-context open weights.
+    </p>
+    <ul class="sources">
+      <li><a href="https://api-docs.deepseek.com/news/news260424">DeepSeek API Docs: V4 Preview Release notes</a> (primary)</li>
+      <li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro">Hugging Face: deepseek-ai/DeepSeek-V4-Pro model card</a> (primary, weights)</li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-04-24/deepseek-unveils-newest-flagship-a-year-after-ai-breakthrough">Bloomberg: DeepSeek unveils newest flagship a year after AI breakthrough</a></li>
+      <li><a href="https://www.cnbc.com/2026/04/24/deepseek-v4-llm-preview-open-source-ai-competition-china.html">CNBC: China's DeepSeek releases preview of long-awaited V4 model</a></li>
+      <li><a href="https://english.news.cn/20260424/ddae99d450314c9188151ff979614d59/c.html">Xinhua: DeepSeek unveils new AI model, matching best open-source options</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>GPT-5.5 ships with agentic-coding focus; GA in GitHub Copilot 24 h later</h3>
+    <div class="byline">23&ndash;24 April 2026 &middot; Primary source: OpenAI</div>
+    <p>
+      OpenAI released <strong>GPT-5.5</strong> and <strong>GPT-5.5 Pro</strong> just weeks after GPT-5.4, prioritizing agentic coding, computer use, and long-horizon knowledge work. The headline claim: same per-token latency as GPT-5.4 in production serving with significantly higher reasoning quality and better token efficiency. Cybersecurity safeguards have been tightened &mdash; restrictions on dual-use cyber requests, biology-capability red-teaming with ~200 trusted early-access partners, and stricter abuse-protection. <strong>GitHub Copilot</strong> followed with general availability for <strong>Pro+, Business, and Enterprise</strong> tiers exactly 24 hours after the API release, the fastest Copilot model rotation to date.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/introducing-gpt-5-5/">OpenAI: Introducing GPT-5.5</a> (primary)</li>
+      <li><a href="https://openai.com/index/gpt-5-5-system-card/">OpenAI: GPT-5.5 System Card</a> (primary)</li>
+      <li><a href="https://github.blog/changelog/2026-04-24-gpt-5-5-is-generally-available-for-github-copilot/">GitHub Changelog: GPT-5.5 generally available for GitHub Copilot</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/04/23/openai-announces-latest-artificial-intelligence-model.html">CNBC: OpenAI announces GPT-5.5, its latest model</a></li>
+      <li><a href="https://www.helpnetsecurity.com/2026/04/24/openai-gpt-5-5-cybersecurity-safeguards/">Help Net Security: GPT-5.5 expanded cybersecurity safeguards</a></li>
+      <li><a href="https://fortune.com/2026/04/23/openai-releases-gpt-5-5/">Fortune: OpenAI launches GPT-5.5 just weeks after GPT-5.4</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Research</h2>
+
+  <article>
+    <h3><span class="tag">ICLR 2026</span>Outstanding Paper: &ldquo;Transformers are Inherently Succinct&rdquo;</h3>
+    <div class="byline">23&ndash;26 April 2026 &middot; Primary source: ICLR Blog / OpenReview</div>
+    <p>
+      ICLR 2026 in Rio de Janeiro (main conference 22&ndash;25, workshops 26&ndash;27) handed an Outstanding Paper Award to <strong>Bergstr&auml;&szlig;er, Cotterell &amp; Lin</strong> for a theoretical result quantifying <em>why</em> transformers work: they can encode formal languages <strong>exponentially more succinctly than LTL formulas and RNNs (including state-of-the-art State-Space Models)</strong> and <strong>doubly exponentially more succinctly than finite automata</strong>. As a corollary, verifying even simple properties of a transformer is <strong>EXPSPACE-complete</strong> &mdash; a formal grounding for why mechanistic interpretability is so hard. The committee recognised three Outstanding Papers and one Honorable Mention. Of separate note: an analysis of accepted submissions shows <strong>most ICLR 2026 papers were authored in China, while most top-recognized papers came from the U.S.</strong> &mdash; a divergence worth tracking.
+    </p>
+    <ul class="sources">
+      <li><a href="https://blog.iclr.cc/2026/04/23/announcing-the-iclr-2026-outstanding-papers/">ICLR Blog: Announcing the ICLR 2026 Outstanding Papers</a> (primary)</li>
+      <li><a href="https://iclr.cc/virtual/2026/poster/10008853">ICLR Virtual: Transformers are Inherently Succinct</a> (primary)</li>
+      <li><a href="https://openreview.net/pdf?id=Yxz92UuPLQ">OpenReview: Transformers are Inherently Succinct (PDF)</a> (primary)</li>
+      <li><a href="https://arxiv.org/abs/2510.19315">arXiv: 2510.19315</a> (primary)</li>
+      <li><a href="https://aiworld.eu/story/most-iclr-papers-written-in-china-while-top-papers-come-from-the-us">AI World: Most ICLR papers written in China, top papers from the U.S.</a></li>
+    </ul>
+  </article>
+
+  <h2>Software Engineering &amp; Developer Markets</h2>
+
+  <article>
+    <h3><span class="tag">Cognition</span>Devin maker in talks to raise &ldquo;hundreds of millions&rdquo; at $25 B</h3>
+    <div class="byline">23&ndash;25 April 2026 &middot; Primary source: Bloomberg</div>
+    <p>
+      <strong>Cognition AI</strong>, the team behind autonomous-coding agent <strong>Devin</strong>, is in early talks to raise a fresh round at a <strong>$25 B valuation</strong> &mdash; more than 2.4&times; its $10.2 B post-money from September 2025. The round momentum follows last year's <strong>Windsurf</strong> acquisition and surging Devin ARR (publicly reported as <strong>$1 M in Sep 2024 &rarr; $73 M in Jun 2025</strong>). Combined with <strong>Cursor's</strong> recent ascent and <strong>Claude Code's</strong> developer traction, the print confirms autonomous coding agents as the most heavily funded AI-application sub-sector heading into mid-2026.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.bloomberg.com/news/articles/2026-04-23/ai-coding-firm-cognition-in-funding-talks-at-25-billion-value">Bloomberg: AI Coding Firm Cognition in Funding Talks at $25 B Value</a> (primary)</li>
+      <li><a href="https://siliconangle.com/2026/04/23/cognition-creator-ai-software-engineer-devin-talks-raise-hundreds-millions-25b-valuation/">SiliconANGLE: Cognition in talks to raise hundreds of millions at $25 B</a></li>
+      <li><a href="https://techfundingnews.com/cognition-ai-25b-valuation-funding-talks-devin-software-engineer/">TFN: Cognition AI eyes $25 B valuation after Windsurf acquisition</a></li>
+      <li><a href="https://www.techzine.eu/news/devops/140784/ai-software-engineer-devin-propels-cognition-toward-a-25-billion-valuation/">Techzine: AI software engineer Devin propels Cognition toward $25 B</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>Codex enterprise rollout via Cognizant and CGI</h3>
+    <div class="byline">21&ndash;23 April 2026 &middot; Primary source: OpenAI / Cognizant Newsroom</div>
+    <p>
+      OpenAI named <strong>Cognizant</strong> and <strong>CGI</strong> as the first GSI partners selected to scale <strong>Codex</strong> across enterprise customers worldwide &mdash; a clear signal that OpenAI is moving from developer-direct adoption into Fortune 500 software-modernization spend. Cognizant is positioning Codex against four high-budget categories: <em>legacy code modernization</em>, <em>code-review automation</em>, <em>vulnerability detection</em>, and <em>application development</em>. The deal slots Codex alongside Microsoft GitHub Copilot, Google Code Assist, and Anthropic Claude Code in the increasingly crowded AI-SDLC tooling stack &mdash; with the differentiator being a delivery channel into enterprises that don't self-serve.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/scaling-codex-to-enterprises-worldwide/">OpenAI: Scaling Codex to enterprises worldwide</a> (primary)</li>
+      <li><a href="https://news.cognizant.com/2026-04-21-Cognizant-and-OpenAI-Partner-to-Reshape-Enterprise-Software-Engineering-with-Codex">Cognizant Newsroom: Cognizant and OpenAI Partner to Reshape Enterprise Software Engineering with Codex</a> (primary)</li>
+      <li><a href="https://thenextweb.com/news/openai-codex-enterprise-partners-cognizant-cgi">The Next Web: OpenAI recruits Cognizant and CGI to take Codex into enterprise software shops</a></li>
+      <li><a href="https://www.prnewswire.com/news-releases/cognizant-and-openai-partner-to-reshape-enterprise-software-engineering-with-codex-302748608.html">PR Newswire: Cognizant + OpenAI Codex enterprise partnership</a></li>
+    </ul>
+  </article>
+
+  <h2>Policy &amp; Regulation</h2>
+
+  <article>
+    <h3><span class="tag">EU</span>99 days to AI Act enforcement: Commission misses high-risk guidance deadline</h3>
+    <div class="byline">25 April 2026 &middot; Primary source: European Commission / IAPP</div>
+    <p>
+      As of 25 April, the EU AI Act's main enforcement window opens in <strong>99 days</strong>, on <strong>2 August 2026</strong> &mdash; when the bulk of the Act's general-purpose, high-risk (Annex III), and Article 50 transparency obligations come into force. Two unresolved gaps continue to dominate the conversation: (1) the Commission missed its <strong>2 February</strong> deadline to issue Article 6 guidance defining when an application qualifies as &ldquo;high risk,&rdquo; and (2) only <strong>8 of 27</strong> member states had named a single national contact point as of last month. Major U.S. labs are increasingly explicit in earnings-call commentary that geo-fencing or scoped feature-availability is on the table for Europe if guidance does not land in time.
+    </p>
+    <ul class="sources">
+      <li><a href="https://artificialintelligenceact.eu/implementation-timeline/">EU AI Act: Implementation Timeline</a> (primary)</li>
+      <li><a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/timeline/timeline-implementation-eu-ai-act">European Commission AI Act Service Desk: Implementation timeline</a> (primary)</li>
+      <li><a href="https://iapp.org/news/a/european-commission-misses-deadline-for-ai-act-guidance-on-high-risk-systems">IAPP: European Commission misses deadline for AI Act guidance on high-risk systems</a></li>
+      <li><a href="https://epthinktank.eu/2026/03/18/enforcement-of-the-ai-act/">European Parliament Think Tank: Enforcement of the AI Act</a></li>
+      <li><a href="https://www.kennedyslaw.com/en/thought-leadership/article/2026/the-eu-ai-act-implementation-timeline-understanding-the-next-deadline-for-compliance/">Kennedys: Understanding the next EU AI Act deadline for compliance</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This digest covers signals from the last ~48 hours of the week of 20&ndash;26 April 2026, with deliberate non-overlap with the 17 April and 19 April editions (Mozilla Thunderbolt, OpenAI Agents SDK sandbox/harness, Gemini CLI subagents, GitHub agent skills, Manycore Tech IPO, Roland Berger humanoid forecast, AI-chat discoverability rulings, Beijing humanoid half-marathon, GPT-Rosalind, Claude Design, Cloudflare Agents Week / Agent Memory, Tesla AI5 tape-out, Anthropic 3.5 GW Broadcom-mediated TPU deal, Crunchbase Q1 2026 venture record). Today's Anthropic story is the <em>new</em> Alphabet $40 B equity-and-compute commitment announced 24 April, distinct from the earlier Broadcom 3.5 GW TPU agreement.</p>
+    <p>Primary sources (OpenAI, Anthropic, Google, DeepSeek API docs, Hugging Face model cards, ICLR Blog &amp; OpenReview, GitHub Changelog, Cognizant Newsroom, European Commission) are flagged inline. Secondary-source items were corroborated against at least two additional outlets per source-quality rules.</p>
+    <p>Generated 26 April 2026.</p>
+  </footer>
+</body>
+</html>
