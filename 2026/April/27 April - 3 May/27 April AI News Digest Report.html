@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 27 April 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 27 April 2026</h1>
+    <div class="meta">Week of 27 April&ndash;3 May 2026 &middot; Coverage window: last ~24 hours, with carry-over since the 19 April digest</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> OpenAI's <strong>Sora</strong> consumer app went dark today, the same day GitHub kicks off the staged rollout of a new <strong>installation-token format</strong> that breaks every integration assuming the legacy 40-character shape. Over the weekend, <strong>DeepSeek shipped V4</strong> &mdash; a 1.6T-parameter open-weights MoE with a one-million-token context window &mdash; while <strong>Google committed up to $40 B</strong> directly into Anthropic on top of Amazon's fresh <strong>$25 B / 5 GW</strong> Trainium deal. On the labor side, <strong>Meta and Microsoft</strong> announced ~23,000 cuts in a 24-hour window and explicitly cited AI automation. California's <strong>SB 1000</strong> AI Transparency Act is in Senate Appropriations today.
+  </div>
+
+  <h2>Frontier Models &amp; Product Sunsets</h2>
+
+  <article>
+    <h3><span class="tag">DeepSeek</span>V4 ships open-weights: 1.6T MoE, 1M-token context, Apache 2.0</h3>
+    <div class="byline">24&ndash;26 April 2026 &middot; Primary source: DeepSeek API Docs / Hugging Face</div>
+    <p>
+      DeepSeek released the preview of <strong>V4</strong>, an open-source Mixture-of-Experts family with a native <strong>1,000,000-token</strong> context window. <strong>V4-Pro</strong> is 1.6 T total / 49 B activated parameters; <strong>V4-Flash</strong> is 284 B / 13 B. Both ship on Hugging Face under permissive licensing, with API pricing of <strong>$3.48 / 1M output tokens</strong> for Pro and <strong>$0.28 / 1M</strong> for Flash &mdash; roughly an order of magnitude under closed-source frontier rates. DeepSeek emphasizes agentic-task gains and tighter integration with Huawei Ascend silicon. The drop is the most significant open-weights frontier release since DeepSeek-R1 a year ago and immediately reshapes the cost-per-intelligence curve developers price against.
+    </p>
+    <ul class="sources">
+      <li><a href="https://api-docs.deepseek.com/news/news260424">DeepSeek API Docs: V4 Preview Release</a> (primary)</li>
+      <li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro">Hugging Face: deepseek-ai/DeepSeek-V4-Pro</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/04/24/deepseek-v4-llm-preview-open-source-ai-competition-china.html">CNBC: DeepSeek releases preview of long-awaited V4 model</a></li>
+      <li><a href="https://www.technologyreview.com/2026/04/24/1136422/why-deepseeks-v4-matters/">MIT Technology Review: Three reasons why DeepSeek's new model matters</a></li>
+      <li><a href="https://fortune.com/2026/04/24/deepseek-v4-ai-model-price-performance-china-open-source/">Fortune: DeepSeek V4 with rock-bottom prices and Huawei integration</a></li>
+      <li><a href="https://www.cnn.com/2026/04/24/tech/chinas-ai-deepseek-v4-intl-hnk">CNN Business: China's AI upstart DeepSeek drops new model</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>Sora app goes dark today; API end-of-life set for 24 September</h3>
+    <div class="byline">26&ndash;27 April 2026 &middot; Primary source: OpenAI Help Center</div>
+    <p>
+      OpenAI shut down the consumer <strong>Sora</strong> web and mobile experiences effective <strong>26 April 2026</strong>, with the developer API following on <strong>24 September 2026</strong>. Users were directed to <code>sora.chatgpt.com/exports/me</code> to export generations before the cutover. Press reporting puts the operational cost above <strong>$1 M/day</strong> with peak usage that fell from ~1 M to under 500 K weekly active users. The wind-down also ends the Disney character-licensing tie-up announced last year, and follows the 17 April departures of Bill Peebles (Sora lead), Kevin Weil (OpenAI for Science VP), and Srinivas Narayanan (B2B Applications). The official framing is a compute reallocation toward enterprise and reasoning ahead of an IPO window.
+    </p>
+    <ul class="sources">
+      <li><a href="https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation">OpenAI Help Center: What to know about the Sora discontinuation</a> (primary)</li>
+      <li><a href="https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/">The Decoder: Two-stage Sora shutdown with app closing April, API September</a></li>
+      <li><a href="https://techcrunch.com/2026/04/17/kevin-weil-and-bill-peebles-exit-openai-as-company-continues-to-shed-side-quests/">TechCrunch: Kevin Weil and Bill Peebles exit OpenAI</a></li>
+      <li><a href="https://www.cnbc.com/2026/04/17/openai-executives-leave.html">CNBC: OpenAI loses multiple executives in latest leadership shakeup</a></li>
+    </ul>
+  </article>
+
+  <h2>Compute &amp; Capital</h2>
+
+  <article>
+    <h3><span class="tag">Google</span>Up to $40 B direct investment into Anthropic; first $10 B at $350 B valuation</h3>
+    <div class="byline">24 April 2026 &middot; Primary source: Anthropic / Google</div>
+    <p>
+      Google committed up to <strong>$40 billion</strong> in new direct investment in Anthropic &mdash; <strong>$10 B</strong> upfront at a <strong>$350 B post-money valuation</strong>, with up to <strong>$30 B</strong> additional contingent on performance milestones. This stacks on top of the ~$3 B Google had previously invested for an estimated 14% stake, and on top of the multi-gigawatt TPU capacity deal with Broadcom that we covered on 19 April. Crucially, this is a <em>direct</em> equity round, not a compute commitment; combined with Amazon's fresh $25 B / 5 GW Trainium agreement (below), Anthropic's announced 2026 capital base now exceeds the entire 2025 global frontier-AI raise total.
+    </p>
+    <ul class="sources">
+      <li><a href="https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/">TechCrunch: Google to invest up to $40B in Anthropic in cash and compute</a></li>
+      <li><a href="https://www.cnbc.com/2026/04/24/google-to-invest-up-to-40-billion-in-anthropic-as-search-giant-spreads-its-ai-bets.html">CNBC: Google to invest up to $40B in Anthropic</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-04-24/google-plans-to-invest-up-to-40-billion-in-anthropic">Bloomberg: Google plans to invest up to $40B in Anthropic</a></li>
+      <li><a href="https://9to5google.com/2026/04/24/google-anthropic-investment-40-billion/">9to5Google: Google investing up to $40B in Anthropic, the company behind Claude</a></li>
+      <li><a href="https://www.telecompaper.com/news/google-to-invest-up-to-usd-40-bln-in-anthropic--1569177">Telecompaper: Google to invest up to USD 40 bn in Anthropic</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">AWS</span>Amazon adds $25 B / 5 GW Trainium tranche to Anthropic deal; $100 B AWS commitment over 10 years</h3>
+    <div class="byline">20&ndash;25 April 2026 &middot; Primary source: AWS / Anthropic</div>
+    <p>
+      Amazon committed <strong>up to $25 B</strong> in additional investment in Anthropic &mdash; <strong>$5 B</strong> initial, <strong>$20 B</strong> milestone-tied &mdash; on top of the prior ~$8 B already deployed. In return, Anthropic locked in <strong>5 GW</strong> of AWS Trainium capacity for training and inference, and contractually pledged <strong>$100 B+</strong> in AWS spend over 10 years. AWS expects nearly <strong>1 GW</strong> of Trainium2/Trainium3 to be online by year-end. Stacked against Friday's Google round, this collapses any remaining ambiguity about Anthropic operating as a "compute-neutral" lab; it now has explicit, contracted multi-gigawatt commitments to Trainium, TPU, and (per earlier disclosures) NVIDIA in parallel &mdash; a hedge structure that's quickly becoming the default for frontier-scale labs.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/04/20/amazon-invest-up-to-25-billion-in-anthropic-part-of-ai-infrastructure.html">CNBC: Amazon to invest up to $25 B in Anthropic</a></li>
+      <li><a href="https://techcrunch.com/2026/04/20/anthropic-takes-5b-from-amazon-and-pledges-100b-in-cloud-spending-in-return/">TechCrunch: Anthropic takes $5 B from Amazon, pledges $100 B AWS spend</a></li>
+      <li><a href="https://www.datacenterdynamics.com/en/news/amazon-invests-5bn-in-anthropic-anthropic-agrees-to-lease-5gw-of-ai-capacity/">DCD: Anthropic agrees to lease 5 GW of AWS AI capacity</a></li>
+      <li><a href="https://thenewstack.io/anthropic-amazon-aws-investment/">The New Stack: Amazon and Anthropic deepen AI ties with $100 B AWS commitment</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Platforms &amp; Software Engineering</h2>
+
+  <article>
+    <h3><span class="tag">GitHub</span>Installation-token format change starts rolling out today &mdash; ~520-char tokens, breaks 40-char assumptions</h3>
+    <div class="byline">Rollout begins 27 April 2026 &middot; Primary source: GitHub Changelog</div>
+    <p>
+      GitHub starts a staged rollout <strong>today</strong> of a new format for App installation tokens. The new shape is <code>ghs_APPID_JWT</code>, with a longer, variable length around <strong>~520 characters</strong>, replacing the legacy fixed 40-character format. Phase 1 (27 April &ndash; mid-May) covers <code>GITHUB_TOKEN</code> issued by Actions, plus first-party integrations like <strong>Dependabot</strong>, <strong>Slack</strong>, and <strong>Teams</strong>; phase 2 (mid-May &ndash; late June) covers all other App installation tokens. Existing tokens keep working until they expire. Any internal tooling, secret-scanning regex, or CI guardrail that hard-codes a 40-character expectation needs to be updated this week &mdash; this is precisely the kind of silently-failing migration that surfaces only when a deploy hangs at 2 a.m.
+    </p>
+    <ul class="sources">
+      <li><a href="https://github.blog/changelog/2026-04-24-notice-about-upcoming-new-format-for-github-app-installation-tokens/">GitHub Changelog: Notice about upcoming new format for GitHub App installation tokens</a> (primary)</li>
+      <li><a href="https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/authenticating-as-a-github-app-installation">GitHub Docs: Authenticating as a GitHub App installation</a> (primary)</li>
+      <li><a href="https://x.com/GHchangelog/status/2047801523493650483">@GHchangelog (X): Stateless format from 27 April 2026</a> (primary, dev-rel signal)</li>
+      <li><a href="https://github.com/actions/create-github-app-token">actions/create-github-app-token (GitHub repo)</a> (primary, library affected)</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Labor</span>Meta and Microsoft announce ~23,000 cuts in 24 hours, citing AI automation</h3>
+    <div class="byline">24&ndash;25 April 2026 &middot; Primary source: company memos / CNBC</div>
+    <p>
+      Meta said it will cut <strong>~10%</strong> of its workforce (<strong>~8,000</strong> roles) starting <strong>20 May</strong>; Microsoft made <strong>~7%</strong> of its U.S. employees (<strong>~8,750</strong>) eligible for voluntary buyouts. Both companies cited AI automation in content moderation, customer support, software testing, and engineering as a primary enabler. Snap separately confirmed <strong>~1,000</strong> layoffs and the closure of 300 open roles, with CEO Evan Spiegel disclosing that <strong>over 65%</strong> of new code at Snap is now AI-generated. The total brings 2026 tech-sector headcount reductions to <strong>~92,000</strong> per Layoffs.fyi &mdash; the first quarterly tally where AI is named, in plain language and on the record, as the operative cause rather than a euphemism.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html">CNBC: 20K job cuts at Meta, Microsoft raise concern of AI labor crisis</a> (primary reporting)</li>
+      <li><a href="https://www.cnbc.com/video/2026/04/24/meta-and-microsoft-announce-layoffs-as-new-ai-driven-capabilities-meet-tech-rightsizing.html">CNBC video: Meta and Microsoft announce layoffs as AI-driven capabilities meet tech rightsizing</a></li>
+      <li><a href="https://theconversation.com/meta-and-microsoft-have-joined-the-tech-layoff-tsunami-is-ai-really-to-blame-281436">The Conversation: Is AI really to blame?</a></li>
+      <li><a href="https://www.gurufocus.com/news/8816449/tech-layoffs-surge-amid-ai-investment-meta-and-microsoft-to-cut-thousands">GuruFocus: Tech layoffs surge amid AI investment</a></li>
+      <li><a href="https://mlq.ai/news/meta-and-microsoft-announce-major-layoffs-this-week-amid-ai-efficiency-push/">MLQ: Meta and Microsoft major layoffs amid AI-efficiency push</a></li>
+    </ul>
+  </article>
+
+  <h2>Robotics &amp; Physical AI</h2>
+
+  <article>
+    <h3><span class="tag">Meta &times; Broadcom</span>Multi-gigawatt MTIA expansion fleshes out the post-NVIDIA hyperscaler stack</h3>
+    <div class="byline">14&ndash;26 April 2026 &middot; Primary source: Broadcom Investor Relations / Meta AI</div>
+    <p>
+      Broadcom and Meta extended their MTIA (Meta Training and Inference Accelerator) partnership to cover <strong>multi-gigawatt deployments</strong> of Meta's custom silicon, with an initial commitment exceeding <strong>1 GW</strong>. <strong>MTIA 300</strong> is in production today; <strong>MTIA 400</strong> exits qualification soon; <strong>MTIA 450</strong> and <strong>MTIA 500</strong> are slated for early 2027. Broadcom's Ethernet fabric provides the scale-up, scale-out, and scale-across networking, and the 400/450/500 share chassis, rack, and network infrastructure &mdash; meaning each generation drops into existing data centers with no facility re-fit. Read alongside this week's Anthropic-AWS Trainium expansion, the headline trend is that all three U.S. hyperscalers (Google TPU, Amazon Trainium, Meta MTIA) now have credible, in-production silicon that does not depend on NVIDIA H/B-series GPUs.
+    </p>
+    <ul class="sources">
+      <li><a href="https://investors.broadcom.com/news-releases/news-release-details/broadcom-announces-extended-partnership-meta-deploy-technology">Broadcom IR: Extended partnership with Meta to deploy MTIA technology</a> (primary)</li>
+      <li><a href="https://about.fb.com/news/2026/03/expanding-metas-custom-silicon-to-power-our-ai-workloads/">Meta Newsroom: Expanding Meta's custom silicon</a> (primary, prior-month context)</li>
+      <li><a href="https://ai.meta.com/blog/meta-mtia-scale-ai-chips-for-billions/">Meta AI Blog: Four MTIA chips in two years &mdash; scaling AI for billions</a> (primary)</li>
+      <li><a href="https://www.datacenterdynamics.com/en/news/meta-unveils-next-four-generations-of-its-mtia-chip/">DCD: Meta unveils next four generations of its MTIA chip</a></li>
+      <li><a href="https://www.cnbc.com/2026/03/11/meta-ai-mtia-chip-data-center.html">CNBC: Meta rolls out in-house AI chips after NVIDIA, AMD deals</a></li>
+    </ul>
+  </article>
+
+  <h2>Policy &amp; Regulation</h2>
+
+  <article>
+    <h3><span class="tag">California</span>SB 1000 (AI Transparency Act) hits Senate Appropriations today</h3>
+    <div class="byline">Hearing scheduled 27 April 2026 &middot; Primary source: California Legislature</div>
+    <p>
+      <strong>SB 1000</strong>, the proposed amendment to California's existing AI Transparency Act, is scheduled in <strong>Senate Appropriations today</strong>. The bill amends Business and Professions Code &sect;&sect;22757.1&ndash;22757.5 to expand provenance-data and disclosure obligations for generative-AI providers operating in California, after clearing the Senate Privacy committee on 13 April. Combined with the package of California AI laws already taking effect this year, SB 1000 would push California's enforcement posture closer to the EU AI Act's transparency tier &mdash; and would land on every U.S.-facing model provider that ships to California users, regardless of headquarters. Anyone shipping a consumer model in the U.S. should track this hearing's outcome before the May fiscal-deadline window closes.
+    </p>
+    <ul class="sources">
+      <li><a href="https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB1000">California Legislature: SB 1000 bill status</a> (primary)</li>
+      <li><a href="https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB1000">California Legislature: SB 1000 bill text</a> (primary)</li>
+      <li><a href="https://calmatters.digitaldemocracy.org/bills/ca_202520260sb1000">CalMatters Digital Democracy: SB 1000 California AI Transparency Act</a></li>
+      <li><a href="https://www.transparencycoalition.ai/news/ai-legislative-update-april24-2026">Transparency Coalition: AI Legislative Update, 24 April 2026</a></li>
+      <li><a href="https://www.lexology.com/library/detail.aspx?g=a7595f5e-1fc9-4b4e-b3ea-5bde11815fd6">Lexology: Proposed State AI Law Update, 20 April 2026</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This digest covers signals from roughly the last 24 hours of 26&ndash;27 April 2026, plus carry-over since the prior 19 April digest. It is deliberately scoped to stories <em>not</em> covered on 17 April (Mozilla Thunderbolt, Hugging Face Hub 1.11, OpenAI Agents SDK sandbox, Gemini CLI subagents, GitHub agent-skills CLI, IntelliJ IDEA 2026.1, Manycore IPO, Roland Berger humanoids, AI privilege rulings) or on 19 April (Beijing humanoid half-marathon, GPT-Rosalind, Claude Design / Opus 4.7, Cloudflare Agent Memory, Tesla AI5 tape-out, Anthropic 3.5 GW TPU/Broadcom deal, Crunchbase Q1). The Anthropic compute story re-enters here only because of <em>new</em>, distinct April 20&ndash;24 announcements (Amazon $25 B / 5 GW Trainium, Google's $40 B direct round). Primary sources (DeepSeek API docs, Hugging Face, OpenAI Help Center, GitHub Changelog/Docs, AWS, Broadcom IR, Meta AI Blog, California Legislature) are flagged inline. Secondary sources have at least two corroborating outlets where a primary was unavailable.</p>
+    <p>Generated 27 April 2026.</p>
+  </footer>
+</body>
+</html>
