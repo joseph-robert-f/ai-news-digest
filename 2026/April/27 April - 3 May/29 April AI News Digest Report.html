@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 29 April 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 29 April 2026</h1>
+    <div class="meta">Week of 27 April&ndash;3 May 2026 &middot; Coverage window: last ~24 hours</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The day's biggest developer-economy story is <strong>GitHub</strong>'s decision to move <em>every</em> Copilot plan to <strong>token-metered "AI Credits"</strong> on 1 June &mdash; a structural shift that ends the flat-fee era of AI coding. <strong>OpenAI</strong> and <strong>Anthropic</strong> separately briefed House Homeland Security staff behind closed doors on their new <em>cyber-capable</em> models, the first formal congressional briefing of its kind. <strong>Hugging Face</strong> shipped <code>transformers</code> <strong>5.7.0</strong> with Mistral 4, Jina v3 embeddings, and a slate of new multimodal/OCR models. <strong>Apple</strong>'s iOS 26 SDK requirement is now in force for every App Store submission. <strong>Manifest OS</strong> closed a record <strong>$60 M Series A at a $750 M valuation</strong>, the largest in legal-tech history. And tonight after the bell, <strong>Microsoft, Alphabet, and Meta</strong> all post Q1 earnings &mdash; the first real test of whether ~$600 B of 2026 AI capex is converting to revenue.
+  </div>
+
+  <h2>Developer Platforms &amp; Tooling</h2>
+
+  <article>
+    <h3><span class="tag">GitHub</span>Copilot moves to token-metered "AI Credits" on 1 June &mdash; the end of flat-fee AI coding</h3>
+    <div class="byline">28 April 2026 &middot; Primary source: GitHub Blog</div>
+    <p>
+      GitHub announced that <strong>every Copilot plan</strong> &mdash; Pro, Pro+, Business, and Enterprise &mdash; will switch from request-based pricing to <strong>usage-based "GitHub AI Credits"</strong> on <strong>1 June 2026</strong>. Credits are deducted by <em>input + output + cached tokens</em> at each model's listed API rate, with included monthly allotments matching list price ($10 of credits on Pro, $39 on Pro+) and bridge allotments for seats ($30/seat on Business and $70/seat on Enterprise from June through August). Subscription prices stay flat. Crucially, <strong>code completions and Next Edit suggestions remain free of credits</strong> on every plan; agentic and chat-style work is what drains the meter. GitHub frames the change as forced by Copilot's evolution into an agent platform that runs long, multi-step coding sessions; developer reaction across X and Hacker News so far has been "you'll get less for the same price." A preview-bill experience lands in early May so users can pressure-test their projected June bill.
+    </p>
+    <ul class="sources">
+      <li><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog: Copilot is moving to usage-based billing</a> (primary)</li>
+      <li><a href="https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/">GitHub Changelog: Copilot code review will consume Actions minutes on 1 June</a> (primary)</li>
+      <li><a href="https://www.theregister.com/2026/04/28/microsofts_github_shifts_to_metered/">The Register: Microsoft's GitHub shifts to metered AI billing</a></li>
+      <li><a href="https://thenewstack.io/github-copilot-usage-billing/">The New Stack: GitHub moves Copilot to usage-based billing as AI coding costs climb</a></li>
+      <li><a href="https://the-decoder.com/github-copilot-switches-to-token-based-billing-in-june-2026/">The Decoder: Copilot switches to token-based billing in June 2026</a></li>
+      <li><a href="https://visualstudiomagazine.com/articles/2026/04/27/devs-sound-off-on-usage-based-copilot-pricing-change-you-will-get-less-but-pay-the-same-price.aspx">Visual Studio Magazine: Devs sound off on the usage-based pricing change</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Hugging Face</span><code>transformers</code> 5.7.0 ships Mistral 4, Jina v3 embeddings, and a multimodal/OCR sweep</h3>
+    <div class="byline">28 April 2026 &middot; Primary source: huggingface/transformers GitHub release</div>
+    <p>
+      Hugging Face cut <strong>transformers v5.7.0</strong> as the first major minor-version release on the v5 PyTorch-first line. The release adds <strong>Mistral 4</strong>, <strong>Jina-Embeddings-v3</strong> (multilingual, 5 task-specific LoRA adapters built in), <strong>VidEoMT</strong> for online video segmentation, <strong>UVDoc</strong> for document rectification, <strong>PI0</strong> robotics policies, <strong>SLANeXt</strong>, and <strong>PP-OCRv5</strong>. Quietly more impactful: speedups across quantization, tokenization, kernels, caching, and tensor/pipeline parallelism, plus several breaking changes around attention masks and generation defaults that consumers of v5.x should review before upgrading. The combination &mdash; a multimodal sweep plus a parallelism overhaul &mdash; positions <code>transformers</code> as the integration target of choice for vision-language and document-AI workloads heading into Q2.
+    </p>
+    <ul class="sources">
+      <li><a href="https://github.com/huggingface/transformers/releases">huggingface/transformers Releases (v5.7.0)</a> (primary)</li>
+      <li><a href="https://huggingface.co/blog/transformers-v5">Hugging Face Blog: Transformers v5 architecture overview</a> (primary)</li>
+      <li><a href="https://pypi.org/project/transformers/">PyPI: transformers</a> (primary)</li>
+      <li><a href="https://releasebot.io/updates/huggingface/transformers">Releasebot: transformers v5.7.0 release notes</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Apple</span>iOS 26 SDK becomes mandatory for every App Store submission</h3>
+    <div class="byline">28 April 2026 &middot; Primary source: Apple Developer</div>
+    <p>
+      As of <strong>28 April 2026</strong>, App Store Connect <strong>rejects new submissions</strong> that aren't built against the iOS 26 / iPadOS 26 / tvOS 26 / visionOS 26 / watchOS 26 SDK or later &mdash; meaning <strong>Xcode 26</strong> is the new floor for shipping. The cutover doesn't force an iOS 26 deployment target on the app itself (developers can still target older OS versions for runtime), but it does compel every active iOS team to migrate build pipelines, CI runners, and provisioning profiles this week. Combined with the Liquid Glass design language and Apple Intelligence on-device APIs that landed with iOS 26, today's deadline operationalises Apple's AI-era platform reset across the long tail of App Store apps.
+    </p>
+    <ul class="sources">
+      <li><a href="https://developer.apple.com/news/upcoming-requirements/?id=02032026a">Apple Developer: Upcoming SDK minimum requirements (28 April 2026)</a> (primary)</li>
+      <li><a href="https://developer.apple.com/news/?id=ueeok6yw">Apple Developer News: SDK minimum requirements</a> (primary)</li>
+      <li><a href="https://9to5mac.com/2026/02/03/apple-to-update-minimum-sdk-requirements-for-all-app-store-submissions/">9to5Mac: Apple updates minimum SDK requirements for App Store apps</a></li>
+      <li><a href="https://dev.to/arshtechpro/ios-26-sdk-is-now-mandatory-here-is-what-actually-changes-for-your-app-39m4">DEV: iOS 26 SDK is now mandatory &mdash; what actually changes</a></li>
+    </ul>
+  </article>
+
+  <h2>Frontier Capability &amp; Cybersecurity</h2>
+
+  <article>
+    <h3><span class="tag">Capitol Hill</span>OpenAI and Anthropic brief House Homeland Security staff on cyber-capable models</h3>
+    <div class="byline">28 April 2026 &middot; Primary source: Axios (exclusive)</div>
+    <p>
+      In what Axios reports as one of the first formal exchanges of its kind, <strong>OpenAI</strong> and <strong>Anthropic</strong> held closed-door briefings with staff of the <strong>House Committee on Homeland Security</strong> on the cyber-offensive implications of their newest frontier models. The substantive disclosures: <strong>Anthropic has held off the public release of its Claude Mythos Preview</strong> because the model is able to autonomously discover and exploit critical vulnerabilities (Anthropic has previously confirmed Mythos has surfaced "thousands of zero-days" and exploited a 17-year-old FreeBSD RCE); <strong>OpenAI</strong> told staff it will release a "GPT-5.4-Cyber" variant via a <strong>tiered access</strong> ramp rather than a flat public launch. The briefings extend the framing introduced earlier in April with Anthropic's <em>Project Glasswing</em> defensive coalition (AWS, Apple, Cisco, CrowdStrike, Google, JPMorganChase, Microsoft, NVIDIA, Palo Alto Networks, Linux Foundation) and now feed directly into a Hill conversation about pre-deployment review of cyber-capable models.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.axios.com/2026/04/28/openai-anthropic-congress-cyber-briefings">Axios (exclusive): OpenAI, Anthropic meet with House Homeland Security behind closed doors on cyber threats</a> (primary)</li>
+      <li><a href="https://www.anthropic.com/glasswing">Anthropic: Project Glasswing &mdash; securing critical software for the AI era</a> (primary, prior context)</li>
+      <li><a href="https://red.anthropic.com/2026/mythos-preview/">red.anthropic.com: Claude Mythos Preview capabilities disclosure</a> (primary, prior context)</li>
+      <li><a href="https://www.nextgov.com/cybersecurity/2026/04/anthropics-glasswing-initiative-raises-questions-us-cyber-operations/412721/">Nextgov/FCW: Anthropic's Glasswing initiative raises questions for U.S. cyber operations</a></li>
+      <li><a href="https://fortune.com/2026/04/07/anthropic-claude-mythos-model-project-glasswing-cybersecurity/">Fortune: Anthropic gives select firms early access to Claude Mythos</a></li>
+    </ul>
+  </article>
+
+  <h2>Markets, Capital &amp; Earnings</h2>
+
+  <article>
+    <h3><span class="tag">Big Tech</span>Tonight after the bell: Microsoft, Alphabet, and Meta all post Q1 &mdash; first stress-test of $600 B 2026 AI capex</h3>
+    <div class="byline">29 April 2026 &middot; Primary sources: Microsoft IR, Meta IR</div>
+    <p>
+      The "Mag 7" earnings gauntlet hits three hyperscalers on a single afternoon. <strong>Microsoft</strong> reports FY26 Q3 with management guiding <em>$80.65&ndash;$81.75 B</em> in revenue and <strong>37&ndash;38% constant-currency Azure growth</strong> &mdash; the print's single-most watched datapoint, since a re-acceleration past the guided ceiling would arrest the multi-quarter Azure deceleration narrative. <strong>Meta</strong> guided <em>$53.5&ndash;$56.5 B</em> in Q1 revenue and committed to <strong>$115&ndash;$135 B in 2026 capex</strong> (versus $69.7 B in 2025), with the test being whether ~30% ad-revenue growth can fund ~700 bps of operating-margin compression. <strong>Alphabet</strong> is expected to print roughly <em>$106.9 B</em> in Q1 revenue with <strong>$175&ndash;$185 B in 2026 AI infrastructure commitments</strong>. Combined with Amazon (Thursday) the four hyperscalers represent <strong>$600&ndash;$645 B in 2026 AI capex</strong> &mdash; tonight is the first real datapoint on whether that translates to revenue versus capacity write-downs.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3">Microsoft IR: FY26 Q3 Earnings Conference Call</a> (primary)</li>
+      <li><a href="https://www.morningstar.com/markets/get-ready-major-big-tech-earnings-releases-april-29">Morningstar: Get ready for major Big Tech earnings starting April 29</a></li>
+      <li><a href="https://247wallst.com/investing/2026/04/28/meta-reports-q1-earnings-tomorrow-3-things-to-watch-on-ai-spend/">24/7 Wall St.: Meta reports Q1 earnings tomorrow &mdash; 3 things to watch on AI spend</a></li>
+      <li><a href="https://www.alphapilot.tech/discover/meta-q1-2026-earnings-preview-ai-monetization-and-massive-capex-in-focus">AlphaPilot: Meta Q1 2026 earnings preview &mdash; AI monetisation and capex</a></li>
+      <li><a href="https://www.tipranks.com/news/big-tech-earnings-on-deck-are-microsoft-alphabet-meta-and-amazons-ai-investments-paying-off">TipRanks: Are Microsoft, Alphabet, Meta, and Amazon's AI investments paying off?</a></li>
+      <li><a href="https://seekingalpha.com/news/4580763-meta-q1-2026-earnings-preview-all-eyes-on-capex-allocation">Seeking Alpha: Meta Q1 2026 earnings preview &mdash; all eyes on capex allocation</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Manifest OS</span>$60 M Series A at $750 M valuation &mdash; largest legal-tech Series A on record</h3>
+    <div class="byline">28 April 2026 &middot; Primary source: Business Wire / Manifest OS</div>
+    <p>
+      <strong>Manifest OS</strong> closed a <strong>$60 M Series A at a $750 M valuation</strong>, which the company calls the largest Series A in legal-tech history. <strong>Menlo Ventures</strong> and <strong>Kleiner Perkins</strong> co-led, with First Round Capital and Quiet Capital participating. The thesis is structural rather than a tools play: founder Dan Mishin is using the proceeds to <em>operate</em> a network of "Manifest Law"&ndash;branded firms on fixed-fee and outcomes-based pricing, starting with U.S. business immigration, on the bet that the billable hour &mdash; which accounts for ~90% of spend in a ~$400 B U.S. legal market &mdash; is the core barrier to access. The deal lands the same week as Avoca's $1 B home-services agent round and reinforces the broader Q2 thesis: <em>vertical agentic AI that books real revenue</em> is now where the late-Series A capital is concentrating.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.financialcontent.com/article/bizwire-2026-4-28-manifest-os-raises-60m-to-scale-the-worlds-first-ai-native-law-firm-model">Business Wire / FinancialContent: Manifest OS raises $60 M to scale first AI-native law firm model</a> (primary)</li>
+      <li><a href="https://www.morningstar.com/news/business-wire/20260427884891/manifest-os-raises-60m-to-scale-the-worlds-first-ai-native-law-firm-model">Morningstar (Business Wire): Manifest OS raises $60 M Series A</a> (primary mirror)</li>
+      <li><a href="https://www.law.com/legaltechnews/2026/04/28/manifest-os-announces-60m-series-a-to-build-ai-software-for-affiliated-abs-law-firms-/">Law.com: Manifest OS announces $60 M Series A for AI-native ABS law firms</a></li>
+      <li><a href="https://legaltechnology.com/2026/04/28/manifest-os-raises-60m-series-a-to-build-ai-native-law-firm-model/">Legal IT Insider: Manifest OS raises $60 M Series A</a></li>
+      <li><a href="https://pulse2.com/manifest-os-60-million-raised-at-750-million-valuation-to-scale-ai-native-law-firm-model/">Pulse2: Manifest OS raises $60 M at $750 M valuation</a></li>
+      <li><a href="https://www.investing.com/news/company-news/manifest-os-raises-60m-at-750m-valuation-for-ai-legal-software-93CH-4641782">Investing.com: Manifest OS raises $60 M at $750 M valuation</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This 29 April digest is scoped to ~24-hour signals from 28&ndash;29 April 2026 and is deliberately non-overlapping with the prior 17 April, 19 April, and 28 April editions (IBM Bob, GitHub App-installation-token format change, Ineffable Intelligence / David Silver, DeepSeek V4-Pro pricing, China NDRC blocking Meta&ndash;Manus, Google DeepMind Seoul / K-Moonshot, Anthropic Sydney, Avoca, Mozilla Thunderbolt, huggingface_hub 1.11.0, OpenAI Agents SDK sandbox, Gemini CLI subagents, GitHub agent-skills CLI, IntelliJ IDEA 2026.1, Manycore Tech IPO, Roland Berger humanoid forecast, AI-chat privilege rulings, Beijing humanoid half-marathon, GPT-Rosalind, Claude Design / Opus 4.7, Cloudflare Agent Memory, Tesla AI5 tape-out, Anthropic 3.5 GW TPU deal, Q1 2026 venture-funding records). Primary sources (GitHub Blog, huggingface/transformers, Apple Developer, Microsoft IR, Anthropic Newsroom, Axios exclusive, Business Wire) are flagged inline. Stories sourced primarily from secondary outlets were corroborated with at least three additional outlets.</p>
+    <p>Generated 29 April 2026.</p>
+  </footer>
+</body>
+</html>
