@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 30 April 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 30 April 2026</h1>
+    <div class="meta">Week of 27 April&ndash;3 May 2026 &middot; Coverage window: last ~48 hours</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The week's defining storyline is the unwinding of the Microsoft&ndash;OpenAI exclusivity arrangement: <strong>OpenAI's GPT-5.5 and Codex landed on Amazon Bedrock</strong> the day after Microsoft's seven-year lock-in expired, alongside a new <em>Bedrock Managed Agents</em> service. In court, Elon Musk wrapped a combative third day of testimony in his trial against OpenAI. On the open-weights front, <strong>Poolside</strong> shipped its first open model (<strong>Laguna XS.2</strong>), while <strong>Cognizant</strong> announced a $600M acquisition of <strong>Astreya</strong> to build out AI-infrastructure managed services. Security teams spent the week absorbing five new <strong>Spring AI CVEs</strong>, two of them HIGH-severity vector-store injection bugs.
+  </div>
+
+  <h2>Frontier Cloud &amp; Platform Realignments</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI &times; AWS</span>GPT-5.5, Codex, and Managed Agents land on Amazon Bedrock</h3>
+    <div class="byline">28&ndash;29 April 2026 &middot; Primary sources: OpenAI, AWS, Microsoft</div>
+    <p>
+      One day after Microsoft and OpenAI restructured their seven-year partnership to drop OpenAI's exclusive Azure license, OpenAI's frontier models &mdash; <strong>GPT-5.5</strong> and <strong>GPT-5.4</strong> &mdash; went live in preview on <strong>Amazon Bedrock</strong>. The launch also covers <strong>Codex on Bedrock</strong> and a new <strong>Bedrock Managed Agents</strong> service co-built with OpenAI for production-ready agent deployment, all accessible through existing Bedrock APIs and unified governance/cost controls. Azure remains OpenAI's "primary" cloud through 2032, but the unilateral lock-in that defined the relationship since 2019 is gone &mdash; and Amazon's reported <strong>$50B</strong> commitment now sits at the centre of OpenAI's compute future.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/openai-on-aws/">OpenAI: OpenAI models, Codex, and Managed Agents come to AWS</a> (primary)</li>
+      <li><a href="https://www.aboutamazon.com/news/aws/bedrock-openai-models">Amazon: AWS and OpenAI announce expanded partnership to bring frontier intelligence to Bedrock</a> (primary)</li>
+      <li><a href="https://aws.amazon.com/bedrock/openai/">AWS: OpenAI frontier models on Amazon Bedrock</a> (primary)</li>
+      <li><a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/">AWS Blog: Top announcements of What's Next with AWS, 2026</a> (primary)</li>
+      <li><a href="https://blogs.microsoft.com/blog/2026/04/27/the-next-phase-of-the-microsoft-openai-partnership/">Microsoft: The next phase of the Microsoft&ndash;OpenAI partnership</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/04/28/openai-brings-models-to-aws-after-ending-exclusivity-with-microsoft.html">CNBC: OpenAI brings models to AWS after ending exclusivity with Microsoft</a></li>
+      <li><a href="https://www.cnbc.com/2026/04/29/openai-drift-from-microsoft-to-amazon-turns-aggressive-after-subtlety.html">CNBC: OpenAI's drift from Microsoft to Amazon turns aggressive</a></li>
+      <li><a href="https://www.geekwire.com/2026/openais-models-land-on-amazon-bedrock-one-day-after-microsoft-exclusivity-ends/">GeekWire: OpenAI's models land on Bedrock one day after Microsoft exclusivity ends</a></li>
+    </ul>
+  </article>
+
+  <h2>Open-Weights &amp; Model Releases</h2>
+
+  <article>
+    <h3><span class="tag">Poolside</span>Laguna XS.2 &amp; M.1: Apache-2.0 agentic-coding models hit 68.2% / 72.5% on SWE-bench Verified</h3>
+    <div class="byline">28 April 2026 &middot; Primary source: Poolside</div>
+    <p>
+      U.S. lab <strong>Poolside</strong> released its first open-weight model, <strong>Laguna XS.2</strong>, a <strong>33B-total / 3B-active MoE</strong> trained in-house and shipped under <strong>Apache 2.0</strong>. It runs on a single GPU (and a 36 GB Mac), and posts <strong>68.2% on SWE-bench Verified</strong>, 62.4% on SWE-bench Multilingual, 44.5% on SWE-bench Pro, and 30.1% on Terminal-Bench 2.0. A larger sibling, <strong>Laguna M.1</strong>, is API-only for now and reaches <strong>72.5% on SWE-bench Verified</strong>. Architecturally, XS.2 mixes 3:1 sliding-window / global attention across 40 layers with sigmoid gating &mdash; a design choice that signals where local-first agentic-coding stacks are headed.
+    </p>
+    <ul class="sources">
+      <li><a href="https://poolside.ai/blog/introducing-laguna-xs2-m1">Poolside: Introducing Laguna XS.2 and Laguna M.1</a> (primary)</li>
+      <li><a href="https://poolside.ai/blog/laguna-a-deeper-dive">Poolside: Laguna XS.2 and M.1 &mdash; a deeper dive</a> (primary)</li>
+      <li><a href="https://huggingface.co/poolside/Laguna-XS.2">Hugging Face: poolside/Laguna-XS.2 weights</a> (primary)</li>
+      <li><a href="https://venturebeat.com/technology/american-ai-startup-poolside-launches-free-high-performing-open-model-laguna-xs-2-for-local-agentic-coding">VentureBeat: Poolside launches free, high-performing open model Laguna XS.2 for local agentic coding</a></li>
+      <li><a href="https://www.marktechpost.com/2026/04/28/poolside-ai-introduces-laguna-xs-2-and-m-1-agentic-coding-models-reaching-68-2-and-72-5-on-swe-bench-verified/">MarkTechPost: Poolside introduces Laguna XS.2 and M.1</a></li>
+      <li><a href="https://x.com/poolsideai/status/2049144111626670282">@poolsideai on X: Releasing Laguna XS.2 (Apache 2.0)</a> (primary)</li>
+    </ul>
+  </article>
+
+  <h2>Litigation &amp; Governance</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI Trial</span>Musk wraps a combative day-3 cross-examination in <em>Musk v. OpenAI</em></h3>
+    <div class="byline">28&ndash;30 April 2026 &middot; Primary source: U.S. District Court, N.D. Cal. &middot; Secondary: CNBC, NPR, NBC News, CNN</div>
+    <p>
+      Elon Musk took the stand for a third consecutive day in his lawsuit accusing OpenAI's leadership of "looting the nonprofit" and seeking to unwind its for-profit conversion. Day-2 questioning surfaced a draft term sheet showing Musk's intended majority control of the cap table and board seats; Musk pushed back that his control would have decreased over time as outside investors came in. Day-3 cross-examination by OpenAI counsel <strong>Alex Spiro</strong>'s team turned heated, with Musk clashing on the meaning of "robot army" comments and his early framing of OpenAI as a counterweight to Google. The case is widely viewed as a pivotal test of nonprofit-to-for-profit conversions in frontier AI.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/04/29/musk-altman-live-updates-day-3-open-ai-trial.html">CNBC: OpenAI trial recap &mdash; Musk cross-examination heats up on day 3</a></li>
+      <li><a href="https://www.npr.org/2026/04/29/nx-s1-5803833/elon-musk-testimony-openai-altman-day-2">NPR: Musk accuses OpenAI's leaders of "looting the nonprofit"</a></li>
+      <li><a href="https://www.nbcnews.com/tech/tech-news/elon-musk-openai-sam-altman-trial-day-two-testimony-cross-examination-rcna342660">NBC News: Musk gets combative on the stand during day 2 of jury trial</a></li>
+      <li><a href="https://www.cnn.com/2026/04/29/tech/musk-openai-altman-lawsuit-testimony-day-two">CNN Business: Musk lays out his souring relationship with OpenAI</a></li>
+      <li><a href="https://www.cnbc.com/2026/04/28/openai-trial-elon-musk-sam-altman-live-updates.html">CNBC: Day 2 takeaways &mdash; Musk testifies OpenAI was created as nonprofit to counter Google</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">U.S. Policy</span>White House drafts guidance to restore Anthropic access &mdash; with Mythos in scope</h3>
+    <div class="byline">28&ndash;29 April 2026 &middot; Primary source: Axios scoop &middot; Secondary: Bloomberg, Government Executive</div>
+    <p>
+      Per an Axios scoop and follow-on Bloomberg/Government Executive reporting, White House Chief of Staff Susie Wiles and Treasury Secretary Scott Bessent met with Anthropic CEO <strong>Dario Amodei</strong>, and the administration is now drafting an executive vehicle to <em>bypass</em> the Pentagon's earlier supply-chain risk designation against Anthropic. The carveout would re-open federal access to Anthropic's tools, including the cyber-focused <strong>Claude Mythos</strong> &mdash; reportedly already running on classified networks at the NSA. The move sets up a direct collision with DoD, which is currently litigating against Anthropic over export and use restrictions.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.axios.com/2026/04/29/trump-anthropic-pentagon-ai-executive-order-gov">Axios (scoop): White House workshops plan to bring back Anthropic</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-04-16/white-house-moves-to-give-us-agencies-anthropic-mythos-access">Bloomberg: White House works to give US agencies Anthropic Mythos AI</a></li>
+      <li><a href="https://www.govexec.com/technology/2026/04/white-house-drafting-plans-permit-federal-anthropic-use/413204/">Government Executive: White House drafting plans to permit federal Anthropic use</a></li>
+      <li><a href="https://www.nextgov.com/artificial-intelligence/2026/04/white-house-drafting-plans-permit-federal-anthropic-use/413202/">Nextgov/FCW: White House drafting plans to permit federal Anthropic use</a></li>
+    </ul>
+  </article>
+
+  <h2>Software Engineering &amp; Security</h2>
+
+  <article>
+    <h3><span class="tag">Spring AI</span>Five new CVEs disclosed &mdash; including HIGH-severity vector-store injection</h3>
+    <div class="byline">27 April 2026 (continued impact) &middot; Primary source: VMware Tanzu / spring.io advisories</div>
+    <p>
+      The Spring security team disclosed <strong>five Spring AI CVEs</strong> affecting versions 1.0.x and 1.1.x, with fixes shipped in 1.0.6 / 1.1.5. The two HIGH-severity issues are vector-store query-injection bugs (<strong>CVE-2026-22729</strong> in <code>FilterExpressionConverter</code>, <strong>CVE-2026-40978</strong> SQL injection in <code>CosmosDBVectorStore</code>) where keys/values are not properly escaped on the way to vector-store query languages. A MODERATE issue (<strong>CVE-2026-40966</strong>) lets an attacker pivot across <code>conversationId</code> filter logic to exfiltrate other users' chat history; two PDF-handling DoS bugs round out the batch. Anyone running RAG/agent stacks on Spring AI should treat the upgrade as <em>this-week</em> work.
+    </p>
+    <ul class="sources">
+      <li><a href="https://spring.io/security/cve-2026-22729/">spring.io: CVE-2026-22729 &mdash; JSONPath Injection in Spring AI vector-store FilterExpressionConverter</a> (primary)</li>
+      <li><a href="https://spring.io/security/cve-2026-40980/">spring.io: CVE-2026-40980 &mdash; OOM by attacker-controlled PDF</a> (primary)</li>
+      <li><a href="https://spring.io/security/">spring.io: Security Advisories index</a> (primary)</li>
+      <li><a href="https://www.herodevs.com/blog-posts/5-spring-ai-cves-disclosed-april-27-2026-roundup-and-eol-risk">HeroDevs: Five Spring AI CVEs disclosed April 27, 2026 &mdash; roundup &amp; EOL risk</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Cursor</span>Cursor 3.0 ships an "Agents Window" and Design Mode &mdash; the IDE becomes an orchestrator</h3>
+    <div class="byline">In-month release; secondary coverage 28&ndash;30 April 2026 &middot; Primary source: Cursor changelog</div>
+    <p>
+      <strong>Cursor 3.0</strong> reframes the editor around an <strong>Agents Window</strong> that lets developers run many agents in parallel across local repos, worktrees, the cloud, and remote SSH targets &mdash; a step beyond Cursor 2.x's eight-agent Composer model. A new <strong>Design Mode</strong> (&#8984;&#8679;D) lets you annotate UI elements directly in the browser instead of describing them in text, and Agent Tabs allow side-by-side / grid views of multiple chats. InfoQ characterises it as a deliberate move past the IDE metaphor toward agent orchestration; the traditional editor is now optional surface area, not the default.
+    </p>
+    <ul class="sources">
+      <li><a href="https://cursor.com/changelog/3-0">Cursor: New Cursor Interface (3.0 changelog)</a> (primary)</li>
+      <li><a href="https://cursor.com/changelog">Cursor: Latest changelog</a> (primary)</li>
+      <li><a href="https://www.infoq.com/news/2026/04/cursor-3-agent-first-interface/">InfoQ: Cursor 3 introduces agent-first interface, moving beyond the IDE model</a></li>
+      <li><a href="https://forum.cursor.com/t/cursor-3-agents-window/156509">Cursor Community Forum: Cursor 3 Agents Window release thread</a> (primary)</li>
+    </ul>
+  </article>
+
+  <h2>Markets &amp; Industry Signals</h2>
+
+  <article>
+    <h3><span class="tag">M&amp;A</span>Cognizant agrees to acquire Astreya for ~$600M to scale AI-infrastructure managed services</h3>
+    <div class="byline">29 April 2026 &middot; Primary source: Cognizant newsroom</div>
+    <p>
+      <strong>Cognizant</strong> announced an agreement to acquire <strong>Astreya</strong>, a San Jose IT-managed-services firm specialising in AI infrastructure, data-center operations, and AI-lab environments, for approximately <strong>$600M</strong>. CEO <strong>Ravi Kumar S.</strong> framed the deal as a way to "operationalise AI at scale" via Astreya's proprietary tooling and 25-year managed-services track record across six of the Magnificent Seven. Astreya operates in 35+ countries; the transaction is expected to close in Q2 2026, subject to regulatory approval. It is Cognizant's fourth major buy in two years (after 3Cloud and Belcan), and a clear signal that systems-integrator consolidation around AI ops is accelerating.
+    </p>
+    <ul class="sources">
+      <li><a href="https://news.cognizant.com/2026-04-29-Cognizant-to-Acquire-Astreya,-Deepening-Its-AI-First-Managed-Services-Capabilities-at-Scale">Cognizant: Cognizant to acquire Astreya, deepening AI-first managed services at scale</a> (primary)</li>
+      <li><a href="https://siliconangle.com/2026/04/29/cognizant-acquire-astreya-600m-deepen-ai-infrastructure-services/">SiliconANGLE: Cognizant to acquire Astreya for $600M to deepen AI infrastructure services</a></li>
+      <li><a href="https://thenextweb.com/news/cognizant-astreya-600-million-acquisition-ai-infrastructure">The Next Web: Cognizant buys Astreya for $600M in its fourth major acquisition</a></li>
+      <li><a href="https://techstartups.com/2026/04/29/cognizant-to-acquire-astreya-for-600m-to-boost-ai-infrastructure-and-data-center-capabilities/">Tech Startups: Cognizant to acquire Astreya for $600M to boost AI infrastructure and data-center capabilities</a></li>
+    </ul>
+  </article>
+
+  <h2>Research Signals</h2>
+
+  <article>
+    <h3><span class="tag">arXiv</span>Active threads on Hugging Face Daily Papers, 28&ndash;29 April</h3>
+    <div class="byline">28&ndash;29 April 2026 &middot; Primary source: arXiv / Hugging Face Daily Papers</div>
+    <p>
+      Two threads dominate this week's Daily Papers feed. First, <strong>autonomous research agents</strong>: <em>AutoResearchBench</em> (Apr 28) introduces a benchmark for deep-and-wide scientific literature discovery with end-to-end agent evaluation. Second, <strong>agent harness engineering</strong>: <em>Agentic Harness Engineering (AHE)</em> (Apr 29) proposes a closed-loop framework that automates the evolution of coding-agent harnesses with integrated observability at every engineering phase. A separate thread of interest to platform teams: an architectural analysis of <em>Claude Code</em> tracing five motivating human values through 13 design principles to specific implementation choices &mdash; a useful primer for anyone building agentic dev tooling. Multimodal-agent watchers should also note <em>GLM-5V-Turbo</em>, which integrates visual perception into reasoning/planning/tool-use rather than treating vision as a sidecar.
+    </p>
+    <ul class="sources">
+      <li><a href="https://huggingface.co/papers/date/2026-04-29">Hugging Face: Daily Papers &mdash; 29 April 2026</a> (primary aggregator)</li>
+      <li><a href="https://arxiv.org/list/cs.AI/recent">arXiv cs.AI &mdash; recent submissions</a> (primary)</li>
+      <li><a href="https://arxiv.org/list/cs.LG/recent">arXiv cs.LG &mdash; recent submissions</a> (primary)</li>
+      <li><a href="https://huggingface.co/papers/trending">Hugging Face: Trending Papers</a> (primary)</li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> Coverage window is roughly the last 48 hours leading into 30 April 2026, with two items (Spring AI CVEs from 27 April; Cursor 3.0 from earlier in the month) included where downstream impact and corroborating coverage extended into this window. This digest deliberately avoids overlap with the 17 and 19 April reports (Mozilla Thunderbolt, OpenAI Agents SDK sandbox, Gemini CLI subagents, GitHub CLI agent skills, JetBrains 2026.1, Manycore IPO, Beijing humanoid half-marathon, GPT-Rosalind, Claude Design / Opus 4.7, Cloudflare Agent Memory, Tesla AI5, Anthropic 3.5&nbsp;GW TPU deal, Crunchbase Q1 2026 venture record). Primary sources (OpenAI, AWS, Microsoft, Cognizant, Poolside, spring.io, Cursor, arXiv) are flagged inline; signal-source items are corroborated with at least two additional outlets.</p>
+    <p>Generated 30 April 2026.</p>
+  </footer>
+</body>
+</html>
