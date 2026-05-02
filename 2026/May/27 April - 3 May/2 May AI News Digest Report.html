@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 2 May 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 2 May 2026</h1>
+    <div class="meta">Week of 27 April&ndash;3 May 2026 &middot; Coverage window: last ~24&ndash;48 hours</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The defense&ndash;AI cold war broke wide open as the <strong>U.S. Department of War</strong> (the renamed DoD) cleared <strong>eight frontier-AI vendors</strong> &mdash; AWS, Google, Microsoft, NVIDIA, OpenAI, SpaceX, Reflection, and (added hours later) Oracle &mdash; to deploy on its <strong>IL6/IL7 classified networks</strong>, with <strong>Anthropic conspicuously left out</strong> over the still-active "supply-chain risk" designation. Big-Tech Q1 earnings landed the same week and silenced the AI-spending doubters: <strong>$725 B</strong> of combined 2026 AI capex from Google, Microsoft, Meta, and Amazon &mdash; up 77% year-over-year &mdash; with Meta alone raising guidance to <strong>$125&ndash;$145 B</strong>. SoftBank prepared to spin out a new AI-and-robotics company, <strong>Roze</strong>, targeting a <strong>$100 B U.S. IPO</strong> as soon as H2. On the open-research side, <strong>Moonshot AI</strong> open-sourced <strong>FlashKDA</strong>, a CUTLASS kernel for Kimi Delta Attention with a <strong>1.72&ndash;2.22&times; prefill speedup</strong>. And in developer tooling, <strong>GitHub Copilot CLI 1.0.40</strong> shipped on May 1 with a hard fix for the long-running 100% CPU hang on large attachments.
+  </div>
+
+  <h2>Defense, Policy &amp; Geopolitics</h2>
+
+  <article>
+    <h3><span class="tag">DoW</span>Pentagon clears eight AI vendors for IL6/IL7 classified networks &mdash; Anthropic shut out</h3>
+    <div class="byline">1 May 2026 &middot; Primary source: U.S. Department of War press release</div>
+    <p>
+      The <strong>U.S. Department of War</strong> announced contract awards to <strong>Amazon Web Services, Google, Microsoft, NVIDIA, OpenAI, SpaceX, and Reflection</strong> for deployment of frontier AI on networks classified at <strong>Impact Level 6 (Secret)</strong> and <strong>Impact Level 7 (Top Secret)</strong>. <strong>Oracle was added to the list within hours</strong>, bringing the count to eight. Models will be served through the Department's <strong>GenAI.mil</strong> central platform and used for data synthesis, intelligence analysis, mission planning, and decision support. CDAO chief <strong>Doug Matty</strong> framed the package as a deliberate "no vendor lock-in" architecture for the Joint Force. Conspicuously absent: <strong>Anthropic</strong>, whose Claude is already running inside DoW via Palantir's Maven toolkit but which the administration designated a "supply-chain risk" earlier this year after Anthropic refused unrestricted use for autonomous weapons and domestic surveillance. Anthropic still holds a March preliminary injunction against the blacklisting; Pentagon CTO <strong>Michael Kratsios</strong> reiterated on the same day that the company remains barred regardless of separate Mythos-related discussions.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.war.gov/News/Releases/Release/Article/4475177/classified-networks-ai-agreements/">U.S. Department of War: Classified Networks AI Agreements</a> (primary)</li>
+      <li><a href="https://defensescoop.com/2026/05/01/dod-expands-classified-ai-work-with-8-companies-excluding-anthropic/">DefenseScoop: DOD expands classified AI work with 8 companies &mdash; excluding Anthropic</a></li>
+      <li><a href="https://breakingdefense.com/2026/05/pentagon-clears-7-tech-firms-to-deploy-their-ai-on-its-classified-networks/">Breaking Defense: Pentagon clears 8 tech firms for classified networks</a></li>
+      <li><a href="https://www.defenseone.com/business/2026/05/ai-pentagon-classified-networks/413268/">Defense One: 7 AI firms cleared to provide tools for classified Pentagon networks</a></li>
+      <li><a href="https://www.defensenews.com/news/pentagon-congress/2026/05/01/pentagon-freezes-out-anthropic-as-it-signs-deals-with-ai-rivals/">Defense News: Pentagon freezes out Anthropic as it signs deals with AI rivals</a></li>
+      <li><a href="https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic">CNN Business: Pentagon strikes deals with 7 Big Tech companies after shunning Anthropic</a></li>
+      <li><a href="https://www.cnbc.com/2026/05/01/pentagon-anthropic-blacklist-mythos-michael.html">CNBC: Pentagon CTO says Anthropic is still blacklisted, but Mythos is a separate issue</a></li>
+      <li><a href="https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/">TechCrunch: Pentagon inks deals with Nvidia, Microsoft and AWS</a></li>
+      <li><a href="https://www.theregister.com/2026/05/01/mythos_complicates_anthropic_us_gov_breakup/">The Register: Mythos complicates Anthropic&ndash;US gov breakup</a></li>
+    </ul>
+  </article>
+
+  <h2>Markets &amp; Capital</h2>
+
+  <article>
+    <h3><span class="tag">Big Tech</span>"Magnificent" earnings push hyperscaler 2026 AI capex to $725 B &mdash; up 77% YoY</h3>
+    <div class="byline">29&ndash;30 April 2026 &middot; Primary source: company filings</div>
+    <p>
+      The post-close earnings rush from <strong>Microsoft, Alphabet, Meta, and Amazon</strong> (April 29) and <strong>Apple</strong> (April 30) materially reset the AI capex baseline for the year. <strong>Microsoft</strong> reported FY-Q3 revenue of <strong>$82.89 B</strong> (+18% YoY), an AI run-rate of <strong>$37 B</strong> (+123% YoY), and lifted full-year capex to <strong>~$190 B</strong> &mdash; explicitly attributing <strong>$25 B of that</strong> to higher memory and chip pricing. <strong>Alphabet</strong> printed <strong>$109.9 B</strong> in revenue, with Google Cloud at <strong>$20 B</strong>, and guided to <strong>$180&ndash;$190 B</strong> capex. <strong>Meta</strong> raised its 2026 capex band to <strong>$125&ndash;$145 B</strong> (from $115&ndash;$135 B) &mdash; sending the stock down ~7% after-hours despite a 33% revenue print of <strong>$56.3 B</strong>. <strong>Amazon</strong> stuck with its January <strong>~$200 B</strong> guide on the back of $181.5 B Q1 net sales (+17%). The combined hyperscaler 2026 commitment now sits at <strong>~$725 B</strong>, up <strong>77% from $410 B in 2025</strong> &mdash; a bigger annual capex line than the GDP of Switzerland. Component scarcity (memory in particular) was repeatedly singled out as a multi-billion-dollar driver, not just compute build-out.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.microsoft.com/en-us/Investor/earnings/FY-2026-Q3/press-release-webcast">Microsoft Investor Relations: FY26 Q3 results</a> (primary)</li>
+      <li><a href="https://abc.xyz/investor/news/2026/q1-earnings/">Alphabet Investor Relations: Q1 2026 results</a> (primary)</li>
+      <li><a href="https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/default.aspx">Meta Investor Relations: Q1 2026 results</a> (primary)</li>
+      <li><a href="https://www.aboutamazon.com/news/company-news/amazon-q1-2026-earnings">Amazon: Q1 2026 earnings</a> (primary)</li>
+      <li><a href="https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion">Tom's Hardware: Big Tech 2026 capex hits $725 B, up 77%</a></li>
+      <li><a href="https://finance.yahoo.com/markets/article/magnificent-7-earnings-rush-reveals-ai-spending-surge-with-hyperscaler-capex-set-to-reach-725-billion-in-2026-224901707.html">Yahoo Finance: Magnificent 7 earnings rush reveals AI spending surge</a></li>
+      <li><a href="https://fortune.com/2026/04/29/meta-zuckerberg-145-billion-ai-spending-roi/">Fortune: Meta bumps 2026 capex to as much as $145 B; investors flinch</a></li>
+      <li><a href="https://www.cnbc.com/2026/04/29/meta-q1-earnings-report-2026.html">CNBC: Meta Q1 2026 earnings report</a></li>
+      <li><a href="https://www.tomshardware.com/tech-industry/big-tech/microsoft-attributed-25-billion-of-its-record-ai-budget-to-memory-chip-costs">Tom's Hardware: Microsoft attributes $25 B of AI budget to memory and chip costs</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">SoftBank</span>"Roze" AI-robotics spinout eyes $100 B U.S. IPO to build data centers with autonomous robots</h3>
+    <div class="byline">29&ndash;30 April 2026 &middot; Primary source: Financial Times (via CNBC, TechCrunch)</div>
+    <p>
+      <strong>Masayoshi Son</strong> is preparing to spin out a new AI-and-robotics company, <strong>Roze</strong>, that will deploy <strong>autonomous robots to construct U.S. AI data centers</strong>. Per the Financial Times, the entity is targeting a <strong>~$100 B valuation</strong> in a U.S. listing as soon as the <strong>second half of 2026</strong>. Roze is expected to bundle SoftBank's energy, land, and infrastructure assets with the <strong>ABB Robotics</strong> business it agreed to acquire last year, and to host a Texas-data-center analyst day in July ahead of an IPO filing prepared by KPMG. If the valuation holds, Roze would be one of the largest AI-adjacent IPOs ever and a direct play on the very capacity-build crunch driving Microsoft's $25 B memory line. Internal skeptics at SoftBank warn the timeline is aggressive.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.ft.com/content/softbank-roze-ai-robotics-ipo-100-billion">Financial Times: SoftBank weighs $100 B IPO for new Roze AI-robotics venture</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/04/30/softbank-roze-ai-robotics-ipo-100-billion-ft-report.html">CNBC: SoftBank weighs $100 B valuation for AI-robotics spinout in U.S. IPO</a></li>
+      <li><a href="https://techcrunch.com/2026/04/29/softbank-is-creating-a-robotics-company-that-builds-data-centers-and-already-eyeing-a-100b-ipo/">TechCrunch: SoftBank creates a robotics company that builds data centers</a></li>
+      <li><a href="https://www.benzinga.com/markets/ipos/26/04/52168304/softbank-eyes-2026-ipo-for-new-ai-robotics-venture-targets-up-to-100-billion-valuation-report">Benzinga: SoftBank eyes 2026 IPO for AI-robotics venture at up to $100 B</a></li>
+      <li><a href="https://techstartups.com/2026/04/30/softbank-targets-100b-u-s-ipo-for-ai-and-robotics-startup-roze/">Tech Startups: SoftBank targets $100 B U.S. IPO for Roze</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Netomi</span>$110 M Series C lands as Accenture takes a strategic position in customer-experience agents</h3>
+    <div class="byline">30 April 2026 &middot; Primary source: Netomi / Accenture press release</div>
+    <p>
+      <strong>Netomi</strong> closed a <strong>$110 M Series C</strong> led by <strong>Accenture Ventures</strong>, with <strong>Adobe Ventures, WndrCo, NAVER Ventures, SLW, Metis Strategy, and Fin Capital</strong> participating, and <strong>Jeffrey Katzenberg</strong> joining the board. Netomi's agentic-CX platform already runs production support for <strong>United Airlines, Delta, Paramount, and DraftKings</strong>; alongside the round, Accenture and Netomi announced a strategic services partnership to roll the platform into Accenture's CX practice. The check is part of a broader pattern this week of late-stage capital flowing toward <em>vertical, deployed</em> agent products (Avoca last week, Netomi this week) rather than research-stage labs &mdash; a notable contrast to the Q1 record concentrated in OpenAI, Anthropic, xAI, and Waymo.
+    </p>
+    <ul class="sources">
+      <li><a href="https://newsroom.accenture.com/news/2026/accenture-invests-in-netomi-to-accelerate-enterprise-adoption-of-agentic-ai-for-customer-experience">Accenture Newsroom: Accenture invests in Netomi for agentic CX</a> (primary)</li>
+      <li><a href="https://www.netomi.com/press/netomi-raises-110-million-series-c">Netomi: Series C announcement</a> (primary)</li>
+      <li><a href="https://money.usnews.com/investing/news/articles/2026-04-30/ai-customer-service-startup-netomi-raises-110-million">U.S. News (Reuters): AI customer-service startup Netomi raises $110 M</a></li>
+      <li><a href="https://www.gurufocus.com/news/8831859/netomi-secures-110-million-in-series-c-funding-to-enhance-ai-customer-service">GuruFocus: Netomi secures $110 M Series C</a></li>
+      <li><a href="https://www.devx.com/daily-news/netomi-secures-110-million-series-c/">DevX: Netomi secures $110 M Series C</a></li>
+    </ul>
+  </article>
+
+  <h2>Open Research &amp; Model Engineering</h2>
+
+  <article>
+    <h3><span class="tag">Moonshot AI</span>FlashKDA open-sourced: 1.72&ndash;2.22&times; prefill speedup for Kimi Delta Attention</h3>
+    <div class="byline">30 April 2026 &middot; Primary source: MoonshotAI / FlashKDA GitHub</div>
+    <p>
+      <strong>Moonshot AI</strong> open-sourced <strong>FlashKDA</strong>, a high-performance <strong>CUTLASS</strong> kernel implementation of <em>Kimi Delta Attention</em> &mdash; the linear-attention mechanism behind <strong>Kimi Linear</strong> (48 B total / 3 B active hybrid model). FlashKDA delivers <strong>1.72&times;&ndash;2.22&times; prefill speedup</strong> over the <code>flash-linear-attention</code> baseline on NVIDIA <strong>H20</strong> GPUs and supports variable-length batching, fixed head dim K=V=128, SM90+ hardware, CUDA 12.9+, and PyTorch 2.4+. Crucially, it is <em>auto-dispatched from <code>flash-linear-attention</code>'s <code>chunk_kda</code></em>, so projects already on FLA pick up the speedup with no code change. The release further hardens Moonshot's open-weights / open-kernel posture in the wake of last week's <strong>Kimi K2.6</strong> long-horizon agent release.
+    </p>
+    <ul class="sources">
+      <li><a href="https://github.com/MoonshotAI/FlashKDA">GitHub: MoonshotAI/FlashKDA repository</a> (primary)</li>
+      <li><a href="https://x.com/Kimi_Moonshot/status/2046607915424034839">@Kimi_Moonshot on X: announcement &amp; benchmarks</a> (primary)</li>
+      <li><a href="https://www.marktechpost.com/2026/04/30/moonshot-ai-open-sources-flashkda-cutlass-kernels-for-kimi-delta-attention-with-variable-length-batching-and-h20-benchmarks/">MarkTechPost: Moonshot AI open-sources FlashKDA &mdash; CUTLASS kernels with H20 benchmarks</a></li>
+      <li><a href="https://www.digitalocean.com/community/tutorials/kimi-linear-moonshot-ai">DigitalOcean: Designing hardware-aware algorithms with Kimi Linear / KDA</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Tooling</h2>
+
+  <article>
+    <h3><span class="tag">GitHub</span>Copilot CLI 1.0.40 ships with the long-awaited large-attachment CPU-hang fix</h3>
+    <div class="byline">1 May 2026 &middot; Primary source: GitHub Releases</div>
+    <p>
+      <strong>GitHub Copilot CLI v1.0.40</strong> shipped today across Windows, macOS, and Linux. The headline change for everyday users is a hard fix for the bug where the CLI would peg at <strong>100% CPU on large file attachments</strong>; alongside it, assistant-response streaming is smoother, startup is faster (asynchronous certificate loading), and slash-command suggestions now rank prefix matches above fuzzy matches. For agent builders, the release adds <strong><code>client_credentials</code> OAuth grant support for MCP servers</strong>, lifts the <code>/research</code> command onto an orchestrator/sub-agent model, exposes <strong>Skills as ACP slash commands</strong>, and ships a live plan display for ACP clients during multi-step tasks. <strong>Autopilot</strong> mode now defaults to a 5-message continuation cap. The release lands the same week GitHub confirmed that <strong>Copilot Code Review</strong> will start <strong>consuming GitHub Actions minutes on June 1</strong> as part of the broader move to usage-based billing.
+    </p>
+    <ul class="sources">
+      <li><a href="https://github.com/github/copilot-cli/releases/tag/v1.0.40">GitHub Releases: copilot-cli v1.0.40</a> (primary)</li>
+      <li><a href="https://github.com/github/copilot-cli/releases">GitHub Releases: copilot-cli (release index)</a> (primary)</li>
+      <li><a href="https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/">GitHub Changelog: Copilot Code Review will consume Actions minutes from 1 June 2026</a> (primary)</li>
+      <li><a href="https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/">GitHub Blog: Copilot is moving to usage-based billing</a> (primary)</li>
+    </ul>
+  </article>
+
+  <h2>Industry &amp; Workforce Signals</h2>
+
+  <article>
+    <h3><span class="tag">Layoffs</span>April closes with ~40 K tech-sector cuts; Oracle (-30 K), Meta (-8 K), Microsoft buyouts &mdash; AI-driven restructuring intensifies</h3>
+    <div class="byline">26&ndash;30 April 2026 &middot; Primary source: company memos / Layoffs.fyi</div>
+    <p>
+      April closed as one of the heaviest layoff months on record, with roughly <strong>40,000</strong> tech-sector positions cut in a single month and <strong>~100,000 across the year-to-date</strong>. <strong>Oracle</strong> alone confirmed approximately <strong>30,000 layoffs</strong> (with reports of more than <strong>12,000 in India</strong>); <strong>Meta</strong> told staff it would cut about <strong>8,000 roles</strong> (~10% of its workforce) <em>and</em> withdraw <strong>6,000 open requisitions</strong>, with Mark Zuckerberg explicitly framing the cuts as financing AI infrastructure spend; <strong>Microsoft</strong> opened a <strong>voluntary buyout</strong> aimed at up to <strong>~7%</strong> of its U.S. workforce by end of June. The pattern dovetails with the $725 B capex print: the same companies are <em>simultaneously</em> hiring AI specialists at record rates and shedding mid-career generalists &mdash; a clear signal that the "AI tax" on operating expense is now being booked against headcount, not just revenue.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.tomshardware.com/tech-industry/big-tech/mark-zuckerberg-says-meta-is-cutting-8000-jobs-to-pay-for-ai-infrastructure">Tom's Hardware: Zuckerberg says Meta is cutting 8,000 jobs to pay for AI infrastructure</a></li>
+      <li><a href="https://fortune.com/2026/04/26/why-did-microsoft-do-buyouts-layoffs-tech-workers/">Fortune: 90 K+ tech layoffs YTD; Microsoft offers voluntary buyouts instead</a></li>
+      <li><a href="https://www.businesstoday.in/technology/story/tech-layoffs-2026-nearly-40000-jobs-lost-in-april-amid-changing-ai-priorities-528282-2026-04-30">Business Today: ~40,000 tech jobs lost in April amid changing AI priorities</a></li>
+      <li><a href="https://247wallst.com/investing/2026/04/30/the-latest-tech-layoffs-look-less-cyclical-and-more-like-the-first-wave-of-ai%E2%80%91driven-efficiency/">24/7 Wall St: Latest tech layoffs look less cyclical, more AI-driven efficiency</a></li>
+      <li><a href="https://www.fastcompany.com/91532016/tech-mass-layoffs-tracker-april-2026-meta-nike-list-of-job-slashers"
+        >Fast Company: Tech mass-layoffs tracker &mdash; April 2026</a></li>
+      <li><a href="https://www.trueup.io/layoffs">TrueUp Layoffs Tracker</a> (primary aggregator)</li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This 2 May edition is scoped to ~24&ndash;48 hour signals from 30 April&ndash;2 May 2026, with the Big-Tech earnings story extended back to 29 April because the consolidated $725 B figure was only fully confirmed once Apple's 30 April call closed. It is deliberately non-overlapping with the prior 17 April (Opus 4.7, GPT-5.4-Cyber, NVIDIA Ising, Stanford AI Index 2026, Chrome AI Mode, Copilot CLI remote, EU AI Act countdown, Pentagon&ndash;Gemini), 19 April (Beijing humanoid half-marathon, GPT-Rosalind, Claude Design, Cloudflare Agent Memory, Tesla AI5, Anthropic 3.5 GW TPU, Crunchbase Q1), and 28 April (IBM Bob, GitHub App-token format change, Ineffable Intelligence, DeepSeek V4-Pro pricing, NDRC blocking Meta&ndash;Manus, DeepMind Seoul K-Moonshot, Anthropic Sydney, Avoca) editions. Primary sources flagged inline include the U.S. Department of War press release, company investor-relations pages (Microsoft, Alphabet, Meta, Amazon), Accenture Newsroom, MoonshotAI's GitHub repo and X account, GitHub's release page and changelog, and the Financial Times. Stories sourced primarily from secondary outlets were corroborated with at least three additional outlets per the digest's quality bar.</p>
+    <p>Generated 2 May 2026.</p>
+  </footer>
+</body>
+</html>
