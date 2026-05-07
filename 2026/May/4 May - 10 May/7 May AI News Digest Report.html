@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 7 May 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 7 May 2026</h1>
+    <div class="meta">Week of 4 May&ndash;10 May 2026 &middot; Coverage window: last ~48 hours</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> OpenAI flipped the default ChatGPT brain to <strong>GPT-5.5 Instant</strong>, citing a 52.5% drop in hallucinations on high-stakes prompts. <em>The Information</em> reported Anthropic has committed <strong>$200 B over five years</strong> to Google for cloud and TPU capacity &mdash; a deal large enough to constitute roughly 40% of Alphabet's disclosed revenue backlog. The U.S. Commerce Department's <strong>CAISI</strong> signed pre-deployment evaluation agreements with Google DeepMind, Microsoft and xAI, formally extending the OpenAI / Anthropic 2024 framework to the rest of the frontier. In London, <strong>DeepMind UK staff voted 98% to unionize</strong> over Google's Pentagon contract &mdash; what the unions are calling the world's first frontier-AI lab union. Capital kept flowing into agentic SWE: <strong>Sierra</strong> ($950 M / $15.8 B), <strong>Blitzy</strong> ($200 M / $1.4 B), and <strong>CopilotKit</strong> ($27 M Series A) all closed inside the same 36-hour window, while Anthropic shipped 10 finance-vertical agent templates and Microsoft 365 add-ins for Claude.
+  </div>
+
+  <h2>Frontier Models &amp; Safety</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>GPT-5.5 Instant becomes the new default ChatGPT model</h3>
+    <div class="byline">5 May 2026 &middot; Primary source: OpenAI</div>
+    <p>
+      OpenAI began rolling out <strong>GPT-5.5 Instant</strong> as the new default model in ChatGPT, retiring GPT-5.3 Instant. According to OpenAI's own evaluations, the new model produces <strong>52.5% fewer hallucinated claims</strong> than 5.3 Instant on high-stakes prompts in medicine, law, and finance, and <strong>37.3% fewer inaccurate claims</strong> on user-flagged challenging conversations. It is also more concise &mdash; ~30% fewer words and ~29% fewer lines per response &mdash; and gains the ability to reach back into past conversations, files, and Gmail (Plus / Pro web users first) for personalized answers. Developers get it via the API as <code>chat-latest</code>; GPT-5.3 remains available to paying API users for a three-month deprecation window. The release lands roughly two weeks after GPT-5.5 (the reasoning sibling) shipped on 23 April.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/introducing-gpt-5-5/">OpenAI: Introducing GPT-5.5</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/">TechCrunch: OpenAI releases GPT-5.5 Instant as the new default for ChatGPT</a></li>
+      <li><a href="https://www.axios.com/2026/05/05/openai-chatgpt-update-default-model">Axios: OpenAI updates ChatGPT Instant with GPT-5.5</a></li>
+      <li><a href="https://9to5mac.com/2026/05/05/gpt-5-5-instant-makes-chatgpt-more-accurate-while-nixing-gratuitous-emojis/">9to5Mac: GPT-5.5 Instant makes ChatGPT more accurate with fewer emojis</a></li>
+      <li><a href="https://www.eweek.com/news/openai-gpt-55-instant-chatgpt-default-model/">eWeek: OpenAI unveils GPT-5.5 Instant as ChatGPT's new default model</a></li>
+      <li><a href="https://theaiinsider.tech/2026/05/06/openai-launches-gpt-5-5-instant-as-default-chatgpt-model-with-reduced-hallucinations-and-deeper-memory/">The AI Insider: GPT-5.5 Instant ships with deeper memory</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Government</span>CAISI signs frontier-AI national-security testing agreements with Google DeepMind, Microsoft &amp; xAI</h3>
+    <div class="byline">5 May 2026 &middot; Primary source: NIST / CAISI</div>
+    <p>
+      The Commerce Department's <strong>Center for AI Standards and Innovation (CAISI)</strong>, housed at NIST, signed memoranda with <strong>Google DeepMind, Microsoft, and xAI</strong> covering <strong>pre-deployment evaluations</strong> and targeted national-security research on frontier models &mdash; including the ability for evaluations to run inside <em>classified</em> environments. CAISI says it has now completed more than 40 such evaluations to date, including on state-of-the-art models that remain unreleased. The new agreements extend the framework that CAISI's predecessor signed with OpenAI and Anthropic in 2024 to effectively the entire U.S. frontier-model field, and slot into the Trump administration's broader push to put AI oversight under Commerce rather than the EU-style independent regulator.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.nist.gov/news-events/news/2026/05/caisi-signs-agreements-regarding-frontier-ai-national-security-testing">NIST: CAISI signs agreements regarding frontier AI national-security testing</a> (primary)</li>
+      <li><a href="https://www.cnn.com/2026/05/05/tech/microsoft-google-xai-government-test-ai-models">CNN Business: Microsoft, Google and xAI will let the government test their AI models before launch</a></li>
+      <li><a href="https://www.cnbc.com/2026/05/05/ai-oversight-trump-google-microsoft-xai.html">CNBC: Trump admin moves further into AI oversight, will test Google, Microsoft and xAI models</a></li>
+      <li><a href="https://www.nextgov.com/artificial-intelligence/2026/05/commerce-ai-center-will-evaluate-google-deepmind-microsoft-and-xai-models/413349/">Nextgov/FCW: Commerce AI center will evaluate DeepMind, Microsoft and xAI models</a></li>
+      <li><a href="https://thehill.com/homenews/5863937-google-microsoft-xai-ai-testing/">The Hill: Microsoft, Google, xAI giving government early access to AI models for review</a></li>
+    </ul>
+  </article>
+
+  <h2>Compute &amp; Capital</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Reported $200 B, five-year commitment to Google Cloud and TPUs</h3>
+    <div class="byline">5&ndash;6 May 2026 &middot; Primary source: The Information</div>
+    <p>
+      <em>The Information</em> reported that <strong>Anthropic has committed to spend $200 billion with Google Cloud over five years</strong>, with multi-gigawatt access to TPUs (the underlying capacity dovetails with the 3.5 GW Anthropic / Google / Broadcom TPU expansion announced in early April). Analysts at CNBC pegged the commitment at roughly <strong>40% of Alphabet's recently disclosed revenue backlog</strong>, and noted that Anthropic and OpenAI together are now driving an estimated <strong>~$2 T revenue backlog</strong> across the three U.S. hyperscalers. Both Anthropic and Google declined to formally confirm the figure on the record. Concentration risk worth flagging: Google has already invested up to $40 B into Anthropic, so a meaningful share of these dollars is effectively Alphabet recycling its own equity exposure into compute revenue.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.theinformation.com/articles/anthropic-commits-spending-200-billion-googles-cloud-chips">The Information: Anthropic commits to spending $200 B on Google's cloud and chips</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/video/2026/05/05/anthropic-commits-to-spending-200-billion-on-googles-cloud-and-chips-according-to-the-information.html">CNBC: Anthropic's reported $200 B Google Cloud deal could make up 40% of Alphabet's backlog</a></li>
+      <li><a href="https://www.engadget.com/2165585/anthropic-reportedly-agrees-to-pay-google-200-billion-for-chips-and-cloud-access/">Engadget: Anthropic reportedly agrees to pay Google $200 B for chips and cloud access</a></li>
+      <li><a href="https://www.usnews.com/news/top-news/articles/2026-05-05/anthropic-commits-to-spending-200-billion-on-googles-cloud-and-chips-the-information-reports">U.S. News / Reuters wire: Anthropic commits to spending $200 B on Google's cloud and chips</a></li>
+      <li><a href="https://dailytechnewsshow.com/2026/05/06/anthropic-commits-200-billion-to-google-for-cloud-and-chip-access-dth/">DTNS: Anthropic commits $200 B to Google for cloud and chip access</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Sierra</span>Bret Taylor's Sierra raises $950 M at a $15.8 B post-money</h3>
+    <div class="byline">4&ndash;5 May 2026 &middot; Primary source: Bret Taylor / Sierra</div>
+    <p>
+      <strong>Sierra</strong>, the AI customer-experience agent platform co-founded by OpenAI board chair Bret Taylor and former Google exec Clay Bavor, closed a <strong>$950 M round</strong> led by <strong>Tiger Global and GV</strong>, with Benchmark, Sequoia, and Greenoaks following on. Post-money is <strong>~$15.8 B</strong>, up from $10 B in fall 2025. Sierra disclosed <strong>$150 M ARR</strong> as of early February (vs $100 M in late November) and claims more than 40% of the Fortune 50 as customers, with a workload spanning insurance claims, mortgage refinancing, returns, and NGO fundraising. The round is the cleanest pure-play datapoint to date that customer-service voice / chat agents are crossing into enterprise standardization &mdash; and lands the same week Anthropic dropped its own ten finance-services agent templates (see below).
+    </p>
+    <ul class="sources">
+      <li><a href="https://x.com/btaylor/status/2051313954312331411">@btaylor on X: Sierra is raising $950 M at $15 B+ valuation</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/">TechCrunch: Sierra raises $950 M as the race to own enterprise AI gets serious</a></li>
+      <li><a href="https://www.cnbc.com/2026/05/04/bret-taylor-sierra-fundraise-openai.html">CNBC: Bret Taylor's Sierra raises nearly $1 B in latest AI capital push</a></li>
+      <li><a href="https://techstartups.com/2026/05/04/bret-taylors-ai-startup-sierra-raises-950m-at-15-8b-valuation-as-demand-for-ai-agents-surges/">Tech Startups: Sierra raises $950 M at $15.8 B valuation</a></li>
+    </ul>
+  </article>
+
+  <h2>Agentic Software Engineering</h2>
+
+  <article>
+    <h3><span class="tag">Blitzy</span>Autonomous SDLC startup raises $200 M Series A at $1.4 B; tops SWE-Bench Pro at 66.5%</h3>
+    <div class="byline">5 May 2026 &middot; Primary source: Blitzy / Business Wire</div>
+    <p>
+      Boston-based <strong>Blitzy</strong> closed a <strong>$200 M Series A</strong> at a <strong>$1.4 B valuation</strong>, led by <strong>Northzone</strong> with PSG, Battery Ventures, Jump Capital, Morgan Creek Digital, and Defiant joining alongside existing investors (Flybridge, Link Ventures, NFX, Picus, Venture Guides) and corporate strategics (<strong>Liberty Mutual Strategic Ventures, Erie Strategic Ventures, BAL Ventures</strong>). The pitch is <em>autonomous</em> &mdash; not assistive &mdash; software development for Global 2000 enterprises, completing what the company says are months of engineering work in days, with built-in test generation and quality gates. Blitzy reports a record <strong>66.5% on SWE-Bench Pro</strong>, ahead of the public scores from Cursor, Codex, and Claude Code on the same harness. Founders are CEO Brian Elliott (ex-Wove, ex-Army Ranger) and CTO Sid Pardeshi (ex-NVIDIA).
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.businesswire.com/news/home/20260505342338/en/Blitzy-Raises-$200-Million-at-$1.4-Billion-Valuation-to-Advance-Autonomous-Software-Development-for-the-Enterprise">Business Wire: Blitzy raises $200 M at $1.4 B valuation</a> (primary)</li>
+      <li><a href="https://news.crunchbase.com/ai/blitzy-funding-valuation-autonomous-software-development-vibe-coding-startups/">Crunchbase News: Blitzy raises $200 M at $1.4 B for autonomous software development</a></li>
+      <li><a href="https://siliconangle.com/2026/05/05/blitzy-raises-200m-1-4b-valuation-deploy-thousands-coding-agents-parallel/">SiliconANGLE: Blitzy raises $200 M to deploy thousands of coding agents in parallel</a></li>
+      <li><a href="https://ventureburn.com/blitzy-raises-200m-to-advance-autonomous-software-development/">VentureBurn: Blitzy raises $200 M to advance autonomous software development</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">CopilotKit</span>$27 M Series A for AG-UI &mdash; the &ldquo;agents-inside-apps&rdquo; protocol</h3>
+    <div class="byline">5 May 2026 &middot; Primary source: CopilotKit</div>
+    <p>
+      Seattle-based <strong>CopilotKit</strong> announced a <strong>$27 M Series A</strong> ($20 M new + $7 M previously unannounced seed) led by <strong>Glilot Capital, NFX, and SignalFire</strong>. The interesting bet is the <strong>AG-UI</strong> (Agent-User Interaction) protocol &mdash; a third pillar alongside Anthropic's <strong>MCP</strong> (model-to-context) and Google's <strong>A2A</strong> (agent-to-agent) standards &mdash; that lets agents take actions and render UI <em>inside</em> existing apps instead of in a separate chatbox. The company reports millions of installs per week and production deployment at <strong>Deutsche Telekom, Docusign, Cisco, and S&amp;P Global</strong>, alongside the launch of a self-hostable <strong>CopilotKit Enterprise Intelligence</strong> bundle. Notable for builders: AG-UI is a credible candidate to become the user-interaction layer of the agent stack, the way MCP has become the data layer.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.copilotkit.ai/blog/series-a">CopilotKit: We've raised our Series A</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/05/05/copilotkit-raises-27m-to-help-devs-deploy-app-native-ai-agents/">TechCrunch: CopilotKit raises $27 M to help devs deploy app-native AI agents</a></li>
+      <li><a href="https://www.geekwire.com/2026/seattles-copilotkit-raises-27m-as-some-of-the-biggest-names-in-tech-adopt-its-ai-agent-protocol/">GeekWire: Seattle's CopilotKit raises $27 M as biggest names in tech adopt its AI agent protocol</a></li>
+      <li><a href="https://theaiinsider.tech/2026/05/06/copilotkit-secures-27m-series-a-to-embed-ai-agents-directly-into-enterprise-apps/">The AI Insider: CopilotKit secures $27 M Series A</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Ten finance-vertical Claude agent templates plus Microsoft 365 add-ins</h3>
+    <div class="byline">5 May 2026 &middot; Primary source: Anthropic</div>
+    <p>
+      Anthropic published <strong>ten ready-to-run Claude agent templates</strong> targeted at the most time-consuming work on Wall Street and in insurance: <em>pitch builder, meeting preparer, earnings reviewer, model builder, market researcher, valuation reviewer, GL reconciler, month-end closer, statement auditor,</em> and <em>KYC screener</em>. Each ships as a plugin in <strong>Claude Cowork</strong> and <strong>Claude Code</strong>, plus a cookbook for <strong>Managed Agents</strong>. Alongside the templates, Anthropic also turned on <strong>Claude add-ins for Microsoft 365</strong> (Excel, PowerPoint, Word; Outlook coming soon) so context carries across Office apps. New data connectors land for <strong>Dun &amp; Bradstreet, Fiscal AI, Financial Modeling Prep, Guidepoint, IBISWorld, SS&amp;C IntraLinks, Third Bridge,</strong> and <strong>Verisk</strong>. The release reframes "Claude in finance" from a chat tool into a workflow primitive aimed squarely at Microsoft Copilot and OpenAI Workbench.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/news/finance-agents">Anthropic: Agents for financial services</a> (primary)</li>
+      <li><a href="https://www.anthropic.com/news/enterprise-ai-services-company">Anthropic: Building a new enterprise AI services company with Deloitte / KPMG / TIFIN partners</a> (primary)</li>
+      <li><a href="https://qz.com/anthropic-ai-agents-financial-services-banks-insurers-050526">Quartz: Anthropic launches 10 AI agents targeting Wall Street banks and insurers</a></li>
+      <li><a href="https://seekingalpha.com/news/4585757-anthropic-unveils-10-agent-templates-for-financial-services">Seeking Alpha: Anthropic unveils 10 agent templates for financial services</a></li>
+      <li><a href="https://www.finextra.com/newsarticle/47704/anthropic-rolls-out-another-10-financial-services-agents">Finextra: Anthropic rolls out another 10 financial services agents</a></li>
+      <li><a href="https://programbusiness.com/news/anthropic-launches-financial-services-agent-templates-expands-insurance-data-access/">ProgramBusiness: Anthropic launches financial services agent templates, expands insurance data access</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Workforce &amp; Policy</h2>
+
+  <article>
+    <h3><span class="tag">Google DeepMind</span>UK staff vote 98% to unionize over Pentagon AI deal &mdash; first frontier-AI lab union</h3>
+    <div class="byline">5&ndash;6 May 2026 &middot; Primary source: CWU / Unite the Union</div>
+    <p>
+      Roughly <strong>1,000 Google DeepMind employees in London</strong> voted by an internal poll &mdash; <strong>98% in favor</strong> &mdash; to unionize jointly with the <strong>Communication Workers Union (CWU)</strong> and <strong>Unite the Union</strong>. The unions are framing this as the <em>world's first union at a frontier-AI lab</em>. Stated grievances center on Google's Pentagon contract signed the prior Friday (1 May, the same agreement that excluded Anthropic from seven companion vendor awards) and Google's earlier decision to drop its public pledge against weapons-related AI. Workers gave management <strong>10 working days</strong> to voluntarily recognize the unions or agree to mediated negotiations before triggering a formal statutory recognition process. Demands include <strong>reinstating the no-weapons / no-mass-surveillance pledge</strong>, an <strong>independent ethics oversight body</strong>, and an <strong>individual right to refuse work on moral grounds</strong>. Workers have separately threatened "research strikes" that would touch core Gemini products.
+    </p>
+    <ul class="sources">
+      <li><a href="https://fortune.com/2026/05/05/google-deepmind-unionize-vote-military-ai-contracts-internal-backlash-pentagon-deal-israeli-defense-forces/">Fortune: Google DeepMind workers in the U.K. vote to unionize over military AI contracts</a></li>
+      <li><a href="https://www.thenationalnews.com/news/uk/2026/05/05/google-workers-demand-union-recognition-over-ai-for-israeli-military/">The National: Google workers demand union recognition over AI for military contracts</a></li>
+      <li><a href="https://www.researchprofessionalnews.com/rr-news-uk-innovation-2026-4-google-deepmind-workers-threaten-research-strikes/">Research Professional News: Google DeepMind workers threaten research strikes</a></li>
+      <li><a href="https://www.aicerts.ai/news/deepminds-historic-ai-labor-union-vote-reshapes-tech-governance/">AI CERTs: DeepMind's historic AI labor union vote reshapes tech governance</a></li>
+      <li><a href="https://www.resultsense.com/news/2026-05-06-deepmind-uk-workers-unionise-pentagon/">ResultSense: Google DeepMind UK staff unionise over Pentagon AI deal</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Infrastructure</h2>
+
+  <article>
+    <h3><span class="tag">Hugging Face</span>huggingface_hub 1.14.0 ships</h3>
+    <div class="byline">6 May 2026 &middot; Primary source: PyPI / Hugging Face</div>
+    <p>
+      Hugging Face cut <strong>huggingface_hub 1.14.0</strong> on PyPI &mdash; the dot-release that follows the 1.11.0 ("agent-trace upload + HF Buckets") drop covered in the 17 April digest. The new version is the canonical client for downloading and publishing models, datasets, and Spaces, and is a hard dependency for the rest of the HF ecosystem (Transformers, Diffusers, Datasets, Spaces SDK). Pin checks worth running today: any agent-trace tooling that hard-codes the 1.11 schema, plus internal CI that pins a specific minor of <code>huggingface_hub</code>. A pre-release <code>1.14.0rc0</code> shipped the same day &mdash; useful as a dev-channel pin if you want to track the next minor without floating to <code>main</code>.
+    </p>
+    <ul class="sources">
+      <li><a href="https://pypi.org/project/huggingface-hub/">PyPI: huggingface_hub 1.14.0</a> (primary)</li>
+      <li><a href="https://github.com/huggingface/huggingface_hub/releases">GitHub: huggingface/huggingface_hub releases</a> (primary)</li>
+      <li><a href="https://anaconda.org/conda-forge/huggingface_hub">conda-forge: huggingface_hub package mirror</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This 7 May digest is scoped to ~48-hour signals from 5&ndash;7 May 2026 and is deliberately non-overlapping with the prior 17 April, 19 April, and 28 April editions (Mozilla Thunderbolt, huggingface_hub 1.11.0, OpenAI Agents SDK sandbox, Gemini CLI subagents, GitHub agent-skills CLI, IntelliJ IDEA 2026.1, Manycore Tech IPO, Roland Berger humanoid forecast, AI-chat privilege rulings, Beijing humanoid half-marathon, GPT-Rosalind, Claude Design / Opus 4.7, Cloudflare Agent Memory, Tesla AI5 tape-out, Anthropic 3.5 GW TPU deal, Q1 2026 venture-funding records, IBM Bob, GitHub installation-token format change, Ineffable Intelligence $1.1 B seed, DeepSeek V4-Pro pricing, China-blocking-Manus, K-Moonshot / DeepMind Seoul campus, Anthropic Sydney, Avoca). Primary sources (OpenAI, NIST/CAISI, Anthropic, Hugging Face / PyPI, Bret Taylor on X, CopilotKit, Business Wire / Blitzy) are flagged inline. Stories sourced primarily from non-public reporting (e.g. The Information's $200 B figure) were corroborated with at least three independent outlets per source-quality rules; the DeepMind-UK union vote was confirmed across CWU, Unite, and union-side reporting plus mainstream coverage.</p>
+    <p>Generated 7 May 2026.</p>
+  </footer>
+</body>
+</html>
