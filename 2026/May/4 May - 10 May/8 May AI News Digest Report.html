@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 8 May 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 8 May 2026</h1>
+    <div class="meta">Week of 4 May&ndash;10 May 2026 &middot; Coverage window: last ~24 hours (with selective look-back to 6 May where signals matured today)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The day's biggest signal was a coordinated push by U.S. and EU regulators to put guardrails on frontier AI &mdash; Brussels reached a political deal to <strong>simplify the AI Act</strong> and ban nudification apps, while NEC Director Kevin Hassett confirmed the White House is drafting an <strong>FDA-style executive order</strong> to vet new models before release. On the product side, <strong>OpenAI</strong> shipped a trio of realtime voice models (GPT-Realtime-2, -Translate, -Whisper) and quietly opened a less-restricted <strong>GPT-5.5-Cyber</strong> tier to vetted defenders, while <strong>xAI</strong> took Grok's Imagine Quality Mode to its public API. Compute kept arming up: <strong>NVIDIA committed up to $2.1 B to IREN</strong> for a 5 GW DSX-aligned buildout, and <strong>Anthropic doubled Claude Code rate limits</strong> after a deal for SpaceX's Colossus&nbsp;1 capacity. On the security side, <strong>GitHub disclosed three new Enterprise Server CVEs</strong> &mdash; one of them (CVE-2026-3854) reportedly the first critical RCE in a closed-source binary discovered with AI-augmented reverse engineering. And <strong>Zyphra's ZAYA1-8B</strong> &mdash; the first MoE pretrained end-to-end on AMD MI300X &mdash; arrived as the headline open-weight signal of the week.
+  </div>
+
+  <h2>Frontier Models &amp; Research</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>GPT-Realtime-2, -Translate, -Whisper: voice models that reason and translate as you speak</h3>
+    <div class="byline">7 May 2026 &middot; Primary source: OpenAI</div>
+    <p>
+      OpenAI announced a new generation of realtime audio models in the API: <strong>GPT-Realtime-2</strong> (the first voice model with <em>GPT-5-class reasoning</em>, 128k context), <strong>GPT-Realtime-Translate</strong> (live speech-to-speech across <strong>70+ input languages and 13 output languages</strong>), and <strong>GPT-Realtime-Whisper</strong> (streaming STT). Pricing is a step-down from the prior Realtime tier at <strong>$32/1M audio-input</strong> and <strong>$64/1M audio-output</strong> tokens for GPT-Realtime-2, <strong>$0.034/min</strong> for live translate, and <strong>$0.017/min</strong> for streaming whisper. Together they push voice apps from call-and-response toward agents that listen, reason, and take action mid-conversation &mdash; squarely targeting the same "ambient agent" envelope DeepMind, ElevenLabs, and Anthropic have been circling.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/">OpenAI: Advancing voice intelligence with new models in the API</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/05/07/openai-launches-new-voice-intelligence-features-in-its-api/">TechCrunch: OpenAI launches new voice intelligence features in its API</a></li>
+      <li><a href="https://9to5mac.com/2026/05/07/openai-has-new-voice-models-that-reason-translate-and-transcribe-as-you-speak/">9to5Mac: OpenAI has new voice models that reason, translate, and transcribe as you speak</a></li>
+      <li><a href="https://www.testingcatalog.com/openai-launches-new-realtime-voice-and-translation-ai-models/">TestingCatalog: OpenAI launches new realtime voice and translation AI models</a></li>
+      <li><a href="https://letsdatascience.com/news/openai-adds-gpt-realtime-2-voice-reasoning-and-live-translat-1e292544">Let's Data Science: OpenAI adds GPT-Realtime-2 voice reasoning and live translation</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Zyphra</span>ZAYA1-8B: first reasoning MoE pretrained end-to-end on AMD MI300X</h3>
+    <div class="byline">6 May 2026 &middot; Primary source: Zyphra</div>
+    <p>
+      Zyphra released <strong>ZAYA1-8B</strong>, an Apache-2.0 mixture-of-experts model with <strong>760M active / 8.4B total parameters</strong>, trained end-to-end on a <strong>1,024-GPU AMD MI300X cluster with Pensando Pollara interconnect</strong> &mdash; the first frontier-class MoE pretrained, midtrained, and SFT'd entirely on AMD silicon. On math and reasoning benchmarks it matches or beats open-weight models more than 14&times; its active size (Nemotron-3-Nano-30B-A3B, Mistral-Small-4-119B) and stays within reach of first-generation reasoning frontier models like DeepSeek-R1-0528 and Gemini 2.5 Pro. The release introduces <strong>Compressed Convolutional Attention (CCA)</strong>, an MLP-based expert router for routing stability, learned residual scaling, and <strong>Markovian RSA</strong> &mdash; a parallel-trace test-time compute method designed for unbounded reasoning at constant memory. Weights are on Hugging Face; an 80B follow-up is queued.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.zyphra.com/post/zaya1-8b">Zyphra: ZAYA1-8B &mdash; Frontier intelligence density, trained on AMD</a> (primary)</li>
+      <li><a href="https://www.prnewswire.com/news-releases/zyphra-releases-zaya1-8b-a-reasoning-model-trained-on-amd-and-optimized-for-maximum-intelligence-density-per-parameter-302764700.html">PR Newswire: Zyphra releases ZAYA1-8B, a reasoning model trained on AMD</a> (primary)</li>
+      <li><a href="https://venturebeat.com/technology/meet-zaya1-8b-a-super-efficient-open-reasoning-model-trained-on-amd-instinct-mi300-gpus">VentureBeat: Meet ZAYA1-8B, a super-efficient open reasoning model trained on AMD Instinct MI300 GPUs</a></li>
+      <li><a href="https://www.hpcwire.com/aiwire/2026/05/07/zyphra-releases-zaya1-8b-reasoning-model/">AIwire/HPCwire: Zyphra releases ZAYA1-8B reasoning model</a></li>
+      <li><a href="https://www.marktechpost.com/2026/05/06/zyphra-releases-zaya1-8b-a-reasoning-moe-trained-on-amd-hardware-that-punches-far-above-its-weight-class/">MarkTechPost: ZAYA1-8B punches far above its weight class</a></li>
+    </ul>
+  </article>
+
+  <h2>Cybersecurity &amp; AI Safety</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>GPT-5.5-Cyber: a less-guardrailed model for vetted cyber defenders</h3>
+    <div class="byline">7 May 2026 &middot; Primary source: OpenAI</div>
+    <p>
+      OpenAI opened a <strong>limited preview of GPT-5.5-Cyber</strong> &mdash; a tuned variant of GPT-5.5 with reduced guardrails &mdash; to teams cleared into the highest tier of its <strong>Trusted Access for Cyber</strong> program. Approved defenders can use the model for vulnerability discovery, patch validation, malware reverse-engineering, and red-team simulations that the public model refuses; classes of behavior tied to credential theft and offensive malware authoring remain blocked. The move is OpenAI's most explicit answer yet to <strong>Anthropic's Mythos</strong> (which earlier disclosed strong network-vulnerability discovery capability) and lands the same week the White House said it's drafting an FDA-style vetting executive order built around exactly that risk profile.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/">OpenAI: Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber</a> (primary)</li>
+      <li><a href="https://openai.com/index/scaling-trusted-access-for-cyber-defense/">OpenAI: Trusted access for the next era of cyber defense</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/05/07/openai-rolls-out-new-gpt-5point5-cyber-to-vetted-cybersecurity-teams.html">CNBC: OpenAI rolls out GPT-5.5-Cyber to vetted cybersecurity teams</a></li>
+      <li><a href="https://www.axios.com/2026/05/07/openai-gpt-55-cybersecurity-model">Axios: OpenAI makes GPT-5.5 more widely available to cyber defenders</a></li>
+      <li><a href="https://www.helpnetsecurity.com/2026/05/08/openai-gpt-5-5-cyber-model/">Help Net Security: OpenAI tunes GPT-5.5-Cyber for permissive security workflows</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">GitHub</span>Three new Enterprise Server CVEs &mdash; including the first critical RCE found with AI-assisted reverse engineering</h3>
+    <div class="byline">7 May 2026 &middot; Primary source: GitHub Advisories / Wiz Research</div>
+    <p>
+      GitHub disclosed two new <strong>GitHub Enterprise Server</strong> vulnerabilities on 7 May: <strong>CVE-2026-7541</strong>, an unauthenticated DoS via deeply nested JSON payloads on a public API endpoint, and <strong>CVE-2026-8106</strong>, a reflected HTML injection on the Management Console login page that could enable credential theft. They follow the higher-impact <strong>CVE-2026-3854</strong>, a critical RCE in GitHub's internal git infrastructure (affecting both GitHub.com and GHES) reported by Wiz Research: an injection flaw in GitHub's internal protocol let any authenticated user execute arbitrary commands on backend servers via a single <code>git push</code>. Wiz's writeup emphasises that the bug was uncovered through <strong>AI-augmented reverse engineering</strong> (notably IDA MCP) of closed-source binaries &mdash; a methodology that researchers and defenders are flagging as the start of a new wave of vulnerability discovery against compiled, proprietary code.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854">Wiz Research: GitHub RCE vulnerability CVE-2026-3854</a> (primary, discovery)</li>
+      <li><a href="https://github.com/advisories">GitHub Advisory Database</a> (primary)</li>
+      <li><a href="https://www.darkreading.com/application-security/reverse-engineering-ai-unearths-high-severity-github-bug">Dark Reading: Reverse engineering with AI unearths high-severity GitHub bug</a></li>
+      <li><a href="https://www.securityweek.com/critical-github-vulnerability-exposed-millions-of-repositories/">SecurityWeek: Critical GitHub vulnerability exposed millions of repositories</a></li>
+      <li><a href="https://thehackernews.com/2026/04/researchers-discover-critical-github.html">The Hacker News: Critical GitHub CVE-2026-3854 RCE flaw exploitable via single git push</a></li>
+      <li><a href="https://cybersecuritynews.com/github-com-and-enterprise-server-rce/">Cybersecurity News: Critical GitHub.com and Enterprise Server RCE</a></li>
+    </ul>
+  </article>
+
+  <h2>Compute &amp; Infrastructure</h2>
+
+  <article>
+    <h3><span class="tag">NVIDIA &times; IREN</span>Up to $2.1 B for a 5 GW DSX-aligned AI factory buildout</h3>
+    <div class="byline">7 May 2026 &middot; Primary source: NVIDIA Newsroom</div>
+    <p>
+      NVIDIA and Australia-listed <strong>IREN</strong> announced a strategic partnership covering deployment of <strong>up to 5 gigawatts of DSX-aligned AI infrastructure</strong> across IREN's global data-center pipeline. As part of the deal IREN issued NVIDIA a <strong>five-year right to purchase up to 30 million ordinary shares at $70</strong>, equating to up to <strong>$2.1 B of equity investment</strong> subject to regulatory approval. The flagship deployment will be IREN's <strong>2 GW Sweetwater (Texas) campus</strong>, positioned as the first reference site for NVIDIA's DSX architecture. Markets reacted hard: IREN closed up roughly 22% in after-hours trading. The deal follows NVIDIA's expanded multi-billion compute commitments to OpenAI, Anthropic, and CoreWeave, and pushes more of its capital-allocation strategy onto independent power-rich infrastructure operators rather than hyperscalers.
+    </p>
+    <ul class="sources">
+      <li><a href="https://nvidianews.nvidia.com/news/nvidia-and-iren-announce-strategic-partnership-to-accelerate-deployment-of-up-to-5-gigawatts-of-ai-infrastructure">NVIDIA Newsroom: NVIDIA and IREN strategic partnership for up to 5 GW of AI infrastructure</a> (primary)</li>
+      <li><a href="https://www.globenewswire.com/news-release/2026/05/07/3290674/0/en/NVIDIA-and-IREN-Announce-Strategic-Partnership-to-Accelerate-Deployment-of-up-to-5-Gigawatts-of-AI-Infrastructure.html">GlobeNewswire: NVIDIA and IREN announce strategic partnership</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/05/07/iren-stock-ai-infrastructure-nvidia.html">CNBC: IREN inks AI infrastructure deal with NVIDIA</a></li>
+      <li><a href="https://finance.yahoo.com/sectors/technology/articles/nvidia-invest-2-1-billion-220154406.html">Yahoo Finance: NVIDIA to invest up to $2.1 B in IREN as part of AI data center deal</a></li>
+      <li><a href="https://www.stocktitan.net/news/NVDA/nvidia-and-iren-announce-strategic-partnership-to-accelerate-8ohr5zfpw654.html">StockTitan: NVIDIA and IREN map AI data center buildout that could hit 5 GW</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Doubles Claude Code limits, removes peak-hour throttling, taps SpaceX Colossus&nbsp;1</h3>
+    <div class="byline">6&ndash;7 May 2026 &middot; Primary source: Anthropic</div>
+    <p>
+      Anthropic disclosed an agreement to use <strong>all of the compute capacity at SpaceX's Colossus 1 data center</strong> &mdash; more than <strong>300 MW</strong> of new capacity sitting on roughly <strong>220,000 NVIDIA GPUs</strong> &mdash; coming online within the month. Off the back of it, Anthropic is <strong>doubling Claude Code's five-hour rate limits</strong> across Pro, Max, Team and seat-based Enterprise plans, <strong>removing peak-hour throttling</strong> for Pro and Max, and raising <strong>Claude Opus API rate limits by more than an order of magnitude</strong> (Tier 1 input tokens-per-minute jump from 30k to 500k). The Colossus deal is notable for the cross-company optics &mdash; Musk-affiliated capacity now powering Anthropic &mdash; and adds to a 2026 compute stack that already includes 5 GW with Amazon, 5 GW with Google/Broadcom, $30 B of Azure capacity with Microsoft/NVIDIA, and a $50 B Fluidstack U.S. infrastructure commitment.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/news/higher-limits-spacex">Anthropic: Higher usage limits for Claude and a compute deal with SpaceX</a> (primary)</li>
+      <li><a href="https://www.engadget.com/2166315/anthropic-is-doubling-claude-code-rate-limits-after-deal-with-spacex/">Engadget: Anthropic is doubling Claude Code rate limits after deal with SpaceX</a></li>
+      <li><a href="https://thenextweb.com/news/anthropic-claude-code-rate-limits-spacex-colossus-1">The Next Web: Anthropic raises Claude Code and Opus API rate limits, citing Colossus 1</a></li>
+      <li><a href="https://thehill.com/policy/technology/5867940-musk-spacex-ai-anthropic/">The Hill: Musk SpaceXAI to provide compute power for Anthropic's AI products</a></li>
+      <li><a href="https://www.itpro.com/software/development/anthropic-claude-code-usage-limits-increase-spacex-compute-deal">IT Pro: Anthropic Claude Code usage limits increase / SpaceX compute deal</a></li>
+    </ul>
+  </article>
+
+  <h2>Geopolitics &amp; Regulation</h2>
+
+  <article>
+    <h3><span class="tag">EU</span>AI Act Omnibus deal: high-risk rules slip to Dec 2027, full ban on AI nudification</h3>
+    <div class="byline">7 May 2026 &middot; Primary source: European Commission / European Parliament</div>
+    <p>
+      The European Parliament and Council reached a political agreement on the <strong>Digital Omnibus on AI</strong>, the most significant rewrite of the EU AI Act since adoption. Two structural changes: (1) <strong>simplification of high-risk obligations</strong> across biometrics, critical infrastructure, education, employment, migration, asylum and border control &mdash; with the application date for those rules <strong>postponed by ~16 months to 2 December 2027</strong> (from August 2026); and (2) a hard, EU-wide <strong>ban on AI "nudification" apps</strong> and the AI-generated creation of CSAM or non-consensual intimate depictions of identifiable persons, with companies required to bring systems into compliance by <strong>2 December 2026</strong>. Industry calls it "companies should not be regulated twice"; civil-society groups call the nudification ban "a pivotal moment." A separate Code of Practice is still on track for finalisation by June 2026.
+    </p>
+    <ul class="sources">
+      <li><a href="https://ec.europa.eu/commission/presscorner/detail/en/mex_26_1030">European Commission: Daily News 07/05/2026</a> (primary)</li>
+      <li><a href="https://www.europarl.europa.eu/news/en/press-room/20260427IPR42011/ai-act-deal-on-simplification-measures-ban-on-nudifier-apps">European Parliament: AI Act &mdash; deal on simplification measures, ban on "nudifier" apps</a> (primary)</li>
+      <li><a href="https://therecord.media/european-leaders-unveil-deal-ai-act-nudification">The Record: European leaders unveil tentative deal for AI Act simplification + nudification ban</a></li>
+      <li><a href="https://www.euronews.com/next/2026/05/07/eu-reaches-tentative-deal-to-simplify-ai-rules">Euronews: EU reaches tentative deal to simplify AI rules</a></li>
+      <li><a href="https://www.irishtimes.com/politics/2026/05/07/a-pivotal-moment-european-ban-on-ai-nudification-apps-is-welcomed/">Irish Times: "A pivotal moment" &mdash; ban on AI nudification apps is welcomed</a></li>
+      <li><a href="https://www.lewissilkin.com/insights/2026/05/07/the-council-and-parliament-agree-to-slim-down-and-delay-parts-of-the-eu-ai-act-102ms0v">Lewis Silkin: Council and Parliament agree to slim down and delay parts of the EU AI Act</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">White House</span>FDA-style executive order on AI model release in active drafting (Hassett)</h3>
+    <div class="byline">6&ndash;7 May 2026 &middot; Primary source: Bloomberg / The Hill</div>
+    <p>
+      <strong>Kevin Hassett</strong>, Director of the National Economic Council, said the White House is "studying, possibly an executive order" that would create a <strong>pre-release vetting regime for new AI models</strong>, framed explicitly as analogous to <strong>FDA drug approval</strong>. The proximate trigger is Anthropic's disclosure of <strong>Mythos</strong>'s strong network-vulnerability discovery capability and the parallel run-up of OpenAI's GPT-5.5-Cyber tier (above). On the same day, the <strong>Commerce Department announced an expansion of its voluntary pre-deployment testing program</strong>, with <strong>Google, Microsoft, xAI, OpenAI, and Anthropic</strong> agreeing to give the U.S. government access to evaluate model capabilities and safety. It is not yet decided whether the contemplated EO would mandate testing &mdash; a step that would mark a significant shift away from the Trump administration's previously hands-off AI posture.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.bloomberg.com/news/articles/2026-05-06/white-house-preps-order-to-boost-ai-security-hassett-says">Bloomberg: White House prepares order to boost AI security, Hassett says</a> (primary reporting)</li>
+      <li><a href="https://thehill.com/policy/technology/5866292-white-house-ai-evaluation-process/">The Hill: Hassett &mdash; White House may review AI models "like an FDA drug"</a></li>
+      <li><a href="https://federalnewsnetwork.com/artificial-intelligence/2026/05/wh-studying-ai-security-executive-order/">Federal News Network: WH "studying" AI security executive order</a></li>
+      <li><a href="https://www.dailysignal.com/2026/05/07/trump-mulls-ai-regulation-orders/">Daily Signal: White House considers AI regulation executive orders</a></li>
+      <li><a href="https://www.insurancejournal.com/news/national/2026/05/07/868812.htm">Insurance Journal: White House prepares order to boost AI security</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Platforms</h2>
+
+  <article>
+    <h3><span class="tag">xAI</span>Grok Imagine Quality Mode opens to the public API</h3>
+    <div class="byline">7 May 2026 &middot; Primary source: xAI</div>
+    <p>
+      xAI took its <strong>Grok Imagine "Quality Mode"</strong> &mdash; until now reserved for the Grok app, where xAI says it has powered more than <strong>300 million image generations</strong> &mdash; live for enterprise developers via the <strong>Grok Imagine API</strong>. The Quality tier promises higher photorealism, stronger text rendering inside images, and tighter creative-control knobs vs. the standard image tier, with xAI pointing to LMArena Text-to-Image leaderboards as of <strong>4 May 2026</strong> for ranking. Pitched at brand/marketing workloads (product renders, hero images, ad variations, social/creative assets), it pushes xAI directly into the same enterprise pricing band as OpenAI's image API and Adobe Firefly Services &mdash; and lands days after xAI also rolled out Grok "Connectors" for Google Workspace and Outlook in the web app.
+    </p>
+    <ul class="sources">
+      <li><a href="https://x.ai/news/grok-imagine-quality-mode">xAI: Grok Imagine Quality Mode API</a> (primary)</li>
+      <li><a href="https://x.ai/api/imagine">xAI Imagine API: Generate Videos, Images, and Audio</a> (primary)</li>
+      <li><a href="https://docs.x.ai/developers/model-capabilities/images/generation">xAI Docs: Image Generation</a> (primary)</li>
+      <li><a href="https://www.basenor.com/blogs/news/grok-launches-imagine-agent-mode-beta-try-it-now">Basenor: Grok launches Imagine Agent Mode beta</a></li>
+      <li><a href="https://www.genaintel.com/guides/grok-imagine-xai-guide">GenAIntel: xAI Grok Imagine 1.0 is public &mdash; how to generate images and videos</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This 8 May digest is scoped to ~24-hour signals from 7&ndash;8 May 2026, with two stories that broke 6 May (Anthropic&times;SpaceX Colossus&nbsp;1; Zyphra ZAYA1-8B) included because their primary impact &mdash; raised Claude rate limits taking effect, and the AMD-trained MoE narrative &mdash; matured today. The digest is deliberately non-overlapping with the prior 17 April, 19 April, and 28 April editions (IBM Bob, GitHub installation-token format change, Ineffable Intelligence, DeepSeek V4-Pro pricing, NDRC blocking Meta&ndash;Manus, DeepMind Seoul / K-Moonshot, Anthropic Sydney, Avoca, Mozilla Thunderbolt, huggingface_hub 1.11.0, OpenAI Agents SDK sandbox, Gemini CLI subagents, GitHub agent-skills CLI, IntelliJ IDEA 2026.1, Manycore IPO, Roland Berger humanoid forecast, AI-chat privilege rulings, Beijing humanoid half-marathon, GPT-Rosalind, Claude Design / Opus 4.7, Cloudflare Agent Memory, Tesla AI5 tape-out, Anthropic 3.5 GW TPU deal, Q1 2026 venture-funding records). Primary sources (OpenAI, Zyphra, Anthropic, NVIDIA Newsroom, European Commission, European Parliament, Wiz Research, GitHub Advisories, xAI, x.ai docs) are flagged inline. Stories sourced primarily from secondary outlets were corroborated against three or more independent reports.</p>
+    <p>Generated 8 May 2026.</p>
+  </footer>
+</body>
+</html>
