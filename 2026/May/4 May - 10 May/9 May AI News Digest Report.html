@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 9 May 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 9 May 2026</h1>
+    <div class="meta">Week of 4 May&ndash;10 May 2026 &middot; Coverage window: last ~24&ndash;48 hours</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The week's biggest AI-eats-the-IDE moment came on Airbnb's earnings call: <strong>CEO Brian Chesky said AI now writes 60% of new code at Airbnb</strong>, with managers told to "learn to code or use Claude Code." On the developer-tools side, <strong>OpenAI shipped a Codex extension for Chrome</strong>, putting an autonomous agent inside signed-in user sessions on macOS and Windows. In frontier research, <strong>Google DeepMind's "AI Co-Mathematician"</strong> hit a record <strong>48% on FrontierMath Tier 4</strong> with a multi-agent workbench, while <strong>Anthropic put "Dreaming"</strong> &mdash; an offline memory-consolidation pass for Claude Managed Agents &mdash; into research preview. In Brussels, the Council and Parliament reached a provisional deal on the <strong>"Digital Omnibus on AI"</strong>, pushing the AI Act's high-risk obligations from August 2026 to <strong>December 2027</strong>. And in Beijing, <strong>DeepSeek</strong> is reportedly closing its first-ever outside funding round at a <strong>$45 B valuation</strong> led by China's state-backed Big Fund.
+  </div>
+
+  <h2>Frontier Research &amp; Model Releases</h2>
+
+  <article>
+    <h3><span class="tag">Google DeepMind</span>"AI Co-Mathematician" sets new FrontierMath Tier 4 SOTA at 48%</h3>
+    <div class="byline">7 May 2026 &middot; Primary source: arXiv 2605.06651 / DeepMind blog</div>
+    <p>
+      Google DeepMind released <strong>AI Co-Mathematician</strong>, a stateful, asynchronous, multi-agent workbench built on <strong>Gemini Deep Think</strong> for open-ended mathematical research. A "project coordinator" delegates to specialized sub-agents (literature search, theorem proving, code execution, reviewer) running in parallel, tracking failed hypotheses and producing LaTeX write-ups with margin annotations. On <strong>FrontierMath Tier 4</strong> &mdash; the hardest, non-public set of problems &mdash; the system solved <strong>23 of 48 problems (48%)</strong>, well above GPT-5.5 Pro at 39.6% and Claude Opus 4.7 at 22.9%, and <strong>more than 2&times;</strong> the underlying Gemini 3.1 Pro base (19%). The paper highlights a real research win from Oxford's Marc Lackenby, who used the system to resolve an open Kourovka Notebook problem in group theory after a reviewer-agent caught a flaw in the AI's first proof attempt.
+    </p>
+    <ul class="sources">
+      <li><a href="https://arxiv.org/abs/2605.06651">arXiv 2605.06651: AI Co-Mathematician: Accelerating Mathematicians with Agentic AI</a> (primary)</li>
+      <li><a href="https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/">Google DeepMind: Accelerating mathematical and scientific discovery with Gemini Deep Think</a> (primary)</li>
+      <li><a href="https://huggingface.co/papers/2605.06651">Hugging Face Papers: AI Co-Mathematician</a></li>
+      <li><a href="https://epoch.ai/benchmarks/frontiermath-tier-4">Epoch AI: FrontierMath Tier 4 leaderboard</a> (primary, benchmark host)</li>
+      <li><a href="https://officechai.com/ai/google-deepmind-releases-ai-co-mathematician-that-creates-new-high-score-on-frontiermath-benchmark/">OfficeChai: DeepMind AI Co-Mathematician sets new FrontierMath high score</a></li>
+      <li><a href="https://startupfortune.com/google-deepmind-has-raised-the-bar-for-ai-math-reasoning/">Startup Fortune: DeepMind raises the bar for AI math reasoning</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Claude Managed Agents now "Dream": offline memory consolidation in research preview</h3>
+    <div class="byline">6&ndash;7 May 2026 &middot; Primary source: Claude API docs / Anthropic</div>
+    <p>
+      Anthropic put <strong>Dreams</strong> into research preview as part of an update to <strong>Claude Managed Agents</strong>. Dreams is a scheduled, between-sessions process that reads an agent's prior session transcripts and memory store, extracts cross-session patterns (recurring failures, converged workflows, shared preferences across a team of agents), and emits a <em>new, reorganized memory store</em> with duplicates merged and stale entries replaced. Anthropic positions it as one rung above conventional vector-store memory, more analogous to overnight memory consolidation in humans than to retrieval-augmented generation. <strong>Harvey</strong> (legal-AI) reported <strong>~6&times; higher task-completion rates</strong> after enabling Dreams in early access. Dreams currently ships only via Anthropic's developer access program, alongside two other Managed Agents updates rolled out the same window.
+    </p>
+    <ul class="sources">
+      <li><a href="https://platform.claude.com/docs/en/managed-agents/dreams">Claude API Docs: Dreams (Managed Agents)</a> (primary)</li>
+      <li><a href="https://venturebeat.com/technology/anthropic-introduces-dreaming-a-system-that-lets-ai-agents-learn-from-their-own-mistakes">VentureBeat: Anthropic introduces "dreaming," letting AI agents learn from their own mistakes</a></li>
+      <li><a href="https://thenewstack.io/anthropic-managed-agents-dreaming-outcomes/">The New Stack: Anthropic will let its managed agents dream</a></li>
+      <li><a href="https://siliconangle.com/2026/05/06/anthropic-letting-claude-agents-dream-dont-sleep-job/">SiliconANGLE: Anthropic letting Claude agents 'dream' so they don't sleep on the job</a></li>
+      <li><a href="https://the-decoder.com/claudes-new-dreaming-feature-is-designed-to-let-ai-agents-learn-from-their-mistakes/">The Decoder: Claude's "Dreaming" feature lets agents learn from mistakes</a></li>
+      <li><a href="https://9to5mac.com/2026/05/07/anthropic-updates-claude-managed-agents-with-three-new-features/">9to5Mac: Anthropic updates Claude Managed Agents with three new features</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Tools &amp; Software Engineering</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>Codex ships a Chrome extension &mdash; autonomous agent now lives inside signed-in browser sessions</h3>
+    <div class="byline">7 May 2026 &middot; Primary source: OpenAI Developers</div>
+    <p>
+      OpenAI released <strong>Codex for Chrome</strong>, a browser extension that lets the Codex agent operate inside the user's existing Chrome sessions on <strong>macOS and Windows</strong> (EU/UK pending). The extension gives Codex multi-tab context, access to Chrome DevTools, and the ability to drive signed-in flows on tools like <strong>LinkedIn, Salesforce, Gmail, and internal dashboards</strong> &mdash; testing web apps end-to-end, completing structured data-entry, debugging UI flows, and reading dashboards on behalf of the user. OpenAI says <strong>Codex now has &gt;4 M weekly active users (8&times; YoY)</strong>, and that the Chrome extension is a step toward a unified Codex + ChatGPT + Atlas browser experience. The launch immediately reignited debate about session-token blast radius and prompt-injection risk on real authenticated surfaces.
+    </p>
+    <ul class="sources">
+      <li><a href="https://developers.openai.com/codex/app/chrome-extension">OpenAI Developers: Codex Chrome extension</a> (primary)</li>
+      <li><a href="https://developers.openai.com/codex/changelog">OpenAI Developers: Codex Changelog</a> (primary)</li>
+      <li><a href="https://www.macrumors.com/2026/05/07/openai-codex-chrome-extension/">MacRumors: OpenAI's Codex now works in Chrome with new extension</a></li>
+      <li><a href="https://www.engadget.com/2167480/openai-debuts-a-codex-plugin-for-chrome/">Engadget: OpenAI debuts a Codex plugin for Chrome</a></li>
+      <li><a href="https://www.neowin.net/news/openai-codex-can-now-work-directly-in-chrome-on-macos-and-windows/">Neowin: OpenAI Codex can now work directly in Chrome on macOS and Windows</a></li>
+      <li><a href="https://www.marktechpost.com/2026/05/08/openai-adds-chrome-extension-to-codex-letting-its-ai-agent-access-linkedin-salesforce-gmail-and-internal-tools-via-signed-in-sessions/">MarkTechPost: Codex Chrome extension &mdash; LinkedIn, Salesforce, Gmail, internal tools via signed-in sessions</a></li>
+      <li><a href="https://www.digitaltrends.com/computing/openais-codex-just-moved-into-chrome-where-the-useful-work-and-the-risks-live/">Digital Trends: Codex just moved into Chrome, where the useful work and the risks live</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Scale Labs</span>SWE Atlas Refactoring leaderboard goes live; Claude Code (Opus 4.7) tops it</h3>
+    <div class="byline">8 May 2026 &middot; Primary source: Scale Labs</div>
+    <p>
+      Scale's <strong>SWE Atlas</strong> evaluation suite added its third and final pillar today: the <strong>Refactoring</strong> leaderboard, which tests whether coding agents can restructure production-style repositories <em>while preserving behavior</em>. Tasks require roughly <strong>2&times; the lines of code changes and 1.7&times; the file edits</strong> of SWE-Bench Pro, with stronger emphasis on multi-file edits, cleaning up stale artifacts, and keeping tests green after a refactor. Early rankings have <strong>Claude Code on Opus 4.7</strong> in first place, followed by <strong>OpenAI Codex on GPT-5.5</strong>. Combined with last quarter's Codebase QnA leaderboard (where even frontier models score &lt;30% despite &gt;80% on SWE-Bench), the Refactoring split sharpens the gap between "passes a unit test" and "doesn't break a real codebase."
+    </p>
+    <ul class="sources">
+      <li><a href="https://scale.com/blog/swe-atlas">Scale: Introducing SWE Atlas</a> (primary)</li>
+      <li><a href="https://labs.scale.com/leaderboard">Scale Labs: Leaderboards</a> (primary)</li>
+      <li><a href="https://labs.scale.com/leaderboard/sweatlas-qna">Scale Labs: SWE Atlas Codebase QnA leaderboard</a> (primary)</li>
+      <li><a href="https://www.testingcatalog.com/scale-labs-debuts-new-refactoring-leaderboard/">TestingCatalog: Scale Labs debuts new Refactoring Leaderboard for AI</a></li>
+      <li><a href="https://aidatainsider.com/news/scale-ai-introduces-new-benchmark-for-assessing-ai-coding-agents/">AI Data Insider: Scale AI introduces new benchmark for AI coding agents</a></li>
+      <li><a href="https://www.linkedin.com/posts/scaleai_were-introducing-swe-atlas-to-measure-which-activity-7435008304940052480-xXCr">Scale AI on LinkedIn: Introducing SWE Atlas</a> (primary)</li>
+    </ul>
+  </article>
+
+  <h2>Industry Adoption</h2>
+
+  <article>
+    <h3><span class="tag">Airbnb</span>Q1 earnings: AI now writes 60% of new code; "no room left for pure people managers"</h3>
+    <div class="byline">8 May 2026 &middot; Primary source: Airbnb Q1 earnings call</div>
+    <p>
+      On Airbnb's Q1 2026 earnings call, CEO <strong>Brian Chesky</strong> said AI now writes <strong>~60% of new code</strong> being shipped at the company, claimed that "one engineer can now do the work of a team of 20" with agents under human supervision, and explicitly told managers there is <strong>no room left for "pure people managers"</strong> &mdash; they should either learn to code or "use Claude Code." Airbnb also disclosed that its AI-powered customer-support agent now resolves <strong>~40% of issues with no human handoff</strong>, up from ~33% earlier in the year. The 60% figure puts Airbnb between <strong>Shopify (~50%)</strong> and <strong>Google (~75%)</strong> on publicly reported AI-authored-code share &mdash; and is being read across the industry as the loudest C-suite signal yet that headcount math at large software employers has structurally changed.
+    </p>
+    <ul class="sources">
+      <li><a href="https://techcrunch.com/2026/05/08/airbnb-says-ai-now-writes-60-of-its-new-code/">TechCrunch: Airbnb says AI now writes 60% of its new code</a></li>
+      <li><a href="https://www.benzinga.com/markets/tech/26/05/52433940/airbnb-reveals-ai-agents-now-handle-60-of-new-coding-ceo-brian-chesky-says-that-allows-one-engineer-">Benzinga: Airbnb reveals AI agents handle 60% of new coding</a></li>
+      <li><a href="https://rollingout.com/2026/05/08/airbnb-reveals-ai-writes-60-of-its/">Rolling Out: Airbnb reveals AI writes 60% of its code</a></li>
+      <li><a href="https://en.cryptonomist.ch/2026/05/08/airbnb-ai-earnings-call/">Cryptonomist: Airbnb AI earnings call &mdash; 60% of code is now AI-written</a></li>
+      <li><a href="https://www.aol.com/articles/airbnbs-ceo-says-ai-writes-055105176.html">AOL/Business Insider: Airbnb CEO &mdash; AI writes 60% of code; managers must get hands dirty</a></li>
+      <li><a href="https://skift.com/2026/05/07/airbnb-mix-hotel-homes-pre-ai-design/">Skift: Chesky on Airbnb's "pre-AI" design choices (earnings call colour)</a></li>
+    </ul>
+  </article>
+
+  <h2>Policy &amp; Geopolitics</h2>
+
+  <article>
+    <h3><span class="tag">European Union</span>"Digital Omnibus on AI" deal pushes high-risk AI Act obligations to December 2027</h3>
+    <div class="byline">7 May 2026 &middot; Primary source: Council of the EU</div>
+    <p>
+      The Council of the EU and the European Parliament reached a <strong>provisional agreement on the "Digital Omnibus on AI"</strong>, a cleanup package that simplifies parts of the bloc's flagship AI Act and meaningfully delays its bite. The headline change postpones enforcement of obligations on <strong>high-risk AI systems</strong> &mdash; biometrics, critical infrastructure, education, employment, migration, border control &mdash; from <strong>2 August 2026 to 2 December 2027</strong>, a 16-month delay. The package also adds a mechanism for resolving overlap between the AI Act and sectoral law (machinery, medical devices, etc.), exempting the EU Machinery Regulation from direct applicability of the AI Act. The deal lands after months of public lobbying from <strong>Siemens, ASML, Airbus, SAP, Ericsson, Mistral, and Nokia</strong>, with Siemens CEO Roland Busch having warned the company would shift AI investment to the U.S. and China otherwise. Civil-society groups responded by accusing Brussels of caving to industry just weeks before the rules were due to apply.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/">Council of the EU: Council and Parliament agree to simplify and streamline AI rules</a> (primary)</li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-05-08/siemens-scores-win-on-eu-push-to-streamline-industrial-ai-rules">Bloomberg: Siemens scores win on EU push to streamline industrial AI rules</a></li>
+      <li><a href="https://www.theregister.com/ai-and-ml/2026/05/07/eu-hits-snooze-on-ai-act-rules-after-industry-backlash/5234530">The Register: EU hits snooze on AI Act rules after industry backlash</a></li>
+      <li><a href="https://iapp.org/news/a/eu-agrees-to-amend-ai-act-clarifies-overlap-with-machinery-rules">IAPP: EU agrees to amend AI Act, clarifies overlap with machinery rules</a></li>
+      <li><a href="https://thelens.slaughterandmay.com/post/102ms2v/eu-agree-simplification-of-ai-rules">Slaughter and May: EU agree simplification of AI rules</a></li>
+      <li><a href="https://www.briefs.co/news/the-eu-just-delayed-its-ai-act-until-2027-siemens-got-its-carve-out/">Briefs.co: EU delays AI Act to 2027; Siemens gets its carve-out</a></li>
+    </ul>
+  </article>
+
+  <h2>Markets &amp; Capital</h2>
+
+  <article>
+    <h3><span class="tag">DeepSeek</span>First-ever outside funding round talks at $45 B valuation, led by China's Big Fund</h3>
+    <div class="byline">6&ndash;8 May 2026 &middot; Primary sources: FT (via Bloomberg) / TechCrunch</div>
+    <p>
+      <strong>DeepSeek</strong> is reportedly closing its first-ever round of external venture capital, with talks centered on a <strong>$45 B valuation</strong> &mdash; a roughly <strong>2&times; jump in weeks</strong> from a $20 B figure being floated in April. The round is set to be <strong>led by China's state-backed "Big Fund"</strong> (the China Integrated Circuit Industry Investment Fund), with <strong>Tencent</strong> and reportedly <strong>Alibaba</strong> in discussions to participate. Until now DeepSeek had been funded entirely off the balance sheet of <em>High-Flyer</em>, the quant hedge fund it spun out of in July 2023. The Big Fund's involvement signals that Beijing now sees DeepSeek as a <strong>strategic national asset</strong>, not just a commercial venture &mdash; a notable contrast with last month's NDRC block of Meta's bid for Manus. Reuters/FT reporting frames it as the most consequential Chinese AI funding event since R1.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.bloomberg.com/news/articles/2026-05-06/china-chip-fund-in-talks-to-lead-mega-deepseek-funding-ft-says">Bloomberg: China's Chip Fund in talks to lead DeepSeek funding (FT)</a></li>
+      <li><a href="https://techcrunch.com/2026/05/06/deepseek-could-hit-45b-valuation-from-its-first-investment-round/">TechCrunch: DeepSeek could hit $45B valuation in first investment round</a></li>
+      <li><a href="https://technode.com/2026/05/07/deepseek-reportedly-seeks-first-funding-round-at-45-billion-valuation/">TechNode: DeepSeek reportedly seeks first funding round at $45B valuation</a></li>
+      <li><a href="https://the-decoder.com/deepseek-nears-45-billion-valuation-as-chinas-state-chip-fund-leads-round/">The Decoder: DeepSeek nears $45B as China's state chip fund leads round</a></li>
+      <li><a href="https://seekingalpha.com/news/4586644-deepseek-fundraising-round-talks-china-big-fund">Seeking Alpha: DeepSeek may be valued at $45B as China's Big Fund eyes investment</a></li>
+      <li><a href="https://capacityglobal.com/news/china-big-fund-deepseek-investment/">Capacity: China's Big Fund in talks to lead DeepSeek investment at $45B</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">NVIDIA</span>Chipmaker passes $40 B in equity bets across the AI stack in 2026</h3>
+    <div class="byline">9 May 2026 &middot; Primary source: CNBC</div>
+    <p>
+      <strong>NVIDIA</strong>'s investment arm has now committed <strong>more than $40 B</strong> in 2026 alone, CNBC reports, including a <strong>$30 B check into OpenAI</strong>, participation in <strong>Anthropic</strong>'s expansion round, and a stake in <strong>xAI</strong> just before its February merger with SpaceX. The strategy &mdash; financing the customers, model labs, and infrastructure operators that buy NVIDIA chips &mdash; is increasingly leaking into public-equities returns: NVIDIA's <strong>$5 B stake in Intel</strong> from earlier this year is now <strong>worth &gt;$25 B</strong> after Intel's chip-rotation rally. The disclosure lands the same week Wall Street is rotating <em>away</em> from NVIDIA toward Intel, AMD, and Micron on cycle-and-memory trades, sharpening questions about how much of NVIDIA's still-record customer demand is being underwritten by NVIDIA's own balance sheet.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/05/09/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.html">CNBC: NVIDIA embraces AI investor role, topping $40B in equity bets in 2026</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/05/08/wall-street-ai-chip-love-moves-from-nvidia-to-intel-amd-and-micron.html">CNBC: Wall Street sees "changing of the guard" as Intel, AMD soar while NVIDIA lags</a></li>
+      <li><a href="https://techcrunch.com/2026/01/02/nvidias-ai-empire-a-look-at-its-top-startup-investments/">TechCrunch: NVIDIA's AI empire &mdash; top startup investments</a></li>
+      <li><a href="https://nvidianews.nvidia.com/news/openai-and-nvidia-announce-strategic-partnership-to-deploy-10gw-of-nvidia-systems">NVIDIA Newsroom: OpenAI and NVIDIA strategic partnership for 10 GW of NVIDIA systems</a> (primary)</li>
+      <li><a href="https://aifundingtracker.com/nvidia-startup-investments/">AI Funding Tracker: NVIDIA top startup investments</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This 9 May digest is scoped to ~24&ndash;48-hour signals from 6&ndash;9 May 2026 and is deliberately non-overlapping with the prior 17 April, 19 April, and 28 April editions in this repository (IBM Bob, GitHub installation-token format, Ineffable Intelligence, DeepSeek V4-Pro pricing, Manus/Meta block, K-Moonshot MOU, Anthropic Sydney, Avoca, Mozilla Thunderbolt, huggingface_hub 1.11.0, OpenAI Agents SDK sandbox, Gemini CLI subagents, GitHub agent-skills CLI, IntelliJ IDEA 2026.1, Manycore Tech IPO, Roland Berger humanoid forecast, Beijing humanoid half-marathon, GPT-Rosalind, Claude Design / Opus 4.7, Cloudflare Agent Memory, Tesla AI5 tape-out, Anthropic 3.5 GW TPU deal, Q1 2026 venture-funding records). Primary sources (arXiv, DeepMind blog, OpenAI Developers, Claude API docs, Council of the EU, NVIDIA Newsroom, Scale Labs leaderboards, CNBC) are flagged inline. Stories sourced primarily from secondary outlets were corroborated with at least three additional outlets per the digest's sourcing policy.</p>
+    <p>Generated 9 May 2026.</p>
+  </footer>
+</body>
+</html>
