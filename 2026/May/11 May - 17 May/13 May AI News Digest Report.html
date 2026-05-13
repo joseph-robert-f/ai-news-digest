@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 13 May 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 13 May 2026</h1>
+    <div class="meta">Week of 11&ndash;17 May 2026 &middot; Coverage window: last ~24 hours</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The AI-vs-AI security era arrived in the open this week: <strong>Google's Threat Intelligence Group</strong> publicly disclosed what it calls the first <em>AI-generated zero-day</em> in the wild &mdash; a 2FA-bypass exploit a criminal actor planned to use for mass exploitation &mdash; one day before <strong>OpenAI</strong> launched <strong>Daybreak</strong>, its cyber-defense initiative powered by <strong>GPT-5.5-Cyber</strong>. <strong>Google DeepMind's AI co-mathematician</strong> set a new state-of-the-art on FrontierMath Tier 4 (48%) and helped an Oxford mathematician close a 60-year-old Kourovka Notebook problem. On the deal side, <strong>Anthropic</strong> is reportedly in advanced talks to buy SDK-generation startup <strong>Stainless</strong> for ~$300 M, <strong>Isomorphic Labs</strong> closed a $2.1 B Series B led by Thrive Capital, and <strong>Nvidia's Jensen Huang</strong> was added to Trump's Beijing delegation hours before the Xi summit, putting H200 sales back on the table. <strong>Microsoft</strong> shipped its April Copilot Studio drop with a public-preview <strong>Work IQ API</strong> exposing the M365 intelligence layer over A2A and MCP.
+  </div>
+
+  <h2>Frontier Research &amp; Model Releases</h2>
+
+  <article>
+    <h3><span class="tag">Google DeepMind</span>AI co-mathematician sets new FrontierMath Tier 4 high; cracks 60-year Kourovka problem</h3>
+    <div class="byline">12 May 2026 &middot; Primary source: Google DeepMind / arXiv 2605.06651</div>
+    <p>
+      Google DeepMind&rsquo;s <strong>AI co-mathematician</strong>, a stateful multi-agent workbench built on <strong>Gemini 3.1 Pro</strong> with <strong>Gemini Deep Think</strong> as a sub-agent, scored <strong>48% on FrontierMath Tier 4</strong> &mdash; Epoch AI&rsquo;s hardest research-grade benchmark, designed to remain unsolved by AI &ldquo;for decades.&rdquo; The base Gemini 3.1 Pro scores 19% on the same set. More striking than the leaderboard: Oxford&rsquo;s <strong>Marc Lackenby</strong> used the system to resolve <strong>Problem 21.10 from the Kourovka Notebook</strong>, an open group-theory question that had stood for roughly 60 years. The system&rsquo;s reviewer agent flagged a flaw in its own first proof, which Lackenby then filled. The paper lists the system ahead of GPT-5.5 Pro (39.6%), GPT-5.4 Pro (37.5%), and Claude Opus 4.7 (22.9%) on the same benchmark.
+    </p>
+    <ul class="sources">
+      <li><a href="https://deepmind.google/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/">Google DeepMind: Accelerating mathematical &amp; scientific discovery with Gemini Deep Think</a> (primary)</li>
+      <li><a href="https://arxiv.org/abs/2605.06651">arXiv 2605.06651: AI Co-Mathematician &mdash; Accelerating Mathematicians with Agentic AI</a> (primary)</li>
+      <li><a href="https://arxiv.org/html/2605.06651v1">arXiv HTML: AI Co-Mathematician (full text)</a> (primary)</li>
+      <li><a href="https://officechai.com/ai/google-deepmind-releases-ai-co-mathematician-that-creates-new-high-score-on-frontiermath-benchmark/">OfficeChai: DeepMind co-mathematician sets new FrontierMath high</a></li>
+      <li><a href="https://blockchain.news/ainews/deepmind-co-mathematician-hits-48-frontiermath">Blockchain.News: DeepMind co-mathematician hits 48% on FrontierMath</a></li>
+      <li><a href="https://www.therundown.ai/p/google-deepmind-powerful-ai-co-mathematician">The Rundown AI: Google DeepMind&rsquo;s powerful AI co-mathematician</a></li>
+      <li><a href="https://www.edtechinnovationhub.com/news/google-unveils-ai-co-mathematician-as-research-agents-move-beyond-chat">EdTech Innovation Hub: Google unveils AI co-mathematician</a></li>
+    </ul>
+  </article>
+
+  <h2>The AI Cybersecurity Race</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>Daybreak launches with GPT-5.5-Cyber and Codex Security; Anthropic Mythos rivalry sharpens</h3>
+    <div class="byline">11&ndash;12 May 2026 &middot; Primary source: OpenAI / Sam Altman</div>
+    <p>
+      OpenAI publicly launched <strong>Daybreak</strong>, a cyber-defense initiative organized around three pieces: the broad <strong>GPT-5.5</strong> base model for general security work, <strong>GPT-5.5-Cyber</strong> (a specialized model under Trusted Access for red-teaming and pen-testing), and a <strong>Codex Security</strong> agent framework for secure code review, vulnerability triage, malware analysis, detection engineering, and patch validation. Daybreak ships with eight named partners &mdash; <strong>Cisco, Oracle, CrowdStrike, Palo Alto Networks, Cloudflare, Fortinet, Akamai, and Zscaler</strong>. OpenAI&rsquo;s framing is &ldquo;resilient by design&rdquo;: bake security into software before exploitation. Access remains gated to vetted defenders for now. The launch is explicitly OpenAI&rsquo;s answer to <strong>Anthropic&rsquo;s Project Glasswing / Claude Mythos</strong>, which Mozilla credited with finding and patching <strong>271 Firefox vulnerabilities</strong> last month.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/daybreak/">OpenAI: Daybreak landing page</a> (primary)</li>
+      <li><a href="https://openai.com/index/accelerating-cyber-defense-ecosystem/">OpenAI: Accelerating the cyber defense ecosystem that protects us all</a> (primary)</li>
+      <li><a href="https://openai.com/index/scaling-trusted-access-for-cyber-defense/">OpenAI: Scaling Trusted Access for the next era of cyber defense</a> (primary)</li>
+      <li><a href="https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/">OpenAI: Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber</a> (primary)</li>
+      <li><a href="https://www.csoonline.com/article/4170029/openai-introduces-daybreak-cyber-platform-takes-on-anthropic-mythos.html">CSO Online: OpenAI Daybreak takes on Anthropic Mythos</a></li>
+      <li><a href="https://www.infosecurity-magazine.com/news/openai-daybreak-secure-by-design/">Infosecurity Magazine: OpenAI&rsquo;s Daybreak built for secure-by-design software</a></li>
+      <li><a href="https://www.ciodive.com/news/OpenAI-Daybreak-cyber-threats/820036/">CIO Dive: OpenAI launches Daybreak to combat cyber threats</a></li>
+      <li><a href="https://www.marktechpost.com/2026/05/11/openai-introduces-daybreak-a-cybersecurity-initiative-that-puts-codex-security-at-the-center-of-vulnerability-detection-and-patch-validation/">MarkTechPost: Daybreak puts Codex Security at the center of vuln detection</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Google GTIG</span>First AI-generated zero-day in the wild; 2FA bypass disrupted before mass-exploitation</h3>
+    <div class="byline">11 May 2026 &middot; Primary source: Google Cloud Threat Intelligence Group</div>
+    <p>
+      Google&rsquo;s <strong>Threat Intelligence Group (GTIG)</strong> said it has &ldquo;high confidence&rdquo; it has now observed the first <strong>AI-generated zero-day exploit</strong> in active criminal use. The flaw &mdash; a <strong>2FA-bypass</strong> in a Python script used by an open-source web-based sysadmin tool &mdash; was discovered and weaponized using an AI model (Google says it does <em>not</em> believe its own Gemini was used). A criminal threat actor was preparing it for a <strong>mass exploitation event</strong>; GTIG&rsquo;s proactive counter-discovery likely prevented use. The disclosure ties into GTIG&rsquo;s expanded AI-misuse report: malware families <strong>PROMPTFLUX</strong> (VBScript dropper that queries Gemini for &ldquo;just-in-time&rdquo; obfuscation) and <strong>PROMPTSTEAL</strong> (deployed by Russia&rsquo;s APT28 against Ukraine, using Qwen2.5-Coder-32B via Hugging Face) are now in active operations. GTIG chief analyst <strong>John Hultquist</strong>: &ldquo;The era of AI-driven vulnerability discovery and exploitation is already here.&rdquo;
+    </p>
+    <ul class="sources">
+      <li><a href="https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access">Google Cloud: Adversaries leverage AI for vulnerability exploitation, augmented operations &amp; initial access</a> (primary)</li>
+      <li><a href="https://cloud.google.com/blog/topics/threat-intelligence/threat-actor-usage-of-ai-tools">Google Cloud: GTIG AI Threat Tracker</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/05/11/google-thwarts-effort-hacker-group-use-ai-mass-exploitation-event.html">CNBC: Google says it likely thwarted hacker effort to use AI for &lsquo;mass exploitation event&rsquo;</a></li>
+      <li><a href="https://www.washingtonpost.com/business/2026/05/11/google-ai-cybersecurity-exploitation-mythos/011cb008-4d3f-11f1-97e7-22c6c29ff0d8_story.html">Washington Post: Google disrupts hackers using AI to exploit unknown weakness</a></li>
+      <li><a href="https://www.nbcnews.com/tech/security/google-disrupts-hackers-using-ai-exploit-unknown-weakness-companys-dig-rcna344624">NBC News: Google disrupts hackers using AI to exploit unknown weakness</a></li>
+      <li><a href="https://www.securityweek.com/google-detects-first-ai-generated-zero-day-exploit/">SecurityWeek: Google detects first AI-generated zero-day exploit</a></li>
+      <li><a href="https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html">The Hacker News: Hackers used AI for first known 2FA-bypass zero-day for mass exploitation</a></li>
+      <li><a href="https://www.pymnts.com/cybersecurity/2026/google-thwarts-first-ai-generated-zero-day-exploit/">PYMNTS: Google thwarts first AI-generated zero-day</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Platforms &amp; Software Engineering</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Advanced talks to acquire SDK-gen startup Stainless for at least $300 M</h3>
+    <div class="byline">12 May 2026 &middot; Primary source: The Information</div>
+    <p>
+      Anthropic is in <strong>advanced talks to acquire Stainless</strong>, the 4-year-old startup that auto-generates SDKs and client libraries for AI model APIs, for <strong>at least $300 million</strong> &mdash; with part of the consideration potentially paid in Anthropic stock. Stainless is unusually well-positioned in the LLM market: its customers include <strong>Anthropic, OpenAI, and Google</strong>, which makes it part of the connective tissue between frontier labs and the developer ecosystem. If completed, the deal would be Anthropic&rsquo;s fourth M&amp;A move in roughly six months, after dev-tools startup <strong>Bun</strong> (Dec 2025), computer-use startup <strong>Vercept</strong>, and AI-biotech <strong>Coefficient Bio</strong>. It also lands alongside reports that Anthropic is in early talks to raise <strong>at least $30 B</strong> at a pre-money valuation north of <strong>$900 B</strong>, on the back of annualized revenue scaling from $9 B to a reported $44 B+ in roughly six months.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.theinformation.com/articles/anthropic-talks-buy-developer-tools-startup-used-openai-google">The Information: Anthropic in talks to buy developer-tools startup used by OpenAI, Google</a> (primary)</li>
+      <li><a href="https://www.investing.com/news/stock-market-news/anthropic-in-talks-to-buy-dev-tools-startup-for-300-mln-the-information-4683007">Investing.com / Reuters wire: Anthropic in talks to buy dev-tools startup for $300M</a></li>
+      <li><a href="https://www.digitaltoday.co.kr/en/view/55075/anthropic-in-talks-to-buy-developer-tools-startup-stainless">Digital Today: Anthropic in talks to buy Stainless</a></li>
+      <li><a href="http://www.econotimes.com/Anthropic-Eyes-300M-Stainless-Acquisition-Amid-Enterprise-AI-Expansion-1741520">EconoTimes: Anthropic eyes $300M Stainless acquisition</a></li>
+      <li><a href="https://www.digitimes.com/news/a20260513VL215/anthropic-startup-openai-google-software.html">DIGITIMES: Anthropic in talks to acquire Stainless, SDK startup serving Google and OpenAI</a></li>
+      <li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/261889029-anthropic-funding-30b-valuation-trillion-claude-code-revenue-growth-ipo-spacex-colossus-tradingkey">TradingKey: Anthropic in talks for $30B raise at &gt;$900B valuation</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Microsoft</span>Copilot Studio April drop ships Work IQ API in public preview over A2A and MCP</h3>
+    <div class="byline">11 May 2026 &middot; Primary source: Microsoft Copilot Blog</div>
+    <p>
+      Microsoft published its <strong>Copilot Studio &ldquo;What&rsquo;s new: April 2026&rdquo;</strong> drop on 11 May, and the headline change for developers is the <strong>Work IQ API in public preview</strong> &mdash; exposing the same Microsoft 365 intelligence layer that powers M365 Copilot to third-party agents over <strong>agent-to-agent (A2A)</strong>, <strong>Model Context Protocol (MCP)</strong>, and REST. The release also rolls out an <strong>Analytics Viewer</strong> role (GA, read-only access to agent analytics for non-builders), surfaces an <strong>agent posture/governance view</strong> directly in the authoring experience to flag auth gaps and policy violations, adds <strong>multi-turn evaluation automation</strong> via APIs/connectors, and quietly opens <strong>early access to GPT-5.5 Reasoning</strong> in selected environments. Net effect: Copilot Studio is leaning hard into &ldquo;AgentOps&rdquo; &mdash; governance, observability, and standard wire protocols &mdash; rather than UI features.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-agent-governance-intelligent-workflows-and-connected-app-experiences/">Microsoft Copilot Blog: What&rsquo;s new in Copilot Studio &mdash; April 2026</a> (primary)</li>
+      <li><a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/whats-new">Microsoft Learn: What&rsquo;s new in Copilot Studio</a> (primary)</li>
+      <li><a href="https://learn.microsoft.com/en-us/power-platform/release-plan/2026wave1/microsoft-copilot-studio/">Microsoft Learn: Copilot Studio 2026 release wave 1 overview</a> (primary)</li>
+      <li><a href="https://windowsforum.com/threads/microsoft-copilot-studio-april-2026-update-governance-workflows-agentops.417528/">Windows Forum: Copilot Studio April 2026 &mdash; governance, workflows, AgentOps</a></li>
+      <li><a href="https://www.withum.ai/resources/from-copilots-to-agent-systems-what-microsofts-latest-copilot-studio-agents-news-means-for-enterprises/">Withum: From Copilots to Agent Systems &mdash; what the latest Copilot Studio drop means for enterprises</a></li>
+    </ul>
+  </article>
+
+  <h2>Capital &amp; Geopolitics</h2>
+
+  <article>
+    <h3><span class="tag">Isomorphic Labs</span>$2.1 B Series B led by Thrive; sovereign wealth and UK AI Fund join Alphabet, GV</h3>
+    <div class="byline">12 May 2026 &middot; Primary source: Isomorphic Labs</div>
+    <p>
+      DeepMind&rsquo;s drug-design spinout <strong>Isomorphic Labs</strong> closed a <strong>$2.1 B Series B</strong> &mdash; one of the largest private rounds ever for AI drug discovery &mdash; <strong>led by Thrive Capital</strong>, with existing backers <strong>Alphabet</strong> and <strong>GV</strong> rejoined by new investors <strong>Temasek, MGX (Abu Dhabi), CapitalG, and the UK Sovereign AI Fund</strong>. The round takes the company&rsquo;s total capital to roughly <strong>$2.6 B</strong> and is earmarked for scaling its proprietary <strong>IsoDDE</strong> (Iso Drug Design Engine) and pushing its internal therapeutic pipeline toward the clinic. The deal mints a second flagship AI-for-science raise this month behind Ineffable Intelligence&rsquo;s record European seed, and it reflects a clear sovereign-fund pattern: MGX, Temasek, and the UK Sovereign AI Fund have now appeared in three consecutive frontier rounds.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-b-investment-round">Isomorphic Labs: Series B announcement</a> (primary)</li>
+      <li><a href="https://www.prnewswire.com/news-releases/isomorphic-labs-secures-2-1-billion-funding-to-scale-its-ai-drug-design-engine-302769674.html">PR Newswire: Isomorphic secures $2.1 B to scale its AI drug-design engine</a> (primary)</li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-05-12/deepmind-spinout-isomorphic-labs-raises-2-1-billion-to-design-drugs-with-ai">Bloomberg: DeepMind spinout Isomorphic raises $2.1 B</a></li>
+      <li><a href="https://techstartups.com/2026/05/12/alphabet-backed-isomorphic-labs-raises-2-1b-to-accelerate-ai-designed-drug-discovery-as-clinical-trials-near/">Tech Startups: Alphabet-backed Isomorphic raises $2.1 B as clinical trials near</a></li>
+      <li><a href="https://ventureburn.com/isomorphic-labs-raises-2-1b-for-ai-drug-discovery/">Ventureburn: Isomorphic raises $2.1 B for AI drug discovery</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Nvidia / U.S.&ndash;China</span>Jensen Huang added to Trump&rsquo;s Beijing delegation hours before Xi summit; H200 sales in play</h3>
+    <div class="byline">13 May 2026 &middot; Primary source: CNBC / Nvidia</div>
+    <p>
+      Nvidia confirmed CEO <strong>Jensen Huang</strong> has been added to President <strong>Trump&rsquo;s delegation</strong> for the Beijing summit with <strong>Xi Jinping</strong>, after Trump personally called Huang following media coverage of his earlier exclusion. The agenda is dense: <strong>H200 AI chip</strong> sales to Chinese customers (technically allowed since earlier this year but with <strong>zero realized revenue</strong> per Nvidia filings; Commerce Secretary <strong>Howard Lutnick</strong> told Senate appropriators last month that <em>no</em> H200s have actually shipped to China), proposed new restrictions on advanced AI semiconductors, EVs, and rare earths. Beijing and Washington are also reportedly exploring a recurring AI-risk dialogue covering model misbehavior, autonomous weapons, and non-state-actor AI attacks. The Shanghai Composite is trading at an <strong>11-year high</strong> heading into the meeting on the back of AI-driven export orders, while a Tuesday tech-stock sell-off in the U.S. underlines how much hangs on the H200 outcome.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/05/13/nvidia-says-ceo-jensen-huang-is-joining-trumps-china-trip.html">CNBC: Jensen Huang joins Trump&rsquo;s China trip after Trump called him</a></li>
+      <li><a href="https://finance.yahoo.com/news/nvidia39s-jensen-huang-joins-trump39s-china-visit-013448882.html">Yahoo Finance: Nvidia CEO joins Trump for China trip, hopes for H200 deal</a></li>
+      <li><a href="https://www.foxbusiness.com/economy/trump-readies-beijing-summit-xi-ai-chip-sales-farm-goods-top-agenda">Fox Business: Trump readies Beijing summit with Xi as AI chips lead agenda</a></li>
+      <li><a href="https://thehill.com/business/5874569-trump-xi-ai-talks/">The Hill: Trump, Xi to huddle in China as AI race heats up</a></li>
+      <li><a href="https://www.scmp.com/economy/global-economy/article/3353180/chinas-ai-ascent-leaves-trump-stark-choice-escalate-or-relax-chip-controls">SCMP: China&rsquo;s AI ascent leaves Trump a stark choice on chip controls</a></li>
+      <li><a href="https://restofworld.org/2026/trump-xi-meeting-tech/">Rest of World: Trump&ndash;Xi meeting &mdash; AI chips, EVs, rare earths on the agenda</a></li>
+      <li><a href="https://www.japantimes.co.jp/business/2026/05/13/tech/investors-trump-xi-ai/">Japan Times: Investors want Trump and Xi to stay out of AI&rsquo;s way</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This 13 May digest is scoped to ~24-hour signals from 11&ndash;13 May 2026 and is deliberately non-overlapping with the prior 17, 19 and 28 April editions (IBM Bob, GitHub App-installation-token format, Ineffable Intelligence / David Silver, DeepSeek V4-Pro pricing, China&rsquo;s block of Meta&ndash;Manus, DeepMind Seoul / K-Moonshot, Anthropic Sydney, Avoca, Mozilla Thunderbolt, huggingface_hub 1.11.0, OpenAI Agents SDK sandbox, Gemini CLI subagents, GitHub agent-skills CLI, IntelliJ IDEA 2026.1, Manycore Tech IPO, Roland Berger humanoid forecast, AI-chat privilege rulings, Beijing humanoid half-marathon, GPT-Rosalind, Claude Design / Opus 4.7, Cloudflare Agent Memory, Tesla AI5 tape-out, Anthropic 3.5 GW TPU deal, Q1 2026 venture-funding records). Primary sources flagged inline (Google DeepMind, arXiv, OpenAI, Google Cloud GTIG, The Information, Microsoft Copilot Blog, Isomorphic Labs, Nvidia/CNBC). Stories sourced primarily from secondary outlets were corroborated against at least three additional outlets, with priority for primary disclosures and trusted security/business newsrooms.</p>
+    <p>Generated 13 May 2026.</p>
+  </footer>
+</body>
+</html>
