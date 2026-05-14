@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 14 May 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 14 May 2026</h1>
+    <div class="meta">Week of 11 May&ndash;17 May 2026 &middot; Coverage window: last ~24&ndash;48 hours</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The AI-vs-AI security era went live on 13 May: <strong>Microsoft's May Patch Tuesday</strong> shipped fixes for ~120 CVEs &mdash; <strong>16 of them surfaced by an in-house multi-model agentic scanner</strong> (codename <em>MDASH</em>) &mdash; while <strong>OpenAI's Daybreak</strong> initiative formally opened to design-partner orgs as a head-on counter to Anthropic's <em>Claude Mythos</em> and <em>Project Glasswing</em>. Google's <strong>Threat Intelligence Group</strong> separately published the first confirmed observation of an <strong>AI-developed zero-day</strong> being weaponized in the wild (a 2FA-bypass against a popular sysadmin tool). On the business side, <strong>Ramp's May AI Index</strong> showed <strong>Anthropic overtaking OpenAI</strong> in paying business customers for the first time (34.4% vs. 32.3%), and <strong>Anduril</strong> doubled its valuation to <strong>$61B</strong> on a $5B Series H. In research, ex-Cohere VP Sara Hooker's new lab <strong>Adaption</strong> launched <strong>AutoScientist</strong>, an automated training-loop optimizer, and Google Research's <strong>TurboQuant</strong> ICLR 2026 paper hit 6&times; KV-cache compression with no accuracy loss as third-party llama.cpp/vLLM ports started landing.
+  </div>
+
+  <h2>AI Security &amp; Developer Platforms</h2>
+
+  <article>
+    <h3><span class="tag">Microsoft</span>May Patch Tuesday: ~120 CVEs, 16 surfaced by an AI bug-finder ("MDASH"), hotpatching on by default</h3>
+    <div class="byline">13 May 2026 &middot; Primary source: MSRC Security Update Guide</div>
+    <p>
+      Microsoft shipped its May 2026 security rollup yesterday, addressing roughly <strong>120 vulnerabilities</strong> (17 rated <em>Critical</em>) across Windows, Office, Azure, Dynamics 365, and the .NET stack &mdash; and, for the first time since June 2024, with <strong>zero actively-exploited zero-days</strong>. Standouts: <strong>CVE-2026-41096</strong> (CVSS 9.8 RCE in Windows DNS Client), <strong>CVE-2026-41089</strong> (CVSS 9.8 Netlogon stack overflow), and <strong>CVE-2026-42898</strong> (CVSS 9.9 in on-prem Dynamics 365). Microsoft disclosed that <strong>16 of the fixed flaws were discovered by MDASH</strong> &mdash; its internal "multi-model agentic scanning harness" &mdash; and warned that AI-assisted discovery will materially increase Patch Tuesday volume in coming months. The same release flips <strong>hotpatching on by default</strong> for eligible Windows 11 devices and adds <strong>"Agents on the Taskbar"</strong>, letting Windows treat first- and third-party AI agents as taskbar-resident apps with MDM controls.
+    </p>
+    <ul class="sources">
+      <li><a href="https://msrc.microsoft.com/update-guide/en-us/releaseNote/2026-May">MSRC: Security Update Guide &mdash; May 2026 release notes</a> (primary)</li>
+      <li><a href="https://www.microsoft.com/en-us/msrc/blog/2026/05/a-note-on-patch-tuesday">MSRC Blog: A note on this month's Patch Tuesday</a> (primary)</li>
+      <li><a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-may-2026-patch-tuesday-fixes-120-flaws-no-zero-days/">BleepingComputer: May 2026 Patch Tuesday fixes 120 flaws, no zero-days</a></li>
+      <li><a href="https://krebsonsecurity.com/2026/05/patch-tuesday-may-2026-edition/">Krebs on Security: Patch Tuesday, May 2026 Edition</a></li>
+      <li><a href="https://www.tenable.com/blog/microsofts-may-2026-patch-tuesday-addresses-118-cves-cve-2026-41103">Tenable: Microsoft's May 2026 Patch Tuesday addresses 118 CVEs</a></li>
+      <li><a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-may-2026/">Cisco Talos: Microsoft Patch Tuesday for May 2026 &mdash; Snort rules and prominent vulnerabilities</a></li>
+      <li><a href="https://www.theregister.com/patches/2026/05/13/doozy-of-a-patch-tuesday-includes-30-critical-microsoft-cves/5239224">The Register: A doozy of a Patch Tuesday includes 30 critical Microsoft CVEs</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>Daybreak goes live: Codex Security + GPT-5.5-Cyber, with Akamai, Cisco, Cloudflare, CrowdStrike, Fortinet, Oracle, Palo Alto, Zscaler as launch partners</h3>
+    <div class="byline">11&ndash;13 May 2026 &middot; Primary source: OpenAI</div>
+    <p>
+      OpenAI's <strong>Daybreak</strong> initiative &mdash; announced earlier in the week by Sam Altman on X and detailed at <code>openai.com/daybreak</code> &mdash; opened to design-partner organizations this week. It pairs <strong>Codex Security</strong> as an agentic harness with three tiered cyber models &mdash; <em>GPT-5.5</em> (standard safeguards), <em>GPT-5.5 with Trusted Access for Cyber</em> (verified defensive work), and <em>GPT-5.5-Cyber</em> (permissive, red-team / pen-test) &mdash; to build editable per-repository threat models, exploit candidates in isolated sandboxes, validate patches, and feed remediation guidance back into the SDLC. The launch cohort spans <strong>Akamai, Cisco, Cloudflare, CrowdStrike, Fortinet, Oracle, Palo Alto Networks, and Zscaler</strong>. The framing is squarely competitive: Anthropic's <strong>Claude Mythos Preview</strong> (announced 7 April) and <strong>Project Glasswing</strong> already gave 12 critical-infra firms early access plus $100 M in usage credits, so Daybreak is OpenAI's symmetric play to keep the frontier-AI-for-cyber stack on its rails.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/daybreak/">OpenAI: Daybreak &mdash; OpenAI for cybersecurity</a> (primary)</li>
+      <li><a href="https://thehackernews.com/2026/05/openai-launches-daybreak-for-ai-powered.html">The Hacker News: OpenAI launches Daybreak for AI-powered vulnerability detection</a></li>
+      <li><a href="https://www.marktechpost.com/2026/05/11/openai-introduces-daybreak-a-cybersecurity-initiative-that-puts-codex-security-at-the-center-of-vulnerability-detection-and-patch-validation/">MarkTechPost: OpenAI introduces Daybreak with Codex Security at the center</a></li>
+      <li><a href="https://www.helpnetsecurity.com/2026/05/12/openai-daybreak-openai-daybreak-vulnerability-validation-initiative/">Help Net Security: OpenAI's Daybreak uses Codex Security to identify risky attack paths</a></li>
+      <li><a href="https://www.csoonline.com/article/4170029/openai-introduces-daybreak-cyber-platform-takes-on-anthropic-mythos.html">CSO Online: OpenAI introduces Daybreak cyber platform, takes on Anthropic Mythos</a></li>
+      <li><a href="https://red.anthropic.com/2026/mythos-preview/">Anthropic Red: Claude Mythos Preview</a> (primary, context)</li>
+      <li><a href="https://www.anthropic.com/glasswing">Anthropic: Project Glasswing</a> (primary, context)</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Google TIG</span>First confirmed AI-developed zero-day caught mid-campaign: 2FA-bypass against a popular sysadmin tool</h3>
+    <div class="byline">11&ndash;12 May 2026 &middot; Primary source: Google Cloud Threat Intelligence Blog</div>
+    <p>
+      Google's <strong>Threat Intelligence Group (GTIG)</strong> published the first incident report it considers high-confidence evidence that an <strong>LLM was used to discover and weaponize a true zero-day</strong>. A financially-motivated actor had partnered with prominent eCrime affiliates to stage a <em>mass exploitation event</em> against a widely-deployed open-source web-based sysadmin tool, using a Python implant that bypasses 2FA. The exploit's tells &mdash; verbose educational docstrings, a hallucinated CVSS score, and textbook PEP-8-style structure &mdash; led GTIG to conclude AI assistance with high confidence. Google worked with the vendor to disclose and patch before the campaign launched. The same write-up flags <strong>APT45</strong> (DPRK) using AI to validate thousands of exploit candidates and Chinese state actors experimenting with LLM-driven initial-access pipelines. This is the inflection many CISO teams have been pricing in: AI-assisted offensive ops are no longer hypothetical.
+    </p>
+    <ul class="sources">
+      <li><a href="https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access">Google Cloud Threat Intel Blog: Adversaries leverage AI for vulnerability exploitation, augmented operations, and initial access</a> (primary)</li>
+      <li><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/google-threat-intelligence-group-report/">Google Blog: GTIG reports on AI threat trends</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/05/11/google-thwarts-effort-hacker-group-use-ai-mass-exploitation-event.html">CNBC: Google says it likely thwarted hacker group's AI-enabled mass exploitation event</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-05-11/hackers-used-ai-to-build-zero-day-attack-google-researchers-say">Bloomberg: Google researchers detect first AI-built zero-day exploit in cyberattack</a></li>
+      <li><a href="https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html">The Hacker News: Hackers used AI to develop first known zero-day 2FA bypass for mass exploitation</a></li>
+      <li><a href="https://www.theregister.com/ai-ml/2026/05/11/google-says-criminals-used-ai-built-zero-day-in-planned-mass-hack-spree/5237982">The Register: Google says criminals used AI-built zero-day in planned mass hack spree</a></li>
+      <li><a href="https://www.axios.com/2026/05/12/ai-hacking-found-google-report">Axios: AI-assisted hacking is already here, Google warns</a></li>
+    </ul>
+  </article>
+
+  <h2>Frontier Research &amp; Model Releases</h2>
+
+  <article>
+    <h3><span class="tag">Adaption</span>AutoScientist: Sara Hooker &amp; Sudip Roy's new lab ships a closed-loop training-recipe optimizer</h3>
+    <div class="byline">13 May 2026 &middot; Primary source: Adaption Labs</div>
+    <p>
+      <strong>Adaption</strong> &mdash; the San Francisco lab founded by former Cohere VP of Research <strong>Sara Hooker</strong> and former Cohere director of inference <strong>Sudip Roy</strong> &mdash; emerged with <strong>AutoScientist</strong>, a system that co-optimizes <em>data mixture</em> and <em>training recipe</em> in a single closed loop and runs the loop autonomously until quality converges on a user-defined objective. The bet is that the next frontier is not larger models but smarter, faster fine-tuning: the team claims AutoScientist <strong>more than doubles win rates</strong> across the base models they tested and compresses what is usually a multi-week alignment cycle into <em>an afternoon</em>. Adaption is making the tool <strong>free for 30 days</strong>. If the result holds, this is one of the first credible public attempts to put a recognizable slice of frontier-lab tooling &mdash; the part labs guard most jealously &mdash; in third-party hands.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.adaptionlabs.ai/blog/autoscientist">Adaption Labs: AutoScientist &mdash; automating the science of model training</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/05/13/adaption-aims-big-with-autoscientist-an-ai-tool-that-helps-models-train-themselves/">TechCrunch: Adaption aims big with AutoScientist</a></li>
+      <li><a href="https://mezha.net/eng/bukvy/4f710156_adaption_unveils_autoscientist/">Mezha: Adaption unveils AutoScientist, automating model and data co-optimization</a></li>
+      <li><a href="https://digitrendz.blog/tech-news/184544/adaption-launches-autoscientist-ai-that-trains-models-on-their-own/">DigiTrendZ: Adaption launches AutoScientist AI that trains models on their own</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Google Research</span>TurboQuant (ICLR 2026): 3-bit KV cache with no accuracy loss; community ports land in llama.cpp / vLLM</h3>
+    <div class="byline">12&ndash;14 May 2026 &middot; Primary source: Google Research Blog / ICLR 2026</div>
+    <p>
+      Google Research's <strong>TurboQuant</strong> &mdash; presented at ICLR 2026 and now circulating widely in serving stacks &mdash; is a <em>data-oblivious</em> two-stage vector quantization scheme (PolarQuant rotation + Lloyd-Max scalar quantization, with a 1-bit QJL residual correction) that compresses transformer KV caches to as little as <strong>3 bits per coordinate</strong> with <em>provably</em> near-optimal unbiased inner-product estimation and <strong>no measurable downstream accuracy loss</strong>. Memory footprint drops by roughly <strong>6&times;</strong>, and because the rotation and quantization are cheaper than the memory-bandwidth they save, inference is actually <em>faster</em> on Gemma and Mistral baselines &mdash; no fine-tuning, no calibration, no model-specific tweaks. Independent reimplementations landed this week as a <strong>llama.cpp</strong> discussion and an <strong>open-source PyTorch/Triton port targeting vLLM</strong>, accelerating real-world adoption.
+    </p>
+    <ul class="sources">
+      <li><a href="https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/">Google Research: TurboQuant &mdash; Redefining AI efficiency with extreme compression</a> (primary)</li>
+      <li><a href="https://github.com/ggml-org/llama.cpp/discussions/20969">llama.cpp Discussion #20969: TurboQuant &mdash; Extreme KV Cache Quantization</a> (primary, community)</li>
+      <li><a href="https://github.com/0xSero/turboquant">GitHub: 0xSero/turboquant &mdash; PyTorch + Triton + vLLM integration</a> (primary, community)</li>
+      <li><a href="https://github.com/hackimov/turboquant-kv">GitHub: hackimov/turboquant-kv &mdash; Open-source PyTorch reference</a> (primary, community)</li>
+      <li><a href="https://www.spheron.network/blog/google-turboquant-llm-compression-gpu-cloud/">Spheron: Google TurboQuant &mdash; 6&times; KV cache compression for LLM inference</a></li>
+      <li><a href="https://decodethefuture.org/en/turboquant-vector-quantization-kv-cache/">Decode The Future: TurboQuant explained &mdash; 3-bit KV cache at 6&times; compression</a></li>
+    </ul>
+  </article>
+
+  <h2>Markets, Capital &amp; Enterprise Adoption</h2>
+
+  <article>
+    <h3><span class="tag">Ramp AI Index</span>Anthropic overtakes OpenAI in paying business customers for the first time (34.4% vs. 32.3%)</h3>
+    <div class="byline">13 May 2026 &middot; Primary source: Ramp</div>
+    <p>
+      The May edition of the <strong>Ramp AI Index</strong> &mdash; drawn from corporate-card and AP spend across more than <strong>50,000 companies</strong> &mdash; shows <strong>Anthropic at 34.4%</strong> paid penetration vs. <strong>OpenAI at 32.3%</strong>, the first time Anthropic has led the series. The shift is the tail of a year-long inflection: Anthropic's paid business penetration sat at just <strong>9% in May 2025</strong> and has quadrupled, while OpenAI added only <strong>0.3 points</strong> of paid business penetration over the same window. Ramp's economist credits a deliberate "technical buyer first" wedge (finance, tech, professional services), and notes the data lines up with reporting that <strong>Anthropic is in talks for a $30&ndash;$50 B round at a $900&ndash;$950 B valuation</strong> &mdash; structurally above OpenAI's March mark. Headwinds flagged: rate-limit fatigue, outages, and per-token incentives that push customers toward more expensive models.
+    </p>
+    <ul class="sources">
+      <li><a href="https://ramp.com/leading-indicators/ai-index-may-2026">Ramp: AI Index &mdash; May 2026 (Anthropic beats OpenAI on business adoption)</a> (primary)</li>
+      <li><a href="https://ramp.com/data/ai-index">Ramp: AI Index (live dashboard)</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/05/13/anthropic-now-has-more-business-customers-than-openai-according-to-ramp-data/">TechCrunch: Anthropic now has more business customers than OpenAI, according to Ramp data</a></li>
+      <li><a href="https://www.axios.com/2026/05/13/anthropic-openai-workplace-ai-adoption">Axios: Anthropic overtakes OpenAI in workplace AI adoption</a></li>
+      <li><a href="https://venturebeat.com/technology/anthropic-finally-beat-openai-in-business-ai-adoption-but-3-big-threats-could-erase-its-lead">VentureBeat: Anthropic finally beat OpenAI &mdash; but 3 threats could erase its lead</a></li>
+      <li><a href="https://theaiinsider.tech/2026/05/14/anthropic-overtakes-openai-among-business-customers-as-it-courts-small-firms-and-eyes-950b-valuation/">The AI Insider: Anthropic overtakes OpenAI; eyes $950 B valuation</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anduril</span>$5 B Series H doubles valuation to $61 B; Thrive + a16z lead, Seattle autonomous-warship line announced</h3>
+    <div class="byline">13 May 2026 &middot; Primary source: Anduril / TechCrunch</div>
+    <p>
+      <strong>Anduril</strong> closed a <strong>$5 B Series H</strong> co-led by <strong>Thrive Capital</strong> and <strong>Andreessen Horowitz</strong> at a <strong>$61 B valuation</strong> &mdash; roughly double the $30.5 B mark it set just under a year ago in a Founders Fund-led round, and the largest single defense-tech round on record. Total capital raised now tops <strong>$11 B</strong>. Anduril says <strong>2025 revenue doubled to $2.2 B</strong>, with delivery on its first international program of record (Royal Australian Navy) and demonstrated autonomous flight under the U.S. Air Force's CCA program. The new capital funds manufacturing scale-up, R&amp;D, and a newly disclosed <strong>autonomous-warship operation in Seattle</strong>. Notably, this round (and Fractile's Series H the same day on AI-inference silicon) cements defense-tech as a top-tier AI-industrial vertical heading into H2 2026.
+    </p>
+    <ul class="sources">
+      <li><a href="https://techcrunch.com/2026/05/13/anduril-raises-5b-doubles-valuation-to-61b/">TechCrunch: Anduril raises $5 B, doubles valuation to $61 B</a></li>
+      <li><a href="https://www.cnbc.com/2026/05/13/anduril-valuation-defense-tech-funding-boom.html">CNBC: Anduril doubles valuation to over $60 B as defense-tech funding boom continues</a></li>
+      <li><a href="https://siliconangle.com/2026/05/13/anduril-doubles-valuation-61b-new-5b-funding-round/">SiliconANGLE: Anduril doubles valuation to $61 B in new $5 B round</a></li>
+      <li><a href="https://www.geekwire.com/2026/anduril-lands-5b-as-defense-giant-builds-autonomous-warship-operation-in-seattle/">GeekWire: Anduril lands $5 B as defense giant builds autonomous-warship operation in Seattle</a></li>
+      <li><a href="https://www.washingtontechnology.com/companies/2026/05/anduril-hauls-5b-series-h-round/413515/">Washington Technology: Anduril hauls in $5 B for Series H</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This 14 May digest is scoped to ~24&ndash;48 hour signals (11&ndash;14 May 2026) and is deliberately non-overlapping with prior April editions in this repo (IBM Bob, GitHub App-installation-token rollout, Ineffable Intelligence seed, DeepSeek V4-Pro pricing, Meta&ndash;Manus block, Google DeepMind&nbsp;&times;&nbsp;Seoul K-Moonshot MOU, Anthropic Sydney, Avoca Series B). Primary sources (MSRC Security Update Guide, MSRC Blog, OpenAI Daybreak page, Google Cloud Threat Intel Blog, Google Research Blog, Adaption Labs blog, Ramp AI Index) are flagged inline. Stories sourced primarily from blogs/secondary outlets (e.g. Adaption AutoScientist primary blog + TechCrunch / Mezha / DigiTrendZ corroboration; Anduril Series H via TechCrunch + CNBC + SiliconANGLE + GeekWire + Washington Technology) carry &ge;3 independent corroborating outlets per the digest's sourcing policy.</p>
+    <p>Generated 14 May 2026.</p>
+  </footer>
+</body>
+</html>
