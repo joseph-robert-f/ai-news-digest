@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 15 May 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 15 May 2026</h1>
+    <div class="meta">Week of 11 May&ndash;17 May 2026 &middot; Coverage window: last ~24&ndash;48 hours</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> Two days into the post-Patch-Tuesday news cycle, the story rotated from <em>AI-vs-AI security</em> to <em>AI-as-a-shipping-product</em>. <strong>GitHub</strong> opened a technical preview of a stand-alone <strong>Copilot desktop app</strong> for agentic development, while <strong>VS Code 1.120</strong> promoted its <strong>Agents window</strong> to stable and added terminal-command risk assessment. <strong>Anthropic</strong> ran a full enterprise day &mdash; launching <strong>Claude for Small Business</strong> (15 pre-built workflows wired into QuickBooks, PayPal, HubSpot et al.) and announcing a <strong>$200 M four-year partnership with the Gates Foundation</strong> on global health, education, and agriculture. <strong>Amazon</strong> retired Rufus and shipped <strong>Alexa for Shopping</strong>, an agentic, Buy-for-Me-capable assistant, to U.S. customers. <strong>Apple</strong> is reportedly drafting App Store rules to admit autonomous AI agents ahead of WWDC. And on the capital side, <strong>Cisco's</strong> Q3 FY26 print &mdash; <strong>$2.1 B</strong> AI infrastructure orders <em>in the quarter</em>, <strong>$9 B</strong> FY26 guide (up from $5 B), and a <strong>&lt;4,000-person</strong> restructuring to fund silicon, optics, security, and AI &mdash; sent CSCO to record highs.
+  </div>
+
+  <h2>AI Developer Tooling &amp; Platforms</h2>
+
+  <article>
+    <h3><span class="tag">GitHub</span>Copilot App enters technical preview: a native desktop home for agent-driven development</h3>
+    <div class="byline">14 May 2026 &middot; Primary source: GitHub Changelog</div>
+    <p>
+      GitHub opened a <strong>technical preview of the GitHub Copilot app</strong>, a standalone desktop client for <strong>Windows, macOS, and Linux</strong> built specifically around agent-driven coding. The pitch is to collapse the issue&nbsp;&rarr;&nbsp;branch&nbsp;&rarr;&nbsp;terminal&nbsp;&rarr;&nbsp;IDE&nbsp;&rarr;&nbsp;PR loop into a single surface: each session is a sandboxed workspace with its own branch, files, conversation, and task state, sessions can be kicked off from an <em>issue</em>, a <em>pull request</em>, a free-form prompt, or a previous session, and the agent's work lands back into the existing GitHub review flow rather than into a separate tool's history. <strong>Copilot Pro and Pro+</strong> subscribers can request early access today; <strong>Business and Enterprise</strong> tenants get rolled in across the week, with admin policy and audit controls inherited from existing Copilot governance. Notably, this is GitHub's first first-party <em>desktop</em> surface for Copilot since Copilot CLI, and it's clearly positioned against Cursor's standalone IDE strategy and Anthropic's Claude Code surface.
+    </p>
+    <ul class="sources">
+      <li><a href="https://github.blog/changelog/2026-05-14-github-copilot-app-is-now-available-in-technical-preview/">GitHub Changelog: GitHub Copilot app is now available in technical preview</a> (primary)</li>
+      <li><a href="https://github.com/features/copilot/whats-new">GitHub: What's new with Copilot</a> (primary)</li>
+      <li><a href="https://devopsjournal.io/blog/2026/05/14/github-copilot-app">DevOps Journal: GitHub Copilot App is now in Technical Preview</a></li>
+      <li><a href="https://github.blog/news-insights/product-news/">The GitHub Blog: Latest product news</a> (primary)</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">VS Code</span>1.120 ships: Agents window promoted to stable, terminal-risk assessment, BYOK token controls</h3>
+    <div class="byline">13&ndash;14 May 2026 &middot; Primary source: code.visualstudio.com</div>
+    <p>
+      The May release of Visual Studio Code &mdash; <strong>v1.120</strong> &mdash; promotes the <strong>Agents window</strong> to <em>stable</em> across all projects, letting users orchestrate multiple long-running agent sessions side-by-side without leaving the editor. Two safety features land in the same drop: a <strong>terminal-command risk assessment</strong> pass that surfaces a confidence score before any agent-proposed shell command executes, and an <strong>output compression</strong> path that summarizes large terminal dumps before they re-enter the context window. <strong>BYOK ("bring your own key") models</strong> now expose per-request token-usage telemetry and a <em>thinking-effort</em> setting, and the <strong>Markdown preview</strong> can now diff rendered output, not just source. The cumulative shape is unmistakable: VS Code is consolidating its standing as the default front-end for multi-agent coding, the same week GitHub's new Copilot desktop app and Cursor's xAI-flavored pivot raise the temperature on the IDE market.
+    </p>
+    <ul class="sources">
+      <li><a href="https://code.visualstudio.com/updates/v1_120">Visual Studio Code 1.120 release notes</a> (primary)</li>
+      <li><a href="https://github.com/microsoft/vscode/releases">GitHub: microsoft/vscode releases</a> (primary)</li>
+      <li><a href="https://releasebot.io/updates/microsoft/visual-studio-code">Releasebot: VS Code updates &mdash; May 2026</a></li>
+      <li><a href="https://github.blog/changelog/2026-05-06-github-copilot-in-visual-studio-code-april-releases/">GitHub Changelog: Copilot in VS Code &mdash; April releases</a> (primary, context)</li>
+    </ul>
+  </article>
+
+  <h2>Enterprise AI &amp; Adoption</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Claude for Small Business: 15 ready-to-run agentic workflows across QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, Microsoft 365</h3>
+    <div class="byline">13&ndash;14 May 2026 &middot; Primary source: Anthropic</div>
+    <p>
+      <strong>Anthropic</strong> launched <strong>Claude for Small Business</strong>, a packaged SMB tier that plugs Claude into the SaaS stack U.S. small businesses already pay for &mdash; <strong>Intuit QuickBooks, PayPal, HubSpot, Canva, Docusign, Google Workspace, and Microsoft 365</strong> &mdash; and ships with <strong>15 pre-built agentic workflows</strong> covering finance, operations, sales, marketing, HR, and customer service. Concrete tasks include reconciling a QuickBooks cash position against incoming PayPal settlements to plan payroll, closing monthly books and generating a plain-English P&amp;L, chasing overdue invoices, and running HubSpot-instrumented marketing campaigns. Anthropic says there is <strong>no surcharge</strong> over a standard Claude license plus whatever partner tools the business already uses. The launch is bundled with a <strong>10-city free training tour</strong> &mdash; Chicago, Tulsa, Dallas, New Jersey, Baton Rouge, Birmingham, Salt Lake City, Baltimore, San Jose, Indianapolis &mdash; and an on-demand <em>AI Fluency for Small Business</em> course co-produced with PayPal. The framing is direct: small businesses are <strong>44% of U.S. GDP and ~46% of private-sector employment</strong>, and they have lagged frontier AI adoption. This is the SMB analog to Anthropic's enterprise wedge that just lifted it past OpenAI on Ramp's index.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/news/claude-for-small-business">Anthropic: Introducing Claude for Small Business</a> (primary)</li>
+      <li><a href="https://www.anthropic.com/news">Anthropic News</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/05/13/anthropic-courts-a-new-kind-of-customer-small-business-owners/">TechCrunch: Anthropic courts a new kind of customer &mdash; small business owners</a></li>
+      <li><a href="https://www.axios.com/2026/05/13/anthropic-claude-small-business-smb">Axios: Anthropic offers new Claude Code tools for small businesses</a></li>
+      <li><a href="https://siliconangle.com/2026/05/13/anthropic-launches-claude-small-business-new-automation-workflows/">SiliconANGLE: Anthropic launches Claude for Small Business with new automation workflows</a></li>
+      <li><a href="https://www.inc.com/ben-sherry/anthropics-newest-claude-feature-is-here-to-help-small-business-owners-with-their-pain-points/91343926">Inc.: Anthropic&rsquo;s newest Claude feature targets small-business pain points</a></li>
+      <li><a href="https://www.fastcompany.com/91540953/anthropic-launches-claude-for-small-business">Fast Company: Anthropic courts mom-and-pop shops with Claude for Small Business</a></li>
+      <li><a href="https://www.pymnts.com/artificial-intelligence-2/2026/anthropic-launches-claude-ai-agents-for-small-business-finance/">PYMNTS: Anthropic launches Claude AI agents for small business finance</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Amazon</span>Alexa for Shopping replaces Rufus &mdash; agentic price-tracking, dynamic comparisons, &ldquo;Buy for Me&rdquo; reaches outside Amazon</h3>
+    <div class="byline">14 May 2026 &middot; Primary source: aboutamazon.com</div>
+    <p>
+      <strong>Amazon</strong> formally retired the standalone <strong>Rufus</strong> chatbot and merged its product-knowledge stack into <strong>Alexa+</strong> to ship <strong>Alexa for Shopping</strong>, a single agentic assistant that lives in the main Amazon search bar on the app, on Amazon.com, and on Echo Show devices &mdash; no Prime membership or Echo hardware required. Headline capabilities: <em>dynamic product comparisons</em>, <em>year-long price history</em>, <em>personalized shopping guides</em> for large purchases, <em>automated deal-finding</em>, and <strong>"Buy for Me"</strong>, which lets Alexa locate items on third-party retailers' websites and complete the purchase using the customer's saved Amazon payment and shipping information. Amazon highlighted that more than <strong>300 million</strong> customers used Rufus in 2025; the new assistant rolls out to all U.S. customers within the week and is voice- and text-capable across mobile, desktop, and Echo surfaces. Strategically, this is Amazon's clearest agentic-commerce play of 2026, and it materially raises the stakes of the agent-shopping wars now being fought concurrently by OpenAI's ChatGPT shopping surface, Perplexity, and Google's Gemini Intelligence.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.aboutamazon.com/news/retail/alexa-for-shopping-ai-assistant">Amazon: Meet Alexa for Shopping, your personalized, agentic AI assistant on Amazon</a> (primary)</li>
+      <li><a href="https://www.axios.com/2026/05/13/amazon-alexa-ai-shopping-assistant">Axios: Amazon pushes Alexa deeper into AI shopping with Rufus integration</a></li>
+      <li><a href="https://www.retaildive.com/news/amazon-ai-alexa-for-shopping/820218/">Retail Dive: Rufus who? Alexa for Shopping brings AI to Amazon's search bar</a></li>
+      <li><a href="https://www.eweek.com/news/amazon-alexa-for-shopping-replaces-rufus/">eWeek: Amazon debuts 'Alexa for Shopping' with price tracking</a></li>
+      <li><a href="https://www.digitalcommerce360.com/2026/05/13/amazon-launches-ai-agent-alexa-for-shopping/">Digital Commerce 360: Amazon launches AI agent 'Alexa for Shopping'</a></li>
+      <li><a href="https://www.benzinga.com/news/retail-sales/26/05/52552425/amazon-kills-rufus-chatbot-rolls-out-ai-powered-alexa-shopping-assistant-heres-what-to-know">Benzinga: Amazon kills Rufus chatbot, rolls out AI-powered Alexa Shopping assistant</a></li>
+      <li><a href="https://dataconomy.com/2026/05/14/alexa-shopping-us/">Dataconomy: Amazon launches AI-powered Alexa for Shopping service</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Apple</span>App Store re-architects for autonomous AI agents ahead of WWDC, per The Information</h3>
+    <div class="byline">13&ndash;14 May 2026 &middot; Primary source: The Information (paywalled)</div>
+    <p>
+      Apple staffers are <strong>drafting a system to admit autonomous AI agents and AI-coding apps to the App Store</strong> while keeping the platform's privacy and security guardrails intact, <em>The Information</em> reported. The friction is structural: existing App Store rules prohibit apps from executing code that alters their own functionality or that of other apps &mdash; rules that, in <strong>March 2026</strong>, were used to block updates to several popular "vibe coding" apps. The new framework would create a sanctioned path for agentic apps that take complex actions on the user's behalf (browsing, purchasing, booking, file manipulation) without re-introducing the failure modes (e.g., agents deleting all of a user's mail) that have plagued more permissive desktop ecosystems. Sources expect at least a preview at <strong>WWDC 2026</strong>, although Apple may not be ready to unveil it then. If shipped, this would be a meaningful structural unlock for the iOS agentic ecosystem and the most concrete signal yet that Apple intends to <em>host</em>, not just integrate against, third-party agents &mdash; a posture closer to Google I/O's Gemini Intelligence framing than to its own historical App Store posture.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.macrumors.com/2026/05/13/apple-ai-agent-apps-app-store/">MacRumors: Apple working on plan to allow AI agent apps on the App Store</a></li>
+      <li><a href="https://9to5mac.com/2026/05/13/apple-is-working-to-incorporate-ai-agents-on-the-app-store-per-report/">9to5Mac: Apple is working to incorporate AI agents on the App Store, per report</a></li>
+      <li><a href="https://www.engadget.com/2172378/apple-may-open-up-the-app-store-to-agentic-ai/">Engadget: Apple may open up the App Store to agentic AI</a></li>
+      <li><a href="https://www.pymnts.com/apple/2026/apple-prepares-app-store-for-autonomous-ai-agents/">PYMNTS: Apple prepares App Store for autonomous AI agents</a></li>
+      <li><a href="https://appleinsider.com/articles/26/05/13/despite-risks-apple-seeks-ways-to-bring-more-ai-to-the-app-store">AppleInsider: Despite the risks, Apple seeks ways to bring more AI to the App Store</a></li>
+      <li><a href="https://dataconomy.com/2026/05/14/apple-may-loosen-app-store-rules-for-ai-agents/">Dataconomy: Apple may loosen App Store rules for AI agents</a></li>
+      <li><a href="https://www.techradar.com/ai-platforms-assistants/forget-the-app-store-apple-could-be-about-to-launch-the-agent-store-for-ai-apps-and-it-could-transform-how-you-use-your-iphone">TechRadar: Apple could be about to launch the &lsquo;agent store&rsquo;</a></li>
+    </ul>
+  </article>
+
+  <h2>Markets, Capital &amp; Mission</h2>
+
+  <article>
+    <h3><span class="tag">Cisco</span>Q3 FY26: record $15.84 B revenue, $2.1 B AI infrastructure orders in the quarter, $9 B FY26 guide, ~4,000-person restructuring</h3>
+    <div class="byline">13&ndash;14 May 2026 &middot; Primary source: Cisco Investor Relations</div>
+    <p>
+      Cisco's <strong>Q3 FY26</strong> print (period ended <strong>25 April 2026</strong>) is the cleanest read on hyperscaler AI capex yet: <strong>$15.84 B</strong> revenue (vs. ~$15.56 B consensus), <strong>$1.06</strong> non-GAAP EPS (vs. ~$1.04), and <strong>12% YoY</strong> revenue growth. AI infrastructure orders &mdash; primarily <strong>Silicon One</strong>, advanced networking, and optical products for AI data centers &mdash; hit <strong>$2.1 B in the quarter</strong>, taking <strong>fiscal-year-to-date AI orders to $5.3 B</strong>. CFO commentary lifted FY26 AI-orders guidance from $5 B to <strong>$9 B</strong> and FY26 hyperscaler AI revenue from $3 B to <strong>$4 B</strong>. Full-year revenue guide: <strong>$62.8&ndash;$63.0 B</strong>. Alongside the print, Cisco announced a <strong>restructuring of fewer than 4,000 roles (~&lt;5% of headcount)</strong>, with pre-tax charges of up to <strong>$1 B</strong>, to redirect investment into <em>silicon, optics, security, and AI</em>. CSCO popped ~<strong>15%</strong> after the bell and traded to fresh record highs into 15 May. CEO Chuck Robbins's framing &mdash; "<em>critical infrastructure for the AI era</em>" &mdash; is now the consensus market thesis on Cisco.
+    </p>
+    <ul class="sources">
+      <li><a href="https://s21.q4cdn.com/812015656/files/doc_earnings/2026/q3/earnings-result/Q3FY26-Press-Release.pdf">Cisco IR: Q3 FY26 press release (PDF)</a> (primary)</li>
+      <li><a href="https://s21.q4cdn.com/812015656/files/doc_earnings/2026/q3/presentation/Q3-26-Earnings-Slides.pdf">Cisco IR: Q3 FY26 earnings slides (PDF)</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/05/13/cisco-csco-q3-earnings-report-2026.html">CNBC: Cisco stock pops 15% on surging AI orders; ~4,000 job cuts</a></li>
+      <li><a href="https://fortune.com/2026/05/15/critical-infrastructure-ai-era-cisco-ceo-earnings-beat-shares-record/">Fortune: &lsquo;Critical infrastructure for the AI era&rsquo; &mdash; Cisco&rsquo;s CEO on the beat that sent shares to a record</a></li>
+      <li><a href="https://www.foxbusiness.com/technology/cisco-cut-thousands-jobs-ai-push-accelerates-earnings-beat">Fox Business: Cisco to cut thousands of jobs as AI push accelerates after earnings beat</a></li>
+      <li><a href="https://www.stocktitan.net/sec-filings/CSCO/8-k-cisco-systems-inc-reports-material-event-80905d356577.html">StockTitan: Cisco 8-K &mdash; record Q3, lifted FY26 AI and revenue guidance</a></li>
+      <li><a href="https://www.fxleaders.com/news/2026/05/14/cisco-stock-soars-20-after-hours-as-ai-infrastructure-orders-ignite-biggest-rally-in-years/">FX Leaders: Cisco stock soars after AI orders ignite biggest rally in years</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic &times; Gates Foundation</span>$200 M, four-year partnership: Claude credits, grants, and engineers aimed at global health, education, and agriculture</h3>
+    <div class="byline">14 May 2026 &middot; Primary source: Anthropic / Gates Foundation</div>
+    <p>
+      <strong>Anthropic</strong> and the <strong>Gates Foundation</strong> announced a <strong>four-year, $200 M partnership</strong> that combines <em>grant funding</em>, <em>Claude usage credits</em>, <em>Anthropic engineering time</em>, and <em>public-interest research projects</em>. The largest tranche targets <strong>global health</strong> in low- and middle-income countries &mdash; where roughly <strong>4.6 B people</strong> lack access to essential health services &mdash; including accelerating vaccine and therapy development and helping ministries of health interpret operational data faster. <strong>Education</strong> work covers evidence-based tutoring for K&ndash;12 students in the U.S. and career-guidance tooling, plus AI-supported foundational literacy and numeracy programs in <strong>sub-Saharan Africa and India</strong>. <strong>Economic mobility</strong> work focuses on smallholder agriculture &mdash; nearly <strong>2 B</strong> people whose incomes depend on it &mdash; via agricultural fine-tuning of Claude and openly released datasets of local crops and benchmarks. A parallel <strong>language-accessibility</strong> stream will publish datasets supporting <em>dozens of African languages</em> as open public goods. The first model benchmarks, datasets, and knowledge-graph releases under the partnership are slated to land later in 2026. Strategically, this is Anthropic's most concrete "AI public-good" commitment to date and a deliberate counterweight to the narrative that frontier AI economics only flow to large enterprise.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/news/gates-foundation-partnership">Anthropic: $200 M partnership with the Gates Foundation</a> (primary)</li>
+      <li><a href="https://www.gatesfoundation.org/ideas/media-center/press-releases/2026/05/ai-anthropic-partnership">Gates Foundation: Making AI work for more people</a> (primary)</li>
+      <li><a href="https://www.tradingview.com/news/reuters.com,2026:newsml_L6N41Q1FJ:0-anthropic-gates-foundation-launch-200-million-partnership-for-ai-in-health-education/">Reuters via TradingView: Anthropic, Gates Foundation launch $200 M partnership for AI in health, education</a></li>
+      <li><a href="https://www.pymnts.com/partnerships/2026/anthropic-gates-foundation-form-200-million-dollar-health-focused-pact/">PYMNTS: Anthropic and Gates Foundation form $200 M health-focused pact</a></li>
+      <li><a href="https://techstartups.com/2026/05/14/anthropic-and-gates-foundation-launch-200m-partnership-to-bring-ai-to-healthcare-education-and-underserved-communities/">Tech Startups: $200 M partnership for healthcare, education, underserved communities</a></li>
+      <li><a href="https://finance.yahoo.com/sectors/healthcare/articles/anthropic-gates-foundation-launch-200-150123291.html">Yahoo Finance: Anthropic, Gates Foundation launch $200 M AI health partnership</a></li>
+      <li><a href="https://news.slashdot.org/story/26/05/14/1648206/anthropic-forms-200-million-partnership-with-the-gates-foundation">Slashdot: Anthropic forms $200 M partnership with the Gates Foundation</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This 15 May digest is scoped to ~24&ndash;48 hour signals (13&ndash;15 May 2026) and is deliberately non-overlapping with the previous three editions in this repo: <em>12 May</em> (OpenAI DeployCo, Google GTIG AI zero-day, OpenAI EU cyber-model access, Helsing $1.2 B, Cursor &times; xAI staff meetings, Google I/O preview), <em>13 May</em> (DeepMind AI Co-Mathematician on FrontierMath, OpenAI Daybreak, Anthropic&ndash;Stainless acquisition talks, Microsoft Copilot Studio April release, Isomorphic Labs $2.1 B Series B, Trump&ndash;Xi China trip with Jensen Huang), and <em>14 May</em> (Microsoft May Patch Tuesday with MDASH, OpenAI Daybreak launch, Google GTIG AI-built zero-day, Adaption AutoScientist, Google TurboQuant ICLR 2026, Ramp AI Index, Anduril $5 B Series H). Primary sources flagged inline include the GitHub Copilot Changelog, code.visualstudio.com release notes, Anthropic's <em>Claude for Small Business</em> and <em>Gates Foundation</em> news posts, the Gates Foundation press release, aboutamazon.com, and Cisco Investor Relations' Q3 FY26 press release and slides. The Apple App Store story originates from <em>The Information</em> (paywalled) and is corroborated here by &ge;6 independent secondary outlets per the digest's sourcing policy.</p>
+    <p>Generated 15 May 2026.</p>
+  </footer>
+</body>
+</html>
