@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 16 May 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 16 May 2026</h1>
+    <div class="meta">Week of 11&ndash;17 May 2026 &middot; Coverage window: last ~48 hours</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> A loud pre-Google-I/O weekend: OpenAI made <strong>Codex</strong> ambient by shipping it inside the <em>ChatGPT mobile app</em>, letting its 4&nbsp;M weekly users approve coding work from a phone while a Mac, devbox, or remote env keeps building. <strong>Notion 3.5</strong> turned the workspace itself into an agent hub with hosted Workers, an External Agents API (Claude, Codex, Decagon out of the box), webhooks-in, and live database sync. The week's biggest infra round &mdash; Stanford-spun <strong>GridCARE</strong> &mdash; closed a $64&nbsp;M Series A from Sutter Hill to coin a new category, "Power Acceleration for AI," already unlocking 2&nbsp;GW of stranded grid capacity for AI factories. Meanwhile <strong>SpaceXAI</strong> is bleeding senior research talent to Meta and Thinking Machines Lab, with the pre-training team reportedly down to a handful. On the research side, two new agent benchmarks &mdash; <strong>GroupMemBench</strong> and <strong>Cattle&nbsp;Trade</strong> &mdash; landed on arXiv probing the two skills 2026 agents still fumble: multi-party memory and adversarial strategy under imperfect information. And a fresh <strong>Gemini Omni</strong> UI leak set expectations for Tuesday's Google I/O keynote.
+  </div>
+
+  <h2>Frontier Agents &amp; Developer Platforms</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>Codex goes mobile: approve, review, and steer coding agents from your phone</h3>
+    <div class="byline">14 May 2026 &middot; Primary source: OpenAI</div>
+    <p>
+      OpenAI shipped <strong>Codex inside the ChatGPT mobile app</strong> on iOS and Android, framing the release as "work with Codex from anywhere." The phone is positioned as a thin control surface: connect to any machine where Codex is running &mdash; a laptop, a dedicated Mac mini, or a managed remote environment &mdash; and the app loads <em>live state</em> from that environment, so users can move between active threads, approvals, plugins, and project context without breaking flow. From the phone, users can switch models, start new tasks, or approve sandboxed commands. The rollout is in preview but open to <strong>every ChatGPT plan including Free and the lower-cost Go tier</strong>, in all supported regions; Windows host support is "coming soon." OpenAI says Codex now has <strong>more than 4&nbsp;M weekly users</strong>, a meaningful escalation in the contest with Claude Code, Gemini CLI, and Cursor for default-coding-agent mindshare. Notably, this lands the same week Notion opened its workspace to external agents with Codex listed as a launch partner (see below).
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/work-with-codex-from-anywhere/">OpenAI: Work with Codex from anywhere</a> (primary)</li>
+      <li><a href="https://community.openai.com/t/introducing-the-new-codex-for-almost-everything/1379125">OpenAI Developer Community: Introducing the new Codex for (almost) everything</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/">TechCrunch: OpenAI says Codex is coming to your phone</a></li>
+      <li><a href="https://www.macrumors.com/2026/05/15/openai-brings-codex-chatgpt-mobile-app/">MacRumors: OpenAI brings Codex remote access to ChatGPT mobile app</a></li>
+      <li><a href="https://www.eweek.com/news/openai-codex-mobile-chatgpt-app/">eWeek: OpenAI launches Codex in ChatGPT mobile for its 4M weekly users</a></li>
+      <li><a href="https://www.digit.in/news/general/openai-codex-now-available-in-chatgpt-mobile-app-features-availability-and-more.html">Digit: OpenAI Codex now available in ChatGPT mobile app</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Notion</span>Notion 3.5 ships a full Developer Platform: Workers, External Agents API, webhooks-in, DB sync</h3>
+    <div class="byline">13 May 2026 &middot; Primary source: Notion</div>
+    <p>
+      Notion launched a <strong>Developer Platform</strong> that recasts the workspace as an agent control room. Four pieces shipped together: <strong>Workers</strong> (hosted runtime for custom code, deployed via a new <code>ntn.dev</code> CLI and run in a secure sandbox &mdash; free during beta, on Notion credits from <strong>11 August 2026</strong>); an <strong>External Agents API</strong> with day-zero integrations for <strong>Claude, Codex, and Decagon</strong>; bidirectional <strong>webhooks</strong> so external apps can now trigger Notion (not only the reverse); and <strong>Database Sync</strong> that pulls Salesforce, Zendesk, Postgres, and other systems-of-record into Notion databases and keeps them fresh. The strategic read is that Notion is rejecting the "one vendor's agent" model and trying to be the <em>neutral surface</em> where users mix agents from rival labs &mdash; a direct counter to Microsoft 365 Copilot's lock-in and to Salesforce's Agentforce-only stack.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.notion.com/blog/introducing-developer-platform">Notion: Introducing Notion's Developer Platform</a> (primary)</li>
+      <li><a href="https://www.notion.com/releases/2026-05-13">Notion Release Notes: 3.5 &mdash; Notion Developer Platform</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents/">TechCrunch: Notion just turned its workspace into a hub for AI agents</a></li>
+      <li><a href="https://dataconomy.com/2026/05/14/notion-launches-developer-platform-for-ai-workflows-and-agents/">Dataconomy: Notion launches developer platform for AI workflows and agents</a></li>
+      <li><a href="https://betanews.com/article/notion-developer-platform-ai-agents/">BetaNews: Notion just made its workspace a home for AI agents</a></li>
+      <li><a href="https://almcorp.com/blog/notion-ai-agent-platform-workers-external-agents-enterprise-search/">ALM Corp: Notion's AI Agent Platform &mdash; Workers, External Agents, Enterprise Search</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Research &amp; Benchmarks</h2>
+
+  <article>
+    <h3><span class="tag">arXiv</span>Two new agent benchmarks land: GroupMemBench (multi-party memory) and Cattle Trade (bluffing &amp; bargaining)</h3>
+    <div class="byline">14 May 2026 &middot; Primary source: arXiv</div>
+    <p>
+      Two complementary agent benchmarks dropped on arXiv on 14 May, both targeting capabilities that 2026 production agents still demonstrably under-deliver. <strong>GroupMemBench</strong> (arXiv:2605.14498) is the first benchmark to score LLM agents on <em>multi-party</em> memory: most existing memory systems are tuned for dyadic, single-user chats, but real deployments span groups and channels with several speakers. The benchmark scores three properties &mdash; group dynamics beyond concatenated one-on-ones, speaker-grounded belief tracking, and audience-adapted language (Theory-of-Mind shifts that produce role-specific vocabulary) &mdash; using a graph-grounded synthesis pipeline. <strong>Cattle&nbsp;Trade</strong> (arXiv:2605.14537) is a long-horizon, multi-agent economic game (auctions, hidden-offer trade, bargaining, bluffing, opponent modeling) that runs 50&ndash;60 turns; the authors evaluated seven cost-efficient LLMs and three deterministic code agents across <strong>242 games</strong>, finding that <em>strategic coherence</em> &mdash; spending discipline and phase-adaptive bidding &mdash; correlates with rank far more than spending volume or any single sub-skill. Together they sharpen the open question heading into Google I/O: are the next-gen "omni" models actually better collaborators and strategists, or just better single-shot generators?
+    </p>
+    <ul class="sources">
+      <li><a href="https://arxiv.org/abs/2605.14498">arXiv:2605.14498 &mdash; GroupMemBench: Benchmarking LLM Agent Memory in Multi-Party Conversations</a> (primary)</li>
+      <li><a href="https://arxiv.org/abs/2605.14537">arXiv:2605.14537 &mdash; Cattle Trade: A Multi-Agent Benchmark for LLM Bluffing, Bidding, and Bargaining</a> (primary)</li>
+      <li><a href="https://arxiv.org/html/2605.14537">arXiv HTML render: Cattle Trade full paper</a> (primary)</li>
+      <li><a href="https://arxiv.org/list/cs.AI/new">arXiv cs.AI new submissions feed (context)</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Infrastructure &amp; Capital</h2>
+
+  <article>
+    <h3><span class="tag">GridCARE</span>$64&nbsp;M Series A creates "Power Acceleration for AI" category; Sutter Hill leads</h3>
+    <div class="byline">14&ndash;15 May 2026 &middot; Primary source: GridCARE / BusinessWire</div>
+    <p>
+      <strong>GridCARE</strong>, a Stanford Doerr School of Sustainability spin-out, closed an oversubscribed <strong>$64&nbsp;M Series A</strong> led by <strong>Sutter Hill Ventures</strong> (early NVIDIA, Snowflake, Astera Labs) at "a significant step-up in valuation" from its seed less than a year ago. Its <em>Energize</em> platform applies physics-based AI to live grid topology to identify and activate near-term stranded capacity &mdash; the constraint that has become the binding limit on new AI data centers in PJM, ERCOT, and CAISO. GridCARE says it has already unlocked <strong>more than $10&nbsp;B in economic value</strong> for developers by bringing <strong>hundreds of MW</strong> online years ahead of standard interconnect timelines, and is now engaged on projects spanning <strong>more than a dozen markets and 2&nbsp;GW of new AI compute capacity</strong>. The company is using the round to define a new category &mdash; <em>Power Acceleration for AI</em> &mdash; and to host an inaugural summit in September 2026. The round dovetails with this week's Anthropic / Akamai $1.8&nbsp;B compute deal: the bottleneck conversation has officially shifted from chips to electrons.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.businesswire.com/news/home/20260514546216/en/GridCARE-Raises-$64-Million-Series-A-from-Leading-AI-and-Energy-Investors-to-Create-a-New-Category-Power-Acceleration-for-AI">BusinessWire: GridCARE raises $64M Series A &mdash; new category "Power Acceleration for AI"</a> (primary)</li>
+      <li><a href="https://www.gridcare.ai/">GridCARE: company site</a> (primary)</li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-05-14/early-nvidia-investor-backs-startup-to-tap-idle-grid-power">Bloomberg: Early NVIDIA investor Sutter Hill backs GridCARE</a></li>
+      <li><a href="https://siliconangle.com/2026/05/15/gridcare-raises-64m-speed-ai-data-center-projects/">SiliconANGLE: GridCARE raises $64M to speed AI data center projects</a></li>
+      <li><a href="https://www.hpcwire.com/off-the-wire/gridcare-raises-64m-series-a-to-accelerate-power-delivery-for-ai-infrastructure/">HPCwire: GridCARE raises $64M Series A to accelerate power delivery for AI infrastructure</a></li>
+      <li><a href="https://www.datacenterdynamics.com/en/news/gridcare-raises-64m-in-series-a-funding-round/">DCD: GridCARE raises $64M in Series A funding round</a></li>
+      <li><a href="https://www.latitudemedia.com/news/gridcare-raises-oversubscribed-64-million-series-a/">Latitude Media: GridCARE raises oversubscribed $64M Series A</a></li>
+    </ul>
+  </article>
+
+  <h2>Industry &amp; Talent</h2>
+
+  <article>
+    <h3><span class="tag">SpaceXAI</span>Talent drain accelerates: ~50+ researchers gone, pre-training team down to a handful</h3>
+    <div class="byline">14 May 2026 &middot; Primary source: The Information (paywall); summary via TechCrunch</div>
+    <p>
+      <strong>SpaceXAI</strong> &mdash; the AI division created when SpaceX absorbed xAI in February and rebranded earlier this month &mdash; has lost more than <strong>50 researchers and engineers since February</strong>, according to The Information's reporting and follow-up coverage from TechCrunch. The exits are concentrated in <em>coding, world models, and Grok voice</em>; the core pre-training team is reportedly "down to a handful." Destination tells the story of the current AI talent market: at least <strong>11 to Meta</strong> (which restarted its Superintelligence Labs hiring push in Q1) and <strong>at least 7 to Mira Murati's Thinking Machines Lab</strong>. Sources cited unrealistic training-deadline pressure that "led to cutting corners on Grok" and the broader Musk-org culture as catalysts. The departures land just as Anthropic locked in capacity at xAI's Colossus 1 data center in Tennessee &mdash; meaning SpaceXAI's most valuable remaining asset, for now, is its <em>compute</em>, not its team. Watch for whether Tuesday's Google I/O Gemini push accelerates the bleed further.
+    </p>
+    <ul class="sources">
+      <li><a href="https://techcrunch.com/2026/05/14/elon-musks-spacexai-has-been-bleeding-staff-since-its-merger/">TechCrunch: Elon Musk's SpaceXAI has been bleeding staff since its merger</a></li>
+      <li><a href="https://finance.yahoo.com/sectors/technology/articles/elon-musk-spacexai-bleeding-staff-213044583.html">Yahoo Finance: SpaceXAI bleeding staff since merger (TechCrunch syndication)</a></li>
+      <li><a href="https://stocktwits.com/news-articles/markets/equity/spacex-faces-talent-drain-as-50-plus-xai-staff-reportedly-exits-for-meta-thinking-machines/cZXlWW1ReSk">StockTwits: SpaceX faces talent drain &mdash; 50+ exits to Meta, Thinking Machines</a></li>
+      <li><a href="https://startupfortune.com/spacexais-staff-exits-are-putting-musks-ai-strategy-under-pressure/">Startup Fortune: SpaceXAI staff exits are putting Musk's AI strategy under pressure</a></li>
+      <li><a href="https://goelite.com/blogs/spacexai-staff-departures-mount-after-february-merger">GoElite: SpaceXAI staff departures mount after February merger</a></li>
+      <li><a href="https://techcrunch.com/2026/05/10/were-feeling-cynical-about-xais-big-deal-with-anthropic/">TechCrunch (10 May, context): "Feeling cynical about xAI's big deal with Anthropic"</a></li>
+    </ul>
+  </article>
+
+  <h2>Looking Ahead</h2>
+
+  <article>
+    <h3><span class="tag">Google</span>Gemini "Omni" UI strings keep surfacing in the run-up to Tuesday's Google I/O keynote</h3>
+    <div class="byline">13&ndash;16 May 2026 &middot; Primary source: Gemini UI leaks / Google I/O calendar</div>
+    <p>
+      With the Google I/O 2026 keynote locked for <strong>Tuesday, 19 May at 10 a.m. PT</strong>, the pre-show leak trail tightened this week. New UI strings inside Gemini's video-generation tab continue to reference a unified model labeled "<strong>Omni</strong>" sitting next to Veo&nbsp;3.1 (internal codename "Toucan"), strongly suggesting Google will debut a single pipeline that generates <em>text, image, and video</em> from one model &mdash; a first for any frontier lab. Early leaked clips reportedly show step-changes in prompt adherence and voice generation over Veo&nbsp;3.1. The expected supporting cast: a step-up Gemini base model (3.8 or 4.0), an Android XR smart-glasses tease, and another wave of agentic Android features. We will cover what actually ships in the 19 May edition; today's signal is that the Omni framing has now leaked from multiple independent UI captures, not just one.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.testingcatalog.com/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut/">TestingCatalog: Google's Gemini Omni video model surfaces ahead of I/O debut</a></li>
+      <li><a href="https://www.androidauthority.com/what-to-expect-from-google-io-2026-3664979/">Android Authority: What to expect from Google I/O 2026</a></li>
+      <li><a href="https://tech.yahoo.com/ai/gemini/articles/google-o-2026-were-expecting-193900765.html">Yahoo Tech: Google I/O 2026 &mdash; what we're expecting from Gemini, Android XR and more</a></li>
+      <li><a href="https://wavespeed.ai/blog/posts/google-omni-video-model-leak-i-o-2026/">WaveSpeed: Google's "Omni" video model &mdash; what the Gemini UI leak tells us</a></li>
+      <li><a href="https://www.thedailyjagran.com/technology/google-io-2026-to-take-place-on-may-19-with-gemini-omni-video-suite-reportedly-in-the-works-10311796">Daily Jagran: Google I/O 2026 on May 19 with Gemini Omni video suite in the works</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This 16 May digest is scoped to ~24&ndash;48&nbsp;h signals from 13&ndash;15 May 2026 and is deliberately non-overlapping with the most recent prior editions (17 April: Opus 4.7, GPT-5.4-Cyber, NVIDIA Ising, Stanford AI Index, Chrome AI Mode, GitHub remote Copilot CLI, EU AI Act countdown; 19 April: Beijing humanoid half-marathon, GPT-Rosalind, Claude Design, Cloudflare Agent Memory, Tesla AI5 tape-out, Anthropic 3.5&nbsp;GW TPU deal, Q1 2026 venture record; 28 April: IBM Bob, GitHub installation-token format, Ineffable Intelligence, DeepSeek V4-Pro pricing, China blocks Meta&ndash;Manus, Google DeepMind Seoul, Anthropic Sydney, Avoca). Primary sources flagged inline (OpenAI, Notion, arXiv, GridCARE / BusinessWire, Bloomberg). The SpaceXAI story originates with The Information, which is paywalled; it is corroborated by five independent secondary outlets in line with the digest's two-corroborating-source rule for non-primary signals. Earlier May items already widely reported &mdash; xAI&rarr;SpaceXAI rebrand (6 May), CAISI testing program with Microsoft/Google/xAI (5 May), Anthropic&ndash;Akamai $1.8&nbsp;B deal (8 May), EU AI Act Omnibus (7 May), Novo Nordisk &times; OpenAI (14 April) &mdash; are intentionally referenced as context only.</p>
+    <p>Generated 16 May 2026.</p>
+  </footer>
+</body>
+</html>
