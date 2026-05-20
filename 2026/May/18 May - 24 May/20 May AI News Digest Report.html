@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 20 May 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 20 May 2026</h1>
+    <div class="meta">Week of 18&ndash;24 May 2026 &middot; Coverage window: last ~24 hours (19&ndash;20 May)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> <strong>Google I/O 2026</strong> dominated the cycle. Google introduced the <strong>Gemini 3.5</strong> family (Flash, Omni, Spark agent), rebuilt the Search box around AI for the first time in ~25 years, and shipped <strong>Antigravity 2.0</strong>&mdash;a standalone agent-orchestration desktop, CLI, SDK, and managed-execution stack that <em>replaces</em> Gemini CLI as of 18 June. AI Studio gained native Kotlin + ADB to generate publishable Android apps from a prompt, and Samsung's first <strong>Android XR smart glasses</strong> were unveiled for a fall launch. In parallel, <strong>Google DeepMind</strong> closed an <strong>~$90 M acquihire + license</strong> of Bezos-backed <strong>Contextual AI</strong> (including CEO Douwe Kiela)&mdash;an antitrust-friendly structure mirroring the Hume playbook. <strong>Meta</strong> began notifying <strong>~8,000 employees</strong> of layoffs today (Singapore first), cancelling 6,000 open reqs and redirecting most survivors to new "Applied AI Engineering" and "Agent Transformation Accelerator XFN" units to fund a $125&ndash;145 B 2026 capex on AI. And <strong>OpenAI</strong> and <strong>Dell</strong> announced a Codex partnership to bring the agent into hybrid and on-prem enterprise environments built on the Dell AI Factory.
+  </div>
+
+  <h2>Google I/O 2026 &mdash; Frontier Models &amp; Agents</h2>
+
+  <article>
+    <h3><span class="tag">Google DeepMind</span>Gemini 3.5 family launches: Flash, Omni (video), Spark (background agent)</h3>
+    <div class="byline">19 May 2026 &middot; Primary source: Google blog / Google Developers Blog</div>
+    <p>
+      Google opened I/O with the <strong>Gemini 3.5</strong> series. <strong>3.5 Flash</strong> is the new default across Search and the API, marketed as "frontier intelligence at Flash speed and price"&mdash;Google's own numbers show it leading <strong>MCP Atlas at 83.6%</strong> (vs. Claude Opus 4.7 79.1% and GPT-5.5 75.3%), <strong>Terminal-Bench 2.1 at 76.2%</strong>, and roughly <strong>4&times; the throughput</strong> of comparable frontier models. <strong>Gemini Omni</strong> is a unified video model that can re-edit existing footage from a text prompt (adding or removing characters/objects) and ships into Flash, the Gemini app, Google Flow, and YouTube Shorts. <strong>Gemini Spark</strong> is a new general-purpose <em>background</em> agent inside the Gemini app that can reason across connected services and keep tasks running asynchronously; it rolls out to AI Ultra subscribers and trusted testers starting next week. Google also cut the Ultra subscription from $250 to $200/month and introduced a $100/month Developer tier.
+    </p>
+    <ul class="sources">
+      <li><a href="https://blog.google/products-and-platforms/google-io-2026-keynote/">Google: Everything announced at I/O 2026 (keynote recap)</a> (primary)</li>
+      <li><a href="https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/">Google Developers Blog: All the news from the I/O 2026 Developer keynote</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/05/19/google-ai-ultra-gemini-spark-omni.html">CNBC: Google debuts Gemini 3.5, Spark and Omni to keep pace with OpenAI and Anthropic</a></li>
+      <li><a href="https://tech.yahoo.com/ai/gemini/article/google-launches-gemini-35-flash-spark-omni-and-more-ai-updates-at-google-io-2026-172856601.html">Yahoo Tech: Gemini 3.5 Flash, Spark, Omni unveiled</a></li>
+      <li><a href="https://llm-stats.com/blog/research/gemini-3.5-flash-launch">LLM-Stats: Gemini 3.5 Flash benchmarks, pricing, and specs</a></li>
+      <li><a href="https://www.latent.space/p/ainews-google-io-2026-gemini-35-flash">Latent.Space [AINews]: Gemini 3.5 Flash, Omni, Spark, and Antigravity 2.0</a></li>
+    </ul>
+  </article>
+
+  <h2>Google I/O 2026 &mdash; Developer Platforms</h2>
+
+  <article>
+    <h3><span class="tag">Google</span>Antigravity 2.0 ships: standalone desktop, CLI, SDK, managed-execution &mdash; replaces Gemini CLI</h3>
+    <div class="byline">19 May 2026 &middot; Primary source: Google Developers Blog</div>
+    <p>
+      Google relaunched <strong>Antigravity</strong> as a standalone, agent-first developer platform spanning a <strong>desktop app</strong> for orchestrating parallel agents, an <strong>Antigravity CLI</strong> (Go-based, "snappier and more responsive"), an <strong>Antigravity SDK</strong> for hosting custom agents on your own infra, <strong>Managed Agents in the Gemini API</strong>, and enterprise governance via the <strong>Gemini Enterprise Agent Platform</strong>. New surface features include <em>dynamic subagents</em> for parallel workflows, <em>scheduled tasks</em> for background automation, and first-party integrations with AI Studio, Android, and Firebase. The kicker for developers: <strong>Gemini CLI is being sunset</strong>&mdash;on <strong>18 June 2026</strong>, Gemini CLI and Gemini Code Assist IDE extensions <em>stop serving requests</em> for AI Pro, Ultra, and free users (Standard/Enterprise Code Assist licenses keep working). Agent Skills, Hooks, Subagents, and Extensions carry forward as Antigravity plugins.
+    </p>
+    <ul class="sources">
+      <li><a href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/">Google Developers Blog: Transitioning Gemini CLI to Antigravity CLI</a> (primary)</li>
+      <li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/">Google blog: I/O 2026 developer highlights &mdash; Antigravity, Gemini API, AI Studio</a> (primary)</li>
+      <li><a href="https://github.com/google-gemini/gemini-cli/discussions/27274">GitHub Discussion #27274 (google-gemini/gemini-cli): Transition announcement</a> (primary)</li>
+      <li><a href="https://www.marktechpost.com/2026/05/19/google-launches-antigravity-2-0-at-i-o-2026-a-standalone-agent-first-platform-with-cli-sdk-managed-execution-and-enterprise-support/">MarkTechPost: Antigravity 2.0 &mdash; standalone agent-first platform</a></li>
+      <li><a href="https://9to5google.com/2026/05/19/google-antigravity-agentic-developer-suite/">9to5Google: Antigravity becoming full agentic developer suite</a></li>
+      <li><a href="https://virtualizationreview.com/articles/2026/05/19/google-moves-gemini-cli-into-antigravity-cli-as-agent-platform-expands.aspx">Virtualization Review: Google moves Gemini CLI into Antigravity CLI</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Google</span>AI Studio gains native Kotlin: prompt &rarr; production Android app, with ADB sideload and Play Internal Test publishing</h3>
+    <div class="byline">19 May 2026 &middot; Primary source: Google blog / Android Developers Blog</div>
+    <p>
+      <strong>Google AI Studio</strong> picked up first-class Android support: it now generates production-quality <strong>Kotlin</strong> code using current Jetpack Compose patterns, previews the app in an in-browser <strong>Android Emulator</strong>, sideloads to a real device via <strong>ADB</strong>, and (with a connected Google Play Developer account) publishes directly to the <strong>Play Internal Test Track in one click</strong>. Android Studio separately previewed an agent that migrates existing apps to native Kotlin&mdash;turning multi-week refactors into hours&mdash;and Google released <strong>Android Bench</strong>, a new LLM leaderboard for Android dev tasks that includes open-weight models like Gemma 4. The combined effect: AI Studio is now a credible end-to-end mobile build surface, not just a prompt sandbox.
+    </p>
+    <ul class="sources">
+      <li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-ai-studio-io-2026/">Google blog: Bring any idea to life &mdash; AI Studio at I/O 2026</a> (primary)</li>
+      <li><a href="https://android-developers.googleblog.com/2026/05/17-things-android-developers-google-io.html">Android Developers Blog: 17 things to know for Android developers at I/O</a> (primary)</li>
+      <li><a href="https://9to5google.com/2026/05/19/google-ai-studio-android-apps/">9to5Google: AI Studio can now build Android apps; Android Studio adds iOS porting</a></li>
+      <li><a href="https://techcrunch.com/2026/05/19/googles-ai-studio-now-lets-anyone-build-android-apps-in-minutes/">TechCrunch: AI Studio now lets anyone build Android apps in minutes</a></li>
+    </ul>
+  </article>
+
+  <h2>Google I/O 2026 &mdash; Search &amp; XR Hardware</h2>
+
+  <article>
+    <h3><span class="tag">Google Search</span>Biggest search-box overhaul in ~25 years: AI Mode default, persistent "information agents," 1 B MAU</h3>
+    <div class="byline">19 May 2026 &middot; Primary source: Google blog (Search)</div>
+    <p>
+      Google rebuilt the Search query box around AI. The field now expands to accept long, conversational prompts and surfaces guided suggestions that go well beyond autocomplete. <strong>Gemini 3.5 Flash becomes the default model in AI Mode</strong> for all users globally, and starting this summer users can spawn personal <strong>"information agents"</strong> inside Search&mdash;persistent, named jobs (apartment hunts, apparel drops, regulatory filings, etc.) that watch the web 24/7 and notify on change. Google said <strong>AI Mode just crossed 1 B monthly active users</strong>, with query volume "more than doubling every quarter" since launch. The shift formalises Search's pivot from the ten blue links to an agent entry point.
+    </p>
+    <ul class="sources">
+      <li><a href="https://blog.google/products-and-platforms/products/search/search-io-2026/">Google blog: Google Search's I/O 2026 updates &mdash; AI agents and more</a> (primary)</li>
+      <li><a href="https://www.cnn.com/2026/05/19/tech/google-search-bar-updates-2026">CNN Business: Google making its biggest change to the search bar in years</a></li>
+      <li><a href="https://techcrunch.com/2026/05/19/google-search-as-you-know-it-is-over/">TechCrunch: Google Search as you know it is over</a></li>
+      <li><a href="https://winbuzzer.com/2026/05/19/google-overhauls-its-search-box-letting-users-ask-xcxwbn/">Winbuzzer: Google turns Search box into an AI agent entry point</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Samsung + Google</span>First Android XR smart glasses unveiled: audio-only and microdisplay SKUs, fall 2026 launch</h3>
+    <div class="byline">19 May 2026 &middot; Primary source: Google I/O keynote / Engadget</div>
+    <p>
+      Google and Samsung publicly demoed the first wearable to run <strong>Android XR</strong>: a Gemini-powered smart-glasses platform with two SKUs&mdash;an <em>audio-only</em> variant (cameras, mic, speakers, no screen) and a screened variant with a small in-lens <strong>microdisplay</strong> for turn-by-turn navigation, message previews, and contextual overlays. Industrial design partners are <strong>Gentle Monster</strong> (statement frames) and <strong>Warby Parker</strong> (timeless frames). On-device features include real-time spoken translation that matches the original speaker's voice, in-line translation of menus and signs, summarised "important" notifications, and on-the-fly calendar capture. Launch window is <strong>Fall 2026</strong> at an expected $600&ndash;$900.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.engadget.com/2176805/samsung-and-google-just-teased-their-upcoming-android-xr-smartglasses-at-google-io">Engadget: Samsung &amp; Google tease Android XR smart glasses at I/O</a></li>
+      <li><a href="https://9to5google.com/2026/05/19/google-samsung-android-xr-glasses-styles-release-date/">9to5Google: Android XR glasses launch in "Fall" 2026</a></li>
+      <li><a href="https://www.droid-life.com/2026/05/19/android-xr-launch-fall-2026/">Droid-Life: Google &amp; Samsung unveil Android XR smart glasses</a></li>
+      <li><a href="https://www.roadtovr.com/first-android-xr-glasses-2026-launch/">Road to VR: First AR glasses running Android XR confirmed for 2026 launch</a></li>
+    </ul>
+  </article>
+
+  <h2>Talent, Capital &amp; Workforce</h2>
+
+  <article>
+    <h3><span class="tag">Google DeepMind</span>~$90 M license + 20-person acquihire of Bezos-backed Contextual AI, including CEO Douwe Kiela</h3>
+    <div class="byline">19 May 2026 &middot; Primary source: Bloomberg / Reuters</div>
+    <p>
+      <strong>Google DeepMind</strong> is hiring more than <strong>20 researchers</strong> from Bezos-backed <strong>Contextual AI</strong> and licensing parts of its tech stack in a deal reportedly valued at <strong>$80&ndash;90 M</strong> (one outlet pegs it near $100 M). Contextual AI's co-founder and CEO, <strong>Douwe Kiela</strong>&mdash;widely credited as a pioneer of retrieval-augmented generation&mdash;is among those joining DeepMind. Critically, Google is <em>not</em> acquiring Contextual AI as a company: by structuring this as a license-plus-acquihire (the same pattern Google used for Hume, Character.AI, and Windsurf, and that Microsoft used for Inflection), the transaction sidesteps U.S. antitrust pre-clearance. The deal lands the same day Google launched Gemini 3.5 with a heavy RAG/agentic-retrieval pitch, and signals continued consolidation of frontier-RAG talent into the hyperscalers.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.bloomberg.com/news/articles/2026-05-19/google-hires-staff-from-bezos-backed-contextual-ai-in-licensing-deal">Bloomberg: Google hires staff from Bezos-backed Contextual AI in licensing deal</a> (primary)</li>
+      <li><a href="https://www.tradingview.com/news/reuters.com,2026:newsml_L6N41W1BR:0-google-deepmind-hires-staff-from-contextual-ai-in-licensing-deal-source-says/">Reuters via TradingView: Google DeepMind hires staff from Contextual AI in licensing deal</a></li>
+      <li><a href="https://www.benzinga.com/markets/tech/26/05/52681185/google-deepmind-contextual-ai-talent-antitrust-scrutiny">Benzinga: DeepMind pays up to $90 M as antitrust scrutiny grows</a></li>
+      <li><a href="https://winbuzzer.com/2026/05/20/deepmind-contextual-ai-deal-follows-hume-licensing-playbook-xcxwbn/">Winbuzzer: Deal follows the Hume licensing playbook</a></li>
+      <li><a href="https://www.newsbytesapp.com/news/science/deepmind-to-hire-contextual-ai-researchers-license-tech-for-90-million/tldr">NewsBytes: DeepMind to hire Contextual AI researchers, license tech for $90 M</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Meta</span>~8,000 layoffs begin today; 6,000 open reqs cancelled, survivors funnelled into new AI org</h3>
+    <div class="byline">20 May 2026 &middot; Primary source: Meta internal memo via Variety / TechCrunch reporting</div>
+    <p>
+      Meta started notifying roughly <strong>8,000 employees</strong> of layoffs on <strong>Wednesday, 20 May</strong>, the company's largest single-day cut since 2023 and equivalent to ~10% of headcount. Singapore staff received notices first (4 a.m. local), followed by U.K. and U.S. rollouts through the day. CHRO Janelle Gale's memo says the company is also <strong>cancelling ~6,000 open requisitions</strong>, taking the effective headcount reduction to ~14,000 roles, and that <strong>~7,000</strong> redeployed employees will move into new AI-centric orgs including <strong>Applied AI Engineering</strong>, <strong>Agent Transformation Accelerator XFN</strong>, and <strong>Central Analytics</strong>. CEO Mark Zuckerberg framed the move as necessary to free room for <strong>$125&ndash;145 B in 2026 capex</strong> (vs. $72.2 B in 2025), with additional cuts signposted for H2 2026. The cuts land while Meta's quarterly revenue is at a record $56 B&mdash;explicitly a reallocation, not a downturn.
+    </p>
+    <ul class="sources">
+      <li><a href="https://variety.com/2026/digital/news/meta-layoffs-8000-employees-ai-1236729003/">Variety: Meta laying off 8,000 employees, 10% of workforce, amid AI restructuring</a></li>
+      <li><a href="https://thenextweb.com/news/meta-layoffs-may-2026-ai-restructuring-thousands">The Next Web: Meta to cut 8,000 jobs on 20 May with more layoffs planned for H2 2026</a></li>
+      <li><a href="https://thenextweb.com/news/meta-layoffs-8000-zuckerberg-ai-reality-may-2026">The Next Web: Meta cuts 8,000 jobs amid record $56 B quarterly revenue</a></li>
+      <li><a href="https://www.analyticsinsight.net/news/meta-layoffs-singapore-staff-hit-first-as-zuckerberg-cuts-8000-jobs-in-global-ai-restructuring">Analytics Insight: Singapore staff hit first as Zuckerberg cuts 8,000 jobs</a></li>
+      <li><a href="https://www.outlookbusiness.com/corporate/meta-to-cut-8000-jobs-on-may-20-what-employees-will-get-after-layoffs">Outlook Business: What Meta employees will get after layoffs</a></li>
+      <li><a href="https://sfstandard.com/2026/05/19/meta-employees-brace-layoffs-as-company-focuses-ai/">SF Standard: Meta employees brace for layoffs as company focuses on AI</a></li>
+    </ul>
+  </article>
+
+  <h2>Enterprise AI &amp; Software Engineering</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI &times; Dell</span>Codex coming to hybrid and on-prem enterprise via the Dell AI Factory; 4 M weekly devs cited</h3>
+    <div class="byline">18&ndash;19 May 2026 &middot; Primary source: OpenAI</div>
+    <p>
+      <strong>OpenAI</strong> and <strong>Dell Technologies</strong> announced a partnership to deploy <strong>Codex</strong>, <strong>ChatGPT Enterprise</strong>, and other API-based agents into <strong>hybrid and on-premises</strong> environments built on the <strong>Dell AI Data Platform</strong> and <strong>Dell AI Factory</strong>. OpenAI disclosed that Codex now has <strong>more than 4 million weekly active developers</strong>, with usage spanning the full SDLC (code review, test-gen, incident response, large-repo reasoning) and increasingly bleeding into business workflows (report prep, lead qualification, cross-system coordination). The companies say the integrations will cover data prep, system-of-record management, testing, and deployment, and pitch the deal squarely at regulated buyers&mdash;banks, government, healthcare&mdash;who can't put proprietary data on a public API. Dell counts 5,000+ AI Factory deployments to date.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/dell-codex-enterprise-partnership/">OpenAI: Dell Technologies partnership to bring Codex to hybrid and on-prem</a> (primary)</li>
+      <li><a href="https://pulse2.com/openai-and-dell-technologies-announce-codex-partnership-to-bring-ai-agents-to-hybrid-and-on-premises-enterprise-environments/">Pulse 2.0: OpenAI &amp; Dell announce Codex enterprise partnership</a></li>
+      <li><a href="https://winbuzzer.com/2026/05/19/openai-and-dell-bring-codex-closer-to-enterprise-data-xcxwbn/">Winbuzzer: OpenAI and Dell bring Codex closer to enterprise data</a></li>
+      <li><a href="https://www.streetinsider.com/Corporate+News/OpenAI+partners+with+DELL+to+deploy+Codex+in+enterprise+environments/26512599.html">StreetInsider: OpenAI partners with Dell to deploy Codex in enterprise environments</a></li>
+      <li><a href="https://www.nowadais.com/openai-codex-enterprise-dell-deployment/">Nowadais: OpenAI Codex enterprise deployment depends on existing Dell infrastructure</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Google Cloud</span>Gemini Enterprise Agent Platform consolidates Vertex AI into one agent-build surface; 200+ models incl. Claude</h3>
+    <div class="byline">19 May 2026 &middot; Primary source: Google Cloud Blog</div>
+    <p>
+      In parallel with the consumer I/O keynote, <strong>Google Cloud</strong> formally launched the <strong>Gemini Enterprise Agent Platform</strong>&mdash;positioned as the successor surface to Vertex AI for agent work. The platform bundles a low-code <strong>Agent Studio</strong>, an upgraded graph-based <strong>Agent Development Kit (ADK)</strong> for sub-agent networks, and a Gemini Enterprise app for in-tenant deployment with IT controls. <strong>Model Garden</strong> exposes <em>200+ models</em>, including Google's Gemini 3.1 Pro/Flash, Gemini 3.1 Flash Image, Lyria 3, the open Gemma 4 family, and notably <strong>Anthropic's Claude Opus, Sonnet, and Haiku</strong>. The pitch positions Google as a more multi-model home for enterprise agents than either AWS Bedrock or Azure AI Foundry.
+    </p>
+    <ul class="sources">
+      <li><a href="https://cloud.google.com/blog/products/ai-machine-learning/the-new-gemini-enterprise-one-platform-for-agent-development">Google Cloud Blog: The new Gemini Enterprise &mdash; one platform for agent development</a> (primary)</li>
+      <li><a href="https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud">Google Cloud Blog: Innovations from Google I/O '26 on Google Cloud</a> (primary)</li>
+      <li><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes">Google Cloud Docs: Gemini Enterprise Agent Platform release notes</a> (primary)</li>
+      <li><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gemini-enterprise-agent-platform/">Google blog: Build, govern, and optimise your agents with Gemini Enterprise Agent Platform</a> (primary)</li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> The 20 May digest is scoped to ~24-hour signals from 19&ndash;20 May 2026. The prior three days (17&ndash;19 May) had no published digest, so the most recent comparable edition is the 28 April report; this issue is deliberately non-overlapping with that one (IBM Bob, Ineffable Intelligence $1.1 B seed, China&ndash;Manus block, DeepSeek V4-Pro pricing, K-Moonshot Seoul commitment, Anthropic Sydney, Avoca $125 M) and with the earlier 17 / 19 April editions (Mozilla Thunderbolt, huggingface_hub 1.11.0, OpenAI Agents SDK sandbox, GitHub agent-skills CLI, IntelliJ IDEA 2026.1, Manycore IPO, Roland Berger humanoid forecast, GPT-Rosalind, Claude Design / Opus 4.7, Cloudflare Agent Memory, Tesla AI5 tape-out, Anthropic 3.5 GW TPU deal, Q1 2026 venture-funding records). Primary sources are flagged inline (Google blog &amp; Developers Blog, Google Cloud Blog, OpenAI, Bloomberg, GitHub Discussions, Google Cloud Docs). Stories carried primarily by secondary outlets (Meta layoffs, Contextual AI deal terms) were corroborated against at least three additional outlets.</p>
+    <p>Generated 20 May 2026.</p>
+  </footer>
+</body>
+</html>
