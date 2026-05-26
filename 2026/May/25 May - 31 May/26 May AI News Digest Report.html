@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 26 May 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 26 May 2026</h1>
+    <div class="meta">Week of 25&ndash;31 May 2026 &middot; Coverage window: last ~24&ndash;72 hours (post Memorial Day)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> US markets reopen this morning after the Memorial Day close, and the dominant story is one of <strong>software-supply-chain security</strong>: a forensic picture is now coming together of how a single 18-minute window on the Visual Studio Marketplace metastasized into a breach that exfiltrated <strong>~3,800 GitHub-internal repositories</strong> &mdash; with confirmed downstream impact on <strong>OpenAI, Grafana Labs, and Mistral AI</strong>. The poisoned <em>Nx Console</em> extension specifically harvested <strong>Claude Code, 1Password, npm, GitHub, and AWS</strong> credentials, making it the first publicly known supply-chain payload purpose-built for AI coding assistants. On the research side, <strong>Google DeepMind</strong> dropped an arXiv preprint and open-source Lean repo for <strong>AlphaProof Nexus</strong>, a hybrid LLM + Lean system that autonomously closed <strong>9 open Erd&#337;s problems</strong> and <strong>44 OEIS conjectures</strong> at a few hundred dollars per problem &mdash; a methodologically distinct shot to OpenAI's unit-distance result. Capital: <strong>SpaceX's IPO filing</strong> disclosed that Anthropic will pay xAI / SpaceX <strong>$1.25 B per month</strong> for the entire output of <strong>Colossus 1</strong> through May 2029 &mdash; ~$45 B over the life of the deal. Policy: President <strong>Trump postponed</strong> his AI executive order at the last minute, leaving the planned 90-day pre-release government preview of frontier models in limbo. And on the developer side, <strong>Cursor's Composer 2.5</strong> standard pricing kicks in today after the first-week 2&times; promo expired with Memorial Day; <strong>Anthropic's MCP tunnels</strong> moved into research preview; and <strong>Linux 7.0</strong> shipped with Rust officially out of "experimental."
+  </div>
+
+  <h2>Top Story &mdash; Software Supply Chain</h2>
+
+  <article>
+    <h3><span class="tag">Security</span>The Nx Console breach: how 18 minutes on the VS Code Marketplace cost GitHub 3,800 internal repos &mdash; and burned OpenAI, Grafana &amp; Mistral too</h3>
+    <div class="byline">18&ndash;25 May 2026 &middot; Primary source: GitHub CISO statement / Nx postmortem / Grafana Labs blog</div>
+    <p>
+      The picture coming into focus over the long weekend is the most consequential developer-supply-chain incident of 2026 so far. On <strong>11 May</strong>, threat group <strong>TeamPCP</strong> (also tracked as <strong>UNC6780</strong>) compromised <strong>42 TanStack npm packages</strong>, publishing 84 malicious versions containing a credential stealer. Those stolen credentials let them impersonate a legitimate <strong>Nx</strong> maintainer and, on <strong>Monday 18 May at 12:30 UTC</strong>, push a poisoned build of <strong>Nx Console v18.95.0</strong> (nrwl.angular-console) to the Visual Studio Marketplace. The malicious build was live for just <strong>18 minutes</strong> before takedown at 12:48 UTC &mdash; long enough to ship to thousands of developer machines. Within seconds of any workspace opening, the extension fetched a 498 KB obfuscated payload from a <em>dangling orphan commit</em> hidden inside the official <code>nrwl/nx</code> repo and harvested <strong>1Password vaults, Anthropic Claude Code configs (~/.claude/settings.json), npm, GitHub, and AWS credentials</strong> &mdash; the first publicly documented supply-chain payload to specifically target AI-coding-assistant secrets.
+    </p>
+    <p>
+      On <strong>19 May</strong>, GitHub CISO <strong>Alexis Wales</strong> publicly disclosed that an employee device was compromised and that the attacker exfiltrated approximately <strong>3,800 GitHub-internal repositories</strong>, calling the attacker's number "directionally consistent" with GitHub's own forensics. Customer-owned repos were not impacted. CVE-2026-48027 was assigned. By <strong>21 May</strong>, downstream casualties were confirmed: <strong>Grafana Labs</strong> said a missed token led to attackers reaching its private GitHub org; <strong>OpenAI</strong> disclosed two compromised employee devices (no production or IP impact); <strong>Mistral AI</strong> is also on the confirmed-victim list. TeamPCP and <strong>LAPSUS$</strong> have since teamed up on a joint $95,000 forum sale of the stolen GitHub data. The propagation mechanism &mdash; an automated worm TeamPCP calls <em>Mini Shai-Hulud</em> &mdash; turns stolen CI/CD credentials into new poisoned npm releases, which is the loop that fed Nx Console in the first place.
+    </p>
+    <ul class="sources">
+      <li><a href="https://nx.dev/blog/nx-console-v18-95-0-postmortem">Nx Blog: <em>Postmortem &mdash; Nx Console v18.95.0 supply-chain compromise</em></a> (primary)</li>
+      <li><a href="https://grafana.com/blog/grafana-labs-security-update-latest-on-tanstack-npm-supply-chain-ransomware-incident/">Grafana Labs: Security update on the TanStack npm supply-chain ransomware incident</a> (primary)</li>
+      <li><a href="https://thehackernews.com/2026/05/github-internal-repositories-breached.html">The Hacker News: GitHub internal repositories breached via malicious Nx Console VS Code extension</a></li>
+      <li><a href="https://www.helpnetsecurity.com/2026/05/21/github-grafana-breach-root-cause-nx-console/">Help Net Security: GitHub &amp; Grafana breaches traced back to TanStack supply-chain compromise</a></li>
+      <li><a href="https://www.bleepingcomputer.com/news/security/github-investigates-internal-repositories-breach-claimed-by-teampcp/">BleepingComputer: GitHub investigates internal repositories breach claimed by TeamPCP</a></li>
+      <li><a href="https://therecord.media/github-confirms-teampcp-hack-customers-unaffected">The Record: GitHub confirms hack by TeamPCP; customer data unaffected</a></li>
+      <li><a href="https://www.securityweek.com/github-confirms-hack-impacting-3800-internal-repositories/">SecurityWeek: GitHub confirms hack impacting 3,800 internal repositories</a></li>
+      <li><a href="https://thehackernews.com/2026/05/tanstack-supply-chain-attack-hits-two.html">The Hacker News: TanStack supply-chain attack hits two OpenAI employee devices</a></li>
+      <li><a href="https://www.stepsecurity.io/blog/nx-console-vs-code-extension-compromised">StepSecurity: Nx Console VS Code extension compromised (technical analysis)</a></li>
+      <li><a href="https://www.cybersecuritydive.com/news/grafana-labs-github-environment-breach-tanstack-npm-supply-chain/820866/">Cybersecurity Dive: Grafana Labs links GitHub environment breach to TanStack npm attack</a></li>
+    </ul>
+  </article>
+
+  <h2>Frontier Research</h2>
+
+  <article>
+    <h3><span class="tag">DeepMind</span>AlphaProof Nexus: an LLM + Lean system closes 9 Erd&#337;s problems and 44 OEIS conjectures, with proofs you can re-check at home</h3>
+    <div class="byline">21&ndash;22 May 2026 &middot; Primary source: arXiv 2605.22763 / google-deepmind/alphaproof-nexus-results</div>
+    <p>
+      Google DeepMind published <em>Advancing Mathematics Research with AI-Driven Formal Proof Search</em> on arXiv on <strong>21 May</strong>, alongside the public release of the <strong>alphaproof-nexus-results</strong> GitHub repo. <strong>AlphaProof Nexus</strong> is the successor to the IMO-era AlphaProof, and the architecture is the same family but scaled out: a frontier language model (Gemini 3.1 Pro) proposes proof steps in <strong>Lean 4</strong>, and the Lean kernel mechanically verifies every step &mdash; eliminating the hallucination problem that plagues "natural language" math results from LLMs. The system autonomously closed <strong>nine open Erd&#337;s problems</strong> &mdash; including two that had been open for <strong>56 years</strong> &mdash; and produced fully formal proofs of <strong>44 open conjectures from the OEIS</strong> (the Online Encyclopedia of Integer Sequences). Per-problem compute cost was on the order of "a few hundred dollars."
+    </p>
+    <p>
+      The result is methodologically distinct from <a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/">OpenAI's recent unit-distance disproof</a>: OpenAI's was a single new construction by a general reasoning model with no formal verifier in the loop, whereas AlphaProof Nexus is a <em>system</em> &mdash; LLM proposer + Lean verifier &mdash; producing machine-checked proofs in additive combinatorics, algebraic geometry, graph theory, optimization, and quantum optics. Both shots landed inside a single week, and together they mark the first time two frontier labs have independently demonstrated AI systems solving research-grade open problems. DeepMind has open-sourced every Lean proof, which means the community can audit (and the next system can train on) the results directly.
+    </p>
+    <ul class="sources">
+      <li><a href="https://arxiv.org/html/2605.22763v1">arXiv 2605.22763: <em>Advancing Mathematics Research with AI-Driven Formal Proof Search</em></a> (primary)</li>
+      <li><a href="https://github.com/google-deepmind/alphaproof-nexus-results">GitHub: google-deepmind/alphaproof-nexus-results &mdash; Lean and natural-language proofs</a> (primary)</li>
+      <li><a href="https://the-decoder.com/google-deepminds-alphaproof-nexus-solves-decades-old-math-problems-for-a-few-hundred-dollars/">The Decoder: AlphaProof Nexus solves decades-old math problems for a few hundred dollars</a></li>
+      <li><a href="https://cryptobriefing.com/deepmind-alphaproof-nexus-erdos-problems/">Crypto Briefing: DeepMind's AlphaProof Nexus solves 9 Erd&#337;s problems and 44 OEIS conjectures</a></li>
+      <li><a href="https://www.valuethemarkets.com/cryptocurrency/news/alphaproof-nexus-advanced-ai-solves-longstanding-mathematical-problems">Value the Markets: AlphaProof Nexus solves longstanding mathematical problems</a></li>
+      <li><a href="https://gpubeat.com/google-deepmind-s-alphaproof-nexus-solves-erdos-problems/">GPUBeat: AlphaProof Nexus solves Erd&#337;s problems &mdash; technical overview</a></li>
+    </ul>
+  </article>
+
+  <h2>Capital &amp; Infrastructure</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic / SpaceX</span>SpaceX S-1 reveals Anthropic is paying $1.25B/month for the entirety of Colossus 1 &mdash; ~$45B through May 2029</h3>
+    <div class="byline">20 May 2026 &middot; Primary source: SpaceX S-1 (SEC EDGAR) / xAI newsroom</div>
+    <p>
+      The headline number from <strong>SpaceX's IPO prospectus</strong>, filed last week, isn't about Starlink &mdash; it's about Anthropic. Per the S-1 disclosure, Anthropic has signed a multi-year cloud-services agreement with <strong>SpaceX / xAI</strong> (the two were merged earlier this year into "SpaceXAI") under which Anthropic will pay <strong>$1.25 billion every month from July 2026 through May 2029</strong> for the entire compute output of <strong>Colossus 1</strong>, xAI's Memphis-area campus. At full ramp, that is roughly <strong>$15 B in annualized revenue</strong> to SpaceX/xAI, and an aggregate <strong>~$45 B</strong> over the life of the contract. Colossus 1 is 300 MW and holds more than <strong>220,000 NVIDIA accelerators</strong> &mdash; H100s, H200s, and GB200s. Anthropic separately confirmed in <a href="https://x.ai/news/anthropic-compute-partnership">xAI's press release</a> that the contract also includes an "expression of interest" in jointly developing <strong>multi-gigawatt compute capacity in space</strong> with SpaceX &mdash; the first formal mention of orbital data-center work tied to a frontier model lab.
+    </p>
+    <p>
+      The deal materially closes the gap between Anthropic's reported run-rate revenue (~$30 B run-rate as of late May, up from ~$9 B at year-end 2025) and its compute bill: under the contract, Anthropic alone funds well over a third of xAI's projected 2027 revenue. It also explains an oddity of the past month's competing IPO calendars &mdash; SpaceX, OpenAI, and Anthropic are now operationally entangled in ways that complicate each filing's risk factors, because every lab's compute supply now depends on a counterparty whose own valuation depends on AI demand.
+    </p>
+    <ul class="sources">
+      <li><a href="https://x.ai/news/anthropic-compute-partnership">xAI Newsroom: New compute partnership with Anthropic</a> (primary)</li>
+      <li><a href="https://www.axios.com/2026/05/20/anthropic-spacex-compute">Axios: Anthropic is paying SpaceX $15 billion per year</a></li>
+      <li><a href="https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/">TechCrunch: Anthropic will pay xAI $1.25B per month for compute</a></li>
+      <li><a href="https://www.datacenterdynamics.com/en/news/spacex-ipo-filing-reveals-anthropic-set-to-pay-musks-firm-125bn-a-month-to-rent-xai-data-center-space/">DCD: SpaceX IPO filing reveals Anthropic to pay $1.25B/month for xAI data-center space</a></li>
+      <li><a href="https://www.benzinga.com/markets/ipos/26/05/52724877/spacexs-45-billion-anthropic-deal-could-fund-its-ai-buildout-three-times-over">Benzinga: SpaceX's $45B Anthropic deal could fund its AI buildout three times over</a></li>
+      <li><a href="https://simonwillison.net/2026/May/7/xai-anthropic/">Simon Willison: Notes on the xAI / Anthropic data-center deal</a></li>
+      <li><a href="https://fortune.com/2026/05/08/anthropic-80fold-growth-quarter-renting-elon-musk-data-center/">Fortune: Anthropic grew 80-fold in a single quarter, now renting Elon Musk's data center</a></li>
+    </ul>
+  </article>
+
+  <h2>Policy &amp; Regulation</h2>
+
+  <article>
+    <h3><span class="tag">White House</span>Trump pulls AI executive order at the last minute; the 90-day government pre-release preview is now in limbo</h3>
+    <div class="byline">21 May 2026 &middot; Primary source: Oval Office press gaggle / Axios / Washington Post</div>
+    <p>
+      President <strong>Trump postponed</strong> the signing ceremony for an AI-industry executive order that had been on the calendar for last Thursday afternoon. Asked in the Oval Office why, the President said simply: "I postponed it&hellip; I didn't like certain aspects." Reporting from Axios and The Washington Post indicates that AI policy adviser <strong>David Sacks</strong> opposed the draft, and that the order's signature provision &mdash; a back-channel under which the government would <strong>preview frontier models for up to 90 days before public release</strong> &mdash; clashed with the President's stated view that "we're leading China, we're leading everybody, and I didn't want to do anything to get in the way of that lead." Beyond pre-release review, the draft order would have set policy on private-sector collaboration to harden critical infrastructure, on protecting US AI IP from foreign theft, and on accelerating government acquisition of frontier-AI-enabled capabilities.
+    </p>
+    <p>
+      The optics are awkward for the labs. <a href="https://imfounder.com/science-tech/ai/ai-updates-may-2026/">Microsoft and xAI had already publicly agreed</a> to give regulators early access for testing under a parallel voluntary framework. With the EO pulled, the only operative pre-release pathway is now the UK AI Safety Institute and the EU AI Office under the GPAI Code of Practice, whose <a href="https://artificialintelligenceact.eu/implementation-timeline/">transparency rules take effect 2 August 2026</a>. The order's fate is unclear; the White House has not committed to a new signing date.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.axios.com/2026/05/21/trump-ai-executive-order-postponed-why">Axios: Why Trump's AI executive order was pulled</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/05/21/trump-ai-executive-order-postponed.html">CNBC: Trump postpones AI executive order signing &mdash; 'I didn't like certain aspects'</a></li>
+      <li><a href="https://www.washingtonpost.com/technology/2026/05/21/white-house-tore-down-ai-rules-now-its-building-new-defenses/">Washington Post: Trump delays executive order on AI oversight hours before planned signing</a></li>
+      <li><a href="https://www.washingtontimes.com/news/2026/may/22/heres-donald-trumps-postponed-ai-executive-order-would-done/">Washington Times: Here's what Trump's postponed AI executive order would have done</a></li>
+      <li><a href="https://www.washingtonpost.com/wp-intelligence/ai-tech-brief/2026/05/21/ai-tech-brief-white-house-ai-order-now-postponed/">Washington Post AI &amp; Tech Brief: White House AI order now postponed</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Platforms, IDEs &amp; Open Source</h2>
+
+  <article>
+    <h3><span class="tag">Cursor</span>Composer 2.5 standard pricing kicks in today &mdash; near-frontier coding at ~1/10 the API cost</h3>
+    <div class="byline">18&ndash;26 May 2026 &middot; Primary source: Cursor / ChatForest deep dive</div>
+    <p>
+      Cursor shipped <strong>Composer 2.5</strong> on <strong>18 May</strong>, a Kimi K2.5-based agentic coding model targeted at long-running sessions with complex instructions. The model was trained with <strong>25&times; more synthetic tasks than Composer 2</strong>, and Cursor's reported reinforcement-learning stack (Sharded Muon, dual-mesh HSDP, textual-feedback RL) is the most detailed description yet of how third-party labs are using public Kimi releases as a base for vertical RL. Composer 2.5 lands at roughly <strong>63% on SWE-Bench at ~$0.50 per task</strong>, putting it within a percentage point of Claude Opus 4.7's "xhigh" tier &mdash; which runs ~$7 per task &mdash; making it the most compelling cost/quality trade in the agentic-coding tier today. The launch-week 2&times; usage promotion ended at midnight last night (<strong>25 May</strong>), so as of today's reset standard pricing &mdash; $0.50 / $9 per 1M input / output tokens &mdash; is in effect for all Composer 2.5 users.
+    </p>
+    <p>
+      Cursor also pushed <strong>Cursor 3.5</strong> on <strong>20 May</strong>, which adds multi-repo automations, "no-repo" agent templates (Slack digests, Stripe finance, Databricks analytics, customer-health monitors), and Shared Canvases for team artifact access &mdash; a clear move to position Cursor as more than an IDE.
+    </p>
+    <ul class="sources">
+      <li><a href="https://cursor.com/">Cursor: Composer 2.5 release page</a> (primary)</li>
+      <li><a href="https://chatforest.com/builders-log/cursor-composer-2-5-kimi-k2-5-coding-agent-benchmark/">ChatForest: Cursor Composer 2.5 &mdash; near-frontier coding at 1/10 the API cost</a></li>
+      <li><a href="https://beyondtmrw.org/article/cursor-composer-25-release-pricing-benchmarks-2026">Beyond Tomorrow: Composer 2.5 &mdash; release, pricing, benchmarks</a></li>
+      <li><a href="https://dev.to/om_shree_0709/cursor-just-released-composer-25-heres-what-actually-changed-for-ai-coding-agents-51fc">DEV: What actually changed in Composer 2.5 for AI coding agents</a></li>
+      <li><a href="https://releasebot.io/updates/cursor">Releasebot: Cursor release notes &mdash; May 2026</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>MCP tunnels and self-hosted sandboxes for Claude Managed Agents enter customer environments</h3>
+    <div class="byline">19&ndash;20 May 2026 &middot; Primary source: Code with Claude London / Anthropic Newsroom</div>
+    <p>
+      At <strong>Code with Claude London</strong> on <strong>19 May</strong> &mdash; Anthropic's first developer conference in Europe &mdash; the company announced two pieces of plumbing that move Claude Managed Agents inside the enterprise perimeter. <strong>Self-hosted sandboxes</strong> (public beta) let an agent's tool-execution environment run inside the customer's own cloud account, with launch support for <strong>Cloudflare, Daytona, Modal, and Vercel</strong>. <strong>MCP tunnels</strong> (research preview) let an agent reach <strong>private MCP servers</strong> &mdash; internal databases, private APIs, restricted services &mdash; over a single outbound, end-to-end-encrypted gateway connection, eliminating the need to expose internal MCP endpoints to the public internet or open inbound firewall rules. The combination is Anthropic's clearest answer to enterprise CISOs who have been blocking agent deployments on data-residency and network-egress grounds. It also positions <strong>MCP</strong> &mdash; the protocol Anthropic open-sourced in late 2024 &mdash; as the de facto transport for agent tooling at the enterprise tier, which matters as Google's competing <em>WebMCP</em> origin trial heads into Chrome 149.
+    </p>
+    <ul class="sources">
+      <li><a href="https://claude.com/code-with-claude/london">Anthropic: Code with Claude London &mdash; 19 May 2026</a> (primary)</li>
+      <li><a href="https://thenewstack.io/anthropic-mcp-tunnels-sandboxes/">The New Stack: Anthropic debuts MCP tunnels and self-hosted sandboxes to lock down AI agent infrastructure</a></li>
+      <li><a href="https://the-decoder.com/anthropic-adds-self-hosted-sandboxes-and-mcp-tunnels-to-claude-managed-agents/">The Decoder: Anthropic adds self-hosted sandboxes and MCP tunnels to Claude Managed Agents</a></li>
+      <li><a href="https://www.infoq.com/news/2026/05/claude-mcp-tunnels/">InfoQ: Anthropic introduces MCP tunnels for private agent access to internal systems</a></li>
+      <li><a href="https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/">MIT Tech Review: Code with Claude showed off coding's future, whether you like it or not</a></li>
+      <li><a href="https://fortune.com/2026/05/21/claude-code-london-anthropic-ai-software-engineering/">Fortune: Anthropic lands in London as AI-powered coding goes mainstream</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Linux</span>Linux 7.0 ships: Rust loses its "experimental" label, and 80% of kernel CVEs are now on the chopping block</h3>
+    <div class="byline">23&ndash;25 May 2026 &middot; Primary source: Phoronix / kernel.org / RustWeek 2026</div>
+    <p>
+      <strong>Linux 7.0</strong> shipped over the weekend with the most consequential change in its language profile in three decades: <strong>Rust is no longer marked "experimental"</strong> in the kernel and is now officially supported on the same footing as C. The release also lands XFS self-healing, post-quantum primitives upstream, faster EXT4 concurrent direct-I/O writes, and ARM64 / RISC-V performance work. At <strong>RustWeek 2026</strong> in Utrecht the same week, kernel maintainer <strong>Greg Kroah-Hartman</strong> sketched a Rust-based proposal &mdash; still in development &mdash; that he estimates would <strong>eliminate roughly 80% of the CVEs the Linux kernel currently generates</strong>: about 60% comes from two compile-time-checkable bug classes alone (forgetting to check error return values, and forgetting to release locks), both of which Rust catches statically. For software engineering at the systems tier, this is the inflection point at which Rust stops being a side-project in the kernel tree and starts being the language drivers and security-sensitive subsystems are expected to be written in by default.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.phoronix.com/news/Rust-To-Stay-Linux-Kernel">Phoronix: New Linux patch confirms &mdash; Rust experiment is done, Rust is here to stay</a> (primary)</li>
+      <li><a href="https://thenewstack.io/rust-goes-mainstream-in-the-linux-kernel/">The New Stack: Rust goes mainstream in the Linux kernel</a></li>
+      <li><a href="https://itsfoss.com/news/linux-kernel-rust-cve-reduction/">It's FOSS: Rust could eliminate 80% of Linux kernel CVEs &mdash; Greg KH at RustWeek 2026</a></li>
+      <li><a href="https://www.webpronews.com/linux-kernel-2026-rust-integration-and-security-advances/">WebProNews: Linux kernel 2026 &mdash; Rust integration and security advances</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Rust_for_Linux">Wikipedia: Rust for Linux (status as of May 2026)</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This 26 May digest is anchored on the post-Memorial-Day reopen and the previous ~5-day news cycle while the US market was quiet. Primary sources used inline include Nx's own postmortem, Grafana Labs' security update, GitHub CISO Alexis Wales' statement, arXiv 2605.22763 and the google-deepmind/alphaproof-nexus-results repo, xAI's own newsroom and SpaceX's S-1 disclosures, the Oval Office press gaggle, Anthropic's Code with Claude London announcements, and Phoronix's Linux 7.0 coverage. Lower-tier signals are corroborated by at least two additional independent reports. <em>Non-overlap check:</em> deliberately distinct from the 25 May 2026 edition (Pope Leo XIV's <em>Magnifica humanitas</em>, Anthropic ~$30 B / $900 B+ round, OpenAI confidential S-1 filing, OpenAI's unit-distance Erd&#337;s disproof, Andrej Karpathy to Anthropic, Google I/O 2026 / Gemini 3.5 Flash / Antigravity 2.0, Anthropic's Stainless acquisition, Meta's 8,000-headcount layoff plus MCI program, Musk v. OpenAI jury verdict) and from prior 17 April, 19 April, and 28 April editions (IBM Bob, GitHub App-token format, Ineffable Intelligence, DeepSeek V4-Pro, NDRC Manus block, Google DeepMind Seoul campus, Anthropic Sydney office, Avoca, Mozilla Thunderbolt, huggingface_hub 1.11.0, OpenAI Agents SDK sandbox, Gemini CLI subagents, GitHub agent-skills CLI, IntelliJ IDEA 2026.1, Manycore Tech IPO, Beijing humanoid half-marathon, GPT-Rosalind, Claude Design / Opus 4.7, Cloudflare Agent Memory, Tesla AI5 tape-out, Anthropic 3.5 GW TPU deal, Q1 2026 venture-funding records).</p>
+    <p>Generated 26 May 2026.</p>
+  </footer>
+</body>
+</html>
