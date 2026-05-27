@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 27 May 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 27 May 2026</h1>
+    <div class="meta">Week of 25&ndash;31 May 2026 &middot; Coverage window: last ~24&ndash;48 hours</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The dominant story of the past 24 hours is the maturation of <strong>AI's security and infrastructure layer</strong>. <strong>Anthropic</strong> publicly updated <strong>Project Glasswing</strong> &mdash; the consortium it leads with <strong>AWS, Apple, Google, Microsoft, NVIDIA, JPMorgan, Cisco, CrowdStrike, Broadcom, Palo Alto Networks</strong> and the <strong>Linux Foundation</strong> &mdash; revealing that its restricted <strong>Claude Mythos Preview</strong> model has already surfaced <strong>more than 10,000 high- or critical-severity vulnerabilities</strong> in widely deployed open-source code in its first month behind closed doors. On the capital-formation side, the model-routing layer crossed a threshold: <strong>OpenRouter</strong> raised a <strong>$113 M CapitalG-led Series B at a $1.3 B valuation</strong>, having quietly grown to <strong>25 trillion tokens routed per week</strong>; <strong>Stord</strong> raised <strong>$250 M at $3 B</strong> and opened a 10,000 sq ft physical-AI lab inside its Atlanta HQ; and <strong>Catena Labs</strong> filed for a <strong>U.S. national trust bank charter</strong> alongside a $30 M Series A &mdash; the first bank charter built specifically for AI-agent transactions. Meanwhile, the <strong>Gemini Interactions API</strong> breaking change went live as the default schema today, putting a hard <strong>8 June</strong> deadline on every developer still on legacy. Backdrop: <strong>NVIDIA's $81.6 B quarter</strong>, a fresh <strong>MLPerf Inference v6.0</strong>, and Anthropic's <strong>$30 B+ round</strong> closing this week.
+  </div>
+
+  <h2>Top Story</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Project Glasswing update: Claude Mythos has found 10,000+ critical vulnerabilities in one month &mdash; with about 50 partner orgs on board</h3>
+    <div class="byline">26 May 2026 &middot; Primary source: Anthropic / CSO Online / Help Net Security</div>
+    <p>
+      Anthropic disclosed a major update to <strong>Project Glasswing</strong>, its defensive-cybersecurity consortium built around the restricted <strong>Claude Mythos Preview</strong> model. In its first month behind a closed-access window, Mythos has surfaced <strong>more than 10,000 high- or critical-severity vulnerabilities</strong> across widely deployed open-source software. The disclosure also formalises a previously partial partner list: <strong>Amazon Web Services, Apple, Broadcom, Cisco, CrowdStrike, Google, JPMorganChase, Linux Foundation, Microsoft, NVIDIA, and Palo Alto Networks</strong>, with around <strong>50 organisations</strong> total holding monitored access to the model. In the disclosed numbers, Mythos analysed code across more than <strong>1,000 open-source projects</strong>, flagged <strong>6,202 candidate findings</strong> in the first month, of which <strong>1,726 were validated by humans as real, exploitable flaws</strong>; only <strong>97 have been patched</strong>. The takeaway from Anthropic and the partners is that defensive-AI throughput is now outrunning the global patching pipeline by an order of magnitude. Anthropic also reiterated that Mythos is so capable at autonomous vulnerability discovery and exploitation that it will not be released to the public &mdash; a position Palo Alto Networks corroborated last week when the same model produced an unusually large 26-CVE advisory bundle.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.helpnetsecurity.com/2026/05/26/anthropic-project-glasswing-update/">Help Net Security: Anthropic &mdash; Claude Mythos identified 10,000+ software flaws (26 May)</a> (primary)</li>
+      <li><a href="https://www.csoonline.com/article/4176865/project-glasswing-has-uncovered-10000-vulnerabilities-anthropic.html">CSO Online: Project Glasswing has uncovered 10,000 vulnerabilities</a></li>
+      <li><a href="https://thehackernews.com/2026/05/claude-mythos-ai-finds-10000-high.html">The Hacker News: Claude Mythos finds 10,000 high-severity flaws in widely used software</a></li>
+      <li><a href="https://securityaffairs.com/192576/ai/anthropics-glasswing-10000-vulnerabilities-found-in-one-month-and-the-patching-problem-has-never-been-more-obvious.html">Security Affairs: 10,000+ vulnerabilities found in one month &mdash; the patching problem</a></li>
+      <li><a href="https://www.engadget.com/2180028/anthropic-claude-mythos-preview-project-glasswing-update/">Engadget: Anthropic says Mythos has already found more than 10,000 vulnerabilities</a></li>
+      <li><a href="https://thenextweb.com/news/anthropic-glasswing-claude-mythos-10000-vulnerabilities">TNW: 10,000 critical vulnerabilities in one month &mdash; the patches can't keep up</a></li>
+      <li><a href="https://cryptobriefing.com/anthropic-glasswing-software-vulnerabilities/">Crypto Briefing: Project Glasswing uncovers 10,000+ software vulnerabilities</a></li>
+      <li><a href="https://www.paloaltonetworks.com/blog/2026/05/defenders-guide-frontier-ai-impact-cybersecurity-may-2026-update/">Palo Alto Networks: Defender's Guide to the Frontier AI Impact on Cybersecurity &mdash; May 2026</a> (corroborating)</li>
+    </ul>
+  </article>
+
+  <h2>Frontier Capital Markets &amp; Infrastructure</h2>
+
+  <article>
+    <h3><span class="tag">OpenRouter</span>$113 M Series B at $1.3 B valuation as the model-routing layer hits 25 T tokens/week</h3>
+    <div class="byline">26 May 2026 &middot; Primary source: OpenRouter / TechCrunch / SiliconANGLE</div>
+    <p>
+      <strong>OpenRouter</strong> &mdash; the inference-routing layer that sits in front of <strong>400+ models</strong> from <strong>Anthropic, Google, OpenAI, xAI, and DeepSeek</strong> &mdash; raised a <strong>$113 M Series B</strong> led by Alphabet's growth fund <strong>CapitalG</strong> at a <strong>$1.3 B post-money valuation</strong>, more than doubling its valuation in a year. New strategic investors include <strong>NVentures</strong> (NVIDIA's venture arm), <strong>ServiceNow Ventures, MongoDB Ventures, Snowflake Ventures, and Databricks Ventures</strong>, alongside existing backers <strong>a16z</strong> and <strong>Menlo Ventures</strong>. The eye-catching number behind the round is volume: OpenRouter is now routing <strong>25 trillion tokens per week</strong> (~100 trillion/month), a <strong>5&times; jump in six months</strong>, on behalf of roughly <strong>8 million end users</strong>. Menlo's investment memo frames it as a "quadrillion tokens a year" business &mdash; explicit positioning of model-routing/governance as a new infrastructure layer alongside CDN and database. Capital will fund deeper enterprise routing, observability, and policy controls, where OpenRouter is now competing directly with the AI gateways from <strong>Databricks, Snowflake, and Cloudflare</strong>.
+    </p>
+    <ul class="sources">
+      <li><a href="https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/">TechCrunch: OpenRouter more than doubles valuation to $1.3B in a year (26 May)</a> (primary)</li>
+      <li><a href="https://siliconangle.com/2026/05/26/openrouter-raises-113m-bring-order-enterprise-ai-inference-routing/">SiliconANGLE: OpenRouter raises $113M to bring order to enterprise AI inference routing</a></li>
+      <li><a href="https://menlovc.com/perspective/openrouter-now-processes-more-than-a-quadrillion-tokens-a-year/">Menlo Ventures: OpenRouter now processes more than a quadrillion tokens a year</a> (primary, investor memo)</li>
+      <li><a href="https://www.pymnts.com/news/investment-tracker/2026/openrouter-raises-113-million-to-expand-ai-model-marketplace/">PYMNTS: OpenRouter raises $113M to expand AI model marketplace</a></li>
+      <li><a href="https://finance.yahoo.com/sectors/technology/articles/openrouter-raises-113-million-capitalg-131500093.html">Yahoo Finance: $113M CapitalG-led Series B as weekly volume explodes to 25T tokens</a></li>
+      <li><a href="https://www.finsmes.com/2026/05/openrouter-raises-113m-in-series-b-funding.html">FinSMEs: OpenRouter raises $113M in Series B funding</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Stord</span>$250 M Series F at $3 B &mdash; and Stord Labs opens a 10,000 sq ft physical-AI / robotics lab in Atlanta</h3>
+    <div class="byline">26 May 2026 &middot; Primary source: Stord newsroom / PR Newswire</div>
+    <p>
+      <strong>Stord</strong> closed a <strong>$250 M Series F</strong> at a <strong>$3 B valuation</strong> &mdash; doubling its mark in 12 months and bringing total funding past <strong>$775 M</strong>. The round is led by existing investors <strong>Strike Capital, Kleiner Perkins, Founders Fund, Franklin Templeton, Baillie Gifford, G Squared, Bond, and Lux</strong>. Stord's frame for the round is that <strong>fulfillment is the physical-AI battleground</strong>: the company simultaneously launched <strong>Stord Labs</strong>, a 10,000 sq ft physical-intelligence and robotics lab inside its Atlanta HQ, where it will test agentic AI, mobile robotics and warehouse automation against <em>live</em> orders on the same operating system that powers nearly 100 fulfillment locations and <strong>$15 B in annual GMV</strong>. The pitch to investors is concrete: any model developed in Stord Labs is grounded in the largest real-world commerce dataset outside Amazon, then shipped network-wide without re-integration. The Labs announcement positions Stord directly into the Amazon-alternative narrative for independent brands &mdash; and pushes the "physical AI" thesis from demos into deployed e-commerce infrastructure.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.prnewswire.com/news-releases/stord-raises-250m-series-f-at-3b-to-advance-the-physical-intelligence-layer-for-commerce-302780681.html">PR Newswire: Stord raises $250M Series F at $3B to advance the physical intelligence layer for commerce (26 May)</a> (primary)</li>
+      <li><a href="https://www.stord.com/blog/the-physical-intelligence-layer-for-commerce">Stord blog: The Physical Intelligence Layer for Commerce Is Here</a> (primary)</li>
+      <li><a href="https://thenextweb.com/news/stord-raises-250-million-to-give-independent-brands-the-shipping-speed-they-need-to-compete-with-amazon">TNW: Stord raises $250M at $3B valuation to take on Amazon</a></li>
+      <li><a href="https://techstartups.com/2026/05/26/stord-raises-250m-at-3b-valuation-to-build-the-ai-powered-fulfillment-network-for-independent-brands/">Tech Startups: $250M Series F to build AI-powered fulfillment network</a></li>
+      <li><a href="https://www.pymnts.com/news/artificial-intelligence/2026/stord-raises-250-million-dollars-deploy-physical-ai-across-fulfillment-network/">PYMNTS: Stord raises $250M to deploy physical AI across fulfillment network</a></li>
+      <li><a href="https://www.freightwaves.com/news/stord-raises-250m-to-harness-ai-for-e-commerce-logistics">FreightWaves: Stord raises $250M to harness AI for e-commerce logistics</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Catena Labs</span>$30 M Series A and a national trust bank charter filing &mdash; the first bank built for AI-agent transactions</h3>
+    <div class="byline">26&ndash;27 May 2026 (filing window) &middot; Primary source: Catena Labs / a16z crypto / Fortune</div>
+    <p>
+      <strong>Catena Labs</strong>, founded by <strong>Circle co-founder Sean Neville</strong>, closed a <strong>$30 M Series A</strong> co-led by <strong>a16z crypto</strong> and <strong>Acrew Capital</strong> (with Breyer, General Catalyst, QED, Oak HC/FT, Fin Capital, Coinbase Ventures, IDG, and Slow Ventures participating) and simultaneously filed an application with the <strong>U.S. Office of the Comptroller of the Currency (OCC)</strong> for a <strong>national trust bank charter</strong>. If granted, this would be the first U.S. federal bank charter built explicitly around <strong>autonomous AI-agent payments</strong>. Catena's product is the governance layer around agent-initiated transactions &mdash; spending limits, recipient allowlists, account caps, and audit trails &mdash; designed so an agent acting on a user's behalf can move money under enforceable, monitorable constraints. The combination of a Series A and an OCC filing is the cleanest signal yet that AI-agent infrastructure is now being built against bank-grade regulation, not around it. The round brings total funding to roughly <strong>$48 M</strong> (after a $18 M 2025 seed led by a16z crypto).
+    </p>
+    <ul class="sources">
+      <li><a href="https://a16zcrypto.com/posts/article/investing-in-catena-part-ii/">a16z crypto: Investing in Catena, Part II</a> (primary, lead investor)</li>
+      <li><a href="https://fortune.com/2026/05/20/catena-labs-series-a-sean-neville-ai-native-bank/">Fortune: Circle co-founder raises $30M for 'AI-native bank' Catena Labs</a></li>
+      <li><a href="https://www.theblock.co/post/402029/catena-labs-lands-30-million-series-a-files-for-national-trust-bank-charter-to-underpin-agentic-finance">The Block: $30M Series A and OCC trust bank charter filing</a></li>
+      <li><a href="https://cryptobriefing.com/catena-labs-30m-series-a-bank-charter/">Crypto Briefing: $30M Series A, bank charter to build financial rails for AI agents</a></li>
+      <li><a href="https://blockonomi.com/catena-labs-raises-30m-series-a-and-files-for-national-trust-bank-charter-to-power-ai-agent-finance/">Blockonomi: $30M Series A and trust bank charter to power AI-agent finance</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Platforms &amp; SDKs</h2>
+
+  <article>
+    <h3><span class="tag">Google</span>Gemini Interactions API: new <code>steps</code> schema is now the default &mdash; legacy schema removed 8 June</h3>
+    <div class="byline">26 May 2026 &middot; Primary source: Google AI for Developers (Gemini API docs)</div>
+    <p>
+      A scheduled breaking change to <strong>Gemini's Interactions API</strong> (v1beta) flipped today: the new <strong><code>steps</code> array</strong> replaces the legacy <code>outputs</code> array as the default response shape, and a new <strong>polymorphic <code>response_format</code></strong> consolidates output-format controls, retiring <code>response_mime_type</code>. The change is in service of mid-flight steering and asynchronous tool calls &mdash; the <code>steps</code> array now carries structured, typed step records (<code>user_input</code>, <code>model_output</code>, tool invocations) that an agent harness can stream, reorder, or cancel. Critically, the legacy schema is being <strong>removed entirely on 8 June 2026</strong>, with a temporary opt-out via the <code>Api-Revision: 2026-05-07</code> header. SDKs at version &ge; 2.0.0 are already on the new schema; any application still hard-coded to the old <code>outputs</code> array, or relying on <code>response_mime_type</code> for JSON/MIME enforcement, now has a hard <strong>12-day window</strong> to migrate. The combination of Gemini 3.5 Flash going GA earlier this month (covered in the 25 May digest) and the schema cutover today functionally completes the Gemini 3.5 platform migration for the developer surface.
+    </p>
+    <ul class="sources">
+      <li><a href="https://ai.google.dev/gemini-api/docs/interactions-breaking-changes-may-2026">Google AI Developers: Interactions API breaking changes migration guide (May 2026)</a> (primary)</li>
+      <li><a href="https://ai.google.dev/gemini-api/docs/changelog">Google AI Developers: Gemini API release notes / changelog</a> (primary)</li>
+      <li><a href="https://ai.google.dev/gemini-api/docs/interactions">Google AI Developers: Gemini generateContent / Interactions reference</a></li>
+      <li><a href="https://byteiota.com/gemini-interactions-api-migrate-before-june-8/">ByteIota: Gemini Interactions API &mdash; migrate before 8 June</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Vercel</span>Open-sources <code>deepsec</code> &mdash; an agent-driven security harness that runs Claude Code and Codex over your repo</h3>
+    <div class="byline">Active rollout this week &middot; Primary source: Vercel Engineering Blog / vercel-labs/deepsec on GitHub</div>
+    <p>
+      <strong>Vercel</strong> open-sourced <strong>deepsec</strong>, a CLI-first security harness that runs coding agents (out-of-the-box: <strong>Claude Code</strong> and <strong>OpenAI Codex</strong>, pluggable to others) inside isolated sandboxes against a target codebase. The pipeline is <em>static analysis &rarr; agent investigation &rarr; data-flow tracing &rarr; severity-ranked findings with remediation patches</em> &mdash; explicitly designed for large-scale monorepos where ordinary SAST tools either time out or produce noise. Vercel says it has been running deepsec internally for months and is now shipping the framework under an MIT license; users can route through the Vercel AI Gateway or bring their own model subscription. The release is one half of a broader <strong>"vibe-coding defender stack"</strong> reorganisation this month: <strong>Replit</strong> shipped its <strong>Security Agent + Workspace Security Center 2.0</strong>, and <strong>Anthropic</strong>'s <strong>Mythos</strong> work (top story) sits behind a closed-partner program. The signal: the same coding agents that generated the bug are now expected to find and fix it, with the harness, not the IDE, as the primary surface.
+    </p>
+    <ul class="sources">
+      <li><a href="https://vercel.com/blog/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base">Vercel Engineering: Introducing deepsec &mdash; the security harness for finding vulnerabilities in your codebase</a> (primary)</li>
+      <li><a href="https://github.com/vercel-labs/deepsec">GitHub: vercel-labs/deepsec</a> (primary)</li>
+      <li><a href="https://devops.com/vercels-deepsec-brings-ai-powered-security-scanning-into-the-development-workflow/">DevOps.com: Vercel's deepsec brings AI-powered security scanning into the development workflow</a></li>
+      <li><a href="https://vibe-eval.com/updates/lovable-security-report-may-2026/">VibeEval: Lovable Security Report May 2026 &mdash; the defender stack reorganises around vibe coding</a></li>
+      <li><a href="https://www.theagenticdigest.com/issues/vercel-deepsec-security-harness">The Agentic Digest: Vercel open-sources deepsec AI security harness</a></li>
+    </ul>
+  </article>
+
+  <h2>Hardware, Benchmarks &amp; Markets</h2>
+
+  <article>
+    <h3><span class="tag">NVIDIA</span>Q1 FY2027 prints $81.6 B revenue (+85% YoY); Data Center alone is $75.2 B (+92%)</h3>
+    <div class="byline">Reported 20&ndash;22 May, anchoring this week's markets backdrop &middot; Primary source: SEC EDGAR / NVIDIA Investor</div>
+    <p>
+      NVIDIA's <strong>Q1 fiscal 2027</strong> 8-K and 10-Q (quarter ended 26 April) are now central to this week's market re-rating of the AI cohort. Revenue: <strong>$81.6 B (+85% YoY, +20% QoQ)</strong> against a $78.86 B consensus. <strong>Data Center revenue</strong>: <strong>$75.2 B (+92% YoY)</strong> &mdash; just under 92% of total revenue, and a single-line larger than Amazon, Alphabet or Microsoft's full quarterly data-center book. <strong>GAAP gross margin 74.9% / non-GAAP 75.0%</strong>. The Board authorised an <strong>additional $80 B share repurchase</strong> and raised the quarterly dividend <strong>25&times;</strong>, from $0.01 to $0.25 per share. <strong>Q2 FY27 guidance</strong>: revenue of <strong>$91 B &plusmn; 2%</strong>, explicitly <strong>excluding any Data Center compute revenue from China</strong> &mdash; a structural acknowledgment that the H200 channel into China is gone (Chinese hyperscalers refused the 10-firm allocation earlier this month). Jensen Huang's CFO commentary frames "the buildout of AI factories &mdash; the largest infrastructure expansion in human history &mdash; accelerating at extraordinary speed."
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27pr.htm">SEC EDGAR: NVIDIA Q1 FY2027 8-K press release</a> (primary)</li>
+      <li><a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27cfocommentary.htm">SEC EDGAR: NVIDIA Q1 FY2027 CFO commentary</a> (primary)</li>
+      <li><a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000052/nvda-20260426.htm">SEC EDGAR: NVIDIA Q1 FY2027 10-Q</a> (primary)</li>
+      <li><a href="https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/05/nvidia-earnings-preview-q1-2027">S&amp;P Global Market Intelligence: Q1 2027 earnings preview &amp; readout</a></li>
+      <li><a href="https://intellectia.ai/blog/nvda-stock-earnings-analysis-may-2026">Intellectia: Record $81.6B revenue and AI growth analysis</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">MLCommons</span>MLPerf Inference v6.0: Blackwell Ultra tops GPT-OSS-120B; AMD MI355X crosses 1 M tokens/sec at cluster scale</h3>
+    <div class="byline">Latest results referenced this week &middot; Primary source: MLCommons</div>
+    <p>
+      <strong>MLPerf Inference v6.0</strong> &mdash; the most material industry-standard benchmark update in two years &mdash; remains the headline external comparison point for this week's AI-hardware narrative. Five of eleven datacenter tests are new or updated, including a brand-new <strong>GPT-OSS 120B</strong> open-weight LLM benchmark and an expanded <strong>DeepSeek-R1</strong> reasoning track with speculative decoding. NVIDIA's <strong>GB300 NVL72 (Blackwell Ultra)</strong> posts the highest tokens-per-second numbers on GPT-OSS-120B in the closed division, with GB200 NVL72 (B200) close behind. <strong>AMD Instinct MI355X</strong> shipped competitive single-node results, "first-time" model bring-up on GPT-OSS-120B and Wan-2.2-t2v, and a <strong>&gt;1 M tokens/sec</strong> milestone at cluster scale. Submissions came from 24 organisations including AMD, Cisco, CoreWeave, Dell, Google, HPE, Intel, Lambda, Lenovo, Nebius, NVIDIA, Oracle, Red Hat and Supermicro. v6.0 is the first MLPerf round in which open-weight LLM and reasoning benchmarks &mdash; not just image classification or BERT &mdash; drove the headline numbers.
+    </p>
+    <ul class="sources">
+      <li><a href="https://mlcommons.org/2026/04/mlperf-inference-v6-0-results/">MLCommons: MLPerf Inference v6.0 results announcement</a> (primary)</li>
+      <li><a href="https://mlcommons.org/benchmarks/inference-datacenter/">MLCommons Benchmarks: Inference Datacenter</a> (primary)</li>
+      <li><a href="https://www.amd.com/en/blogs/2026/amd-delivers-breakthrough-mlperf-inference-6-0-results.html">AMD: Breakthrough MLPerf Inference 6.0 results</a> (primary, vendor)</li>
+      <li><a href="https://www.nvidia.com/en-us/data-center/resources/mlperf-benchmarks/">NVIDIA: MLPerf AI benchmarks landing page</a> (primary, vendor)</li>
+      <li><a href="https://www.hpcwire.com/off-the-wire/mlcommons-releases-new-mlperf-inference-v6-0-benchmark-results/">HPCwire: MLCommons releases new MLPerf Inference v6.0</a></li>
+      <li><a href="https://www.spheron.network/blog/mlperf-inference-v6-benchmark-results-2026/">Spheron Blog: MLPerf Inference v6.0 GPU performance rankings</a></li>
+    </ul>
+  </article>
+
+  <h2>Research &amp; Enterprise</h2>
+
+  <article>
+    <h3><span class="tag">SAP</span>&euro;1 B+ frontier AI lab in Europe via Prior Labs acquisition &mdash; tabular foundation models as the enterprise wedge</h3>
+    <div class="byline">Active this week as the deal moves toward Q2/Q3 close &middot; Primary source: SAP News / Pulse 2</div>
+    <p>
+      <strong>SAP</strong> is operationalising its acquisition of Berlin-based <strong>Prior Labs</strong> &mdash; founded 18 months ago by <strong>Frank Hutter, Noah Hollmann, and Sauraj Gambhir</strong> &mdash; into a standalone European frontier AI lab anchored on <strong>Tabular Foundation Models (TFMs)</strong>, a class of foundation model purpose-built for the structured (row/column) data that runs enterprise systems. SAP is committing <strong>more than &euro;1 B over four years</strong> to scale it, and the lab will retain independent research governance while gaining access to SAP's customer footprint as a deployment substrate. The roster pulled into Prior Labs is unusual for European AI &mdash; researchers from Google, Apple, Amazon, Microsoft, G-Research, Jane Street, Goldman Sachs, and CERN. The strategic thesis is that the majority of enterprise data is still tabular (ERP, CRM, ledgers, IoT telemetry, scientific instruments), and that LLM-shaped foundation models systematically underperform on this distribution. Deal is expected to close in Q2 or Q3 2026 subject to regulatory approval. Combined with <strong>Mistral</strong> and <strong>Ineffable Intelligence</strong>, this gives the EU a credible third domain &mdash; tabular foundation models &mdash; alongside open-weights and self-learning.
+    </p>
+    <ul class="sources">
+      <li><a href="https://news.sap.com/2026/05/sap-to-acquire-prior-labs-establish-frontier-ai-lab-europe/">SAP Newsroom: SAP to acquire Prior Labs to establish a globally leading frontier AI lab in Europe</a> (primary)</li>
+      <li><a href="https://www.prnewswire.com/news-releases/sap-to-acquire-prior-labs-to-establish-a-globally-leading-frontier-ai-lab-in-europe-302761284.html">PR Newswire: SAP&ndash;Prior Labs deal announcement</a> (primary)</li>
+      <li><a href="https://pulse2.com/sap-to-acquire-prior-labs-and-invest-over-e1-billion-to-build-frontier-ai-lab-in-europe/">Pulse 2: &euro;1B+ investment behind a European frontier AI lab</a></li>
+      <li><a href="https://thenextweb.com/news/sap-prior-labs-acquisition-tabular-foundation-model">TNW: SAP buys Prior Labs to anchor a European frontier AI lab around tabular foundation models</a></li>
+      <li><a href="https://techcrunch.com/2026/05/05/sap-bets-1-16b-on-18-month-old-german-ai-lab-and-says-yes-to-nemoclaw/">TechCrunch: SAP bets $1.16B on an 18-month-old German AI lab</a></li>
+      <li><a href="https://www.hpcwire.com/aiwire/2026/05/04/sap-to-acquire-prior-labs-to-establish-a-globally-leading-frontier-ai-lab-in-europe/">AIwire: SAP&ndash;Prior Labs frontier AI lab in Europe</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>The ~$30 B round closes this week &mdash; what changes the day the wire clears</h3>
+    <div class="byline">23&ndash;27 May 2026 (close window) &middot; Primary source: Bloomberg / Yahoo Finance</div>
+    <p>
+      Treating this as a status update rather than a re-announce of the round itself (covered in the 25 May digest): multiple outlets continue to converge on the <strong>week of 26 May</strong> as the actual <strong>wire-and-sign window</strong> for Anthropic's <strong>$30 B+ raise at a $900 B+ pre-money valuation</strong>, co-led by <strong>Sequoia, Dragoneer, Altimeter, and Greenoaks</strong> at approximately $2 B each, with <strong>Founders Fund</strong> and <strong>General Catalyst</strong> participating. The day the round officially closes is materially load-bearing for two unrelated calendars: (1) it crystallises Anthropic ahead of OpenAI's March $852 B mark as the <strong>most valuable private company in the world</strong> right before OpenAI's confidential S-1 (filed 22 May) must move into public Form S-1 territory under SEC 15-day pre-roadshow rules, and (2) it sets the strike price benchmark for every secondary transaction at <strong>Mistral, xAI, Inflection</strong> and the rest of the frontier cohort over the next 90 days. Anthropic's run-rate revenue, per the same week's reporting, is now <strong>~$30 B annualised</strong> versus $9 B at end-2025. Watch for an official Anthropic newsroom post or 8-A-equivalent disclosure later this week or next.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.bloomberg.com/news/articles/2026-05-22/anthropic-to-close-over-30-billion-round-as-soon-as-next-week">Bloomberg: Anthropic to close $30B+ round as soon as next week (22 May)</a> (primary)</li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/anthropic-close-over-30-billion-194250599.html">Yahoo Finance: Anthropic to close over $30 billion round</a></li>
+      <li><a href="https://finance.yahoo.com/sectors/technology/articles/anthropic-closes-30-billion-fundraising-112955192.html">Yahoo Finance: Anthropic closes in on $30 billion fundraising round</a></li>
+      <li><a href="https://finance.yahoo.com/sectors/technology/articles/anthropic-set-close-30-billion-203545596.html">Yahoo: Anthropic set to close $30B at $900B valuation</a></li>
+      <li><a href="https://cryptobriefing.com/anthropic-nears-30b-funding-round/">Crypto Briefing: Anthropic nears $30B round, one of the largest private financings in history</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> The 27 May digest is anchored on a ~24&ndash;48 hour window centred on the 26 May disclosures (Project Glasswing / Mythos, OpenRouter, Stord, Catena Labs, Gemini Interactions schema cutover) with adjacent market-structure context (NVIDIA Q1 FY27, MLPerf v6.0, SAP&ndash;Prior Labs, Anthropic round close). Primary sources (SEC EDGAR, Google AI Developers docs, MLCommons, Vercel Engineering blog, Stord newsroom, PR Newswire, a16z, Bloomberg, SAP newsroom, vercel-labs/deepsec on GitHub, Anthropic-partner statements via CSO Online and Help Net Security) are flagged inline; secondary outlets are corroborated with at least two-to-three independent reports per item. <em>Non-overlap check:</em> deliberately distinct from the <strong>25 May</strong> edition (Pope Leo XIV's <em>Magnifica humanitas</em>, the Anthropic round itself, the OpenAI confidential S-1, the OpenAI Erd&#337;s disproof, Karpathy joining Anthropic's pre-training team, Gemini 3.5 Flash GA / Antigravity 2.0 / WebMCP, Anthropic&ndash;Stainless, Meta's 8,000 layoffs + MCI, and the Musk v. OpenAI Oakland verdict), the <strong>28 April</strong> edition (IBM Bob, GitHub App-installation-token format change, Ineffable Intelligence, DeepSeek V4-Pro price cuts, NDRC blocking Meta&ndash;Manus, Google DeepMind Seoul campus, Anthropic Sydney office, Avoca) and the <strong>17/19 April</strong> editions (Mozilla Thunderbolt, huggingface_hub 1.11.0, OpenAI Agents SDK sandbox, Gemini CLI subagents, GitHub agent-skills CLI, IntelliJ IDEA 2026.1, Manycore Tech IPO, Beijing humanoid half-marathon, GPT-Rosalind, Claude Design / Opus 4.7, Cloudflare Agent Memory, Tesla AI5 tape-out, Anthropic 3.5 GW TPU deal, Q1 2026 venture funding records).</p>
+    <p>Generated 27 May 2026.</p>
+  </footer>
+</body>
+</html>
