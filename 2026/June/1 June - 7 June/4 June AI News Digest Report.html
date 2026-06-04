@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 4 June 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 4 June 2026</h1>
+    <div class="meta">Week of 1&ndash;7 June 2026 &middot; Coverage window: 2&ndash;4 June (last ~48 hours)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The frontier-lab balance of power kept tilting this week. <strong>SpaceX filed for a record $75 B IPO</strong> on 3 June at a ~$1.77 T valuation, with the S-1 explicitly framing the company as a vehicle for <em>space-based AI data centers</em> &mdash; Musk's xAI is already paying SpaceX ~$15 B/year for 300 MW at Colossus 1. On the model side, <strong>Microsoft Build 2026</strong> delivered the most aggressive OpenAI-decoupling move yet: a new in-house <strong>MAI-Thinking-1</strong> reasoning model (35B-active MoE, 256k context, 97.0% on AIME 2025) and <strong>MAI-Code-1-Flash</strong>, a 5B coding model that ships into GitHub Copilot on 2 June and beats Claude Haiku 4.5 by 16 points on SWE-Bench Pro. <strong>Google</strong> dropped <strong>Gemma 4 12B</strong> under Apache 2.0 on 3 June &mdash; a single-stack multimodal that runs text/image/audio/video on a 16 GB laptop with no separate encoders. <strong>Anthropic</strong> confidentially filed for an IPO at a <strong>$965 B post-money</strong> after closing a $65 B round &mdash; surpassing OpenAI &mdash; and expanded <strong>Project Glasswing</strong> from ~50 to ~150 partners across 15+ countries, adding power, water, healthcare and hardware. <strong>OpenAI</strong> launched six job-specific <strong>Codex enterprise plugins</strong> (incl. an investment-banking plugin wired to FactSet/PitchBook/LSEG) and disclosed Codex now has <em>5 M WAU, growing 6&times; since February</em>. On the policy side, the White House signed <em>Promoting Advanced AI Innovation and Security</em>, a 30-day voluntary pre-release window for frontier models. Research highlight: Google's <strong>TurboQuant</strong> (ICLR 2026) hits 6&times; KV-cache compression at near-zero quality loss.
+  </div>
+
+  <h2>Top Story &mdash; SpaceX's $75 B IPO and the Space-Based AI Data Center Thesis</h2>
+
+  <article>
+    <h3><span class="tag">SpaceX</span>Record $75 B IPO files; 555.6 M shares at $135 = $1.77 T market cap, with S-1 leaning hard into AI</h3>
+    <div class="byline">3 June 2026 &middot; Primary source: SpaceX S-1 (SEC) &middot; Bloomberg / CNN / SpaceNews</div>
+    <p>
+      SpaceX filed an S-1 with the SEC on Wednesday 3 June for what would be the <strong>largest IPO in history</strong> &mdash; ~555.6 M shares at $135, $75 B raised, ~$1.77 T market value. The previous record was Saudi Aramco's $29.4 B in 2019. What makes the filing materially different from a pure space narrative is that the S-1 explicitly leans on <em>artificial intelligence and space-based data centers</em> as a forward-looking thesis. SpaceX already has a $15 B/year contract to host xAI's <strong>Colossus 1</strong> (300 MW) and merged with xAI in February 2026, so the IPO is effectively a public-markets re-rating of a vertically integrated AI&ndash;launch&ndash;Starlink stack. Ben Thompson's Stratechery framed the structural read: launch economics + Starlink ground-station distribution + xAI compute creates the first integrated case for putting hyperscale inference in orbit, where power and cooling constraints look different than on Earth. Expect the filing to compress the OpenAI/Anthropic IPO timelines &mdash; both labs filed confidentially in the past two weeks.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.bloomberg.com/news/articles/2026-06-03/spacex-seeks-75-billion-in-record-ipo-plan-to-fund-ai-launch">Bloomberg: SpaceX seeks $75 B in record IPO to fund AI, launch</a> (primary)</li>
+      <li><a href="https://www.cnn.com/2026/06/03/business/spacex-ipo-valuation-musk">CNN Business: SpaceX sets the stage for a record $75 billion IPO</a></li>
+      <li><a href="https://spacenews.com/spacex-to-raise-at-least-75-billion-in-ipo/">SpaceNews: SpaceX to raise at least $75 billion in IPO</a></li>
+      <li><a href="https://stratechery.com/2026/the-spacex-ipo-and-data-centers-in-space/">Stratechery (Ben Thompson): The SpaceX IPO and Data Centers in Space</a></li>
+      <li><a href="https://interestingengineering.com/culture/spacex-record-75-billion-ipo-starship-ai-expansion-2">Interesting Engineering: Musk's SpaceX seeks record $75B IPO to fuel space, next-gen computing plans</a></li>
+    </ul>
+  </article>
+
+  <h2>Frontier Labs &amp; Model Releases</h2>
+
+  <article>
+    <h3><span class="tag">Microsoft</span>MAI-Thinking-1 and MAI-Code-1-Flash: Microsoft's first in-house frontier-class models ship at Build 2026</h3>
+    <div class="byline">2&ndash;3 June 2026 &middot; Primary source: Microsoft Build 2026 keynote / Simon Willison writeup / CNBC</div>
+    <p>
+      At Build 2026 on Tuesday 2 June, Microsoft announced <strong>MAI-Thinking-1</strong> &mdash; its first in-house reasoning model, a 35B-active-parameter sparse MoE with a 256k-token context window, trained <em>without distillation</em> from OpenAI's GPT series &mdash; and <strong>MAI-Code-1-Flash</strong>, a 5B-parameter coding model. MAI-Thinking-1 scores <strong>97.0% on AIME 2025</strong> and <strong>94.5% on AIME 2026</strong>; independent blind raters preferred it to Claude Sonnet 4.6 on multi-step reasoning. MAI-Code-1-Flash beats Claude Haiku 4.5 across all four core coding benchmarks measured, including a <strong>16-point lead on SWE-Bench Pro (51.2% vs 35.2%)</strong>, and began rolling out as a Copilot default for a limited tier on 2 June. The strategic read: Microsoft now has its own credible reasoning and coding stack and is no longer narrowly dependent on the OpenAI relationship for either workload &mdash; consistent with this week's reporting that Microsoft is also in talks to host Anthropic's Claude inference on its Maia 200 chips. Day 2 at Build also shipped <strong>Windows Agent Framework 1.0</strong> (MIT-licensed), <strong>Azure Agent Mesh</strong> for federated multi-agent orchestration, and a GA of <strong>Microsoft IQ</strong> APIs (Work IQ opens 16 June).
+    </p>
+    <ul class="sources">
+      <li><a href="https://simonwillison.net/2026/Jun/2/microsofts-new-models/">Simon Willison: Microsoft's new MAI models</a> (primary writeup)</li>
+      <li><a href="https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html">CNBC: Microsoft unveils new AI models to lessen reliance on OpenAI and lower costs for developers</a></li>
+      <li><a href="https://www.neowin.net/news/microsoft-unveils-mai-thinking-1-reasoning-and-mai-code-1-coding-models/">Neowin: Microsoft unveils MAI-Thinking-1 reasoning and MAI-Code-1 coding models</a></li>
+      <li><a href="https://news.microsoft.com/build-2026-live-blog/microsoft-build-2026-live/">Microsoft News: Build 2026 live blog</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html">CNBC: Microsoft and Google take on Anthropic and OpenAI in AI coding models</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Google</span>Gemma 4 12B ships under Apache 2.0: native audio/video on a 16 GB laptop, no separate encoders</h3>
+    <div class="byline">3 June 2026 &middot; Primary source: Google blog / Google Open Source blog / VentureBeat</div>
+    <p>
+      Google released <strong>Gemma 4 12B</strong> on Wednesday 3 June, a 12B-parameter open-weight multimodal model that processes <em>text, images, audio and video without separate encoder networks</em> &mdash; a meaningful architectural simplification over the rest of the multimodal field. The weights ship under <strong>Apache 2.0</strong> on Hugging Face and Kaggle with full commercial-use rights and run end-to-end on hardware with <strong>16 GB of RAM/VRAM</strong>, putting frontier-grade multimodal inside the standard enterprise laptop envelope for the first time. Gemma 4 12B is built on the Gemini 3 research stack and is the first mid-sized Gemma with native audio. The release lands in the same week as Microsoft's MAI launches and is part of a broader pattern: Google is now using <em>open weights</em> as a defensive moat against Microsoft and Anthropic's enterprise-channel push, while reserving frontier closed-weight performance for Gemini 3.5/4.
+    </p>
+    <ul class="sources">
+      <li><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/">Google: Gemma 4 &mdash; byte for byte, the most capable open models</a> (primary)</li>
+      <li><a href="https://opensource.googleblog.com/2026/03/gemma-4-expanding-the-gemmaverse-with-apache-20.html">Google Open Source Blog: Gemma 4 &mdash; Expanding the Gemmaverse with Apache 2.0</a> (primary)</li>
+      <li><a href="https://venturebeat.com/technology/googles-new-open-source-gemma-4-12b-analyzes-audio-video-and-runs-entirely-locally-on-a-typical-16gb-enterprise-laptop">VentureBeat: Google's new open-source Gemma 4 12B analyzes audio, video &mdash; runs locally on a 16 GB laptop</a></li>
+      <li><a href="https://www.techtimes.com/articles/317758/20260604/google-gemma-4-12b-brings-multimodal-ai-16gb-laptops-free-under-apache-20.htm">TechTimes (4 June): Google Gemma 4 12B brings multimodal AI to 16 GB laptops</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>$965 B post-money, $65 B round, confidential IPO filed &mdash; Anthropic surpasses OpenAI on paper</h3>
+    <div class="byline">1&ndash;2 June 2026 &middot; Primary source: Fortune scoop / TechCrunch / Reuters</div>
+    <p>
+      Anthropic confidentially filed an S-1 with the SEC on 1 June and disclosed the close of a <strong>$65 B Series H</strong> at a <strong>$965 B post-money valuation</strong> &mdash; led by Altimeter, Dragoneer, Greenoaks and Sequoia. The valuation is roughly <strong>$113 B above OpenAI's reported $852 B mark</strong>, making Anthropic the most valuable AI lab in the world by valuation for the first time. Revenue reportedly went from ~$10 B annualized last year to <strong>~$47 B by May 2026</strong>, one of the fastest private-company ramps ever recorded; the lab attributes the growth to Claude Code and the enterprise FDE motion. The 25 May digest reported the round at ~$30 B/$900 B; the final number landed materially higher. IPO timing is expected to be <em>this fall</em>, assuming SEC review proceeds. Pair this with SpaceX's S-1 filed two days later: the 2026 AI-IPO calendar is now substantially de-risked.
+    </p>
+    <ul class="sources">
+      <li><a href="https://fortune.com/2026/06/01/anthropic-confidentially-files-ipo-965-billion-valuation/">Fortune: Anthropic confidentially files for IPO after $65 B round at $965 B valuation</a> (primary scoop)</li>
+      <li><a href="https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/">TechCrunch: Anthropic raises $65 B, nears $1 T valuation ahead of IPO</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/anthropic-files-ipo-reaching-965-152836422.html">Yahoo Finance: Anthropic files for IPO after reaching $965 B valuation</a></li>
+      <li><a href="https://www.how2shout.com/news/anthropic-ipo-s1-sec-965-billion-valuation-openai-spacex-2026.html">how2shout: Anthropic files confidentially for IPO after $965 B valuation surpasses OpenAI</a></li>
+    </ul>
+  </article>
+
+  <h2>Enterprise &amp; Developer Platforms</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>Codex 5 M WAU and six job-specific plugins (incl. investment banking wired to FactSet/PitchBook)</h3>
+    <div class="byline">2 June 2026 &middot; Primary source: OpenAI / TechCrunch / VentureBeat</div>
+    <p>
+      OpenAI on Tuesday 2 June launched <strong>six job-specific Codex plugins</strong> &mdash; data analytics, creative production, sales, product design, equity investing, and <strong>investment banking</strong> &mdash; alongside a new <strong>Sites</strong> capability that lets Codex agents publish interactive workspaces. The IB plugin is wired into <strong>Moody's, Daloopa, Datasite, FactSet, LSEG, S&amp;P, PitchBook and Hebbia</strong> for live data, comp tables, and pitch-book generation. The most consequential disclosure was the user-base shift: <strong>Codex now has &gt;5 M weekly actives</strong>, up &gt;6&times; since the desktop launch in February; <em>knowledge workers are ~20% of users and growing 3&times; faster than developers</em>. Data-analytics usage is up 110%. Three weeks earlier OpenAI stood up the <strong>OpenAI Deployment Company</strong> ($4 B+ JV) to ship vertical enterprise builds &mdash; the Codex plugin set is now the visible product output. The IB plugin in particular is the first time a frontier lab has shipped a clearly named, named-data-source vertical agent at GA.
+    </p>
+    <ul class="sources">
+      <li><a href="https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/">TechCrunch: OpenAI launches new Codex tools for white-collar work</a> (primary)</li>
+      <li><a href="https://venturebeat.com/orchestration/openais-codex-update-lets-agents-build-interactive-enterprise-workspaces-via-sites-and-role-specific-plugins">VentureBeat: OpenAI's Codex update lets agents build interactive enterprise workspaces via Sites and role-specific plugins</a></li>
+      <li><a href="https://dataconomy.com/2026/06/03/openai-codex-enterprise-plugins-sites-feature/">Dataconomy: OpenAI expands Codex with enterprise plug-ins and new Sites feature</a></li>
+      <li><a href="https://www.prismnews.com/news/openai-expands-codex-into-banking-legal-work-and-corporate">Prism News: OpenAI expands Codex into banking, legal work and corporate finance</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">GitHub</span>Copilot Agents window lands in VS Code Stable; remote agents over SSH/Dev Tunnels; usage-based billing live</h3>
+    <div class="byline">3 June 2026 &middot; Primary source: GitHub Changelog (github.blog)</div>
+    <p>
+      GitHub on Wednesday 3 June rolled up its May releases for <strong>Copilot in VS Code</strong> (v1.120&ndash;v1.123) into a single changelog post. The headline: the <strong>Agents window is now in VS Code Stable as a preview</strong>, swapping the chat-and-completion default for an agent-first experience focused on completing tasks rather than editing the current file. <strong>Remote Agents (preview)</strong> can now run on remote machines over SSH or Dev Tunnels and persist sessions across client disconnects &mdash; the most explicit acknowledgement to date that long-horizon agent tasks belong off the developer's laptop. <strong>BYOK</strong> support expanded to air-gapped environments with per-task model selection (e.g. dedicated utility model for commit-message generation). Separately, as of <strong>1 June</strong> all Copilot plans bill against <strong>GitHub AI Credits</strong> and admins can set universal user-level budgets &mdash; the formal closure of the unlimited-Copilot era.
+    </p>
+    <ul class="sources">
+      <li><a href="https://github.blog/changelog/2026-06-03-github-copilot-in-visual-studio-code-may-releases/">GitHub Changelog (3 June): Copilot in VS Code &mdash; May releases</a> (primary)</li>
+      <li><a href="https://github.blog/changelog/label/copilot/">GitHub Changelog: Copilot label (index)</a></li>
+      <li><a href="https://github.com/orgs/community/discussions/192948">GitHub Discussion: Copilot moves to usage-based billing</a></li>
+      <li><a href="https://devblogs.microsoft.com/visualstudio/whats-coming-next-in-visual-studio-our-microsoft-build-2026-announcements/">Visual Studio Blog: What's coming next in Visual Studio (Build 2026)</a></li>
+    </ul>
+  </article>
+
+  <h2>Security &amp; Critical Infrastructure</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Project Glasswing expands from ~50 to ~150 partners across 15+ countries &mdash; adds power, water, healthcare, hardware</h3>
+    <div class="byline">2 June 2026 &middot; Primary source: Anthropic newsroom &middot; CyberScoop / TechCrunch</div>
+    <p>
+      Anthropic announced on Tuesday 2 June that <strong>Project Glasswing</strong> &mdash; the consortium running its restricted <strong>Claude Mythos Preview</strong> against critical-infrastructure codebases &mdash; is expanding from ~50 partners (the early-April cohort that surfaced 10,000+ high-or-critical-severity vulnerabilities in its first month) to <strong>~150 additional organizations across more than 15 countries</strong>. The new cohort deliberately fills the sectors the initial launch under-represented: <strong>power, water, healthcare, communications and hardware</strong>. Anthropic also said it will scale up its <strong>Cyber Verification Program</strong>, the mechanism for granting Mythos-class capabilities to organizations for specific cyberdefense tasks. The expansion is consequential because it's the first programmatic distribution of a frontier-class autonomous-vuln-discovery model outside a small private consortium &mdash; and it lands the same week the White House signed an executive order asking frontier labs for 30-day pre-release access. The two stories are intentionally adjacent.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/news/expanding-project-glasswing">Anthropic Newsroom: Expanding Project Glasswing</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/">TechCrunch: Anthropic scales Claude Mythos to critical infrastructure in 15+ countries</a></li>
+      <li><a href="https://cyberscoop.com/anthropic-project-glasswing-expansion-critical-infrastructure-claude-mythos/">CyberScoop: Anthropic expanding access to Project Glasswing</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/02/anthropic-mythos-ai-project-glasswing.html">CNBC: Anthropic expands Mythos to 150 additional organizations in more than 15 countries</a></li>
+      <li><a href="https://www.infosecurity-magazine.com/news/anthropic-glasswing-expansion/">Infosecurity Magazine: Anthropic expands Mythos access to 150 more organizations</a></li>
+    </ul>
+  </article>
+
+  <h2>Policy &amp; Regulation</h2>
+
+  <article>
+    <h3><span class="tag">White House</span><em>Promoting Advanced Artificial Intelligence Innovation and Security</em>: voluntary 30-day pre-release window, AI cybersecurity clearinghouse</h3>
+    <div class="byline">2 June 2026 &middot; Primary source: whitehouse.gov &middot; NPR / Axios / Atlantic Council</div>
+    <p>
+      President Trump on Tuesday 2 June signed <em>"Promoting Advanced Artificial Intelligence Innovation and Security"</em>, an executive order that establishes a <strong>voluntary framework</strong> under which frontier-model developers may grant the U.S. government <strong>up to 30 days of pre-release access</strong> to new models for cybersecurity review. The order explicitly forbids any mandatory licensing, pre-clearance, or permitting regime for AI models &mdash; consistent with the administration's broader anti-regulatory framing &mdash; and instead creates: (a) an <strong>AI cybersecurity clearinghouse</strong> coordinating remediation of software vulnerabilities discovered by frontier models, (b) a <strong>classified benchmarking process</strong> for evaluating models against advanced-AI-cyber capabilities, and (c) DOJ prioritization of cases involving AI-enabled intrusion and data theft. IBM CEO Arvind Krishna publicly endorsed the order in an Axios interview on 3 June. NPR's read: the voluntary-only structure is a substantive narrowing from earlier drafts that contemplated mandatory review &mdash; closer to the UK AISI / EU AI Office model than to a licensing regime. The clearinghouse design dovetails directly with Project Glasswing's expansion the same day.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">White House: Executive Order &mdash; Promoting Advanced AI Innovation and Security</a> (primary)</li>
+      <li><a href="https://www.whitehouse.gov/fact-sheets/2026/06/fact-sheet-president-donald-j-trump-promotes-advanced-artificial-intelligence-innovation-and-security/">White House Fact Sheet: Promoting Advanced AI Innovation and Security</a> (primary)</li>
+      <li><a href="https://www.npr.org/2026/06/02/nx-s1-5844347/ai-safety-trump-executive-order">NPR: Trump's new AI safety order seeks voluntary review of new models</a></li>
+      <li><a href="https://www.axios.com/2026/06/03/trump-ai-executive-order-ibm-ceo">Axios (3 June): IBM CEO backs Trump's narrowed AI executive order</a></li>
+      <li><a href="https://www.atlanticcouncil.org/dispatches/reading-between-the-lines-of-trumps-new-executive-order-on-ai/">Atlantic Council: Reading between the lines of Trump's new executive order on AI</a></li>
+    </ul>
+  </article>
+
+  <h2>Research</h2>
+
+  <article>
+    <h3><span class="tag">Google Research</span>TurboQuant at ICLR 2026: 6&times; KV-cache compression with near-zero quality loss, no training required</h3>
+    <div class="byline">ICLR 2026 / posted to arXiv 2025; community implementations landed in last 48h &middot; Primary source: Google Research blog</div>
+    <p>
+      Google Research's <strong>TurboQuant</strong> &mdash; presented at ICLR 2026 by Zandieh, Daliri, Hadian and Mirrokni &mdash; gives LLM inference a near-information-theoretic-optimal vector-quantization scheme for the KV cache, the single largest memory bottleneck in long-context inference. The technique combines <strong>PolarQuant</strong> (a rotation-based coordinate transform) with a <strong>1-bit QJL residual correction</strong> to compress KV vectors to <em>3 bits/coordinate with effectively zero accuracy loss</em>, delivering at least <strong>6&times; memory reduction</strong> and up to <strong>8&times; faster attention</strong> on NVIDIA H100s. Critically, the method is <em>data-oblivious</em> and requires <strong>no training and no calibration data</strong> &mdash; it processes each vector online as it's written to cache. Within 48 hours of broader ICLR press coverage this week, multiple open-source community implementations appeared on GitHub (including a llama.cpp port targeting Mistral-7B that reports 3.8&ndash;5.7&times; memory reduction with no quality loss). The practical impact: production 1M-context workloads (e.g. Claude Opus 4.8's default 1 M context, or Gemma 4 12B running locally) become substantially cheaper at the same quality, which has direct implications for the Maia/Trainium/Blackwell inference economics conversation.
+    </p>
+    <ul class="sources">
+      <li><a href="https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/">Google Research: TurboQuant &mdash; Redefining AI efficiency with extreme compression</a> (primary)</li>
+      <li><a href="https://decodethefuture.org/en/turboquant-vector-quantization-kv-cache/">DecodeTheFuture: TurboQuant explained &mdash; 3-bit KV cache at 6&times; compression</a></li>
+      <li><a href="https://www.spheron.network/blog/google-turboquant-llm-compression-gpu-cloud/">Spheron: Google TurboQuant &mdash; 6&times; KV cache compression for LLM inference</a></li>
+      <li><a href="https://github.com/OmarHory/turboquant">GitHub (community impl.): TurboQuant on Mistral-7B &mdash; 3.8&ndash;5.7&times; memory reduction</a></li>
+      <li><a href="https://github.com/AmesianX/TurboQuant">GitHub (community impl.): TurboQuant KV-cache compression for llama.cpp</a></li>
+    </ul>
+  </article>
+
+  <h2>Hardware</h2>
+
+  <article>
+    <h3><span class="tag">NVIDIA</span>RTX Spark Superchip: a Windows-on-Arm play targeting Intel, AMD and Qualcomm &mdash; 128 GB unified memory, 120B-param local inference</h3>
+    <div class="byline">Announced 31 May at Computex; PC OEM ecosystem detail through 3 June &middot; Primary source: NVIDIA Newsroom</div>
+    <p>
+      NVIDIA's joint Computex/Build announcement with Microsoft for the <strong>RTX Spark Superchip</strong> kept reverberating through the week. The chip pairs <strong>up to 20 Arm CPU cores</strong> with a Blackwell-generation GPU (<strong>6,144 CUDA cores</strong>), <strong>128 GB of LPDDR5X unified memory</strong>, and <strong>~300 GB/s of memory bandwidth</strong>, delivering <em>~1 petaflop of AI performance</em> at the laptop power envelope. The headline capability: it can run <strong>120 B-parameter LLMs with up to 1 M tokens of context entirely locally</strong> &mdash; the first commodity laptop platform to plausibly do so. Launch partners disclosed for fall 2026 are <strong>ASUS, Dell, HP, Lenovo, Microsoft Surface and MSI</strong>, with Acer and GIGABYTE to follow. Wall Street's read: Intel fell as much as <strong>7.3%</strong> on the announcement, Qualcomm and AMD dropped, and ARM Holdings rose up to <strong>18%</strong>. AMD's response this week was a multi-billion-dollar Taiwan capex commitment and reporting of its own Arm-based PC chip in development. The strategic significance for AI: when 120B-param inference at 1 M context fits in a 16-inch laptop, the <em>cloud-vs-edge</em> boundary for many enterprise workloads moves.
+    </p>
+    <ul class="sources">
+      <li><a href="https://nvidianews.nvidia.com/news/nvidia-microsoft-windows-pcs-agents-rtx-spark">NVIDIA Newsroom: NVIDIA and Microsoft reinvent Windows PCs for the age of personal AI</a> (primary)</li>
+      <li><a href="https://blogs.windows.com/windowsexperience/2026/05/31/introducing-a-powerful-new-chapter-for-windows-pcs-accelerated-by-nvidia-rtx-spark/">Windows Experience Blog: Introducing a powerful new chapter for Windows PCs, accelerated by NVIDIA RTX Spark</a> (primary)</li>
+      <li><a href="https://www.tomshardware.com/laptops/nvidia-unveils-rtx-spark-superchip-at-computex-2026-new-platform-promises-to-turn-windows-into-an-agentic-ai-os-with-arm-cpu-blackwell-gpu-and-128gb-unified-memory">Tom's Hardware: NVIDIA unveils RTX Spark Superchip at Computex 2026</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-06-01/nvidia-enters-windows-laptop-market-taking-on-intel-and-amd">Bloomberg: NVIDIA is taking on Intel and AMD with new AI chip for computers</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/02/nvidias-new-pc-chips-are-ceos-bid-to-own-every-part-of-ai-stack.html">CNBC: NVIDIA's new PC chips represent CEO Huang's bid to win at every layer of AI stack</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This 4 June digest deliberately avoids overlap with the 25, 27 and 28 May editions. It does <em>not</em> re-cover the Altman/Amodei jobs-apocalypse walk-back, Hassabis's "foothills of the singularity" remarks, the Fujitsu strategic alliance, Claude Code v2.1.152, the Pope Leo encyclical, the OpenRouter/Stord/Catena raises, NVIDIA's Q1 FY27 print, MLPerf Inference v6.0, Karpathy's move to Anthropic, the Erd&#337;s result, or the EU AI Act Omnibus calendar &mdash; all of which were lede stories in the prior three reports. The 4 June lens is the <em>SpaceX $75 B IPO and space-data-center thesis</em> (3 June), <em>Microsoft Build 2026 MAI-Thinking-1 / MAI-Code-1-Flash</em> (2&ndash;3 June), <em>Gemma 4 12B open release</em> (3 June), <em>Anthropic's $965 B / $65 B / S-1 closing</em> (1 June &mdash; materially newer numbers than the 25 May report), <em>OpenAI Codex 5 M WAU + six enterprise plugins</em> (2 June), <em>GitHub Copilot Agents in VS Code Stable</em> (3 June), <em>Project Glasswing's expansion to 150 partners across 15+ countries</em> (2 June &mdash; the actual expansion, distinct from 27 May's 10,000-vuln disclosure), the <em>Trump AI executive order</em> (2 June), <em>TurboQuant ICLR 2026</em>, and <em>NVIDIA's RTX Spark Superchip</em>. Primary sources (Microsoft Build live blog, Anthropic Newsroom, OpenAI / Google blog posts, White House, Google Research, NVIDIA Newsroom, Bloomberg / Fortune scoops) are flagged inline. Secondary outlets are corroborated by at least three independent reports.</p>
+    <p>Generated 4 June 2026.</p>
+  </footer>
+</body>
+</html>
