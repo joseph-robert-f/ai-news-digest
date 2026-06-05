@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 5 June 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 5 June 2026</h1>
+    <div class="meta">Week of 1&ndash;7 June 2026 &middot; Coverage window: 4&ndash;5 June (last ~24 hours, with adjacent context)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The story of the last 24 hours is <strong>vertical integration</strong> &mdash; every major platform is moving to own more of its own stack. <strong>Microsoft Build 2026</strong> closed Thursday with Mustafa Suleyman and Satya Nadella unveiling a seven-model <strong>MAI family</strong> &mdash; including Microsoft's first flagship reasoning model <strong>MAI-Thinking-1</strong> &mdash; together with the <strong>Maia 200</strong> accelerator (live in Arizona, claimed 30% more tokens-per-dollar than the leading GPU) and <strong>Cobalt 200</strong> VMs. The MAI announcement is the cleanest statement yet that Microsoft is preparing for a world in which OpenAI is a peer, not a sole supplier. In Washington, Reps. <strong>Jay Obernolte (R-CA)</strong> and <strong>Lori Trahan (D-MA)</strong> released a 269-page bipartisan discussion draft &mdash; the <strong>"Great American Artificial Intelligence Act"</strong> &mdash; that would <strong>preempt state laws on AI model development for three years</strong> and impose third-party audits on developers with &gt;$500 M in annual revenue. <strong>OpenAI</strong> began rolling out <strong>Dreaming V3</strong>, a hierarchical sleep-style memory architecture, to ChatGPT Plus/Pro, after a 5&times; compute reduction that paves the way for free-tier expansion. <strong>DeepSeek</strong> is near close on a maiden <strong>~$7.4 B round at up to $59 B</strong>, with Tencent, CATL, and the state-backed National AI Industry Investment Fund leading; founder Liang Wenfeng is personally writing ~40% of the cheque. <strong>Cursor 3.7</strong> shipped canvas Design Mode and a context-usage explorer; <strong>OpenAI</strong> updated <strong>GPT-Rosalind</strong> with GPT-5.5 reasoning and a new <strong>LifeSciBench</strong>; <strong>DeepMind</strong> published a position paper arguing solipsistic superintelligence is unlikely to be cooperative; and <strong>Anthropic's Code w/ Claude</strong> developer conference opens in Tokyo today.
+  </div>
+
+  <h2>Top Story &mdash; Microsoft's MAI Stack</h2>
+
+  <article>
+    <h3><span class="tag">Microsoft</span>Build 2026 wraps: seven-model MAI family, Maia 200 silicon, Cobalt 200 VMs &mdash; the de-OpenAI-ification of the Microsoft stack</h3>
+    <div class="byline">2&ndash;4 June 2026 &middot; Primary source: Microsoft Build 2026 newsroom / Microsoft AI keynote transcript / official Microsoft blog</div>
+    <p>
+      Microsoft Build 2026 closed in Seattle on Thursday 4 June with the most consequential first-party AI announcement Microsoft has made since the original OpenAI partnership. CEO Satya Nadella and Microsoft AI CEO Mustafa Suleyman jointly unveiled the <strong>MAI</strong> model family &mdash; seven in-house models spanning reasoning, code, image, and speech. The headline item is <strong>MAI-Thinking-1</strong>, Microsoft's first flagship reasoning model (35 B active parameters, 256 K context window) positioned against o-series and Gemini Thinking. The family also includes <strong>MAI-Code-1-Flash</strong> for low-latency text-to-code; <strong>MAI-Image-2.5</strong> and <strong>MAI-Image-Flash</strong> (now powering generation in PowerPoint and Azure AI Foundry); and <strong>MAI-Transcribe-1.5</strong>, a multilingual ASR model covering 43 languages. On the silicon side, the <strong>Maia 200</strong> AI accelerator is live in the Arizona datacenter, with Microsoft claiming ~30% more tokens-per-dollar versus the leading discrete GPU in matched workloads; new <strong>Cobalt 200</strong> Arm VM SKUs ship in parallel for agent-style workloads where memory bandwidth matters more than peak FLOPs. The broader framing &mdash; "agent-first" Windows, Office, GitHub, Azure, and Foundry &mdash; was reinforced by GA of <strong>Microsoft IQ</strong> across Work, Fabric, and Foundry and a new <strong>Web IQ</strong> search API designed to be called by agents rather than humans. Read against the OpenAI confidential S-1 (filed 22 May, covered last week) and Anthropic's $30 B round closing in the same window, MAI is best understood as Microsoft buying optionality: shipping enough first-party capability across model, inference, and orchestration that the OpenAI relationship can evolve into something less existential without breaking the product roadmap.
+    </p>
+    <ul class="sources">
+      <li><a href="https://news.microsoft.com/build-2026/">Microsoft Build 2026 Newsroom (primary)</a></li>
+      <li><a href="https://microsoft.ai/news/microsoft-build-2026-mai-keynote-transcript/">Microsoft AI: MAI keynote transcript (primary)</a></li>
+      <li><a href="https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/">Official Microsoft Blog: Build 2026 &mdash; "Be yourself at work" (primary)</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html">CNBC: Microsoft unveils new AI models to lessen reliance on OpenAI</a></li>
+      <li><a href="https://www.thurrott.com/a-i/336960/build-2026-microsoft-launches-first-flagship-reasoning-ai-model-and-more">Thurrott: Build 2026 &mdash; Microsoft launches first flagship reasoning AI model</a></li>
+    </ul>
+  </article>
+
+  <h2>Frontier Model &amp; Product Releases</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>Dreaming V3 memory begins rolling out to ChatGPT Plus and Pro &mdash; with 5&times; compute cut clearing path to free tier</h3>
+    <div class="byline">4&ndash;5 June 2026 &middot; Primary source: OpenAI / gHacks / Implicator</div>
+    <p>
+      OpenAI began the staged rollout of <strong>Dreaming V3</strong>, a new hierarchical memory architecture for ChatGPT, to <strong>Plus and Pro</strong> users in the US starting Thursday. The change replaces the previous "saved memories" list as the primary store: a background <em>consolidation</em> process &mdash; deliberately framed as analogous to how the human brain processes memory during sleep &mdash; periodically synthesises an implicit global memory from accumulated conversation, with the user-facing list now functioning as a transparency surface rather than the source of truth. Users get a new memory-summary page with controls to inspect, edit, add, or correct retained information &mdash; addressing one of the persistent complaints about ChatGPT's previous memory implementation, namely that users could not see <em>why</em> the model remembered them a certain way. The most strategically interesting line in the rollout post is the engineering claim: OpenAI says recent efficiency work cut the compute needed to serve Dreaming by approximately <strong>5&times;</strong>, enabling expansion to free-tier users in the coming weeks. Coming the same week as Microsoft's MAI announcement, the timing matters &mdash; OpenAI is moving consumer features that genuinely require a long-term memory substrate (cross-session personalisation, agent handoff) into the path of free-tier reach before MAI-powered Copilot can credibly compete on the same axis.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.ghacks.net/2026/06/05/openai-upgrades-chatgpt-memory-with-new-dreaming-architecture-for-plus-and-pro-users/">gHacks: OpenAI upgrades ChatGPT memory with new Dreaming architecture for Plus and Pro users (5 June)</a></li>
+      <li><a href="https://www.implicator.ai/openai-will-expand-chatgpt-memory-to-free-users-after-5x-compute-cut/">Implicator: OpenAI will expand ChatGPT memory to free users after 5&times; compute cut</a></li>
+      <li><a href="https://www.iclarified.com/101066/openai-launches-dreaming-v3-memory-system-for-chatgpt">iClarified: OpenAI launches Dreaming V3 memory system for ChatGPT</a></li>
+      <li><a href="https://en.cryptonomist.ch/2026/06/05/openai-chatgpt-dreaming-v3-memory/">The Cryptonomist: ChatGPT Dreaming V3 &mdash; how the new memory upgrade works</a></li>
+      <li><a href="https://www.resultsense.com/news/2026-06-05-openai-chatgpt-dreaming-memory/">Resultsense: OpenAI overhauls ChatGPT memory with "dreaming"</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>GPT-Rosalind upgrade: GPT-5.5 reasoning core, 31% fewer tokens on long-horizon bio, and a new LifeSciBench</h3>
+    <div class="byline">3&ndash;4 June 2026 &middot; Primary source: OpenAI index post</div>
+    <p>
+      OpenAI shipped a substantial update to its life-sciences specialist model, <strong>GPT-Rosalind</strong>, fusing GPT-5.5's agentic coding/tool-use stack with deeper domain intelligence in medicinal chemistry and genomics. Across three new internal evaluations, the updated model beats GPT-5.5 in every tested domain while using fewer tokens &mdash; OpenAI quotes <strong>31% fewer tokens</strong> on long-horizon quantitative-biology workflows, the operating-cost lever that most directly governs whether a pharma research org can actually run a Rosalind agent over a multi-step assay design. Alongside the model update, OpenAI introduced <strong>LifeSciBench</strong>, an externally expert-judged end-to-end benchmark covering six workflow areas: evidence handling, analysis, design/optimisation, scientific reasoning, validation/operations, and translation/communication. New <strong>Life Sciences Research</strong> and <strong>NGS Analysis</strong> plugins shipped to enrolled organisations. Importantly, the trusted-access research preview &mdash; previously restricted to a small US partner list &mdash; opens worldwide to eligible organisations for the first time, expanding the Amgen / Moderna / Allen Institute / Thermo Fisher / Novo Nordisk cohort. Combined with last month's Hassabis / Co-Scientist disclosures (covered 28 May), the 4 June update consolidates "specialist science models" as a distinct product line at the frontier, not an experiment.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/">OpenAI: Introducing new capabilities to GPT-Rosalind (primary)</a></li>
+      <li><a href="https://www.techtimes.com/articles/317754/20260604/gpt-rosalind-drug-discovery-update-openai-cuts-genomics-compute-expands-global-access.htm">TechTimes (4 June): GPT-Rosalind drug-discovery update &mdash; OpenAI cuts genomics compute, expands global access</a></li>
+      <li><a href="https://thewincentral.com/openai-gpt-rosalind-gpt-5-5-life-sciences-drug-discovery-genomics/">WinCentral: OpenAI upgrades GPT-Rosalind with GPT-5.5</a></li>
+      <li><a href="https://techgenyz.com/openai-gpt-rosalind-agentic-coding-genomic-reasoning/">TechGenyz: OpenAI GPT-Rosalind update &mdash; agentic coding and genomic reasoning</a></li>
+    </ul>
+  </article>
+
+  <h2>Policy &amp; Regulation</h2>
+
+  <article>
+    <h3><span class="tag">US Policy</span>House discussion draft: "Great American Artificial Intelligence Act" &mdash; 3-year preemption of state AI model laws, mandatory third-party audits for &gt;$500 M revenue developers</h3>
+    <div class="byline">4 June 2026 &middot; Primary source: Rep. Trahan section-by-section / Axios / Roll Call</div>
+    <p>
+      Reps. <strong>Jay Obernolte (R-CA)</strong> and <strong>Lori Trahan (D-MA)</strong> released a <strong>269-page bipartisan discussion draft</strong> on Wednesday creating a national AI framework, named the <em>Great American Artificial Intelligence Act</em>. The two structurally significant provisions: (1) the bill <strong>preempts state laws specifically regulating AI <em>model development</em></strong> for three years (state laws on AI <em>use and deployment</em> are explicitly preserved, a deliberate carveout designed to keep blue-state consumer-protection AI laws intact); and (2) frontier developers with <strong>&gt;$500 M in annual revenue</strong> must publish safety frameworks, file critical-incident reports, and submit to <strong>semi-annual third-party audits</strong>. It codifies the Commerce Department's <strong>Center for AI Standards and Innovation (CAISI)</strong> &mdash; the successor to AISI &mdash; and creates an <strong>AI Workforce Research Hub</strong>. The draft lands days after President Trump's executive order on voluntary federal AI model reviews, and within hours drew opposition from unions (<strong>AFA-CWA, AFT</strong>) and from AI-safety advocates including a sharp letter from Center for AI Safety calling the preemption clause "a generational mistake." The Senate companion is reportedly being shopped to Senators Heinrich, Lummis, and Warner; markup is not expected before recess. For product teams, the operative number is the <strong>$500 M revenue threshold</strong> &mdash; it is now the de-facto definitional line for what counts as a "frontier developer" in US federal law, and aligns with parallel UK AISI thresholds but is materially lower than the EU AI Act's GPAI threshold.
+    </p>
+    <ul class="sources">
+      <li><a href="https://trahan.house.gov/uploadedfiles/gaaia_discussion_draft_section-by-section.pdf">Rep. Trahan: GAAIA discussion-draft section-by-section (primary)</a></li>
+      <li><a href="https://www.axios.com/2026/06/04/house-draft-bill-regulate-ai">Axios (4 June): What's inside the House draft bill to regulate AI</a></li>
+      <li><a href="https://rollcall.com/2026/06/04/bipartisan-ai-draft-proposes-three-year-preemption-of-state-laws/">Roll Call (4 June): Bipartisan AI draft proposes three-year preemption of state laws</a></li>
+      <li><a href="https://www.nextgov.com/artificial-intelligence/2026/06/lawmakers-propose-ai-framework-would-preempt-state-laws-3-years/413975/">Nextgov/FCW: Lawmakers propose AI framework that would preempt state laws for 3 years</a></li>
+      <li><a href="https://www.insurancejournal.com/news/national/2026/06/05/872609.htm">Insurance Journal (5 June): US House lawmakers release draft bill to prohibit state AI rules</a></li>
+    </ul>
+  </article>
+
+  <h2>Funding &amp; Capital Markets</h2>
+
+  <article>
+    <h3><span class="tag">DeepSeek</span>Maiden raise: ~$7.4 B at up to $59 B with Tencent, CATL, and a state fund &mdash; founder personally writes ~40% of the cheque</h3>
+    <div class="byline">3&ndash;4 June 2026 &middot; Primary source: Bloomberg scoop / Reuters</div>
+    <p>
+      Bloomberg scooped late Wednesday that <strong>DeepSeek</strong> is close to sealing its <strong>first-ever outside fundraise</strong>: roughly <strong>50 billion yuan (~$7.4 B)</strong>, at a post-money valuation of <strong>$52&ndash;59 B</strong>. The lead outside investors are <strong>Tencent</strong> and <strong>CATL</strong>; the state-backed <strong>National AI Industry Investment Fund</strong> is also participating, a meaningful Beijing endorsement of DeepSeek as a national champion alongside Alibaba's Qwen and Baidu's Ernie. The most unusual structural detail is that founder <strong>Liang Wenfeng</strong> is personally contributing approximately <strong>20 B yuan (~$2.8 B, ~40% of the round)</strong> &mdash; the company has until now operated almost entirely on Liang's hedge-fund profits from <strong>High-Flyer</strong>, and this round effectively converts that informal arrangement into a priced, governed cap table. If consummated at the upper bound, the deal would rank as one of the largest private fundraises in Chinese tech history and would push DeepSeek's implied valuation above Baidu's market cap. Expected close: within weeks. The signal for Western readers is twofold: (1) Beijing is now <em>capitalising</em> rather than just permitting frontier-AI labs, and (2) Tencent and CATL together imply a deliberate vertical bet linking model, cloud, and energy/manufacturing &mdash; the same vertical-integration theme running through the Microsoft MAI announcement.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.bloomberg.com/news/articles/2026-06-03/deepseek-close-to-sealing-7-billion-funding-in-historic-ai-deal">Bloomberg (3 June): DeepSeek close to sealing $7 B funding in historic AI deal (primary scoop)</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/deepseek-slated-draw-7-billion-041632070.html">Yahoo/Reuters: DeepSeek slated to raise $7 B in maiden funding round, sources say</a></li>
+      <li><a href="https://americanbazaaronline.com/2026/06/03/chinas-deepseek-eyes-7-4-billion-in-first-ever-funding-round-482070/">American Bazaar: China's DeepSeek eyes $7.4 B in first-ever funding round</a></li>
+      <li><a href="https://thenextweb.com/news/deepseek-7-billion-maiden-fundraising">TNW: DeepSeek lines up its first outside money</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Tools &amp; Platforms</h2>
+
+  <article>
+    <h3><span class="tag">Cursor</span>Cursor 3.7: canvas Design Mode, Context Usage Report, multi-repo Automations</h3>
+    <div class="byline">4 June 2026 &middot; Primary source: Cursor changelog</div>
+    <p>
+      Anysphere shipped <strong>Cursor 3.7</strong> on Thursday with three substantive additions. <strong>Design Mode</strong> on canvases lets developers click directly on rendered UI elements to anchor agent edits &mdash; an alternative to describing the change in prose, and a meaningful UX improvement for any frontend work where the LLM's misreading of layout has been the dominant friction. The new <strong>Context Usage Report</strong> is an interactive view that breaks down token spend across system prompt, tool definitions, project rules, and skills &mdash; the first time Cursor has surfaced this granularity directly in the IDE rather than as a debug log, and the closest analog so far to Claude Code's <code>/usage</code> primitive (covered 28 May). <strong>Cursor Automations</strong> are now embedded in the Agents Window, support multiple attached repos so agents can reason across an entire org's codebase, and add no-repo automations &mdash; with Marketplace templates including a Slack-digest agent and a product-analytics agent. Anysphere is also running a <strong>50%-off-agent-runs</strong> promotion on newly created automations for seven days. The shape of the release tracks the broader pattern this quarter: agent-shaped IDE features (Cursor 3.7, Copilot Memory, Claude Code v2.1.x, Vercel deepsec) are converging on the same primitives &mdash; persistent context, repo-level governance, transparent token accounting &mdash; and competing on UX execution rather than capability ceiling.
+    </p>
+    <ul class="sources">
+      <li><a href="https://cursor.com/changelog/canvas-improvements">Cursor: Canvas Design Mode and Context Usage Report (primary)</a></li>
+      <li><a href="https://cursor.com/changelog">Cursor changelog &mdash; full release notes (primary)</a></li>
+      <li><a href="https://releasebot.io/updates/cursor">Releasebot: Cursor release notes &mdash; June 2026</a></li>
+    </ul>
+  </article>
+
+  <h2>Research &amp; Alignment</h2>
+
+  <article>
+    <h3><span class="tag">DeepMind</span>"Solipsistic Superintelligence is Unlikely to be Cooperative" &mdash; DeepMind position paper on the train&ndash;deploy gap</h3>
+    <div class="byline">4 June 2026 &middot; Primary source: arXiv 2606.03237</div>
+    <p>
+      Google DeepMind posted a position-style paper, <em>Solipsistic Superintelligence is Unlikely to be Cooperative</em>, to arXiv on Thursday. The authors argue that an AI system designed as a single-agent task-solver &mdash; treating the world as static and the deployment context as just another distribution to optimise over &mdash; is structurally unlikely to behave cooperatively once deployed. The mechanism is what the paper calls <em>endogenous non-stationarity</em>: the deployment of a sufficiently capable agent <em>itself</em> shifts the distribution it operates in (other agents adapt, infrastructure changes, the principal's goals evolve), so the training distribution is mechanically misaligned with the deployment distribution in a way that no static dataset can fix. The paper's call to action is a <em>non-solipsistic</em> research paradigm: treat interdependence with other agents and with the principal as a first-class design constraint, rather than treating cooperation as another reward to optimise after the fact. The contribution is mostly conceptual but it is doing real work inside DeepMind's published alignment agenda &mdash; it provides a theoretical framing for why long-horizon agentic systems (the same systems DeepMind is shipping commercially via Gemini's agent surfaces) require a different research approach than next-token loss reduction. Reads as a deliberate counterweight to the more capability-celebratory Hassabis "foothills of the singularity" framing covered last week.
+    </p>
+    <ul class="sources">
+      <li><a href="https://arxiv.org/abs/2606.03237">arXiv: Solipsistic Superintelligence is Unlikely to be Cooperative (primary)</a></li>
+      <li><a href="https://arxiv.org/html/2606.03237">arXiv HTML rendering &mdash; full paper</a></li>
+      <li><a href="https://deepmind.google/research/publications/">Google DeepMind: Publications index (primary)</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Community Events</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Code w/ Claude opens in Tokyo: keynotes today, Extended Tokyo follow-on 11 June</h3>
+    <div class="byline">5&ndash;6 June 2026 &middot; Primary source: claude.com/code-with-claude</div>
+    <p>
+      Anthropic's <strong>Code w/ Claude</strong> developer-conference series &mdash; following the San Francisco and London editions in May &mdash; lands in Tokyo today and Saturday. The Day-1 keynote and a subset of breakout sessions are streamed live; in-person tracks include hands-on workshops, live demos of new agentic and Claude Code capabilities, and one-on-one conversations with Anthropic's engineering and applied teams. A separate <strong>Code with Claude: Extended Tokyo</strong> event for independent developers and early-stage founders follows on <strong>11 June</strong>. Worth watching the keynote stream for any Tokyo-specific Claude Code, MCP, or APAC partnership announcements &mdash; particularly given last week's Fujitsu strategic alliance (covered 28 May), which deploys Claude to ~100 K Japanese employees and is the strongest commercial anchor Anthropic has in the region. Any product surface that drops at Code w/ Claude Tokyo will most likely be covered in tomorrow's digest.
+    </p>
+    <ul class="sources">
+      <li><a href="https://claude.com/code-with-claude/tokyo">Anthropic: Code w/ Claude Tokyo event page (primary)</a></li>
+      <li><a href="https://claude.com/blog/code-with-claude-san-francisco-london-tokyo">Anthropic blog: Code with Claude comes to San Francisco, London, and Tokyo (primary)</a></li>
+      <li><a href="https://claude.com/code-with-claude/tokyo-extended">Anthropic: Code with Claude &mdash; Extended Tokyo (11 June, primary)</a></li>
+      <li><a href="https://relvehq.com/events/code-with-claude-tokyo">Relve: Code with Claude Tokyo 2026 event listing</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> The 5 June digest is anchored on a ~24-hour window centred on the 4 June disclosures (Microsoft Build MAI/Maia/Cobalt keynote conclusion, House preemption discussion draft, OpenAI Dreaming V3 rollout, DeepSeek $7.4 B round, Cursor 3.7, DeepMind solipsistic-superintelligence paper, GPT-Rosalind upgrade) with adjacent context (Code w/ Claude Tokyo opens 5 June). Primary sources (Microsoft Build newsroom, Microsoft AI keynote transcript, Bloomberg, Rep. Trahan section-by-section PDF, OpenAI index post, Cursor changelog, arXiv, Anthropic event pages) are flagged inline; secondary outlets carry at least 2&ndash;3 independent corroborations per item per the source-quality rule. <em>Non-overlap check:</em> deliberately distinct from the <strong>28 May</strong> digest (Altman&ndash;Amodei jobs-apocalypse walk-back, Fujitsu&ndash;Anthropic&ndash;OpenAI alliance, Hassabis AGI estimate, GitHub Copilot Memory governance, Claude Code v2.1.152, Anthropic interpretability/Fellows, EU AI Act Omnibus); the <strong>27 May</strong> digest (Project Glasswing / Claude Mythos, OpenRouter $113 M, Stord $250 M, Catena Labs $30 M + OCC charter, Gemini Interactions API breaking change, Vercel deepsec, NVIDIA Q1 FY27, MLPerf v6.0, SAP&ndash;Prior Labs, Anthropic $30 B round); and the <strong>25 May / 28 April / 17&ndash;19 April</strong> editions. Stories considered and dropped on the conservative-sourcing rule: Gemma 4 12B (just outside the 24-hour window and Gemini-adjacent), NVIDIA RTX Spark Superchip (1&ndash;3 June, outside window), Anthropic 2 June sub-agent outage (already discussed last week), GPT-5.6 rumours (not officially announced).</p>
+    <p>Generated 5 June 2026.</p>
+  </footer>
+</body>
+</html>
