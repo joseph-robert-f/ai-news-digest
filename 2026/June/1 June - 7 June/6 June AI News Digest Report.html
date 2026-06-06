@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 6 June 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 6 June 2026</h1>
+    <div class="meta">Week of 1&ndash;7 June 2026 &middot; Coverage window: 4&ndash;6 June (last ~24&ndash;48 hours)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The dominant signal of the past 24&ndash;48 hours is a sharp reversal in <strong>Anthropic</strong>'s public posture. On Thursday 4 June the company's policy lead <strong>Jack Clark</strong> dropped the <em>"When AI builds itself"</em> position paper through the new <strong>Anthropic Institute</strong>, calling for a <em>coordinated global pause</em> triggered by <strong>recursive self&#8209;improvement</strong> &mdash; while simultaneously disclosing that <strong>more than 80% of code merged into Anthropic's own production codebase</strong> in May was authored by Claude, up from low single digits at Claude Code's February-2025 launch. That data point lands on top of Monday's bigger commercial news: <strong>Anthropic confidentially filed an S-1 with the SEC on 1 June</strong>, days after closing a <strong>$65 B Series H at a $965 B post-money valuation</strong> and a reported ~<strong>$47 B revenue run-rate</strong> &mdash; the largest pre-IPO AI raise on record. Outside Anthropic, the compute geography shifted again: <strong>Google signed a $920 M/month Cloud Service Agreement with SpaceX</strong> on Friday for ~<strong>110,000 NVIDIA GPUs</strong> through June 2029 (~$30 B total), filed publicly via SpaceX's pre-IPO FWP. On the developer-tools side, <strong>Supabase</strong> closed a <strong>$500 M Series F at $10.5 B</strong> on Friday, with database launches up <strong>600% YoY</strong> and <strong>60%+ now created by AI tools</strong>. <strong>GitLab</strong> announced a <strong>14% RIF (~350 employees)</strong> and an exit from <strong>22 countries</strong> as it pivots to agentic workloads. And the <strong>White House</strong> issued a major <strong>Executive Order on Advanced AI Innovation and Security</strong> standing up a federal <em>AI Cybersecurity Clearinghouse</em>.
+  </div>
+
+  <h2>Top Story &mdash; Recursive Self-Improvement Goes Public</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span><em>When AI builds itself</em>: Jack Clark calls for a global pause as Claude now writes 80%+ of Anthropic's merged code</h3>
+    <div class="byline">4&ndash;5 June 2026 &middot; Primary source: Anthropic Institute paper &middot; Axios / Scientific American / CNN Business / Fortune</div>
+    <p>
+      The newly stood-up <strong>Anthropic Institute</strong> published <em>"When AI builds itself"</em> on Thursday 4 June &mdash; an unusually candid position paper from co-founder and policy lead <strong>Jack Clark</strong> that proposes a coordinated, opt-in <strong>global pause</strong> on frontier development the moment any lab crosses into <strong>recursive self-improvement</strong> (RSI): an AI system that can autonomously design, train, and deploy its own successor with minimal human input. Anthropic's framing of the threshold is concrete &mdash; the pause would need agreement from <em>multiple well-resourced labs</em>, mutually agreed trigger conditions, and a dedicated oversight body to administer it. The data underneath the policy ask is the most-cited number of the week: <strong>more than 80% of code merged into Anthropic's own production codebase in May was authored by Claude</strong>, up from low single digits when Claude Code launched in February 2025; the typical Anthropic engineer is now merging roughly <strong>8&times; the daily lines of code</strong> they did in 2024; and Claude's success rate on the hardest open-ended SWE-bench-style problems has climbed to <strong>76% in May 2026</strong>, a 50-point jump in six months. Clark argues the timeline to a system that can self-improve without humans in the loop is <em>"plausibly within two years."</em> Critics, including <em>WION</em> and <em>Tom's Hardware</em>, have noted the obvious tension &mdash; Anthropic is requesting a coordinated brake on the very capability profile its IPO prospectus will sell against &mdash; and a Claude-generated rebuttal circulating on X (<em>"the pause button has no cords"</em>) has been read as deliberate pre-IPO theatre. Whatever the motive, this is the most explicit RSI policy ask from a frontier lab to date.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/institute/recursive-self-improvement">Anthropic Institute: <em>When AI builds itself</em></a> (primary)</li>
+      <li><a href="https://www.axios.com/2026/06/04/anthropic-warns-ai-build-successors">Axios: Anthropic warns AI could soon help build its own successors</a></li>
+      <li><a href="https://www.scientificamerican.com/article/anthropic-warns-ai-may-soon-begin-recursive-self-improvement/">Scientific American: Anthropic warns AI may soon begin recursive self-improvement</a></li>
+      <li><a href="https://www.cnn.com/2026/06/05/business/anthropic-calls-for-ai-brake-pedal">CNN Business: Anthropic warns AI will soon improve itself without human intervention</a></li>
+      <li><a href="https://fortune.com/2026/06/05/anthropic-ai-pause-development-recursive-self-improvement/">Fortune: Anthropic urges a global pause on development</a></li>
+      <li><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-now-writes-more-than-80-percent-of-its-merged-code">Tom's Hardware: Claude now writes 80%+ of merged code; calls for option to halt frontier development</a></li>
+      <li><a href="https://venturebeat.com/technology/anthropic-says-80-of-its-new-production-code-is-now-authored-by-claude-how-your-enterprise-can-keep-up">VentureBeat: 80% of Anthropic's new production code is Claude-authored &mdash; how enterprises can keep up</a></li>
+      <li><a href="https://siliconangle.com/2026/06/04/anthropic-calls-global-pause-ai-development-humans-lose-control/">SiliconANGLE: Anthropic calls for global pause before humans lose control</a></li>
+    </ul>
+  </article>
+
+  <h2>Capital Markets &amp; Compute Geography</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Confidential S-1 filed 1 June at a <strong>$965 B</strong> valuation, ~$47 B run-rate; October listing window targeted</h3>
+    <div class="byline">1&ndash;5 June 2026 &middot; Primary source: SEC EDGAR (confidential) / Fortune / Yahoo Finance</div>
+    <p>
+      Anthropic submitted a <strong>confidential draft registration statement on Form S-1</strong> to the U.S. Securities and Exchange Commission on <strong>Monday 1 June 2026</strong>, formally putting the most valuable private AI company on the IPO path. The filing follows the close of the <strong>$65 B Series H</strong> that lifted post-money valuation to <strong>~$965 B</strong> &mdash; modestly above the $900 B figure leaked into the 25 May digest, and just shy of OpenAI's $1 T target. Reporting from Fortune and Yahoo Finance places the targeted listing window at <strong>October 2026</strong>, slightly ahead of OpenAI's expected Q4 roadshow. Most striking is the disclosed revenue trajectory: Anthropic is now operating at an estimated <strong>~$47 B annualised run-rate in May 2026</strong>, up from <strong>~$10 B</strong> a year ago &mdash; roughly <strong>5&times; YoY</strong>, and a sharper acceleration than the $10.9 B Q2 figure CNBC reported on 20 May. Under SEC confidential review, the document need not become public until ~15 days before the roadshow, putting the first real disclosure of margin structure, customer concentration, and the Amazon/Google equity entanglement in late Q3. Sandwiched between the Anthropic S-1, OpenAI's 22 May S-1, and SpaceX's incoming Nasdaq listing, the second half of 2026 is now mechanically the densest AI-cohort IPO calendar in history.
+    </p>
+    <ul class="sources">
+      <li><a href="https://fortune.com/2026/06/01/anthropic-confidentially-files-ipo-965-billion-valuation/">Fortune: Anthropic confidentially files for IPO after raising $65 B at $965 B</a> (primary)</li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/anthropic-files-ipo-reaching-965-152836422.html">Yahoo Finance: Anthropic files for IPO after reaching $965 B valuation</a></li>
+      <li><a href="https://news.bitcoin.com/anthropic-files-confidential-s-1-with-sec-targets-ipo-at-965b-valuation/">Bitcoin.com News: Anthropic files confidential S-1 with SEC, targets IPO at $965 B</a></li>
+      <li><a href="https://www.ktvu.com/news/san-francisco-based-anthropic-files-ipo-965-billion-valuation">KTVU: San Francisco-based Anthropic files for IPO with $965 B valuation</a></li>
+      <li><a href="https://yellow.com/news/anthropic-confidential-s1-october-ipo-valuation">Yellow.com: Anthropic eyes October IPO at near-trillion valuation</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Google / SpaceX</span>Google signs $920 M/month, ~110,000-GPU compute contract with SpaceX through June 2029</h3>
+    <div class="byline">5 June 2026 &middot; Primary source: SEC EDGAR FWP (SpaceX) / TechCrunch / Yahoo Finance</div>
+    <p>
+      SpaceX filed a <strong>Form FWP</strong> with the SEC on Friday 5 June disclosing a multi-year <strong>Cloud Service Agreement with Google</strong>: Google will pay SpaceX <strong>$920 million per month from October 2026 through June 2029</strong> &mdash; roughly <strong>$30 B total</strong> &mdash; for access to <strong>approximately 110,000 NVIDIA GPUs, CPUs, memory and related components</strong>. Capacity ramps during August&ndash;September 2026 at reduced fees; if SpaceX fails to deliver the committed GPU count by 30 September, Google may terminate after a one-month grace period or accept a pro-rata reduction. Either party may terminate with 90 days' notice after 31 December 2026. The deal lands just before SpaceX's expected Nasdaq listing and is the second monster cloud agreement SpaceX has signed in three weeks: <strong>Anthropic</strong> already committed in late May to <strong>~$1.25 B/month</strong> for the entirety of available capacity at Colossus 1 near Memphis. The combined Anthropic + Google commitments alone represent <strong>~$2.17 B in monthly committed compute revenue</strong> flowing into a SpaceX subsidiary whose primary commercial pitch a year ago was rocket launches. xAI's <strong>Colossus 1</strong>, by contrast, is reportedly being decommissioned over GPU-fleet heterogeneity, with <strong>Colossus 2 (1 M&plus; H200/B200 class GPUs)</strong> now the lead xAI training cluster. The week marks an inflection where <em>frontier-lab demand for outsourced AI compute has decoupled from the public cloud providers' own roadmaps</em>.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.sec.gov/Archives/edgar/data/0001181412/000162828026041150/spacexagreementfwp.htm">SEC EDGAR: SpaceX Form FWP &mdash; Google Cloud Service Agreement</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/">TechCrunch: Google will pay SpaceX $920 M per month for compute</a> (primary)</li>
+      <li><a href="https://finance.yahoo.com/sectors/technology/article/spacex-to-rent-ai-capacity-to-google-for-920-million-per-month-200639544.html">Yahoo Finance: SpaceX to rent AI capacity to Google for $920 M/month</a></li>
+      <li><a href="https://thenextweb.com/news/google-spacex-920-million-month-compute-deal">TNW: Google to pay SpaceX $920 M/month for AI compute</a></li>
+      <li><a href="https://wccftech.com/spacex-locks-google-into-a-920-million-per-month-compute-deal-after-anthropic-as-xai-abandons-colossus-1s-messy-gpu-mix/">WCCFTech: SpaceX locks Google into $920 M/month after Anthropic; xAI abandons Colossus 1</a></li>
+      <li><a href="https://aitoolsrecap.com/Blog/spacex-google-920-million-month-compute-colossus-2026">AI Tools Recap: SpaceX&ndash;Google $920 M deal &mdash; what the SEC filing says</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Platforms &amp; Software Engineering</h2>
+
+  <article>
+    <h3><span class="tag">Supabase</span>$500 M Series F at $10.5 B as &ldquo;vibe-coding&rdquo; drives 600% YoY launch growth</h3>
+    <div class="byline">4&ndash;5 June 2026 &middot; Primary source: Supabase / CNBC / TechCrunch</div>
+    <p>
+      <strong>Supabase</strong> closed a <strong>$500 M Series F</strong> at a <strong>$10.5 B post-money valuation</strong> on Thursday/Friday, led by <strong>GIC</strong>, with existing investor <strong>Stripe</strong> doubling down and new investors <strong>Georgian</strong> and <strong>Salesforce Ventures</strong> joining. The round doubles Supabase's mark in <strong>eight months</strong> &mdash; the third doubling in roughly two years &mdash; and pushes the open-source-Postgres platform into decacorn status. The growth narrative is unambiguously AI-coded: CEO <strong>Paul Copplestone</strong> told CNBC that <strong>database launches on Supabase are up ~600% YoY</strong> and that <strong>over 60% of new projects are created by an AI tool</strong>, with <strong>Claude Code</strong> and <strong>OpenAI Codex</strong> the dominant referrers. Total user count is now <strong>~10 million developers</strong>, doubled in eight months. The investor pitch reframes Supabase as the <em>agentic-infrastructure</em> layer &mdash; the database-of-record for projects spun up by code-generating agents and continuing to be modified by those agents in production. For context, Supabase had crossed $1 B valuation only in late 2024; this round captures the steepest enterprise re-rating yet of a pure-play AI-native dev-tools layer.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.prnewswire.com/news-releases/supabase-raises-500m-at-10-5b-to-accelerate-lead-in-agentic-infrastructure-302791787.html">PR Newswire: Supabase raises $500 M at $10.5 B to accelerate lead in agentic infrastructure</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/06/04/database-startup-supabase-raises-500-million-10point5-billion-valuation.html">CNBC: Vibe-coding phenomenon lifts Supabase to $10.5 B valuation</a></li>
+      <li><a href="https://techcrunch.com/2026/06/05/supabase-doubles-valuation-to-10b-in-8-months/">TechCrunch: Supabase doubles valuation to $10 B in 8 months</a></li>
+      <li><a href="https://techstartups.com/2026/06/05/supabase-hits-10-5b-valuation-after-500m-funding-round-as-vibe-coding-drives-explosive-growth/">Tech Startups: Supabase hits $10.5 B as vibe coding drives explosive growth</a></li>
+      <li><a href="https://www.finsmes.com/2026/06/supabase-raises-500m-in-series-f-funding-at-10-5-billion-valuation.html">FinSMEs: Supabase raises $500 M in Series F at $10.5 B</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">GitLab</span>14% RIF, exit from 22 countries, &ldquo;GitLab Act 2&rdquo; pivot to agentic workloads</h3>
+    <div class="byline">2&ndash;3 June 2026 &middot; Primary source: GitLab Q1 FY27 earnings &middot; TechCrunch / The Register</div>
+    <p>
+      <strong>GitLab</strong> announced on <strong>Tuesday 2 June</strong> &mdash; alongside its Q1 FY2027 earnings call &mdash; that it will <strong>cut ~350 employees (14% of headcount)</strong> and <strong>exit 22 countries</strong>, flattening management layers and concentrating engineering and infrastructure spend on what CEO <strong>Bill Staples</strong> called <em>"GitLab Act 2"</em>: a re-architected platform built for autonomous coding agents running 24/7 against the codebase. Restructuring charges will be <strong>$30&ndash;$35 M</strong>. Headline financials remain strong &mdash; <strong>Q1 revenue of $264 M (+23% YoY)</strong>, <strong>88% gross margins</strong> &mdash; so the move is explicitly forward-looking. Staples's framing on the call was that <em>"agentic workloads are stressing developer infrastructure more than it was designed to handle"</em>; GitLab will reallocate capacity to repo-level agent identity, agent observability, and policy-controlled workflow runners. The cut is the largest in a string of mid-2026 developer-tools restructurings, and lands the same week that <strong>Microsoft</strong> shipped <strong>MAI-Code-1-Flash</strong> at Build (positioning a Microsoft-owned coding model against Copilot's GPT/Claude backends) and Anthropic disclosed Claude is now responsible for 80% of its own merged code. The signal is that incumbents who built CI/CD around human reviewers must now re-architect for agentic continuous integration &mdash; or trim to free the capital to do so.
+    </p>
+    <ul class="sources">
+      <li><a href="https://techcrunch.com/2026/06/03/gitlab-cuts-14-of-staff-as-it-scales-its-platform-to-serve-ai-workloads/">TechCrunch: GitLab cuts 14% of staff as it scales for AI workloads</a> (primary)</li>
+      <li><a href="https://gigazine.net/gsc_news/en/20260604-gitlab-cut-14-workforce-ai-workloads/">GIGAZINE: GitLab to lay off ~350 employees and withdraw from 22 countries</a></li>
+      <li><a href="https://www.theregister.com/devops/2026/05/12/gitlab-promises-a-different-kind-of-layoff-as-biz-pivots-toward-ai/5238422">The Register: GitLab promises a different kind of layoff as biz pivots toward AI</a></li>
+      <li><a href="https://mlq.ai/news/gitlab-cuts-14-of-staff-exits-22-countries-to-fund-ai-platform-overhaul/">MLQ.ai: GitLab cuts 14% of staff, exits 22 countries to fund AI platform overhaul</a></li>
+      <li><a href="https://www.bbntimes.com/technology/gitlab-cuts-14-of-workforce-to-fuel-ai-agentic-era-ambitions">BBN Times: GitLab cuts 14% of workforce to fuel agentic-era ambitions</a></li>
+    </ul>
+  </article>
+
+  <h2>Security &amp; Government</h2>
+
+  <article>
+    <h3><span class="tag">White House</span>Executive Order on <em>Advanced AI Innovation and Security</em>: federal AI Cybersecurity Clearinghouse, voluntary frontier framework</h3>
+    <div class="byline">2 June 2026 &middot; Primary source: whitehouse.gov / Covington Inside Privacy / Tenable</div>
+    <p>
+      President Trump signed a new <strong>Executive Order on Promoting Advanced Artificial Intelligence Innovation and Security</strong> on <strong>Monday 2 June</strong>. The order takes a two-track posture: (1) hardening U.S. government and critical-infrastructure cyber defences <em>against</em> advanced AI used adversarially, and (2) standing up a <strong>voluntary</strong> benchmarking and review framework for the secure development and release of <em>frontier</em> models. The single biggest operational change is the creation, within <strong>30 days</strong>, of an <strong>AI Cybersecurity Clearinghouse</strong> co-led by Treasury, the National Cyber Director, NSA (via the Secretary of War) and CISA, in voluntary collaboration with frontier labs and critical-infrastructure operators &mdash; tasked with coordinating vulnerability scanning, validation, patch distribution, and deconflicting agent-driven security research. Critically, the order <em>expressly forbids</em> establishment of a mandatory licensing, pre-clearance, or permitting regime for AI models &mdash; locking U.S. policy into a deliberately lighter-touch posture than the EU AI Act timeline. The clearinghouse is the U.S. policy mirror of <strong>Anthropic's Project Glasswing</strong> (private-sector consortium) and OpenAI's parallel EU Cyber Action Plan announced last week. Federal contractors should expect downstream NIST SP 800-218A and FedRAMP updates that codify the voluntary-attestation pathway into procurement language by Q4.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">The White House: Executive Order on Promoting Advanced AI Innovation and Security</a> (primary)</li>
+      <li><a href="https://www.whitehouse.gov/fact-sheets/2026/06/fact-sheet-president-donald-j-trump-promotes-advanced-artificial-intelligence-innovation-and-security/">White House Fact Sheet: Trump promotes Advanced AI Innovation and Security</a> (primary)</li>
+      <li><a href="https://www.insideprivacy.com/artificial-intelligence/white-house-releases-executive-order-on-advanced-ai-innovation-and-security/">Covington Inside Privacy: White House releases EO on Advanced AI Innovation and Security</a></li>
+      <li><a href="https://www.tenable.com/blog/summary-june-2026-ai-executive-order-requirements">Tenable: Summary &mdash; June 2026 AI Executive Order requirements</a></li>
+      <li><a href="https://federalnewsnetwork.com/cybersecurity/2026/06/ai-executive-order-sets-stage-for-new-cybersecurity-directives/">Federal News Network: AI EO sets stage for new cybersecurity directives</a></li>
+      <li><a href="https://www.morganlewis.com/pubs/2026/06/executive-order-promotes-public-private-cooperation-on-ai-innovation-and-security">Morgan Lewis: EO promotes public-private cooperation on AI innovation and security</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Project Glasswing scales to ~150 organisations across 15+ countries; ENISA joins</h3>
+    <div class="byline">2&ndash;3 June 2026 &middot; Primary source: Anthropic newsroom / TechCrunch / Cybersecurity Dive</div>
+    <p>
+      Six days after disclosing 10,000+ vulnerabilities found in the first month of <strong>Project Glasswing</strong> (covered in the 27 May digest), Anthropic expanded the program to <strong>~150 additional organisations across more than 15 countries</strong>. The new partners include <strong>NATO</strong> and the EU's cybersecurity agency <strong>ENISA</strong>, with formal terms with ENISA still under negotiation. The expansion deliberately broadens beyond the original software-vendor list to <strong>power, water, healthcare, communications, and hardware</strong> operators &mdash; sectors that were under-represented in the initial cohort. Each new participant must meet security baselines before being granted monitored access to the restricted <strong>Claude Mythos Preview</strong> model. The cumulative effect: by mid-June, Mythos will be deployed against critical-infrastructure code in roughly the same week the White House EO stands up the federal clearinghouse, and the EU AI Office holds parallel rights via OpenAI's GPT-5.5-Cyber preview. The week is functionally the operational debut of <em>frontier AI as defensive cyber infrastructure</em>, with the policy/legal scaffolding (U.S. EO, EU Action Plan, ENISA access, NATO access) bolted on simultaneously.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/news/expanding-project-glasswing">Anthropic: Expanding Project Glasswing</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/">TechCrunch: Anthropic scales Claude Mythos to critical infrastructure in 15+ countries</a></li>
+      <li><a href="https://www.cybersecuritydive.com/news/ai-anthropic-claude-mythos-project-glasswing-expand/821714/">Cybersecurity Dive: Anthropic shares Mythos with 150 more organisations, including critical-infrastructure operators</a></li>
+      <li><a href="https://www.helpnetsecurity.com/2026/06/03/anthropic-project-glasswing-expansion/">Help Net Security: Anthropic expands Project Glasswing to 150 organisations</a></li>
+      <li><a href="https://cyberscoop.com/anthropic-project-glasswing-expansion-critical-infrastructure-claude-mythos/">CyberScoop: Anthropic expanding access to Project Glasswing</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/02/anthropic-mythos-ai-project-glasswing.html">CNBC: Anthropic expands Mythos to 150 additional organizations in more than 15 countries</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>GPT-5.5-Cyber lands in the EU under a new Cyber Action Plan; ENISA and EU AI Office gain access</h3>
+    <div class="byline">1&ndash;5 June 2026 &middot; Primary source: OpenAI / eWeek / TechTimes</div>
+    <p>
+      OpenAI activated its <strong>EU Cyber Action Plan</strong> on Monday 1 June, opening limited-preview access to <strong>GPT-5.5-Cyber</strong> &mdash; the cybersecurity-tuned variant of GPT-5.5 &mdash; to vetted European defenders, businesses, governments, national cyber agencies and EU institutions including the <strong>EU AI Office</strong>. GPT-5.5-Cyber is not a more powerful base model than GPT-5.5; the differentiator is policy: the model is permitted to do <em>vulnerability identification, malware analysis, reverse engineering, and patch validation</em> work that the general-purpose GPT-5.5 declines. The activation comes with a hard security requirement &mdash; <strong>from 1 June, individuals using the cyber model must enable Advanced Account Security with phishing-resistant protections</strong>, and organisations must attest to phishing-resistant SSO. The signal is the deliberate <em>policy asymmetry</em> with Anthropic: OpenAI is willing to open its restricted cyber model to a sovereign regulator (ENISA, EU AI Office), while Anthropic still keeps the more capable <strong>Claude Mythos</strong> entirely closed-partner. The <strong>UK AI Security Institute</strong>'s benchmark from the same window helps explain the divergence: in a 32-step simulated corporate cyberattack chain, GPT-5.5-Cyber completed it end-to-end <strong>2 of 10 times</strong>, while Claude Mythos completed it <strong>3 of 10 times</strong>.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber/">OpenAI: Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber</a> (primary)</li>
+      <li><a href="https://www.eweek.com/news/openai-gpt-5-5-cyber-eu-rollout/">eWeek: OpenAI opens cyber model to EU while Anthropic keeps Mythos restricted</a></li>
+      <li><a href="https://www.techtimes.com/articles/317891/20260605/openai-gpt-55-cyber-reaches-eu-anthropic-mythos-opens-enisa-days-later.htm">TechTimes: GPT-5.5-Cyber reaches EU; Anthropic Mythos opens to ENISA days later</a></li>
+      <li><a href="https://www.edtechinnovationhub.com/news/openai-expands-gpt-55-cyber-defense-access-to-europe-through-new-eu-action-plan">EdTech Innovation Hub: OpenAI expands GPT-5.5 cyber-defense access to Europe via EU Action Plan</a></li>
+      <li><a href="https://letsdatascience.com/news/openai-expands-eu-access-to-gpt-55-cyber-65228605">Let's Data Science: OpenAI expands EU access to GPT-5.5-Cyber</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This 6 June digest deliberately avoids overlap with the 25, 27 and 28 May editions. It does <em>not</em> re-cover the Pope Leo XIV encyclical, the 22 May OpenAI confidential S-1, the Erd&#337;s/unit-distance result, Karpathy joining Anthropic, the Gemini 3.5 Flash / Antigravity 2.0 / Google I/O launches, the Altman&ndash;Amodei jobs-apocalypse walk-back, the Fujitsu&ndash;Anthropic alliance, Hassabis's AGI estimate, the GitHub Copilot Memory governance update, Claude Code v2.1.152, the EU AI Act Omnibus calendar, the original Project Glasswing 10,000-vulnerability disclosure, the OpenRouter / Stord / Catena Labs raises, or the NVIDIA Q1 FY27 print &mdash; all of which were the lede stories 8&ndash;12 days ago. The 6 June lens is Anthropic's recursive-self-improvement position paper (4&ndash;5 June, primary new signal), the 1 June Anthropic S-1 at $965 B (genuinely new), the SpaceX&ndash;Google compute FWP (5 June), Supabase's $10.5 B Series F (4&ndash;5 June), GitLab's <em>Act 2</em> RIF (2&ndash;3 June), the White House EO on Advanced AI Innovation and Security (2 June), the Project Glasswing expansion to ~150 orgs / ENISA / NATO (2 June), and OpenAI's EU Cyber Action Plan activation (1 June). Primary sources (the Anthropic Institute paper, SEC EDGAR FWP, whitehouse.gov, OpenAI / Anthropic newsrooms, PR Newswire/Supabase) are flagged inline. Secondary outlets are corroborated by at least three independent reports for each item.</p>
+    <p>Generated 6 June 2026.</p>
+  </footer>
+</body>
+</html>
