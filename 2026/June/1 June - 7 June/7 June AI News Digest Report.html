@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 7 June 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 7 June 2026</h1>
+    <div class="meta">Week of 1&ndash;7 June 2026 &middot; Coverage window: 1&ndash;7 June (the first week of June, with emphasis on the last ~72 hours)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The first week of June 2026 will be remembered as the week the AI policy, IPO, and security tracks collided. Within a single 48-hour window (Monday&ndash;Tuesday, 1&ndash;2 June), <strong>Anthropic confidentially filed its S-1</strong> with the SEC, <strong>President Trump signed a scaled-back AI executive order</strong> establishing a voluntary 30-day federal pre-release review for frontier models, and <strong>Anthropic expanded Project Glasswing</strong> from ~50 to <strong>~150 organizations across 15+ countries</strong> &mdash; bringing ENISA, Apple, NVIDIA, Microsoft, CrowdStrike and Palo Alto Networks under the Mythos cyber-defense umbrella. The developer stack moved in parallel: at Microsoft Build, <strong>GitHub shipped the Copilot SDK to GA</strong> and refreshed the Copilot CLI with rubber-duck review, local voice input, and cron-style prompt scheduling, while <strong>usage-based billing for Copilot went live 1 June</strong> and GPT-4.1 was retired. On the open-weight side, Shanghai-based <strong>MiniMax launched M3</strong> &mdash; the first open-weight model to claim frontier coding-agent performance with a 1M-token context window. And the funding tape printed three nine-figure AI deals on a single day (4 June): <strong>Supabase $500 M at $10.5 B</strong>, <strong>Flourish $500 M at $2.5 B</strong> (Bezos's neuromorphic-AI bet to crack the power-efficiency wall), and <strong>Generalist AI $400 M at $2 B</strong> for physical-AGI robot foundation models. Apple's <strong>WWDC keynote lands Monday 8 June</strong>, expected to formalize the Gemini-in-Siri partnership signed in January.
+  </div>
+
+  <h2>Top Story &mdash; Anthropic Goes Public (Quietly)</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Confidential S-1 filed with the SEC &mdash; the second frontier-lab IPO filing in 11 days</h3>
+    <div class="byline">1 June 2026 &middot; Primary source: Anthropic Newsroom &middot; NPR / TechCrunch / Yahoo Finance</div>
+    <p>
+      Anthropic confirmed on Monday 1 June that it has <strong>confidentially submitted a draft registration statement on Form S-1</strong> to the U.S. Securities and Exchange Commission for a proposed IPO of its Class A common stock. The number of shares, the price range, and the ticker are all undetermined; Anthropic explicitly notes the filing is contingent on SEC review and market conditions. The move comes eleven days after OpenAI's own confidential S-1 (reported 21 May) &mdash; meaning <em>both</em> frontier US AI labs are now formally in the public-markets pipeline at the same time. Three numbers frame why this is unusual: Anthropic's most recently disclosed annualized revenue run-rate is <strong>~$47 B</strong>; the just-closed <strong>Series H raised ~$65 B</strong> (largest private financing on record) at a <strong>~$965 B post-money</strong>; and the only directly comparable IPO setup &mdash; OpenAI, SpaceX, and Anthropic clustering around public markets in the same window &mdash; has no historical precedent. The S-1 is the first time Anthropic will have to publish audited financials, customer concentration, and compute-cost disclosures &mdash; data that until now has been visible only in leaked term sheets. Filing day was deliberately quiet: a single newsroom post, no all-hands letter, no roadshow signal. The contrast with OpenAI's S-1 messaging is itself read by analysts as the new public-narrative split (safety-first Anthropic, growth-first OpenAI) carried over from the May jobs-apocalypse walk-back.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/news/confidential-draft-s1-sec">Anthropic Newsroom: Anthropic confidentially submits draft S-1 to the SEC</a> (primary)</li>
+      <li><a href="https://www.npr.org/2026/06/01/nx-s1-5843199/anthropic-ipo-filing-ai-large">NPR (1 June): AI giant Anthropic prepares to sell stock to the public; files preliminary IPO paperwork</a></li>
+      <li><a href="https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/">TechCrunch (1 June): Anthropic files to go public</a></li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/anthropic-files-confidential-1-joins-161008569.html">Yahoo Finance: Anthropic Files Confidential S-1 &mdash; Joins $3 Trillion AI IPO Race</a></li>
+      <li><a href="https://univest.in/blogs/anthropic-ipo-confidential-s1-sec-filing-june-2026-five-things">Univest: Anthropic IPO &mdash; 5 Key Things Investors Must Know</a></li>
+    </ul>
+  </article>
+
+  <h2>Policy &amp; Regulation</h2>
+
+  <article>
+    <h3><span class="tag">White House</span>Trump signs scaled-back AI executive order &mdash; voluntary 30-day frontier-model review</h3>
+    <div class="byline">2 June 2026 &middot; Primary source: The White House &middot; NPR / TechCrunch / Deadline</div>
+    <p>
+      President Trump on Tuesday signed <em>Promoting Advanced Artificial Intelligence Innovation and Security</em>, the long-trailed federal AI-and-cybersecurity executive order. The signed text is materially narrower than the leaked April draft. Three substantive provisions: (1) a <strong>voluntary process</strong> by which frontier developers can give the federal government <strong>up to 30 days of pre-release access</strong> to their most capable models for security testing &mdash; cut from the 90 days in the earlier draft; (2) a directive to federal agencies to <strong>develop cyber-capability benchmarks</strong> and stand up an <strong>&ldquo;AI Cybersecurity Clearinghouse&rdquo;</strong> to triage and share vulnerability information; and (3) an explicit non-licensing carve-out: <em>&ldquo;Nothing in this section shall be construed to authorize the creation of a mandatory governmental licensing, preclearance, or permitting requirement for the development, publication, release, or distribution of new AI models, including frontier models.&rdquo;</em> Reporting from NPR and TechCrunch confirms the order had been pulled from the signing calendar in May after industry pushback that even a voluntary review would chill American competitiveness against China. The 30-day window roughly tracks the cadence frontier labs were already running with the US AI Safety Institute under prior MOUs &mdash; meaning the practical novelty is the <em>codification</em>, not the timeline. Read alongside the EU AI Act <em>Omnibus</em> calendar (covered in the 28 May digest), every major frontier lab now has a binding pre-release evaluation regime in <em>both</em> jurisdictions before year-end.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">The White House: Promoting Advanced Artificial Intelligence Innovation and Security (Executive Order)</a> (primary)</li>
+      <li><a href="https://www.npr.org/2026/06/02/nx-s1-5844347/ai-safety-trump-executive-order">NPR (2 June): Trump's new AI safety order seeks voluntary review of new models</a></li>
+      <li><a href="https://techcrunch.com/2026/06/02/trump-signs-narrower-executive-order-on-ai-oversight-after-industry-objections/">TechCrunch (2 June): Trump signs narrower executive order on AI oversight after industry objections</a></li>
+      <li><a href="https://deadline.com/2026/06/trump-ai-executive-order-1236938859/">Deadline (2 June): Trump signs AI executive order that includes review period for models</a></li>
+      <li><a href="https://www.aoshearman.com/en/insights/trump-administration-issues-executive-order-on-ai-and-cybersecurity">A&amp;O Shearman analysis: White House issues executive order on AI and cybersecurity</a></li>
+      <li><a href="https://www.insideprivacy.com/artificial-intelligence/white-house-releases-executive-order-on-advanced-ai-innovation-and-security/">Covington / Inside Privacy: White House Releases Executive Order on Advanced AI Innovation and Security</a></li>
+    </ul>
+  </article>
+
+  <h2>Cybersecurity &amp; Critical Infrastructure</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Project Glasswing expands to ~150 organizations across 15+ countries &mdash; ENISA joins</h3>
+    <div class="byline">2 June 2026 &middot; Primary source: Anthropic Project Glasswing page &middot; CNBC / TechCrunch / Cybersecurity Dive / Dark Reading</div>
+    <p>
+      One day after the S-1 filing, Anthropic announced that <strong>Project Glasswing</strong> &mdash; the program through which it grants vetted partners early access to unreleased <strong>Claude Mythos</strong> for defensive cybersecurity research &mdash; is scaling from roughly 50 launch partners to <strong>~150 organizations across more than 15 countries</strong>. The new cohort deliberately broadens the industrial footprint, adding partners in <em>power, water, healthcare, communications and hardware</em> &mdash; sectors thin in the original list. Named partners now include <strong>Apple, NVIDIA, Microsoft, CrowdStrike and Palo Alto Networks</strong>. The most consequential addition is institutional: the <strong>European Union Agency for Cybersecurity (ENISA)</strong> joins as the first EU institution under the program. Anthropic and the European Commission are still finalizing T&amp;Cs for ENISA's interaction with Mythos. Cumulative results since launch: <strong>&gt;10,000 high or critical-level vulnerabilities</strong> surfaced by partner orgs. Read against the Trump executive order signed the same day &mdash; which calls for exactly this kind of vulnerability clearinghouse at the federal level &mdash; Glasswing now operates as a <em>de facto</em> transatlantic shadow of the structure the EO is asking the US government to build. Several analysts read the expansion as a precursor to Mythos's general release; Anthropic has not commented on timing.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/glasswing">Anthropic: Project Glasswing &mdash; Securing critical software for the AI era</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/06/02/anthropic-mythos-ai-project-glasswing.html">CNBC (2 June): Anthropic expands Mythos to 150 additional organizations in more than 15 countries</a></li>
+      <li><a href="https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/">TechCrunch (2 June): Anthropic scales Claude Mythos to critical infrastructure in 15+ countries</a></li>
+      <li><a href="https://www.cybersecuritydive.com/news/ai-anthropic-claude-mythos-project-glasswing-expand/821714/">Cybersecurity Dive: Anthropic shares Mythos with 150 more organizations, including critical infrastructure operators</a></li>
+      <li><a href="https://www.darkreading.com/cyber-risk/anthropic-mythos-ai-eu-enisa">Dark Reading: Anthropic to Open Mythos AI to EU's ENISA</a></li>
+      <li><a href="https://siliconangle.com/2026/06/02/anthropic-expands-project-glasswing-cybersecurity-program-150-organizations/">SiliconANGLE: Anthropic expands Project Glasswing cybersecurity program to 150 organizations</a></li>
+    </ul>
+  </article>
+
+  <h2>Models &amp; Open Weights</h2>
+
+  <article>
+    <h3><span class="tag">MiniMax</span>M3 launches: first open-weight model to claim frontier coding-agent performance with a 1M-token context</h3>
+    <div class="byline">1 June 2026 &middot; Primary source: MiniMax launch &middot; The Decoder / TechTimes / apidog</div>
+    <p>
+      Shanghai-based <strong>MiniMax</strong> released <strong>M3</strong> on Monday 1 June, the most aggressively positioned open-weight launch since DeepSeek V4 earlier this spring. M3 claims to be the first single open-weight system to combine (a) frontier coding-agent performance, (b) a <strong>1-million-token context window</strong>, and (c) native multimodality across text, image, video and a <em>desktop computer-use</em> action surface. The technical foundation is a new attention variant, <strong>MiniMax Sparse Attention (MSA)</strong>, which pre-filters relevant KV blocks and processes only those &mdash; the architectural lever that makes 1M tokens economically tractable. Reported benchmarks (run on MiniMax's own infrastructure): <strong>SWE-Bench Pro 59.0%</strong>, edging past <strong>GPT-5.5 at 58.6%</strong> and <strong>Gemini 3.1 Pro</strong>, and trailing <strong>Claude Opus 4.8 at 69.2%</strong>. The caveats matter and are being flagged by every serious outlet covering the release: (1) numbers are vendor-reported and not independently reproduced; (2) <strong>open weights and the technical report were not on Hugging Face at launch</strong> &mdash; MiniMax said both would land within ~10 days; (3) under China's 2017 National Intelligence Law, MiniMax is legally required to <em>&ldquo;support, assist, and cooperate&rdquo;</em> with PRC intelligence work, a fact relevant to any enterprise deciding whether to integrate the model into a regulated workload. If the weights ship as promised and the SWE-Bench Pro numbers replicate, M3 is the first open-weight system to land in the same coding-agent tier as the major US closed frontiers since DeepSeek V4 &mdash; a meaningful signal for both the AI Act sandbox calendar and the Trump EO's voluntary-review framework, neither of which currently has a clean answer for Chinese open-weight releases.
+    </p>
+    <ul class="sources">
+      <li><a href="https://the-decoder.com/minimax-m3-open-weight-model-with-a-million-token-context-challenges-proprietary-leaders/">The Decoder: MiniMax M3 &mdash; Open-weight model with a million-token context challenges proprietary leaders</a></li>
+      <li><a href="https://www.techtimes.com/articles/317532/20260601/minimax-m3-open-weight-coding-model-frontier-claims-unverified-benchmarks.htm">TechTimes (1 June): MiniMax M3 Open-Weight Coding Model &mdash; Frontier Claims, Unverified Benchmarks</a></li>
+      <li><a href="https://apidog.com/blog/what-is-minimax-m3/">apidog: What Is MiniMax M3? The First Open-Weight Frontier Coding Model</a></li>
+      <li><a href="https://magicshot.ai/news/minimax-m3-open-weight-model/">Magicshot: MiniMax M3 Open Weight Model Beats GPT-5.5 on SWE-Bench</a></li>
+      <li><a href="https://datanorth.ai/news/minimax-launches-m3">Datanorth: MiniMax M3 &mdash; Open-Weight Frontier Model with 1M Context</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Platforms &amp; SDKs</h2>
+
+  <article>
+    <h3><span class="tag">GitHub</span>Copilot SDK is GA &mdash; embed the Copilot agent runtime in your own apps, six languages</h3>
+    <div class="byline">2 June 2026 &middot; Primary source: GitHub Changelog (github.blog)</div>
+    <p>
+      Timed to Microsoft Build, GitHub flipped the <strong>Copilot SDK</strong> to <strong>general availability</strong> on Tuesday 2 June. The SDK exposes the same agent runtime that powers Copilot &mdash; planning, tool invocation, file edits, streaming, and multi-turn sessions &mdash; behind a stable, production-supported API. It ships day one for <strong>Node.js/TypeScript, Python, Go, .NET, Rust, and Java</strong> (Maven and Gradle). The headline capabilities at GA: register custom tools the agent can autonomously invoke; connect to <strong>Model Context Protocol (MCP)</strong> servers; override built-in tools such as <code>grep</code> and <code>edit_file</code>; consume slash commands and interactive prompts uniformly across all language SDKs; and a new <strong>Rust SDK that bundles the Copilot CLI binary by default</strong>. Availability includes <strong>Copilot Free</strong> for personal use, and the SDK is <strong>open to non-Copilot users via BYOK</strong> &mdash; the first time GitHub has formally cracked open the runtime for non-subscribers. The strategic frame: Anthropic's Claude Agent SDK, OpenAI's Agents SDK, and Google's Gemini API Managed Agents now all have a directly comparable GitHub-shipped peer, and the BYOK door means the runtime competes <em>independently</em> of the model behind it.
+    </p>
+    <ul class="sources">
+      <li><a href="https://github.blog/changelog/2026-06-02-copilot-sdk-is-now-generally-available/">GitHub Changelog (2 June): Copilot SDK is now generally available</a> (primary)</li>
+      <li><a href="https://github.com/github/copilot-sdk">github/copilot-sdk &mdash; Multi-platform SDK for integrating GitHub Copilot Agent into apps and services</a> (primary)</li>
+      <li><a href="https://github.blog/changelog/month/06-2026/">GitHub Changelog &mdash; June 2026 index</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">GitHub</span>Copilot CLI refresh: rubber-duck review, local voice input, cron-style prompt scheduling, tabs</h3>
+    <div class="byline">2 June 2026 &middot; Primary source: GitHub Changelog (github.blog)</div>
+    <p>
+      In a same-day companion release, the <strong>Copilot CLI</strong> gained four substantive features and a new experimental terminal UI. <strong>Rubber duck</strong> &mdash; a built-in critic agent that scans for blind spots, design flaws, and substantive issues and reports actionable feedback &mdash; is now <strong>generally available</strong> after seven weeks in preview (May 7 changelog flagged model expansion). <strong>Voice input</strong> is hands-free and runs <strong>locally</strong>: hold space, talk; audio never leaves the machine. <strong>Prompt scheduling</strong> arrives via two new slash commands &mdash; <code>/every</code> and <code>/after</code> &mdash; with cron-like syntax, so a team can schedule a CLI session to <em>&ldquo;check all active branches for merge conflicts with main and report them in Slack&rdquo;</em> every morning without external orchestration. An <strong>experimental tabbed terminal UI</strong> exposes issues, PRs, and gists alongside the agent without leaving the CLI. The local-only voice path is the policy-relevant detail: it positions GitHub on the right side of the EU AI Act transparency obligations for AI-generated content (which apply to <em>cloud</em> transcription pipelines), and offers a clean answer to memory-system privacy researchers who flagged earlier this year that 96% of ChatGPT memories in one arXiv sample were created <em>unilaterally</em> by the system.
+    </p>
+    <ul class="sources">
+      <li><a href="https://github.blog/changelog/2026-06-02-copilot-cli-improved-ui-rubber-duck-prompt-scheduling-and-voice-input/">GitHub Changelog (2 June): Copilot CLI &mdash; Improved UI, rubber duck, prompt scheduling, and voice input</a> (primary)</li>
+      <li><a href="https://docs.github.com/en/copilot/how-tos/copilot-cli/use-copilot-cli/voice-input">GitHub Docs: Use voice input with Copilot CLI</a> (primary)</li>
+      <li><a href="https://github.com/github/copilot-cli/releases">github/copilot-cli &mdash; release index</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">GitHub</span>Copilot usage-based billing live on 1 June; GPT-4.1 retired across all Copilot surfaces</h3>
+    <div class="byline">1 June 2026 &middot; Primary source: GitHub Changelog (github.blog)</div>
+    <p>
+      The billing change Copilot administrators have been planning around for two months is now in production. As of <strong>1 June</strong>, <strong>usage-based billing</strong> for GitHub Copilot is live for all users, <strong>Copilot code review now consumes GitHub Actions minutes</strong> in addition to AI Credits, and new <strong>user-level budget controls</strong> shipped alongside opt-in upgrades to <strong>Copilot Max</strong>. Plan structure stays at <strong>Pro $10/mo</strong> (limited credits), <strong>Pro+ $39/mo</strong> (5&times; limits, Opus access), and per-seat Teams and Enterprise with separate credit pools. Same day, <strong>GPT-4.1 was deprecated across every Copilot surface</strong> &mdash; the third frontier deprecation from a major dev-tool vendor in 2026 (after the Sonnet 4 / Opus 4 retirement schedule and the Gemini Interactions API legacy-schema removal). For engineering managers, the immediate operational effect is that Copilot code-review jobs now charge twice (credits + Actions minutes), and the per-seat per-day budget controls need to be configured before the next billing cycle to avoid surprise overages.
+    </p>
+    <ul class="sources">
+      <li><a href="https://github.blog/changelog/2026-06-01-updates-to-github-copilot-billing-and-plans/">GitHub Changelog (1 June): Updates to GitHub Copilot billing and plans</a> (primary)</li>
+      <li><a href="https://github.blog/changelog/2026-04-27-github-copilot-code-review-will-start-consuming-github-actions-minutes-on-june-1-2026/">GitHub Changelog (27 April): GitHub Copilot code review will start consuming GitHub Actions minutes on June 1, 2026</a> (primary advance notice)</li>
+      <li><a href="https://github.com/orgs/community/discussions/192948">GitHub Community: Copilot moving to usage-based billing (announcement &amp; FAQ)</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Claude Code v2.1.166 &amp; v2.1.167: <code>fallbackModel</code>, glob deny rules, and cross-session SendMessage hardening</h3>
+    <div class="byline">6 June 2026 &middot; Primary source: anthropics/claude-code release notes / Claude Code changelog</div>
+    <p>
+      Anthropic shipped two same-day Claude Code releases on Friday 6 June &mdash; the seventh release of June so far. <strong>v2.1.166</strong> introduces the <strong><code>fallbackModel</code> setting</strong>, configuring up to <em>three</em> fallback models tried in order when the primary is overloaded or unavailable; <code>--fallback-model</code> now also applies to interactive sessions. <strong>Glob pattern support is added in the deny-rule tool-name position</strong> &mdash; <code>"*"</code> denies all tools, allow rules now reject non-MCP globs, and unknown tool names in deny rules warn at startup. The most security-relevant change is a quiet one: <strong>cross-session messaging via <code>SendMessage</code> has been hardened</strong> &mdash; messages relayed from <em>another</em> Claude session no longer carry user authority, so receivers refuse relayed permission requests and auto-mode blocks them outright. This is a direct response to the multi-agent privilege-escalation pattern documented in interpretability and AI-control work over the spring. Bug fixes include flicker in JetBrains 2026.1+ terminals (synchronized output now enabled), dropped Shift+non-ASCII characters under the Kitty keyboard protocol (WezTerm, Ghostty, kitty), a PowerShell command-validation hang on Windows when killed-process children held output pipes, and orphaned <code>claude --bg-pty-host</code> processes spinning at 100% CPU on macOS. <strong>v2.1.167</strong> is a same-day stability patch on top. Combined, the two releases continue Anthropic's roughly-twice-a-week cadence and meaningfully close the multi-agent authority loophole.
+    </p>
+    <ul class="sources">
+      <li><a href="https://code.claude.com/docs/en/changelog">Claude Code docs &mdash; Changelog</a> (primary)</li>
+      <li><a href="https://github.com/anthropics/claude-code/releases">anthropics/claude-code &mdash; releases index</a> (primary)</li>
+      <li><a href="https://www.claudeupdates.dev/version/2.1.167">Claude Updates: v2.1.167 release notes</a></li>
+      <li><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot: Claude Code &mdash; June 2026 updates</a></li>
+      <li><a href="https://claudefa.st/blog/guide/changelog">Claudefa.st: Claude Code Changelog &mdash; All Release Notes (2026)</a></li>
+    </ul>
+  </article>
+
+  <h2>Funding: A Single Day, Three Nine-Figure Rounds</h2>
+
+  <article>
+    <h3><span class="tag">Supabase</span>$500 M Series F at $10.5 B &mdash; valuation doubles in 8 months, Claude Code cited as the driver</h3>
+    <div class="byline">4 June 2026 &middot; Primary source: Supabase / PR Newswire &middot; CNBC / TechCrunch / SiliconANGLE</div>
+    <p>
+      Open-source Postgres-platform <strong>Supabase</strong> closed a <strong>$500 M Series F at a $10.5 B post-money valuation</strong>, announced Thursday 4 June. <strong>GIC</strong> led; Stripe re-upped; <strong>Georgian</strong> and <strong>Salesforce Ventures</strong> are new on the cap table. The valuation is exactly <strong>2.1&times; the $5 B</strong> Supabase priced at in its October Series E &mdash; an 8-month doubling. The growth story Supabase pitched to investors is unusually concrete: <strong>nearly 10 M developers</strong>, doubled in eight months; database launches up <strong>&gt;600% YoY</strong>; and <strong>more than 60% of new databases are launched by an AI tool</strong> &mdash; <em>not</em> a human developer. CEO Paul Copplestone told the press that the majority of database deployments on the platform now come from <strong>Anthropic's Claude Code</strong>, with Cursor, Codex CLI, and Gemini CLI also material. The deal is the cleanest public number anyone has put on the &ldquo;vibe-coding-to-prod&rdquo; thesis: agents are now the dominant origination channel for new application backends.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.prnewswire.com/news-releases/supabase-raises-500m-at-10-5b-to-accelerate-lead-in-agentic-infrastructure-302791787.html">PR Newswire / Supabase (4 June): Supabase Raises $500M at $10.5B to Accelerate Lead in Agentic Infrastructure</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/06/04/database-startup-supabase-raises-500-million-10point5-billion-valuation.html">CNBC (4 June): Database startup Supabase raises $500M at $10.5B valuation</a></li>
+      <li><a href="https://techcrunch.com/2026/06/05/supabase-doubles-valuation-to-10b-in-8-months/">TechCrunch (5 June): Supabase doubles valuation to $10B in 8 months</a></li>
+      <li><a href="https://siliconangle.com/2026/06/04/supabase-raises-500m-ai-coding-tools-drive-phenomenal-growth/">SiliconANGLE: Supabase raises $500M as AI coding tools drive 'phenomenal' growth</a></li>
+      <li><a href="https://www.finsmes.com/2026/06/supabase-raises-500m-in-series-f-funding-at-10-5-billion-valuation.html">FinSMEs: Supabase Raises $500M Series F at $10.5B</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Flourish</span>$500 M at $2.5 B &mdash; Bezos's neuromorphic bet to break AI's power wall</h3>
+    <div class="byline">4 June 2026 &middot; Primary source: Crypto Briefing / SiliconANGLE / TechTimes</div>
+    <p>
+      Stealth-mode <strong>Flourish</strong>, a brain-inspired AI startup, closed <strong>$500 M at a $2.5 B post-money</strong> on the same day as the Supabase round. <strong>Jeff Bezos</strong> led personally &mdash; reportedly upping his check from ~$50 M to closer to $100 M after the round became oversubscribed &mdash; with <strong>Lux Capital, GV (Alphabet's venture arm), and Catalio Capital</strong> participating. The company is co-founded by <strong>Thomas Reardon</strong> (creator of Internet Explorer at Microsoft, founder of CTRL-labs which Meta acquired in 2019 for ~$1 B, formerly head of Meta Reality Labs' neuromotor interface program) and <strong>Rob Williams</strong>, a former Amazon S-team executive. The technical premise is <em>connectomics</em>: literally map biological neurons and their connections, then derive a learning rule that emulates their dynamics on silicon. The system Flourish is building &mdash; <strong>Cortex AI</strong> &mdash; targets a power envelope of <strong>20&ndash;50 watts</strong>, i.e. laptop-class, not rack-class. If credible, that's the first VC-scale contrarian bet against the transformer-plus-GPU stack since the deep-learning era began. The investors are betting the AI industry's compute / energy curve becomes the binding constraint before the algorithmic one does &mdash; a thesis that gains weight every time Meta, Microsoft and Google announce another multi-gigawatt training cluster.
+    </p>
+    <ul class="sources">
+      <li><a href="https://siliconangle.com/2026/06/04/ai-startup-flourish-reportedly-raises-500m-round-backed-jeff-bezos/">SiliconANGLE (4 June): AI startup Flourish reportedly raises $500M round backed by Jeff Bezos</a></li>
+      <li><a href="https://www.techtimes.com/articles/317921/20260606/jeff-bezos-bets-flourish-500-million-startup-trying-copy-brain-fix-ais-power-crisis.htm">TechTimes (6 June): Jeff Bezos Bets On Flourish, A $500M Startup Trying To Copy The Brain To Fix AI's Power Crisis</a></li>
+      <li><a href="https://cryptobriefing.com/flourish-500m-bezos-brain-ai-research/">Crypto Briefing: Flourish secures $500M from Jeff Bezos and top VCs for brain-inspired AI research</a></li>
+      <li><a href="https://techfundingnews.com/bezos-flourish-500m-brain-inspired-ai-power-crisis/">Tech Funding News: Bezos commits close to $100M to the startup reverse-engineering the human brain to solve AI's power crisis</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Generalist AI</span>$400 M at $2 B &mdash; the &ldquo;robot foundation model&rdquo; thesis crosses the line into category</h3>
+    <div class="byline">4 June 2026 &middot; Primary source: Bloomberg &middot; The Robot Report / Robotics &amp; Automation News</div>
+    <p>
+      <strong>Generalist AI</strong>, the physical-AI startup co-founded by ex-DeepMind / Boston Dynamics roboticist <strong>Pete Florence</strong>, closed a <strong>$400 M round at a ~$2 B valuation</strong> on Thursday, bringing total capital to <strong>&gt;$500 M</strong>. <strong>Radical Ventures</strong> led; participants include <strong>8VC, Union Square Ventures, Hanabi Capital, Norwest, NVIDIA's NVentures, Boldstart, Spark, Bezos Expeditions, NFDG</strong>, and angel checks from <strong>Fei-Fei Li, Xiaomi co-founder Bin Lin, and Naval Ravikant</strong>. The round follows the April release of <strong>GEN-1</strong>, the company's first foundation model for robot manipulation, which Generalist disclosed at <strong>99% reliability across a range of dexterous manipulation tasks</strong>, <strong>~3&times; faster execution</strong> than prior SOTA, and demonstrated few-shot adaptation to novel objects and conditions. Read against Stord Labs' Atlanta physical-AI lab (covered 25 May), this is the second nine-figure physical-AI round in three weeks &mdash; and the first explicitly framed as <em>&ldquo;the brain for every robot.&rdquo;</em> The thesis: a single foundation model trained on multi-embodiment data eats per-robot, per-task fine-tuning the same way Transformer LLMs ate per-NLP-task supervised pipelines.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.bloomberg.com/news/articles/2026-06-04/nvidia-backed-robotics-startup-generalist-ai-valued-at-2-billion">Bloomberg (4 June): Nvidia-Backed Robotics Startup Generalist AI Valued at $2 Billion</a> (primary)</li>
+      <li><a href="https://www.therobotreport.com/generalist-raises-400m-to-scale-its-general-purpose-ai-models/">The Robot Report: Generalist raises $400M to scale its general-purpose AI models</a></li>
+      <li><a href="https://roboticsandautomationnews.com/2026/06/05/generalist-ai-raises-400-million-to-scale-robot-intelligence-platform/102307/">Robotics &amp; Automation News (5 June): Generalist AI raises $400M to accelerate development of robot foundation models</a></li>
+      <li><a href="https://theaiinsider.tech/2026/06/04/generalist-ai-raises-400m-in-new-funding-to-develop-physical-agi/">The AI Insider: Generalist AI Raises $400M in New Funding to Develop Physical AGI</a></li>
+    </ul>
+  </article>
+
+  <h2>Looking Ahead &mdash; WWDC Monday</h2>
+
+  <article>
+    <h3><span class="tag">Apple</span>WWDC 2026 keynote lands Monday 8 June &mdash; the Siri / Gemini integration becomes (probably) official</h3>
+    <div class="byline">8 June 2026 &middot; Primary source: Apple Newsroom &middot; Apple Developer / Macworld / MacRumors</div>
+    <p>
+      Apple's <strong>Worldwide Developers Conference</strong> opens with the keynote on Monday <strong>8 June at 10:00 PT / 13:00 ET</strong>, running through Friday 12 June. The expected version-number cliff is <strong>iOS 27, iPadOS 27, macOS 27, tvOS 27, watchOS 27, and visionOS 27</strong>. The dominant pre-keynote signal: the <strong>delayed Siri overhaul</strong> &mdash; first promised at WWDC 2024 and slipped since &mdash; is expected to ship this cycle on the back of the <strong>January 2026 Apple&ndash;Google partnership</strong> that brings <strong>Gemini models</strong> into the on-device + Private Cloud Compute stack. If that lands as reported, Monday becomes the moment the third major mobile-AI architecture commits publicly &mdash; alongside Microsoft's Copilot-everywhere stack and Google's own Gemini-in-Android push &mdash; meaning every major consumer OS by Q4 2026 will route assistant queries through a frontier model controlled by a different vendor. Watch for: the Siri Gemini disclosure language (on-device vs server-side split, data-residency claims), the iPad multitasking story that has been hinted at on developer mailing lists, and the first official confirmation of whether Apple's own foundation-model work has caught up enough to handle <em>any</em> tier of the new Siri without Google in the loop.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.apple.com/newsroom/2026/05/apple-kicks-off-worldwide-developers-conference-on-june-8/">Apple Newsroom: Apple kicks off Worldwide Developers Conference on June 8</a> (primary)</li>
+      <li><a href="https://developer.apple.com/wwdc26/">Apple Developer: WWDC26</a> (primary)</li>
+      <li><a href="https://www.macworld.com/article/678333/wwdc-keynote-event-time-what-launch-ios-macos-watchos-hardware.html">Macworld: WWDC 2026 &mdash; Keynote date, start time, length and Apple event expectations</a></li>
+      <li><a href="https://www.macrumors.com/roundup/wwdc/">MacRumors: WWDC 2026 &mdash; Everything to Expect</a></li>
+      <li><a href="https://www.newsweek.com/wwdc-2026-everything-apple-is-expected-to-announce-on-june-8-12016937">Newsweek: WWDC 2026 &mdash; Everything Apple Is Expected to Announce on June 8</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This 7 June digest deliberately avoids re-covering the stories that anchored the previous three digests in this repo (25, 27, and 28 May). Specifically, it does <em>not</em> re-lede the Pope Leo XIV <em>Magnifica humanitas</em> encyclical, the original ~$30 B Anthropic Series G round and the launch cohort of Project Glasswing (covered 25 May), OpenAI's confidential S-1, Karpathy joining Anthropic, the Anthropic&ndash;Stainless acquisition, Gemini 3.5 Flash / Antigravity 2.0, Meta's 8,000 layoffs, the Musk v OpenAI verdict, NVIDIA Q1 FY2027 earnings, MLPerf Inference v6.0, SAP&ndash;Prior Labs, the Altman&ndash;Amodei jobs-apocalypse walk-back, the Fujitsu&ndash;Anthropic alliance, Demis Hassabis's &ldquo;foothills of the singularity&rdquo; comments, Anthropic's interpretability/Fellows roadmap, Claude Code v2.1.152, the GitHub Copilot Memory governance update, or the EU AI Act Omnibus calendar &mdash; all already in this repo. The 7 June lens is what is genuinely new in the 1&ndash;7 June window: <strong>Anthropic's confidential S-1</strong> (1 June, primary newsroom), <strong>the Trump AI executive order</strong> (2 June, White House primary), <strong>Project Glasswing's expansion to 150 organizations with ENISA joining</strong> (2 June, Anthropic primary), <strong>MiniMax M3</strong> (1 June launch with vendor-reported benchmarks, weights pending), <strong>GitHub's Copilot SDK GA + Copilot CLI refresh + usage-based billing</strong> (1&ndash;2 June, github.blog primary), <strong>Claude Code v2.1.166 / v2.1.167</strong> (6 June, anthropics/claude-code primary), and the <strong>4 June funding triple</strong> (Supabase $500 M / $10.5 B, Flourish $500 M / $2.5 B, Generalist AI $400 M / $2 B). Primary sources (Anthropic Newsroom, The White House, Anthropic Glasswing page, GitHub Changelog, anthropics/claude-code release index, Bloomberg, Supabase / PR Newswire, Apple Newsroom &amp; Apple Developer) are flagged inline. Secondary outlets are corroborated by at least three independent reports where used.</p>
+    <p>Generated 7 June 2026.</p>
+  </footer>
+</body>
+</html>
