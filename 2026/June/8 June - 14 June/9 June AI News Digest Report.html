@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 9 June 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+    code {
+      background: #f3f3f3;
+      padding: 0.05rem 0.3rem;
+      border-radius: 3px;
+      font-size: 0.92em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 9 June 2026</h1>
+    <div class="meta">Week of 8&ndash;14 June 2026 &middot; Coverage window: 8&ndash;9 June (last ~24 hours)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> Yesterday in Cupertino, <strong>Tim Cook</strong> walked the WWDC stage as Apple CEO for the last time and used the keynote to put a Google-shaped exclamation point on the most consequential frontier-lab realignment of the year: a multi-year, ~<strong>$1 B/year</strong> deal that makes <strong>Gemini</strong> the distillation base of every new <strong>Apple Foundation Model</strong> &mdash; including the <strong>AFM Cloud Pro</strong> tier that will run agentic Siri on <strong>Nvidia GPUs in Google&rsquo;s cloud</strong>. Apple's Craig Federighi confirmed publicly that Cupertino <em>evaluated OpenAI and Anthropic and chose Google</em>, and the same keynote opened iOS&nbsp;27 to third-party chatbot <strong>Extensions</strong> &mdash; making Claude and ChatGPT first-class Siri back-ends for the first time. Hours later, the other half of the realignment came into focus: <strong>Tech Times</strong> escalated the <em>Bloomberg</em> reporting that the <strong>Pentagon</strong> is testing OpenAI/Google models specifically to replace Anthropic's Claude across classified networks &mdash; the official line is that Claude is &ldquo;<em>too safe for war</em>.&rdquo; On the research front, <strong>Stanford HAI</strong> published two AI-mental-health pieces today, including <strong>PsychAdapter</strong>, a method for steering LLM outputs to mimic specific personality, age, and mental-health profiles. On the builder side: the June model-release window opened over the weekend with <strong>Claude Sonnet 4.8</strong> and <strong>Gemini 3.5 Pro</strong> both expected before month's end, Hacker News flagged a notable <em>turn</em> against AI coding tools in this month's hiring thread, and Microsoft's <strong>MAI-Code-1-Flash</strong>/MAI-Thinking-1 stack (announced at <em>Build</em> last week) is now bleeding into Foundry alongside Claude Opus 4.8.
+  </div>
+
+  <h2>Top Story &mdash; Apple Picks Google: Gemini Becomes the Engine Under Siri</h2>
+
+  <article>
+    <h3><span class="tag">Apple</span>WWDC26 keynote: Apple Foundation Models distilled from Gemini; AFM Cloud Pro runs on Nvidia GPUs in Google's cloud</h3>
+    <div class="byline">8 June 2026 &middot; Primary source: Apple WWDC 2026 keynote, Craig Federighi on-stage remarks; post-keynote Apple executives session</div>
+    <p>
+      Speaking from Apple Park yesterday morning, software chief <strong>Craig Federighi</strong> made the line of the day official: &ldquo;<em>This year, we have partnered deeply with Google to leverage the technology behind the Gemini family of models to co-create the next generation of Apple Foundation Models.</em>&rdquo; The new <strong>AFM stack</strong> has four custom models &mdash; <em>AFM Core</em> and <em>AFM Core Advanced</em> on-device (the advanced variant is natively multimodal and uses a sparse architecture), <em>AFM Cloud</em> as the Private Cloud Compute base model, an <em>AFM Cloud Image</em> generator, and <em>AFM Cloud Pro</em>, the top tier for agentic Siri and the most demanding tasks, which Apple confirmed will run on <strong>Nvidia GPUs in Google's cloud</strong>. The four models were trained on Apple Silicon with proprietary data and then <em>distilled</em> from Gemini frontier checkpoints loaned by Google. The deal is multi-year, non-exclusive, and reportedly costs Apple ~<strong>$1 B per year</strong>. In a post-keynote session, Federighi, Sebastien Marineau-Mes, Mike Rockwell, and Amar Subramanya confirmed Apple <em>evaluated OpenAI and Anthropic before selecting Google</em> &mdash; ending two years of speculation about which frontier lab would inherit Siri's brain. Tim Cook bookended the keynote with brief remarks and a farewell message; new-CEO-designate John Ternus did not appear on stage. Cook becomes executive chairman on 1 September.
+    </p>
+    <ul class="sources">
+      <li><a href="https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/">TechCrunch (8 Jun): WWDC 2026 &mdash; everything announced on Siri AI, iOS 27, Apple Intelligence and more</a> (primary keynote coverage)</li>
+      <li><a href="https://www.cnbc.com/2026/06/08/apple-wwdc-2026-live-updates.html">CNBC live blog (8 Jun): Apple makes its big Siri AI reveal, changes Liquid Glass and more</a></li>
+      <li><a href="https://www.npr.org/2026/06/08/nx-s1-5847937/apple-wwdc-2026-siri-ai-tim-cook">NPR (8 Jun): Hey, Siri &mdash; Apple just announced a long-awaited AI update</a></li>
+      <li><a href="https://www.business-standard.com/amp/technology/tech-news/wwdc-2026-apple-unveils-siri-ai-gemini-powered-apple-intelligence-more-126060900042_1.html">Business Standard (9 Jun): WWDC 2026 &mdash; Apple unveils Siri AI, Gemini-powered Apple Intelligence</a></li>
+      <li><a href="https://appleinsider.com/articles/26/06/08/apples-new-foundation-models-dont-contain-a-drop-of-gemini-as-we-said-they-wouldnt">AppleInsider (8 Jun): Apple's new foundation models don't contain a drop of Gemini &mdash; how the distillation actually works</a> (post-keynote AFM session detail)</li>
+      <li><a href="https://allthings.how/apple-intelligence-gets-a-gemini-powered-rebuild-at-wwdc-2026/">All Things How: Apple Intelligence gets a Gemini-powered rebuild at WWDC 2026</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Apple</span>Siri AI, agentic Passwords, and a new <em>Extensions</em> slot that puts Claude and ChatGPT inside Siri</h3>
+    <div class="byline">8 June 2026 &middot; Primary source: WWDC26 keynote; Apple Intelligence and Siri settings demos</div>
+    <p>
+      Sitting on top of the new AFM stack is a redesigned <strong>Siri AI</strong> with persistent conversation history, personal context, screen-awareness, and a dedicated Siri app for iPad and Mac. The keynote's most consequential developer-facing detail was easy to miss: in iOS&nbsp;27, iPadOS&nbsp;27 and macOS&nbsp;27, the Apple Intelligence settings panel now exposes a <strong>Siri &ldquo;Extensions&rdquo;</strong> slot &mdash; a third-party model picker fed by a dedicated <strong>Extensions section in the App Store</strong>. ChatGPT remains, but for the first time <strong>Claude and other chatbot apps can register themselves as a Siri back-end</strong>, with Apple providing the install links from inside Settings. Apple Intelligence updates also include <em>agentic Passwords</em> &mdash; Safari plus Apple Intelligence will visit individual websites to rotate weak or breached credentials on the user's behalf &mdash; <em>Spatial Reframing</em> in Photos, AI reply suggestions in Messages, and a cross-app context bus that lets the Phone app pull live context from Mail and Messages mid-call. Performance: iOS&nbsp;27 supports devices as old as the iPhone&nbsp;11; app cold-starts are up to 30% faster, photo previews up to 70% faster, iPadOS file transfers up to 5x faster. Developer betas shipped yesterday; public beta in July; general release alongside the autumn hardware launches. AAPL closed down ~2% on the day &mdash; the muted reaction reflects the gap between announced features and shipping ones, given Apple's 2024&ndash;2025 record of slipping Siri promises.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.foxbusiness.com/live-news/apple-tim-cook-wwdc26-keynote-iphone-ai-tech-june-8">Fox Business live blog (8 Jun): Apple's Tim Cook delivers WWDC26 keynote in his farewell as CEO</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/">TechCrunch (8 Jun): WWDC 2026 keynote recap</a> (Extensions detail; agentic Passwords)</li>
+      <li><a href="https://www.tipranks.com/news/apple-aapl-rolls-out-siri-ai-with-gemini-partnership-in-major-wwdc-2026-overhaul">TipRanks (8 Jun): AAPL rolls out Siri AI with Gemini partnership in major WWDC 2026 overhaul</a> (market reaction)</li>
+    </ul>
+  </article>
+
+  <h2>Frontier Labs &amp; Government</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Pentagon escalates the &ldquo;replace Claude&rdquo; effort: 25 power users now testing OpenAI, Google and xAI rivals on classified networks</h3>
+    <div class="byline">8 June 2026 follow-up to 21 May Bloomberg reporting &middot; Primary source: Bloomberg (21 May), Tech Times (8 Jun)</div>
+    <p>
+      A <strong>Tech Times</strong> piece overnight pushed the <em>Bloomberg</em> story from late May back into the lede position: the Department of Defense is actively benchmarking <strong>OpenAI, Google, and xAI</strong> models against Anthropic's Claude across <strong>25 designated &ldquo;power users&rdquo;</strong> on classified networks, with the explicit goal of finding a replacement for Claude on Pentagon systems including the <em>Maven Smart System</em> &mdash; the digital mission-control platform reportedly used in the spring's strikes on Iran. The trigger remains <strong>Defense Secretary Pete Hegseth</strong>'s March designation of Anthropic as a <em>supply-chain risk</em> after Anthropic refused to drop guardrails against mass surveillance and autonomous weapons. <strong>Undersecretary Emil Michael</strong> told Bloomberg TV the Pentagon expects new model releases from competitors to deliver Claude-equivalent capabilities &ldquo;every month or two,&rdquo; meaning the procurement clock is now ticking against Anthropic regardless of how its lawsuit lands. The case is unprecedented: the supply-chain-risk designation has historically only been used against foreign vendors. More than 30 OpenAI and Google DeepMind employees &mdash; including Google chief scientist <strong>Jeff Dean</strong> &mdash; have filed an <em>amicus</em> brief warning that a Pentagon blacklist of Anthropic threatens the broader American AI industry. The Tech Times framing (&ldquo;<em>too safe for war</em>&rdquo;) is rhetorically loaded but factually accurate to the dispute. Anthropic CEO <strong>Dario Amodei</strong> publicly called OpenAI's competing Pentagon deal &ldquo;<em>safety theater</em>&rdquo; last week.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.bloomberg.com/news/articles/2026-05-21/pentagon-tests-rival-ai-models-in-race-to-replace-anthropic">Bloomberg (21 May): Pentagon tests OpenAI, Google AI models as it seeks Anthropic alternatives</a> (primary)</li>
+      <li><a href="https://www.techtimes.com/articles/317998/20260608/pentagon-racing-replace-anthropics-claude-because-it-was-too-safe-war.htm">Tech Times (8 Jun): The Pentagon is racing to replace Anthropic's Claude &mdash; because it was &lsquo;too safe&rsquo; for war</a></li>
+      <li><a href="https://fortune.com/2026/03/10/google-openai-employees-back-anthropic-legal-fight-military-use-of-ai/">Fortune: Google and OpenAI employees back Anthropic in its legal fight with the Pentagon</a></li>
+      <li><a href="https://www.theneuron.ai/explainer-articles/the-pentagon-vs-anthropic-explained-the-week-ai-drew-a-line-in-the-sand-and-the-government-kicked-it-over/">The Neuron: Anthropic vs the Pentagon vs OpenAI &mdash; the full story</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Industry</span>June model-release window opens: Claude Sonnet 4.8 and Gemini 3.5 Pro both expected before month-end; MAI-Code-1-Flash lands in Foundry</h3>
+    <div class="byline">2&ndash;9 June 2026 &middot; Primary sources: Microsoft Build keynote (2 Jun), WaveSpeed/PricePerToken builder maps (8&ndash;9 Jun)</div>
+    <p>
+      With Opus 4.8 already on the table (28 May, $5/$25, 88.6% SWE-bench Verified, 1M-token context), the builder community has converged on a <strong>June 2026 model-release window</strong> that is structurally different from anything before it: <strong>Anthropic</strong>'s standard Opus-then-Sonnet pattern points to <em>Claude Sonnet 4.8</em> mid-month, and <strong>Google</strong>'s I/O cadence puts <em>Gemini 3.5 Pro</em> general availability on a similar timeline (Gemini 3.5 Flash is already GA at $1.50/$9 per 1M tokens, 76.2% Terminal-Bench 2.1, 1M context). <strong>xAI</strong>'s Grok 5 remains in training on Colossus 2 and is unlikely to ship before 30 June (Polymarket: 12&ndash;33% probability). The newest entrant: Microsoft used <em>Build 2026</em> (2 Jun, San Francisco) to launch its first proprietary frontier stack &mdash; <strong>MAI-Thinking-1</strong> (a medium-size reasoning model claimed to match Claude Opus 4.6 on <em>SWE-Bench Pro</em> at materially lower token cost) and <strong>MAI-Code-1-Flash</strong>, both available in private preview via <strong>Microsoft Foundry</strong>, plus <em>MAI-Image-2.5</em> and <em>MAI-Transcribe-1.5</em>. Foundry now indexes 12,000+ models, with Claude Opus 4.8 in preview, GPT-5.5 GA, and OpenAI's realtime voice models all alongside Microsoft's own. The takeaway for product teams: <em>four frontier launches in four weeks</em> is the new baseline, and routing layers that can switch model on a per-call basis are now table stakes.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html">CNBC (2 Jun): Microsoft unveils new AI models to lessen reliance on OpenAI and lower costs for developers</a> (primary on MAI launch)</li>
+      <li><a href="https://www.thurrott.com/a-i/336960/build-2026-microsoft-launches-first-flagship-reasoning-ai-model-and-more">Thurrott (Build 2026): Microsoft launches first flagship reasoning AI model and more</a></li>
+      <li><a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-4-8-is-now-available-in-microsoft-foundry/4523367">Microsoft Community Hub (28 May): Claude Opus 4.8 is now available in Microsoft Foundry</a> (primary)</li>
+      <li><a href="https://simonwillison.net/2026/May/28/claude-opus-4-8/">Simon Willison (28 May): Claude Opus 4.8 &mdash; &lsquo;a modest but tangible improvement&rsquo;</a></li>
+      <li><a href="https://wavespeed.ai/blog/posts/june-2026-ai-launch-wave/">WaveSpeed Blog (Jun): June 2026 AI launch wave &mdash; a builder's decision map</a></li>
+      <li><a href="https://llm-stats.com/llm-updates">llm-stats: AI updates today (June 2026) &mdash; latest model releases</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Research</h2>
+
+  <article>
+    <h3><span class="tag">Stanford HAI</span>PsychAdapter: steering LLM outputs to mimic specific personality, age, and mental-health profiles</h3>
+    <div class="byline">8 June 2026 &middot; Primary source: Stanford HAI news, 8 Jun 2026</div>
+    <p>
+      Stanford's Human-Centered AI institute published a <strong>PsychAdapter</strong> writeup yesterday &mdash; a method that lets researchers dial in specific personality traits (the Big Five), age cohorts, and mental-health characteristics, and then have an LLM generate text that reads as if produced by an individual matching that profile. Stated use cases are training simulations for clinicians, controlled-cohort behavioral studies, and personalized content generation for therapy adjuncts; the method is also obviously dual-use for adversarial work on persuasion and social-engineering benchmarks. HAI published alongside a paired piece, &ldquo;<em>Exploring the dangers of AI in mental health care</em>,&rdquo; which reports a two-experiment study of five popular therapy chatbots (including 7cups' <em>Pi</em> and <em>Noni</em>, and Character.ai's <em>Therapist</em>) measuring stigma toward mental-health conditions and response appropriateness to common symptoms. Lead researcher Haber's framing: &ldquo;<em>this isn't simply &lsquo;LLMs for therapy is bad,&rsquo; it's asking us to think critically about the role of LLMs in therapy</em>.&rdquo; The combined release is a notable signal that the academic community is moving from generic LLM-safety framings toward instrument-grade methods for evaluating psychiatric-specific failure modes &mdash; relevant to any product team shipping wellness, coaching, or companion features in the next 12 months.
+    </p>
+    <ul class="sources">
+      <li><a href="https://hai.stanford.edu/news/exploring-the-dangers-of-ai-in-mental-health-care">Stanford HAI (8 Jun): Exploring the dangers of AI in mental health care</a> (primary)</li>
+      <li><a href="https://hai.stanford.edu/news">Stanford HAI: News index</a> (PsychAdapter writeup, 8 Jun)</li>
+      <li><a href="https://hai.stanford.edu/toward-responsible-development-and-evaluation-llms-psychotherapy">Stanford HAI: Toward responsible development and evaluation of LLMs in psychotherapy</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">arXiv</span>Recent reasoning-LLM papers worth a read: latent reward steering, neuro-symbolic math verification, and quantized reasoning</h3>
+    <div class="byline">June 2026 listings &middot; Primary source: arXiv cs.AI / cs.LG current</div>
+    <p>
+      Three June arXiv preprints are circulating on developer-research timelines this week. (1) <strong><em>Latent Reward Steering</em></strong> proposes an inference-time framework that implicitly promotes cognitive behaviors (backtracking, self-correction, sub-goal decomposition) in reasoning models without RLHF retraining; the claim is that small steering vectors applied to hidden states recover much of the gain RL-tuned reasoning models get from post-training. (2) <strong><em>AXIOM</em></strong> outlines a trust-first neuro-symbolic execution architecture for verifiable mathematical reasoning &mdash; a direct response to the &ldquo;reasoning trace looks right but the answer is wrong&rdquo; failure mode that dogged GPT-o-series and Claude-thinking outputs in late 2025. (3) <strong><em>Quantized Reasoning Models Think They Need to Think Longer, but They Do Not</em></strong> (Lotfi, Kirichenko, Li, Liu) reports that quantization to int4/int8 systematically <em>inflates</em> reasoning-token budgets at no accuracy benefit &mdash; a meaningful finding for anyone running cost-optimized self-host stacks of DeepSeek-R-class models. Read in conjunction with this week's BAGEN benchmark (&ldquo;<em>Are LLM Agents Budget-Aware?</em>&rdquo;), the through-line is a research-community shift toward <em>economics</em> as a first-class evaluation axis &mdash; how much thinking is enough, and who pays for it.
+    </p>
+    <ul class="sources">
+      <li><a href="https://arxiv.org/list/cs.AI/current">arXiv cs.AI &mdash; current listings (June 2026)</a></li>
+      <li><a href="https://arxiv.org/list/cs.LG/current">arXiv cs.LG &mdash; current listings (June 2026)</a></li>
+    </ul>
+  </article>
+
+  <h2>Software Engineering Signals</h2>
+
+  <article>
+    <h3><span class="tag">Hacker News</span>June &ldquo;Who is hiring?&rdquo; thread shows a measurable mood-shift on AI coding tools</h3>
+    <div class="byline">2&ndash;9 June 2026 &middot; Primary source: HN item id 48357725 &amp; companion threads; HNHIRING aggregation</div>
+    <p>
+      The monthly Hacker News hiring thread went up on 2 June and has matured over the past 48 hours into one of the cleaner demand signals available to engineering leaders. Two patterns stand out. First, the <em>job</em> side: postings overwhelmingly want hybrid builders &mdash; <em>backend + cloud + AI APIs + some product sense</em> &mdash; with explicit tool stacks calling out Python, Go, TypeScript, Kubernetes, AWS, vector stores, OpenAI, Claude, Gemini, Mistral, and RAG. New &ldquo;<em>Agentic OS</em>&rdquo; roles (Pango, for e-commerce logistics) and physical-AI data-platform roles (Trace Labs) are now common enough to count as a category. Second, the <em>commentary</em> side: a parallel &ldquo;What is your AI dev tech stack/workflow?&rdquo; thread and an &ldquo;Ask HN: What is the state of app development in 2026?&rdquo; thread both surface a sharper-than-usual skepticism about AI coding tools producing &ldquo;messy output, weak trust, or inflated expectations.&rdquo; This is the first hiring cycle of 2026 where the volume of AI-skeptic commentary on HN is materially higher than the AI-enthusiast volume in the same threads &mdash; a signal worth taking seriously, especially read against the parallel <em>Anthropic Claude Code postmortem</em> from 23 April that confirmed six weeks of real, multi-cause quality degradation.
+    </p>
+    <ul class="sources">
+      <li><a href="https://news.ycombinator.com/item?id=48357725">Hacker News (2 Jun): Ask HN &mdash; Who is hiring? (June 2026)</a> (primary)</li>
+      <li><a href="https://news.ycombinator.com/item?id=48413629">Hacker News: Ask HN &mdash; What is your (AI) dev tech stack / workflow?</a></li>
+      <li><a href="https://news.ycombinator.com/item?id=48337409">Hacker News: Ask HN &mdash; What is the state of app development in 2026?</a></li>
+      <li><a href="https://hnhiring.com/june-2026">HNHIRING: All jobs from HN 'Who is hiring? (June 2026)'</a></li>
+      <li><a href="https://www.anthropic.com/engineering/april-23-postmortem">Anthropic Engineering (23 Apr): An update on recent Claude Code quality reports</a> (corroborating signal)</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Compute reality check: the SpaceX/xAI Colossus 1 contract is now the binding constraint behind Claude rate-limit increases</h3>
+    <div class="byline">20 May contract &middot; Persistent through 8&ndash;9 June &middot; Primary source: xAI press release; SpaceX S-1 filing; TechCrunch</div>
+    <p>
+      Two operational consequences of last month's <strong>Anthropic &mdash; SpaceX/xAI</strong> deal are now visible to paying Claude users and worth flagging in any current developer planning. (1) <em>Capacity</em>: Anthropic now has access to <strong>all of Colossus 1</strong> &mdash; 220,000+ Nvidia GPUs (H100/H200/GB200), 300 MW, formerly running at ~11% utilization as xAI shifted its own training to Colossus 2. The contract runs through May 2029 at <strong>$1.25 B/month</strong> (~$40 B aggregate), with a 90-day mutual termination clause and a safety clause permitting SpaceX to reclaim compute if Anthropic's models &ldquo;harm humanity.&rdquo; (2) <em>User-visible</em>: Anthropic has <strong>doubled Claude Code's five-hour rate limits across paid tiers</strong>, removed the peak-hours reduction for Pro and Max, and &ldquo;considerably&rdquo; raised API rate limits for Opus &mdash; all attributed to the Colossus 1 capacity coming online. For builders, the planning implication is clear: Anthropic's other contracted capacity (Amazon 5 GW, Google/Broadcom 5 GW, Microsoft/Azure $30 B, Fluidstack $50 B) does not fully online until late 2026&ndash;2027, so Colossus 1 is what's actually behind today's rate-limit math. Musk's pivot from &ldquo;Anthropic is misanthropic&rdquo; (Feb) to &ldquo;<em>no one set off my evil detector</em>&rdquo; (May) is the social signature of an asymmetric dependency that did not exist a quarter ago.
+    </p>
+    <ul class="sources">
+      <li><a href="https://x.ai/news/anthropic-compute-partnership">xAI: New compute partnership with Anthropic</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/">TechCrunch (20 May): Anthropic will pay xAI $1.25 B per month for compute</a> (primary, S-1 detail)</li>
+      <li><a href="https://www.datacenterdynamics.com/en/news/anthropic-to-use-all-of-spacex-xais-colossus-1-data-center-compute/">Data Center Dynamics: Anthropic to use all of SpaceX-xAI's Colossus 1 data center compute</a></li>
+      <li><a href="https://thenewstack.io/anthropic-spacex-claude-limits/">The New Stack: Anthropic recruited SpaceX's 220,000-GPU Colossus 1 &mdash; user-visible Claude limit changes</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This 9 June digest deliberately avoids overlap with the 25&ndash;28 May editions in the same repository. Specifically, it does <em>not</em> re-lede on the <em>Altman&ndash;Amodei jobs-apocalypse walk-back</em>, the <em>Fujitsu&ndash;Anthropic + OpenAI</em> alliance, Hassabis's tightened AGI estimate, the <em>GitHub Copilot Memory governance</em> update, <em>Claude Code v2.1.152</em>, Anthropic's <em>interpretability</em> Fellows roadmap, the <em>EU AI Act Omnibus</em> calendar, Pope Leo XIV's encyclical, the <em>OpenAI confidential S-1</em>, Karpathy's move to Anthropic, the Gemini 3.5 Flash/Antigravity 2.0 launches, the Meta 8,000 layoffs, or the Musk-v-OpenAI verdict &mdash; all of which led prior digests. The 9 June lens is Apple WWDC26's <em>Gemini-distilled Apple Foundation Models</em> and Siri Extensions (genuinely new on 8 June), the <em>Tech Times</em> escalation of the Bloomberg Pentagon-replace-Claude reporting (8 June), the June model-release window plus Microsoft's MAI-Code-1-Flash/MAI-Thinking-1 stack landing in Foundry (2&ndash;9 June), Stanford HAI's <em>PsychAdapter</em> and AI-mental-health pieces (8 June), three notable June arXiv reasoning preprints, the HN hiring-thread mood shift on AI coding, and a reset of where Anthropic's compute reality actually sits post-Colossus 1. Primary sources (Apple WWDC keynote, xAI press release, Bloomberg, Stanford HAI, arXiv listings, Microsoft Foundry blog, Hacker News threads) are flagged inline. Lower-quality outlets are corroborated by at least two additional reports.</p>
+    <p>Generated 9 June 2026.</p>
+  </footer>
+</body>
+</html>
