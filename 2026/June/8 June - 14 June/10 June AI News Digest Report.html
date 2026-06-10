@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 10 June 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 10 June 2026</h1>
+    <div class="meta">Week of 8&ndash;14 June 2026 &middot; Coverage window: 8&ndash;10 June (last ~48 hours)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The frontier just moved again. Yesterday, <strong>Anthropic</strong> released <strong>Claude Fable 5</strong> &mdash; a <em>Mythos-class</em> model now generally available, with a <strong>1 M-token context</strong>, <strong>128 K output</strong> tokens, always-on adaptive thinking, and pricing of <strong>$10 / $50</strong> per million in/out. Anthropic also flipped <strong>Claude Mythos 5</strong> on for the closed <strong>Project Glasswing</strong> partner set. The release lands 36 hours after <strong>Apple's WWDC 2026 keynote</strong>, where Cupertino conceded the obvious: the rebuilt Siri now runs on a <strong>custom 1.2&nbsp;T-parameter Google Gemini</strong> model via Apple's Private Cloud Compute (reported ~$1 B/yr to Google), and a new <strong>"Extensions"</strong> framework in <strong>iOS 27 / iPadOS 27 / macOS 27</strong> makes <strong>Claude and ChatGPT first-class Siri targets</strong> alongside Gemini. Capital markets are now stacked: <strong>Anthropic confidentially filed its S-1</strong> on 1 June after closing a <strong>$65 B Series H at $965 B</strong>; <strong>OpenAI</strong> publicly acknowledged its own confidential S-1 on 8 June; and <strong>SpaceX</strong> prices its $1.77 T Nasdaq IPO this Friday. Elsewhere: <strong>Microsoft AI</strong> shipped <strong>seven in-house MAI models</strong> at Build 2026 (incl. <strong>MAI-Thinking-1</strong>, trained from scratch without OpenAI distillation); a bipartisan House draft &mdash; the <strong>Great American AI Act</strong> &mdash; would preempt state AI law for three years; the <strong>Claude Sonnet 4 / Opus 4</strong> API IDs retire in <strong>5 days</strong> (15 June); and <strong>MiniMax M3</strong> shipped the first <em>open-weight</em> frontier coding + 1 M-context + native-multimodal stack.
+  </div>
+
+  <h2>Top Story &mdash; Mythos-Class Goes Public</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Claude Fable 5 ships to the public as Anthropic's most powerful generally-available model; Mythos 5 stays inside Project Glasswing</h3>
+    <div class="byline">9 June 2026 &middot; Primary source: Anthropic Newsroom (anthropic.com/news/claude-fable-5-mythos-5)</div>
+    <p>
+      Anthropic released <strong>Claude Fable 5</strong> on Tuesday 9 June, the first <em>Mythos-class</em> model the company has put into general availability. Anthropic's own framing: <em>"Today we're launching Claude Fable 5: a Mythos-class model that we've made safe for general use."</em> Capability claims include state-of-the-art results across software engineering, knowledge work, vision, and scientific research, with <strong>always-on adaptive thinking</strong>, a <strong>1 M-token context window</strong>, up to <strong>128 K output tokens</strong>, and a fresh layer of <em>safety classifiers</em> that re-route a small slice of high-risk queries to <strong>Claude Opus 4.8</strong> (Anthropic says the classifiers fire on <strong>&lt; 5%</strong> of sessions). List pricing is <strong>$10 / 1 M input tokens</strong> and <strong>$50 / 1 M output tokens</strong>, roughly 2&times; Opus 4.8, positioning Fable 5 for institutional and reasoning-heavy workloads. Simultaneously, Anthropic put the un-restricted sibling &mdash; <strong>Claude Mythos 5</strong> &mdash; into limited release via <strong>Project Glasswing</strong>, the ~50-org defensive-cybersecurity consortium covered in last month's digest cycle. Notably, this release lands only days after Anthropic publicly cautioned that frontier capability gains are outpacing alignment work; the company is explicitly framing the Fable/Mythos split as the structural answer to that gap &mdash; release a hardened sibling broadly, keep the unrestricted model under partner-bound access controls. The move makes Anthropic the first lab to ship a generally-available model above the Opus / GPT-5.5 / Gemini 3.5 Pro tier.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Anthropic Newsroom: Claude Fable 5 and Claude Mythos 5</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/06/09/anthropic-mythos-claude-fable-5.html">CNBC: Anthropic releases Mythos-like AI model to the public, Claude Fable 5</a></li>
+      <li><a href="https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/">TechCrunch: Anthropic releases Claude Fable 5 days after warning AI is becoming too dangerous</a></li>
+      <li><a href="https://the-decoder.com/anthropic-releases-claude-fable-5-and-mythos-5-with-major-gains-in-coding-and-science/">The Decoder: Claude Fable 5 and Mythos 5 &mdash; major gains in coding and science</a></li>
+      <li><a href="https://sherwood.news/tech/anthropic-releases-claude-fable-5-a-locked-down-safer-version-of-mythos/">Sherwood News: Anthropic releases Claude Fable 5, a locked-down, safer version of Mythos</a></li>
+      <li><a href="https://www.heise.de/en/news/Anthropic-releases-Claude-Mythos-5-as-Fable-5-with-restrictions-11326644.html">Heise Online: Anthropic releases Claude Mythos 5 as Fable 5 with restrictions</a></li>
+      <li><a href="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-rolls-out-claude-fable-5-but-its-available-for-a-limited-time/">BleepingComputer: Anthropic rolls out Claude Fable 5, but it's available for a limited time</a></li>
+    </ul>
+  </article>
+
+  <h2>Platforms &amp; Distribution</h2>
+
+  <article>
+    <h3><span class="tag">Apple</span>WWDC 2026: Siri rebuilt on a custom 1.2&nbsp;T-parameter Gemini; Claude and ChatGPT become first-class &ldquo;Extensions&rdquo;</h3>
+    <div class="byline">8 June 2026 (Monday keynote) &middot; Primary source: Apple Newsroom / Apple Developer / Craig Federighi remarks</div>
+    <p>
+      Apple's <strong>WWDC 2026</strong> keynote in Cupertino on Monday 8 June ended a two-year speculation cycle. The rebuilt <strong>Siri</strong> &mdash; shipping in <strong>iOS 27, iPadOS 27, and macOS 27</strong> &mdash; runs on a <strong>custom 1.2&nbsp;trillion-parameter Google Gemini</strong> model trained for Apple and served through Apple's <strong>Private Cloud Compute (PCC)</strong>. Multiple outlets report Apple is paying <strong>~$1 B / year</strong> for the arrangement. The 2026 wrinkle is that PCC now runs on <strong>NVIDIA Blackwell GPUs hosted inside Google Cloud</strong>, with Apple's same end-to-end data-handling guarantees layered on top &mdash; Apple's framing is that Google can see <em>traffic shape</em> but not <em>content</em>. The second, arguably bigger, announcement is <strong>Siri Extensions</strong>: a new framework that lets users route queries to <strong>Claude, ChatGPT, or Gemini</strong> as first-class targets from inside Siri itself, with a redesigned standalone Siri app that mirrors ChatGPT / Claude / Gemini's chat UI and adds an "Ask Siri" text bar. For Apple this is a structural concession &mdash; the OS no longer arbitrates a single LLM &mdash; and for Anthropic it is the biggest distribution win in the company's history: hundreds of millions of iPhone users will be one toggle away from Claude. Apple separately unveiled a refreshed <strong>Apple Foundation Models</strong> family for on-device tasks, but the cloud reasoning surface is now Gemini-first by default.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/">Apple Newsroom: Apple unveils next generation of Apple Intelligence, Siri AI, and more</a> (primary)</li>
+      <li><a href="https://developer.apple.com/wwdc26/">Apple Developer: WWDC26</a> (primary)</li>
+      <li><a href="https://9to5mac.com/2026/06/08/craig-federighi-details-apples-collaboration-with-google-for-siri-ai-in-ios-27/">9to5Mac: Craig Federighi details Apple's collaboration with Google for Siri AI in iOS 27</a></li>
+      <li><a href="https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/">TechCrunch: WWDC 2026 &mdash; everything announced on Siri AI, iOS 27, Apple Intelligence</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/08/apple-wwdc-2026-live-updates.html">CNBC: Apple makes its big Siri AI reveal, changes Liquid Glass and more</a></li>
+      <li><a href="https://mlq.ai/news/apple-rebuilds-siri-on-google-gemini-models-and-nvidia-blackwell-gpus-in-landmark-wwdc-partnership/">MLQ News: Apple rebuilds Siri on Google Gemini and NVIDIA Blackwell GPUs</a></li>
+      <li><a href="https://thenextweb.com/news/apple-siri-google-gemini-nvidia-privacy-wwdc">TNW: Apple rebuilds Siri on Google AI and Nvidia chips at WWDC</a></li>
+      <li><a href="https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/">MacRumors: Apple reveals new AI architecture built around Google Gemini models</a></li>
+    </ul>
+  </article>
+
+  <h2>Capital Markets &mdash; The IPO Window Opens</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Confidential S-1 filed 1 June after closing a $65&nbsp;B Series H at $965&nbsp;B post-money</h3>
+    <div class="byline">28 May (Series H close) &middot; 1 June 2026 (S-1) &middot; Primary source: Anthropic Newsroom / SEC EDGAR (confidential)</div>
+    <p>
+      Anthropic confirmed two distinct corporate events in the past ten days that materially update last cycle's IPO reporting. First, on <strong>Thursday 28 May</strong>, Anthropic closed a <strong>$65 B Series H</strong> at a <strong>$965 B post-money valuation</strong> &mdash; not the ~$30 B Series G at $900 B that was the reported number heading into the close. Co-leads: <strong>Altimeter, Dragoneer, Greenoaks, Sequoia</strong>; co-investors include <strong>Capital Group, Coatue, D1, GIC, ICONIQ, XN</strong>, plus <strong>$15 B</strong> of previously-committed hyperscaler money (Amazon at $5 B). Strategic infra investors include <strong>Micron, Samsung and SK hynix</strong> &mdash; the first time the three top-tier memory vendors all sit on the same AI cap table. Second, on <strong>Monday 1 June</strong>, Anthropic confidentially submitted a draft <strong>Form S-1</strong> to the SEC, formally beginning the regulatory review process. Anthropic's own statement: <em>"This gives us the option to go public after the SEC completes its review&hellip;The proposed initial public offering will depend on market conditions and other factors."</em> Run-rate revenue: <strong>~$47 B</strong> as of early May (up from ~$10 B last year). The combined picture &mdash; nearly-$1&nbsp;T private valuation, a regulator-reviewed S-1 in hand, an October 2026 listing window flagged previously by Bloomberg &mdash; makes Anthropic, not OpenAI, the most advanced AI listing on the calendar.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/news/series-h">Anthropic Newsroom: Anthropic raises $65 B in Series H funding at $965 B post-money valuation</a> (primary)</li>
+      <li><a href="https://www.anthropic.com/news/confidential-draft-s1-sec">Anthropic Newsroom: Anthropic confidentially submits draft S-1 to the SEC</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html">CNBC: Anthropic confidentially files IPO prospectus with SEC</a></li>
+      <li><a href="https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/">TechCrunch: Anthropic files to go public</a></li>
+      <li><a href="https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/">TechCrunch: Anthropic raises $65 B, nears $1 T valuation ahead of IPO (28 May)</a></li>
+      <li><a href="https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html">CNBC: Anthropic tops OpenAI as most valuable AI startup, nears $1 T valuation</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>Publicly acknowledges its own confidential S-1; SpaceX prices a $1.77&nbsp;T Nasdaq IPO for Friday</h3>
+    <div class="byline">8 June 2026 (OpenAI) &middot; 12 June (SpaceX listing) &middot; Primary source: OpenAI blog / CNBC / Reuters</div>
+    <p>
+      <strong>OpenAI</strong> on <strong>Monday 8 June</strong> publicly acknowledged its previously-confidential <strong>S-1</strong> draft (the filing itself dates to 22 May). The company's note &mdash; <em>"We have not decided on timing yet; it may be a while because there are things we want to do that are likely easier as a private company"</em> &mdash; is the first official confirmation from the company since the filing leaked. <strong>Goldman Sachs, Morgan Stanley, and JPMorgan</strong> are lead underwriters; analyst expectations for the listing valuation are <strong>$852 B&ndash;$1&nbsp;T+</strong>, with a target window <em>as early as September 2026</em>. Stacked next to the Anthropic S-1, the pair are now mechanically required to publish full financials at least 15 days before pricing &mdash; making Q3 2026 the most consequential earnings disclosure window in the field's history. Three days from now (<strong>Friday 12 June</strong>), <strong>SpaceX</strong> prices its own Nasdaq listing under ticker <strong>SPCX</strong> at a fixed <strong>$135 / share</strong>, selling <strong>555.6 M</strong> primary shares for a <strong>~$75 B raise</strong> at a <strong>$1.77 T</strong> valuation &mdash; <em>triple</em> the size of Alibaba's record. <strong>Goldman Sachs</strong> projects <strong>~$160 B</strong> in 2026 IPO proceeds (a 4&times; jump on 2025) driven almost entirely by the SpaceX / Anthropic / OpenAI trio. The AI cohort is now the dominant variable in the public-markets calendar for the back half of the year.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/openai-submits-confidential-s-1/">OpenAI: Confidential submission of draft S-1 to the SEC</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/06/08/openai-confidentially-files-for-ipo-prepping-wall-street-for-ai-debut.html">CNBC: OpenAI confidentially files for IPO, prepping Wall Street for mega AI debut</a></li>
+      <li><a href="https://www.cbsnews.com/news/openai-files-confidential-initial-public-offering/">CBS News: OpenAI says it filed confidential IPO as it positions itself for AI arms race</a></li>
+      <li><a href="https://www.bloomberg.com/news/articles/2026-06-09/openai-and-anthropic-ipos-will-put-ai-enthusiasm-to-the-test">Bloomberg: OpenAI and Anthropic IPOs will put AI enthusiasm to the test</a></li>
+      <li><a href="https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html">CNBC: SpaceX targets fixed $135 IPO price for roadshow (3 June)</a></li>
+      <li><a href="https://www.heygotrade.com/en/news/spacex-ipo-177-trillion-valuation-2026-ipo-wave/">HeyGoTrade: SpaceX IPO 12 June targets $1.77 T valuation</a></li>
+    </ul>
+  </article>
+
+  <h2>Frontier Models &amp; Open Weights</h2>
+
+  <article>
+    <h3><span class="tag">Microsoft</span>Build 2026: seven new in-house MAI models, including MAI-Thinking-1 trained without any OpenAI distillation</h3>
+    <div class="byline">2 June 2026 &middot; Primary source: Microsoft AI Newsroom / Build 2026 keynote</div>
+    <p>
+      <strong>Microsoft AI</strong> used the <strong>Build 2026</strong> opening keynote on <strong>Tuesday 2 June</strong> to ship <strong>seven new in-house MAI models</strong> simultaneously: <strong>MAI-Thinking-1, MAI-Code-1-Flash, MAI-Image-2.5, MAI-Image-2.5 Flash, MAI-Transcribe-1.5, MAI-Voice-2,</strong> and <strong>MAI-Voice-2-Flash</strong>. The headline model is <strong>MAI-Thinking-1</strong>, Microsoft's first reasoning model, with <strong>35 B active parameters</strong>, a <strong>256 K-token context</strong>, and an explicit claim that the model was <em>trained from scratch on clean, commercially-licensed data with no distillation from OpenAI</em> &mdash; the cleanest public separation Microsoft has drawn from its partner. Mustafa Suleyman's framing &mdash; <em>"long-term self-sufficiency"</em> &mdash; was paired with a new <strong>Microsoft AI / Mayo Clinic</strong> collaboration to co-develop a frontier healthcare model on Mayo's de-identified longitudinal clinical data. Inference economics matter: the MAI-Code-1-Flash + MAI-Voice-2-Flash pair are explicitly priced and architected for cheap, high-volume agentic loops inside Copilot Studio. For a company that has spent more than $13 B on OpenAI to date, shipping seven models the same week it must allow OpenAI's S-1 to surface is a deliberate diversification signal to enterprise buyers and to the market.
+    </p>
+    <ul class="sources">
+      <li><a href="https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/">Microsoft AI: Building a hill-climbing machine &mdash; launching seven new MAI models</a> (primary)</li>
+      <li><a href="https://microsoft.ai/news/microsoft-build-2026-mai-keynote-transcript/">Microsoft AI: Build 2026 MAI keynote transcript</a> (primary)</li>
+      <li><a href="https://blogs.microsoft.com/blog/2026/06/02/microsoft-build-2026-be-yourself-at-work/">Microsoft Official Blog: Build 2026 &mdash; Be yourself at work</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html">CNBC: Microsoft unveils new AI models to lessen reliance on OpenAI, lower costs</a></li>
+      <li><a href="https://www.geekwire.com/2026/microsoft-unveils-seven-homegrown-ai-models-in-bid-for-long-term-self-sufficiency/">GeekWire: Microsoft unveils seven homegrown AI models</a></li>
+      <li><a href="https://enterprisedna.co/resources/news/microsoft-build-2026-mai-models-enterprise-ai/">Enterprise DNA: Microsoft launches 7 homegrown AI models at Build 2026</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">MiniMax</span>MiniMax M3: the first open-weight model to combine frontier coding, 1&nbsp;M context, and native multimodality</h3>
+    <div class="byline">1 June 2026 &middot; Primary source: MiniMax Research</div>
+    <p>
+      Shanghai-based <strong>MiniMax</strong> released <strong>MiniMax M3</strong> on <strong>1 June</strong> via API and the MiniMax Agent surface, framed as <em>the first open-weight model to combine frontier-tier coding, a 1 M-token context window, and native multimodal computer-use</em>. The architectural novelty is <strong>MSA (MiniMax Sparse Attention)</strong>, an attention variant designed to push effective context to 1 M tokens without quadratic cost. Self-reported numbers on <strong>SWE-Bench Pro</strong>: <strong>59.0%</strong>, edging GPT-5.5 (58.6%), beating Gemini 3.1 Pro (54.2%), and trailing Claude Opus 4.7 (64.3%) &mdash; with the obvious caveat that Opus 4.8's <strong>69.2%</strong> on the same benchmark (released after M3's eval window) remains the public leader. Two caveats are worth flagging: (1) <em>the model is "open-weight" in intent</em> &mdash; the actual weights and technical report were still pending public release as of 9 June; and (2) every benchmark was produced on MiniMax's own infrastructure with scaffolding it chose (largely <em>Claude Code</em>), so the headline numbers await independent reproduction. Even with those caveats, M3 collapses one of the remaining gaps between proprietary and open frontiers: an open-weight stack that <em>plausibly</em> matches GPT-5.5 on competitive coding, at <strong>5&ndash;10% of the per-token cost</strong>, is a meaningful pressure point on the closed labs' inference pricing.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.minimax.io/blog/minimax-m3">MiniMax Research: MiniMax M3 &mdash; frontier coding, 1 M context, native multimodality</a> (primary)</li>
+      <li><a href="https://venturebeat.com/technology/minimax-m3-debuts-eclipsing-gpt-5-5-and-gemini-3-1-pro-on-key-benchmark-performance-for-just-5-10-of-the-cost">VentureBeat: MiniMax M3 debuts, eclipsing GPT-5.5 and Gemini 3.1 Pro at 5&ndash;10% of the cost</a></li>
+      <li><a href="https://the-decoder.com/minimax-m3-open-weight-model-with-a-million-token-context-challenges-proprietary-leaders/">The Decoder: Open-weight model with a million-token context challenges proprietary leaders</a></li>
+      <li><a href="https://apidog.com/blog/what-is-minimax-m3/">APIdog: What is MiniMax M3 &mdash; the first open-weight frontier coding model</a></li>
+      <li><a href="https://www.techtimes.com/articles/317532/20260601/minimax-m3-open-weight-coding-model-frontier-claims-unverified-benchmarks.htm">TechTimes: Open-weight coding model &mdash; frontier claims, unverified benchmarks</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Platforms &amp; SDKs</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Five-day countdown: claude-sonnet-4-20250514 and claude-opus-4-20250514 retire 15 June</h3>
+    <div class="byline">Hard deadline 15 June 2026 &middot; Primary source: Claude Platform docs (model deprecations)</div>
+    <p>
+      Anthropic's previously-announced API deprecation for <strong>Claude Sonnet 4</strong> (<code>claude-sonnet-4-20250514</code>) and <strong>Claude Opus 4</strong> (<code>claude-opus-4-20250514</code>) goes live on <strong>Monday 15 June</strong> &mdash; <strong>five days from this digest</strong>. After that date, API calls referencing those exact model IDs <em>fail</em>: there is <em>no automatic fallback</em>. Anthropic's recommended migration path is a one-line model-string swap to <strong>Claude Sonnet 4.6</strong> and <strong>Claude Opus 4.8</strong>; prompting conventions, tool-use schemas, and JSON output formats remain stable across the 4.x family, so most calls migrate without prompt rewrites. Production-system owners should grep for the literal string <code>20250514</code> across their codebases, CI configuration, and any pinned LangChain / LlamaIndex / Bedrock job definitions today. Note: this deadline is unrelated to the <em>Claude Fable 5 / Mythos 5</em> release (different lineage); Fable 5 ships under its own model ID and pricing tier. Combined with the <strong>Claude Code v2.1.169</strong> CLI release on 8 June (new <code>--safe-mode</code> flag, <code>/cd</code> command, <code>disableBundledSkills</code> setting), this is a high-tempo week for any team running on the Claude API or the agentic SDK surface.
+    </p>
+    <ul class="sources">
+      <li><a href="https://platform.claude.com/docs/en/about-claude/model-deprecations">Claude Platform docs: Model deprecations</a> (primary)</li>
+      <li><a href="https://platform.claude.com/docs/en/release-notes/overview">Claude Platform docs: Release notes overview</a> (primary)</li>
+      <li><a href="https://code.claude.com/docs/en/changelog">Claude Code docs: Changelog</a> (primary)</li>
+      <li><a href="https://github.com/anthropics/claude-code/releases">GitHub: anthropics/claude-code releases</a> (primary)</li>
+      <li><a href="https://www.mindstudio.ai/blog/claude-sonnet-4-opus-4-deprecation-migration-guide">MindStudio: Claude Sonnet 4 and Opus 4 deprecation &mdash; what you need to do before June 15</a></li>
+      <li><a href="https://dev.classmethod.jp/en/articles/20260609-cc-updates-v2-1-169/">Classmethod DevelopersIO: Claude Code v2.1.169 major updates (9 June)</a></li>
+    </ul>
+  </article>
+
+  <h2>Policy &amp; Regulatory Signals</h2>
+
+  <article>
+    <h3><span class="tag">US Congress</span>Bipartisan &ldquo;Great American AI Act&rdquo; discussion draft would preempt state AI law for three years</h3>
+    <div class="byline">4 June 2026 &middot; Primary source: Office of Rep. Jay Obernolte (R-CA) &amp; Rep. Lori Trahan (D-MA) joint release</div>
+    <p>
+      Reps. <strong>Jay Obernolte</strong> (R-CA) and <strong>Lori Trahan</strong> (D-MA) released a bipartisan <strong>discussion draft</strong> of the <strong>Great American AI Act</strong> on <strong>Wednesday 4 June</strong>, the most concrete federal-framework proposal yet from the House. Four load-bearing provisions: (1) a <strong>three-year preemption of state AI laws</strong> &mdash; the same mechanism a federal court already used in April to pause Colorado's now-revised act &mdash; explicitly designed to remove state-by-state fragmentation; (2) statutory codification of <strong>NIST's Center for AI Standards and Innovation</strong> at <strong>$100 M / year for FY 2027&ndash;2029</strong>; (3) frontier-developer duties for any lab with <strong>&gt;$500 M</strong> in prior-year revenue (mandatory public frontier-AI safety frameworks; <strong>$1 M per day</strong> in liability for safety-requirement violations); and (4) mandatory engagement of an NIST-licensed <strong>Independent Verification Organization (IVO)</strong> running semi-annual compliance verifications. For frontier labs, this is the first federal proposal that explicitly imports the EU-style <em>"systemic risk" obligation</em> into US law via a US-only licensing layer. For state attorneys general, it directly conflicts with bills already moving in California and New York. The draft is open for stakeholder feedback before formal introduction, but its bipartisan posture &mdash; on a topic that has been almost uniformly partisan since 2024 &mdash; makes it the most realistic federal AI vehicle of the cycle.
+    </p>
+    <ul class="sources">
+      <li><a href="https://obernolte.house.gov/media/press-releases/obernolte-trahan-release-discussion-draft-great-american-ai-act">Rep. Jay Obernolte: Obernolte, Trahan release discussion draft of the Great American AI Act</a> (primary)</li>
+      <li><a href="https://thehill.com/policy/technology/5909898-national-ai-framework-draft/">The Hill: House lawmakers introduce draft for national AI framework</a></li>
+      <li><a href="https://www.axios.com/2026/06/04/house-draft-bill-regulate-ai">Axios: What's inside the House draft bill to regulate AI</a></li>
+      <li><a href="https://fedscoop.com/bipartisan-great-american-ai-act-draft-proposes-new-federal-ai-governance-framework/">FedScoop: Bipartisan 'Great American AI Act' draft proposes federal AI governance framework</a></li>
+      <li><a href="https://rollcall.com/2026/06/04/bipartisan-ai-draft-proposes-three-year-preemption-of-state-laws/">Roll Call: Bipartisan AI draft proposes three-year preemption of state laws</a></li>
+      <li><a href="https://iapp.org/news/a/a-view-from-dc-a-bipartisan-blockbuster-bill-on-ai">IAPP: A view from DC &mdash; a bipartisan blockbuster bill on AI</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This 10 June digest is the first edition since 28 May (a 13-day gap) and deliberately covers material the previous three editions did not. It does <em>not</em> re-cover Anthropic's previously-reported ~$30 B "Series G at $900 B" framing &mdash; the actual close on 28 May was a <strong>$65 B Series H at $965 B</strong>, materially larger and with different participants &mdash; nor the 22 May confidential OpenAI S-1 (covered 25 May), the Vatican encyclical, the Karpathy hire, Project Glasswing's first-month update, OpenRouter's $113 M, the Fujitsu&ndash;Claude alliance, Hassabis's AGI estimate, Claude Code v2.1.152, the EU AI Act Omnibus, or the Altman&ndash;Amodei jobs-apocalypse walk-back. The 10 June lens is: <strong>Claude Fable 5 / Mythos 5</strong> (Anthropic primary source, 9 June), the <strong>Apple WWDC 2026 Gemini-Siri partnership and the new Siri Extensions framework</strong> (Apple Newsroom + 9to5Mac primary, 8 June), the <strong>Anthropic Series H close and confidential S-1</strong> (Anthropic Newsroom primary, 28 May / 1 June), the <strong>OpenAI public S-1 acknowledgment</strong> (OpenAI blog primary, 8 June) and the <strong>SpaceX 12 June listing</strong>, the <strong>Microsoft Build 2026 MAI-7 launch and MAI-Thinking-1</strong> (Microsoft AI primary, 2 June), <strong>MiniMax M3</strong> (MiniMax Research primary, 1 June), the imminent <strong>Claude Sonnet 4 / Opus 4 API deprecation</strong> (Claude Platform docs primary, hard date 15 June), and the <strong>Great American AI Act</strong> discussion draft (Obernolte/Trahan office primary, 4 June). Every article carries at least one primary source (vendor blog, SEC filing, agency release, or congressional office) plus corroborating coverage from independent outlets; lower-quality signals were excluded unless triangulated against at least two independent reports.</p>
+    <p>Generated 10 June 2026.</p>
+  </footer>
+</body>
+</html>
