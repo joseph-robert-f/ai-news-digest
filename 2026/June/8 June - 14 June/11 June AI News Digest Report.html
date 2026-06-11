@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 11 June 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+    code {
+      background: #f1f3f5;
+      padding: 0.05rem 0.3rem;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 11 June 2026</h1>
+    <div class="meta">Week of 8&ndash;14 June 2026 &middot; Coverage window: 10&ndash;11 June (last ~24&ndash;36 hours)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> On Wednesday 10 June the developer stack took the largest single-day step toward autonomous coding agents to date. <strong>Microsoft</strong> shipped <strong>Visual Studio Code 1.124</strong>, flipping <strong>Copilot Autopilot</strong> on by <em>default</em> and replacing fixed iteration rules with a small utility model that decides when an agent is &ldquo;done.&rdquo; The same day, <strong>OpenAI and Oracle</strong> announced that Oracle customers can now spend <strong>OCI Universal Credits</strong> directly against <strong>OpenAI models and Codex</strong> &mdash; the first time frontier-model access ships under a hyperscaler's existing enterprise procurement contract. The capital side mirrored the shift: <strong>TensorWave</strong> closed a <strong>$350 M Series B at a $1.55 B valuation</strong> co-led by <strong>AMD Ventures and Magnetar</strong> to expand an <em>NVIDIA-free</em> AI cloud built on Instinct <strong>MI355X</strong>; <strong>Generalist AI</strong>'s <strong>$400 M / $2 B</strong> robot-foundation-model round (closing this week) gave physical AI its first independent unicorn outside the warehouse incumbents; and Thursday 11 June saw <strong>SpaceX</strong> price the largest IPO in market history at <strong>$135 / $1.77 T</strong> ahead of Friday's Nasdaq debut. Backdrop: U.S. AI regulation pivoted from voluntary review (Trump executive order, 2 June) toward the first credible bipartisan federal framework (Obernolte&ndash;Trahan draft, 4 June), with a <em>Christian Science Monitor</em> long-read on Wednesday 10 June marking the end of the &ldquo;hands-off&rdquo; era. And on the frontier-model layer, <strong>Anthropic</strong>'s 9 June release of <strong>Claude Fable 5</strong> &mdash; identical weights to the restricted Mythos 5, with hard safety classifiers that fall back to Opus 4.8 &mdash; is now the lowest-priced million-token coding model in the public catalog.
+  </div>
+
+  <h2>Top Story &mdash; Developer Agents Cross the Default-On Line</h2>
+
+  <article>
+    <h3><span class="tag">Microsoft</span>VS Code 1.124 ships Copilot Autopilot <em>on by default</em>, with a utility model deciding when a task is &ldquo;done&rdquo;</h3>
+    <div class="byline">10 June 2026 &middot; Primary source: code.visualstudio.com release notes / Microsoft Build engineering blog</div>
+    <p>
+      Microsoft released <strong>Visual Studio Code 1.124</strong> on Wednesday 10 June. The headline change is that <strong>Copilot Autopilot</strong> &mdash; the chat permission level that lets agents take initiative and act without per-step user approval &mdash; is now <strong>enabled by default</strong> for all users, having shipped behind a feature flag in 1.123. The agent loop itself was rebuilt: rather than the previous fixed &ldquo;finish-when-no-more-edits&rdquo; rule, a small utility model now reads the chat transcript and judges whether the task is genuinely complete, with a hard cap of <strong>three iterations</strong> in the <em>Advanced Autopilot</em> mode before the loop terminates and returns control to the developer. The release also adds the new <strong>Agents window</strong>, a dedicated companion surface for exploring, iterating on, and reviewing agent sessions across projects and machines; <strong>background sessions</strong> so a developer can dispatch a request and immediately compose the next; keyboard-driven <strong>session navigation</strong> (search, jump, step); and a searchable <strong>browser history</strong> inside the integrated browser. The practical implication for engineering orgs: every VS Code installation that upgrades this week now ships with a multi-step autonomous coding agent enabled out-of-the-box, with vendor-side guardrails replacing user-side micromanagement as the default trust model. Coverage in <em>Neowin</em>, <em>TechTimes</em>, and Windows Report converges on the same characterization &mdash; the autopilot-by-default flip, not any individual feature, is the news.
+    </p>
+    <ul class="sources">
+      <li><a href="https://code.visualstudio.com/updates/v1_124">code.visualstudio.com: Visual Studio Code 1.124 release notes (10 June)</a> (primary)</li>
+      <li><a href="https://github.com/microsoft/vscode/releases">microsoft/vscode releases on GitHub</a> (primary)</li>
+      <li><a href="https://www.neowin.net/news/microsoft-releases-visual-studio-code-1124-with-smarter-autonomous-ai-agents/">Neowin: Microsoft releases Visual Studio Code 1.124 with smarter autonomous AI agents</a></li>
+      <li><a href="https://www.techtimes.com/articles/318164/20260610/vs-code-1124-enables-copilot-autopilot-default-advanced-mode-caps-autonomous-loops-three.htm">TechTimes: VS Code 1.124 enables Copilot Autopilot by default; advanced mode caps autonomous loops at three</a></li>
+      <li><a href="https://windowsreport.com/visual-studio-code-adds-more-autonomous-ai-workflows-and-cross-device-agent-sessions/">Windows Report: VS Code adds more autonomous AI workflows and cross-device agent sessions</a></li>
+      <li><a href="https://www.ntcompatible.com/story/visual-studio-code-1124-smarter-agent-sessions-and-smoother-ai-workflows">ntCompatible: VS Code 1.124 &mdash; smarter agent sessions and smoother AI workflows</a></li>
+      <li><a href="https://releasebot.io/updates/microsoft/visual-studio-code">Releasebot: Visual Studio Code &mdash; June 2026 updates</a></li>
+    </ul>
+  </article>
+
+  <h2>Enterprise AI &amp; Cloud Procurement</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>OpenAI models and Codex now spendable against existing Oracle Cloud commitments</h3>
+    <div class="byline">10 June 2026 &middot; Primary source: openai.com/index/openai-on-oracle-cloud (linked via OpenAI Newsroom)</div>
+    <p>
+      <strong>OpenAI</strong> and <strong>Oracle</strong> announced on Wednesday 10 June that Oracle customers can <strong>apply eligible Oracle Universal Credits</strong> directly toward <strong>OpenAI models and Codex</strong> through Oracle Cloud Infrastructure (OCI). The structural significance &mdash; underscored across <em>StartupHub</em>, <em>PublicNow</em>, and OpenAI's own newsroom post &mdash; is that this is the first time a frontier model has been wired into a hyperscaler's existing enterprise procurement contract, so AI spend rolls up under the customer's Oracle commitment rather than requiring a separate OpenAI master agreement, separate procurement review, and separate billing. OpenAI's release frames the use cases as building AI applications, analyzing complex information, automating workflows, and creating new customer and employee experiences. Oracle gains a major draw for renewals from accounts that were previously routing AI workloads to AWS Bedrock or Azure OpenAI. OpenAI gains incremental access to Oracle's enterprise base &mdash; particularly Oracle ERP/HCM accounts in regulated industries &mdash; without rebuilding a procurement motion. Availability is &ldquo;in the coming weeks&rdquo;; Oracle sales reps are the point of contact for timing. Read in tandem with last month's <strong>OpenAI &mdash; AWS GA</strong> announcement (Memeburn, May), the message is that OpenAI is now distributed under all three major-hyperscaler procurement umbrellas at once &mdash; the inverse of the &ldquo;Azure-only&rdquo; era that defined 2023&ndash;2024.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/openai-on-oracle-cloud/">OpenAI: Access OpenAI models and Codex through your Oracle cloud commitment (10 June)</a> (primary)</li>
+      <li><a href="https://openai.com/news/">OpenAI Newsroom (index)</a> (primary)</li>
+      <li><a href="https://www.publicnow.com/view/64AC5D5092EAE1619643FD45B8EAAF84A06BCB21">PublicNow / OpenAI Inc: Access OpenAI models and Codex through your Oracle cloud commitment</a></li>
+      <li><a href="https://www.startuphub.ai/ai-news/artificial-intelligence/2026/openai-teams-up-with-oracle-cloud">StartupHub: OpenAI teams up with Oracle Cloud</a></li>
+      <li><a href="https://article.wn.com/view/2026/06/11/Access_OpenAI_models_and_Codex_through_your_Oracle_cloud_com/">Worldnews.com (11 June): Access OpenAI models and Codex through your Oracle cloud commitment</a></li>
+      <li><a href="https://memeburn.com/openai-models-and-codex-are-now-generally-available-on-aws/">Memeburn (May 2026): OpenAI models and Codex generally available on AWS</a> (corroborating context)</li>
+    </ul>
+  </article>
+
+  <h2>Capital, Infrastructure &amp; Physical AI</h2>
+
+  <article>
+    <h3><span class="tag">TensorWave</span>$350 M Series B at $1.55 B as AMD funds an <em>NVIDIA-free</em> AI cloud built on MI355X</h3>
+    <div class="byline">10 June 2026 &middot; Primary source: TensorWave / Business Wire / Morningstar wire</div>
+    <p>
+      <strong>TensorWave</strong>, the Las Vegas-based AI cloud built exclusively on AMD Instinct accelerators, closed a <strong>$350 M Series B</strong> on Wednesday 10 June at a <strong>$1.55 B post-money valuation</strong>. The round is <strong>co-led by AMD Ventures and Magnetar Capital</strong>, with continued participation from <strong>Maverick Silicon, Nexus Venture Partners, and Western Frontier</strong>. The mark <strong>nearly quadruples</strong> the company's valuation since its ~$400 M Series A roughly twelve months ago, and brings total funding to approximately <strong>$493 M</strong> since the 2023 founding. Capital is earmarked for expanding TensorWave's global data-center footprint, including deployment of <strong>next-generation AMD Instinct MI355X GPU clusters</strong> targeted at memory-intensive workloads: large-model training, high-throughput inference, and generative AI applications. The political read of the round is unambiguous: <strong>AMD is funding a direct NVIDIA-CUDA alternative</strong> at the cloud layer with cash on its own balance sheet, a strategic signal materially stronger than ROCm marketing. The round lands in the same week the MI355X posted competitive single-node MLPerf v6.0 results (covered in the 27 May digest) and gives independent developers a non-NVIDIA destination for Mythos-class inference. Coverage in <em>SiliconANGLE</em>, <em>The Next Web</em>, the <em>Las Vegas Review-Journal</em>, and the <em>WSJ</em>-via-Investing.com converges on the same headline numbers.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.morningstar.com/news/business-wire/20260610650010/tensorwave-raises-350-million-series-b-at-155b-valuation-to-expand-global-amd-powered-ai-infrastructure">Business Wire via Morningstar: TensorWave raises $350M Series B at $1.55B to expand global AMD-powered AI infrastructure</a> (primary)</li>
+      <li><a href="https://www.hpcwire.com/aiwire/2026/06/10/tensorwave-raises-350m-series-b-at-1-55b-valuation-to-expand-global-amd-powered-ai-infrastructure/">AIwire / HPCwire: TensorWave raises $350M Series B at $1.55B (10 June)</a></li>
+      <li><a href="https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/">SiliconANGLE: TensorWave raises $350M to help break NVIDIA's AI chip monopoly</a></li>
+      <li><a href="https://thenextweb.com/news/tensorwave-350m-series-b-amd-nvidia-rival">The Next Web: TensorWave raises $350M as AMD funds its NVIDIA rival</a></li>
+      <li><a href="https://www.reviewjournal.com/business/las-vegas-ai-startup-secures-record-350m-to-expand-data-center-footprint-3836337/">Las Vegas Review-Journal: TensorWave secures record $350M to expand data-center footprint</a></li>
+      <li><a href="https://www.investing.com/news/stock-market-news/tensorwave-valuation-hits-155-billion-on-amd-partnership--wsj-93CH-4735745">WSJ via Investing.com: TensorWave valuation hits $1.55B on AMD partnership</a></li>
+      <li><a href="https://www.finsmes.com/2026/06/tensorwave-raises-350m-in-series-b-funding-at-1-55b-valuation.html">FinSMEs: TensorWave raises $350M Series B at $1.55B valuation</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Generalist AI</span>$400 M at $2 B for &ldquo;GEN-1&rdquo; robot foundation models &mdash; physical AGI gets its first independent unicorn</h3>
+    <div class="byline">Round announced 4 June, closing this week &middot; Primary source: Bloomberg / SiliconANGLE / The Robot Report</div>
+    <p>
+      <strong>Generalist AI</strong>, the San Francisco robotics startup founded by ex-Google DeepMind engineers <strong>Pete Florence</strong> and <strong>Andy Zeng</strong>, closed a <strong>$400 M round at a $2 B valuation</strong>, with the wire-and-sign window centered on this week and the announcement formally circulating across <em>Bloomberg</em>, <em>SiliconANGLE</em>, <em>The Robot Report</em>, and <em>Humanoids Daily</em>. The round is led by <strong>Radical Ventures</strong>, with participation from <strong>8VC, Union Square Ventures, Hanabi Capital, and Norwest</strong>, alongside existing backers <strong>NVIDIA's NVentures, Boldstart Ventures, Spark Capital, Bezos Expeditions, and NFDG</strong>. New angel investors include <strong>Fei-Fei Li</strong>, Xiaomi co-founder <strong>Bin Lin</strong>, and <strong>Naval Ravikant</strong>. The thesis is a single robot-hardware-agnostic foundation model &mdash; <strong>GEN-1</strong>, released April 2026 &mdash; that the company says reaches <strong>99% reliability</strong> on dexterous manipulation tasks and executes up to <strong>3&times; faster</strong> than the prior state-of-the-art. New capital funds expanded robot-learning models, physical data-collection infrastructure, compute, and commercial deployments. Total raised crosses <strong>$500 M</strong>. The distinguishing fact in the physical-AI cohort is that Generalist is <em>not</em> trying to also be a robot OEM (unlike Figure, 1X, Physical Intelligence's hardware-adjacent peers) &mdash; the company is selling a model that controls <em>any</em> robot, which is the cleanest test yet of whether the &ldquo;foundation-model-for-robotics&rdquo; thesis can stand alone as a software business.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.bloomberg.com/news/articles/2026-06-04/nvidia-backed-robotics-startup-generalist-ai-valued-at-2-billion">Bloomberg: NVIDIA-backed robotics startup Generalist AI valued at $2 billion</a> (primary)</li>
+      <li><a href="https://siliconangle.com/2026/06/04/generalist-ai-raises-400m-2b-valuation-build-general-intelligence-real-world/">SiliconANGLE: Generalist AI raises $400M at $2B valuation to build general intelligence for robotics</a></li>
+      <li><a href="https://www.therobotreport.com/generalist-raises-400m-to-scale-its-general-purpose-ai-models/">The Robot Report: Generalist raises $400M to scale its general-purpose AI models</a></li>
+      <li><a href="https://theaiinsider.tech/2026/06/04/generalist-ai-raises-400m-in-new-funding-to-develop-physical-agi/">The AI Insider: Generalist AI raises $400M in new funding to develop physical AGI</a></li>
+      <li><a href="https://www.humanoidsdaily.com/news/physical-ai-arms-race-accelerates-generalist-ai-secures-400m-to-scale-robot-learning">Humanoids Daily: Physical AI arms race accelerates &mdash; Generalist AI secures $400M to scale robot learning</a></li>
+      <li><a href="https://roboticsandautomationnews.com/2026/06/05/generalist-ai-raises-400-million-to-scale-robot-intelligence-platform/102307/">Robotics &amp; Automation News: Generalist AI raises $400M to accelerate robot foundation models</a></li>
+      <li><a href="https://www.finsmes.com/2026/06/generalist-ai-raises-400m-in-funding-at-2-billion-valuation.html">FinSMEs: Generalist AI raises $400M in funding at $2B valuation</a></li>
+    </ul>
+  </article>
+
+  <h2>Frontier Models &mdash; 48-Hour Backdrop</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Claude Fable 5 in public preview: same weights as Mythos 5, with safety classifiers that reroute high-risk queries to Opus 4.8</h3>
+    <div class="byline">9 June 2026 &middot; Primary source: anthropic.com/news/claude-fable-5-mythos-5</div>
+    <p>
+      <strong>Anthropic</strong> released <strong>Claude Fable 5</strong> on Tuesday 9 June &mdash; the public, broadly accessible counterpart to the restricted <strong>Claude Mythos 5</strong> that ran behind <strong>Project Glasswing</strong> since April (covered in the 27 May digest). The two models <em>share identical weights</em>; Fable 5 differs from Mythos 5 only in the addition of <strong>safety classifiers</strong> that detect high-risk queries (cybersecurity, biology, chemistry, distillation pathways) at inference time and <strong>reroute</strong> them to <strong>Claude Opus 4.8</strong>, which refuses or constrains the output. Anthropic reports the safeguards trigger in <em>under 5% of sessions</em> on average. Headline capabilities: <strong>1 M-token context window by default</strong> (up to 128 K output tokens), with a public benchmark sweep that places Fable 5 at or above frontier-leading scores on software-engineering, long-horizon agentic, and vision benchmarks. List price: <strong>$10 / M input tokens, $50 / M output tokens</strong> &mdash; the lowest publicly priced million-context coding model in the catalog. Anthropic is offering Fable 5 at no additional cost to Pro, Max, Team, and seat-based Enterprise plans <strong>through 22 June</strong>, transitioning to credits on 23 June. Customer evidence cited in Anthropic's own release: <strong>Stripe</strong> reports that Fable 5 executed a codebase-wide migration across a 50-million-line Ruby monolith in a single day &mdash; work the company estimated would otherwise have taken a team more than two months. Coverage at <em>TechCrunch</em> and <em>Yahoo Finance</em> frames the release as the natural follow-on to Anthropic's recent &ldquo;AI is becoming too dangerous&rdquo; messaging: Anthropic shipped its most capable public model <em>and</em> simultaneously articulated the strictest deployment-time guardrails of any frontier lab to date.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Anthropic: Claude Fable 5 and Claude Mythos 5</a> (primary)</li>
+      <li><a href="https://techcrunch.com/2026/06/09/anthropic-released-claude-fable-5-its-most-powerful-model-publicly-days-after-warning-ai-is-getting-too-dangerous/">TechCrunch: Anthropic releases Claude Fable, a version of Mythos, days after warning AI is becoming too dangerous</a></li>
+      <li><a href="https://finance.yahoo.com/markets/crypto/articles/anthropic-claude-mythos-launches-today-142844796.html">Yahoo Finance: Anthropic's Claude Fable 5 and Mythos 5 launch &mdash; what to know</a></li>
+      <li><a href="https://yellow.com/news/anthropic-fable-5-risky-queries">Yellow: Anthropic releases Claude Fable 5 with limits on risky AI queries</a></li>
+      <li><a href="https://www.investing.com/news/stock-market-news/anthropic-launches-claude-fable-5-model-with-new-safety-features-93CH-4733675">Investing.com: Anthropic launches Claude Fable 5 model with new safety features</a></li>
+      <li><a href="https://emergent.sh/learn/what-is-claude-fable-5">Emergent.sh: What is Claude Fable 5? Benchmarks, pricing, safety</a></li>
+    </ul>
+  </article>
+
+  <h2>Policy &amp; Regulatory Signals</h2>
+
+  <article>
+    <h3><span class="tag">US Policy</span>The hands-off era ends: Obernolte&ndash;Trahan bipartisan draft moves alongside Trump's 2 June executive order</h3>
+    <div class="byline">CSM analysis 10 June &middot; Trump EO 2 June &middot; Obernolte&ndash;Trahan draft 4 June</div>
+    <p>
+      The <em>Christian Science Monitor</em> on Wednesday 10 June published the first long-form treatment of what it calls the end of the <strong>&ldquo;hands-off&rdquo;</strong> period in U.S. federal AI oversight &mdash; an inflection that has been building across two events in early June. (1) On <strong>2 June</strong>, President <strong>Trump</strong> signed an executive order titled <em>Promoting Advanced Artificial Intelligence Innovation and Security</em> calling on major AI companies to <strong>voluntarily submit cutting-edge models for a 30-day government review</strong>, directing federal agencies to develop benchmarks assessing model <strong>cyber capabilities</strong>, and standing up an <strong>AI Cybersecurity Clearinghouse</strong> to share vulnerability information. The order also directs the executive branch to shore up its own security defenses against AI-enabled attack. (2) Two days later, on <strong>4 June</strong>, Republican Rep. <strong>Jay Obernolte</strong> (CA) and Democratic Rep. <strong>Lori Trahan</strong> (MA) introduced a <strong>bipartisan draft bill</strong> establishing a high-level federal framework: <strong>mandatory audits</strong> for the largest model developers, plus statutory protections for workers facing job displacement. The political read in the CSM piece is that the Trump EO and the Obernolte&ndash;Trahan bill are not in tension &mdash; they are an emerging two-track architecture: an executive-side voluntary-review-plus-cyber-clearinghouse regime, and a Congressional-side mandatory-audit regime, with state-level enforcement (Colorado's AI Act takes effect <strong>30 June</strong>; California's AI safety, whistleblower, and watermarking statutes are now law) filling in below. The May 28 digest's coverage of the EU AI Act Omnibus calendar described one half of a divergence; this week's U.S. activity is the other half &mdash; the U.S. federal layer is no longer simply absent.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.csmonitor.com/USA/Politics/2026/0610/artificial-intelligence-regulation-trump-congress">Christian Science Monitor (10 June): The hands-off era of AI oversight is ending &mdash; what comes next?</a> (primary analysis)</li>
+      <li><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">The White House: Promoting Advanced Artificial Intelligence Innovation and Security (2 June executive order)</a> (primary)</li>
+      <li><a href="https://www.npr.org/2026/06/02/nx-s1-5844347/ai-safety-trump-executive-order">NPR: Trump's new AI safety order seeks voluntary review of new models</a></li>
+      <li><a href="https://www.gtlaw.com/en/insights/2025/12/2026-outlook-artificial-intelligence">Greenberg Traurig: 2026 outlook &mdash; Artificial Intelligence (federal/state map)</a></li>
+      <li><a href="https://natlawreview.com/article/2026-outlook-artificial-intelligence">National Law Review: 2026 outlook &mdash; what 2025 regulations could mean</a></li>
+      <li><a href="https://www.kiteworks.com/cybersecurity-risk-management/ai-regulation-2026-business-compliance-guide/">Kiteworks: AI regulation 2026 &mdash; 10 critical compliance risks (federal-state convergence)</a></li>
+    </ul>
+  </article>
+
+  <h2>Software Engineering &amp; Supply-Chain Security</h2>
+
+  <article>
+    <h3><span class="tag">npm</span>Miasma worm second-wave fallout: &ldquo;Phantom Gyp&rdquo; abuses <code>binding.gyp</code> to bypass install-script monitoring</h3>
+    <div class="byline">Disclosed 1&ndash;3 June, with ongoing CI/CD fallout flagged this week &middot; Primary source: Microsoft Security Blog / StepSecurity</div>
+    <p>
+      The <strong>Miasma</strong> npm worm &mdash; a self-propagating credential-harvesting campaign built on the publicly released <strong>Mini Shai-Hulud</strong> codebase &mdash; remains the open supply-chain story this week as enterprises continue to audit blast radius. The initial wave on <strong>1 June</strong> compromised <strong>32 @redhat-cloud-services</strong> packages (~80,000&ndash;117,000 weekly downloads in scope) via unauthorized commits pushed to repositories in the <strong>RedHatInsights</strong> GitHub organization; the attack was traced to a <em>single compromised employee GitHub account</em> whose credentials had appeared in commercial infostealer logs as early as <strong>13 April</strong> &mdash; nearly seven weeks of dwell time before weaponization. On developer systems the malware exfiltrated SSH keys, CLI credentials, and browser / wallet data; in CI/CD it scraped GitHub Actions runner memory for secrets, escalated via passwordless sudo, and republished poisoned packages with forged SLSA provenance. The <strong>3 June</strong> second wave introduced &ldquo;<strong>Phantom Gyp</strong>&rdquo;: a <strong>157-byte <code>binding.gyp</code></strong> file that triggers code execution during <code>npm install</code> &mdash; <em>not</em> via the <code>preinstall</code> or <code>postinstall</code> lifecycle scripts that most install-time security tooling monitors. <strong>57 packages</strong> across <strong>286+ malicious versions</strong> were published in a rolling campaign lasting under two hours. The operational takeaway flagged by Microsoft Security, StepSecurity, Snyk, and Orca: install-script allow/deny lists are now structurally insufficient; <strong>build-graph monitoring</strong> and short-lived CI credentials are the minimum bar. Any environment that ran <code>npm install</code> against the affected scopes in the disclosure window should treat all reachable secrets as exposed.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.microsoft.com/en-us/security/blog/2026/06/02/preinstall-persistence-inside-red-hat-npm-miasma-credential-stealing-campaign/">Microsoft Security Blog (2 June): Preinstall to persistence &mdash; inside the Red Hat npm Miasma credential-stealing campaign</a> (primary)</li>
+      <li><a href="https://www.stepsecurity.io/blog/binding-gyp-npm-supply-chain-attack-spreads-like-worm">StepSecurity: Miasma npm supply-chain attack &mdash; self-spreading worm via Phantom Gyp</a> (primary)</li>
+      <li><a href="https://thehackernews.com/2026/06/ironworm-and-new-miasma-worm-variant.html">The Hacker News: IronWorm and new Miasma worm variant hit npm in supply-chain attacks</a></li>
+      <li><a href="https://snyk.io/blog/miasma-supply-chain-attack-malicious-code-redhat-cloud-services-npm-packages/">Snyk: Miasma attack hits Red Hat npm packages</a></li>
+      <li><a href="https://orca.security/resources/blog/red-hat-npm-supply-chain-attack/">Orca Security: Red Hat npm packages compromised in supply-chain attack spreading credential-stealing worm</a></li>
+      <li><a href="https://www.upwind.io/feed/miasma-npm-supply-chain-worm-redhat-credential-harvest">Upwind: Miasma &mdash; a worming npm supply-chain attack on Red Hat Cloud Services</a></li>
+      <li><a href="https://labs.cloudsecurityalliance.org/research/csa-research-note-miasma-npm-supply-chain-redhat-20260603-cs/">Cloud Security Alliance: CSA research note on Miasma npm supply-chain (3 June)</a></li>
+    </ul>
+  </article>
+
+  <h2>Markets Backdrop</h2>
+
+  <article>
+    <h3><span class="tag">SpaceX</span>Largest IPO in market history priced 11 June at $135 / $1.77 T; SPCX opens Nasdaq 12 June</h3>
+    <div class="byline">Pricing 11 June &middot; Trading opens 12 June &middot; Primary source: CNBC / SEC pricing &middot; Yahoo Finance</div>
+    <p>
+      Adjacent to but inseparable from the AI capital-formation backdrop: on Thursday <strong>11 June</strong>, <strong>SpaceX</strong> priced its IPO at <strong>$135 per share</strong>, selling <strong>555.6 million shares</strong> for total proceeds of approximately <strong>$75 B</strong> at an implied valuation of <strong>~$1.77 T</strong> &mdash; the <strong>largest IPO in market history</strong>. Trading opens on <strong>Nasdaq</strong> under ticker <strong>SPCX on Friday 12 June</strong>. Underwriters hold an option to purchase an additional <strong>83.33 M</strong> shares (~$11.2 B), and post-offering <strong>Elon Musk retains over 82% voting control</strong>. The relevance to this digest is the read-across to the rest of the AI cohort's market window: SpaceX's pricing crystallizes a sub-$2 T frontier-infrastructure mark in the same week that <strong>OpenAI</strong> filed its confidential S-1 (covered 25 May; public-filing confirmation 8 June) and <strong>Anthropic</strong>'s ~$30 B round officially closed (27&ndash;28 May). The next 30 days will set the strike-price benchmark for every secondary transaction at Anthropic, xAI, Mistral, and Inflection.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/06/03/spacex-ipo-stock-price-roadshow-musk.html">CNBC: SpaceX targets $135 IPO price at valuation of $1.77 trillion</a> (primary)</li>
+      <li><a href="https://finance.yahoo.com/markets/stocks/articles/mark-calendar-spacex-could-very-110500371.html">Yahoo Finance: Mark your calendar &mdash; SpaceX could be a very different stock after June 12</a></li>
+      <li><a href="https://www.investing.com/equities/spacex">Investing.com: SpaceX stock &mdash; IPO date, share price &amp; news</a></li>
+      <li><a href="https://polymarket.com/event/spacex-ipo-by">Polymarket: SpaceX IPO by ___? prediction market</a></li>
+      <li><a href="https://www.thinkmarkets.com/en/trading-academy/market-events/spacex-ipo-2026-date-spacex-valuation-and-proxy-share-cfds/">ThinkMarkets: SpaceX valuation 2026 &mdash; IPO date and proxy share CFDs</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> This 11 June digest is anchored on a 24&ndash;36 hour window centered on 10&ndash;11 June (VS Code 1.124 Autopilot-by-default, OpenAI&ndash;Oracle, TensorWave $350M, the CSM US-policy analysis, the SpaceX pricing) with 48-hour adjacent context for Generalist AI's $2B physical-AI round and the 9 June Claude Fable 5 public release. Primary sources (code.visualstudio.com release notes, openai.com newsroom, anthropic.com/news, the White House EO, Microsoft Security Blog, Business Wire via Morningstar, Bloomberg, CNBC) are flagged inline; secondary outlets are corroborated by at least two-to-three independent reports per item. <em>Non-overlap check:</em> deliberately distinct from the <strong>28 May</strong> edition (Altman/Amodei jobs-apocalypse walk-back, Fujitsu&ndash;Anthropic + OpenAI alliance, Hassabis AGI estimate, GitHub Copilot Memory governance, Claude Code v2.1.152, the EU AI Act Omnibus calendar), the <strong>27 May</strong> edition (Project Glasswing / Claude Mythos restricted preview, OpenRouter, Stord, Catena Labs, Gemini Interactions API, Vercel deepsec, NVIDIA Q1 FY27, MLPerf v6.0, SAP&ndash;Prior Labs, the Anthropic round close window), and the <strong>25 May</strong> edition (Pope Leo XIV's <em>Magnifica humanitas</em>, the OpenAI confidential S-1, OpenAI Erd&#337;s disproof, Karpathy joining Anthropic, Gemini 3.5 Flash / Antigravity 2.0 / WebMCP, Anthropic&ndash;Stainless, Meta layoffs, Musk v. OpenAI). The 9 June Fable 5 release is included as the natural <em>follow-on</em> to the 27 May Mythos coverage &mdash; Fable 5 is genuinely new and the public counterpart, not a re-announce. Apple's WWDC 2026 keynote (Gemini-Siri partnership, 8 June) and Microsoft's MAI 7-model launch (Build, 2 June) are intentionally not re-covered: they were the lede stories in the late-May / early-June window and fall outside this digest's 24&ndash;48 hour focus.</p>
+    <p>Generated 11 June 2026.</p>
+  </footer>
+</body>
+</html>
