@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 15 June 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 15 June 2026</h1>
+    <div class="meta">Week of 15&ndash;21 June 2026 &middot; Coverage window: 14&ndash;15 June (last ~24 hours, with weekend roll-up)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The <strong>Fable&nbsp;5 / Mythos&nbsp;5 shutdown</strong> story moved decisively into its political-resolution phase over the weekend. Anthropic flew three senior technical staffers &mdash; <strong>Logan Graham</strong> (Frontier Red Team lead), <strong>Dave Orr</strong>, and <strong>Nicholas Carlini</strong> &mdash; to Washington for <strong>Monday 15 June</strong> meetings with the <strong>Commerce Department, CIA, and White House science advisor Michael Kratsios</strong>, in an effort to restart access to the two models taken offline Friday. Two new pieces of reporting reframed the story: <strong>Fortune</strong> (Sat 14 June) and <strong>Axios</strong> (Sun 15 June) revealed that <strong>Amazon CEO Andy Jassy</strong> personally called <strong>Treasury Secretary Scott Bessent</strong> with Amazon researchers' jailbreak findings, triggering the Commerce Department letter &mdash; an awkward conflict given Amazon is Anthropic's <strong>$13 B largest investor</strong>. An administration official told Axios bluntly: <em>"They screwed us."</em> Anthropic, the same source said, had failed to "honor" a recent cyber executive order. In parallel, security researcher <strong>Pliny the Liberator's</strong> <strong>120,040-character Fable 5 system prompt leak</strong> &mdash; uploaded to the CL4R1T4S GitHub repo on 10 June &mdash; was fully dissected by the agent-tools community over the weekend and is now circulating as a de-facto <em>field manual for long-running agent design</em>. On the developer-platform stack, <strong>Hugging Face shipped Serge</strong>, an Apache-2.0 GitHub-native AI code reviewer running on any OpenAI-compatible model; <strong>NAVER signed a multi-year, gigawatt-scale AI-factory build-out with NVIDIA on the new DSX platform</strong>; <strong>Apple confirmed at WWDC&nbsp;26</strong> that its next-generation Foundation Models were co-developed with Google's Gemini team; and <strong>Goldman Sachs</strong> raised its cumulative 2026&ndash;2031 AI-infrastructure capex forecast to <strong>$7.6 trillion</strong>, with NVIDIA modelled at 75% share of the $5.1 T compute layer.
+  </div>
+
+  <h2>Top Story &mdash; The Fable&nbsp;5 / Mythos&nbsp;5 Crisis Enters DC Negotiations</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Anthropic flies Logan Graham, Dave Orr &amp; Nicholas Carlini to DC for Monday meetings with Commerce, CIA, and White House science advisor</h3>
+    <div class="byline">14&ndash;15 June 2026 &middot; Primary scoop: Axios &middot; Confirmed by Mezha, BusinessToday, TradingView/Reuters</div>
+    <p>
+      Late Saturday <strong>14 June</strong>, Axios's Sara Fischer and Ina Fried broke that <strong>Anthropic flew senior technical staff to Washington</strong> over the weekend to try to repair the rupture with the Trump administration that took <strong>Claude Fable&nbsp;5</strong> and <strong>Claude Mythos&nbsp;5</strong> offline at <strong>5:21&nbsp;PM ET on Friday 12 June</strong> (covered in the <a href="../8%20June%20-%2014%20June/13%20June%20AI%20News%20Digest%20Report.html">13&nbsp;June digest</a>). The named delegation is <strong>Logan Graham</strong> (head of Anthropic's Frontier Red Team), <strong>Dave Orr</strong>, and <strong>Nicholas Carlini</strong>. Their Monday 15 June schedule includes <strong>Commerce Department</strong> career staff implementing the export-control directive, the <strong>CIA</strong>, and <strong>White House science advisor Michael Kratsios</strong>. The pitch, per Axios sources, is that the bypass Amazon's red team found was a <em>narrow demonstration on a known class of minor codebase vulnerabilities</em>, not a <em>uplift-on-CBRN-or-cyber-weapons</em> jailbreak of the model's hardened safety classifiers &mdash; and that re-enabling Fable 5 with stricter foreign-national gating is technically tractable. The follow-up Axios piece on <strong>Sunday 15 June</strong> ("They screwed us") sharply repositions the story: an administration official says Anthropic failed to "honor" a recent <strong>cyber executive order</strong> and characterizes the dispute as much about <em>personality clashes and ideological mismatch</em> as about substantive safety. The same source: <em>"Everybody said Anthropic was a bad actor. Some of us said it was time to give them a chance. Now those people are questioning that. They screwed us."</em> A previous Anthropic fight with the Pentagon, the same official notes, also came down in part to "just not liking the person on the other side of the negotiating table." If Monday's meetings succeed, the practical question for builders is how quickly Fable 5 returns to the API; if they fail, the question becomes whether Mythos-class capability migrates to closed-partner-only distribution for the foreseeable future.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.axios.com/2026/06/14/anthropic-white-house-mythos-fable">Axios (Sat 14 June): Scoop &mdash; Anthropic flies staff to D.C. to clean up White House fight</a> (primary scoop)</li>
+      <li><a href="https://www.axios.com/2026/06/15/anthropic-white-house-fable-mythos">Axios (Sun 15 June): "They screwed us" &mdash; Personality clashes sent Anthropic's models offline</a> (primary follow-up)</li>
+      <li><a href="https://mezha.net/eng/bukvy/f2adf80e_anthropic_engineers_meet/">Mezha: Anthropic engineers meet White House to resolve access dispute over Fable 5 and Mythos 5</a></li>
+      <li><a href="https://www.businesstoday.in/technology/news/story/anthropic-and-white-house-officials-to-hold-discussions-around-claude-fable-5-ban-536943-2026-06-15">BusinessToday (15 June): Anthropic and White House officials to hold discussions around Claude Fable 5 ban</a></li>
+      <li><a href="https://www.tradingview.com/news/reuters.com,2026:newsml_FWN42K0NB:0-anthropic-flies-staff-to-d-c-to-clean-up-white-house-fight-axios/">TradingView / Reuters wire: Anthropic flies staff to D.C. to clean up White House fight</a></li>
+      <li><a href="https://seekingalpha.com/news/4603147-anthropic-scrambles-to-resolve-ai-dispute-with-white-house-axios-reports">Seeking Alpha: Anthropic scrambles to resolve AI dispute with White House</a></li>
+      <li><a href="https://www.techpolicy.press/anthropics-mythos-recall-and-the-white-houses-missing-ai-safety-playbook/">Tech Policy Press: Anthropic's Mythos recall and the White House's missing AI safety playbook</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Amazon</span>Andy Jassy's call to Treasury Secretary Scott Bessent was the trigger &mdash; Amazon's $13 B stake in Anthropic complicates the politics</h3>
+    <div class="byline">14 June 2026 &middot; Primary scoop: Fortune &middot; Confirmed by MLQ, Benzinga, TheStreet, Technobezz, The Next Web</div>
+    <p>
+      Fortune's Sharon Goldman and Jeremy Kahn broke on <strong>Saturday 14 June</strong> that the call which set Friday's export-control directive in motion came from <strong>Amazon CEO Andy Jassy</strong>, who phoned <strong>Treasury Secretary Scott Bessent</strong> after his own red team showed that Mythos-class Claude could be prompted into producing cyberattack-relevant material that was supposed to be restricted. Jassy then escalated to senior administration officials directly. Several phone calls between Anthropic CEO <strong>Dario Amodei</strong> and the administration followed; Amodei argued the bypass was narrow and reproducible on other publicly available models. The administration disagreed. The result was Commerce Secretary <strong>Howard Lutnick's</strong> 5:21 PM ET Friday letter ordering the suspension of foreign-national access. The conflict-of-interest backdrop here is genuinely strange: <strong>Amazon is Anthropic's largest investor</strong> &mdash; cumulative ~$13 B in equity, plus a $100 B AWS Trainium/Inferentia spending commitment over a multi-year horizon, plus the <strong>Project Rainier</strong> compute build-out (covered in the <a href="../../May/25%20May%20-%2031%20May/27%20May%20AI%20News%20Digest%20Report.html">27 May digest</a> as part of the Fujitsu-Anthropic alliance write-up). Amazon is also the cloud host of Mythos-class deployments via Bedrock. That makes Jassy's call simultaneously a fiduciary act (protect the investor's downside from a security mishap), a competitive act (raise the cost of Anthropic's standalone product motion versus Amazon's own Nova roadmap), and a regulatory act (light the fuse the White House detonated). For the developer ecosystem, the takeaway is concrete: <em>your supplier's largest backer is now also functionally a regulator of that supplier</em>, and the equilibrium that produces is unfamiliar.
+    </p>
+    <ul class="sources">
+      <li><a href="https://fortune.com/2026/06/14/how-a-warning-from-amazon-led-the-white-house-to-shut-down-anthropics-mythos-model/">Fortune (14 June): How a warning from Amazon reportedly led the White House to shut down Anthropic's Mythos model</a> (primary scoop)</li>
+      <li><a href="https://mlq.ai/news/amazons-jassy-alerted-white-house-to-anthropic-fable-5-security-flaws-triggering-export-ban/">MLQ News: Amazon's Jassy alerted White House to Anthropic Fable 5 security flaws, triggering export ban</a></li>
+      <li><a href="https://www.benzinga.com/markets/tech/26/06/53184953/amazon-ceo-andy-jassy-triggered-ban-on-anthropics-mythos-ai-models-report">Benzinga: Amazon CEO Andy Jassy triggered ban on Anthropic's Mythos AI models</a></li>
+      <li><a href="https://www.thestreet.com/technology/amazon-ceo-just-made-things-uncomfortable-for-anthropic">TheStreet: Amazon CEO just made things uncomfortable for Anthropic</a></li>
+      <li><a href="https://thenextweb.com/news/amazon-jassy-triggered-anthropic-fable-mythos-crackdown">The Next Web: Amazon's CEO reportedly triggered the government crackdown that shut down Anthropic's most powerful AI</a></li>
+      <li><a href="https://www.technobezz.com/news/amazon-ceo-andy-jassy-reported-anthropic-ai-vulnerabilities-to-us-officials">Technobezz: Amazon CEO Andy Jassy reported Anthropic AI vulnerabilities to US officials</a></li>
+      <li><a href="https://www.techtimes.com/articles/318350/20260614/amazon-triggered-claude-fable-5-shutdown-investor-cloud-host-now-regulator.htm">TechTimes: Amazon triggered Claude Fable 5 shutdown &mdash; investor, cloud host, now regulator</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Security Research</span>Pliny the Liberator's 120,040-character Fable 5 system prompt leak, dissected: a de-facto field manual for long-running agents</h3>
+    <div class="byline">10 June leak &middot; Weekend 13&ndash;15 June community dissection wave &middot; Primary sources: CL4R1T4S GitHub repo, jailbreak-fable repo, alphasignalai, Cybersecurity News</div>
+    <p>
+      Five days into the Fable 5 GA, on <strong>10 June</strong>, the red-teamer who publishes under <em>Pliny the Liberator</em> uploaded what he says is the <strong>complete Fable 5 system prompt</strong> &mdash; <strong>120,040 characters</strong> &mdash; to his public <strong>CL4R1T4S</strong> GitHub repository, along with the multi-agent "Pack Hunt" jailbreak harness in a companion <strong>jailbreak-fable</strong> repo. Over the weekend the leaked prompt was dissected at length by the agent-tools community, and several findings sharpened: (i) the prompt is explicitly optimised for <em>multi-hour, multi-day autonomous coding sessions</em> rather than single-shot answers, with elaborate state-resumption rituals, scratchpad / TodoWrite conventions, and stop-conditions; (ii) safety guardrails are layered &mdash; there is a refusal classifier on top of the model, and the system prompt itself encodes the high-level safety policy; (iii) the prompt instructs the model to <em>"never narrate internal deliberation"</em>, instead emitting short, declarative status updates &mdash; a directly portable instruction for any agent harness; (iv) it documents tight rules for tool selection, parallelism, and confirmation thresholds for destructive operations. Anthropic, for its part, argues the Pliny demonstration was <em>not</em> a true jailbreak: the model's <strong>core safety classifiers were not bypassed</strong>, and the outputs surfaced did not provide meaningful uplift toward bioweapons synthesis or advanced cyber-exploit development. The technical-policy point is independent of the political one: even taken at Anthropic's framing, <em>the leak is itself instructive</em>, and dozens of open-source agent harnesses already published over the weekend now treat the leaked prompt as a reference design.
+    </p>
+    <ul class="sources">
+      <li><a href="https://github.com/keirsalterego/jailbreak-fable">GitHub: keirsalterego/jailbreak-fable (multi-agent emulation &amp; Pack Hunt harness)</a> (primary)</li>
+      <li><a href="https://www.ayautomate.com/blog/claude-fable-5-system-prompt-leak">AY Automate: Inside the Claude Fable 5 system prompt &mdash; 9 lessons from the 120K-character leak</a></li>
+      <li><a href="https://alphasignalai.substack.com/p/claude-fable-5-prompt-leak-is-a-user">AlphaSignal: Claude Fable 5 prompt leak is a user manual for long-running agents</a></li>
+      <li><a href="https://abit.ee/en/cybersecurity/hackers-and-attacks/claude-fable-5-anthropic-jailbreak-ai-safety-system-prompt-leak-llm-security-pliny-the-liberator-en">Abit.ee: Claude Fable 5 jailbroken in 72 hours &mdash; system prompt now public on GitHub</a></li>
+      <li><a href="https://cybersecuritynews.com/anthropics-claude-fable-5-jailbroken/">Cybersecurity News: Anthropic's Claude Fable 5 alleged jailbreak to generate stack exploits</a></li>
+      <li><a href="https://opsecinsider.com/claude-fable-5-jailbreak/">OpSec Insider: Claude Fable 5 jailbroken &mdash; system prompt leaked</a></li>
+      <li><a href="https://pasqualepillitteri.it/en/news/4730/claude-fable-5-jailbreak-pliny-hype-vs-facts">Pasquale Pillitteri: Claude Fable 5 "Liberated" by Pliny &mdash; hype vs facts</a></li>
+      <li><a href="https://gridthegrey.com/posts/pliny-the-liberator-claims-claude-fable-5-jailbreak-via-multi-agent-prompting/">GRID THE GREY: Pliny the Liberator claims Claude Fable 5 jailbreak via multi-agent prompting</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Platforms &amp; Coding Agents</h2>
+
+  <article>
+    <h3><span class="tag">Hugging Face</span>Serge: a GitHub-native, Apache-2.0 AI code reviewer that runs on any OpenAI-compatible model</h3>
+    <div class="byline">Released 12 June 2026 &middot; Adoption wave 13&ndash;15 June &middot; Primary source: huggingface/serge GitHub &amp; Hugging Face blog</div>
+    <p>
+      Hugging Face shipped <strong>Serge</strong>, a <strong>GitHub-native AI code-review system</strong> released under <strong>Apache 2.0</strong>, on <strong>Friday 12 June</strong>. Serge runs as a GitHub App that posts inline review comments on pull requests in the same surface as a human reviewer, and is designed to be <em>backend-agnostic</em>: it talks to any <strong>OpenAI-compatible</strong> endpoint, including Hugging Face Inference Providers, vLLM/TGI servers, llama.cpp, Ollama, or a commercial API. Hugging Face says Serge is already in use on its own <code>diffusers</code>, <code>transformers</code>, and Serge-itself repos. The positioning is deliberate: rather than replace human review, Serge is targeted at <em>catching the bottom-of-the-funnel issues</em> &mdash; obvious bugs, missing tests, stylistic regressions, and review-comment follow-up &mdash; freeing maintainer time for design-level review. It lands directly in the same competitive surface as <strong>GitHub Copilot Code Review</strong> (now generally available), <strong>CodeRabbit</strong>, <strong>Greptile</strong>, and <strong>Cursor BugBot</strong>, but with two distinct properties: (a) the entire system is open source and self-hostable, and (b) the model swap is a config flag rather than a vendor lock-in. For teams already running local models, Serge is the first credibly-open, GitHub-native review pipeline that does not assume a hosted-frontier-model billing relationship.
+    </p>
+    <ul class="sources">
+      <li><a href="https://github.com/huggingface/serge">GitHub: huggingface/serge</a> (primary repo)</li>
+      <li><a href="https://huggingface.co/blog/huggingface/serge">Hugging Face Blog: Introducing Serge &mdash; GitHub-native AI code review</a> (primary post)</li>
+      <li><a href="https://huggingface.co/docs/inference-providers/en/guides/github-actions-code-review">Hugging Face Docs: Automating code review with GitHub Actions</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Apple / Google</span>WWDC 26 confirms: Apple's next-gen on-device Foundation Models were co-developed with Google's Gemini team</h3>
+    <div class="byline">WWDC 26 keynote 9 June; technical sessions through 13 June &middot; Primary sources: developer.apple.com, MacRumors, TechCrunch</div>
+    <p>
+      Apple's <strong>WWDC 26</strong> keynote on Monday 9 June was anchored on a ground-up rebuild of <strong>Siri</strong> &mdash; rebranded as <strong>Siri AI</strong> &mdash; that holds real back-and-forth conversation, pulls context from a user's mail, messages and photos, and takes action across apps via a strengthened App Intents surface. The architecturally significant disclosure, surfaced in the keynote and confirmed across the technical sessions through Friday 12 June (now widely re-covered for the weekend Wrap-Up), is that <strong>Apple's next-generation Foundation Models were custom-built in collaboration with Google's Gemini team</strong> &mdash; a striking cross-vendor admission for a company that has, until now, positioned Apple Intelligence as a wholly in-house stack with optional ChatGPT fallback. Apple Intelligence and Siri AI feature gating widens to <strong>iPhone 15 Pro / Pro Max, iPhone 16 family, iPad mini (A17 Pro), MacBook Neo (A18 Pro), all M1+ iPads/Macs, Vision Pro, and Apple Watch Series 9+/Ultra 2/SE 3</strong>. On-device inference handles the privacy-sensitive surface; anything that escapes the device hits <strong>Private Cloud Compute</strong>. The Google-collaboration disclosure is the part that will reshape the next 12 months of cross-lab competitive analysis: Apple is no longer purely a downstream consumer of frontier-lab IP, but neither is it pretending to be a pure first-party shop.
+    </p>
+    <ul class="sources">
+      <li><a href="https://developer.apple.com/news/">Apple Developer News (primary, session index)</a></li>
+      <li><a href="https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/">TechCrunch: WWDC 2026 &mdash; Everything announced on Siri AI, iOS 27, Apple Intelligence</a></li>
+      <li><a href="https://www.macrumors.com/2026/06/13/top-stories-wwdc-2026-recap/">MacRumors (13 June recap): WWDC 2026 recap with Siri AI, iOS 27, macOS Golden Gate</a></li>
+      <li><a href="https://www.techrepublic.com/article/news-11-biggest-announcements-apple-wwdc-2026/">TechRepublic: 10 biggest Apple WWDC 2026 announcements &mdash; Siri AI, watchOS 27, and more</a></li>
+      <li><a href="https://www.theneuron.ai/explainer-articles/everything-ai-apple-announced-at-wwdc-2026/">The Neuron: Apple WWDC 2026 AI announcements &mdash; Siri AI and more</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Infrastructure &amp; Capital Markets</h2>
+
+  <article>
+    <h3><span class="tag">NVIDIA / NAVER</span>NAVER commits to gigawatt-scale AI factories on the new NVIDIA DSX platform &mdash; Korea's sovereign-AI bet</h3>
+    <div class="byline">Announced 7&ndash;8 June 2026, weekend follow-on coverage 14&ndash;15 June &middot; Primary sources: nvidianews.nvidia.com, NVIDIA Korea blog, Korea Herald, DigiTimes</div>
+    <p>
+      South Korea's <strong>NAVER</strong> &mdash; the country's search and cloud incumbent and the developer of the <strong>HyperCLOVA&nbsp;X</strong> sovereign model family &mdash; signed a multi-year, multi-phase commitment to build <strong>gigawatt-scale AI factories</strong> on NVIDIA's newly unveiled <strong>DSX platform</strong>. The phasing is concrete: <strong>55 MW</strong> at the GAK Sejong data centre in 1H 2027, then <strong>100 MW</strong> on overseas infrastructure later in 2027, then <strong>200 MW</strong> in 2028, and onward to <strong>1 GW</strong> &mdash; roughly <em>four times</em> the present GAK Sejong maximum. The DSX platform itself was unveiled at <strong>GTC Taipei at COMPUTEX 2026</strong> on Sunday 1 June: it's a reference design (DSX SIM in Omniverse for layout, DSX OS open-source runtime, DSX MaxLPS and DSX Flex for power optimisation) that NVIDIA pitches as <em>"the playbook for AI factories"</em>. MaxLPS, per NVIDIA, delivers <strong>40% more GPUs in the same power budget</strong>. NAVER is the first big-name sovereign-AI customer to commit publicly to the DSX stack &mdash; relevant given the Korean government's broader sovereign-AI push and the ongoing equipment-and-power debate around the AI build-out (covered separately in the Goldman piece below).
+    </p>
+    <ul class="sources">
+      <li><a href="https://nvidianews.nvidia.com/news/naver-ai-infrastructure">NVIDIA Newsroom: NAVER expands AI infrastructure with NVIDIA to serve surging global AI demand</a> (primary)</li>
+      <li><a href="https://blogs.nvidia.com/blog/korea-ecosystem-2026/">NVIDIA Blog: Seoul Purpose &mdash; how NVIDIA and South Korea are building the future of AI</a></li>
+      <li><a href="https://nvidianews.nvidia.com/news/dsx-infrastructure-ai-factory">NVIDIA Newsroom: NVIDIA DSX gives infrastructure builders the playbook for AI factories</a> (primary, platform launch)</li>
+      <li><a href="https://www.koreaherald.com/article/10765602">Korea Herald: Nvidia, Naver team up for gigawatt-scale AI cloud push in Korea</a></li>
+      <li><a href="https://www.digitimes.com/news/a20260608VL201/naver-nvidia-infrastructure-data-expansion.html">DigiTimes: Naver to build gigawatt-scale AI factories on Nvidia platform</a></li>
+      <li><a href="https://www.techtimes.com/articles/318006/20260609/naver-nvidia-seal-1gw-ai-factory-plan-dsx-platform-powers-korea-sovereign-cloud.htm">TechTimes: Naver-Nvidia seal 1 GW AI factory plan &mdash; DSX platform powers Korea sovereign cloud</a></li>
+      <li><a href="https://www.globenewswire.com/news-release/2026/06/01/3303978/0/en/NVIDIA-DSX-Gives-Infrastructure-Builders-the-Playbook-for-AI-Factories.html">GlobeNewswire: NVIDIA DSX gives infrastructure builders the playbook for AI factories (press release)</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Goldman Sachs</span>$7.6 trillion cumulative AI capex 2026&ndash;2031 &mdash; with chip-life assumptions as the wildcard</h3>
+    <div class="byline">Note circulating 13&ndash;15 June &middot; Primary source: Goldman Sachs Research / Insights</div>
+    <p>
+      Goldman Sachs's macro research desk published a fresh <strong>2026&ndash;2031 cumulative AI-infrastructure capex</strong> projection over the weekend: <strong>$7.6 trillion</strong>, against a baseline of <strong>~$765 B</strong> of annual AI capex in 2026 ramping to <strong>~$1.6 T</strong> annually by 2031. The breakdown: <strong>~$5.1 T compute (chips)</strong>, <strong>~$2.15 T data centres</strong>, <strong>~$358 B power</strong>. <strong>NVIDIA</strong> is modelled at <strong>75% share</strong> of the compute layer over the six-year period. The note's pointed hedge is on the <strong>economic life of AI chips</strong>: Goldman flags that shortening assumed chip life from <strong>5 years to 3 years</strong> would add <strong>~$1 T</strong> in annual depreciation &mdash; large enough to materially flip the ROIC math for hyperscaler AI capex programmes. For frontier-lab and AI-builder reading: this is the first major-bank capex framework explicitly to price the chip-depreciation question, and it lands squarely against the post-SPCX-IPO public-market reset (SpaceX/xAI's <em>$2.25 T first-day mark</em>, covered in the <a href="../8%20June%20-%2014%20June/13%20June%20AI%20News%20Digest%20Report.html">13 June digest</a>), against Anthropic's <strong>~$965 B Series H post-money</strong> and <strong>$47 B annualised revenue</strong> disclosed earlier this month, and against OpenAI's pending IPO.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.goldmansachs.com/insights/articles/tracking-trillions-the-assumptions-shaping-scale-of-the-ai-build-out">Goldman Sachs Insights: Tracking trillions &mdash; the assumptions shaping the scale of the AI build-out</a> (primary)</li>
+      <li><a href="https://blockonomi.com/goldman-sachs-maps-7-6-trillion-ai-infrastructure-spending-through-2031/">Blockonomi: Goldman Sachs maps $7.6 trillion AI infrastructure spending through 2031</a></li>
+      <li><a href="https://fourweekmba.com/goldman-sachs-7-6-trillion-ai-capex-map-of-ai-nvidia-infrastructure/">FourWeekMBA: Goldman Sachs just mapped where $7.6 trillion goes</a></li>
+      <li><a href="https://finance.biggo.com/news/KgJ8DJ4BYH_ypPqOem0P">BigGo Finance: Goldman Sachs' $7.6 T AI infrastructure ledger &mdash; chip depreciation lifecycle becomes the wild card</a></li>
+      <li><a href="https://www.prismnews.com/workplace/goldman-sachs/goldman-sachs-lifts-ai-capex-outlook-to-76-trillion-through">Prism News: Goldman Sachs lifts AI capex outlook to $7.6 trillion through 2031</a></li>
+    </ul>
+  </article>
+
+  <h2>Policy &amp; Standards</h2>
+
+  <article>
+    <h3><span class="tag">European Commission</span>Code of Practice on marking and labelling AI-generated content &mdash; binding transparency rules take effect 2 August</h3>
+    <div class="byline">Published 10 June 2026 &middot; Primary source: European Commission / digital-strategy.ec.europa.eu</div>
+    <p>
+      The European Commission published its <strong>Code of Practice on the marking and labelling of AI-generated content</strong> on <strong>10 June 2026</strong>, the operational guidance document that anchors the <strong>EU AI Act's Article 50 transparency obligations</strong> coming into force on <strong>2 August 2026</strong>. The Code lays out the expected machine-readable provenance metadata (C2PA-aligned), the visible disclosure requirements for <em>deepfakes and synthetic media</em>, and the carve-outs for clearly artistic and satirical content. Signatories will be presumed compliant on the labelling subset; non-signatories must demonstrate equivalent measures. The Code lands in the context of the broader <strong>AI Act Omnibus Agreement</strong> reached on 13 May, which deferred most <em>high-risk</em> system obligations (Annex III stand-alone) to <strong>2 December 2027</strong>, and Annex I product-embedded systems to <strong>2 August 2028</strong> &mdash; but explicitly <em>did not</em> defer the transparency surface, which remains on the August 2026 timeline. The 2 August deadline is now the next concrete EU compliance forcing function for any model provider with significant European exposure.
+    </p>
+    <ul class="sources">
+      <li><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">European Commission: AI Act &mdash; Shaping Europe's digital future</a> (primary)</li>
+      <li><a href="https://artificialintelligenceact.eu/">Artificialintelligenceact.eu: Up-to-date developments and analyses of the EU AI Act</a></li>
+      <li><a href="https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/">Gibson Dunn: EU AI Act Omnibus Agreement &mdash; postponed high-risk deadlines and other key changes</a></li>
+      <li><a href="https://www.lw.com/en/insights/ai-act-update-eu-resolves-to-change-rules-and-extend-deadlines">Latham &amp; Watkins: AI Act update &mdash; EU resolves to change rules and extend deadlines</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> The 15 June digest is anchored on the <strong>weekend-to-Monday political resolution arc</strong> of the Fable 5 / Mythos 5 shutdown: Anthropic's senior-technical delegation to Washington (Graham, Orr, Carlini), Fortune's scoop placing Amazon CEO Andy Jassy and Treasury Secretary Scott Bessent at the trigger of the action, the Axios "they screwed us" follow-up framing it as a personality-and-EO-compliance dispute, and the weekend community dissection of Pliny the Liberator's <strong>120,040-character system prompt leak</strong>. The developer-platform stack adds <strong>Hugging Face Serge</strong> (GitHub-native, Apache 2.0, model-agnostic code review) and the cross-vendor disclosure from Apple's WWDC 26 that the <strong>next-generation Apple Foundation Models were co-developed with Google's Gemini team</strong>. Infrastructure and capital markets are covered through <strong>NAVER's gigawatt-scale AI-factory commitment on NVIDIA DSX</strong> and <strong>Goldman Sachs's $7.6 T 2026&ndash;2031 AI capex projection</strong>. Policy adds the <strong>EU AI Act Code of Practice on AI-content labelling</strong> (10 June, transparency rules effective 2 August 2026). Primary sources flagged inline include Axios's two-day scoop sequence, Fortune's Jassy-Bessent reveal, Pliny's CL4R1T4S GitHub repo, the huggingface/serge repository and HF blog, the NVIDIA newsroom DSX and NAVER posts, Goldman Sachs's <em>Tracking Trillions</em> note, and the European Commission's AI Act page. <em>Non-overlap check:</em> deliberately distinct from the <strong>13 June</strong> edition (which covered the Commerce Department directive itself, the GitHub Copilot Fable 5 suspension, the SpaceX/xAI Nasdaq IPO, OpenAI-Ona acquisition, xAI Grok Build Plugin Marketplace, GPT-5.2 retirement, Gemma 4 12B, TurboQuant, and the WSL Kernel 6.18.35.1 virtio-fs fix). The 15 June digest takes none of those stories &mdash; only refers back to them &mdash; and instead picks up only material new to the <strong>last 24&ndash;48 hours</strong> (the DC negotiations, the Jassy-Bessent reveal, the weekend prompt-leak dissection, Hugging Face Serge, the WWDC Foundation-Models-with-Google disclosure, the NAVER-NVIDIA DSX commit, the Goldman $7.6 T note, and the EU AI Act labelling Code).</p>
+    <p>Generated 15 June 2026.</p>
+  </footer>
+</body>
+</html>
