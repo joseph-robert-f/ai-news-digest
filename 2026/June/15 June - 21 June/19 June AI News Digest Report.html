@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 19 June 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 19 June 2026</h1>
+    <div class="meta">Week of 15&ndash;21 June 2026 &middot; Coverage window: 17&ndash;19 June (last ~48 hours, plus 16 June rollup)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The week's most consequential developer-platform change landed yesterday: <strong>Google&rsquo;s Gemini CLI stopped serving Pro, Ultra, and free Gemini Code Assist users on 18 June</strong>, forcing migration to the new Go-based <strong>Antigravity CLI</strong> &mdash; a closed-source rewrite that has triggered a vocal open-source community backlash on the original repo. On the model-availability side, <strong>Claude Fable 5 and Mythos 5 remain offline for a seventh straight day</strong>, but Anthropic chose Wednesday to formally open its <strong>Seoul office</strong>, sign an <strong>MOU with Korea&rsquo;s Ministry of Science and ICT</strong>, and announce a deep ecosystem wave &mdash; <strong>NAVER, LG CNS, SK Telecom, Nexon, and Naver Cloud</strong> deploying Claude Code across their engineering and product organisations, with an Asia-Pacific managing director publicly stating he is &ldquo;very confident&rdquo; the two suspended models return &ldquo;in the coming days.&rdquo; In the meantime, <strong>xAI shipped Grok 4.3 on Amazon Bedrock</strong> with a 1M-token context window and the industry&rsquo;s lowest reported hallucination rate among frontier reasoning models &mdash; the first xAI model ever to land on Bedrock. <strong>Node.js</strong> shipped a multi-CVE security release across the 22.x, 24.x, and 26.x lines, including a high-severity TLS hostname-verification bypass (<strong>CVE-2026-48618</strong>). And in the largest VC-backed acquisition in history, <strong>SpaceX agreed Monday to buy Cursor (Anysphere) for $60 B in stock</strong>, four days after its record-setting Nasdaq debut. Prediction markets continue to price <strong>GPT-5.6</strong> for a 22&ndash;28 June launch window.
+  </div>
+
+  <h2>Top Story &mdash; Google Forces Gemini CLI Users onto Antigravity CLI</h2>
+
+  <article>
+    <h3><span class="tag">Google</span>Gemini CLI stops serving Pro, Ultra, and free Code Assist users on 18 June &mdash; Antigravity CLI is the only path forward</h3>
+    <div class="byline">18 June 2026 &middot; Primary sources: developers.googleblog.com, google-gemini/gemini-cli GitHub Discussions #27274</div>
+    <p>
+      Google&rsquo;s long-telegraphed deadline arrived on <strong>Thursday 18 June</strong>: the <strong>Gemini CLI</strong> and the <strong>Gemini Code Assist IDE extensions</strong> stopped serving requests for all <strong>Google AI Pro</strong>, <strong>Ultra</strong>, and <strong>free Code Assist for Individuals</strong> users. Enterprise customers on <em>Gemini Code Assist Standard / Enterprise</em>, and developers using paid API keys or Google Cloud projects, retain access &mdash; everyone else has been pushed onto the new <strong>Antigravity CLI</strong>, a Go-based rewrite announced at Google I/O on 19 May 2026. The new CLI shares the agent engine used by the <strong>Antigravity 2.0</strong> desktop app and includes Agent Skills, Hooks, and Subagent APIs ported from the old harness. The transition is contentious for two reasons. First, the original <strong>google-gemini/gemini-cli</strong> repo was Apache-2.0 with an active outside-contributor community, and the replacement is being shipped as a closed-source binary &mdash; community comment on GitHub Discussion #27274 includes the now-recurring complaint that &ldquo;we&rsquo;re making the project closed source&rdquo; after years of volunteer contributions. Second, reports from early Antigravity CLI users describe markedly lower free-tier quotas (a 7-day refresh cycle versus the more permissive Gemini CLI allowance), which functionally retires the &ldquo;free agentic coding&rdquo; tier that Gemini CLI provided. For coding-agent builders, this is the first major frontier-lab CLI <em>deprecation</em> rather than upgrade &mdash; and a useful signal about how the platform-distribution surface for agents will be consolidated going forward.
+    </p>
+    <ul class="sources">
+      <li><a href="https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/">Google Developers Blog: An important update &mdash; Transitioning Gemini CLI to Antigravity CLI</a> (primary)</li>
+      <li><a href="https://github.com/google-gemini/gemini-cli/discussions/27274">GitHub: google-gemini/gemini-cli Discussion #27274 &mdash; Transitioning Gemini CLI to Antigravity CLI</a> (primary, community thread)</li>
+      <li><a href="https://www.digitalapplied.com/blog/gemini-cli-to-antigravity-cli-migration-june-18-2026-guide">Digital Applied: Gemini CLI Dies June 18 &mdash; The Antigravity Migration Guide</a></li>
+      <li><a href="https://inventivehq.com/blog/gemini-cli-deprecated-antigravity-cli-migration">InventiveHQ: Gemini CLI Is Being Retired on June 18 &mdash; Meet Antigravity CLI</a></li>
+      <li><a href="https://groundy.com/articles/google-sunsets-gemini-cli-on-june-18-forced-migration-to-antigravity-cli-breaks/">Groundy: Google Sunsets Gemini CLI on June 18 &mdash; Forced Migration to Antigravity CLI Breaks Existing Automation</a></li>
+      <li><a href="https://agentpedia.codes/blog/gemini-cli-to-antigravity-cli-migration">Agentpedia: Gemini CLI &rarr; Antigravity CLI Migration Guide</a></li>
+      <li><a href="https://dev.to/turingsoracle/antigravity-is-dead-long-live-antigravity-186m">DEV.to: Antigravity is Dead. Long Live Antigravity.</a></li>
+    </ul>
+  </article>
+
+  <h2>Anthropic &mdash; Asia Expansion While Fable 5 Stays Offline</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Seoul office opens with MOU, NAVER/LG CNS/SK Telecom/Nexon Claude Code rollouts, and a &ldquo;back in days&rdquo; promise on Fable 5 / Mythos 5</h3>
+    <div class="byline">17&ndash;18 June 2026 &middot; Primary sources: anthropic.com newsroom, Korea Times, Korea JoongAng Daily, UPI</div>
+    <p>
+      Anthropic formally opened its <strong>Seoul office</strong> on <strong>Wednesday 17 June</strong>, with a public launch event on <strong>18 June</strong> &mdash; its third Asia-Pacific location after Tokyo and Bengaluru. The office is led by <strong>KiYoung Choi</strong>, the former General Manager of Snowflake Korea, who joins as Representative Director with three decades of Korea-tech leadership behind him. Anthropic simultaneously announced a <strong>memorandum of understanding with South Korea&rsquo;s Ministry of Science and ICT (MSIT)</strong> covering public-sector AI adoption, joint <em>model safety evaluation in Korean</em> with the <strong>Korea AI Safety Institute</strong>, and information-sharing on AI-enabled cyber threats &mdash; a notable counter-positioning given Anthropic&rsquo;s ongoing dispute with the U.S. Commerce Department (see follow-up below). The commercial wave around the launch was deep: <strong>NAVER</strong> has rolled out <strong>Claude Code across its entire engineering organisation</strong>; <strong>LG CNS</strong> is deploying Claude across <strong>LG Group</strong>; <strong>Nexon</strong> is using Claude Code in live-service game development; and <strong>SK Telecom</strong> and <strong>Naver Cloud</strong> are joining as platform-level partners. Research-side, Anthropic will work with Korea&rsquo;s <strong>National AI Research Lab</strong> consortium &mdash; <strong>KAIST</strong>, <strong>Korea University</strong>, <strong>Yonsei</strong>, and <strong>POSTECH</strong>. South Korea is now publicly disclosed as one of Claude&rsquo;s most active markets globally by per-developer usage. The political subtext is unmistakable: the launch lands on day six of the U.S. export-control suspension covered in the <a href="../8%20June%20-%2014%20June/13%20June%20AI%20News%20Digest%20Report.html">13 June</a> and <a href="15%20June%20AI%20News%20Digest%20Report.html">15 June digests</a>, and Anthropic is visibly hedging its single-market exposure while it negotiates with Commerce.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem">Anthropic: Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem</a> (primary)</li>
+      <li><a href="https://www.koreatimes.co.kr/business/tech-science/20260618/anthropic-opens-seoul-office-to-expand-ties-with-korean-ai-ecosystem">Korea Times: Anthropic opens Seoul office to expand ties with Korean AI ecosystem</a></li>
+      <li><a href="https://www.koreajoongangdaily.com/business/anthropic-confident-of-reenabling-mythos-fable-5-access-in-coming-days-executive/12727522">Korea JoongAng Daily: Anthropic says Mythos and Fable 5 access could return in coming days after White House block</a></li>
+      <li><a href="https://www.upi.com/Top_News/World-News/2026/06/18/korea-Anthropic-Seoul-office-Korea-partnerships-Washington-AI-export-controls/4641781769900/">UPI: Anthropic opens Seoul office amid U.S. AI restrictions</a></li>
+      <li><a href="https://dig.watch/updates/anthropic-south-korea-ai-safety-seoul-office">Digital Watch Observatory: Anthropic and South Korea partner on AI safety and cybersecurity</a></li>
+      <li><a href="https://www.kedglobal.com/artificial-intelligence/newsView/ked202606180004">KED Global: Korea emerges as global AI battleground as Anthropic launches Seoul office</a></li>
+      <li><a href="https://www.benzinga.com/markets/tech/26/06/53267847/anthropic-eyes-south-korea-expansion-ahead-of-ipo-with-seoul-office-and-partnerships">Benzinga: Anthropic eyes South Korea growth ahead of IPO with Seoul office, new partnerships</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Day 7 of the Fable 5 / Mythos 5 export-control shutdown: still offline, but Anthropic publicly &ldquo;very confident&rdquo; on a within-days return</h3>
+    <div class="byline">17&ndash;19 June 2026 &middot; Primary sources: Korea JoongAng Daily, TechTimes, CNBC/Kalshi, isfable5back.com</div>
+    <p>
+      As of Friday morning <strong>19 June</strong>, <strong>Claude Fable 5</strong> and <strong>Claude Mythos 5</strong> are still <em>not</em> generally available &mdash; the seventh consecutive day of the Commerce Department&rsquo;s export-control directive originally delivered by Secretary <strong>Howard Lutnick</strong> at 5:21 PM ET on Friday 12 June (covered in the <a href="../8%20June%20-%2014%20June/13%20June%20AI%20News%20Digest%20Report.html">13 June digest</a>). At Wednesday&rsquo;s Seoul launch, Anthropic&rsquo;s international managing director said publicly that he was <em>&ldquo;very confident&rdquo;</em> both models would return <em>&ldquo;in the coming days,&rdquo;</em> framing the dispute as one of procedure and trust rather than substantive safety failure. <strong>Kalshi&rsquo;s</strong> contract on a restoration before <strong>1 July</strong> was trading near <strong>57%</strong> on 18 June; <strong>Polymarket&rsquo;s</strong> parallel market sat near the same level. Anthropic&rsquo;s other models &mdash; <strong>Claude Opus 4.8</strong>, <strong>Claude Sonnet 4.6</strong>, and <strong>Claude Haiku 4.5</strong> &mdash; remain unaffected and continue to be available worldwide through both the Claude API and Amazon Bedrock. The non-Fable / non-Mythos product surface, in other words, is operating as normal &mdash; but the public availability question for Anthropic&rsquo;s frontier-tier models is now a function of next-business-week DC meetings rather than any technical fix.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.techtimes.com/articles/318668/20260618/fable-5-export-ban-day-six-anthropic-opens-seoul-office-vows-models-back-days.htm">TechTimes: Fable 5 Export Ban Day Six &mdash; Anthropic Opens Seoul Office, Vows Models Back in Days</a></li>
+      <li><a href="https://www.cnbc.com/amp/2026/06/16/kalshi-traders-think-anthropic-will-restore-access-to-ai-model-quickly.html">CNBC: Prediction market traders speculate Anthropic will restore access quickly</a></li>
+      <li><a href="https://thehill.com/policy/technology/5926417-anthropic-fable-mythos-ai/">The Hill: Anthropic withdraws AI models Fable, Mythos due to export controls &mdash; What to know</a></li>
+      <li><a href="https://isfable5back.com/">isfable5back.com: Is Fable 5 Back? Availability checker</a></li>
+      <li><a href="https://www.digitaltoday.co.kr/en/view/66935/anthropic-seoul-office-faces-early-test-as-export-controls-seen-easing-within-days">Digital Today: Anthropic Seoul office faces early test as export controls seen easing within days</a></li>
+      <li><a href="https://explainx.ai/blog/when-will-fable-5-be-available-again-2026">explainx.ai: When Will Fable 5 Be Available Again? What We Know</a></li>
+      <li><a href="https://polymarket.com/event/claude-fable-5-restored-for-us-customers-by-20260613193753196">Polymarket: Claude Fable 5 restored for US customers by &hellip; (live market)</a></li>
+    </ul>
+  </article>
+
+  <h2>Model Releases &amp; Developer Platforms</h2>
+
+  <article>
+    <h3><span class="tag">xAI / AWS</span>Grok 4.3 lands on Amazon Bedrock &mdash; 1M-token context, lowest-hallucination frontier reasoning, $1.25 / $2.50 pricing</h3>
+    <div class="byline">15&ndash;18 June 2026 &middot; Primary sources: aws.amazon.com/whats-new, docs.aws.amazon.com, x.ai/news</div>
+    <p>
+      <strong>xAI</strong> shipped <strong>Grok 4.3</strong> to <strong>Amazon Bedrock</strong> on <strong>Monday 15 June</strong>, with the AWS-side blog launch on <strong>Tuesday 16 June</strong> and broad developer-tier rollout completing by <strong>Thursday 18 June</strong>. It is xAI&rsquo;s first model ever to ship on Bedrock, an architecturally significant move given xAI&rsquo;s recent SpaceX-led NASDAQ listing as <strong>SPCX</strong> (covered in the <a href="../8%20June%20-%2014%20June/13%20June%20AI%20News%20Digest%20Report.html">13 June digest</a>). Specs are crisp: <strong>1,000,000-token context window</strong>, configurable reasoning effort across <em>none / low / medium / high</em>, native tool calling, structured outputs, and response streaming. The pitch is <em>enterprise-grade reasoning</em>: xAI cites the <em>lowest hallucination rate of any frontier reasoning model</em> on internal evals and pitches the model at contract review, case-law research, credit-agreement analysis, and long-document financial Q&amp;A. Bedrock pricing on the on-demand tier is <strong>$1.25 per million input tokens</strong>, <strong>$2.50 per million output tokens</strong>, with cached input at <strong>$0.20/M</strong> &mdash; aggressively below GPT-5.5 and Gemini 3.5 Flash on the input side. The model runs on Bedrock&rsquo;s new <strong>Mantle</strong> inference engine, which AWS positions as a price-performance-optimised path for third-party frontier models. For agent builders, the practical effect: xAI is no longer an X-platform-only model surface &mdash; Bedrock IAM, VPC peering, and Guardrails now apply to Grok in the same way they do to Claude and Llama.
+    </p>
+    <ul class="sources">
+      <li><a href="https://aws.amazon.com/about-aws/whats-new/2026/06/grok-amazon-bedrock/">AWS What&rsquo;s New: Grok 4.3 from xAI now available in Amazon Bedrock</a> (primary)</li>
+      <li><a href="https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-xai-grok-4-3.html">AWS Bedrock Docs: Grok 4.3 model card</a> (primary, spec sheet)</li>
+      <li><a href="https://x.ai/news/grok-amazon-bedrock">xAI News: Grok on Amazon Bedrock</a> (primary, vendor)</li>
+      <li><a href="https://www.basenor.com/blogs/news/grok-4-3-lands-on-amazon-bedrock-with-1m-token-context">Basenor: Grok 4.3 Lands on Amazon Bedrock With 1M Token Context</a></li>
+      <li><a href="https://releasebot.io/updates/xai">Releasebot: xAI Release Notes &mdash; June 2026</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>GPT-5.6 imminent &mdash; Polymarket assigns 83% probability to a 22&ndash;28 June launch window</h3>
+    <div class="byline">16&ndash;18 June 2026 &middot; Primary sources: Polymarket, TechTimes, Releasebot</div>
+    <p>
+      OpenAI has not formally announced a launch date for <strong>GPT-5.6</strong>, but the public signal density has now sharpened enough that builders should plan for it. On <strong>Monday 16 June</strong>, OpenAI&rsquo;s chief scientist publicly called the next model a <em>&ldquo;meaningful leap&rdquo;</em> over GPT-5.5, particularly on advanced reasoning, multi-step agentic workflows, and token efficiency. <strong>Polymarket&rsquo;s</strong> active contract on the release date is carrying roughly <strong>$960K</strong> in volume as of 18 June, with <strong>~83% implied probability</strong> concentrated on the <strong>22&ndash;28 June</strong> window &mdash; making next week the consensus-favored release horizon. OpenAI&rsquo;s cadence over the past nine months has been roughly one frontier-tier release every seven weeks; the gap from GPT-5.5&rsquo;s May launch lines up. Two related items round out the picture: GPT-5.2 was retired from ChatGPT on 12 June (covered in the <a href="../8%20June%20-%2014%20June/13%20June%20AI%20News%20Digest%20Report.html">13 June digest</a>), narrowing the available consumer surface, and prediction markets continue to price a meaningful chance that OpenAI ships a substantial <em>API-side price reduction</em> alongside the model. Builders contemplating long-context agent workloads next week should keep one eye on the OpenAI changelog.
+    </p>
+    <ul class="sources">
+      <li><a href="https://polymarket.com/event/when-will-gpt-5pt6-be-released">Polymarket: When will GPT-5.6 be released?</a> (primary, live market)</li>
+      <li><a href="https://polymarket.com/event/gpt-5pt6-released-by">Polymarket: GPT-5.6 released by &hellip; (release-window contract)</a></li>
+      <li><a href="https://www.techtimes.com/articles/318492/20260616/gpt-56-openai-chief-scientist-calls-it-meaningful-leap-june-launch-nears.htm">TechTimes: GPT-5.6 &mdash; OpenAI Chief Scientist Calls It a Meaningful Leap, June Launch Nears</a></li>
+      <li><a href="https://www.geeky-gadgets.com/gpt-5-6-june-2026-release/">Geeky Gadgets: What to Expect from OpenAI&rsquo;s GPT-5.6 Release in June 2026</a></li>
+      <li><a href="https://releasebot.io/updates/openai">Releasebot: OpenAI Release Notes &mdash; June 2026</a></li>
+    </ul>
+  </article>
+
+  <h2>Security &amp; Software Engineering</h2>
+
+  <article>
+    <h3><span class="tag">Node.js</span>Multi-CVE security release across 22.x / 24.x / 26.x &mdash; TLS hostname-verification bypass, HTTP/2 ORIGIN-frame DoS, WebCrypto integer overflow</h3>
+    <div class="byline">18 June 2026 &middot; Primary sources: nodejs.org security advisory, OpenJS Foundation</div>
+    <p>
+      The Node.js project shipped a multi-CVE security release on <strong>Thursday 18 June</strong>, with simultaneous patched builds across the <strong>22.x</strong>, <strong>24.x</strong>, and <strong>26.x</strong> release lines (specifically <strong>22.23.0</strong>, <strong>24.17.0</strong>, and <strong>26.3.1</strong>). The most operationally serious item is <strong>CVE-2026-48618</strong>, a <em>TLS hostname-verification bypass</em> caused by improper handling of <strong>Unicode dot separators</strong> in TLS hostname normalisation &mdash; a mismatch between the resolver and verifier paths that, in the worst case, lets an attacker satisfy a wildcard-cert match for a hostname the certificate was never intended to cover. Two further high-severity items: (i) an <strong>HTTP/2 ORIGIN-frame Out-of-Memory</strong> denial-of-service against Node.js HTTP/2 clients (an attacker-controlled server can stream unlimited <code>ORIGIN</code> frames until the client OOMs), and (ii) a <strong>WebCrypto integer overflow</strong> that crashes the process when <code>subtle.encrypt()</code> input length is an exact multiple of 2 GiB. The release also bundles dependency upgrades that matter independently: <strong>llhttp 9.4.2</strong>, <strong>nghttp2 1.69.0</strong>, <strong>OpenSSL 3.5.7</strong>, and per-line undici bumps. Production operators on any of the three supported lines should prioritise the upgrade this week &mdash; particularly anyone running Node.js HTTP/2 clients against untrusted upstreams.
+    </p>
+    <ul class="sources">
+      <li><a href="https://nodejs.org/en/blog/vulnerability/june-2026-security-releases">Node.js Security Releases &mdash; Thursday, June 18, 2026</a> (primary advisory)</li>
+      <li><a href="https://nodesource.com/blog/Node.js-CVE-Security-Release">NodeSource: Node.js CVE Security Release &mdash; What You Need to Know</a></li>
+      <li><a href="https://cyberpress.org/critical-node-js-security-release-patches/">CyberPress: Critical Node.js Security Release Patches 12 Vulnerabilities Including Authentication Bypass</a></li>
+      <li><a href="https://www.cryptika.com/node-js-fixes-12-vulnerabilities-including-2-high-severity-authentication-bypasses/">Cryptika: Node.js Fixes 12 Vulnerabilities, Including 2 High-Severity Authentication Bypasses</a></li>
+      <li><a href="https://versionlog.com/nodejs/">VersionLog: Node.js Latest Version &mdash; Support Lifecycle, LTS &amp; EOL</a></li>
+    </ul>
+  </article>
+
+  <h2>Capital &amp; Industry</h2>
+
+  <article>
+    <h3><span class="tag">SpaceX / Cursor</span>SpaceX announces $60 B all-stock acquisition of Cursor (Anysphere) &mdash; largest VC-backed startup acquisition in history</h3>
+    <div class="byline">16 June 2026 &middot; Primary sources: TechCrunch, CNBC, NBC News, AI Business</div>
+    <p>
+      On <strong>Monday 16 June</strong> &mdash; four days after the record-setting <strong>SPCX</strong> Nasdaq listing covered in the <a href="../8%20June%20-%2014%20June/13%20June%20AI%20News%20Digest%20Report.html">13 June digest</a> &mdash; <strong>SpaceX</strong> announced a <strong>$60 billion all-stock acquisition</strong> of <strong>Anysphere</strong>, the developer of <strong>Cursor</strong>. By transaction size it is the <em>largest acquisition of a venture-backed startup in history</em>. The deal does not use SpaceX&rsquo;s IPO proceeds; close is targeted for <strong>Q3 2026</strong>. The strategic logic is straightforward: SpaceX&rsquo;s xAI division has competed at the <em>model layer</em> against Anthropic and OpenAI but lacks an agentic-coding distribution surface to rival GitHub Copilot or Claude Code. Cursor brings that surface plus serious revenue &mdash; reporting <strong>~$2.6 B in annualised B2B revenue</strong>, with enterprise sales growing sharply and a customer list anchored by <strong>Stripe</strong>, <strong>Adobe</strong>, and <strong>NVIDIA</strong> (whose CEO <strong>Jensen Huang</strong> has publicly called Cursor his &ldquo;favourite enterprise AI service&rdquo;). The deal also pushes the IDE-and-agent landscape into sharper consolidation: Microsoft owns GitHub Copilot, Anthropic owns Claude Code, OpenAI now owns Codex plus Ona (covered in the <a href="../8%20June%20-%2014%20June/13%20June%20AI%20News%20Digest%20Report.html">13 June digest</a>), and SpaceX/xAI now owns Cursor &mdash; leaving Google&rsquo;s newly-deprecated-and-reborn Antigravity stack (see top story above) as the last frontier-lab coding-agent surface without a major M&amp;A consolidation event on its books.
+    </p>
+    <ul class="sources">
+      <li><a href="https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/">TechCrunch: SpaceX to acquire Cursor for $60B in stock, days after blockbuster IPO</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html">CNBC: SpaceX to acquire the AI coding startup Cursor for $60 billion</a></li>
+      <li><a href="https://www.nbcnews.com/tech/tech-news/spacex-buys-ai-coding-startup-cursor-60-billion-rcna350262">NBC News: SpaceX buys AI coding startup Cursor for $60 billion</a></li>
+      <li><a href="https://aibusiness.com/generative-ai/spacex-aims-agentic-coding-60b-cursor-acquisition">AI Business: SpaceX Aims at Agentic Coding With $60B Cursor Acquisition</a></li>
+      <li><a href="https://www.techspot.com/news/112784-spacex-acquires-ai-coding-startup-cursor-60-billion.html">TechSpot: SpaceX acquires AI coding startup Cursor for $60 billion, days after record IPO</a></li>
+      <li><a href="https://finance.yahoo.com/technology/ai/articles/spacex-buy-cursor-ai-coding-103445855.html">Yahoo Finance: SpaceX locks in $60 billion Cursor deal to close gap with rivals in AI coding race</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> The 19 June digest is anchored on the <strong>Gemini CLI &rarr; Antigravity CLI hard cutover on 18 June</strong>, the <strong>Anthropic Seoul office launch and Korean partnership wave</strong>, the parallel <strong>Day 7 status of the Fable 5 / Mythos 5 export-control shutdown</strong> (still offline, Anthropic publicly &ldquo;very confident&rdquo; about a within-days return), the <strong>Grok 4.3 launch on Amazon Bedrock</strong>, the <strong>multi-CVE Node.js security release</strong>, the imminent <strong>GPT-5.6 launch</strong> per prediction markets, and the <strong>$60 B SpaceX&ndash;Cursor acquisition</strong>. <em>Non-overlap check:</em> deliberately disjoint from the <strong>13 June</strong> edition (Lutnick letter, GitHub Copilot Fable 5 suspension, SpaceX IPO, OpenAI&ndash;Ona acquisition, Grok Build Plugin Marketplace, GPT-5.2 retirement, Gemma 4 12B, TurboQuant, WSL Kernel 6.18.35.1) and the <strong>15 June</strong> edition (DC negotiations and the Graham&ndash;Orr&ndash;Carlini delegation, Jassy&ndash;Bessent reveal, Pliny prompt-leak dissection, Hugging Face Serge, Apple/Google Foundation Models collaboration, NAVER&ndash;NVIDIA DSX, Goldman Sachs $7.6 T capex note, EU AI Act labelling Code). Those stories are referenced where they provide continuity context but are <em>not</em> re-reported. Primary sources flagged inline include Google&rsquo;s Developers Blog and the google-gemini/gemini-cli GitHub discussion thread, Anthropic&rsquo;s newsroom Seoul-launch post, the AWS What&rsquo;s New and Bedrock docs entries for Grok 4.3, xAI&rsquo;s news page, the official Node.js security advisory, TechCrunch&rsquo;s SpaceX&ndash;Cursor scoop, and live Polymarket / Kalshi contracts for GPT-5.6 and Fable 5 restoration probabilities. Lower-trust sources (industry blogs, aggregators, tier-2 publications) are included only where corroborated by at least two independent reports.</p>
+    <p>Generated 19 June 2026.</p>
+  </footer>
+</body>
+</html>
