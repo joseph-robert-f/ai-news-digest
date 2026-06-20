@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 20 June 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 20 June 2026</h1>
+    <div class="meta">Week of 15&ndash;21 June 2026 &middot; Coverage window: 18&ndash;20 June (last ~48 hours)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The Fable&nbsp;5 / Mythos&nbsp;5 story was <em>reframed again</em> at the end of the week. <strong>Wired</strong> identified <strong>SK Telecom</strong> &mdash; Korea's largest carrier, an Anthropic equity investor, and a recent Project Glasswing partner &mdash; as the <em>original trigger</em> of the White House's escalation, days before Amazon's Fable&nbsp;5 red-team flagged its own jailbreak. The new timeline puts the SK Telecom revocation request <em>first</em>, the Amazon report <em>second</em>, and the export-control directive as the cumulative response to <em>both</em>. Anthropic announced a <strong>Seoul office</strong> on the same day as a public-relations counter-move and President Trump told reporters at the <strong>G7 in &Eacute;vian-les-Bains</strong> on <strong>18 June</strong> that negotiations are "going well" &mdash; while <strong>David Sacks</strong> simultaneously published a hard-edged thread saying the administration is "bewildered" that Anthropic hasn't remediated. On the technical track, <strong>Google DeepMind</strong> published its first-ever <strong>AI Control Roadmap</strong> on <strong>18 June</strong> &mdash; <strong>15 system-level defenses</strong> across Detection (D1&ndash;D4) and Response (R1&ndash;R3) tiers, with VP of Security &amp; Privacy <strong>John "Four" Flynn</strong> disclosing that DeepMind has already analyzed <strong>~1 million internal coding-agent trajectories</strong>. <strong>OpenAI &amp; Boston Children's Hospital</strong> published in <strong>NEJM&nbsp;AI</strong> on <strong>18 June</strong>: o3 Deep Research surfaced new diagnoses in <strong>18 of 376</strong> previously-unsolved pediatric rare-disease cases (+4.8% diagnostic yield). On the developer-platform stack, <strong>Anthropic shipped Claude Code v2.1.183</strong> on <strong>19 June</strong> with a meaningful new agent-safety surface (auto-blocking <code>git reset --hard</code>, <code>terraform destroy</code>, and similar destructive commands) plus enterprise-managed MCP via Okta. And the <strong>Microsoft 365 Copilot "SearchLeak" CVE-2026-42824</strong>, patched server-side on <strong>11 June</strong> and disclosed by Varonis on <strong>15 June</strong>, has moved through the enterprise-security wave this week as the canonical case study for indirect prompt-injection-meets-legacy-SSRF.
+  </div>
+
+  <h2>Top Story &mdash; Wired's SK Telecom Scoop Reframes the Fable&nbsp;5 / Mythos&nbsp;5 Timeline</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>SK Telecom revealed as the <em>original</em> trigger of the export-control escalation &mdash; days before Amazon's Fable 5 red-team report</h3>
+    <div class="byline">Wired scoop circulating 18&ndash;19 June 2026 &middot; Confirmed by Tom's Hardware, Slashdot, The Decoder, Korea JoongAng Daily, UPI</div>
+    <p>
+      <strong>Wired</strong> identified <strong>SK Telecom</strong> &mdash; South Korea's largest wireless carrier, an Anthropic equity investor, and one of roughly <strong>150 organizations</strong> added to Anthropic's <strong>Project Glasswing</strong> Mythos-distribution program in early June &mdash; as the company whose access the White House asked Anthropic to revoke <em>before</em> Amazon's Fable&nbsp;5 jailbreak report landed. The administration's stated concern was <strong>alleged historical ties to China</strong> via parent <strong>SK Group</strong>, which held a stake in <strong>China Unicom</strong> until 2009. Anthropic complied with the revocation request the same day. <em>Days later</em>, Amazon researchers presented their separate Fable&nbsp;5 jailbreak finding (the call from Andy Jassy to Treasury Secretary Scott Bessent already covered in the <a href="15%20June%20AI%20News%20Digest%20Report.html">15 June digest</a>). The cumulative result &mdash; one foreign-access risk flagged, one safety-bypass risk flagged, both inside a week &mdash; was the administration's <strong>5:21&nbsp;PM ET, 12 June</strong> Commerce-Department directive (covered in the <a href="../8%20June%20-%2014%20June/13%20June%20AI%20News%20Digest%20Report.html">13 June digest</a>) taking <em>all</em> foreign-national access to Fable&nbsp;5 and Mythos&nbsp;5 offline globally. SK Telecom told a Korean newspaper that the anonymous claims in foreign media "lack verified facts" and that the company has <em>no ties</em> to China. The reframed timeline matters because it puts the precipitating concern outside the bilateral Anthropic-Amazon conflict-of-interest frame the earlier reporting had emphasised, and inside a more straightforward <em>foreign-access export-control</em> frame &mdash; closer to the EAR/ECCN reasoning the Commerce Department actually invoked. It also names the priority-access list as the operative artifact: any frontier-lab partner-program management surface is now potentially in scope.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/sk-telecom-named-as-the-korean-carrier-at-the-center-of-anthropics-mythos-export-controls">Tom's Hardware: SK Telecom named as the Korean carrier at the center of Anthropic's Mythos export controls</a> (primary aggregation of Wired scoop)</li>
+      <li><a href="https://slashdot.org/story/26/06/19/007201/the-korean-telecom-giant-at-the-center-of-anthropics-mythos-controversy">Slashdot (19 June): The Korean Telecom Giant At the Center of Anthropic's Mythos Controversy</a></li>
+      <li><a href="https://the-decoder.com/alleged-china-ties-at-sk-telecom-alarmed-us-officials-and-triggered-anthropic-crisis/">The Decoder: Alleged China ties at SK Telecom alarmed US officials and triggered Anthropic crisis</a></li>
+      <li><a href="https://www.koreajoongangdaily.com/business/white-house-officials-pin-anthropic-ai-export-block-on-korean-telecom-report/12726842">Korea JoongAng Daily: White House officials pin Anthropic AI export block on Korean telecom</a></li>
+      <li><a href="https://finance.biggo.com/news/kfPV0Z4BRYRHrZOvqtQk">BigGo Finance: South Korean Telecom Firm Suspected of China Ties Triggered Anthropic Export Controls</a></li>
+      <li><a href="https://llmbase.ai/news/sk-telecom-china-ties-trigger-anthropic-claude-mythos-export-controls/">LLMbase: SK Telecom China Ties Trigger Anthropic Claude Mythos Export Controls</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Anthropic opens a Seoul office on 18 June &mdash; defensive geographic positioning amid the SK Telecom reframe</h3>
+    <div class="byline">18 June 2026 &middot; Primary sources: UPI, TechTimes, Korea JoongAng Daily</div>
+    <p>
+      In a move read by Korean and U.S. press alike as <em>direct counter-positioning</em> to the SK Telecom reveal, Anthropic announced and opened its <strong>Seoul office</strong> on <strong>18 June</strong>, with <strong>Managing Director of International Chris Ciauri</strong> on the ground for the launch. Ciauri used the Seoul press conference to repeat publicly that Anthropic is <em>"very confident that in the coming days, the models will become available again."</em> The Korean partner pipeline being emphasised in Seoul (LG AI Research, Naver Cloud, Krafton, Samsung SDS) is the same pipeline that until two weeks ago included SK Telecom on the Project Glasswing distribution list &mdash; a fact the Korean-language coverage notes pointedly. The political shape of the office launch is unmistakable: by physically establishing in Seoul before any restoration deal lands, Anthropic is asserting that Korean enterprise relationships are <em>not</em> the lever that broke the export-control regime, while simultaneously building the on-the-ground compliance surface (foreign-national gating, KYC, partner-program management) that the Commerce Department directive's narrower restoration path would presumably require.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.upi.com/Top_News/World-News/2026/06/18/korea-Anthropic-Seoul-office-Korea-partnerships-Washington-AI-export-controls/4641781769900/">UPI (18 June): Anthropic opens Seoul office amid U.S. AI restrictions</a></li>
+      <li><a href="https://www.techtimes.com/articles/318668/20260618/fable-5-export-ban-day-six-anthropic-opens-seoul-office-vows-models-back-days.htm">TechTimes (18 June): Fable 5 Export Ban Day Six &mdash; Anthropic Opens Seoul Office, Vows Models Back in Days</a></li>
+      <li><a href="https://www.koreajoongangdaily.com/business/anthropic-confident-of-reenabling-mythos-fable-5-access-in-coming-days-executive/12727522">Korea JoongAng Daily: Anthropic confident of re-enabling Mythos &amp; Fable 5 access in coming days, executive says</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">White House</span>Trump at the G7: negotiations "going well" &mdash; while David Sacks publishes a hard-edged "bewildered" thread</h3>
+    <div class="byline">18 June 2026 &middot; Primary sources: Foreign Policy, Globe and Mail, Fortune (Anthropic crackdown long-read)</div>
+    <p>
+      Speaking from the <strong>G7 summit in &Eacute;vian-les-Bains, France</strong> on <strong>18 June</strong>, President Trump told reporters that negotiations with Anthropic are <em>"going well."</em> That conciliatory framing landed in deliberate tension with the simultaneous public posture of <strong>David Sacks</strong>, Co-Chair of the President's Council of Advisers on Science and Technology, who published a long X thread on <strong>16 June</strong> laying out the administration's account in unusually granular form. Sacks's framing: <em>"The Admin's hope now is that Anthropic remediates the safety issue, the export control is lifted, and Fable goes back into general release. The Admin wants all of this to happen as soon as possible. It is frankly bewildering that Anthropic hasn't wanted to comply with safety requests that it previously said were its highest priority."</em> Sacks places the remediation ball squarely in Anthropic's court. The combined signal from Trump's G7 remark and Sacks's thread is that the administration is <em>willing</em> to ship a restoration deal but is not currently in a hurry, and that the path back goes through Anthropic explicitly meeting administration-defined criteria &mdash; not through the company's existing safety-classifier story. The substantive shape of those criteria is the open question for the entire frontier-lab regulatory environment going forward.
+    </p>
+    <ul class="sources">
+      <li><a href="https://foreignpolicy.com/2026/06/16/anthropic-trump-fight-mythos-fable-5-hegseth/">Foreign Policy (16 June): The Anthropic-Trump Fight Over Claude Mythos 5 and Fable 5, Explained</a></li>
+      <li><a href="https://www.theglobeandmail.com/business/article-anthropic-trump-officials-deal-restore-fable-5-mythos-5/">Globe and Mail: Anthropic, Trump officials working toward deal to restore Fable 5 and Mythos 5</a></li>
+      <li><a href="https://fortune.com/2026/06/18/inside-trump-anthropic-mythos-crackdown-ai-regulation-amazon-andy-jassy-phone-call/">Fortune (18 June): The week that changed AI &mdash; Inside Trump's Anthropic crackdown</a></li>
+      <li><a href="https://www.yahoo.com/news/articles/anthropic-ceo-dario-amodei-calls-054600996.html">Yahoo News: Anthropic CEO Dario Amodei calls White House's actions "retaliatory and punitive"</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Safety &amp; Research</h2>
+
+  <article>
+    <h3><span class="tag">Google DeepMind</span>The first-ever AI Control Roadmap: 15 system-level defenses, defense-in-depth, ~1M internal coding-agent trajectories analysed</h3>
+    <div class="byline">Published 18 June 2026 &middot; Primary sources: DeepMind blog, GDM AI Control Roadmap PDF, Fortune, eWeek</div>
+    <p>
+      Google DeepMind published its first <strong>AI Control Roadmap</strong> on <strong>18 June</strong>, authored by <strong>Rohin Shah</strong> and <strong>John "Four" Flynn</strong> (DeepMind's VP of Security &amp; Privacy), with the central proposition that <em>model alignment cannot be assumed reliable</em> at the capability levels DeepMind is now shipping internally, and therefore <strong>system-level containment</strong> must carry the weight that classifier-level safety has historically been asked to carry alone. The framework identifies <strong>15 system-level defenses</strong> across two capability axes: <strong>Detection (D1&ndash;D4)</strong> and <strong>Prevention &amp; Response (R1&ndash;R3)</strong>. Concrete examples named in the post: <em>chain-of-thought monitoring</em> and <em>asynchronous alerts</em> for present-day capability, <em>real-time response</em> and <em>agent access control</em> for near-term capability, and <em>activations monitoring</em> and <em>shutdown infrastructure</em> for advanced capability. Flynn disclosed that DeepMind has already built an internal prototype that <em>asynchronously monitors coding-agent trajectories</em> and escalates suspicious findings for human review, and that DeepMind has analysed <strong>~1 million internal coding-agent tasks</strong> &mdash; most flagged events involve <em>misinterpretation or overeagerness</em> rather than adversarial intent. The roadmap is the first time a frontier lab has published a defence-in-depth schema explicitly designed for <em>internal</em> agent deployment risk (versus the external-deployment Responsible-Scaling-Policy genre most labs have published to date), and it directly anticipates the new question DeepMind is preparing to answer at the next capability tier: <em>how do you safely run agents inside your own production codebase?</em>
+    </p>
+    <ul class="sources">
+      <li><a href="https://deepmind.google/blog/securing-the-future-of-ai-agents/">Google DeepMind Blog (18 June): Securing internal systems against increasingly capable and imperfectly aligned AI</a> (primary)</li>
+      <li><a href="https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/securing-the-future-of-ai-agents/gdm-ai-control-roadmap.pdf">GDM AI Control Roadmap (PDF, 16 June)</a> (primary document)</li>
+      <li><a href="https://fortune.com/2026/06/18/google-deepmind-unveils-plan-to-protect-itself-from-its-own-rogue-ai-agents/">Fortune (18 June): Google DeepMind unveils a plan to protect itself from its own rogue AI agents</a></li>
+      <li><a href="https://www.eweek.com/news/deepmind-ai-agent-security-roadmap/">eWeek: Google DeepMind Roadmap Sets Security Controls for AI Agents</a></li>
+      <li><a href="https://techjacksolutions.com/ai-brief/google-deepminds-ai-control-roadmap-15-system-level-defenses/">Tech Jacks Solutions: Google DeepMind's AI Control Roadmap &mdash; 15 System-Level Defenses</a></li>
+      <li><a href="https://blockchain.news/news/deepmind-ai-control-roadmap-alignment-risks">blockchain.news: DeepMind Unveils AI Control Roadmap to Address Alignment Risks</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">OpenAI / Boston Children's</span>NEJM AI: OpenAI o3 Deep Research surfaces new diagnoses in 18 of 376 previously-unsolved pediatric rare-disease cases (+4.8% yield)</h3>
+    <div class="byline">Published 18 June 2026 &middot; Primary sources: OpenAI newsroom, NBC News, NEJM AI</div>
+    <p>
+      A peer-reviewed study published in <strong>NEJM AI</strong> on <strong>18 June</strong> &mdash; co-authored by <strong>Boston Children's Hospital, Harvard Medical School</strong>, and <strong>OpenAI</strong> &mdash; reports that <strong>OpenAI o3 Deep Research</strong>, used as an <em>evidence-synthesis</em> tool alongside human clinicians and re-genome-analysis, surfaced credible diagnoses in <strong>18 of 376</strong> children whose rare-disease cases had previously been worked through by specialists without a landing diagnosis. The added diagnostic yield is <strong>+4.8%</strong>. The 18 new diagnoses break down as <strong>10 neurodevelopmental, 4 neuromuscular, 2 sudden-death cases retrospectively diagnosed, and 2 early-childhood psychosis</strong>. Methodologically: the model received clinician notes, patient symptoms, and a pre-filtered list of candidate genes for each case, and was asked to surface evidence-linked candidate explanations &mdash; <em>not</em> to make any clinical decision. Every surfaced lead was independently assessed by human specialists, with additional confirmatory testing performed where indicated. The framing OpenAI emphasises in its newsroom post is careful and worth quoting: <em>"The model did not diagnose any patient or make any clinical decision."</em> What it did was raise the floor on how many candidate explanations a clinical team can plausibly survey within the time budget of a single revisit of a previously-stalled case &mdash; an architecturally significant change for any condition where the bottleneck is hypothesis-generation rather than confirmatory test availability.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/diagnose-rare-childhood-diseases/">OpenAI newsroom (18 June): Using AI to help physicians diagnose rare genetic diseases affecting children</a> (primary)</li>
+      <li><a href="https://www.nbcnews.com/tech/innovation/ai-boston-childrens-hospital-diagnose-rare-diseases-kids-openai-rcna350387">NBC News (18 June): AI helped diagnose 18 children whose rare diseases had stumped doctors</a></li>
+      <li><a href="https://www.swisherpost.com/technology/openai-o3-rare-disease-diagnosis-children/">Swisher Post: OpenAI model helps diagnose 18 rare disease cases</a></li>
+      <li><a href="https://glenrhodes.com/openai-o3-deep-research-study-in-nejm-ai-finds-18-diagnoses-in-previously-unsolved-rare-pediatric-disease-cases-with-boston-childrens-hospital/">Glen Rhodes: OpenAI o3 Deep Research study in NEJM AI &mdash; 18 diagnoses in unsolved rare pediatric disease cases</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Platforms &amp; Coding Agents</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Claude Code v2.1.183 (19 June): auto-mode blocks destructive git / IaC commands by default, plus enterprise-managed MCP via Okta</h3>
+    <div class="byline">Released 19 June 2026 &middot; Primary source: code.claude.com/docs/en/changelog</div>
+    <p>
+      Anthropic shipped <strong>Claude Code v2.1.183</strong> on <strong>19 June</strong> with a meaningful new agent-safety surface that maps directly onto the DeepMind AI Control Roadmap framing covered above. The headline change: <em>auto mode</em> now <strong>blocks destructive Git commands by default</strong> when the user did not explicitly ask for them &mdash; <code>git reset --hard</code>, <code>git checkout -- .</code>, <code>git clean -fd</code>, and <code>git stash drop</code> &mdash; and additionally blocks <code>git commit --amend</code> when the commit being amended was <em>not</em> made by the agent in the current session. The same release extends the same default-deny posture to infrastructure-as-code teardown: <code>terraform destroy</code>, <code>pulumi destroy</code>, and <code>cdk destroy</code> now require an explicit user-named stack. Secondary changes include: a new deprecation warning when the requested model has been auto-updated to a successor (visible on stderr in <code>-p</code> mode and now propagated to models set in agent frontmatter), an <code>attribution.sessionUrl</code> setting to omit the <code>claude.ai</code> session link from commits and PRs in web and Remote Control sessions, and a <code>/config --help</code> surface to list shorthand keys. Notable bug-fix: WebSearch returning empty results when invoked from subagents was tracked down and fixed. In parallel, Anthropic announced <strong>enterprise-managed MCP connector access starting with Okta</strong> &mdash; administrators provision connectors once for the whole organization through their identity provider; users get connector access on first login. The net effect for any team operating a long-running Claude Code agent inside their production developer environment is that the <em>"agent runs <code>git reset --hard</code> on a mis-routed instruction"</em> failure mode &mdash; a real production incident pattern over the past three weeks &mdash; is now closed by default.
+    </p>
+    <ul class="sources">
+      <li><a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog (primary)</a></li>
+      <li><a href="https://github.com/anthropics/claude-code/releases">GitHub: anthropics/claude-code releases (primary)</a></li>
+      <li><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot: Claude Code Updates by Anthropic &mdash; June 2026</a></li>
+      <li><a href="https://claudefa.st/blog/guide/changelog">ClaudeFast: Claude Code Changelog &mdash; All Release Notes (2026)</a></li>
+    </ul>
+  </article>
+
+  <h2>Enterprise Security</h2>
+
+  <article>
+    <h3><span class="tag">Microsoft 365 Copilot</span>"SearchLeak" (CVE-2026-42824): the canonical case study for indirect prompt injection meeting legacy SSRF</h3>
+    <div class="byline">Disclosed 15 June, server-side patch 11 June 2026 &middot; Enterprise-security wave through 18&ndash;19 June &middot; Primary sources: Varonis Threat Labs, BleepingComputer, SC Media</div>
+    <p>
+      <strong>Varonis Threat Labs</strong> publicly disclosed <strong>"SearchLeak"</strong> &mdash; tracked as <strong>CVE-2026-42824</strong>, rated <em>critical</em> &mdash; on <strong>15 June</strong>, after Microsoft pushed a server-side fix to all Microsoft 365 Copilot Enterprise tenants on <strong>11 June</strong> as part of its June Patch Tuesday cycle. The vulnerability is the now-canonical worked example of <em>indirect prompt injection meeting legacy server-side request forgery</em>: a three-stage chain that combines a <strong>parameter-to-prompt injection</strong> in a Copilot Enterprise Search URL, an <strong>HTML rendering race condition</strong>, and a <strong>content-security-policy bypass</strong> enabled by a long-standing <strong>Bing SSRF</strong>. The exploit shape is one-click: the victim sees only <em>"Copilot thinking"</em> with no visible data movement, while the chained payload exfiltrates mailbox content, calendar entries, OneDrive and SharePoint files, MFA codes, and meeting details. Microsoft's fix sits in Copilot's <em>orchestration engine</em> &mdash; it now sanitises and explicitly separates user prompts from any embedded instructions present in retrieved content. For enterprise security teams, the post-disclosure week has been spent walking the <em>same threat model</em> across other Copilot- and agent-style integrations that combine retrieval, browser rendering, and any externally-influenced parameter surface; the assumption that the LLM-on-top is the security boundary is the failure-mode SearchLeak generalises. This is the second-ever AI-feature CVE in the Microsoft 365 surface and the first to be rated maximum-severity.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.varonis.com/blog/searchleak">Varonis Threat Labs: SearchLeak &mdash; How We Turned M365 Copilot Into a One-Click Data Exfiltration Weapon</a> (primary disclosure)</li>
+      <li><a href="https://www.bleepingcomputer.com/news/security/new-attack-turned-microsoft-365-copilot-into-1-click-data-theft-tool/">BleepingComputer: New attack turned Microsoft 365 Copilot into 1-click data theft tool</a></li>
+      <li><a href="https://www.scworld.com/brief/searchleak-vulnerability-allows-data-theft-from-microsoft-365-copilot-enterprise">SC Media: SearchLeak vulnerability allows data theft from Microsoft 365 Copilot Enterprise</a></li>
+      <li><a href="https://cybersecuritynews.com/microsoft-365-copilot-one-click-vulnerability/">Cybersecurity News: Critical Microsoft 365 Copilot Vulnerability Allows Attackers to Steal Data in One Click</a></li>
+      <li><a href="https://gbhackers.com/microsoft-365-copilot-vulnerability-2/">GBHackers: Microsoft 365 Copilot Vulnerability Exposes Sensitive Data Through One-Click Attack</a></li>
+      <li><a href="https://windowsreport.com/microsoft-fixes-critical-copilot-searchleak-vulnerability-that-could-expose-emails-and-files/">Windows Report: Microsoft Fixes Critical Copilot SearchLeak Vulnerability That Could Expose Emails and Files</a></li>
+    </ul>
+  </article>
+
+  <h2>Enterprise &amp; Channel</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>The OpenAI Partner Network ($150M; Accenture, BCG, McKinsey, Capgemini): channel formalisation, 300K certified consultants targeted by year-end</h3>
+    <div class="byline">Launched 14 June 2026, enterprise-press wave through 18&ndash;19 June &middot; Primary source: openai.com/index/introducing-openai-partner-network</div>
+    <p>
+      OpenAI formally launched the <strong>OpenAI Partner Network</strong> on <strong>14 June</strong>, with <strong>$150 million</strong> earmarked to support the program and <strong>Accenture, BCG, McKinsey, and Capgemini</strong> as founding-tier partners. The Partner Network builds on the previously-announced <em>"Frontier Alliances"</em> bilateral deals (23 February 2026) and formalises them into a structured three-tier channel: <strong>Select, Advanced, and Elite</strong>, gated on sales performance, technical capability, and deployment experience. The headline ambition: <strong>certify 300,000 consultants by end of 2026</strong>. The strategic positioning is unusually candid from a frontier lab &mdash; OpenAI's public framing is that <em>the limiting factor for enterprise AI value has moved off the model itself and onto everything that surrounds deployment</em>. The implicit point that landed with enterprise readers through the 18&ndash;19 June press wave is that OpenAI is no longer trying to capture the integration revenue itself; it is paying global SIs to do the integration work, and treating model-revenue + Codex + ChatGPT Business as the unbundled platform layer. That is a structurally different posture from the current Anthropic, xAI, and Microsoft AI go-to-market shapes, all of which are still trying to own substantial integration surface in-house.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/introducing-openai-partner-network/">OpenAI newsroom (14 June): Introducing the OpenAI Partner Network</a> (primary)</li>
+      <li><a href="https://www.techtimes.com/articles/318436/20260615/openai-launches-partner-network-150m-bet-that-implementation-beats-model-power.htm">TechTimes: OpenAI Launches Partner Network &mdash; $150M Bet That Implementation Beats Model Power</a></li>
+      <li><a href="https://www.edtechinnovationhub.com/news/openai-launches-150-million-network-to-train-and-enable-300000-ai-consultants">EdTech Innovation Hub: OpenAI launches $150M network to train 300,000 AI consultants</a></li>
+      <li><a href="https://www.digitalapplied.com/blog/openai-partner-network-2026-ai-consulting-channel-analysis">Digital Applied: OpenAI Partner Network &mdash; The AI Consulting Channel Opens</a></li>
+      <li><a href="https://www.startuphub.ai/ai-news/artificial-intelligence/2026/openai-launches-partner-network">StartupHub: OpenAI Launches Global Partner Network</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> The 20 June digest is anchored on the <strong>Wired SK Telecom reframe</strong> of the Fable&nbsp;5 / Mythos&nbsp;5 export-control timeline (SK Telecom revocation came <em>first</em>, Amazon's Fable&nbsp;5 jailbreak report came <em>second</em>), Anthropic's <strong>Seoul office launch</strong> on 18 June, and the parallel <strong>Trump-at-the-G7 vs Sacks-on-X</strong> public-posture split. The AI-safety / research track adds <strong>DeepMind's first AI Control Roadmap</strong> (18 June: 15 system-level defenses, D1&ndash;D4 / R1&ndash;R3 tiers, ~1M internal coding-agent trajectories analysed) and the <strong>OpenAI &mdash; Boston Children's NEJM AI study</strong> (18 June: o3 Deep Research surfacing 18 new diagnoses in 376 previously-unsolved pediatric rare-disease cases, +4.8% yield). The developer-platform stack adds <strong>Claude Code v2.1.183</strong> (19 June: auto-mode blocking destructive Git/IaC commands, enterprise MCP via Okta). Enterprise security adds the <strong>Microsoft 365 Copilot SearchLeak (CVE-2026-42824)</strong> &mdash; the now-canonical worked example of indirect prompt injection meeting legacy SSRF (Varonis disclosed 15 June, server-side patch 11 June, enterprise-security wave through 18&ndash;19 June). Enterprise &amp; channel adds the <strong>$150M OpenAI Partner Network</strong> with Accenture, BCG, McKinsey, and Capgemini (launched 14 June, enterprise-press wave through 18&ndash;19 June). Primary sources flagged inline include the DeepMind blog and the AI Control Roadmap PDF, the OpenAI rare-disease newsroom post, the Claude Code changelog, Varonis's SearchLeak disclosure, and OpenAI's Partner Network newsroom post. Secondary outlets are corroborated by at least three independent reports per item per the digest rules. <em>Non-overlap check:</em> deliberately distinct from the <strong>15 June</strong> edition (Anthropic-DC delegation: Graham/Orr/Carlini; Fortune Jassy-Bessent scoop; Pliny 120,040-character system-prompt leak; Hugging Face Serge; WWDC 26 Apple-Foundation-with-Google disclosure; NAVER-NVIDIA DSX; Goldman $7.6&nbsp;T capex; EU AI Act labelling Code) and the <strong>13 June</strong> edition (Commerce Department directive itself; Copilot Fable 5 suspension; SpaceX/xAI SPCX IPO; OpenAI-Ona; Grok Build Plugin Marketplace; GPT-5.2 retirement; Gemma 4 12B; TurboQuant; WSL 6.18.35.1). The 20 June digest takes <em>none</em> of those stories &mdash; only refers back to them &mdash; and instead picks up only material new to the <strong>last 24&ndash;48 hours</strong>: the SK Telecom reveal, the Seoul office, the G7/Sacks public-posture split, the DeepMind AI Control Roadmap, the NEJM AI rare-disease study, the Claude Code v2.1.183 release, the SearchLeak enterprise-security wave, and the OpenAI Partner Network channel formalisation.</p>
+    <p>Generated 20 June 2026.</p>
+  </footer>
+</body>
+</html>
