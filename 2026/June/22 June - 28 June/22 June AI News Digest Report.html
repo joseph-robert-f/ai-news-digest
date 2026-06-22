@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 22 June 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 22 June 2026</h1>
+    <div class="meta">Week of 22&ndash;28 June 2026 &middot; Coverage window: 17&ndash;22 June (weekend roll-up; primary focus on the last ~24&ndash;48 hours)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> Ten days after the <strong>Commerce Department</strong> ordered <strong>Claude Fable 5</strong> and <strong>Claude Mythos 5</strong> offline (covered in the <a href="../8%20June%20-%2014%20June/13%20June%20AI%20News%20Digest%20Report.html">13 June</a> and <a href="../15%20June%20-%2021%20June/15%20June%20AI%20News%20Digest%20Report.html">15 June</a> digests), the story has flipped twice in 96 hours. On <strong>Wednesday 17 June</strong> at the <strong>G7 summit in &Eacute;vian-les-Bains</strong>, <strong>Dario Amodei</strong> and <strong>Demis Hassabis</strong> pitched a US-led AI coalition over a working lunch with President Trump; Trump told Axios afterward he <em>no longer views Anthropic as a national-security threat</em>. <strong>Fable 5 was restored on 18 June</strong> with new safety classifiers, <strong>nationality-based access controls</strong> and a more aggressive fallback to Opus 4.8 &mdash; but the Commerce directive itself was <em>not withdrawn</em>, and a <strong>Senator Mark Warner</strong> recounting of a private briefing from <strong>NSA Director Gen. Joshua Rudd</strong> &mdash; that Mythos broke into <em>almost all NSA classified systems "not in weeks, but in hours"</em> &mdash; has reshaped the political case for keeping foreign-national restrictions in place. On the same Wednesday, <strong>Anthropic opened its Seoul office</strong> and unveiled the <strong>largest concentrated Claude Code deployment in Asia</strong>: <strong>Samsung, LG, NAVER, Nexon and Hanwha</strong>, collectively hundreds of thousands of employees. The other big talent story: <strong>Noam Shazeer</strong> &mdash; co-author of <em>Attention Is All You Need</em> and Gemini co-lead &mdash; left Google DeepMind on <strong>18 June</strong> to become OpenAI's <strong>Lead for Architecture Research</strong>, less than 22 months after Google paid ~<strong>$2.7&nbsp;B</strong> to bring him back from Character.AI. On the security side, <strong>Tenet Security</strong> published the full <strong>"Agentjacking"</strong> disclosure: an <strong>85% hijack success rate</strong> against Claude Code, Cursor and Codex via fake Sentry error events surfaced through the Sentry MCP server, with <strong>2,388 organisations</strong> with exposed Sentry DSNs identified during a validation window that closed <strong>17 June</strong>. On the infrastructure side, <strong>FERC</strong> unanimously voted on <strong>18 June</strong> to issue tailored "show-cause" orders to PJM, MISO, SPP, CAISO, ISO-NE and NYISO &mdash; reshaping how AI data centres get grid interconnects across <strong>200 million Americans</strong>. And on the developer-platform stack, <strong>xAI Grok 4.3</strong> went GA on <strong>Amazon Bedrock</strong>; <strong>Meituan</strong> shipped <strong>LongCat-Video-Avatar 1.5</strong> and the <strong>General-365</strong> reasoning benchmark (top model: Gemini 3 Pro at <strong>62.8%</strong>).
+  </div>
+
+  <h2>Top Story &mdash; The Fable 5 Restoration Arc: G7 D&eacute;tente, NSA Backlash, and Korea</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Trump softens on Anthropic after G7 lunch with Amodei and Hassabis &mdash; "no longer a national security threat"</h3>
+    <div class="byline">17 June 2026 &middot; Primary sources: CNBC, Washington Post, Axios (pretaped interview), Fast Company</div>
+    <p>
+      At a working lunch on <strong>Wednesday 17 June</strong> at the <strong>G7 summit in &Eacute;vian-les-Bains, France</strong>, Anthropic CEO <strong>Dario Amodei</strong> and Google DeepMind CEO <strong>Demis Hassabis</strong> sat with <strong>President Trump</strong> and pitched a <em>US-led international coalition on AI</em>, with structured access to frontier models, and trade of chips and critical components <em>that excludes China</em> &mdash; the same architecture Anthropic has been advocating for since Amodei's October 2024 <em>Machines of Loving Grace</em> essay. Trump, in a pretaped <strong>Axios</strong> interview that aired the same evening, said he <strong>"no longer views Anthropic as a national security threat,"</strong> described Amodei as <em>"nice"</em> and <em>"smart,"</em> and praised the company for responding to the Commerce Department directive <em>"very quickly because, you know, it's a tremendous liability."</em> The reversal in <em>presidential rhetoric</em> is striking against the Axios-reported <em>"They screwed us"</em> framing from a senior administration official only two days earlier (covered in the <a href="../15%20June%20-%2021%20June/15%20June%20AI%20News%20Digest%20Report.html">15 June digest</a>). Crucially, the <strong>Commerce Department directive itself has not been withdrawn</strong>: the <strong>foreign-national access ban</strong> remains in place at the regulation layer even as the political temperature has dropped. The Washington Post reports the optics rattled US allies present at the summit, who watched a Cabinet-level export-control action on a US company be re-litigated at a head-of-state working lunch &mdash; a precedent the EU and Japan AI offices read as confirmation that <em>frontier-model export policy under this administration is set bilaterally rather than through Treaty- or OECD-level multilateral process</em>.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/06/17/anthropic-amodei-google-hassabis-us-ai-coalition-g7.html">CNBC: CEOs of Anthropic and Google DeepMind call for U.S.-led AI coalition in meeting at G7</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/06/17/g7-trump-ai-tech-leaders-openai-anthropic-google.html">CNBC: 'A signal of where power sits' &mdash; Trump and world leaders joined by OpenAI, Anthropic, Google at G7</a></li>
+      <li><a href="https://www.washingtonpost.com/technology/2026/06/17/trumps-anthropic-restrictions-rattle-us-allies-ai-leaders-gather-g-7/">Washington Post: Trump's Anthropic restrictions rattle U.S. allies as AI leaders gather at G-7</a></li>
+      <li><a href="https://thenextweb.com/news/trump-anthropic-not-national-security-threat-axios-interview">The Next Web: Trump says he no longer views Anthropic as a national security threat after G7 meeting with CEO</a></li>
+      <li><a href="https://cryptonews.net/news/finance/33037044/">Cryptonews: Trump says "Anthropic is no longer a national security threat" after G7 lunch with Amodei</a></li>
+      <li><a href="https://www.fastcompany.com/91561045/g7-wraps-openai-anthropic-meet-world-leaders-discuss-future-ai">Fast Company: As G7 wraps, OpenAI and Anthropic meet with world leaders to discuss the future of AI</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Fable 5 restored 18 June with tighter classifiers, nationality controls and a more aggressive Opus 4.8 fallback</h3>
+    <div class="byline">18&ndash;21 June 2026 &middot; Primary sources: Anthropic platform docs, Azure Foundry availability docs, Interconnects (Nathan Lambert), Tech Jacks Solutions</div>
+    <p>
+      Six days after the global shutdown, <strong>Anthropic restored Fable 5 access on Thursday 18 June</strong> &mdash; but the model that came back is not the one that went offline. Three things changed under the hood: (i) a new set of <strong>auxiliary safety classifiers</strong> sits in front of the model, scanning every prompt and every intermediate trajectory for jailbreak patterns and CBRN/cyber-uplift signals, and short-circuiting the trace to a refusal when triggered; (ii) <strong>nationality-based access controls</strong> are now enforced at the API-onboarding layer, with enhanced compliance screening required before a workspace can call Fable 5 endpoints (per the new Azure Foundry availability documentation); and (iii) the model now <strong>falls back to Claude Opus 4.8 more aggressively</strong>, especially on cybersecurity, chemistry and biology prompts &mdash; Anthropic has not published an updated fallback-rate disclosure, but developers monitoring the picker behaviour in the Anthropic Console and the Claude Android app's coding interface report a measurable shift. Mythos 5 remains restricted to closed-partner cybersecurity work. The legal scaffolding around the restoration is the same Commerce Department directive that triggered the shutdown &mdash; <em>still not withdrawn</em> &mdash; layered with a new <em>data-retention</em> obligation for Fable 5 usage logs. The practical guidance for teams that re-pinned to Opus 4.8 or GPT-5.5 last week: the rollback path is open, but the <em>refusal surface</em> on Fable 5 is now meaningfully wider than at 9 June GA, so re-validate prompts before reverting any production agents.
+    </p>
+    <ul class="sources">
+      <li><a href="https://platform.claude.com/docs/en/about-claude/models/introducing-claude-fable-5-and-claude-mythos-5">Anthropic platform docs: Introducing Claude Fable 5 and Claude Mythos 5</a> (primary)</li>
+      <li><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Anthropic newsroom: Claude Fable 5 and Claude Mythos 5</a> (primary)</li>
+      <li><a href="https://www.interconnects.ai/p/claude-fable-5-and-new-ai-safety">Interconnects (Nathan Lambert): Claude Fable 5 and new AI safety fables</a></li>
+      <li><a href="https://techjacksolutions.com/ai-brief/claude-fable-5-returns-with-nationality-controls-developers/">Tech Jacks Solutions: Claude Fable 5 returns with nationality controls; developers report a more aggressive fallback</a></li>
+      <li><a href="https://www.mindstudio.ai/blog/claude-fable-5-safety-restrictions-explained">MindStudio: Claude Fable 5 safety restrictions &mdash; what gets blocked and why</a></li>
+      <li><a href="https://www.techtimes.com/articles/318783/20260621/claude-fable-5-resurfaces-android-app-nsa-breach-testimony-reshapes-ban.htm">TechTimes (21 June): Claude Fable 5 resurfaces in Android app as NSA breach testimony reshapes ban</a></li>
+      <li><a href="https://www.techtimes.com/articles/318760/20260620/fable-5-ban-update-trump-softens-directive-stands-refund-deadline-closes-today.htm">TechTimes (20 June): Fable 5 ban update &mdash; Trump softens, directive stands, refund deadline closes today</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Senate Intel</span>Sen. Mark Warner recounts NSA Director Rudd's private claim: Mythos breached "almost all" classified systems "not in weeks, but in hours"</h3>
+    <div class="byline">11&ndash;21 June 2026 &middot; Primary sources: The Economist (subscription), Senator Warner's office, NSA confirmation hearing record</div>
+    <p>
+      The political case for keeping the Commerce Department directive in place &mdash; even after Trump's G7 softening &mdash; now turns on testimony first reported in <strong>The Economist</strong> and re-circulated through the weekend of 20&ndash;21 June. <strong>Senator Mark Warner</strong>, vice chair of the <strong>Senate Intelligence Committee</strong>, publicly recounted that <strong>NSA Director Gen. Joshua Rudd</strong> &mdash; confirmed 10 March 2026 by 71&ndash;29 to jointly lead the NSA and Cyber Command &mdash; told him in a private briefing that, in an <em>authorised red-team exercise</em>, Anthropic's <strong>Mythos</strong> autonomously broke into <strong>"almost all of our classified systems, not in weeks, but in hours."</strong> Two qualifiers matter. First, this is <em>a senator's account of a private briefing</em>, not an institutional NSA statement &mdash; the social-media framing <em>"NSA confirms Mythos breached classified systems"</em> overstates the record. Second, The Economist's editors have since clarified that the demonstration depended on Mythos operating <em>alongside other offensive-cyber tools</em> under conditions inside a red-team environment, not as a turnkey unaided attack. The substantive shift is still important: Warner is using the example to argue for <strong>mandatory pre-release government review</strong> of frontier models (consistent with the 30-day voluntary early-access framework in the <strong>2 June Executive Order on Promoting Advanced AI Innovation and Security</strong>), <em>not</em> to attack Anthropic. The reframing &mdash; <em>autonomous offensive-cyber capability itself is the national-security concern, not a user-side jailbreak that can be patched</em> &mdash; substantially weakens the path back to fully-unrestricted Mythos access for any foreign-national-touching deployment.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.tipranks.com/news/anthropics-ai-model-hacked-nearly-all-nsa-classified-systems-chief-claims">TipRanks: Anthropic's AI model hacked nearly all NSA classified systems, chief claims</a></li>
+      <li><a href="https://thoughtcatalog.com/chris-lavergne/2026/06/anthropics-mythos-model-broke-into-almost-every-u-s-classified-system-in-hours-a-senator-says/">Thought Catalog: Anthropic's Mythos model broke into almost every U.S. classified system in hours, a senator says</a></li>
+      <li><a href="https://bankwatch.ca/2026/06/21/nsa-chief-says-mythos-breached-almost-all-classified-systems-in-hours/">Bankwatch (21 June): NSA chief says Mythos breached 'almost all' classified systems in hours</a></li>
+      <li><a href="https://pasqualepillitteri.it/en/news/5750/mythos-nsa-classified-systems-hours-warner">Pasquale Pillitteri: Mythos broke into NSA classified systems in hours &mdash; what Warner actually said</a></li>
+      <li><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">The White House: Executive Order &mdash; Promoting Advanced Artificial Intelligence Innovation and Security (2 June 2026)</a> (primary, cross-reference)</li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic / Korea</span>Seoul office opens with the largest Claude Code enterprise rollout in Asia &mdash; Samsung, LG, NAVER, Nexon, Hanwha</h3>
+    <div class="byline">17&ndash;18 June 2026 &middot; Primary sources: Anthropic newsroom (Seoul office, Korea partnerships), Seoul Economic Daily, TechTimes (21 June)</div>
+    <p>
+      The same week the Fable 5 / Mythos 5 export politics dominated US coverage, Anthropic landed its <strong>most commercially significant single day in Asia-Pacific to date</strong>. On <strong>Wednesday 17 June</strong>, the company formally opened a <strong>Seoul office</strong> &mdash; its third in APAC after Tokyo and Bengaluru &mdash; with <strong>KiYoung Choi</strong> running Korea. The accompanying enterprise package is unprecedented in concentration: <strong>NAVER</strong> has rolled <strong>Claude Code</strong> across its entire engineering organisation; <strong>Samsung SDS</strong> is deploying Claude (including <strong>Claude Cowork</strong> and Claude Code) to teams across Samsung Electronics; <strong>LG CNS</strong> is rolling out Claude to thousands of LG Group employees and resold solutions; <strong>Nexon</strong> is putting Claude Code into the game-studio pipeline; <strong>Hanwha Solutions</strong> is taking Claude into its industrial and energy-sector teams. Collectively, this represents <strong>tens of thousands of engineers</strong> and <strong>hundreds of thousands of total Claude seats</strong> across the chaebol footprint &mdash; the densest single-country enterprise adoption of any frontier model since GitHub Copilot's Microsoft-internal rollout in 2024. The strategic timing is pointed: the Korean rollouts are <em>unaffected</em> by the foreign-national restrictions on Fable 5 / Mythos 5 because <strong>Claude Sonnet, Opus 4.8, and Claude Code do not require Mythos-tier access</strong>; the partnerships were also negotiated and signed <em>before</em> the 12 June Commerce directive. The signal to the rest of the developer ecosystem is that Anthropic's commercial momentum survives the export action; the signal to the US national-security community is that any extension of the directive to Sonnet/Opus tiers would now meaningfully damage allied-industry adoption.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/news/seoul-office-partnerships-korean-ai-ecosystem">Anthropic newsroom: Anthropic opens Seoul office and announces new partnerships across the Korean AI ecosystem</a> (primary)</li>
+      <li><a href="https://www.anthropic.com/news/seoul-becomes-third-anthropic-office-in-asia-pacific">Anthropic newsroom: Seoul becomes Anthropic's third office in Asia-Pacific</a> (primary)</li>
+      <li><a href="https://en.sedaily.com/news/2026/06/18/anthropic-opens-korea-office-targets-government-and-public">Seoul Economic Daily (18 June): Anthropic opens Korea office, targets government and public sector</a></li>
+      <li><a href="https://www.techtimes.com/articles/318637/20260619/anthropic-opens-its-seoul-office-even-us-export-ban-cuts-korean-access-its-top-models.htm">TechTimes (19 June): Anthropic opens its Seoul office even as a US export ban cuts Korean access to its top models</a></li>
+      <li><a href="https://www.techtimes.com/articles/318811/20260621/korea-makes-largest-claude-code-bet-asia-nsa-testimony-extends-export-ban.htm">TechTimes (21 June): Korea makes largest Claude Code bet in Asia as NSA testimony extends the export ban</a></li>
+      <li><a href="https://www.krasa.ai/news/anthropic-seoul-office-kiyoung-choi-korea-3-5x-claude-usage-may-2026">Krasa.ai: Anthropic opens Seoul office, names KiYoung Choi to run Korea</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Talent &mdash; The Transformer Author Goes to OpenAI</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>Noam Shazeer leaves Google DeepMind to become OpenAI's Lead for Architecture Research</h3>
+    <div class="byline">18 June 2026 &middot; Primary sources: CNBC, Sam Altman on X, Noam Shazeer on X, Yahoo / Google internal memo</div>
+    <p>
+      <strong>Noam Shazeer</strong> &mdash; co-author of the 2017 <em>"Attention Is All You Need"</em> paper that introduced the Transformer, Google's <strong>VP of Engineering</strong>, and the <strong>co-lead of the Gemini program</strong> &mdash; left Google DeepMind on <strong>Thursday 18 June</strong> to join <strong>OpenAI</strong> as <strong>Lead for Architecture Research</strong>, owning the physical neural-network structures underlying all OpenAI models going forward. <strong>Sam Altman</strong> posted on X that the hire was <em>"only 10 years in the making"</em> and called Shazeer <em>"one of the people I have most wanted to work with since the very beginning of OpenAI."</em> The financial backdrop sharpens the move: Google paid roughly <strong>$2.7 B</strong> in mid-2024 to bring Shazeer and the Character.AI core team back to Google via a technology-licensing arrangement; he stayed <em>less than 22 months</em>. The institutional read is that the next leg of the model race &mdash; particularly the <em>post-transformer</em> architecture question that has been dominating the labs' research roadmaps since GPT-5.5 and the Gemini 3 family &mdash; is now meaningfully more concentrated inside OpenAI's research org, and meaningfully thinner inside DeepMind's. Coming on top of <strong>Andrej Karpathy joining Anthropic</strong> in May (covered in the <a href="../../May/25%20May%20-%2031%20May/25%20May%20AI%20News%20Digest%20Report.html">25 May digest</a>), the lab landscape's three most-recognised research-lead names have all moved in the last seven weeks. For the developer community, the practical takeaway is that GPT-6 and the next post-5.5 ChatGPT default will almost certainly carry Shazeer-shaped architecture choices &mdash; sparse attention variants, MoE routing, and the mixture-of-depths-derived techniques he's been quietly pushing inside DeepMind.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html">CNBC: Google Gemini co-lead Noam Shazeer leaves for OpenAI</a> (primary)</li>
+      <li><a href="https://x.com/WesRoth/status/2067880068945412130">Wes Roth on X: Noam Shazeer is leaving Google DeepMind to join OpenAI as its new lead for architecture research</a></li>
+      <li><a href="https://www.techtimes.com/articles/318613/20260618/transformer-architect-behind-gemini-jumps-openai-after-google-spent-27b.htm">TechTimes (18 June): Transformer architect behind Gemini jumps to OpenAI after Google spent $2.7 B</a></li>
+      <li><a href="https://mlq.ai/news/openai-hires-transformer-co-inventor-noam-shazeer-away-from-google-deepmind/">MLQ News: OpenAI hires Transformer co-inventor Noam Shazeer away from Google DeepMind</a></li>
+      <li><a href="https://www.eweek.com/news/noam-shazeer-leaves-google-for-openai/">eWeek: OpenAI hires Google AI veteran Noam Shazeer after $2.7 B Character.AI deal</a></li>
+      <li><a href="https://tech.yahoo.com/ai/gemini/articles/google-vp-engineering-gemini-co-133051476.html">Yahoo Tech: Google VP Engineering, Gemini co-lead leaves for OpenAI</a></li>
+      <li><a href="https://english.dotdotnews.com/a/202606/18/AP6a33b8efe4b09ea23318d519.html">Dot Dot News: Transformer architect leaves Google for OpenAI &mdash; what does Shazeer's move mean for the AI race?</a></li>
+    </ul>
+  </article>
+
+  <h2>Security &mdash; Agentjacking</h2>
+
+  <article>
+    <h3><span class="tag">Tenet Security</span>"Agentjacking": one public Sentry DSN hijacks Claude Code, Cursor and Codex with an 85% success rate; 2,388 organisations exposed</h3>
+    <div class="byline">12 June disclosure, 17 June validation cut-off, weekend reporting wave 20&ndash;22 June &middot; Primary sources: Tenet Security blog, The New Stack, Infosecurity Magazine, Pinggy, GBHackers</div>
+    <p>
+      <strong>Tenet Security</strong> researchers <strong>Ron Bobrov, Barak Sternberg and Nevo Poran</strong> published the full <em>"Agentjacking"</em> disclosure on <strong>12 June</strong>, with a validation window that ended <strong>17 June</strong> and a weekend reporting wave through 22 June. The attack: an outside party injects <em>fake error events</em> into a target organisation's <strong>Sentry</strong> project using only a <strong>public DSN credential</strong>; the <strong>Sentry MCP server</strong> then surfaces those events to the developer's AI coding agent (<strong>Claude Code, Cursor, or OpenAI Codex</strong>) as if they were real bug reports to triage; the embedded instructions in the fake error payload are interpreted by the agent as part of the debugging workflow and executed under the developer's full IAM, source, and CI/CD authority. Reported metrics: <strong>85% hijack success rate</strong> across the three target agents; <strong>2,388 organisations</strong> with exposed Sentry DSNs identified during the validation period, including <em>a Fortune 500 enterprise with a $250 B+ parent company, a $2 B+ hosting infrastructure provider, scientific-computing firms and early-stage startups across six continents</em>. Tenet labels the underlying class of vulnerability the <strong>"Authorized Intent Chain"</strong>: <em>every action in the kill-chain is technically authorised, so the attack bypasses EDR, WAF, IAM controls, VPN, Cloudflare and firewalls entirely</em> &mdash; security tooling built to catch unauthorised behaviour does not fire. <strong>Sentry</strong> was notified on <strong>3 June</strong> and has shipped a <em>content filter for the specific PoC payload string</em>, but has explicitly characterised the broader vulnerability as <strong>"not technically defensible"</strong> at the ingestion layer, because Sentry cannot distinguish malicious payloads from legitimate error messages that themselves contain code snippets and remediation notes. The practical, today-actionable mitigations for any team running Claude Code, Cursor or Codex against an MCP-connected Sentry: <em>(i)</em> treat the <em>raw text of any tool result</em> as untrusted user input, not as agent-trusted context; <em>(ii)</em> rotate any public Sentry DSN that has appeared in client-side JavaScript bundles; <em>(iii)</em> hard-gate destructive operations (filesystem writes, shell commands, package installs, secret reads) behind explicit human confirmation in the agent harness, regardless of which tool's output triggered them.
+    </p>
+    <ul class="sources">
+      <li><a href="https://thenewstack.io/agentjacking-sentry-mcp-attack/">The New Stack: A public Sentry key is all it takes to hijack Claude Code, Cursor, and Codex</a> (primary)</li>
+      <li><a href="https://www.infosecurity-magazine.com/news/agentjacking-attacks-hijack-ai/">Infosecurity Magazine: New "Agentjacking" attacks could hijack AI coding agents</a></li>
+      <li><a href="https://pinggy.io/blog/agentjacking_ai_coding_agents_sentry_mcp/">Pinggy: Agentjacking &mdash; how a fake Sentry bug report hijacks your AI coding agent</a></li>
+      <li><a href="https://gbhackers.com/agentjacking-attack-hijacks-ai-coding-agents/">GBHackers: New Agentjacking attack hijacks AI coding agents to execute malicious code</a></li>
+      <li><a href="https://hackread.com/agentjacking-fake-bug-report-hijack-ai-coding-agents/">HackRead: Agentjacking &mdash; researchers show how one fake bug report can hijack AI coding agents</a></li>
+      <li><a href="https://www.decryptiondigest.com/blog/agentjacking-sentry-mcp-ai-coding-agent-attack">Decryption Digest: Agentjacking AI coding agent attack &mdash; 2,388 orgs exposed</a></li>
+      <li><a href="https://thenextweb.com/news/agentjacking-ai-coding-agents-sentry">The Next Web: Agentjacking &mdash; a fake bug report can hijack your AI coding agent</a></li>
+      <li><a href="https://www.getreadyforagents.com/news/agentjacking-attack-sentry-claude-code/">Get Ready For Agents: Security researchers disclose agentjacking attack hijacking Claude Code and Cursor via fake error messages</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Infrastructure &mdash; FERC Reshapes Data-Centre Grid Connections</h2>
+
+  <article>
+    <h3><span class="tag">FERC</span>Unanimous show-cause orders to PJM, MISO, SPP, CAISO, ISO-NE, NYISO &mdash; reshapes AI data-centre grid interconnection for 200 M Americans</h3>
+    <div class="byline">18 June 2026 &middot; Primary sources: FERC.gov news &amp; fact sheets, Engineering News-Record, TechTimes, American Action Forum</div>
+    <p>
+      In a <strong>unanimous 5&ndash;0 vote</strong> on <strong>Wednesday 18 June</strong>, the <strong>Federal Energy Regulatory Commission</strong> issued tailored <strong>"show-cause"</strong> orders to six regional grid operators &mdash; <strong>PJM Interconnection, Midcontinent Independent System Operator (MISO), Southwest Power Pool (SPP), California Independent System Operator (CAISO), ISO New England (ISO-NE)</strong>, and <strong>New York Independent System Operator (NYISO)</strong> &mdash; requiring each to either justify or revise its rules for how <em>large loads</em>, defined as facilities consuming more than <strong>20 MW</strong>, connect to the bulk transmission system. The covered territory serves <strong>200 million Americans across more than 30 states and DC</strong>. The substantive change: FERC's expected timelines should <em>materially compress the multi-year interconnection queue backlogs</em> for AI data-centre projects, and tee up the creation of <em>new retail large-load rate classes</em> in many states &mdash; a structural answer to the question of whether ratepayers or hyperscaler customers bear the cost of new generation and transmission build-out. The legal architecture is deliberate: by issuing <em>region-specific orders narrowly scoped to FERC's jurisdiction</em> rather than a single national rulemaking, the agency maximises legal durability against state-level pushback. The proceeding stems from a <strong>October 2025 directive from Energy Secretary Chris Wright</strong> to consider reforms ensuring timely interconnection of AI data centres, and it is now the most concrete piece of <strong>AI-infrastructure policy</strong> in force after the Trump <strong>2 June Executive Order on Promoting Advanced AI Innovation and Security</strong>. For frontier-lab capacity planning, the signal is straightforward: the worst-case <em>5&ndash;7 year wait for a multi-GW interconnect</em> in PJM and CAISO is now meaningfully more likely to land closer to <em>2&ndash;3 years</em>, which materially changes the build-vs-buy calculus that drove the <strong>Goldman Sachs $7.6 T 2026&ndash;31 AI capex projection</strong> covered in the <a href="../15%20June%20-%2021%20June/15%20June%20AI%20News%20Digest%20Report.html">15 June digest</a>.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.ferc.gov/news-events/news/ferc-directs-nations-largest-grid-operator-create-new-rules-embrace-innovation-and">FERC: FERC directs nation's largest grid operator to create new rules to embrace innovation and protect consumers</a> (primary)</li>
+      <li><a href="https://www.ferc.gov/news-events/news/fact-sheet-ferc-directs-nations-largest-grid-operator-create-new-rules-embrace">FERC: Fact Sheet on the show-cause orders</a> (primary)</li>
+      <li><a href="https://www.enr.com/articles/63195-ferc-orders-grid-operators-to-rework-data-center-power-rules">Engineering News-Record: FERC orders grid operators to rework data center power rules</a></li>
+      <li><a href="https://www.techtimes.com/articles/318755/20260620/ferc-mandates-fast-track-data-center-grid-access-shielding-ratepayers-costs.htm">TechTimes (20 June): FERC mandates fast-track data center grid access, shielding ratepayers from costs</a></li>
+      <li><a href="https://www.americanactionforum.org/insight/ferc-data-center-orders-accelerate-grid-connection/">American Action Forum: FERC data center orders accelerate grid connection</a></li>
+      <li><a href="https://blog.hdata.com/2026-ferc-rulemaking-large-loads">HData: What the 2026 FERC rulemaking on large load interconnection means</a></li>
+    </ul>
+  </article>
+
+  <h2>Developer Platforms &amp; Models</h2>
+
+  <article>
+    <h3><span class="tag">xAI / AWS</span>Grok 4.3 goes GA on Amazon Bedrock at $1.25 / $2.50 per million tokens, with a new "Mantle" inference engine</h3>
+    <div class="byline">15 June 2026 &middot; Primary sources: AWS What's New, x.ai/news, AWS Bedrock model card, Windows News</div>
+    <p>
+      <strong>xAI's Grok 4.3</strong> went generally available on <strong>Amazon Bedrock</strong> on <strong>Monday 15 June</strong> &mdash; <em>xAI's first appearance on the AWS managed-model platform</em>, alongside Anthropic and OpenAI in the Bedrock independent-lab roster. Pricing is the headline: <strong>$1.25 input / $2.50 output per million tokens</strong> on-demand, materially <em>cheaper than any other US-lab frontier reasoning model on Bedrock</em>. The capability envelope: a <strong>1-million-token context window</strong>, <strong>30,000-token max output</strong>, and reasoning that is <em>always on by default</em> and configurable through a <strong>four-level effort parameter</strong> (none, low, medium, high). xAI claims Grok 4.3 holds the <em>lowest hallucination rate among frontier reasoning models</em> on a standard internal evaluation set. The deployment runs on a new AWS-side stack: <strong>Mantle</strong>, an inference engine introduced specifically for this launch and tuned for price-performance on long-context reasoning, supports tool calling, structured output, and streaming responses out of the box. Grok 4.3 was first released on the direct xAI API on 17 April 2026, with the API default switched on 30 April; the Bedrock GA is the first managed-cloud distribution surface, and slots cleanly alongside the <strong>Grok Build Plugin Marketplace</strong> shipped 11 June (covered in the <a href="../8%20June%20-%2014%20June/13%20June%20AI%20News%20Digest%20Report.html">13 June digest</a>) and the SPCX IPO disclosure obligations xAI's parent now operates under as a publicly listed company.
+    </p>
+    <ul class="sources">
+      <li><a href="https://aws.amazon.com/about-aws/whats-new/2026/06/grok-amazon-bedrock/">AWS What's New: Grok 4.3 from xAI now available in Amazon Bedrock</a> (primary)</li>
+      <li><a href="https://x.ai/news/grok-amazon-bedrock">x.ai News: Grok on Amazon Bedrock</a> (primary)</li>
+      <li><a href="https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-xai-grok-4-3.html">AWS Bedrock docs: Grok 4.3 model card</a> (primary)</li>
+      <li><a href="https://www.digitalapplied.com/blog/grok-4-3-amazon-bedrock-enterprise-launch-2026-guide">Digital Applied: Grok 4.3 on Amazon Bedrock &mdash; xAI goes enterprise 2026</a></li>
+      <li><a href="https://www.basenor.com/blogs/news/grok-4-3-lands-on-amazon-bedrock-with-1m-token-context">Basenor: Grok 4.3 lands on Amazon Bedrock with 1 M token context</a></li>
+      <li><a href="https://windowsnews.ai/article/aws-supercharges-bedrock-with-xais-grok-43-and-mantle-inference-engine-for-enterprise-reasoning.428546">Windows News: AWS supercharges Bedrock with xAI's Grok 4.3 and Mantle inference engine for enterprise reasoning</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Meituan</span>LongCat-Video-Avatar 1.5 (commercial-grade digital humans) + General-365 benchmark (Gemini 3 Pro tops out at 62.8%)</h3>
+    <div class="byline">21&ndash;22 June 2026 &middot; Primary sources: longcatai.org news, Hugging Face meituan-longcat, AIToolly</div>
+    <p>
+      China's <strong>Meituan</strong> &mdash; via its <strong>LongCat</strong> research team &mdash; landed a three-part release wave over the weekend. First, the team <strong>open-sourced LongCat-Video-Avatar 1.5</strong>, a substantial upgrade to its digital-human stack that the team describes as moving the technology from <em>experimental SOTA models to robust, commercial-grade applications</em>. Concrete improvements over the previous version: <em>lip-sync precision</em>, <em>physical plausibility</em> (joint motion, garment motion, lighting consistency), and <em>long-form video stability</em> at extended sequence lengths. Second, the team published <strong>General-365</strong>, a new reasoning benchmark covering 365 problems across logic, scientific reasoning, mathematical chains, and instruction-following. Initial results across 26 mainstream models: even the top scorer &mdash; <strong>Google's Gemini 3 Pro</strong> &mdash; achieved only <strong>62.8% accuracy</strong>, and the <em>vast majority</em> of models tested failed to clear the 60% threshold typically treated as a passing grade. The benchmark is being positioned as a new standard for <em>logical-depth</em> evaluation, designed to be harder to saturate than MMLU, GPQA, or HumanEval. Third, the team announced acceptance of <strong>six papers at ACL 2026</strong>, the premier NLP conference, covering large-model evaluation, complex-process reasoning, and competition-level mathematical thinking optimisation. Three releases in one weekend places LongCat alongside <strong>DeepSeek</strong>, <strong>Z.ai (GLM-5.2)</strong> and <strong>Qwen</strong> as China's most consistently public open-weights research programmes &mdash; and is the second major LongCat artefact wave in 2026, after the original LongCat-Next encoder-free multimodal release in March.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.longcatai.org/news/">Meituan LongCat AI: News &amp; Updates</a> (primary)</li>
+      <li><a href="https://huggingface.co/meituan-longcat">Hugging Face: meituan-longcat org page</a> (primary)</li>
+      <li><a href="https://huggingface.co/meituan-longcat/LongCat-Next">Hugging Face: meituan-longcat/LongCat-Next</a> (primary)</li>
+      <li><a href="https://github.com/meituan-longcat/LongCat-Next">GitHub: meituan-longcat/LongCat-Next</a> (primary)</li>
+      <li><a href="https://aitoolly.com/ai-news/2026-06-22">AIToolly: June 22, 2026 AI News (LongCat updates)</a></li>
+      <li><a href="https://pandaily.com/meituan-open-sources-native-multimodal-model-long-cat-next">Pandaily: Meituan open-sources native multimodal model LongCat-Next</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">DeepSeek</span>V4-Pro 75% price cut goes permanent as Huawei Ascend 950 demand surges</h3>
+    <div class="byline">Week of 15&ndash;22 June 2026 (price-cut announcement and Ascend 950 procurement signals) &middot; Primary sources: Tom's Hardware, Relvehq, Technology.org</div>
+    <p>
+      <strong>DeepSeek</strong> made permanent the <strong>75% price reduction</strong> on its <strong>V4-Pro</strong> flagship that had been running as a limited promotion since the model's <em>24 April</em> launch. V4-Pro is a <strong>1.6-trillion-parameter MoE</strong> (49 B active per token) with a <strong>1-million-token context window</strong>, and was the first major Chinese frontier-model launch with <em>day-zero Huawei Ascend SuperNode compatibility</em>, including the new <strong>950 series</strong>. The permanent price cut lands against a parallel announcement that <strong>Huawei is targeting ~750,000 units of the 950PR this calendar year</strong>, with full-scale shipments in H2; DeepSeek had previously said V4-Pro pricing could fall further once Ascend 950 supply scaled, and the move makes that explicit. The <strong>V4-Flash</strong> sibling (284 B total, 13 B active) holds at <strong>$0.28 per million output tokens</strong>. The implication for the global cost-per-token race is direct: a <em>credible 1.6 T-parameter reasoning model</em> running on <em>non-NVIDIA silicon</em> at sustained sub-dollar token economics meaningfully tightens the floor under what hyperscaler customers will pay for closed-frontier US-lab models &mdash; particularly relevant in the post-15 June US-China chip-and-software export-policy environment, where the <em>"trade of chips and critical components that excludes China"</em> framing Amodei pitched at G7 lands on the supply side at the same moment the demand side is moving to Ascend-native serving.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/deepseek-launches-1-6-trillion-parameter-v4-on-huawei-chips-as-us-escalates-ai-theft-accusations">Tom's Hardware: DeepSeek launches 1.6 trillion parameter V4 on Huawei chips as U.S. escalates AI theft accusations</a></li>
+      <li><a href="https://relvehq.com/blog/noise/deepseek-v4-pro-permanent-price-cut-huawei-ascend-950">Relveh Q: DeepSeek makes 75% V4-Pro price cut permanent as Huawei chip demand surges</a></li>
+      <li><a href="https://www.technology.org/2026/04/29/huawei-ascend-950-orders-surge-as-deepseek-v4-drives-chinese-cloud-giants-to-buy/">Technology.org: Huawei Ascend 950 orders surge as DeepSeek V4 drives Chinese cloud giants to buy</a></li>
+      <li><a href="https://tech-insider.org/deepseek-v4-huawei-ascend-1-6-trillion-parameter-moe-2026/">Tech Insider: DeepSeek V4 on Huawei Ascend &mdash; 1.6 T MoE, $1.74 token price (2026)</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> The 22 June digest is anchored on the <strong>Fable 5 / Mythos 5 restoration arc</strong>: (i) Trump's softening at the G7 lunch with Amodei and Hassabis on 17 June, (ii) the 18 June restoration of Fable 5 with new classifiers, nationality-based access controls and a more aggressive Opus 4.8 fallback, and (iii) the Sen. Warner / NSA Director Rudd revelation about Mythos breaching classified systems &mdash; which reframes the policy debate from <em>jailbreak risk</em> to <em>autonomous offensive-cyber capability as the underlying national-security concern</em>. Alongside, <strong>Anthropic's Seoul office opening</strong> with the largest Asia Claude Code deployment (Samsung, LG, NAVER, Nexon, Hanwha) was the most commercially material single day in APAC. <strong>Noam Shazeer's move to OpenAI</strong> is the single largest research-talent shift of 2026 to date. <strong>Tenet Security's "Agentjacking" disclosure</strong> &mdash; 85% hijack success rate, 2,388 exposed organisations, the "Authorized Intent Chain" framing &mdash; is the most consequential MCP-era coding-agent security finding to date. <strong>FERC's unanimous 18 June show-cause orders</strong> reshape AI data-centre grid interconnection across 200 M Americans. The developer-platform stack adds <strong>xAI Grok 4.3 on Amazon Bedrock</strong> (with the new Mantle inference engine) and <strong>Meituan's LongCat-Video-Avatar 1.5 + General-365 benchmark + 6 ACL 2026 papers</strong>. The cost-per-token line adds <strong>DeepSeek V4-Pro's permanent 75% price cut</strong> on the Huawei Ascend 950 ramp. Primary sources flagged inline include the Anthropic newsroom (Seoul office), the AWS What's New post (Grok 4.3), the FERC fact sheets, the Tenet Security disclosure (via The New Stack), CNBC's Shazeer-departure scoop, the Hugging Face meituan-longcat org page, and the Anthropic platform docs for the restored Fable 5. Secondary outlets are corroborated by at least three independent reports per item; the NSA / Mythos testimony explicitly notes the <em>senator's-account-of-private-briefing</em> qualifier flagged by The Economist. <em>Non-overlap check:</em> deliberately distinct from the <strong>15 June</strong> edition (which covered the Anthropic D.C. delegation, the Jassy&ndash;Bessent reveal, the Pliny prompt-leak dissection, Hugging Face Serge, the Apple-Google Foundation Models collab, NAVER&ndash;NVIDIA DSX, Goldman's $7.6 T capex note, and the EU AI Act labelling Code) and the <strong>13 June</strong> edition (Commerce shutdown itself, GitHub Copilot suspension, SpaceX/xAI IPO, OpenAI&ndash;Ona, xAI Grok Build Plugin Marketplace, GPT-5.2 retirement, Gemma 4 12B, TurboQuant, WSL Kernel 6.18.35.1). The 22 June digest takes <em>none</em> of those stories as its lead and refers back to them only as anchoring context.</p>
+    <p>Generated 22 June 2026.</p>
+  </footer>
+</body>
+</html>
