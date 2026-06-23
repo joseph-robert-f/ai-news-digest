@@ -221,6 +221,28 @@
   </article>
 
   <article>
+    <h3><span class="tag">Sakana AI</span>Fugu technical report: an orchestrator that routes across a swappable pool of frontier LLMs, tops several benchmarks without Fable 5</h3>
+    <div class="byline">arXiv 19 June 2026 &middot; Sakana AI blog, VentureBeat, MarkTechPost</div>
+    <p>Yujin Tang and 13 co-authors at <strong>Sakana AI</strong> released the <strong>Fugu</strong> technical report on <strong>19 June</strong>. Fugu is a family of orchestrator language models that decide when to answer directly versus assemble and coordinate a team of frontier LLMs behind a single OpenAI-compatible endpoint. Training combines large-scale fine-tuning, evolutionary algorithms and RL on top of two prior ICLR 2026 papers (TRINITY and Conductor). <strong>Fugu-Ultra</strong> tops four coding benchmarks, CharXiv Reasoning and Humanity's Last Exam; the base Fugu leads SciCode, &tau;&sup3; Banking and Long Context Reasoning &mdash; reportedly matching Anthropic <strong>Fable 5 / Mythos Preview</strong> without including either in the routing pool (notable given the ongoing Fable 5 export-control fallout).</p>
+    <ul class="sources">
+      <li><a href="https://arxiv.org/abs/2606.21228">arXiv:2606.21228 &mdash; "Fugu: A Family of Orchestrator Language Models" (primary)</a></li>
+      <li><a href="https://sakana.ai/fugu-release/">Sakana AI blog &mdash; Fugu release (primary)</a></li>
+      <li><a href="https://venturebeat.com/orchestration/no-claude-fable-5-no-problem-sakana-achieves-frontier-performance-with-new-fugu-multi-model-auto-synthesis-system">VentureBeat &mdash; "No Claude Fable 5, no problem: Sakana achieves frontier performance with Fugu"</a></li>
+      <li><a href="https://www.marktechpost.com/2026/06/22/sakana-ai-launches-sakana-fugu-an-orchestration-model-that-routes-tasks-across-a-swappable-pool-of-frontier-llms/">MarkTechPost coverage</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Google DeepMind</span>"How Transparent is DiffusionGemma?" &mdash; mech-interp finds diffusion LLMs roughly as monitorable as autoregressive Gemma 4</h3>
+    <div class="byline">arXiv 18 June 2026, trending 19&ndash;22 June &middot; LessWrong / Alignment Forum</div>
+    <p>Joshua Engels, Callum McDougall, Bilal Chughtai, Janos Kramar, Senthoran Rajamanoharan, Arthur Conmy, Rohin Shah, Neel Nanda and collaborators at <strong>Google DeepMind</strong> (joint interpretability + text-diffusion teams) ask whether text-diffusion models are inherently less monitorable than autoregressive ones. They decompose transparency into <em>variable</em> transparency (interpreting intermediate snapshots) and <em>algorithmic</em> transparency (reconstructing the process). Headline finding: <strong>DiffusionGemma is similarly monitorable to Gemma 4</strong>, and treating intermediate states as interpretable reduces opaque serial depth to just <strong>1.1&times;</strong> that of Gemma 4. Case studies surface non-chronological reasoning, token/sequence smearing and intermediate-context reasoning &mdash; useful priors for auditing the diffusion-style models now landing in <code>transformers</code> v5.11.0.</p>
+    <ul class="sources">
+      <li><a href="https://arxiv.org/abs/2606.20560">arXiv:2606.20560 &mdash; "How Transparent is DiffusionGemma?" (primary)</a></li>
+      <li><a href="https://www.lesswrong.com/posts/zoYXpdaMgFT43Wc24/how-transparent-is-diffusiongemma-and-why-it-matters">LessWrong / Alignment Forum writeup</a></li>
+    </ul>
+  </article>
+
+  <article>
     <h3><span class="tag">European Commission</span>Domyn-led EUROPA consortium wins Frontier AI Grand Challenge: 400B+ open model on 6,000 Blackwell GPUs</h3>
     <div class="byline">19 June 2026 &middot; Heise Online</div>
     <p>The European Commission named the Italy-anchored <strong>Domyn-led EUROPA consortium</strong> winner of its Frontier AI Grand Challenge on <strong>19 June</strong>. The deliverable: an open-source frontier model exceeding <strong>400B parameters</strong>, covering all <strong>24 EU languages</strong>, trained on a dedicated <strong>6,000-chip NVIDIA Blackwell cluster</strong> plus up to <strong>2.5% of EuroHPC capacity</strong>. It is the most concrete commitment yet behind the EU's "AI Continent" sovereign-AI push and arrives in the same week NVIDIA disclosed <strong>35 AI HPC supercomputers</strong> in development across Europe.</p>
