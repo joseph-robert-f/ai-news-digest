@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 23 June 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 23 June 2026</h1>
+    <div class="meta">Week of 22&ndash;28 June 2026 &middot; Coverage window: 19&ndash;23 June (last ~96 hours, weekend roll-up)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The <strong>Fable&nbsp;5 / Mythos&nbsp;5 shutdown</strong> escalated from a White House story into a constitutional one: a <strong>bipartisan House letter</strong> sent <strong>18&ndash;19 June</strong> demanded Commerce Secretary <strong>Howard Lutnick</strong> identify his statutory authority, and a <strong>Bloomberg</strong> legal analysis (19 June) argued his invocation of <strong>EAR&nbsp;&sect;&nbsp;744.22</strong> may be unenforceable because cloud SaaS is not an "export" under current law. <strong>Fable 5</strong> was quietly restored on or about <strong>18 June</strong> with new nationality-based access controls (developers report markedly more frequent fallback to <strong>Claude Opus 4.8</strong> on cyber, chem and bio prompts); <strong>Mythos 5</strong> remained dark through 22 June with the free-access window for affected enterprise customers <strong>expiring Monday with no deal announced</strong>. In parallel, <strong>Anthropic</strong> published a <strong>22 June</strong> privacy-policy update warning that flagged Claude users will be asked to upload <strong>government ID and facial-geometry templates</strong> via <strong>Persona Identities</strong> starting <strong>8 July</strong>. <strong>OpenAI</strong> shipped <strong>"Patch the Planet"</strong> and the <strong>GPT-5.5-Cyber</strong> GA (22 June) with <strong>Trail of Bits</strong>, opening 64&nbsp;PRs and 51&nbsp;issues across cURL, CPython, Go, Sigstore and pyca/cryptography in week one. <strong>NVIDIA</strong> used <strong>ISC&nbsp;2026 in Hamburg</strong> to launch <strong>Vera Rubin</strong>, winning the <strong>Los Alamos Mission/Vision/Veritas</strong> contracts; the next day <strong>NVIDIA fell 6%, AMD/Micron/Qualcomm 9%+</strong> in a sharp AI-stock sell-off ahead of NVIDIA's annual meeting. <strong>Micron</strong> signed a multi-year HBM/DRAM/SSD supply deal with Anthropic and joined the <strong>$65 B Series H</strong>. <strong>Baseten</strong> closed a <strong>$1.5 B Series F at $13 B</strong>. <strong>TypeScript&nbsp;7.0&nbsp;RC</strong> shipped with a <strong>Go-native compiler ~10&times; faster</strong> than 6.0, and <strong>Node.js</strong> patched <strong>12 CVEs</strong> including two HIGH-severity TLS and WebCrypto flaws.
+  </div>
+
+  <h2>Top Story &mdash; Fable&nbsp;5 / Mythos&nbsp;5: Congress, the EAR, and a Quiet Restoration</h2>
+
+  <article>
+    <h3><span class="tag">U.S. Congress</span>Bipartisan House letter demands Lutnick justify the legal basis for the Anthropic export order</h3>
+    <div class="byline">18&ndash;19 June 2026 &middot; Reported by The Washington Post, Punchbowl News</div>
+    <p>A bipartisan group of House members sent Commerce Secretary <strong>Howard Lutnick</strong> a letter on <strong>18&ndash;19 June</strong> asking him to identify the specific statutory authority used to order Anthropic to block foreign-national access to Claude Fable 5 and Mythos 5, warning that the unilateral directive "sets a precedent with significant implications" for the broader AI industry. The letter was the first formal congressional pushback against the <strong>12 June</strong> Commerce action.</p>
+    <ul class="sources">
+      <li><a href="https://www.washingtonpost.com/technology/2026/06/18/house-members-want-answers-export-controls-placed-anthropic-fable/">The Washington Post &mdash; "House members want answers on export controls placed on Anthropic's Fable"</a></li>
+      <li><a href="https://punchbowl.news/article/tech/lawmakers-lutnick-anthropic/">Punchbowl News &mdash; "Lawmakers press Lutnick on Anthropic action"</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Legal Analysis</span>Bloomberg: Lutnick's invocation of EAR&nbsp;&sect;&nbsp;744.22 may not legally cover SaaS API access</h3>
+    <div class="byline">19 June 2026 &middot; Reported by Bloomberg, Just Security</div>
+    <p>Bloomberg reported on <strong>19 June</strong> that legal experts &mdash; including a former senior Commerce policy adviser who called Lutnick's letter "so badly drafted it might not restrict API or chatbot access at all" &mdash; argue the directive is on shaky ground because cloud software-as-a-service is not currently an "export" under the Export Administration Regulations. The House passed a remote-access bill in January 2026, but it has not been enacted.</p>
+    <ul class="sources">
+      <li><a href="https://www.bloomberg.com/news/articles/2026-06-19/lutnick-s-anthropic-crackdown-claims-new-power-over-ai-models">Bloomberg &mdash; "Lutnick's Anthropic crackdown claims new power over AI models"</a></li>
+      <li><a href="https://www.justsecurity.org/142745/law-anthropic-export-controls/">Just Security &mdash; "The law (or lack of it) behind the Anthropic export controls"</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Fable 5 quietly restored ~18 June with nationality controls; Mythos 5 still dark, free-credit window closed Monday</h3>
+    <div class="byline">18&ndash;22 June 2026 &middot; Reported by Tech Jacks Solutions, TechTimes, Korea JoongAng Daily, The New Stack</div>
+    <p>Six days into the outage, <strong>Anthropic restored Claude Fable 5 on or about 18 June</strong>, but the restored model ships behind enhanced nationality-based access controls and compliance screening during API onboarding (documented in <em>Azure Foundry</em> availability notes). Developers report the restored model triggers fallback to <strong>Claude Opus 4.8</strong> noticeably more often, especially on cybersecurity, chemistry and biology prompts. <strong>Mythos 5</strong> remained globally suspended through Monday <strong>22 June</strong>, when Anthropic's free-access pricing window for affected enterprise customers expired without a public deal. CEO Dario Amodei reportedly met President Trump at the G7 in <strong>&Eacute;vian-les-Bains</strong> on or around 20 June; Anthropic is also said to have finished training a successor model to Mythos 5.</p>
+    <ul class="sources">
+      <li><a href="https://techjacksolutions.com/ai-brief/claude-fable-5-returns-with-nationality-controls-developers/">Tech Jacks Solutions &mdash; "Claude Fable 5 Returns With Nationality Controls"</a></li>
+      <li><a href="https://www.techtimes.com/articles/318668/20260618/fable-5-export-ban-day-six-anthropic-opens-seoul-office-vows-models-back-days.htm">TechTimes &mdash; "Fable 5 Export Ban Day Six"</a></li>
+      <li><a href="https://www.koreajoongangdaily.com/business/anthropic-confident-of-reenabling-mythos-fable-5-access-in-coming-days-executive/12727522">Korea JoongAng Daily &mdash; "Anthropic confident on Mythos/Fable 5 reinstatement"</a></li>
+      <li><a href="https://thenewstack.io/fable-ban-open-weights/">The New Stack &mdash; "Fable 5 ban: 4 open models responded before Anthropic could restore access"</a></li>
+    </ul>
+  </article>
+
+  <h2>Frontier Labs &amp; Models</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI</span>"Patch the Planet" + GPT-5.5-Cyber GA: 64 PRs, 51 issues across cURL, CPython, Go, Sigstore in week one</h3>
+    <div class="byline">22 June 2026 &middot; OpenAI blog, Trail of Bits, SiliconANGLE, The Hacker News</div>
+    <p>OpenAI expanded its <strong>Daybreak</strong> cybersecurity program on <strong>22 June</strong> with three pieces: (1) <strong>Patch the Planet</strong>, an open-source patching initiative built with <strong>Trail of Bits</strong>, HackerOne and Calif; (2) an updated <strong>Codex Security</strong> plugin; and (3) the full GA of <strong>GPT-5.5-Cyber</strong>, which OpenAI says scores <strong>85.6%</strong> on the CyberGym benchmark versus 81.8% for base GPT-5.5. In the first week, Patch the Planet generated <strong>64 PRs and 51 issues</strong> across 19 OSS projects (cURL, CPython, Go, aiohttp, Sigstore, pyca/cryptography, NATS Server, freenginx); over 30 projects have signed on. Enterprise launch partners include <strong>Accenture, Cisco, CrowdStrike, IBM, Okta, Palo Alto Networks and Wiz</strong>.</p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/patch-the-planet/">OpenAI &mdash; "Patch the Planet: a Daybreak initiative" (primary)</a></li>
+      <li><a href="https://blog.trailofbits.com/2026/06/22/introducing-patch-the-planet/">Trail of Bits &mdash; "Introducing Patch the Planet" (primary partner)</a></li>
+      <li><a href="https://siliconangle.com/2026/06/22/openai-expands-daybreak-patch-planet-full-gpt-5-5-cyber-release/">SiliconANGLE &mdash; "OpenAI expands Daybreak with Patch the Planet and full GPT-5.5-Cyber release"</a></li>
+      <li><a href="https://thehackernews.com/2026/06/openai-expands-daybreak-with-gpt-55.html">The Hacker News &mdash; "OpenAI Expands Daybreak With GPT-5.5-Cyber"</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Claude will start asking flagged users for government ID and biometric face data on 8 July</h3>
+    <div class="byline">22 June 2026 &middot; Anthropic Help Center, TechCrunch, The Next Web</div>
+    <p>Anthropic updated its privacy policy on <strong>22 June</strong> to disclose that beginning <strong>8 July</strong>, a "small subset of users" whose accounts get flagged for potential policy violations will be asked to verify identity and/or age through partner <strong>Persona Identities</strong>. Collected data may include government-issued ID images, ID numbers, dates of birth, photos/videos and <strong>facial-geometry templates</strong>; the data is stored by Persona, not Anthropic. Anthropic frames the step as an appeal path that replaces outright bans &mdash; and as a way to satisfy the nationality-verification expectations stemming from the Fable 5 export controls.</p>
+    <ul class="sources">
+      <li><a href="https://support.claude.com/en/articles/14328960-identity-verification-on-claude">Anthropic Help Center &mdash; "Identity verification on Claude" (primary)</a></li>
+      <li><a href="https://techcrunch.com/2026/06/22/anthropic-says-claude-may-want-to-see-your-id/">TechCrunch &mdash; "Anthropic says Claude may want to see your ID"</a></li>
+      <li><a href="https://thenextweb.com/news/anthropic-claude-id-verification-privacy-policy-persona-biometric">The Next Web &mdash; "Anthropic's new privacy policy collects biometric data from flagged Claude users"</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Google &rarr; OpenAI</span>Noam Shazeer leaves Google DeepMind for OpenAI; senior researchers reportedly followed</h3>
+    <div class="byline">18 June 2026 &middot; CNBC, Axios</div>
+    <p>Google paid roughly <strong>$2.7 B</strong> in the 2024 Character.AI reverse-acquihire to bring <strong>Noam Shazeer</strong> back as a Gemini co-lead; on <strong>18 June 2026</strong> he resigned and signed with OpenAI. CNBC and Axios reported that additional senior DeepMind researchers followed, intensifying investor concern over Alphabet's projected <strong>$180&ndash;190 B</strong> 2026 AI capex and whether the Gemini roadmap can absorb the loss. Shazeer is a co-author of "Attention Is All You Need."</p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html">CNBC &mdash; "Google Gemini co-lead Noam Shazeer leaves for OpenAI"</a></li>
+      <li><a href="https://www.axios.com/2026/06/18/noam-shazeer-google-openai-characterai">Axios &mdash; "Shazeer back at OpenAI two years after Google's $2.7B Character.AI deal"</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Infrastructure &amp; Capital Markets</h2>
+
+  <article>
+    <h3><span class="tag">NVIDIA</span>Vera Rubin launches at ISC 2026; Los Alamos wins (Mission/Vision/Veritas) and Germany's Blue Lion follow</h3>
+    <div class="byline">22 June 2026 &middot; NVIDIA Newsroom, NVIDIA Blogs, Tom's Hardware</div>
+    <p>At <strong>ISC High Performance 2026 in Hamburg</strong>, NVIDIA unveiled the <strong>Vera Rubin</strong> platform: <strong>7 exaflops of AI and 5 petaflops of FP64</strong> in a single 144-GPU rack. <strong>Los Alamos National Laboratory</strong> selected Vera Rubin plus HPE's <strong>Cray GX5000</strong> for three new systems &mdash; <strong>Mission, Vision and Veritas</strong>. Mission combines Vera Rubin GPU nodes with <strong>2,300 standalone NVIDIA Vera CPUs</strong> on the GX240 blade; Veritas adds ~1,150 more. LANL benchmarks showed a single Vera CPU delivering <strong>&gt;3&times;</strong> per-socket performance versus current x86 in Crossroads and <strong>7&times;</strong> on URSA workloads. Germany's Leibniz Supercomputing Centre will deploy Vera Rubin in 2027's <strong>Blue Lion</strong>; Bull, Dell, GIGABYTE, HPE and Supermicro all announced custom systems. NVIDIA also disclosed it now powers <strong>81% of the TOP500</strong>, with 35 AI HPC supercomputers in development across Europe, and launched <strong>Halos for Robotics</strong>.</p>
+    <ul class="sources">
+      <li><a href="https://nvidianews.nvidia.com/news/nvidia-vera-rubin-delivers-world-class-supercomputers-for-science">NVIDIA Newsroom &mdash; "Vera Rubin Delivers World-Class Supercomputers for Science" (primary)</a></li>
+      <li><a href="https://blogs.nvidia.com/blog/nvidia-vera-cpu-los-alamos-national-laboratory/">NVIDIA Blog &mdash; "Vera CPU at Los Alamos National Laboratory"</a></li>
+      <li><a href="https://www.tomshardware.com/tech-industry/supercomputers/nvidia-unveils-vera-rubin-supercomputers-for-los-alamos-national-laboratory-announcement-comes-on-heels-of-amds-recent-supercomputer-wins">Tom's Hardware &mdash; "Vera Rubin supercomputers for LANL"</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Markets</span>AI chip rout: NVIDIA &minus;6%, AMD/Micron/Qualcomm &minus;9% on 23 June ahead of NVIDIA annual meeting</h3>
+    <div class="byline">23 June 2026 &middot; Yahoo Finance</div>
+    <p>A broad AI-stock sell-off slammed semiconductors on <strong>23 June</strong>, with <strong>NVIDIA falling about 6%</strong> (briefly pushing market cap back below $5 trillion) and <strong>AMD, Micron and Qualcomm sliding more than 9%</strong>. The rout came one day before NVIDIA's annual shareholder meeting and amid renewed anxiety about AI-capex sustainability and hyperscaler ROI &mdash; the same trade that drove last week's Goldman Sachs $7.6 T capex revision.</p>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-nvidia-stock-drops-6-in-ugly-day-for-chip-stocks-100000734.html">Yahoo Finance &mdash; "NVIDIA stock drops 6% in ugly day for chip stocks"</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Micron / Anthropic</span>Multi-year HBM/DRAM/SSD supply deal + strategic check into the $65 B Series H</h3>
+    <div class="byline">22 June 2026 &middot; Micron IR, Reuters, GlobeNewswire</div>
+    <p>Micron Technology and Anthropic announced a four-layer strategic agreement on <strong>22 June</strong>: a multi-year supply contract for HBM, DRAM and SSDs to back Anthropic's compute scale-up; joint memory-subsystem co-design for Claude training and inference; enterprise deployment of Claude across Micron engineering, manufacturing and corporate functions; and an undisclosed Micron investment in Anthropic's <strong>$65 B Series H</strong> (which closed at a <strong>$965 B post-money valuation</strong>). Micron stock jumped roughly <strong>6.8%</strong> intraday ahead of fiscal Q3 earnings.</p>
+    <ul class="sources">
+      <li><a href="https://investors.micron.com/news-releases/news-release-details/micron-and-anthropic-announce-strategic-agreement-scale-next">Micron Investor Relations &mdash; "Strategic Agreement to Scale Next-Generation AI Infrastructure" (primary)</a></li>
+      <li><a href="https://www.globenewswire.com/news-release/2026/06/22/3315307/14450/en/micron-and-anthropic-announce-strategic-agreement-to-scale-next-generation-ai-infrastructure.html">GlobeNewswire mirror</a></li>
+      <li><a href="https://www.tradingview.com/news/reuters.com,2026:newsml_L4N42U1FK:0-micron-anthropic-sign-ai-infrastructure-supply-agreement/">Reuters via TradingView</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Venture</span>Baseten raises $1.5 B Series F at $13 B; Upscale AI adds $190 M with NVIDIA, Salesforce, Temasek joining</h3>
+    <div class="byline">22 June 2026 &middot; BusinessWire, Yahoo Finance, Fortune</div>
+    <p><strong>Baseten</strong> closed a <strong>$1.5 B Series F</strong> at a <strong>$13 B valuation</strong>, led by Altimeter Capital, Conviction Partners and Spark Capital with Sands Capital and Wellington Management co-leading. The AI-inference platform reports <strong>20&times; YoY revenue growth</strong> and over <strong>1 billion inference calls/day</strong> across 87 clusters and 18 clouds &mdash; a clean read on capital flowing to the inference layer as workloads shift from training to production. Separately, <strong>Upscale AI</strong> announced a <strong>$190 M Series A-1</strong> extension led by Premji Invest at a <strong>$2 B valuation</strong>, with <strong>NVIDIA, Salesforce Ventures, Temasek and Seligman Ventures</strong> joining. Upscale builds an open-standard switch/NIC/fabric stack pitched as an alternative to NVIDIA NVLink/Spectrum-X and Broadcom Tomahawk in a market Dell'Oro projects above <strong>$100 B/year by 2030</strong>.</p>
+    <ul class="sources">
+      <li><a href="https://finance.yahoo.com/technology/ai/articles/baseten-raises-1-5-billion-130000555.html">Yahoo Finance &mdash; "Baseten raises $1.5 billion to power the next era of AI inference"</a></li>
+      <li><a href="https://www.businesswire.com/news/home/20260618053226/en/Upscale-AI-Adds-$190-Million-in-Extension-to-Series-A-Reaching-Half-Billion-Dollars-in-Total-Funding">BusinessWire &mdash; "Upscale AI adds $190 M extension to Series A"</a></li>
+      <li><a href="https://fortune.com/2026/06/22/nvidia-upscale-ai-next-ciscoand-seligman-ventures-premji/">Fortune &mdash; "Upscale AI wants to be the next Cisco"</a></li>
+    </ul>
+  </article>
+
+  <h2>Open-Source AI &amp; Research</h2>
+
+  <article>
+    <h3><span class="tag">Z.ai (Zhipu)</span>GLM-5.2 (744B MoE, MIT) leads SWE-bench Pro and Terminal-Bench 2.1 &mdash; first open model to top both</h3>
+    <div class="byline">Weights dropped 17 June; benchmark coverage 20&ndash;22 June 2026 &middot; VentureBeat</div>
+    <p>Independent reruns confirmed Z.ai's <strong>GLM-5.2</strong> (744B parameters, ~40B active, 1M context, MIT license) at <strong>62.1 on SWE-bench Pro</strong> (vs. 58.6 for GPT-5.5) and <strong>81.0 on Terminal-Bench 2.1</strong> &mdash; the first time an MIT-licensed model has topped both an OpenAI and Anthropic flagship on agentic coding benchmarks that enterprise buyers actually track. VentureBeat estimates inference cost at roughly <strong>1/6th</strong> the equivalent closed-model API spend.</p>
+    <ul class="sources">
+      <li><a href="https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost">VentureBeat &mdash; "Z.ai's open-weights GLM-5.2 beats GPT-5.5 on multiple long-horizon coding benchmarks"</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">European Commission</span>Domyn-led EUROPA consortium wins Frontier AI Grand Challenge: 400B+ open model on 6,000 Blackwell GPUs</h3>
+    <div class="byline">19 June 2026 &middot; Heise Online</div>
+    <p>The European Commission named the Italy-anchored <strong>Domyn-led EUROPA consortium</strong> winner of its Frontier AI Grand Challenge on <strong>19 June</strong>. The deliverable: an open-source frontier model exceeding <strong>400B parameters</strong>, covering all <strong>24 EU languages</strong>, trained on a dedicated <strong>6,000-chip NVIDIA Blackwell cluster</strong> plus up to <strong>2.5% of EuroHPC capacity</strong>. It is the most concrete commitment yet behind the EU's "AI Continent" sovereign-AI push and arrives in the same week NVIDIA disclosed <strong>35 AI HPC supercomputers</strong> in development across Europe.</p>
+    <ul class="sources">
+      <li><a href="https://www.heise.de/en/news/400-Billion-Parameter-Model-Consortium-Europa-Wins-AI-Competition-11339046.html">Heise Online &mdash; "400-billion-parameter model: Consortium EUROPA wins AI competition"</a></li>
+    </ul>
+  </article>
+
+  <h2>Software Engineering Stack</h2>
+
+  <article>
+    <h3><span class="tag">Microsoft</span>TypeScript 7.0 RC ships the Go-native compiler &mdash; ~10&times; faster, VS Code self-build 77s &rarr; 7s</h3>
+    <div class="byline">18 June 2026 (RC), uptake through 19&ndash;23 June &middot; Microsoft TypeScript DevBlog</div>
+    <p>Microsoft published the <strong>TypeScript 7.0 Release Candidate</strong> on <strong>18 June</strong>, available immediately as <code>npm install -D typescript@rc</code>. The headline change: the compiler itself is now written in <strong>Go</strong> rather than TypeScript/JavaScript, reportedly running <strong>~10&times; faster</strong> than 6.0 thanks to native code plus shared-memory parallelism. PM <strong>Daniel Rosenwasser</strong> said the port preserves identical type-checking semantics &mdash; it's a port, not a rewrite. The Go compiler cuts a VS Code self-build from <strong>~77 s to ~7 s</strong>; Microsoft expects GA within roughly one month. A stable programmatic API won't land until 7.1.</p>
+    <ul class="sources">
+      <li><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0-rc/">Microsoft TypeScript DevBlog &mdash; "Announcing TypeScript 7.0 RC" (primary)</a></li>
+      <li><a href="https://github.com/microsoft/typescript-go/milestone/1">typescript-go milestone 1 (GitHub)</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Node.js</span>Coordinated 22.23.0 / 24.17.0 / 26.3.1 security release patches 12 CVEs, 2 HIGH</h3>
+    <div class="byline">Advisory 18 June 2026; remediation through 19&ndash;23 June &middot; Node.js blog</div>
+    <p>The Node.js Release Working Group shipped coordinated security releases across the <strong>22.x (Jod), 24.x (Krypton) and 26.x (Current)</strong> lines covering <strong>12 CVEs</strong>. Two are HIGH: <strong>CVE-2026-48933</strong>, a WebCrypto integer overflow that crashes the process when <code>subtle.encrypt()</code> receives input a multiple of <strong>2 GiB</strong> (fixed by Filip Skokan); and <strong>CVE-2026-48618</strong>, a TLS wildcard-depth authentication bypass caused by a Unicode dot-separator hostname-normalization mismatch (fixed by Matteo Collina). The remaining 10 cover HTTP/2 memory growth, proxy credential leaks via <code>ERR_PROXY_TUNNEL</code>, an mTLS SNI case-sensitivity bypass, and several <code>--permission</code> model escapes. Dependency bumps: <strong>llhttp 9.4.2, nghttp2 1.69.0, OpenSSL 3.5.7</strong>.</p>
+    <ul class="sources">
+      <li><a href="https://nodejs.org/en/blog/vulnerability/june-2026-security-releases">Node.js &mdash; "June 2026 Security Releases" (primary)</a></li>
+      <li><a href="https://gbhackers.com/node-js-releases-security-updates-for-12-vulnerabilities/">GBHackers coverage</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>Claude Code 2.1.183 blocks destructive git/Terraform/Pulumi in auto mode</h3>
+    <div class="byline">19 June 2026 (with 2.1.185 follow-up 20 June) &middot; Anthropic Claude Code changelog</div>
+    <p>Claude Code <strong>2.1.183</strong> (19 June) tightened auto-mode safety: it now blocks destructive git commands (<code>git reset --hard</code>, <code>git checkout -- .</code>, <code>git clean -fd</code>, <code>git stash drop</code>) unless the user explicitly asked to discard local work; blocks <code>git commit --amend</code> on commits the agent didn't author this session; and refuses <code>terraform destroy</code>, <code>pulumi destroy</code> and <code>cdk destroy</code> unless the specific stack was named. The release also adds a deprecated-model warning shown on stderr in <code>-p</code> print mode, an <code>attribution.sessionUrl</code> setting to omit claude.ai session links from generated commits/PRs, and <code>/config --help</code>. A <strong>2.1.185</strong> follow-up on 20 June reworded the stream-stall hint to "Waiting for API response &middot; will retry in&hellip;" and bumped the silence threshold from 10s to 20s before retrying.</p>
+    <ul class="sources">
+      <li><a href="https://code.claude.com/docs/en/changelog">Claude Code Changelog (primary)</a></li>
+      <li><a href="https://github.com/anthropics/claude-code/releases">anthropics/claude-code GitHub releases</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">GitHub</span>Claude available as agent provider in JetBrains IDEs (preview)</h3>
+    <div class="byline">22 June 2026 &middot; GitHub Changelog</div>
+    <p>GitHub launched a public preview that lets developers select <strong>Claude as the agent provider</strong> inside GitHub Copilot for JetBrains IDEs &mdash; IntelliJ, PyCharm, GoLand, WebStorm and others. The release also bundles model-picker enhancements, a per-turn AI credits indicator, and reliability fixes, extending the multi-provider strategy Copilot adopted after moving to usage-based billing earlier this month.</p>
+    <ul class="sources">
+      <li><a href="https://github.blog/changelog/2026-06-22-new-features-and-claude-as-agent-provider-preview-in-jetbrains-ides/">GitHub Changelog &mdash; "Claude as agent provider preview in JetBrains IDEs" (primary)</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Security Research</span>Tenet's "Agentjacking" exploit: 85% success against Claude Code, Cursor and Codex via the Sentry MCP</h3>
+    <div class="byline">Public reporting mid&ndash;late June 2026 &middot; The New Stack</div>
+    <p>Tenet Security's "Agentjacking" research demonstrated that a single public <strong>Sentry DSN</strong> is sufficient to inject malicious "remediation guidance" into error events that AI coding agents &mdash; <strong>Claude Code, Cursor and Codex</strong> via the Sentry MCP &mdash; will execute without further user prompting. Tenet reported an <strong>85% success rate</strong> across more than 100 tested targets, with <strong>2,388 organizations</strong> exposing injectable DSNs. Sentry acknowledged the issue but declined a root-cause fix, calling it "technically not defensible," and shipped only a single payload filter.</p>
+    <ul class="sources">
+      <li><a href="https://thenewstack.io/agentjacking-sentry-mcp-attack/">The New Stack &mdash; "Agentjacking: hijacking AI coding agents through Sentry MCP"</a></li>
+    </ul>
+  </article>
+
+  <h2>Policy &amp; Standards</h2>
+
+  <article>
+    <h3><span class="tag">Colorado</span>SB 26-189 effectively guts the Colorado AI Act before its 30 June effective date arrives</h3>
+    <div class="byline">Deadline week of 30 June 2026; legislative action 14 May 2026 &middot; Hunton Privacy Blog, Colorado General Assembly</div>
+    <p>Colorado's landmark <strong>SB 24-205 AI Act</strong> &mdash; the only comprehensive cross-sector state AI law in the U.S. &mdash; was originally set to take effect <strong>30 June 2026</strong>. On <strong>14 May 2026</strong>, Governor <strong>Jared Polis</strong> signed <strong>SB 26-189</strong>, which pushed the effective date to <strong>1 January 2027</strong> and stripped the risk-based framework: the duty of care to prevent algorithmic discrimination, deployer obligations to maintain risk-management programs, mandatory impact assessments and certain AG reporting are all gone, replaced by a narrower disclosure regime for automated decision-making. A federal magistrate judge separately stayed enforcement of Colorado's anti-discrimination AI rules on <strong>27 April 2026</strong>. The deadline week passing without enforcement removes the most aggressive state-level AI civil-rights regime in the country.</p>
+    <ul class="sources">
+      <li><a href="https://www.hunton.com/privacy-and-cybersecurity-law-blog/colorado-ai-act-amended-and-effective-date-delayed">Hunton Privacy Blog &mdash; "Colorado AI Act amended and effective date delayed"</a></li>
+      <li><a href="https://leg.colorado.gov/bills/sb24-205">Colorado General Assembly &mdash; SB 24-205 (primary)</a></li>
+      <li><a href="https://www.lawandtheworkplace.com/2026/05/major-developments-put-colorados-ai-law-on-ice-ahead-of-implementation/">Proskauer Law and the Workplace &mdash; "Major developments put Colorado's AI law on ice"</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p>Compiled 23 June 2026. Coverage window: 19&ndash;23 June 2026, with weekend roll-up. Stories were screened against the 13 June and 15 June digests to avoid duplication; the Fable 5 / Mythos 5 thread is included only where there is material new reporting since the 15 June report. Where the primary source was a press release or official changelog, it is marked "(primary)" in the source list. Lower-quality sources (developer blogs, aggregator coverage) are only cited where two or more independent reports corroborate the story.</p>
+  </footer>
+</body>
+</html>
