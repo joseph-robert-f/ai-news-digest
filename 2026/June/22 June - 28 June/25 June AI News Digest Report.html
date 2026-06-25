@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 25 June 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 25 June 2026</h1>
+    <div class="meta">Week of 22&ndash;28 June 2026 &middot; Coverage window: 24&ndash;25 June (last ~24 hours, with 23 June carry-overs not covered in the <a href="24%20June%20AI%20News%20Digest%20Report.html">24 June digest</a>)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The single biggest story of the last 24 hours is <strong>OpenAI's debut custom silicon</strong>: on <strong>Wednesday 24 June</strong> OpenAI and <strong>Broadcom</strong> unveiled <strong>Jalapeño</strong>, OpenAI's first Intelligence Processor &mdash; a reticle-sized ASIC purpose-built for LLM inference, taped out in <strong>nine months</strong> with assistance from OpenAI's own models, with engineering samples already running <strong>GPT&#8209;5.3&#8209;Codex&#8209;Spark</strong> at production frequency and an end-of-2026 gigawatt-scale deployment target. In parallel, the <strong>Google DeepMind brain drain widened</strong>: <strong>Bloomberg</strong> reported on <strong>24 June</strong> that Gemini contributors <strong>Jonas Adler</strong> and <strong>Alexander Pritzel</strong> (both AlphaFold co-authors with Nobel laureate <strong>John Jumper</strong>) are moving to <strong>Anthropic</strong> &mdash; the fourth and fifth senior departures in six days following Jumper himself (announced 20 June) and Transformer co-author <strong>Noam Shazeer</strong> (announced 18 June, joining OpenAI). <strong>Anthropic launched Claude Tag</strong> on Slack with <strong>Salesforce</strong> as a deep co-launch partner &mdash; replacing the legacy Claude-for-Slack app with a persistent multiplayer AI teammate that has, internally, already authored <strong>65%</strong> of the product team's merged code. <strong>Meta</strong> confirmed via NYT-and-NPR scoops that Zuckerberg has greenlit <strong>"Arena"</strong>, a standalone AI-powered prediction-market app targeting Kalshi and Polymarket (sector volume $50&nbsp;B &rarr; $130&nbsp;B YoY). On the research bench, <strong>OpenAI</strong>'s own blog post on <strong>23&ndash;24 June</strong> documents <strong>GPT&#8209;5 Pro</strong> solving a three-year-old T-cell mystery for The Jackson Laboratory's <strong>Derya Unutmaz</strong> &mdash; the first widely-circulated, primary-source case of a frontier model surfacing a novel-to-the-experimenter biological mechanism on unpublished private data. And on the security front, security firm <strong>Apiiro</strong> and a solo researcher operating as <strong>Orchid</strong> attributed an automated GitHub <strong>"repo-confusion"</strong> campaign that has infected <strong>&gt;100,000 repositories</strong> with cloned forks targeting AI agents, against an ongoing backdrop of GitHub availability impairment from the Azure regional degradation.
+  </div>
+
+  <h2>Top Story &mdash; OpenAI Ships Its First Silicon: Jalapeño</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI &times; Broadcom</span>Jalapeño Intelligence Processor: 9-month tape-out, GPT&#8209;5.3&#8209;Codex&#8209;Spark running in the lab</h3>
+    <div class="byline">24 June 2026 &middot; Primary sources: openai.com; Broadcom investor relations; CNBC; VentureBeat; Tom's Hardware</div>
+    <p>
+      On <strong>Wednesday 24 June</strong> OpenAI and Broadcom jointly unveiled <strong>Jalapeño</strong>, branded as OpenAI's first <em>Intelligence Processor</em> and the first AI accelerator in a multi-generation co-developed compute platform. The architectural framing in OpenAI's announcement is unusually direct: Jalapeño is a <em>blank-slate</em> design for modern LLM inference, not a general-purpose accelerator retrofitted from older AI workloads, built around OpenAI's own roadmap of models, kernels, serving systems, and product latency targets. Reticle-sized ASIC; OpenAI says engineering samples are already running ML workloads in the lab at <em>production target frequency and power</em>, with <strong>GPT&#8209;5.3&#8209;Codex&#8209;Spark</strong> among the first models exercised on it. <strong>Greg Brockman</strong> told CNBC the design-to-tape-out cycle took only <strong>nine months</strong> &mdash; what Tom's Hardware calls "what may be the fastest ASIC development cycle ever achieved in high-performance semiconductors" &mdash; and was materially accelerated by OpenAI's own models inside the EDA loop. Broadcom contributes silicon implementation and <em>Tomahawk</em> networking; Celestica is the manufacturing partner. Initial deployment is end-of-2026 at <strong>gigawatt scale</strong> on OpenAI infrastructure, expanding across multiple generations. The strategic shape is the same one Google has occupied for a decade with TPUs and that AWS has reached for with Trainium: a frontier-lab&times;merchant-fabless pairing that captures inference economics off Nvidia's road. The CNBC framing &mdash; that <em>40% of Jalapeño shipments will be purchased by Microsoft</em> &mdash; threads it back into the existing Stargate / Azure compute alliance rather than treating it as an Nvidia-replacement story. Builders should read Jalapeño as the first concrete signal that OpenAI is going down the same vertical-integration path Anthropic chose with the AWS Trainium / Tranium-2 partnership, but with a substantially more aggressive ASIC schedule.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">OpenAI: OpenAI and Broadcom unveil LLM-optimized inference chip</a> (primary)</li>
+      <li><a href="https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor">Broadcom Investor Relations: OpenAI and Broadcom unveil LLM-Optimized Intelligence Processor</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/06/24/openai-and-broadcom-reveal-jalapeno-first-ai-chip-in-partnership.html">CNBC: OpenAI unveils first chip as part of Broadcom deal in effort to "build the full stack"</a></li>
+      <li><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/broadcom-and-openai-unveil-custom-built-jalapeno-inference-processor-openais-first-chip-is-a-massive-reticle-sized-asic-built-in-an-ultra-fast-nine-month-development-cycle">Tom's Hardware: Broadcom and OpenAI unveil custom-built Jalapeño inference processor</a></li>
+      <li><a href="https://venturebeat.com/infrastructure/openai-unveils-first-custom-ai-inference-chip-jalapeno-with-broadcom-and-its-development-was-sped-up-with-openais-own-models">VentureBeat: OpenAI unveils first custom AI inference chip, Jalapeño, with Broadcom &mdash; sped up with OpenAI's own models</a></li>
+      <li><a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/">TechCrunch: OpenAI unveils its first custom chip, built by Broadcom</a></li>
+      <li><a href="https://www.engadget.com/2201045/openai-broadcom-jalapeno-inference-processor-ai-accelerator/">Engadget: Jalapeño is the first AI chip from OpenAI and Broadcom</a></li>
+      <li><a href="https://www.hpcwire.com/aiwire/2026/06/24/openai-and-broadcom-unveil-llm-optimized-intelligence-processor/">HPCwire / AIwire: OpenAI and Broadcom Unveil LLM-Optimized Intelligence Processor</a></li>
+      <li><a href="https://openai.com/index/introducing-gpt-5-3-codex-spark/">OpenAI: Introducing GPT&#8209;5.3&#8209;Codex&#8209;Spark</a> (related primary)</li>
+    </ul>
+  </article>
+
+  <h2>Talent &amp; Org &mdash; The Google DeepMind Brain Drain Becomes a Pattern</h2>
+
+  <article>
+    <h3><span class="tag">Bloomberg scoop</span>Adler and Pritzel out of Google for Anthropic &mdash; the fourth and fifth senior departure in six days</h3>
+    <div class="byline">24 June 2026 &middot; Primary sources: Bloomberg; TechCrunch; Yahoo Finance; John Jumper on X (20 June)</div>
+    <p>
+      Bloomberg reported on <strong>Wednesday 24 June</strong> that <strong>Jonas Adler</strong> and <strong>Alexander Pritzel</strong> &mdash; both viewed internally as <em>key contributors</em> to Google's Gemini model and co-authors with Nobel laureate John Jumper on the original AlphaFold work &mdash; are moving to <strong>Anthropic</strong>. Adler worked on Google's AI coding efforts; Pritzel was in pretraining. The departures land six days after Jumper himself announced on X (<strong>20 June</strong>) that he would leave DeepMind after <em>"nearly nine years"</em> to join Anthropic following a recharge period, and a week after Gemini co-lead and Transformer co-author <strong>Noam Shazeer</strong> &mdash; whom Google paid <strong>$2.7&nbsp;B</strong> to bring back from Character.AI in August 2024 &mdash; was reported moving to <strong>OpenAI</strong> (CNBC, <strong>18 June</strong>). Five senior departures in six days across the two largest US frontier-lab rivals is the first quantitative break with the prior pattern of one-off, individual moves. Fortune's <strong>23 June</strong> long-form on the trend cites a <strong>SignalFire</strong> data point: <em>DeepMind engineers are roughly 11&times; more likely to leave for Anthropic than the reverse direction.</em> The cross-current with yesterday's news is direct: <strong>Meta's Superintelligence unit</strong> has now hired <strong>five OpenAI researchers</strong> in two weeks (Beyer, Kolesnikov, Zhai, an unnamed fourth, plus Bansal), Anthropic is consolidating the DeepMind-trained <em>foundations</em> tier, and OpenAI is consolidating the <em>Transformer-era founders</em> tier. The compensation ladder, anchored on Calcalist's prior $1.5&nbsp;B four-year package datapoint, is now widely reported as the steady-state market price for the top 30&ndash;50 individuals in the field.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.bloomberg.com/news/articles/2026-06-24/google-poised-to-lose-two-more-high-profile-ai-staffers-to-anthropic">Bloomberg: Google poised to lose two more high-profile AI staffers to Anthropic</a> (primary scoop)</li>
+      <li><a href="https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/">TechCrunch: AI researchers continue to leave Google for its rivals</a></li>
+      <li><a href="https://x.com/JohnJumperSci/status/2068001285173834106">John Jumper on X: announcing the move from Google DeepMind to Anthropic</a> (primary)</li>
+      <li><a href="https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html">CNBC: Google Gemini co-lead Noam Shazeer leaves for OpenAI</a></li>
+      <li><a href="https://x.com/NoamShazeer/status/2067400851438932297">Noam Shazeer on X: announcing the move to OpenAI</a> (primary)</li>
+      <li><a href="https://fortune.com/2026/06/23/google-deepmind-ai-researcher-departures-raise-doubts-about-ability-to-win-the-ai-race-shazeer-jumper-eye-on-ai/">Fortune: As top talent leaves DeepMind, some question if the lab can remain at the forefront of AI</a></li>
+      <li><a href="https://finance.yahoo.com/technology/ai/articles/googl-stock-google-loses-more-194619798.html">Yahoo Finance: GOOGL &mdash; Google loses more AI talent as two experts reportedly move to Anthropic</a></li>
+      <li><a href="https://cryptobriefing.com/google-ai-researchers-anthropic-talent-exodus/">Crypto Briefing: Google set to lose two AI researchers to Anthropic and OpenAI amid growing talent exodus</a></li>
+    </ul>
+  </article>
+
+  <h2>Enterprise AI &amp; Productivity</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic &times; Salesforce</span>Claude Tag in Slack: persistent multiplayer AI teammate, 65% of internal code merged from it</h3>
+    <div class="byline">23&ndash;24 June 2026 &middot; Primary sources: anthropic.com; salesforce.com; VentureBeat; Fortune; TechCrunch</div>
+    <p>
+      Anthropic launched <strong>Claude Tag</strong> &mdash; a research preview that <em>replaces the legacy Claude-for-Slack app</em> with a persistent AI teammate available across an organisation's Slack workspace. Behaviourally, an employee <code>@</code>-tags Claude into any channel, hands off a task, and Claude breaks it into stages, works through them <em>asynchronously</em>, accumulates context across conversations, threads, channels, and connected enterprise apps, and follows up proactively on stale threads. Anthropic and <strong>Salesforce</strong> co-announced the deeper integration: Claude can access Slack channels, messages, and files via Slack's <strong>MCP server</strong>, and reach into <strong>Agentforce 360</strong>, <strong>Data 360</strong>, and <strong>Commerce 360</strong> for grounded enterprise context. The two most-cited datapoints from the rollout coverage: (a) within Anthropic, Claude Tag is <em>"already approving and incorporating 65% of the code changes the product team submits"</em>, and (b) the product is initially gated to <strong>Claude Enterprise</strong> and <strong>Claude Team</strong> customers as a research preview, with broader access following. This lands inside the same window as the tenth Claude outage in three weeks (<a href="24%20June%20AI%20News%20Digest%20Report.html">24 June digest</a>), but with a deliberately different commercial signal: Anthropic is doubling down on the <em>enterprise-workflow</em> surface that it built post-Mythos export-control suspension, while Salesforce uses the partnership to harden Slack as the <em>agentic OS</em> against Microsoft Teams plus Copilot. For builders, the practical implication is that the Slack-MCP path is now a first-class, vendor-blessed surface for cross-app agentic work &mdash; not just a community-MCP experiment.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/news/salesforce-anthropic-expanded-partnership">Anthropic: Anthropic and Salesforce expand partnership to bring Claude to regulated industries</a> (primary)</li>
+      <li><a href="https://www.salesforce.com/news/stories/salesforce-anthropic-trusted-context-ai-actions-on-claude/">Salesforce: Salesforce and Anthropic bring trusted business context and AI actions to Claude through Slack and Agentforce 360</a> (primary)</li>
+      <li><a href="https://venturebeat.com/technology/anthropic-launches-claude-tag-replacing-its-slack-app-with-a-persistent-ai-teammate-that-learns-monitors-and-works-autonomously">VentureBeat: Anthropic launches Claude Tag, replacing its Slack app with a persistent AI teammate</a></li>
+      <li><a href="https://fortune.com/2026/06/23/anthropic-claude-tag-virtual-employee-tool-slack/">Fortune: Anthropic launches Claude Tag, a tool that works like a virtual employee within Slack</a></li>
+      <li><a href="https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/">TechCrunch: Anthropic's Claude Tag is learning your company, one Slack message at a time</a></li>
+      <li><a href="https://the-decoder.com/claude-tag-embeds-anthropics-ai-in-slack-already-writes-65-percent-of-internal-code-company-says/">The Decoder: Claude Tag embeds Anthropic's AI in Slack, already writes 65% of internal code, company says</a></li>
+      <li><a href="https://www.techrepublic.com/article/news-anthropic-claude-tag-ai-agent-slack/">TechRepublic: Anthropic launches Claude Tag, bringing AI agents into Slack</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Meta</span>"Arena": Zuckerberg greenlights an AI-powered prediction-market app to chase the Kalshi/Polymarket TAM</h3>
+    <div class="byline">23&ndash;24 June 2026 &middot; Primary sources: New York Times (via NPR); TechCrunch; CBS News; Euronews</div>
+    <p>
+      <strong>The New York Times</strong>, with corroborating reads at <strong>TechCrunch</strong>, <strong>CBS News</strong>, <strong>NPR</strong>, and <strong>Euronews</strong> on <strong>23&ndash;24 June</strong>, reports that Mark Zuckerberg has <em>greenlit</em> a <strong>standalone app called Arena</strong> at Meta &mdash; a Polymarket / Kalshi-style prediction market positioned <em>"experimental but a top priority"</em> internally. Two design choices are doing most of the regulatory work: (1) users get a <em>daily virtual allotment of play money</em> rather than wagering real currency, sidestepping the CFTC-event-contract perimeter that has hemmed in Kalshi and Polymarket in multiple US states and in the EU/India; (2) the app is structurally <em>independent</em> of Meta's main social-media surfaces. Sector tape: combined prediction-market trading volume has jumped from <strong>~$50&nbsp;B in 2025</strong> to <strong>&gt;$130&nbsp;B already in 2026</strong>, with some Wall Street analysts modelling a path to a <strong>$1&nbsp;T</strong> category over the next several years (per CBS / Business Model Analyst coverage). For the AI thesis the relevant detail is the framing in NYT's source notes: Arena is described in internal documents as an <em>AI-powered</em> prediction-market app &mdash; the model layer would surface event interpretation, calibration, and recommendation rather than being a plain order-book UI. <strong>Kalshi</strong> is concurrently reported to be raising at a <strong>$40&nbsp;B valuation</strong> per <em>Next Event Horizon</em>, and prediction-market product surfaces are increasingly cited in academic literature as a frontier evaluation harness for LLM forecasting capability. Treat Arena as Meta's bid to <em>own the prompt that asks "what's going to happen"</em> at consumer scale, before the regulated incumbents stabilise their own moats.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.npr.org/2026/06/24/nx-s1-5869486/meta-prediction-market-app-ai">NPR (carrying the NYT scoop): Meta plans to release AI-powered prediction market app, documents show</a> (primary write-up)</li>
+      <li><a href="https://techcrunch.com/2026/06/23/mark-zuckerberg-wants-meta-to-launch-its-own-prediction-market/">TechCrunch: Mark Zuckerberg wants Meta to launch its own prediction market</a></li>
+      <li><a href="https://www.cbsnews.com/video/meta-bets-prediction-market-app-nyt-says/">CBS News: Meta creating prediction market app, NYT says</a></li>
+      <li><a href="https://www.euronews.com/next/2026/06/24/zuckerberg-wants-meta-to-launch-its-own-prediction-market-report-says">Euronews: Zuckerberg wants Meta to launch its own prediction market, report says</a></li>
+      <li><a href="https://businessmodelanalyst.com/meta-arena-prediction-markets-app/">Business Model Analyst: Meta eyes a $130&nbsp;B market with a new app called Arena</a></li>
+      <li><a href="https://www.gamblinginsider.com/news/168398/meta-arena-prediction-markets-app">Gambling Insider: Zuckerberg bets on "Arena" as Meta explores prediction markets</a></li>
+      <li><a href="https://nexteventhorizon.substack.com/p/kalshi-reportedly-raising-at-40b-valuation">Next Event Horizon: Kalshi reportedly raising at $40&nbsp;B valuation (sector context)</a></li>
+    </ul>
+  </article>
+
+  <h2>AI for Science &amp; Research</h2>
+
+  <article>
+    <h3><span class="tag">OpenAI primary</span>GPT&#8209;5 Pro cracks a three-year T-cell mystery for Derya Unutmaz on private, unpublished data</h3>
+    <div class="byline">23&ndash;24 June 2026 &middot; Primary sources: openai.com; Derya Unutmaz on X; Windows Forum; Crypto Briefing</div>
+    <p>
+      OpenAI published an unusually substantive blog post detailing how <strong>GPT&#8209;5 Pro</strong> helped <strong>Derya Unutmaz</strong>, an immunologist at <strong>The Jackson Laboratory for Genomic Medicine</strong>, recover the mechanism behind a <strong>three-year-old experimental result</strong> that his lab had not been able to interpret. The setup &mdash; spelled out in the OpenAI announcement and confirmed in Unutmaz's own X thread &mdash; was a basic but consequential question in immunology: <em>how does glucose availability modulate the differentiation trajectory of T cells across age groups?</em> Unutmaz handed GPT&#8209;5 Pro a <strong>2022 single-cell dataset</strong> that had been sitting unpublished after conventional analyses produced no clean explanation. The model identified <em>age-dependent gene-expression patterns</em> and produced novel hypotheses that aligned with decades of prior literature. The headline detail, and the one most cited in the secondary coverage: when Unutmaz asked GPT&#8209;5 Pro to <em>simulate</em> an experiment on T cells targeting lymphoma, it correctly predicted an enhancement in <strong>CD8+ T-cell cytotoxicity</strong> &mdash; <em>before</em> the lab ran the comparable experiment, and on data the model could not have seen on the internet because Unutmaz had not yet published it. Caveats: this is single-author, single-lab, single-dataset, with the validation pathway still going through standard wet-lab confirmation. But it is the first widely-circulated <em>primary-sourced</em> example of a frontier model surfacing a novel mechanism on truly unseen biological data, and lands in the same week as Jumper's move to Anthropic and the broader life-sciences-AI capital flow. Expect this to anchor the next round of FDA / NIH discussion of AI-co-authored hypotheses.
+    </p>
+    <ul class="sources">
+      <li><a href="https://openai.com/index/gpt-5-immunology-mystery/">OpenAI: How GPT&#8209;5 helped immunologist Derya Unutmaz solve a 3-year-old mystery</a> (primary)</li>
+      <li><a href="https://x.com/DeryaTR_/status/2069846329287651765">Derya Unutmaz on X: thread with the result and infographic</a> (primary)</li>
+      <li><a href="https://www.aichatdaily.com/ai-models/gpt-5-pro-helps-immunologist-crack-3-year-t-cell">AI Chat Daily: GPT&#8209;5 Pro helps immunologist crack a 3-year T-cell mystery</a></li>
+      <li><a href="https://cryptobriefing.com/gpt5-pro-t-cell-immunology-discovery/">Crypto Briefing: Derya Unutmaz uses GPT&#8209;5 Pro to crack a T-cell mystery that stumped his lab since 2022</a></li>
+      <li><a href="https://windowsforum.com/threads/gpt-5-pro-accelerates-immunology-faster-hypotheses-expert-led-validation.429843/">Windows Forum: GPT&#8209;5 Pro accelerates immunology &mdash; faster hypotheses, expert-led validation</a></li>
+      <li><a href="https://www.startuphub.ai/ai-news/artificial-intelligence/2026/gpt-5-pro-solves-immunological-puzzle">StartupHub.ai: GPT&#8209;5 Pro solves immunological puzzle</a></li>
+      <li><a href="https://explore.n1n.ai/blog/gpt-5-solves-immunology-mystery-derya-unutmaz-2026-06-24">n1n.ai: GPT&#8209;5 solves three-year immunology mystery for researcher Derya Unutmaz</a></li>
+    </ul>
+  </article>
+
+  <h2>Software Engineering &amp; Developer Security</h2>
+
+  <article>
+    <h3><span class="tag">GitHub security</span>"Orchid" repo-confusion campaign: &gt;100,000 GitHub repos cloned, automation targets AI agents</h3>
+    <div class="byline">Continuing through 24&ndash;25 June 2026 &middot; Primary sources: Apiiro research blog; Cybernews; Dark Reading; Cyber Daily</div>
+    <p>
+      The most consequential live software-engineering security story this week is an automated <strong>GitHub repository-confusion campaign</strong>, attributed in detail by application-security firm <strong>Apiiro</strong> and independently mapped by a solo researcher publishing as <strong>Orchid</strong>. The mechanic is deliberately simple and at scale: attackers fork popular legitimate repositories, inject malicious code into the fork (typically a <strong>StealC</strong> infostealer payload chained behind seemingly benign install steps), and preserve <em>identical READMEs, names, commit histories, and star-padded stats</em> &mdash; relying on (a) Google/Bing search divergence and (b) AI coding agents auto-cloning whichever repo the agent's search heuristics surface first. Apiiro's reported scale: <strong>more than 100,000 GitHub repositories</strong> affected when downstream developers pull cloned-fork dependencies; Orchid's own automated scanner pinned <strong>9,330</strong> directly-malicious primary repos out of a <strong>~40,000-repo candidate set</strong>, of which <strong>~10,000</strong> match the exact malware-distribution signature. The most important reading for builders: this is the first openly-documented campaign that <em>explicitly targets AI agents as the propagation vector</em>, exploiting the fact that an agent acting on <code>"clone the official X repo"</code> will reach for whatever matches the description rather than verifying provenance. Mitigation now showing up in vendor playbooks: pin clone URLs by exact org/owner, require maintainer GPG signatures, and configure agentic IDEs to flag star/age/commit-graph anomalies on cold-pulled dependencies. GitHub's own response is still expanding; expect a platform-level provenance signal in the next Trust &amp; Safety drop.
+    </p>
+    <ul class="sources">
+      <li><a href="https://apiiro.com/blog/malicious-code-campaign-github-repo-confusion-attack/">Apiiro Blog: Over 100,000 infected repos found on GitHub</a> (primary research)</li>
+      <li><a href="https://cybernews.com/security/10k-repos-github-malware-campaign-targets-ai-agents/">Cybernews: One tech pro single-handedly mapped 10K malicious repos campaign on GitHub &mdash; AI agents targeted</a></li>
+      <li><a href="https://www.darkreading.com/application-security/millions-of-malicious-repositories-flood-github">Dark Reading: Millions of malicious repositories flood GitHub</a></li>
+      <li><a href="https://www.cyberdaily.au/security/10265-potentially-millions-of-github-repos-infected-in-repo-confusion-campaign">Cyber Daily: Potentially millions of GitHub repositories infected in "repo confusion" campaign</a></li>
+      <li><a href="https://cybersecuritynews.com/hackers-github-malicious-script/">CybersecurityNews: Hackers compromised 10,000+ GitHub repositories to inject malicious script</a></li>
+      <li><a href="https://gbhackers.com/massive-github-attack-injects-malware/">GBHackers: Massive GitHub attack injects malware into 10,000 compromised repositories</a></li>
+      <li><a href="https://tfir.io/apiiro-discovers-malicious-github-repository-confusion-campaign/">TFiR: Apiiro discovers malicious GitHub repository-confusion campaign</a></li>
+    </ul>
+  </article>
+
+  <h2>Policy &amp; Regulation</h2>
+
+  <article>
+    <h3><span class="tag">EU AI Act</span>The Digital Omnibus pushes the Annex&nbsp;III high-risk deadline from August&nbsp;2026 to December&nbsp;2027 &mdash; GPAI window still hits 2&nbsp;August</h3>
+    <div class="byline">As of 25 June 2026 &middot; Primary sources: artificialintelligenceact.eu; AI Act Service Desk (EC); Council of the EU; Ogletree analysis</div>
+    <p>
+      The most concrete near-term policy timeline shifting <em>this week</em> is the EU AI Act enforcement calendar. Under the <strong>Digital Omnibus</strong> provisional agreement reached on <strong>7 May 2026</strong>, the high-risk-system rules in <strong>Annex&nbsp;III</strong> are deferred from <strong>2 August 2026</strong> to <strong>2 December 2027</strong>. What remains live as of today: <em>prohibited practices</em> have been enforceable since <strong>2 February 2025</strong>; the GPAI-model rules became applicable on <strong>2 August 2025</strong>; and the broad enforcement crossover &mdash; including <strong>Article 50 transparency rules</strong> &mdash; is still scheduled for <strong>2 August 2026</strong>, just 38 days away. Providers of <strong>GPAI models already on the market</strong> before the cutover have until <strong>2 August 2027</strong> to comply. The relevant cross-reference with today's news: yesterday's <strong>Five Eyes joint advisory</strong> (<a href="24%20June%20AI%20News%20Digest%20Report.html">24 June digest</a>) and the <strong>2 June White House Executive Order on Promoting Advanced Artificial Intelligence Innovation and Security</strong> (which explicitly preserves an <em>"AI cybersecurity clearinghouse"</em>, a <strong>voluntary frontier-model evaluation framework</strong>, and bars <em>mandatory governmental licensing or pre-clearance</em> of model releases) together set the US/UK/EU triangle: a deliberately <em>voluntary</em> US frontier evaluation surface, a hardening <em>mandatory</em> EU evaluation surface, and a Five Eyes intelligence-coordination layer running orthogonally to both. For US-based labs targeting the EU market, the Annex&nbsp;III delay materially reduces compliance pressure on most high-risk vertical deployments through 2027 &mdash; but does <em>not</em> push the GPAI obligations or transparency clock.
+    </p>
+    <ul class="sources">
+      <li><a href="https://artificialintelligenceact.eu/implementation-timeline/">EU AI Act: Implementation Timeline</a> (primary)</li>
+      <li><a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/timeline/timeline-implementation-eu-ai-act">EU AI Act Service Desk (European Commission): Implementation timeline</a> (primary)</li>
+      <li><a href="https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/">Council of the EU: AI &mdash; Council and Parliament agree to simplify and streamline rules</a> (primary)</li>
+      <li><a href="https://ogletree.com/insights-resources/blog-posts/eu-ai-act-amended-parliament-votes-to-delay-key-deadlines/">Ogletree: EU AI Act amended &mdash; Parliament votes to delay key deadlines</a></li>
+      <li><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">The White House: Executive Order on Promoting Advanced Artificial Intelligence Innovation and Security (2 June 2026)</a> (primary)</li>
+      <li><a href="https://www.insideprivacy.com/artificial-intelligence/white-house-releases-executive-order-on-advanced-ai-innovation-and-security/">Covington Inside Privacy: White House releases Executive Order on Advanced AI Innovation and Security</a></li>
+      <li><a href="https://www.hklaw.com/en/insights/publications/2026/06/executive-order-on-artificial-intelligence-expands-cybersecurity">Holland &amp; Knight: Executive Order on Artificial Intelligence expands cybersecurity, federal oversight</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> The 25 June digest is anchored on the <strong>OpenAI&times;Broadcom Jalapeño Intelligence Processor</strong> (the 24 June unveiling of OpenAI's first custom inference ASIC, with a 9-month tape-out and GPT&#8209;5.3&#8209;Codex&#8209;Spark already in the lab), the <strong>Bloomberg-broken Adler/Pritzel-to-Anthropic move</strong> as the fourth-and-fifth senior DeepMind departure in six days (Jumper, Shazeer-to-OpenAI, plus the two new names), the <strong>Anthropic&times;Salesforce Claude Tag-in-Slack launch</strong> with the 65%-of-internal-code-merged claim, the <strong>Meta "Arena" prediction-market</strong> NYT/CBS/TechCrunch scoop, the <strong>OpenAI primary on GPT&#8209;5 Pro solving the Derya Unutmaz T-cell mystery</strong> on unpublished private data, the <strong>"Orchid" GitHub repo-confusion campaign</strong> hitting &gt;100,000 repos and explicitly targeting AI coding agents, and the <strong>EU AI Act Digital-Omnibus</strong> Annex&nbsp;III deferral against the still-live 2 August 2026 GPAI / Article&nbsp;50 cutover. Primary sources cited inline include the OpenAI Jalapeño announcement and Broadcom investor release, Bloomberg's Adler/Pritzel scoop, John Jumper's and Noam Shazeer's own X posts, Anthropic's and Salesforce's joint partnership statement, the NYT-via-NPR Arena coverage, OpenAI's Unutmaz blog and Unutmaz's X thread, Apiiro's Orchid research blog, the European Commission AI Act Service Desk timeline, and the 2 June White House Executive Order page. <em>Non-overlap check vs. the previous 3 days:</em> the <a href="24%20June%20AI%20News%20Digest%20Report.html">24 June digest</a> covered the OpenAI Daybreak GPT&#8209;5.5&#8209;Cyber / Patch the Planet duo, SpaceX&ndash;Reflection AI's $6.3&nbsp;B Colossus contract, the SPCX equity drawdown, Oracle's fiscal-2026 10&#8209;K with 21,000 AI-attributed role cuts and $55.7&nbsp;B FY26 capex, the Five Eyes joint cyber advisory, the tenth Claude outage, the Meta MCI 45,000-table internal-data exposure, the four-OpenAI-researcher Meta hires (Beyer, Kolesnikov, Zhai, plus Bansal), the GitHub Enterprise 3.21 / gh CLI 2.94 / Copilot CLI bundle, AgileThinker, and the Gemini 3.5 Pro GA-window watch &mdash; none of which are restated here, only cross-linked where downstream developments link back. The repo carries no 21, 22, or 23 June digest, so today's 23-June carry-overs (Claude Tag, Arena, Unutmaz) are new to the repo as well. All stories carry at least two corroborating sources, with primary-source flagging on every article.</p>
+    <p>Generated 25 June 2026.</p>
+  </footer>
+</body>
+</html>
