@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI News Digest — 26 June 2026</title>
+<style>
+  :root {
+    --bg: #0f1216;
+    --panel: #161b22;
+    --panel-2: #1c2230;
+    --text: #e6edf3;
+    --muted: #9da7b3;
+    --accent: #4f9cf9;
+    --accent-2: #f8b133;
+    --danger: #f87171;
+    --good: #4ade80;
+    --border: #2a313d;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    color: var(--text);
+    background: linear-gradient(180deg, #0c0f14 0%, #11151c 100%);
+  }
+  .container { max-width: 960px; margin: 0 auto; padding: 32px 24px 64px; }
+  header.masthead {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 24px;
+    margin-bottom: 28px;
+  }
+  .kicker {
+    color: var(--accent);
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 1.15;
+    margin: 0 0 8px;
+  }
+  .subtitle { color: var(--muted); font-size: 16px; }
+  .meta-row {
+    margin-top: 14px;
+    display: flex; flex-wrap: wrap; gap: 12px;
+    font-size: 13px; color: var(--muted);
+  }
+  .meta-row span { background: var(--panel); padding: 4px 10px; border-radius: 999px; border: 1px solid var(--border); }
+  section.story {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 22px 18px;
+    margin-bottom: 22px;
+  }
+  section.story.top {
+    border-left: 4px solid var(--accent);
+  }
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: var(--panel-2);
+    color: var(--muted);
+    margin-right: 8px;
+    border: 1px solid var(--border);
+  }
+  .tag.research { color: #c4b5fd; border-color: #4c1d95; }
+  .tag.business { color: #facc15; border-color: #854d0e; }
+  .tag.security { color: #f87171; border-color: #7f1d1d; }
+  .tag.devtools { color: #4ade80; border-color: #166534; }
+  .tag.people { color: #60a5fa; border-color: #1e40af; }
+  .tag.hardware { color: #fb923c; border-color: #9a3412; }
+  h2 { font-size: 22px; margin: 8px 0 10px; }
+  .lede { font-size: 15px; color: var(--text); margin: 0 0 12px; }
+  ul.signals { margin: 0 0 12px 20px; padding: 0; }
+  ul.signals li { margin-bottom: 6px; font-size: 14.5px; color: var(--text); }
+  .sources {
+    font-size: 13px;
+    color: var(--muted);
+    border-top: 1px dashed var(--border);
+    padding-top: 10px;
+    margin-top: 12px;
+  }
+  .sources strong { color: #cbd5e1; font-weight: 600; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .quick-hits {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 22px;
+  }
+  .quick-hits h2 { margin-top: 0; }
+  .quick-hits .hit {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 14px;
+    padding: 10px 0;
+    border-top: 1px solid var(--border);
+    font-size: 14px;
+  }
+  .quick-hits .hit:first-of-type { border-top: 0; }
+  .quick-hits .hit .label {
+    color: var(--accent-2);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  footer {
+    color: var(--muted);
+    font-size: 12px;
+    border-top: 1px solid var(--border);
+    margin-top: 24px;
+    padding-top: 18px;
+  }
+  .toc {
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+  .toc strong { color: #cbd5e1; }
+  .toc ol { margin: 8px 0 0 20px; padding: 0; }
+  .toc li { margin: 3px 0; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header class="masthead">
+    <div class="kicker">AI News Digest · Daily Report</div>
+    <h1>26 June 2026</h1>
+    <div class="subtitle">Signals from the last 24 hours across AI, AI research, and software engineering.</div>
+    <div class="meta-row">
+      <span>Edition: Friday, 26 June 2026</span>
+      <span>Window: 25 Jun 00:00 UTC → 26 Jun 12:00 UTC</span>
+      <span>Sourcing: Primary &amp; Tier-1 reporting</span>
+    </div>
+  </header>
+
+  <div class="toc">
+    <strong>In this issue</strong>
+    <ol>
+      <li>Anthropic accuses Alibaba/Qwen of a 28.8M-call distillation attack on Claude</li>
+      <li>OpenAI &amp; Broadcom unveil "Jalapeño," OpenAI's first custom inference chip</li>
+      <li>Google's AI talent exodus deepens: Adler &amp; Pritzel head to Anthropic</li>
+      <li>Cursor "Origin" git platform under SpaceX raises code-custody questions</li>
+      <li>Node.js ships June security releases across 22.x / 24.x / 26.x</li>
+      <li>EmberZNet zero-day cluster hits Zigbee stacks (CVE-2026-47145 to 47151)</li>
+      <li>Quick hits: GPT-5.6 rumor cycle, Gartner agent-spend forecast, NVIDIA Newton 1.0</li>
+    </ol>
+  </div>
+
+  <!-- 1 -->
+  <section class="story top">
+    <span class="tag security">Security</span><span class="tag business">Policy</span>
+    <h2>Anthropic tells Senate that Alibaba/Qwen ran the largest known distillation attack on Claude</h2>
+    <p class="lede">In a letter dated 10 June and reported publicly on 24–25 June, Anthropic told Senate Banking Committee chair Tim Scott and ranking member Elizabeth Warren that operators affiliated with Alibaba's Qwen AI lab generated <strong>28.8 million fraudulent Claude exchanges</strong> across roughly 25,000 sockpuppet accounts to extract software-engineering and agentic-reasoning capabilities.</p>
+    <ul class="signals">
+      <li>Campaign window: <strong>22 April → 5 June 2026</strong>; Anthropic frames it as adversarial distillation — training a weaker model on the outputs of a frontier model — and the <em>largest</em> such operation it has documented.</li>
+      <li>Companion ask: tighter export controls on AI model access and mandatory high-volume API anomaly screening; senators Bill Hagerty (R-TN) and Andy Kim (D-NJ) are drafting an amendment to defense legislation that would let Treasury sanction implicated entities.</li>
+      <li>Context: Anthropic disclosed three smaller "industrial-scale" distillation campaigns from DeepSeek, Moonshot and MiniMax in February; the Alibaba operation is the first directly named to Congress.</li>
+      <li>The letter lands two weeks before Anthropic's targeted IPO roadshow and arrives the same week Claude saw its 10th outage in three weeks (reported in the <a href="https://github.com/joseph-robert-f/ai-news-digest/blob/main/2026/June/22%20June%20-%2028%20June/24%20June%20AI%20News%20Digest%20Report.html">24 June digest</a>).</li>
+    </ul>
+    <div class="sources">
+      <strong>Primary &amp; Tier-1:</strong>
+      <a href="https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html">CNBC — Anthropic accuses Alibaba of "brazenly" extracting AI capabilities</a> ·
+      <a href="https://www.bloomberg.com/news/articles/2026-06-24/anthropic-accuses-alibaba-of-illicitly-accessing-its-ai-models">Bloomberg — Anthropic accuses Alibaba of "illicitly" accessing models</a> ·
+      <a href="https://www.upi.com/Top_News/US/2026/06/25/China-Anthropic-alleges-Alibaba-extracted-AI-tech/6521782385897/">UPI — Anthropic alleges Alibaba extracted AI tech (25 Jun)</a> ·
+      <a href="https://www.techtimes.com/articles/319105/20260625/alibaba-ran-largest-known-ai-theft-campaign-against-claude-anthropic-tells-senate.htm">TechTimes — Alibaba ran largest known AI theft campaign (25 Jun)</a>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="story top">
+    <span class="tag hardware">Hardware</span><span class="tag business">Infra</span>
+    <h2>OpenAI &amp; Broadcom unveil "Jalapeño," OpenAI's first custom-designed inference accelerator</h2>
+    <p class="lede">OpenAI and Broadcom jointly announced <strong>Jalapeño</strong>, an LLM-optimized "Intelligence Processor" — OpenAI's first custom silicon — designed around its own inference workloads. Broadcom CEO Hock Tan hand-delivered engineering samples to Sam Altman and Greg Brockman at OpenAI HQ.</p>
+    <ul class="signals">
+      <li>Reticle-sized ASIC; co-developed from initial design to tape-out in ~<strong>nine months</strong>, which Tom's Hardware called "possibly the fastest high-performance ASIC cycle ever."</li>
+      <li>OpenAI says it used its own models to accelerate floorplanning, verification and RTL work — the first frontier-scale chip publicly credited to AI-assisted design.</li>
+      <li>Roadmap: small prototype cluster late-2026, production ramp in 2027, full-scale 10 GW deployment with Microsoft &amp; partners across 2028–2029.</li>
+      <li>Strategic signal: pairs with the SpaceX-Reflection AI compute deal from earlier this week (covered 24 Jun) — frontier labs continue locking down captive, specialized inference capacity.</li>
+    </ul>
+    <div class="sources">
+      <strong>Primary &amp; Tier-1:</strong>
+      <a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/">OpenAI — Jalapeño announcement (primary)</a> ·
+      <a href="https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-unveil-llm-optimized-intelligence-processor">Broadcom Investor Relations (primary)</a> ·
+      <a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/">TechCrunch</a> ·
+      <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/broadcom-and-openai-unveil-custom-built-jalapeno-inference-processor-openais-first-chip-is-a-massive-reticle-sized-asic-built-in-an-ultra-fast-nine-month-development-cycle">Tom's Hardware — reticle-sized ASIC, nine-month cycle</a> ·
+      <a href="https://venturebeat.com/infrastructure/openai-unveils-first-custom-ai-inference-chip-jalapeno-with-broadcom-and-its-development-was-sped-up-with-openais-own-models">VentureBeat — AI-assisted chip design</a>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="story">
+    <span class="tag people">Talent</span><span class="tag business">Markets</span>
+    <h2>Google's AI talent exodus: Jonas Adler &amp; Alexander Pritzel head to Anthropic</h2>
+    <p class="lede">Bloomberg reported late 24 June (picked up across 25 June) that two more senior Google researchers — <strong>Jonas Adler</strong> (Google's AI coding lead) and <strong>Alexander Pritzel</strong> (pretraining specialist; co-author on AlphaFold) — are leaving for Anthropic. That makes <strong>four senior Google AI departures in six days</strong>.</p>
+    <ul class="signals">
+      <li>The sequence: Noam Shazeer (Transformer co-author, Gemini co-lead) → OpenAI on 18 Jun; John Jumper (Nobel laureate, AlphaFold lead) → Anthropic on 19–20 Jun; now Adler &amp; Pritzel.</li>
+      <li>Shazeer reportedly takes OpenAI's "Lead, Architecture Research" role — focused on next-gen model architectures — just 10 days after OpenAI filed its confidential S-1.</li>
+      <li>Reminder of stakes: Google paid an estimated <em>$2.7B</em> in the 2024 Character.AI license-and-acqui-hire largely to bring Shazeer back. He left inside 22 months.</li>
+      <li>Pattern this week is distinct from the Meta-from-OpenAI hires covered in the 24 Jun digest (Beyer, Kolesnikov, Zhai) — Google is now the primary donor lab.</li>
+    </ul>
+    <div class="sources">
+      <strong>Primary &amp; Tier-1:</strong>
+      <a href="https://www.bloomberg.com/news/articles/2026-06-24/google-poised-to-lose-two-more-high-profile-ai-staffers-to-anthropic">Bloomberg — Adler &amp; Pritzel reportedly leaving for Anthropic</a> ·
+      <a href="https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/">TechCrunch — talent exodus pattern</a> ·
+      <a href="https://www.cnbc.com/2026/06/19/john-jumper-to-leave-google-deepmind-for-anthropic.html">CNBC — John Jumper to Anthropic</a> ·
+      <a href="https://x.com/JohnJumperSci/status/2068001285173834106">Jumper's announcement on X (primary)</a> ·
+      <a href="https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html">CNBC — Shazeer to OpenAI</a>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="story">
+    <span class="tag devtools">Dev Tools</span><span class="tag business">M&amp;A fallout</span>
+    <h2>Cursor "Origin" launches under SpaceX; enterprise code-custody questions go unanswered</h2>
+    <p class="lede">Cursor's new <strong>Origin</strong> git platform — debuted at Compile alongside a 1.5T-parameter training run and a new iOS app — is generating sharp scrutiny following SpaceX's $60B all-stock acquisition (16 Jun). The open question for enterprise buyers: <em>under SpaceX ownership, can Cursor still route requests to Anthropic and OpenAI rather than xAI's Grok?</em></p>
+    <ul class="signals">
+      <li>Jason Andersen (Moor Insights) flagged on 24 Jun that "xAI's models and treatment of guardrails are very different than what Cursor has stood for." Neither Cursor nor SpaceX has issued a public commitment on model neutrality.</li>
+      <li>Origin is positioned as a direct GitHub rival, with launch slated for fall 2026; the code-custody story is acute because Cursor's enterprise pitch has always been "your code, your choice of model."</li>
+      <li>Market context: Cursor hit 18% adoption among AI-native IDEs in the latest survey; GitHub Copilot's share among pro developers fell from 67% to 51% over the period.</li>
+    </ul>
+    <div class="sources">
+      <strong>Tier-1 + primary M&amp;A:</strong>
+      <a href="https://www.techtimes.com/articles/319031/20260624/cursors-github-rival-origin-new-spacex-model-raise-code-custody-stakes.htm">TechTimes — Cursor Origin &amp; new SpaceX model raise code-custody stakes</a> ·
+      <a href="https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/">TechCrunch — SpaceX to acquire Cursor for $60B</a> ·
+      <a href="https://www.bloomberg.com/news/articles/2026-06-16/spacex-cements-60-billion-deal-to-take-over-ai-startup-cursor">Bloomberg — SpaceX cements $60B Cursor deal</a>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="story">
+    <span class="tag devtools">Runtime</span><span class="tag security">Security</span>
+    <h2>Node.js ships June security releases across 22.x / 24.x / 26.x</h2>
+    <p class="lede">The Node.js project issued coordinated security releases on <strong>17–18 June 2026</strong> across the 26.x current, 24.x active-LTS, and 22.x maintenance-LTS lines, with the highest-severity issue rated <em>High</em>. Operators should still be patching this week.</p>
+    <ul class="signals">
+      <li>26.x landed 5 May with V8 14.6, Temporal enabled by default, and the removal of several long-deprecated legacy APIs — the June patch is the first security cut on that line.</li>
+      <li>24.x remains active LTS through October 2026; AWS Lambda's Node.js 24 runtime is the default upgrade target for serverless workloads still on 22.</li>
+      <li>Action item: validate dependency trees against any pinned/native-addon packages that may need re-builds against the patched V8.</li>
+    </ul>
+    <div class="sources">
+      <strong>Primary:</strong>
+      <a href="https://nodejs.org/en/blog/vulnerability/june-2026-security-releases">Node.js — June 2026 security releases</a> ·
+      <a href="https://nodejs.org/en/blog/release/v26.0.0">Node.js — v26.0.0 release notes</a> ·
+      <a href="https://nodejs.org/en/about/previous-releases">Node.js release schedule</a>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="story">
+    <span class="tag security">Security</span><span class="tag hardware">IoT</span>
+    <h2>EmberZNet Zigbee stack: cluster of new CVEs disclosed 25 June</h2>
+    <p class="lede">Silicon Labs' EmberZNet Zigbee stack (v9.0.2 and earlier) had a cluster of memory-safety CVEs published on <strong>25 June 2026</strong>, several reachable from malformed over-the-air messages. The bugs land in shipped firmware across a long tail of Zigbee-based smart-home and industrial endpoints.</p>
+    <ul class="signals">
+      <li>Highlights: <em>CVE-2026-47151</em> — out-of-bounds write in Door Lock schedule state; <em>-47150</em> — OOB write to state table; <em>-47149</em> — OOB reads triggering process termination; <em>-47148</em> — read past message payload; <em>-47145</em> — malformed Color Control messages causing process termination.</li>
+      <li>Hub vendors using EmberZNet need to coordinate fleet OTA rollouts; many devices ship without robust update channels, so the practical patch window is long.</li>
+      <li>Backdrop: June 2026 Patch Tuesday already set a 2026 record at 200 CVEs — 33 critical, 28 of those critical RCEs — including <em>CVE-2026-48579</em>, an unauthenticated info-disclosure in Exchange Online (CVSS 9.1).</li>
+    </ul>
+    <div class="sources">
+      <strong>Primary &amp; Tier-1:</strong>
+      <a href="https://nvd.nist.gov/">NIST NVD — CVE entries (search 2026-47145…47151)</a> ·
+      <a href="https://www.zerodayinitiative.com/blog/2026/6/9/the-june-2026-security-update-review">ZDI — June 2026 security update review</a> ·
+      <a href="https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-june-2026/">CrowdStrike — June 2026 Patch Tuesday analysis</a> ·
+      <a href="https://www.cisa.gov/news-events/bulletins/sb26-159">CISA — Vulnerability Summary, week of 1 June 2026</a>
+    </div>
+  </section>
+
+  <!-- Quick hits -->
+  <div class="quick-hits">
+    <h2>Quick hits</h2>
+
+    <div class="hit">
+      <div class="label">Model rumor</div>
+      <div>
+        <strong>GPT-5.6 ("kindle-alpha")</strong> — Polymarket contracts on a launch before 28 June crossed <strong>$1.1M notional</strong> at ~83% implied probability. The model string surfaced briefly in Codex backend logs on 12 Jun before being pulled. OpenAI has not confirmed. Rumored features: ~1.5M-token context, improved front-end code generation, faster Codex turn-around.
+        Source: <a href="https://llm-stats.com/llm-updates">llm-stats.com — LLM Updates (June 2026)</a>.
+      </div>
+    </div>
+
+    <div class="hit">
+      <div class="label">Market sizing</div>
+      <div>
+        Gartner's latest forecast pegs <strong>AI agent software spend at $206.5B in 2026</strong>, up 139% YoY from $86.4B in 2025 — the fastest-growing slice of enterprise software. Useful planning input for budgeting cycles closing on 30 June.
+      </div>
+    </div>
+
+    <div class="hit">
+      <div class="label">Robotics</div>
+      <div>
+        <strong>NVIDIA Newton 1.0</strong> reached general availability — an open-source GPU-accelerated physics engine targeted at dexterous-manipulation training, paired with new <strong>Isaac GR00T</strong> open VLA models. Relevant to anyone training sim-to-real pipelines.
+        Source: <a href="https://nvidianews.nvidia.com/news/nvidia-announces-open-physical-ai-data-factory-blueprint-to-accelerate-robotics-vision-ai-agents-and-autonomous-vehicle-development">NVIDIA Newsroom</a>.
+      </div>
+    </div>
+
+    <div class="hit">
+      <div class="label">Open weights</div>
+      <div>
+        The early-June open-weight wave continues to ship docs: <strong>MiniMax M3</strong> tech report has now landed; <strong>Gemma 4 12B Unified</strong> (encoder-free text/image/audio/video, shipped 3 Jun) is now picked up by Transformers v5.12.0 alongside MiniMax-M3-VL, PP-OCRv6 and Parakeet-RNNT.
+        Source: <a href="https://huggingface.co/blog/huggingface/state-of-os-hf-spring-2026">Hugging Face — State of Open Source, Spring 2026</a>.
+      </div>
+    </div>
+
+    <div class="hit">
+      <div class="label">IPO watch</div>
+      <div>
+        <strong>Anthropic</strong> (confidential S-1 filed 1 Jun, $965B valuation post-Series H) is targeting October 2026 listing with Goldman Sachs / JPMorgan; the Senate letter on Alibaba is being read in markets as an attempt to pre-empt China-exposure questions during the roadshow.
+        Source: <a href="https://forgeglobal.com/anthropic_ipo/">Forge Global — Anthropic IPO tracker</a>.
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p><strong>Methodology.</strong> Stories selected from the rolling 24-hour window ending 26 Jun 2026 12:00 UTC.
+    Each headline is anchored to at least one primary source (official statement, SEC/company filing, vendor advisory)
+    or to ≥2 tier-1 outlets (Bloomberg, Reuters, CNBC, TechCrunch, AP). Lower-tier blogs and social posts are used
+    only as corroborating signals and never as sole sources. Deduplicated against the
+    <a href="https://github.com/joseph-robert-f/ai-news-digest/tree/main/2026/June/22%20June%20-%2028%20June">prior 3 days of digests in this repo</a>.</p>
+    <p>© 2026 AI News Digest · Generated 26 June 2026.</p>
+  </footer>
+
+</div>
+</body>
+</html>
