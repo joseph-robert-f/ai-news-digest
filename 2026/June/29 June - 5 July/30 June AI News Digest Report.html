@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 30 June 2026</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 860px;
+      margin: 2rem auto;
+      padding: 0 1.25rem;
+      color: #1a1a1a;
+      line-height: 1.6;
+      background: #fafafa;
+    }
+    header {
+      border-bottom: 3px solid #0b5fff;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.75rem;
+    }
+    header .meta {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.25rem;
+      color: #0b5fff;
+      border-left: 4px solid #0b5fff;
+      padding-left: 0.6rem;
+    }
+    article {
+      background: #fff;
+      border: 1px solid #e3e3e3;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    article h3 {
+      margin: 0 0 0.35rem 0;
+      font-size: 1.05rem;
+    }
+    article .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: #eef4ff;
+      color: #0b5fff;
+      padding: 0.1rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    article .byline {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    ul.sources {
+      margin: 0.5rem 0 0 0;
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+    }
+    ul.sources li { margin-bottom: 0.15rem; }
+    a { color: #0b5fff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    .lede {
+      background: #fffbe6;
+      border-left: 4px solid #f2c200;
+      padding: 0.75rem 1rem;
+      border-radius: 4px;
+      margin-bottom: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI News Digest &mdash; 30 June 2026</h1>
+    <div class="meta">Week of 29 June&ndash;5 July 2026 &middot; Coverage window: 29&ndash;30 June (last ~24 hours, with 27&ndash;28 June anchors)</div>
+  </header>
+
+  <div class="lede">
+    <strong>Top-line:</strong> The pivot of the last 24 hours is <strong>Anthropic's "AI for Science" briefing</strong>, livestreamed today at 10:00&nbsp;AM&nbsp;PT &mdash; the first public appearance of Nobel laureate <strong>John Jumper</strong> since his move from DeepMind, anchored on two new public benchmarks (<strong>VirBench</strong> with a 16.9% &rarr; 92.8% Claude Sonnet 4 lift via the <strong>NCBI gget&nbsp;virus</strong> tool, and <strong>BioMysteryBench</strong> where Claude Mythos Preview hit 82.6% vs the 76/99 human reference) and a flagship <strong>Bristol Myers Squibb</strong> R&amp;D-plus-manufacturing deployment. The compute-shortage story turned the corner from rumour to balance-sheet fact: <strong>FT/CNBC reported 28&ndash;29 June</strong> that <strong>Google has capped Meta's Gemini API access</strong> after Meta requested more capacity than Google could supply &mdash; pushing Meta to accelerate its in-house <strong>Muse Spark</strong> rollout and routing some Gemini Enterprise demand through a <strong>$920&nbsp;M/month, ~110,000-GPU</strong> SpaceX-Colossus bridge. <strong>South Korea</strong> on Monday 29 June unveiled a <strong>$576&nbsp;B / 800&nbsp;trillion-won national semiconductor plan</strong> with President Lee Jae Myung naming <strong>Samsung</strong> and <strong>SK&nbsp;Hynix</strong> as co-builders of four new fabs in Gwangju. On the regulatory track, the <strong>Commerce Department on 27 June</strong> cleared <strong>Mythos&nbsp;5</strong> for redeployment to <strong>100+ trusted US critical-infrastructure operators</strong> &mdash; the first crack in the 12 June export-control order &mdash; while <strong>Fable&nbsp;5 remains suspended worldwide</strong>. In capital markets, <strong>Chamath Palihapitiya</strong> took the CEO seat at <strong>8090&nbsp;Labs</strong> alongside a <strong>$135&nbsp;M Series&nbsp;A</strong> led by <strong>Salesforce Ventures</strong> &mdash; his first full-time operating role since Facebook. The <strong>Qualcomm&ndash;Tenstorrent</strong> talks (up to <strong>$10&nbsp;B</strong>) entered advanced negotiation. And on dev-platforms, <strong>GitHub Copilot for Jira</strong> went GA with streaming-back ticket status, and <strong>VS Code</strong> shipped MDM-enforced Copilot policy plus chronicle session-sync.
+  </div>
+
+  <h2>Top Story &mdash; Anthropic Goes Public on "AI for Science"</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic</span>"The Briefing: AI for Science" &mdash; Jumper's first public appearance, VirBench + BioMysteryBench released, Bristol Myers Squibb live</h3>
+    <div class="byline">30 June 2026 &middot; Primary sources: anthropic.com event page; anthropic.com/news (accelerating-scientific-research, claude-for-life-sciences)</div>
+    <p>
+      Anthropic on <strong>Tuesday 30 June</strong> ran <em>The Briefing: AI for Science</em>, a livestreamed event at <strong>10:00&nbsp;AM&nbsp;PT</strong> bringing together company leadership, pharma/biotech executives, and research-institution partners. The headline is the <strong>first public appearance of John Jumper</strong> &mdash; the AlphaFold co-creator and 2024 Nobel laureate &mdash; since his <a href="https://www.cnbc.com/2026/06/19/john-jumper-to-leave-google-deepmind-for-anthropic.html">19 June move from Google DeepMind</a>. The event ships two new public artefacts. <strong>VirBench</strong> is a 120-query viral-sequence retrieval benchmark spanning 40 pathogens; six frontier models tested without specialised tooling scored from <strong>16.9% (Claude Sonnet 4)</strong> to <strong>91.3% (GPT&#8209;5.5)</strong>. The co-developed <strong>NCBI gget&nbsp;virus</strong> deterministic tool, built jointly with the National Center for Biotechnology Information, lifts every model above <strong>92%</strong> &mdash; Sonnet 4 jumps from 16.9% to <strong>92.8%</strong>. <strong>BioMysteryBench</strong> is a 99-question expert-curated bioinformatics set; the human reference solved <strong>76/99</strong>, and <strong>Claude Mythos Preview</strong> averaged <strong>82.6%</strong>. The customer-side anchor is <strong>Bristol Myers Squibb</strong>, deploying Claude across R&amp;D and manufacturing, with additional named partners across the Allen Institute and Howard Hughes Medical Institute strands launched 2 February 2026. Strategically, the event lands the same week as the <a href="../22%20June%20-%2028%20June/24%20June%20AI%20News%20Digest%20Report.html">27 June partial restoration</a> of Mythos&nbsp;5 to US critical infrastructure: Anthropic is staking the public framing of its strongest model on <em>science deployments through trusted institutions</em>, not consumer reach &mdash; a different posture than the GPT&#8209;5.6 Sol/Terra/Luna tiering OpenAI previewed 26 June.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/events/the-briefing-ai-for-science-virtual-event">Anthropic: The Briefing &mdash; AI for Science (event page, primary)</a></li>
+      <li><a href="https://www.anthropic.com/news/accelerating-scientific-research">Anthropic: How scientists are using Claude to accelerate research and discovery</a> (primary)</li>
+      <li><a href="https://www.anthropic.com/news/claude-for-life-sciences">Anthropic: Claude for Life Sciences</a> (primary)</li>
+      <li><a href="https://byteiota.com/anthropic-ai-for-science-biology-agents/">byteiota: Anthropic's AI for Biology &mdash; the accuracy crisis explained (VirBench / BioMysteryBench / gget&nbsp;virus numbers)</a></li>
+      <li><a href="https://www.digitalapplied.com/blog/john-jumper-joins-anthropic-ai-for-science-2026">DigitalApplied: John Jumper joins Anthropic &mdash; AI for Science heats up</a></li>
+      <li><a href="https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/">TechCrunch (background, 20 June): Nobel laureate John Jumper is leaving DeepMind for rival Anthropic</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Infrastructure &amp; Compute Markets</h2>
+
+  <article>
+    <h3><span class="tag">Google &times; Meta</span>Google caps Meta's Gemini API access over compute shortages &mdash; Meta accelerates in-house Muse Spark</h3>
+    <div class="byline">28 June 2026 (FT scoop) &middot; 29 June broad re-coverage &middot; Primary sources: Financial Times via CNBC; Forbes; Data Center Dynamics</div>
+    <p>
+      The <strong>Financial Times</strong> reported on Sunday <strong>28 June</strong>, with CNBC and Forbes carrying the story into Monday, that <strong>Google has put hard limits on Meta's use of the Gemini API</strong> after Meta requested more capacity than Alphabet could supply. Per the reporting, the constraint was first imposed <em>around March 2026</em> and has <strong>disrupted and delayed some of Meta's internal AI workflows</strong>. Meta has reportedly instructed employees to be more token-efficient and is <strong>actively shifting workloads to its in-house Muse Spark model</strong> &mdash; the foundation model launched out of Meta Superintelligence Labs &mdash; reducing reliance on Gemini for internal tooling. The cross-current with Friday's <a href="../22%20June%20-%2028%20June/24%20June%20AI%20News%20Digest%20Report.html">SpaceX&ndash;Reflection compute deal</a>: Google itself agreed earlier in June to pay <strong>SpaceX ~$920&nbsp;M per month</strong> for <strong>~110,000 Nvidia GPUs</strong> housed inside xAI's Colossus, language Google has openly described as a <em>"bridge"</em> for Gemini Enterprise demand. The macro signal is clean: the supply-side bottleneck is real enough that the second-largest hyperscaler can no longer fully sell its frontier-model API to the third-largest, and the world's largest social platform's response is to <em>build its own</em>.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html">CNBC: Google limits Meta's use of its Gemini AI models, FT reports</a> (primary US carry of FT scoop)</li>
+      <li><a href="https://www.forbes.com/sites/jonmarkman/2026/06/29/google-limits-metas-gemini-usage-over-compute-shortages/">Forbes: Google limits Meta's Gemini usage over compute shortages</a></li>
+      <li><a href="https://www.datacenterdynamics.com/en/news/google-limits-metas-ai-use-due-to-capacity-constraints-report/">Data Center Dynamics: Google limits Meta's AI use due to capacity constraints</a></li>
+      <li><a href="https://www.techbrew.com/stories/google-gemini-cap-limit-meta-ai-compute">Tech Brew: Meta has been put on a Gemini diet</a></li>
+      <li><a href="https://www.business-standard.com/technology/tech-news/google-limits-meta-s-access-to-gemini-ai-models-amid-capacity-constraints-126062800189_1.html">Business Standard: Google limits Meta's access to Gemini AI models amid capacity constraints</a></li>
+      <li><a href="https://www.neowin.net/news/google-reportedly-limited-metas-gemini-access-over-limited-ai-compute/">Neowin: Google reportedly limited Meta's Gemini access over limited AI compute</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">South Korea</span>$576&nbsp;B / 800&nbsp;trillion-won national chip plan &mdash; Samsung + SK&nbsp;Hynix each build two new Gwangju fabs</h3>
+    <div class="byline">29 June 2026 &middot; Primary sources: CNBC; CNN Business; Business Standard; Rappler</div>
+    <p>
+      President <strong>Lee Jae Myung</strong> on Monday <strong>29 June</strong> unveiled a sweeping industrial strategy that combines semiconductor, AI, and infrastructure spend into a single national programme totalling <strong>$576&nbsp;B</strong> (~<strong>800&nbsp;trillion won</strong>). The flagship piece: <strong>Samsung Electronics</strong> and <strong>SK&nbsp;Hynix</strong> will <em>each build two new semiconductor fabrication plants</em> in the southwestern city of <strong>Gwangju</strong>, with the Samsung Chairman <strong>Lee Jae-yong</strong> separately confirming the company's siting. Funding is targeted at <strong>high-bandwidth memory (HBM)</strong>, next-generation memory, edge AI silicon, advanced defence semiconductors, and robotics. The structural read is the part to flag for AI investors: <strong>SK&nbsp;Hynix is Nvidia's lead HBM supplier</strong> &mdash; the bottleneck constraint that has rationed the entire frontier-training stack through 2025&ndash;26 &mdash; and Samsung is the closest credible second source. A national policy programme of this scale targeted directly at HBM supply is the most concrete sovereign answer yet to the <em>compute scarcity</em> story driving the rest of today's digest (the Google&ndash;Meta cap; the SpaceX&ndash;Reflection $6.3&nbsp;B contract; the Oracle 10&#8209;K $55.7&nbsp;B FY26 capex line; and the still-suspended Fable&nbsp;5).
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.cnbc.com/2026/06/29/samsung-sk-hynix-reported-1point3-reported-trillion-spending-plans.html">CNBC: South Korea says Samsung and SK Hynix investing in AI, semiconductor mega-projects</a> (primary US tier)</li>
+      <li><a href="https://www.cnn.com/2026/06/29/business/south-korea-ai-investment-samsung-skhynix">CNN Business: South Korea to invest $576 billion in AI chip production with Samsung and SK Hynix</a></li>
+      <li><a href="https://www.business-standard.com/companies/news/samsung-sk-hynix-back-south-korea-s-576-billion-ai-chip-investment-plan-126062901278_1.html">Business Standard: Samsung, SK Hynix back South Korea's $576 B AI-chip investment plan</a></li>
+      <li><a href="https://www.rappler.com/technology/south-korea-samsung-sk-hynix-ai-chip-drive-june-29-2026/">Rappler: South Korea taps Samsung, SK Hynix in $576 B AI chip drive to cement global leadership</a></li>
+      <li><a href="https://cryptobriefing.com/south-korea-520b-chip-plant-samsung-sk-hynix/">Crypto Briefing: South Korea announces $520 B chip plant project with Samsung, SK Hynix</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Qualcomm / Tenstorrent</span>Advanced acquisition talks at up to $10&nbsp;B &mdash; Jim Keller's RISC-V stack as the Nvidia counterweight</h3>
+    <div class="byline">15&ndash;29 June 2026 (talks reported 15 June, advanced-stage signalling through 29 June) &middot; Primary sources: The Register; Design&amp;Reuse; Medium aggregations</div>
+    <p>
+      <strong>Qualcomm</strong> is in <strong>advanced negotiations</strong> to acquire <strong>Tenstorrent</strong>, the RISC-V AI silicon startup led by chief architect <strong>Jim Keller</strong>, for <strong>$8&ndash;10&nbsp;B</strong> &mdash; a deal first reported by <a href="https://www.theregister.com/systems/2026/06/16/qualcomm-said-to-be-circling-ai-chip-biz-tenstorrent-in-10b-risc-v-power-play/5256084">The Register on 16 June</a> that has hardened in the back half of the month. Valuation context: Tenstorrent raised at <strong>$3.2&nbsp;B</strong> on its $800&nbsp;M round in 2025 &mdash; a deal at $10&nbsp;B would represent a <strong>~3&times; markup in roughly 12 months</strong>. Reported terms include <em>performance-related milestone payments</em>, now standard in chip-startup acquisitions where roadmap execution risk is material. The strategic logic for Qualcomm is the unambiguous one: pair its existing <strong>$14&nbsp;B-class</strong> data-centre AI accelerator push (RISC-V, open-compiler) with Tenstorrent's chiplet IP, in-house compiler stack, and the Keller-led team &mdash; a credible second-source counter to Nvidia in the segment where SK Hynix's HBM is the binding constraint (see South Korea above). <strong>Intel is reported to have also expressed interest</strong>, creating bidding-dynamic risk. Neither party has commented on the record; both Reuters and the FT are tracking. For supply-side AI investors, this is the largest pending non-Nvidia AI-silicon M&amp;A.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.theregister.com/systems/2026/06/16/qualcomm-said-to-be-circling-ai-chip-biz-tenstorrent-in-10b-risc-v-power-play/5256084">The Register: Qualcomm said to be circling AI chip biz Tenstorrent in $10 B RISC-V power play</a> (primary)</li>
+      <li><a href="https://www.design-reuse.com/news/202530698-qualcomm-is-reportedly-considering-a-tenstorrent-acquisition-for-up-to-10-billion-dollars-jim-keller-s-ai-and-risc-v-company-in-focus/">Design&amp;Reuse: Qualcomm reportedly considering Tenstorrent acquisition for up to $10 B</a></li>
+      <li><a href="https://www.techtimes.com/articles/319017/20260624/qualcomm-bets-14-billion-cracking-nvidias-ai-monopoly-risc-v-open-compiler.htm">TechTimes (24 June, context): Qualcomm bets $14 B on cracking Nvidia's AI monopoly with RISC-V</a></li>
+      <li><a href="https://medium.com/@noahbean3396/qualcomm-is-in-advanced-negotiations-to-buy-tenstorrent-for-10-billion-82d6801896e6">Medium (Noah Bean): What Qualcomm is actually buying from Tenstorrent for $10 B</a></li>
+      <li><a href="https://letsdatascience.com/blog/qualcomm-tenstorrent-10-billion-risc-v-deal">Let's Data Science: Qualcomm in talks to buy Tenstorrent for $10 B</a></li>
+    </ul>
+  </article>
+
+  <h2>Security, Policy &amp; Regulatory</h2>
+
+  <article>
+    <h3><span class="tag">Anthropic / Commerce Dept.</span>Mythos&nbsp;5 partially restored to 100+ trusted US critical-infrastructure orgs &mdash; Fable&nbsp;5 still suspended worldwide</h3>
+    <div class="byline">27 June 2026 announcement; 28&ndash;29 June industry coverage &middot; Primary sources: Anthropic newsroom (Claude Fable 5 and Mythos 5); Fortune; GovConWire; TechTimes</div>
+    <p>
+      Anthropic confirmed on Saturday <strong>27 June</strong> that the US Commerce Department has notified it that <strong>Mythos&nbsp;5</strong> &mdash; its strongest cybersecurity model, suspended worldwide on 12 June under the unprecedented frontier-AI export-control order &mdash; can be <strong>redeployed to a defined set of US organisations that operate and defend critical infrastructure</strong>. Anthropic is publicly framing the scope as <strong>"100+ trusted organisations"</strong>, the first crack in the directive since 12 June. The qualifications matter: <strong>Mythos&nbsp;5 is not generally available</strong>, access is subject to <strong>Washington's new frontier-AI review process</strong>, and <strong>Fable&nbsp;5</strong> &mdash; the developer-facing model that millions had been using before the order &mdash; <em>remains suspended worldwide</em>, with the original civil and criminal penalties still in force. The companion piece, per TechTimes' 28 June reporting, is that <strong>OpenAI's GPT&#8209;5.6</strong> (Sol/Terra/Luna tiering previewed 26 June) is being walked through the <em>same</em> customer-by-customer government-gated process: limited preview, no general release until DC approves. The structural read for builders: the export-control posture from 12 June is becoming the <em>steady-state policy regime</em> &mdash; not a one-off &mdash; and is now applied to both labs symmetrically. The Anthropic-vs-DOD lawsuit, separately, continues on a distinct legal track and has not been settled by the Commerce thaw.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5">Anthropic newsroom: Claude Fable 5 and Claude Mythos 5</a> (primary statement)</li>
+      <li><a href="https://fortune.com/2026/06/27/anthropic-mythos-5-ai-model-us-commerce-department-clearance-fable/">Fortune: Anthropic's Mythos 5 AI model cleared by US for wider use</a></li>
+      <li><a href="https://www.govconwire.com/articles/anthropic-mythos-5-access-restored-select-us-orgs">GovConWire: Anthropic restores Mythos 5 access for select US organisations after government approval</a></li>
+      <li><a href="https://www.computing.co.uk/news/2026/ai/anthropic-regains-approval-to-deploy-mythos-ai-to-trusted-us-organisations">Computing: Anthropic regains approval to deploy Mythos AI to trusted US organisations</a></li>
+      <li><a href="https://www.techtimes.com/articles/319213/20260628/claude-fable-5-still-offline-us-clears-mythos-5-critical-infrastructure.htm">TechTimes: Claude Fable 5 still offline as US clears Mythos 5 for critical infrastructure</a></li>
+      <li><a href="https://www.techtimes.com/articles/319318/20260629/gemini-35-pro-cleared-july-launch-fable-5-nears-return-gpt-56-stays-locked.htm">TechTimes (29 June): Gemini 3.5 Pro cleared for July launch as Fable 5 nears return, GPT&#8209;5.6 stays locked</a></li>
+    </ul>
+  </article>
+
+  <h2>Capital Markets &amp; Talent</h2>
+
+  <article>
+    <h3><span class="tag">8090 Labs</span>Chamath Palihapitiya takes CEO role on $135&nbsp;M Series&nbsp;A led by Salesforce Ventures</h3>
+    <div class="byline">29 June 2026 &middot; Primary sources: TechCrunch (Julie Bort scoop); Business Wire announcement; SiliconANGLE</div>
+    <p>
+      <strong>Chamath Palihapitiya</strong> announced on Monday <strong>29 June</strong> that <strong>8090&nbsp;Labs</strong> has closed a <strong>$135&nbsp;M Series&nbsp;A</strong> led by <strong>Salesforce Ventures</strong>, and that he is <em>stepping in as CEO</em> &mdash; his <em>first full-time operating role since leaving Facebook</em>. Participating investors: Jeffrey Katzenberg's <strong>WndrCo</strong>, David Sacks' <strong>Craft Ventures</strong>, David Friedberg's <strong>The Production Board</strong>, Jason Calacanis' <strong>LAUNCH</strong>, plus angels <strong>Nikesh Arora</strong> (CEO, Palo Alto Networks) and <strong>Adam D'Angelo</strong> (CEO, Quora). 8090 was founded in January 2024; its flagship product, <strong>Software Factory</strong>, uses third-party AI agents to turn customer-authored specification documents into <em>production-quality enterprise code</em> &mdash; explicitly positioned against the consumer-grade "vibe coding" surface, with audit trails, governance, and integration into existing enterprise systems as the differentiators. Named target verticals: <em>healthcare, aerospace, financial services, energy, US Government</em>. Use of proceeds: hiring, technical-team expansion, and high-performance compute &mdash; the same supply-side bottleneck themed across today's digest. For the AI-coding tooling market, this is the largest single primary-market signal of <em>enterprise-controlled AI coding</em> as a distinct product category vs. the developer-grade Claude Code / OpenAI Codex / Cursor / Copilot stack.
+    </p>
+    <ul class="sources">
+      <li><a href="https://techcrunch.com/2026/06/29/chamath-palihapitiya-raises-135m-series-a-for-his-ai-coding-startup-takes-ceo-role/">TechCrunch (Julie Bort): Chamath Palihapitiya raises $135 M Series A for his AI coding startup, takes CEO role</a> (primary)</li>
+      <li><a href="https://www.businesswire.com/news/home/20260626795833/en/8090-Raises-$135M-Series-A-to-Accelerate-Their-Rollout-of-Software-Factory">Business Wire (primary press release): 8090 raises $135 M Series A to accelerate Software Factory</a></li>
+      <li><a href="https://siliconangle.com/2026/06/29/ai-software-development-startup-8090-nabs-135m-funding-round/">SiliconANGLE: AI software development startup 8090 nabs $135 M funding round</a></li>
+      <li><a href="https://www.thesaasnews.com/news/8090-labs-raises-135m-series-a/">The SaaS News: 8090 Labs raises $135 M Series A</a></li>
+      <li><a href="https://www.finsmes.com/2026/06/8090-labs-raises-135m-in-series-a-funding.html">FinSMEs: 8090 Labs raises $135 M in Series A funding</a></li>
+      <li><a href="https://www.techmeme.com/260629/p44">Techmeme aggregation: 8090 / Palihapitiya CEO move</a></li>
+    </ul>
+  </article>
+
+  <h2>Software Engineering &amp; Developer Platforms</h2>
+
+  <article>
+    <h3><span class="tag">GitHub / VS Code</span>Copilot for Jira GA, MDM-enforced Copilot policy in VS Code, chronicle session-sync, SSH/dev-tunnel agents</h3>
+    <div class="byline">Late June 2026 ship window (24&ndash;30 June) &middot; Primary sources: github.blog; VS Code release notes</div>
+    <p>
+      The week's developer-platform shipping is concentrated on the two GitHub surfaces that did <em>not</em> graduate in the <a href="../22%20June%20-%2028%20June/24%20June%20AI%20News%20Digest%20Report.html">23 June GHES 3.21 / gh CLI 2.94 bundle</a>: enterprise admin controls and the AI-agent runtime surface. <strong>GitHub Copilot for Jira</strong> moved to <strong>general availability</strong>, with model selection, <em>Confluence context via MCP</em>, custom agents, custom Jira fields, space-level guidance, and review-request notifications all in scope. The throughput piece that matters: <em>coding-agent progress now streams back to the Jira ticket in real time</em>, closing the loop between AI work and the issue tracker without a separate dashboard. <strong>Copilot in GitHub Desktop</strong> migrated onto the Copilot SDK with a per-feature <em>model picker</em>. <strong>GitHub Copilot usage metrics API</strong> added <em>total PR merges by AI adoption phase</em> for orgs and enterprises &mdash; the first reporting cut that lets management answer the "how much of merged code came from AI" question with first-party data. On the editor surface, <strong>VS Code</strong> shipped: <strong>MDM-delivered Copilot policy</strong> on Windows and macOS (policy-enforced, cannot be locally overridden), <strong>chronicle session sync</strong> that captures conversation + files-touched + repo context with natural-language history queries, and <em>experimental SSH / dev-tunnel</em> support for the Agents window. Net read: the enterprise-control story has caught up to the consumer feature surface &mdash; auditability and governance, not just velocity, are now the differentiators most actively shipping.
+    </p>
+    <ul class="sources">
+      <li><a href="https://github.blog/news-insights/product-news/">GitHub Blog: Product News (primary)</a></li>
+      <li><a href="https://github.blog/news-insights/">GitHub Developer News &amp; Insights index</a></li>
+      <li><a href="https://devblogs.microsoft.com/vscode-blog">VS Code Blog (Microsoft for Developers, primary)</a></li>
+      <li><a href="https://github.com/microsoft/vscode/releases">microsoft/vscode releases (primary release notes)</a></li>
+      <li><a href="https://releasebot.io/updates/microsoft/visual-studio-code">Releasebot: VS Code release notes &mdash; June 2026</a></li>
+      <li><a href="https://releasebot.io/updates/github">Releasebot: GitHub release notes &mdash; June 2026</a></li>
+    </ul>
+  </article>
+
+  <h2>AI Research</h2>
+
+  <article>
+    <h3><span class="tag">Ames Lab / DOE Genesis</span>DuctGPT: physics-informed transformer for refractory-alloy ductility &mdash; and a sharp public correction on the magnet headlines</h3>
+    <div class="byline">Late June 2026 coverage &middot; Primary source: Ames National Laboratory; secondary: tech.xplore, Newswise, Rare Earth Exchanges</div>
+    <p>
+      The most-discussed scientific-AI artefact of the last 24 hours is <strong>DuctGPT</strong>, a <em>physics-informed generative transformer</em> developed at <strong>Ames National Laboratory</strong> as part of the <strong>DOE Genesis Mission</strong>. The actual paper target is <em>predicting ductility in refractory multi-principal-element alloys (MPEAs)</em> &mdash; for extreme-environment use cases including fusion reactors, turbine engines, and aerospace systems. The interesting <em>process</em> claim is the model's incorporation of physics priors directly into the transformer architecture: the team frames this as a route to <em>materials prediction with substantially less training data than purely data-driven baselines</em>, the dominant practical bottleneck in computational materials science. The story is also a clean case study in <em>science-communication risk</em>: several mainstream outlets recast the result as a <em>rare-earth-free magnet</em> breakthrough, which the original work does not claim &mdash; the Rare Earth Exchanges piece below is the most readable correction. Pairing this with today's Anthropic AI-for-Science briefing, the pattern across both is the same: <em>domain-specific tool-and-benchmark co-design beats general-purpose-model raw scaling</em> on real scientific endpoints, and the headline-vs-paper gap remains the single largest risk for downstream policy interpretation.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.ameslab.gov/news/ames-lab-scientist-provides-ai-driven-roadmap-for-future-permanent-magnet-design">Ames National Laboratory: Ames Lab scientist provides AI-driven roadmap for future permanent magnet design</a> (primary)</li>
+      <li><a href="https://techxplore.com/news/2026-06-ai-driven-roadmap-future-permanent.html">Tech Xplore: An AI-driven roadmap for future permanent magnet design</a></li>
+      <li><a href="https://www.newswise.com/articles/ames-lab-scientist-provides-ai-driven-roadmap-for-future-permanent-magnet-design">Newswise: Ames Lab AI-driven permanent magnet roadmap</a></li>
+      <li><a href="https://rareearthexchanges.com/news/ai-finds-a-rare-earth-free-magnet-not-so-fast/">Rare Earth Exchanges: AI Finds a Rare-Earth-Free Magnet? Not So Fast (the corrective read)</a></li>
+      <li><a href="https://www.metal-powder.tech/ames-lab-explores-ai-driven-discovery-of-rare-earth-free-magnets/">Metal Powder Technology: Ames Lab explores AI-driven discovery</a></li>
+      <li><a href="https://www.azom.com/news.aspx?newsID=65503">AZoM: Securing America's critical mineral supply through physics-informed AI</a></li>
+    </ul>
+  </article>
+
+  <article>
+    <h3><span class="tag">Google</span>Gemini 3.5 Pro now cleared for a July launch &mdash; 30 June GA window officially missed</h3>
+    <div class="byline">29 June 2026 &middot; Primary sources: TechTimes; The AI Rankings; Google blog (background)</div>
+    <p>
+      As tracked in the <a href="../22%20June%20-%2028%20June/24%20June%20AI%20News%20Digest%20Report.html">24 June digest</a>, the open question was whether <strong>Gemini&nbsp;3.5&nbsp;Pro</strong> &mdash; the 2&nbsp;M-token-context, Deep Think-reasoning model announced at Google I/O on 19 May with a "June 2026" GA target &mdash; would clear before month-end. As of <strong>Monday 29 June</strong>, TechTimes is now reporting Google has <em>publicly moved the goalpost into July</em>, with the model still in <strong>limited Vertex AI enterprise preview</strong> and not in either the consumer Gemini app or the public AI Studio model picker. Public-facing access on the 3.5 family remains <strong>Gemini&nbsp;3.5&nbsp;Flash</strong> (GA since 19 May at Google I/O). The reason the slip matters beyond the calendar: the Pro tier was the one expected to test Google's Deep Think reasoning against GPT&#8209;5.5 and the now-gated Mythos&nbsp;5 on long-horizon agentic workloads. A July launch lands inside the same window as a potential <strong>Mythos&nbsp;5 broader-access restoration</strong> and the rollout-curve of <strong>GPT&#8209;5.6 Sol/Terra/Luna</strong> through the Commerce-gated approval process &mdash; making Q3 2026 the most concentrated frontier-model-launch window of the year.
+    </p>
+    <ul class="sources">
+      <li><a href="https://www.techtimes.com/articles/319318/20260629/gemini-35-pro-cleared-july-launch-fable-5-nears-return-gpt-56-stays-locked.htm">TechTimes (29 June): Gemini 3.5 Pro cleared for July launch as Fable 5 nears return, GPT&#8209;5.6 stays locked</a></li>
+      <li><a href="https://theairankings.com/google/gemini-3-5-pro/">The AI Rankings: Gemini 3.5 Pro &mdash; 2 M context, Deep Think &amp; release status</a></li>
+      <li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/">Google Blog: Gemini 3.5 &mdash; frontier intelligence with action (primary background)</a></li>
+      <li><a href="https://ai.google.dev/gemini-api/docs/changelog">Gemini API release notes (primary changelog)</a></li>
+      <li><a href="https://wavespeed.ai/blog/posts/gemini-3-5-pro-coming-next-month/">WaveSpeed: Gemini 3.5 Pro coming next month &mdash; what the Flash release already tells us</a></li>
+    </ul>
+  </article>
+
+  <footer>
+    <p><strong>Editorial notes:</strong> The 30 June digest is anchored on Anthropic's <em>AI for Science</em> livestream (John Jumper's first public appearance, the VirBench 16.9% &rarr; 92.8% gget&nbsp;virus tooling lift, BioMysteryBench at 82.6% vs 76/99 humans, and the Bristol Myers Squibb deployment), the FT/CNBC-reported <em>Google cap on Meta's Gemini API access</em> with its $920&nbsp;M/month Colossus bridge, South Korea's <em>$576&nbsp;B / 800-trillion-won semiconductor plan</em> with Samsung and SK&nbsp;Hynix four new Gwangju fabs, the <em>partial restoration of Mythos&nbsp;5</em> to 100+ US critical-infrastructure operators against a still-suspended Fable&nbsp;5, the <em>Chamath Palihapitiya / 8090 Labs $135&nbsp;M Series&nbsp;A and CEO move</em>, the advanced <em>Qualcomm&ndash;Tenstorrent ~$10&nbsp;B</em> RISC-V acquisition talks, the <em>GitHub Copilot for Jira GA + VS Code MDM/chronicle bundle</em>, the Ames Lab <em>DuctGPT</em> physics-informed transformer (with the corrective read on the magnet headlines), and Google's now-slipped <em>Gemini&nbsp;3.5&nbsp;Pro July GA window</em>. Primary sources flagged inline include Anthropic's event page and accelerating-scientific-research / claude-for-life-sciences pages, CNBC's FT carry on Google&times;Meta, CNBC and CNN Business on the Korea plan, the Anthropic newsroom statement on Mythos&nbsp;5, Business Wire and TechCrunch on 8090, The Register on Qualcomm&ndash;Tenstorrent, github.blog and the VS Code release notes, Ames National Laboratory's release on DuctGPT, and Google's developer changelog on Gemini. <em>Non-overlap check:</em> the 28 and 29 June dates have no published digest in this repo; the most recent prior issue (<a href="../22%20June%20-%2028%20June/24%20June%20AI%20News%20Digest%20Report.html">24 June</a>) covered GPT&#8209;5.5&#8209;Cyber and Patch the Planet, the SpaceX&ndash;Reflection $6.3&nbsp;B compute deal and the SPCX drawdown, Oracle's fiscal-2026 10&#8209;K, the Five Eyes joint advisory, the tenth Claude outage, the Meta MCI 45,000-table data exposure, the Meta-from-OpenAI four-researcher hire (Beyer/Kolesnikov/Zhai/+1), GHES 3.21 / gh CLI 2.94, and the AgileThinker real-time-reasoning paper &mdash; none of which are restated here, only referenced where today's developments link back. Today's stories take material new to the <strong>27&ndash;30 June</strong> window.</p>
+    <p>Generated 30 June 2026.</p>
+  </footer>
+</body>
+</html>
