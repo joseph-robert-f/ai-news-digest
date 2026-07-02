@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI News Digest &mdash; 2 July 2026</title>
-  <meta name="description" content="Anthropic's 1 July volley: Sonnet 5 becomes the cheap default, Fable 5 and Mythos 5 return after a 19-day export ban, and Claude Science launches — as Korea's $880B chip plan triggers a Samsung/SK Hynix selloff.">
+  <meta name="description" content="Anthropic's 1 July volley: Sonnet 5 becomes the cheap default, Fable 5 and Mythos 5 return after a 19-day export ban, and Claude Science launches — as a leaked Meta compute-resale pivot deepens a global chip selloff (updated: afternoon addendum).">
   <style>
     :root {
       --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
@@ -36,6 +36,8 @@
     .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
     .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
     .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .tag.update { color: #b45309; }
+    .updated-note { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: #b45309; background: #fffbeb; border: 1px solid #fde68a; padding: 0.12rem 0.6rem; border-radius: 999px; }
     .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
     .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
     .lead .wm { font-weight: 700; color: var(--ink); }
@@ -64,6 +66,9 @@
       <span class="dot">&middot;</span>
       <span>Coverage: 1&ndash;2 July (last ~24 hours)</span>
     </div>
+    <div class="subline" style="margin-top: 0.6rem;">
+      <a class="updated-note" href="#afternoon-update">&#8635; Updated midday ET &mdash; afternoon addendum below</a>
+    </div>
   </header>
 
   <section class="glance">
@@ -72,7 +77,7 @@
       <li><strong>Claude Sonnet 5 is the new default</strong> for free/Pro at $2/$10 per M tokens &mdash; near-Opus&nbsp;4.8 agentic performance at roughly a third of the price.</li>
       <li><strong>Fable 5 is back globally; Mythos 5 returns for approved US orgs</strong> after Commerce lifted the 12 June export ban &mdash; a 19-day shutdown ends.</li>
       <li><strong>Anthropic launched Claude Science</strong> (Opus&nbsp;4.8 research workbench for biopharma) and expanded the Glasswing cross-lab jailbreak framework with Amazon, Microsoft &amp; Google.</li>
-      <li><strong>Korea's $880B chip/AI plan sparked a selloff:</strong> Samsung &minus;7%, SK Hynix &minus;9%+ at Kospi open &mdash; the first real market pushback on 2026's AI-capex wave.</li>
+      <li><strong>Chip/AI-infra selloff deepened all day</strong> and, by the close, traced mainly to Meta's leaked plan to resell excess AI compute, not Korea's plan alone &mdash; Samsung &minus;9%, SK Hynix &minus;14.6%, CoreWeave &minus;14%, Nebius &minus;17%. <em>(Updated &mdash; see afternoon addendum.)</em></li>
       <li><strong>OpenAI's GPT&#8209;5.6 stays locked to ~20 partners</strong> under the 2 June Trump order, letting Anthropic occupy the mid-tier agentic surface unopposed.</li>
     </ol>
   </section>
@@ -152,6 +157,24 @@
         <li><a href="https://www.bloomberg.com/news/articles/2026-06-30/lee-s-880-billion-ai-bet-ties-legacy-to-south-korea-chip-boom">Bloomberg: Lee's $880B AI bet</a></li>
         <li><a href="https://www.aljazeera.com/news/2026/6/29/south-korea-announces-more-than-1-trillion-ai-chip-investment-drive">Al Jazeera: $1T+ AI, chip investment drive</a></li>
         <li><a href="https://www.japantimes.co.jp/business/2026/07/01/tech/samsung-sk-hynix-korea-chips/">Japan Times: mega Korea chips gamble</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story" id="afternoon-update">
+    <div class="kicker"><span class="tag update">Update</span><span class="when">Added 2 Jul, midday ET</span></div>
+    <h3>Meta's leaked compute-resale pivot, not Korea, is the real trigger &mdash; and it's spreading to neoclouds</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the causal story behind this morning's chip selloff changed by midday &mdash; it isn't primarily Seoul's spending plan, it's Meta signalling it may have <em>more</em> AI compute than it needs. That flips the industry's core assumption that GPU demand always outstrips supply, and the stocks most exposed to Meta's own contracts got hit hardest.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Bloomberg reported 1 July that Meta is drawing up plans for "Meta Compute," a cloud business &mdash; led by infrastructure chief Santosh Janardhan, Daniel Gross, and president Dina Powell McCormick &mdash; to resell excess AI capacity, either as managed model access (Bedrock-style) or raw GPU capacity (CoreWeave-style). Zuckerberg said at May's shareholder meeting that outside firms were approaching Meta "almost every week" for spare compute; Muse Spark's underperformance versus Claude and GPT&#8209;5.5 left internal utilization below plan. Meta shares jumped 8&ndash;11% on the news. By Wednesday's close the read-through hit the rest of the sector: the Philadelphia Semiconductor Index fell 6.3% (KLA &minus;12%, Lam Research &minus;9.7%, Applied Materials &minus;10%, Micron/Sandisk &minus;10.6%), and neoclouds whose backlogs depend on Meta contracts were hit hardest &mdash; CoreWeave (which has roughly $21B in Meta-linked commitments) closed &minus;14%, and Nebius (on the hook for $12&ndash;27B of Meta capacity through 2027+) closed &minus;17%, roughly $12B of market cap in a day. Samsung and SK Hynix, &minus;7%/&minus;9% at this morning's Kospi open per the item above, closed the session down 9.06%/14.57% &mdash; nearly double the opening move.</p>
+      <p>Separately, Axios reports OpenAI now expects GPT&#8209;5.6 Sol/Terra/Luna to clear the trusted-partner gate and reach general availability by mid-July, roughly two weeks after the 26 June limited preview &mdash; the first concrete date range since the 1&ndash;2 July item above.</p>
+      <ul class="sources">
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-01/meta-is-building-a-cloud-business-to-sell-excess-ai-compute">Bloomberg: Meta is planning a cloud business to sell excess AI compute</a> (primary)</li>
+        <li><a href="https://www.cnbc.com/2026/07/01/meta-stock-cloud-ai-compute.html">CNBC: Meta pops 9% on cloud push to sell excess AI compute</a></li>
+        <li><a href="https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/">TechCrunch: Meta, like SpaceX, looks to turn excess AI compute into cash</a></li>
+        <li><a href="https://www.axios.com/2026/07/02/ai-meta-stocks-chips">Axios: Why AI and semiconductor stocks stumbled</a></li>
+        <li><a href="https://www.cnbc.com/2026/07/02/samsung-sk-hynix-shares-slide-kospi-tech-selloff-nasdaq.html">CNBC: Samsung, SK Hynix tumble as chip rout spreads</a></li>
+        <li><a href="https://247wallst.com/investing/2026/07/01/the-neocloud-trade-could-turn-shareholders-into-bagholders-nebius-just-cratered-17/">24/7 Wall St: Nebius cratered 17% on the Meta cloud report</a></li>
       </ul>
     </div></details>
   </article>
@@ -257,7 +280,7 @@
     </div></details>
   </article>
 
-  <footer>Curated for a 5-minute read. Generated 2 July 2026.</footer>
+  <footer>Curated for a 5-minute read. Generated 2 July 2026; afternoon addendum added midday ET.</footer>
 </main>
 
 <script>
