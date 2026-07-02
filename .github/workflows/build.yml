@@ -19,10 +19,12 @@ permissions:
   pages: write
   id-token: write
 
-# Allow one concurrent deployment; let an in-progress run finish.
+# Only the latest deploy matters for a static site. cancel-in-progress lets a
+# newer run supersede one that's wedged in Pages' "deployment_queued" state,
+# instead of queuing behind it forever.
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -49,3 +51,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # Default is 600000 (10 min). Give a slow-but-alive Pages backend more
+          # room on incident days. Won't rescue a hard lock — that needs a Pages
+          # source reset in Settings — but the daily schedule backstop will retry.
+          timeout: 1200000
