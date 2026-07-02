@@ -23,7 +23,21 @@ and to render the archive.
 | `.github/workflows/build.yml` | On every push to `main`: regenerate the manifest and deploy to GitHub Pages. |
 
 The date for each digest is read from its `<title>` (`AI News Digest — D Month
-YYYY`), **not** from the file name — so naming never breaks the site.
+YYYY`), **not** from the file name — so naming never breaks the site. The
+archive preview comes from each file's `<meta name="description">`.
+
+## Design: built for a 5-minute executive skim
+
+`templates/digest-template.html` is a minimalist "executive brief" layout:
+
+- **At a glance** — up to five one-line bullets: the whole day in ~30 seconds.
+- **Story cards** — a sharp headline plus a single *"Why it matters"* line.
+  Deeper context and sources live inside a collapsible **Detail & sources**
+  section, so the default view stays scannable.
+- An auto-computed **reading-time** badge (from the skim surface) keeps each
+  day honest against the 5-minute target.
+
+Keep it tight: 5 glance bullets, ~5–8 story cards, one takeaway line each.
 
 ## Adding a new digest (no PR needed)
 

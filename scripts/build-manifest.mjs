@@ -73,8 +73,18 @@ async function main() {
       continue;
     }
 
-    const ledeMatch = html.match(/<div class="lede">([\s\S]*?)<\/div>/i);
-    let summary = ledeMatch ? stripTags(ledeMatch[1]).replace(/^Top-line:\s*/i, '') : '';
+    // Prefer an explicit <meta name="description">; fall back to the .lede
+    // block used by the older digests.
+    let summary = '';
+    const metaTag = html.match(/<meta[^>]*\bname=["']description["'][^>]*>/i);
+    if (metaTag) {
+      const content = metaTag[0].match(/\bcontent=["']([\s\S]*?)["']/i);
+      if (content) summary = decodeEntities(content[1]).replace(/\s+/g, ' ').trim();
+    }
+    if (!summary) {
+      const ledeMatch = html.match(/<div class="lede">([\s\S]*?)<\/div>/i);
+      summary = ledeMatch ? stripTags(ledeMatch[1]).replace(/^Top-line:\s*/i, '') : '';
+    }
     if (summary.length > 280) summary = summary.slice(0, 277).trimEnd() + '…';
 
     const segs = path.split('/');

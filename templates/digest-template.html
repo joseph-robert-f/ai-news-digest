@@ -5,96 +5,170 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
   <title>AI News Digest &mdash; 1 January 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="One-sentence summary of the single most important thing that happened today.">
   <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      max-width: 860px;
-      margin: 2rem auto;
-      padding: 0 1.25rem;
-      color: #1a1a1a;
-      line-height: 1.6;
-      background: #fafafa;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
     }
-    header {
-      border-bottom: 3px solid #0b5fff;
-      padding-bottom: 0.75rem;
-      margin-bottom: 1.5rem;
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
     }
-    header h1 { margin: 0 0 0.25rem 0; font-size: 1.75rem; }
-    header .meta { color: #555; font-size: 0.95rem; }
-    h2 {
-      margin-top: 2rem;
-      font-size: 1.25rem;
-      color: #0b5fff;
-      border-left: 4px solid #0b5fff;
-      padding-left: 0.6rem;
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
     }
-    article {
-      background: #fff;
-      border: 1px solid #e3e3e3;
-      border-radius: 8px;
-      padding: 1rem 1.25rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
     }
-    article h3 { margin: 0 0 0.35rem 0; font-size: 1.05rem; }
-    article .tag {
-      display: inline-block;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      background: #eef4ff;
-      color: #0b5fff;
-      padding: 0.1rem 0.5rem;
-      border-radius: 4px;
-      margin-right: 0.4rem;
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
     }
-    article .byline { color: #666; font-size: 0.85rem; margin-bottom: 0.5rem; }
-    ul.sources { margin: 0.5rem 0 0 0; padding-left: 1.1rem; font-size: 0.9rem; }
-    ul.sources li { margin-bottom: 0.15rem; }
-    a { color: #0b5fff; text-decoration: none; }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
+
     footer {
-      margin-top: 2.5rem;
-      padding-top: 1rem;
-      border-top: 1px solid #ddd;
-      color: #666;
-      font-size: 0.85rem;
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
     }
-    .lede {
-      background: #fffbe6;
-      border-left: 4px solid #f2c200;
-      padding: 0.75rem 1rem;
-      border-radius: 4px;
-      margin-bottom: 1.25rem;
-    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
   </style>
 </head>
 <body>
-  <header>
-    <h1>AI News Digest &mdash; 1 January 2026</h1>
-    <div class="meta">Week of 1&ndash;7 January 2026 &middot; Coverage window: last ~24 hours</div>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>1 January 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
   </header>
 
-  <!-- The .lede is used as the preview snippet on the archive page. -->
-  <div class="lede">
-    <strong>Top-line:</strong> One-paragraph executive summary of the day's biggest stories.
-  </div>
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Lead point.</strong> The single sentence that captures why it matters.</li>
+      <li><strong>Second point.</strong> One line.</li>
+      <li><strong>Third point.</strong> One line.</li>
+      <li><strong>Fourth point.</strong> One line.</li>
+      <li><strong>Fifth point.</strong> One line.</li>
+    </ol>
+  </section>
 
-  <h2>Section name</h2>
-
-  <article>
-    <h3><span class="tag">Company</span>Headline of the story</h3>
-    <div class="byline">1 January 2026 &middot; Primary source: Publication</div>
-    <p>One to three paragraphs of narrative.</p>
-    <ul class="sources">
-      <li><a href="https://example.com/article">Publication: Article title</a> (primary)</li>
-    </ul>
+  <!-- One <article> per story. Headline + a single "why it matters" line up top;
+       bury depth and sources inside <details> so the default view stays skimmable. -->
+  <article class="story">
+    <div class="kicker"><span class="tag">Company</span><span class="when">1 Jan</span></div>
+    <h3>Sharp, specific headline</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> one or two sentences of executive takeaway &mdash; the decision or implication, not the play-by-play.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Optional deeper context for anyone who wants it.</p>
+        <ul class="sources">
+          <li><a href="https://example.com">Publication: article title</a></li>
+        </ul>
+      </div>
+    </details>
   </article>
 
-  <footer>
-    Editorial notes: &hellip;<br>
-    Generated 1 January 2026.
-  </footer>
+  <footer>Curated for a 5-minute read. Generated 1 January 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
 </body>
 </html>
