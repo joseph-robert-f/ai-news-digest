@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI News Digest</title>
+<style>
+  :root { --accent: #0b5fff; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    display: flex; flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #fafafa; color: #1a1a1a;
+  }
+  header.bar {
+    display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+    padding: 0.6rem 1rem; background: #fff;
+    border-bottom: 3px solid var(--accent);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05); z-index: 2;
+  }
+  header.bar .brand { font-weight: 700; font-size: 1.05rem; color: var(--accent); text-decoration: none; }
+  header.bar .latest { color: #555; font-size: 0.9rem; }
+  header.bar .latest strong { color: #1a1a1a; }
+  header.bar nav { margin-left: auto; display: flex; gap: 0.6rem; }
+  header.bar nav a {
+    color: var(--accent); text-decoration: none; font-size: 0.9rem;
+    padding: 0.3rem 0.65rem; border: 1px solid #d6e2ff; border-radius: 6px;
+  }
+  header.bar nav a:hover { background: #eef4ff; }
+  .frame-wrap { flex: 1; position: relative; }
+  iframe { border: 0; width: 100%; height: 100%; position: absolute; inset: 0; background: #fafafa; }
+  .status { padding: 2rem; text-align: center; color: #666; }
+  .status.error { color: #b00020; }
+</style>
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="./">AI News Digest</a>
+  <span class="latest" id="latest"></span>
+  <nav>
+    <a href="./archive.html">Archive</a>
+    <a id="open-new" href="#" target="_blank" rel="noopener">Open full &#8599;</a>
+  </nav>
+</header>
+<div class="frame-wrap">
+  <iframe id="frame" title="Digest"></iframe>
+  <div class="status" id="status">Loading latest digest&hellip;</div>
+</div>
+<script>
+(async function () {
+  const statusEl = document.getElementById('status');
+  const frame = document.getElementById('frame');
+  const latestEl = document.getElementById('latest');
+  const openNew = document.getElementById('open-new');
+  const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+  const formatDate = (iso) => {
+    const [y, m, d] = iso.split('-').map(Number);
+    return d + ' ' + MONTHS[m - 1] + ' ' + y;
+  };
+  const escapeHtml = (s) => s.replace(/[&<>"']/g, (c) =>
+    ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const encodePath = (p) => p.split('/').map(encodeURIComponent).join('/');
+
+  try {
+    const res = await fetch('./digests.json', { cache: 'no-cache' });
+    if (!res.ok) throw new Error('Could not load digests.json (HTTP ' + res.status + ')');
+    const data = await res.json();
+    const list = (data.digests || []).slice().sort((a, b) => (a.date < b.date ? 1 : -1));
+    if (!list.length) throw new Error('No digests found yet.');
+
+    const params = new URLSearchParams(location.search);
+    const wantPath = params.get('path');
+    const wantDate = params.get('date');
+    let entry = list[0];
+    if (wantPath) entry = list.find((d) => d.path === wantPath) || entry;
+    else if (wantDate) entry = list.find((d) => d.date === wantDate) || entry;
+
+    const url = encodePath(entry.path);
+    frame.src = url;
+    openNew.href = url;
+    const isLatest = entry === list[0];
+    latestEl.innerHTML = (isLatest ? 'Latest: ' : 'Showing: ') +
+      '<strong>' + escapeHtml(formatDate(entry.date)) + '</strong>';
+    document.title = 'AI News Digest — ' + formatDate(entry.date);
+    frame.addEventListener('load', () => { statusEl.style.display = 'none'; });
+  } catch (err) {
+    statusEl.className = 'status error';
+    statusEl.textContent = (err && err.message) ? err.message : String(err);
+  }
+})();
+</script>
+</body>
+</html>

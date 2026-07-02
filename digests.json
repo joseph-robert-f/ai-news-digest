@@ -1,0 +1,87 @@
+{
+  "generated": "2026-06-22T01:33:03.727Z",
+  "count": 9,
+  "digests": [
+    {
+      "date": "2026-06-15",
+      "title": "AI News Digest — 15 June 2026",
+      "path": "2026/June/15 June - 21 June/15 June AI News Digest Report.html",
+      "year": 2026,
+      "month": "June",
+      "week": "15 June - 21 June",
+      "summary": "The Fable 5 / Mythos 5 shutdown story moved decisively into its political-resolution phase over the weekend. Anthropic flew three senior technical staffers — Logan Graham (Frontier Red Team lead), Dave Orr, and Nicholas Carlini — to Washington for Monday 15 June meetings with…"
+    },
+    {
+      "date": "2026-06-13",
+      "title": "AI News Digest — 13 June 2026",
+      "path": "2026/June/8 June - 14 June/13 June AI News Digest Report.html",
+      "year": 2026,
+      "month": "June",
+      "week": "8 June - 14 June",
+      "summary": "Yesterday at 5:21 PM ET on Friday 12 June, Commerce Secretary Howard Lutnick signed and hand-delivered a letter to Anthropic ordering it to immediately suspend access to its two most powerful models — Claude Fable 5 and Claude Mythos 5 — for any foreign national worldwide, cit…"
+    },
+    {
+      "date": "2026-05-28",
+      "title": "AI News Digest — 28 May 2026",
+      "path": "2026/May/25 May - 31 May/28 May AI News Digest Report.html",
+      "year": 2026,
+      "month": "May",
+      "week": "25 May - 31 May",
+      "summary": "Three days after Pope Leo XIV's Vatican encyclical landed alongside Anthropic's Chris Olah doubling down on AI risk, the other half of the frontier-lab axis is moving in the opposite direction. In Sydney on Tuesday, Sam Altman told a Commonwealth Bank conference he was \"deligh…"
+    },
+    {
+      "date": "2026-05-27",
+      "title": "AI News Digest — 27 May 2026",
+      "path": "2026/May/25 May - 31 May/27 May AI News Digest Report.html",
+      "year": 2026,
+      "month": "May",
+      "week": "25 May - 31 May",
+      "summary": "The dominant story of the past 24 hours is the maturation of AI's security and infrastructure layer. Anthropic publicly updated Project Glasswing — the consortium it leads with AWS, Apple, Google, Microsoft, NVIDIA, JPMorgan, Cisco, CrowdStrike, Broadcom, Palo Alto Networks an…"
+    },
+    {
+      "date": "2026-05-25",
+      "title": "AI News Digest — 25 May 2026",
+      "path": "2026/May/25 May - 31 May/25 May AI News Digest Report.html",
+      "year": 2026,
+      "month": "May",
+      "week": "25 May - 31 May",
+      "summary": "The single biggest signal of the day is happening at 11:30 a.m. inside the Vatican's Synod Hall, where Pope Leo XIV personally unveils his first encyclical — Magnifica humanitas — flanked by Anthropic interpretability lead Chris Olah. It is the first time a sitting pontiff has…"
+    },
+    {
+      "date": "2026-04-28",
+      "title": "AI News Digest — 28 April 2026",
+      "path": "2026/April/27 April - 3 May/28 April AI News Digest Report.html",
+      "year": 2026,
+      "month": "April",
+      "week": "27 April - 3 May",
+      "summary": "IBM made the day's biggest enterprise-AI move with the global launch of IBM Bob, a full-SDLC development partner already in use by 80,000 IBMers. London-based Ineffable Intelligence — the new venture from AlphaGo creator David Silver — emerged from stealth with a record $1.1 B…"
+    },
+    {
+      "date": "2026-04-20",
+      "title": "AI News Digest — 20 April 2026",
+      "path": "2026/April/20 April - 26 April/20 April AI News Digest Report.html",
+      "year": 2026,
+      "month": "April",
+      "week": "20 April - 26 April",
+      "summary": "Vercel disclosed a weekend breach that ShinyHunters-adjacent actors are shopping for $2M — and the attack vector is a compromised AI tool, reigniting the supply-chain debate that dominated March. Cursor is reportedly closing a $2B round at a $50B valuation after touching $2B A…"
+    },
+    {
+      "date": "2026-04-19",
+      "title": "AI News Digest — 19 April 2026",
+      "path": "2026/April/13 April - 19 April/19 April AI News Digest Report.html",
+      "year": 2026,
+      "month": "April",
+      "week": "13 April - 19 April",
+      "summary": "A Chinese humanoid robot outran the human half-marathon world record in Beijing, OpenAI extended its frontier-reasoning play into the life sciences with GPT-Rosalind, Anthropic turned Opus 4.7 into a consumer design tool with Claude Design, and Cloudflare's Agents Week closed…"
+    },
+    {
+      "date": "2026-04-17",
+      "title": "AI News Digest — 17 April 2026",
+      "path": "2026/April/13 April - 19 April/17 April AI News Digest Report.html",
+      "year": 2026,
+      "month": "April",
+      "week": "13 April - 19 April",
+      "summary": "Mozilla opened a new front in the enterprise-AI wars with a self-hostable open-source client, OpenAI shipped a sandboxed, harness-native rewrite of its Agents SDK, and Google added subagents to Gemini CLI. On the markets, Hangzhou's Manycore Tech roared 144% above its offer pr…"
+    }
+  ]
+}
