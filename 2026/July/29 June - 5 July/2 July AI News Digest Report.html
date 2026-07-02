@@ -4,303 +4,272 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI News Digest &mdash; 2 July 2026</title>
+  <meta name="description" content="Anthropic's 1 July volley: Sonnet 5 becomes the cheap default, Fable 5 and Mythos 5 return after a 19-day export ban, and Claude Science launches — as Korea's $880B chip plan triggers a Samsung/SK Hynix selloff.">
   <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      max-width: 860px;
-      margin: 2rem auto;
-      padding: 0 1.25rem;
-      color: #1a1a1a;
-      line-height: 1.6;
-      background: #fafafa;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
     }
-    header {
-      border-bottom: 3px solid #0b5fff;
-      padding-bottom: 0.75rem;
-      margin-bottom: 1.5rem;
-    }
-    header h1 {
-      margin: 0 0 0.25rem 0;
-      font-size: 1.75rem;
-    }
-    header .meta {
-      color: #555;
-      font-size: 0.95rem;
-    }
-    h2 {
-      margin-top: 2rem;
-      font-size: 1.25rem;
-      color: #0b5fff;
-      border-left: 4px solid #0b5fff;
-      padding-left: 0.6rem;
-    }
-    article {
-      background: #fff;
-      border: 1px solid #e3e3e3;
-      border-radius: 8px;
-      padding: 1rem 1.25rem;
-      margin-bottom: 1rem;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
-    }
-    article h3 {
-      margin: 0 0 0.35rem 0;
-      font-size: 1.05rem;
-    }
-    article .tag {
-      display: inline-block;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      background: #eef4ff;
-      color: #0b5fff;
-      padding: 0.1rem 0.5rem;
-      border-radius: 4px;
-      margin-right: 0.4rem;
-    }
-    article .byline {
-      color: #666;
-      font-size: 0.85rem;
-      margin-bottom: 0.5rem;
-    }
-    ul.sources {
-      margin: 0.5rem 0 0 0;
-      padding-left: 1.1rem;
-      font-size: 0.9rem;
-    }
-    ul.sources li { margin-bottom: 0.15rem; }
-    a { color: #0b5fff; text-decoration: none; }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    footer {
-      margin-top: 2.5rem;
-      padding-top: 1rem;
-      border-top: 1px solid #ddd;
-      color: #666;
-      font-size: 0.85rem;
-    }
-    .lede {
-      background: #fffbe6;
-      border-left: 4px solid #f2c200;
-      padding: 0.75rem 1rem;
-      border-radius: 4px;
-      margin-bottom: 1.25rem;
-    }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
   </style>
 </head>
 <body>
-  <header>
-    <h1>AI News Digest &mdash; 2 July 2026</h1>
-    <div class="meta">Week of 29 June&ndash;5 July 2026 &middot; Coverage window: 1&ndash;2 July (last ~24 hours, with select 30 June anchors)</div>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>2 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: 1&ndash;2 July (last ~24 hours)</span>
+    </div>
   </header>
 
-  <div class="lede">
-    <strong>Top-line:</strong> The last 24 hours are dominated by <strong>Anthropic's coordinated 1 July product volley</strong>: <strong>Claude Sonnet 5</strong> &mdash; released 30 June and made the default for free/Pro users on 1 July &mdash; ships agentic performance close to Opus&nbsp;4.8 at <strong>$2/$10 per M tokens</strong> through 31 August (60% cheaper on input than GPT&#8209;5.5, roughly a third of Opus 4.8), <em>and</em> the same day <strong>Fable 5</strong> returns globally alongside <strong>Mythos 5</strong> to approved US organisations after the <strong>Commerce Department lifted the 12 June export-control order</strong> on 30 June, ending a <strong>19&#8209;day shutdown</strong>. Anthropic launched <strong>Claude Science</strong> on 1 July &mdash; a Claude Opus 4.8-powered research workbench for biopharma with <strong>60+ pre-configured databases</strong>, provenance tracking, HPC integration, and <strong>$30K compute grants</strong> &mdash; and expanded <strong>Project Glasswing</strong> into a <strong>cross-lab jailbreak-severity framework</strong> with <strong>Amazon, Microsoft, and Google</strong> plus a <strong>HackerOne</strong> submission channel for Fable 5. In Seoul, President Lee Jae-myung's <strong>1,350 trillion won ($880 B)</strong> AI/chip plan announced 29&#8209;30 June is now the anchor for <strong>2 July's global tech selloff</strong>: <strong>Samsung -7%</strong>, <strong>SK Hynix -9%+</strong> at open on Kospi, wiping billions in market cap. On the developer bench, <strong>GitHub Copilot</strong> shipped <strong>Claude Sonnet 5</strong> support across IDE and CLI on 1 July alongside <strong>per-user AI-credit budgets</strong>. <strong>xAI</strong> pushed <strong>Grok Voice Agent Builder</strong> to public beta at <strong>$0.05/minute</strong>. <strong>Microsoft 365</strong> made <strong>Business Standard/Premium with Copilot</strong> permanent SKUs on 1 July with a global price hike across Enterprise/Business/Frontline tiers. And <strong>OpenAI's GPT&#8209;5.6 Sol/Terra/Luna</strong> series remains locked to ~<strong>20 trusted-partner organisations</strong> under the <strong>2 June Trump executive order</strong>, with broader availability slipping to mid-July.
-  </div>
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Claude Sonnet 5 is the new default</strong> for free/Pro at $2/$10 per M tokens &mdash; near-Opus&nbsp;4.8 agentic performance at roughly a third of the price.</li>
+      <li><strong>Fable 5 is back globally; Mythos 5 returns for approved US orgs</strong> after Commerce lifted the 12 June export ban &mdash; a 19-day shutdown ends.</li>
+      <li><strong>Anthropic launched Claude Science</strong> (Opus&nbsp;4.8 research workbench for biopharma) and expanded the Glasswing cross-lab jailbreak framework with Amazon, Microsoft &amp; Google.</li>
+      <li><strong>Korea's $880B chip/AI plan sparked a selloff:</strong> Samsung &minus;7%, SK Hynix &minus;9%+ at Kospi open &mdash; the first real market pushback on 2026's AI-capex wave.</li>
+      <li><strong>OpenAI's GPT&#8209;5.6 stays locked to ~20 partners</strong> under the 2 June Trump order, letting Anthropic occupy the mid-tier agentic surface unopposed.</li>
+    </ol>
+  </section>
 
-  <h2>Top Story &mdash; Anthropic's 1 July Triple Play: Sonnet 5, Fable/Mythos Return, Claude Science, Glasswing Framework</h2>
+  <div class="section-label">Top story &mdash; Anthropic's 1 July triple play</div>
 
-  <article>
-    <h3><span class="tag">Anthropic</span>Claude Sonnet 5 becomes the default: near-Opus&nbsp;4.8 agentic performance at roughly one-third the price</h3>
-    <div class="byline">30 June released &middot; 1 July made default for free/Pro &middot; Primary sources: TechCrunch; MarkTechPost; DataCamp</div>
-    <p>
-      Anthropic released <strong>Claude Sonnet 5</strong> on <strong>Tuesday 30 June</strong> and rolled it out as the <strong>default model for free and Pro subscribers on 1 July</strong>. The pitch, per TechCrunch's launch write-up, is explicit: <em>agentic capability is now the baseline expectation at every price tier, and the differentiator is how cheaply and reliably you can do it without human oversight.</em> Introductory pricing through <strong>31 August 2026</strong> is <strong>$2 per M input tokens / $10 per M output tokens</strong>, moving to <strong>$3 / $15</strong> after &mdash; still meaningfully under Opus&nbsp;4.8's ladder and, on input, roughly <strong>60% cheaper than GPT&#8209;5.5</strong> and lower than Gemini 3.1 Pro. Reported headline benchmarks: <strong>63.2%</strong> on <strong>SWE-bench Pro</strong> (Opus 4.8: 69.2%; Sonnet 4.6: 58.1%), <strong>81.2%</strong> on <strong>OSWorld-Verified</strong> (Opus 4.8: 83.4%), <strong>84.7%</strong> on <strong>BrowseComp</strong> agentic search, and &mdash; the two lines Anthropic is pushing hardest &mdash; <strong>80.4%</strong> on <strong>Terminal-Bench 2.1</strong> and <strong>1,618 Elo</strong> on <strong>GDPval-AA v2</strong> knowledge work, both of which <em>beat Opus 4.8 outright</em> (74.6% and 1,615 Elo respectively). The strategic read: Anthropic is banking on the same commoditisation pattern that flattened frontier chat &mdash; where the mid-tier model at half the price handles the vast majority of agentic workloads and only the very hardest long-horizon runs justify Opus. It is also the direct pricing lever against OpenAI's newly capacity-constrained GPT&#8209;5.6 Sol/Terra/Luna preview, which remains locked to ~20 trusted-partner organisations under the 2 June Trump AI executive order (see the OpenAI item below).
-    </p>
-    <ul class="sources">
-      <li><a href="https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/">TechCrunch: Anthropic launches Claude Sonnet 5 as a cheaper way to run agents</a> (primary)</li>
-      <li><a href="https://www.marktechpost.com/2026/06/30/anthropic-claude-sonnet-5-vs-sonnet-4-6-vs-opus-4-8-agentic-coding-benchmarks-api-pricing-and-cost-performance-tradeoffs-compared/">MarkTechPost: Claude Sonnet 5 vs Sonnet 4.6 vs Opus 4.8 &mdash; agentic coding benchmarks &amp; pricing</a></li>
-      <li><a href="https://www.datacamp.com/blog/claude-sonnet-5">DataCamp: Claude Sonnet 5 &mdash; features, benchmarks, and pricing</a></li>
-      <li><a href="https://thenextweb.com/news/anthropic-claude-sonnet-5-agentic-model-pricing">The Next Web: Anthropic launches Claude Sonnet 5, a cheaper way to run agents</a></li>
-      <li><a href="https://qz.com/anthropic-claude-sonnet-5-ai-agents-pricing-070126">Quartz: Anthropic is making AI agents cheaper to run with Sonnet 5</a></li>
-      <li><a href="https://binaryverseai.com/claude-sonnet-5-benchmarks-pricing-system-card/">BinaryVerse AI: Sonnet 5 &mdash; benchmarks, pricing, and what the system card actually says</a></li>
-    </ul>
+  <article class="story first">
+    <div class="kicker"><span class="tag">Anthropic</span><span class="when">30 Jun &ndash; 1 Jul</span></div>
+    <h3>Claude Sonnet 5 becomes the default at ~1/3 the price of Opus</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> agentic capability is now the baseline at every tier &mdash; the fight is cost. At $2/$10 per M tokens it undercuts GPT&#8209;5.5 by ~60% on input and pressures every agent stack's unit economics.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Released 30 June, default for free/Pro on 1 July. Intro pricing $2/$10 per M tokens through 31 Aug (then $3/$15). Benchmarks: 63.2% SWE-bench Pro, 81.2% OSWorld-Verified, 84.7% BrowseComp; it beats Opus&nbsp;4.8 outright on Terminal-Bench 2.1 (80.4%) and GDPval-AA v2 (1,618 Elo). The bet: the mid-tier model at half the price handles most agentic work, and only the hardest long-horizon runs justify Opus.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/">TechCrunch: Anthropic launches Claude Sonnet 5</a> (primary)</li>
+        <li><a href="https://www.marktechpost.com/2026/06/30/anthropic-claude-sonnet-5-vs-sonnet-4-6-vs-opus-4-8-agentic-coding-benchmarks-api-pricing-and-cost-performance-tradeoffs-compared/">MarkTechPost: Sonnet 5 vs Sonnet 4.6 vs Opus 4.8</a></li>
+        <li><a href="https://www.datacamp.com/blog/claude-sonnet-5">DataCamp: Claude Sonnet 5 features, benchmarks, pricing</a></li>
+        <li><a href="https://binaryverseai.com/claude-sonnet-5-benchmarks-pricing-system-card/">BinaryVerse AI: benchmarks, pricing, system card</a></li>
+      </ul>
+    </div></details>
   </article>
 
-  <article>
-    <h3><span class="tag">Anthropic &times; Commerce</span>Fable 5 back globally, Mythos 5 back for approved US orgs &mdash; end of the 19-day export-control shutdown</h3>
-    <div class="byline">30 June Commerce action &middot; 1 July redeployment &middot; Primary sources: Anthropic newsroom; CNBC; Al Jazeera; VentureBeat</div>
-    <p>
-      The US <strong>Department of Commerce</strong> notified Anthropic on <strong>Tuesday 30 June</strong> that it had <strong>lifted the 12 June export-control order</strong> that took Fable 5 and Mythos 5 offline for foreign users. Anthropic redeployed <strong>Fable 5 globally on 1 July</strong> &mdash; Claude Platform, Claude.ai, Claude Code, and Claude Cowork &mdash; ending a <strong>19-day shutdown</strong> that the 15 June and 24 June digests tracked as the sharpest single policy escalation of the cycle. <strong>Mythos 5</strong>, the less-restricted variant of the same underlying model, returns only for a curated list of <em>approved US organisations</em> following government review. For Pro, Max, Team, and select Enterprise plans, Fable 5 is included for up to <strong>50% of weekly usage limits through 7 July</strong>, after which it moves to a usage-credit surface. In exchange, Anthropic committed to <em>proactive detection of security risks, participation in standards work for future models, and reporting of malicious activity to the government</em>. The direct trigger for the 12 June order &mdash; per CNBC and cross-corroborated by Al Jazeera and Cybersecurity Dive &mdash; was an <strong>Amazon-researcher jailbreak</strong> that steered Fable 5 into identifying live software vulnerabilities. That surface is now backstopped by a new cross-lab framework and a HackerOne bounty (see next item). The return is being read across enterprise coverage as a structural test case: the <em>first frontier-model export control that got imposed, litigated, and reversed within a single quarter</em>, and a template for how future Commerce actions on frontier capability will play out.
-    </p>
-    <ul class="sources">
-      <li><a href="https://www.anthropic.com/news/redeploying-fable-5">Anthropic: Redeploying Claude Fable 5</a> (primary)</li>
-      <li><a href="https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html">CNBC: Trump admin has lifted export controls on Claude Fable 5 and Mythos 5</a></li>
-      <li><a href="https://www.aljazeera.com/economy/2026/7/1/us-lifts-restrictions-on-powerful-ai-models-fable-mythos-anthropic-says">Al Jazeera: US lifts restrictions on Anthropic's Fable and Mythos models</a></li>
-      <li><a href="https://venturebeat.com/technology/anthropic-is-bringing-back-claude-fable-5-globally-after-us-lifts-export-control-order-where-can-enterprises-access-it">VentureBeat: Anthropic bringing back Fable 5 globally &mdash; where enterprises can access it</a></li>
-      <li><a href="https://www.coindesk.com/tech/2026/07/01/anthropic-restores-ai-models-fable-mythos-after-the-u-s-lifts-export-controls">CoinDesk: Anthropic restores Fable, Mythos after export controls lift</a></li>
-      <li><a href="https://www.cybersecuritydive.com/news/anthropic-ai-mythos-fable-reenable/824214/">Cybersecurity Dive: Anthropic reactivates Fable, Mythos after securing government approval</a></li>
-      <li><a href="https://9to5mac.com/2026/07/01/claude-fable-5-cleared-to-return-as-us-lifts-anthropics-export-control-restriction/">9to5Mac: Claude Fable 5 cleared to return as US lifts Anthropic's export-control restriction</a></li>
-    </ul>
+  <article class="story">
+    <div class="kicker"><span class="tag">Anthropic &times; Commerce</span><span class="when">30 Jun &ndash; 1 Jul</span></div>
+    <h3>Fable 5 back globally, Mythos 5 back for approved US orgs</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the fastest frontier model is available to your teams again &mdash; but the first frontier-model export control was imposed, litigated, and reversed inside one quarter, setting the template for future Commerce actions.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Commerce notified Anthropic on 30 June that it had lifted the 12 June export-control order (tracked in the <a href="../../June/22%20June%20-%2028%20June/24%20June%20AI%20News%20Digest%20Report.html">24 June digest</a>). Fable 5 redeployed globally 1 July across Claude Platform, Claude.ai, Claude Code, and Cowork; Mythos 5 returns only for approved US orgs. In exchange Anthropic committed to proactive risk detection, standards participation, and reporting malicious activity. The original trigger was an Amazon-researcher jailbreak steering Fable 5 into identifying live software vulnerabilities.</p>
+      <ul class="sources">
+        <li><a href="https://www.anthropic.com/news/redeploying-fable-5">Anthropic: Redeploying Claude Fable 5</a> (primary)</li>
+        <li><a href="https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html">CNBC: Trump admin lifts export controls on Fable 5 and Mythos 5</a></li>
+        <li><a href="https://www.aljazeera.com/economy/2026/7/1/us-lifts-restrictions-on-powerful-ai-models-fable-mythos-anthropic-says">Al Jazeera: US lifts restrictions on Fable and Mythos</a></li>
+        <li><a href="https://venturebeat.com/technology/anthropic-is-bringing-back-claude-fable-5-globally-after-us-lifts-export-control-order-where-can-enterprises-access-it">VentureBeat: where enterprises can access Fable 5</a></li>
+        <li><a href="https://www.cybersecuritydive.com/news/anthropic-ai-mythos-fable-reenable/824214/">Cybersecurity Dive: reactivated after government approval</a></li>
+      </ul>
+    </div></details>
   </article>
 
-  <article>
-    <h3><span class="tag">Anthropic</span>Claude Science: an Opus&nbsp;4.8-powered research workbench, 60+ pre-configured databases, $30K compute grants</h3>
-    <div class="byline">1 July launch &middot; Primary sources: Anthropic newsroom; STAT News; TechCrunch; Endpoints News; MIT Tech Review</div>
-    <p>
-      On the same 1 July window, Anthropic launched <strong>Claude Science</strong>, an AI research workbench in beta for <strong>all paid subscribers with no enterprise vetting</strong>. Anthropic is explicit that this is <em>not a new model</em> &mdash; it runs on <strong>Claude Opus 4.8</strong> &mdash; but a workflow environment built around one: a coordinating agent with access to <strong>60+ pre-configured scientific databases</strong>, a reviewer agent that checks citations and flags errors, compute management that submits jobs to a lab's own HPC cluster or to cloud compute on demand, and <em>full provenance tracking so every figure can be traced back to the code and conversation that produced it</em>. Deployment options: runs <em>locally on macOS or Linux</em> or connects via SSH to a remote machine or HPC cluster, so <em>no research data leaves the lab's infrastructure unless the user chooses to transmit it</em>. TechCrunch's read is the headline: <em>Anthropic is betting on workflow, not a new model, to win over scientists.</em> Alongside the product, Anthropic opened <strong>compute grants of up to $30,000</strong> to researchers with active graduate or postdoctoral projects, application deadline <strong>15 July</strong>, awards <strong>31 July</strong>, project window <strong>1 September&ndash;1 December 2026</strong>. The competitive framing: Claude Science lands on top of a deliberate AI-for-science stack Anthropic assembled through H1 2026 &mdash; the February 2026 Allen Institute and HHMI partnerships, the reported ~$400 M all-stock <strong>Coefficient Bio</strong> acquisition (April), the <strong>Andrej Karpathy</strong> pretraining hire, and the <strong>John Jumper</strong> (AlphaFold, 2024 Nobel in Chemistry) hire announced 19 June. STAT News notes Anthropic is also spinning up its own internal drug programmes on the Endpoints side, putting Claude Science directly against the DeepMind Isomorphic playbook.
-    </p>
-    <ul class="sources">
-      <li><a href="https://www.anthropic.com/news/claude-science-ai-workbench">Anthropic: Claude Science &mdash; an AI workbench for scientists</a> (primary)</li>
-      <li><a href="https://www.statnews.com/2026/06/30/anthropic-release-claude-science-ceo-dario-amodei/">STAT News: Anthropic releases Claude Science, a product aimed at researchers and pharma</a></li>
-      <li><a href="https://techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists/">TechCrunch: Claude Science bets on workflow, not a new model, to win over scientists</a></li>
-      <li><a href="https://endpoints.news/anthropic-debuts-claude-science-an-ai-product-for-bioscience/">Endpoints News: Anthropic launches Claude Science as a product for biopharma, starts own drug programs</a></li>
-      <li><a href="https://www.technologyreview.com/2026/07/01/1139996/the-download-anthropic-claude-science-california-carbon-manure/">MIT Technology Review: The Download &mdash; Anthropic launches Claude Science</a></li>
-      <li><a href="https://news.bloomberglaw.com/artificial-intelligence/anthropic-releases-claude-science-for-automating-research">Bloomberg Law: Anthropic releases Claude Science for automating research</a></li>
-    </ul>
+  <article class="story">
+    <div class="kicker"><span class="tag">Anthropic</span><span class="when">1 Jul</span></div>
+    <h3>Claude Science: an Opus-powered research workbench for biopharma</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Anthropic is betting on workflow, not a new model, to win scientists &mdash; and it runs locally/on-prem so research data need not leave the lab. A direct move against DeepMind's Isomorphic playbook.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Beta for all paid subscribers, no enterprise vetting. Runs on Opus&nbsp;4.8 with 60+ pre-configured scientific databases, a citation-checking reviewer agent, HPC/cloud compute management, and full provenance tracking. Runs on macOS/Linux or via SSH to a cluster. Compute grants up to $30K (apply by 15 July, awards 31 July). Builds on the Allen Institute/HHMI partnerships, the Coefficient Bio acquisition, and the Karpathy and John Jumper hires.</p>
+      <ul class="sources">
+        <li><a href="https://www.anthropic.com/news/claude-science-ai-workbench">Anthropic: Claude Science</a> (primary)</li>
+        <li><a href="https://www.statnews.com/2026/06/30/anthropic-release-claude-science-ceo-dario-amodei/">STAT News: aimed at researchers and pharma</a></li>
+        <li><a href="https://techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists/">TechCrunch: bets on workflow, not a new model</a></li>
+        <li><a href="https://endpoints.news/anthropic-debuts-claude-science-an-ai-product-for-bioscience/">Endpoints News: starts own drug programs</a></li>
+      </ul>
+    </div></details>
   </article>
 
-  <article>
-    <h3><span class="tag">Glasswing</span>Cross-lab jailbreak-severity rubric with Amazon, Microsoft, Google &mdash; and a HackerOne channel for Fable 5</h3>
-    <div class="byline">1 July announcement &middot; Primary sources: Anthropic Project Glasswing page; AI Weekly; TechTimes; Help Net Security</div>
-    <p>
-      The security backstop that made the 30 June export-control reversal politically defensible: Anthropic used the Fable 5 redeployment to announce an <strong>expansion of Project Glasswing</strong> into a <strong>cross-lab jailbreak-severity framework</strong> co-drafted with <strong>Amazon, Microsoft, Google, and other Glasswing partners</strong>. The proposed rubric scores any novel bypass on <strong>four dimensions</strong>: (1) how much <em>capability gain</em> the attacker achieves beyond tools already available; (2) the <em>breadth</em> of that gain across offensive tasks; (3) how <em>easy the technique is to weaponise</em>; and (4) how <em>discoverable / widely known</em> the technique already is. For the most severe class &mdash; jailbreaks being actively used to damage critical infrastructure &mdash; Anthropic says it will <em>deploy mitigations the moment severity is confirmed</em>, backed by a <em>24-hour monitoring team</em> on jailbreak submission channels. In parallel, a new <strong>HackerOne programme</strong> is live for security researchers to submit potential Fable 5 jailbreaks for review. Combined with the new <strong>cybersecurity classifier</strong> shipped alongside the Fable 5 redeploy (per MarkTechPost and TechTimes), the surface is the direct answer to the June 12 Amazon-researcher finding that took the model offline in the first place. Strategically this is the <em>first serious multi-lab standardisation attempt</em> on jailbreak severity &mdash; a class of work the Five Eyes advisory pointed at on 22 June (last week's digest) but stopped short of specifying. Whether the rubric survives contact with competitor incentives is now the open question: no OpenAI or Meta signatures are on the drafting yet.
-    </p>
-    <ul class="sources">
-      <li><a href="https://www.anthropic.com/news/expanding-project-glasswing">Anthropic: Expanding Project Glasswing</a> (primary)</li>
-      <li><a href="https://www.anthropic.com/glasswing">Anthropic: Project Glasswing programme page</a></li>
-      <li><a href="https://aiweekly.co/alerts/anthropic-redeploys-fable-5-with-cross-lab-jailbreak-rubric">AI Weekly: Anthropic redeploys Fable 5 with cross-lab jailbreak rubric</a></li>
-      <li><a href="https://www.techtimes.com/articles/319413/20260701/claude-fable-5-returns-globally-new-classifier-blocks-jailbreak-flags-more-code.htm">TechTimes: Claude Fable 5 returns globally &mdash; new classifier blocks jailbreak, flags more code</a></li>
-      <li><a href="https://www.marktechpost.com/2026/07/01/anthropic-redeploys-claude-fable-5-on-july-1-after-us-export-controls-lift-adds-new-cybersecurity-classifier/">MarkTechPost: Anthropic redeploys Fable 5 with new cybersecurity classifier</a></li>
-      <li><a href="https://www.helpnetsecurity.com/2026/05/26/anthropic-project-glasswing-update/">Help Net Security (background): Project Glasswing &mdash; Claude Mythos identified 10,000+ software flaws</a></li>
-    </ul>
+  <article class="story">
+    <div class="kicker"><span class="tag">Glasswing</span><span class="when">1 Jul</span></div>
+    <h3>Cross-lab jailbreak-severity framework with Amazon, Microsoft, Google</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the security backstop that made the export-control reversal defensible &mdash; and the first serious multi-lab attempt to standardise jailbreak severity. Open question: no OpenAI or Meta signatures yet.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>The rubric scores any novel bypass on four dimensions: capability gain, breadth, ease of weaponisation, and how widely known the technique already is. For the most severe class, Anthropic says it deploys mitigations the moment severity is confirmed, backed by a 24-hour monitoring team. A new HackerOne channel is live for Fable 5 jailbreak submissions, alongside a new cybersecurity classifier shipped with the redeploy.</p>
+      <ul class="sources">
+        <li><a href="https://www.anthropic.com/news/expanding-project-glasswing">Anthropic: Expanding Project Glasswing</a> (primary)</li>
+        <li><a href="https://aiweekly.co/alerts/anthropic-redeploys-fable-5-with-cross-lab-jailbreak-rubric">AI Weekly: cross-lab jailbreak rubric</a></li>
+        <li><a href="https://www.marktechpost.com/2026/07/01/anthropic-redeploys-claude-fable-5-on-july-1-after-us-export-controls-lift-adds-new-cybersecurity-classifier/">MarkTechPost: new cybersecurity classifier</a></li>
+      </ul>
+    </div></details>
   </article>
 
-  <h2>AI Infrastructure &amp; Capital Markets</h2>
+  <div class="section-label">Infrastructure &amp; capital markets</div>
 
-  <article>
-    <h3><span class="tag">Korea</span>Samsung -7%, SK Hynix -9%+ at Kospi open as the $880 B chip/AI plan lands into a global tech selloff</h3>
-    <div class="byline">Announced 29&ndash;30 June, meltdown 2 July &middot; Primary sources: CNBC; Bloomberg; Al Jazeera; Japan Times; Korea Herald</div>
-    <p>
-      President <strong>Lee Jae-myung</strong>'s government on <strong>29&ndash;30 June</strong> unveiled a <strong>1,350 trillion won ($880 B)</strong> ten-year commitment across semiconductors, AI data centres, and <em>physical AI</em> (Lee's framing for humanoid robotics and embodied models). The core industrial line: <strong>Samsung Electronics</strong> and <strong>SK Hynix</strong> will each build <em>two new fabrication sites</em> in South Korea's southwest as part of an <strong>800 trillion won ($518 B)</strong> national semiconductor-ecosystem project, with <strong>SK Hynix's M17 fab</strong> breaking ground next year for <strong>H1 2029 operations</strong>. Samsung Group's committed number is <strong>1,000 trillion won ($646 B)</strong> over the decade. Lee's public framing was unusually stark: <em>"We're entering an era where the page turns in the blink of an eye&hellip; speed is the only way to survive"</em>, and he referred to the Samsung and SK Hynix leaderships as <em>"national heroes."</em> The programme totals roughly <strong>5% of Korea's 2024 GDP</strong> &mdash; one of the largest coordinated industrial pushes in Korean history. Markets initially reacted with caution (Samsung -4.8%, SK Hynix intraday roundtrip on 30 June). The reprice landed today: <strong>2 July</strong> saw <strong>Samsung -7%+</strong> and <strong>SK Hynix -9%+</strong> at open on the Kospi as the global chip complex sold off on <em>capex-digestion fears</em> spreading from Wall Street. Broker targets on SK Hynix nonetheless pushed to <strong>4.0&ndash;4.1 M won</strong> on the HBM/AI-memory demand thesis &mdash; the bull case is that this is the deepest DRAM/HBM capacity build in the cycle, not the top. For AI-infrastructure watchers, the read-across is clean: the 2 July selloff is the <em>first serious market pushback</em> against 2026's rolling gigawatt/$100 B+ AI capex announcement pattern.
-    </p>
-    <ul class="sources">
-      <li><a href="https://www.cnbc.com/2026/07/02/samsung-sk-hynix-shares-slide-kospi-tech-selloff-nasdaq.html">CNBC: Samsung, SK Hynix shares tumble over 7% as chip rout spreads from Wall Street</a> (primary)</li>
-      <li><a href="https://www.cnbc.com/2026/06/29/samsung-sk-hynix-reported-1point3-reported-trillion-spending-plans.html">CNBC: Samsung and SK Hynix investing in AI, semiconductor mega-projects</a></li>
-      <li><a href="https://www.bloomberg.com/news/articles/2026-06-30/lee-s-880-billion-ai-bet-ties-legacy-to-south-korea-chip-boom">Bloomberg: Lee's $880 B AI bet ties legacy to South Korea chip boom</a></li>
-      <li><a href="https://www.aljazeera.com/news/2026/6/29/south-korea-announces-more-than-1-trillion-ai-chip-investment-drive">Al Jazeera: South Korea announces more than $1 T AI, chip investment drive</a></li>
-      <li><a href="https://www.japantimes.co.jp/business/2026/07/01/tech/samsung-sk-hynix-korea-chips/">Japan Times: Samsung and SK Hynix's mega Korea chips gamble tests optimism of AI cycle</a></li>
-      <li><a href="https://en.sedaily.com/finance/2026/07/02/sk-hynix-slides-to-234-million-won-but-brokers-see-4">Seoul Economic Daily: SK Hynix slides to 2.34 M won, but brokers see 4 M won ahead</a></li>
-      <li><a href="https://www.techspot.com/news/112926-south-korea-betting-880-billion-next-ai-race.html">TechSpot: Korea's $880 B bet on hardware, not software</a></li>
-    </ul>
+  <article class="story">
+    <div class="kicker"><span class="tag">Korea</span><span class="when">2 Jul</span></div>
+    <h3>Samsung &minus;7%, SK Hynix &minus;9%+ as the $880B chip plan meets a global selloff</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the first serious market pushback against 2026's rolling gigawatt/$100B+ AI-capex announcements &mdash; capex-digestion fear, even as brokers keep raising HBM demand targets.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>President Lee Jae-myung's government unveiled a 1,350tn won ($880B) ten-year commitment across chips, AI data centres, and "physical AI" (29&ndash;30 June). Samsung and SK Hynix each build two new fabs; SK Hynix's M17 breaks ground next year for H1 2029. The program is ~5% of Korea's 2024 GDP. On 2 July the global chip complex sold off; brokers still pushed SK Hynix targets to 4.0&ndash;4.1M won on the HBM/AI-memory thesis.</p>
+      <ul class="sources">
+        <li><a href="https://www.cnbc.com/2026/07/02/samsung-sk-hynix-shares-slide-kospi-tech-selloff-nasdaq.html">CNBC: Samsung, SK Hynix tumble 7%+ as chip rout spreads</a> (primary)</li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-06-30/lee-s-880-billion-ai-bet-ties-legacy-to-south-korea-chip-boom">Bloomberg: Lee's $880B AI bet</a></li>
+        <li><a href="https://www.aljazeera.com/news/2026/6/29/south-korea-announces-more-than-1-trillion-ai-chip-investment-drive">Al Jazeera: $1T+ AI, chip investment drive</a></li>
+        <li><a href="https://www.japantimes.co.jp/business/2026/07/01/tech/samsung-sk-hynix-korea-chips/">Japan Times: mega Korea chips gamble</a></li>
+      </ul>
+    </div></details>
   </article>
 
-  <article>
-    <h3><span class="tag">Anthropic</span>$30 B annualised run-rate makes Sonnet 5's pricing move a market-share pincer, not a margin trade</h3>
-    <div class="byline">Context anchor for the Sonnet 5 launch &middot; Primary sources: VentureBeat; Bloomberg; PYMNTS</div>
-    <p>
-      The macro backdrop that makes the Sonnet 5 price cut credible rather than desperate: Anthropic disclosed a <strong>$30 B annualised revenue run-rate</strong> as of Q1 2026, up from ~$9 B at end-2025 &mdash; an <em>80&times; annualised growth</em> print that Dario Amodei called <em>"crazy"</em> in the VentureBeat interview. The step function through 2026: <strong>$14 B in February</strong>, <strong>$19 B in March</strong>, <strong>$30 B in April</strong>. Drivers: <strong>1,000+ enterprise clients paying &gt;$1 M annually</strong> (doubled in recent months) and <strong>Claude Code</strong> as the fastest-growing product in Anthropic's history, hitting <strong>$1 B annualised inside six months</strong> of its public 2025 launch. For context, Salesforce needed ~20 years to reach $30 B. Read against Sonnet 5's pricing: at <strong>$2 / $10 per M tokens</strong>, Anthropic is aggressively defending the mid-tier agentic-work surface that Claude Code, Cursor's Composer routing, and enterprise agent stacks all consume &mdash; and doing it from a run-rate base that OpenAI (whose GPT&#8209;5.6 preview is still capacity-constrained under the 2 June executive order) cannot currently match at the same tier. The 24 June digest noted the <strong>~$965 B post-money confidential S-1</strong> filed 1 June; the run-rate is the number the roadshow now anchors on.
-    </p>
-    <ul class="sources">
-      <li><a href="https://venturebeat.com/technology/anthropic-says-it-hit-a-30-billion-revenue-run-rate-after-crazy-80x-growth">VentureBeat: Anthropic says it hit a $30 B revenue run rate after "crazy" 80&times; growth</a></li>
-      <li><a href="https://www.pymnts.com/artificial-intelligence-2/2026/anthropic-hits-30-billion-run-rate-as-enterprise-demand-accelerates/">PYMNTS: Anthropic hits $30 B run rate as enterprise demand accelerates</a></li>
-      <li><a href="https://www.aicerts.ai/news/anthropics-30b-run-rate-reshapes-corporate-revenue-benchmarks/">AI CERTs News: Anthropic's $30 B run-rate reshapes corporate revenue benchmarks</a></li>
-      <li><a href="https://www.saastr.com/anthropic-just-passed-openai-in-revenue-while-spending-4x-less-to-train-their-models/">SaaStr: Anthropic just passed OpenAI in revenue while spending 4&times; less to train</a></li>
-      <li><a href="https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html">CNBC (background, 1 June): Anthropic confidentially files IPO prospectus with SEC</a></li>
-    </ul>
+  <article class="story">
+    <div class="kicker"><span class="tag">Anthropic</span><span class="when">Context</span></div>
+    <h3>$30B annualised run-rate makes the Sonnet 5 price cut a pincer, not a margin trade</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Anthropic is cutting price from strength, not desperation &mdash; defending the mid-tier agentic surface OpenAI can't currently contest at the same tier. It's the anchor number for the IPO roadshow.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>$30B annualised run-rate as of Q1 2026, up from ~$9B at end-2025 ($14B Feb → $19B Mar → $30B Apr). Drivers: 1,000+ enterprise clients paying &gt;$1M/yr, and Claude Code hitting $1B annualised within six months. The 24 June digest noted the ~$965B post-money confidential S-1 filed 1 June.</p>
+      <ul class="sources">
+        <li><a href="https://venturebeat.com/technology/anthropic-says-it-hit-a-30-billion-revenue-run-rate-after-crazy-80x-growth">VentureBeat: $30B run rate after "crazy" 80&times; growth</a></li>
+        <li><a href="https://www.pymnts.com/artificial-intelligence-2/2026/anthropic-hits-30-billion-run-rate-as-enterprise-demand-accelerates/">PYMNTS: $30B run rate as enterprise demand accelerates</a></li>
+        <li><a href="https://www.cnbc.com/2026/06/01/anthropic-ipo-s1-prospectus.html">CNBC (1 Jun): confidentially files IPO prospectus</a></li>
+      </ul>
+    </div></details>
   </article>
 
-  <h2>Policy &amp; Access</h2>
+  <div class="section-label">Policy, platforms &amp; new surfaces</div>
 
-  <article>
-    <h3><span class="tag">OpenAI</span>GPT&#8209;5.6 Sol/Terra/Luna still locked to ~20 partners under the 2 June Trump AI executive order</h3>
-    <div class="byline">Status 1&ndash;2 July &middot; Primary sources: OpenAI Help Center; VentureBeat; Axios; OpenAI Deployment Safety Hub</div>
-    <p>
-      OpenAI's <strong>GPT&#8209;5.6</strong> series &mdash; announced late June with three tiers, <strong>Sol</strong> (flagship, <strong>$5 / $30</strong> per M in/out), <strong>Terra</strong> (balanced, <strong>$2.50 / $15</strong>), <strong>Luna</strong> (fast/cheap, <strong>$1 / $6</strong>) &mdash; remains <em>limited to a narrow set of ~20 trusted-partner organisations</em> as of <strong>1&ndash;2 July</strong>. The gating is the direct consequence of <strong>President Trump's 2 June 2026 executive order</strong> on <em>Promoting Advanced AI Innovation and Security</em>, which requires federal-agency benchmarking and capability assessment of frontier models ahead of general release. OpenAI shared the model weights and release plan with the US government ahead of launch under that process. GA is being messaged as <em>"the coming weeks"</em>; the VentureBeat and Axios reads currently anchor on <strong>mid-July</strong>. The strategic cost to OpenAI is direct: Anthropic used the same window &mdash; Fable 5 back globally, Mythos 5 back for approved US orgs, and now Sonnet 5 as the default at <strong>$2 / $10</strong> &mdash; to <em>occupy the mid-tier agentic surface</em> while GPT&#8209;5.6 sits behind the partner wall. Rival dev-tool integrations are voting: GitHub Copilot's 1 July release added <strong>Claude Sonnet 5</strong> across Pro/Pro+/Max/Business/Enterprise (next item), not GPT&#8209;5.6.
-    </p>
-    <ul class="sources">
-      <li><a href="https://openai.com/index/previewing-gpt-5-6-sol/">OpenAI: Previewing GPT&#8209;5.6 Sol &mdash; a next-generation model</a> (primary)</li>
-      <li><a href="https://help.openai.com/en/articles/20001325-a-preview-of-gpt-56-sol-terra-and-luna">OpenAI Help Center: A preview of GPT&#8209;5.6 Sol, Terra, and Luna</a></li>
-      <li><a href="https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov">VentureBeat: GPT&#8209;5.6 Sol/Terra/Luna only accessible to limited preview partners, per US gov</a></li>
-      <li><a href="https://www.axios.com/2026/06/26/openai-gpt-sol-terra-luna-trump">Axios: OpenAI releases powerful new GPT&#8209;5.6 model under restrictions</a></li>
-      <li><a href="https://deploymentsafety.openai.com/gpt-5-6-preview">OpenAI Deployment Safety Hub: GPT&#8209;5.6 Preview System Card</a></li>
-      <li><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">The White House (2 June): Promoting Advanced AI Innovation and Security executive order</a></li>
-    </ul>
+  <article class="story">
+    <div class="kicker"><span class="tag">OpenAI</span><span class="when">1&ndash;2 Jul</span></div>
+    <h3>GPT&#8209;5.6 Sol/Terra/Luna still locked to ~20 partners</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the 2 June executive order's benchmarking requirement is keeping OpenAI's flagship behind a partner wall while Anthropic takes the mid-tier &mdash; GA now slipping to mid-July.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Three tiers &mdash; Sol ($5/$30), Terra ($2.50/$15), Luna ($1/$6) &mdash; limited to ~20 trusted-partner orgs as of 1&ndash;2 July, a consequence of Trump's 2 June order requiring federal capability assessment before general release. Dev-tool integrations are voting: GitHub Copilot's 1 July release added Sonnet 5, not GPT&#8209;5.6.</p>
+      <ul class="sources">
+        <li><a href="https://openai.com/index/previewing-gpt-5-6-sol/">OpenAI: Previewing GPT&#8209;5.6 Sol</a> (primary)</li>
+        <li><a href="https://venturebeat.com/technology/openai-unveils-gpt-5-6-sol-terra-and-luna-models-but-only-accessible-to-limited-preview-partners-for-now-per-us-gov">VentureBeat: limited preview partners, per US gov</a></li>
+        <li><a href="https://www.axios.com/2026/06/26/openai-gpt-sol-terra-luna-trump">Axios: powerful new GPT&#8209;5.6 under restrictions</a></li>
+        <li><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">White House (2 Jun): AI Innovation and Security EO</a></li>
+      </ul>
+    </div></details>
   </article>
 
-  <h2>Software Engineering &amp; Developer Platforms</h2>
-
-  <article>
-    <h3><span class="tag">GitHub</span>Copilot ships Claude Sonnet 5 across IDE and CLI on 1 July, plus per-user AI-credit budgets</h3>
-    <div class="byline">1 July release &middot; Primary sources: GitHub Changelog; Releasebot</div>
-    <p>
-      GitHub used the Sonnet 5 launch window to make it the <em>same-day</em> Copilot default surface: on <strong>1 July</strong>, <strong>Claude Sonnet 5</strong> shipped across GitHub Copilot IDE and CLI for <strong>Pro, Pro+, Max, Business, and Enterprise</strong> tiers, with gradual rollout and <strong>Zero Data Retention</strong>. The <strong>Copilot CLI</strong> got a companion release with <em>faster sandbox enforcement</em>, <em>improved subagent restriction handling</em>, <em>clearer agent load warnings</em>, <em>resilient hooks / OAuth refresh</em>, and <em>prompt session resumes</em> &mdash; the boring but consequential fixes that make long-running agent sessions survivable in production. In parallel, the Enterprise team shipped <strong>per-user AI-credit budgets for cost centres</strong>: admins get granular Copilot spend control with automatic membership sync and <em>budget precedence</em>, which is directly the finance-office ask that has slowed enterprise Copilot expansion in the past two quarters. Reading these three together with the 23 June GHES 3.21 GA (24 June digest), the picture is a <em>tightly coordinated Q3 push</em> on the Copilot control-plane: models, CLI reliability, and cost governance in the same fortnight.
-    </p>
-    <ul class="sources">
-      <li><a href="https://github.blog/changelog/">GitHub Changelog</a> (primary index)</li>
-      <li><a href="https://github.blog/changelog/label/copilot/">GitHub Changelog &mdash; Copilot label</a></li>
-      <li><a href="https://github.blog/changelog/month/06-2026/">GitHub Changelog &mdash; June 2026</a></li>
-      <li><a href="https://releasebot.io/updates/github">Releasebot: GitHub Release Notes &mdash; July 2026</a></li>
-      <li><a href="https://github.blog/changelog/2026-06-17-github-copilot-app-generally-available/">GitHub: Copilot app generally available (background, 17 June)</a></li>
-    </ul>
+  <article class="story">
+    <div class="kicker"><span class="tag">GitHub</span><span class="when">1 Jul</span></div>
+    <h3>Copilot ships Sonnet 5 across IDE and CLI, plus per-user AI-credit budgets</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> same-day Sonnet 5 support plus finance-office cost controls &mdash; the per-user budget feature directly unblocks the enterprise Copilot expansion that procurement has been stalling.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Sonnet 5 across Pro/Pro+/Max/Business/Enterprise with Zero Data Retention. Copilot CLI added faster sandbox enforcement, better subagent handling, resilient hooks/OAuth refresh, and session resumes. Enterprise got per-user AI-credit budgets with membership sync and budget precedence &mdash; a coordinated Q3 push on models, CLI reliability, and cost governance.</p>
+      <ul class="sources">
+        <li><a href="https://github.blog/changelog/label/copilot/">GitHub Changelog &mdash; Copilot</a> (primary)</li>
+        <li><a href="https://github.blog/changelog/month/06-2026/">GitHub Changelog &mdash; June 2026</a></li>
+        <li><a href="https://releasebot.io/updates/github">Releasebot: GitHub release notes</a></li>
+      </ul>
+    </div></details>
   </article>
 
-  <article>
-    <h3><span class="tag">Cursor</span>Cursor 2.0 &mdash; up to 8 parallel agents on the same codebase, Composer 2.5 discount runs through 5 July</h3>
-    <div class="byline">Late June / 1&ndash;5 July window &middot; Primary sources: Cursor changelog; Techzine; DevOps.com</div>
-    <p>
-      Cursor's <strong>2.0</strong> release rewrites the agent surface: up to <strong>eight agents</strong> can now work in parallel on the <em>same codebase</em>, each in its own isolated copy, coordinated through a new agent-centric interface. Cursor's proprietary <strong>Composer</strong> coding model is claimed <strong>~4&times; faster than comparable alternatives</strong> at the same tier. On the ergonomics side, <strong>Cursor for iOS</strong> shipped public beta on all paid plans this week, letting users launch and manage always-on agents from a phone with fluid handoff between local and cloud environments. A <strong>75% discount on Composer 2.5</strong> is live in the mobile app <strong>through 5 July</strong> &mdash; a distribution nudge aimed at seeding the mobile agent-management pattern before the end of the promo window. <strong>Team MCP</strong> support in the marketplace lets admins configure MCP servers once and distribute them across cloud agents, the agents window, IDE, and CLI. Cursor's ARR passed <strong>$1 B in under two years</strong> with a reported <strong>$29.3 B valuation</strong>. The Anthropic/Sonnet 5 pricing cut lands into this in a specific way: mid-tier agent runners at scale are the exact economic surface Cursor's parallel-agents architecture consumes, and cheaper agentic tokens compound directly into Composer's per-run cost picture.
-    </p>
-    <ul class="sources">
-      <li><a href="https://cursor.com/changelog">Cursor: What's new &mdash; latest updates &amp; release notes</a> (primary)</li>
-      <li><a href="https://cursor.com/changelog/sdk-updates-jun-2026">Cursor: Custom stores, custom tools, and auto-review for the Cursor SDK &mdash; June 2026</a></li>
-      <li><a href="https://cursor.com/blog">Cursor Blog</a></li>
-      <li><a href="https://www.techzine.eu/news/devops/135916/cursor-2-0-introduces-parallel-agents-and-new-model/">Techzine: Cursor 2.0 introduces parallel agents and a new model</a></li>
-      <li><a href="https://devops.com/cursor-2-0-brings-faster-ai-coding-and-multi-agent-workflows/">DevOps.com: Cursor 2.0 brings faster AI coding and multi-agent workflows</a></li>
-      <li><a href="https://releasebot.io/updates/cursor">Releasebot: Cursor Release Notes &mdash; June 2026</a></li>
-    </ul>
+  <article class="story">
+    <div class="kicker"><span class="tag">Cursor</span><span class="when">1&ndash;5 Jul</span></div>
+    <h3>Cursor 2.0: up to 8 parallel agents on one codebase</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> parallel agents are exactly the mid-tier token surface Sonnet 5's price cut compounds into &mdash; cheaper agentic tokens flow straight through Composer's per-run economics.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Eight agents work in parallel on the same codebase, each in an isolated copy. Composer is claimed ~4&times; faster at its tier. Cursor for iOS shipped public beta (75% Composer 2.5 discount through 5 July), and Team MCP lets admins distribute MCP servers across surfaces. ARR passed $1B in under two years at a reported $29.3B valuation.</p>
+      <ul class="sources">
+        <li><a href="https://cursor.com/changelog">Cursor: changelog &amp; release notes</a> (primary)</li>
+        <li><a href="https://www.techzine.eu/news/devops/135916/cursor-2-0-introduces-parallel-agents-and-new-model/">Techzine: Cursor 2.0 parallel agents</a></li>
+        <li><a href="https://devops.com/cursor-2-0-brings-faster-ai-coding-and-multi-agent-workflows/">DevOps.com: faster AI coding, multi-agent workflows</a></li>
+      </ul>
+    </div></details>
   </article>
 
-  <article>
-    <h3><span class="tag">Microsoft</span>Microsoft 365 Business Standard/Premium with Copilot become permanent SKUs on 1 July &mdash; with a global price rise</h3>
-    <div class="byline">1 July SKU cutover &middot; Primary sources: Microsoft 365 Blog; Microsoft Learn Partner Center announcements</div>
-    <p>
-      Microsoft made <strong>Microsoft 365 Business Standard with Copilot</strong> and <strong>Microsoft 365 Business Premium with Copilot</strong> permanent SKUs on <strong>1 July</strong>, alongside a <em>global pricing update</em> that took effect the same day across <strong>Enterprise, Business, and Frontline</strong> tiers and across <em>all purchasing channels</em>. The framing on the Microsoft 365 Blog is straight-forward: Copilot connects to the systems small businesses already run &mdash; CRM, finance, marketing platforms &mdash; extending context beyond Microsoft's own surfaces. The organisational context: Microsoft's <strong>March 2026 Copilot reorg</strong> unified consumer and commercial Copilot under a single organisation spanning four connected pillars, and today's SKU cutover is the first pricing action on that new structure. For enterprise procurement teams still holding the pre-1 July grandfathered rates on multi-year Microsoft 365 renewals, today's pricing action closes that window &mdash; a datapoint worth reading alongside the Sonnet 5 / GPT&#8209;5.6 pricing spread on the model side. The direction of travel is consistent: model tokens are getting cheaper (Sonnet 5's $2 / $10), but productivity-suite AI is getting more expensive.
-    </p>
-    <ul class="sources">
-      <li><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/28/introducing-microsoft-365-business-with-copilot-the-new-standard-for-small-business/">Microsoft 365 Blog: Introducing Microsoft 365 Business with Copilot</a> (primary, 28 May)</li>
-      <li><a href="https://learn.microsoft.com/en-us/partner-center/announcements/2026-june">Microsoft Learn: Partner Center announcements &mdash; June 2026 (1 July SKU cutover)</a></li>
-      <li><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/">Microsoft 365 Blog: Copilot Cowork now generally available (background, 16 June)</a></li>
-      <li><a href="https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes">Microsoft Learn: Release notes for Microsoft 365 Copilot</a></li>
-      <li><a href="https://www.appdirect.com/blog/microsoft-365-prices-are-changing-lock-in-current-rates-by-june-30-and-help-customers-optimize-their-microsoft-solutions">AppDirect: Microsoft 365 prices are changing &mdash; lock in current rates by 30 June</a></li>
-    </ul>
+  <article class="story">
+    <div class="kicker"><span class="tag">Microsoft</span><span class="when">1 Jul</span></div>
+    <h3>Microsoft 365 Business Copilot SKUs go permanent &mdash; with a global price rise</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the direction of travel is now explicit &mdash; model tokens keep getting cheaper while productivity-suite AI gets more expensive. Grandfathered pre-1 July renewal rates are closed.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Business Standard/Premium with Copilot became permanent SKUs on 1 July alongside a global pricing update across Enterprise, Business, and Frontline tiers and all channels &mdash; the first pricing action on Microsoft's March 2026 unified-Copilot reorg.</p>
+      <ul class="sources">
+        <li><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/28/introducing-microsoft-365-business-with-copilot-the-new-standard-for-small-business/">Microsoft 365 Blog: Business with Copilot</a> (primary)</li>
+        <li><a href="https://learn.microsoft.com/en-us/partner-center/announcements/2026-june">Microsoft Learn: Partner Center &mdash; 1 July SKU cutover</a></li>
+      </ul>
+    </div></details>
   </article>
 
-  <h2>Voice, Agents &amp; New Surfaces</h2>
-
-  <article>
-    <h3><span class="tag">xAI</span>Grok Voice Agent Builder ships no-code public beta at $0.05/minute</h3>
-    <div class="byline">1 July release &middot; Primary sources: xAI News; xAI Docs release notes; Grok release notes</div>
-    <p>
-      <strong>xAI</strong> shipped the <strong>Grok Voice Agent Builder</strong> to public beta on <strong>1 July</strong>, moving it out of the developer-only beta and pricing it at <strong>$0.05 per minute</strong> &mdash; the direct competitive lever against OpenAI's Realtime API and ElevenLabs' agent surface. The stack sits on top of the <strong>Grok Voice Agent API</strong> that launched in <em>December 2025</em>, with <strong>custom voice</strong> support added <em>May 2026</em>; the Builder is the layer that lets teams without API-integration experience ship voice products directly. The economic tell is the per-minute price: at $0.05/min, sustained call-centre workloads clear the 2025 hosted-VoIP tier by an order of magnitude on unit economics if the reliability holds. This is a smaller-signal item than Sonnet 5 or Fable 5's return, but it fits the same pattern the last three digests have tracked &mdash; <em>the second half of 2026 is where agent surfaces move from developer-only to non-technical builders, and the pricing floor collapses as that happens</em>.
-    </p>
-    <ul class="sources">
-      <li><a href="https://x.ai/news">xAI News</a> (primary)</li>
-      <li><a href="https://docs.x.ai/developers/release-notes">xAI Docs: Release notes</a> (primary)</li>
-      <li><a href="https://grok.com/release-notes">Grok release notes</a></li>
-      <li><a href="https://www.basenor.com/blogs/news/xai-launches-grok-voice-agent-builder-beta-for-developers">Basenor: xAI launches Grok Voice Agent Builder beta for developers</a></li>
-      <li><a href="https://releasebot.io/updates/xai">Releasebot: xAI Release Notes &mdash; June/July 2026</a></li>
-    </ul>
+  <article class="story">
+    <div class="kicker"><span class="tag">xAI</span><span class="when">1 Jul</span></div>
+    <h3>Grok Voice Agent Builder ships no-code public beta at $0.05/minute</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the H2-2026 pattern in one line &mdash; agent surfaces move from developer-only to non-technical builders, and the pricing floor collapses as they do.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Public beta at $0.05/min &mdash; a direct lever against OpenAI's Realtime API and ElevenLabs. Sits on the Grok Voice Agent API (Dec 2025) with custom-voice support added May 2026; the Builder lets teams without integration experience ship voice products.</p>
+      <ul class="sources">
+        <li><a href="https://x.ai/news">xAI News</a> (primary)</li>
+        <li><a href="https://docs.x.ai/developers/release-notes">xAI Docs: release notes</a></li>
+        <li><a href="https://www.basenor.com/blogs/news/xai-launches-grok-voice-agent-builder-beta-for-developers">Basenor: Grok Voice Agent Builder beta</a></li>
+      </ul>
+    </div></details>
   </article>
 
-  <h2>AI Research &amp; Models</h2>
-
-  <article>
-    <h3><span class="tag">AI Research</span>World-model wave: Qwen-AgentWorld, ProPlay, and the SearchGym pattern for real-world agent training</h3>
-    <div class="byline">Late June arXiv &middot; Primary sources: arXiv 2606.24597, 2606.12780, 2606.18208, 2606.09032</div>
-    <p>
-      The paper cluster the agent-research community is reading this week is a <em>world-models-for-agents</em> pack that showed up on arXiv in the final ten days of June. Headline items: <strong>Qwen-AgentWorld</strong> (arXiv <strong>2606.24597</strong>) argues for <em>scaling real-world environment synthesis</em> as the primary lever for evolving general-agent intelligence, framing world-model quality as the bottleneck for agent capability rather than base-model reasoning; <strong>ProPlay</strong> (<strong>2606.12780</strong>) introduces <em>procedural world models for self-evolving LLM agents</em>, generating training environments on the fly rather than curating them; <strong>Looped World Models</strong> (<strong>2606.18208</strong>) proposes an iterative refinement loop between world model and policy; and <strong>Bridging the Agent-World Gap</strong> (<strong>2606.09032</strong>) formalises <em>text world models</em> for LLM-based agents. Sitting alongside these are the <strong>SearchGym</strong> framework (bootstrapping real-world search agents via cost-effective, high-fidelity environment simulation) and a comprehensive <em>survey on world models for embodied AI</em>. The through-line, read together with the 24 June digest's <strong>AgileThinker</strong> (real-time reasoning) paper, is that the mid-2026 agent-architecture agenda is now openly bifurcating along a <em>time-pressure axis</em> (AgileThinker) and a <em>world-modelling axis</em> (this week's cluster) &mdash; and the assumption that a single scaled base model handles both is losing support in the research bench.
-    </p>
-    <ul class="sources">
-      <li><a href="https://arxiv.org/pdf/2606.24597">arXiv 2606.24597 &mdash; Qwen-AgentWorld: Language World Models for General Agents</a> (primary)</li>
-      <li><a href="https://arxiv.org/pdf/2606.12780">arXiv 2606.12780 &mdash; ProPlay: Procedural World Models for Self-Evolving LLM Agents</a></li>
-      <li><a href="https://arxiv.org/pdf/2606.18208">arXiv 2606.18208 &mdash; Looped World Models</a></li>
-      <li><a href="https://arxiv.org/pdf/2606.09032">arXiv 2606.09032 &mdash; Bridging the Agent-World Gap: Text World Models for LLM-based Agents</a></li>
-      <li><a href="https://arxiv.org/pdf/2606.00133">arXiv 2606.00133 &mdash; World Models: A Comprehensive Survey</a></li>
-      <li><a href="https://arxiv.org/list/cs.AI/current">arXiv cs.AI &mdash; current submissions index</a></li>
-    </ul>
+  <article class="story">
+    <div class="kicker"><span class="tag">Research</span><span class="when">Late Jun</span></div>
+    <h3>World-models-for-agents paper cluster lands on arXiv</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the agent-architecture agenda is bifurcating &mdash; a time-pressure axis (AgileThinker) and a world-modelling axis &mdash; and the assumption that one scaled base model handles both is losing support.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Qwen-AgentWorld argues real-world environment synthesis is the primary lever for agent intelligence; ProPlay generates training environments procedurally; Looped World Models iterates between world model and policy; and SearchGym bootstraps search agents via simulated environments. Read with the 24 June AgileThinker paper.</p>
+      <ul class="sources">
+        <li><a href="https://arxiv.org/pdf/2606.24597">arXiv 2606.24597 &mdash; Qwen-AgentWorld</a> (primary)</li>
+        <li><a href="https://arxiv.org/pdf/2606.12780">arXiv 2606.12780 &mdash; ProPlay</a></li>
+        <li><a href="https://arxiv.org/pdf/2606.18208">arXiv 2606.18208 &mdash; Looped World Models</a></li>
+        <li><a href="https://arxiv.org/pdf/2606.00133">arXiv 2606.00133 &mdash; World Models: A Comprehensive Survey</a></li>
+      </ul>
+    </div></details>
   </article>
 
-  <footer>
-    <p><strong>Editorial notes:</strong> The 2 July digest is anchored on the coordinated <strong>Anthropic 1 July product volley</strong> &mdash; Claude Sonnet 5 becoming the free/Pro default at $2/$10 per M tokens, the <strong>Fable 5 / Mythos 5</strong> return after a 19-day export-control shutdown, the launch of <strong>Claude Science</strong> for biopharma researchers, and the expanded <strong>Project Glasswing</strong> cross-lab jailbreak-severity framework with Amazon/Microsoft/Google plus a HackerOne channel &mdash; alongside the <strong>Korea $880 B chip/AI plan</strong> reprice (Samsung -7%, SK Hynix -9%+ on 2 July), Anthropic's <strong>$30 B run-rate</strong> anchor for the IPO roadshow, the still-locked <strong>OpenAI GPT&#8209;5.6 Sol/Terra/Luna</strong> partner preview under the 2 June Trump AI executive order, <strong>GitHub Copilot</strong>'s same-day Sonnet 5 integration and per-user AI-credit budgets, <strong>Cursor 2.0</strong>'s eight-parallel-agents surface with Composer 2.5, <strong>Microsoft 365</strong>'s 1 July Business Copilot SKU cutover and price rise, <strong>xAI</strong>'s Grok Voice Agent Builder public beta at $0.05/minute, and the late-June arXiv <em>world-models-for-agents</em> paper cluster (Qwen-AgentWorld, ProPlay, Looped World Models, SearchGym). Primary sources flagged inline include Anthropic's newsroom pages (Redeploying Fable 5, Claude Science, Expanding Project Glasswing), TechCrunch's Sonnet 5 launch write-up, CNBC on the export-control reversal and the Kospi selloff, VentureBeat on the $30 B run-rate and the GPT&#8209;5.6 restrictions, the OpenAI Help Center &amp; Deployment Safety Hub for GPT&#8209;5.6, the White House 2 June executive order, GitHub Changelog and Cursor's own changelog, and the primary arXiv paper listings. <em>Non-overlap check:</em> the previous three days (29&ndash;30 June, 1 July) have no published digest in this repo, and the most recent prior issue (<a href="../../June/22%20June%20-%2028%20June/24%20June%20AI%20News%20Digest%20Report.html">24 June</a>) covered the still-suspended-at-the-time Mythos 5 alongside OpenAI's GPT&#8209;5.5&#8209;Cyber and Patch the Planet, the SpaceX&ndash;Reflection $6.3 B compute deal, SPCX's 31% four-session drawdown, Oracle's fiscal-2026 10&#8209;K AI-layoffs disclosure, the Five Eyes 22 June joint advisory, Anthropic's tenth Claude outage in three weeks, Meta's MCI programme pause after a 45,000-table exposure, four more OpenAI researchers moving to Meta Superintelligence, GitHub GHES 3.21 GA / gh CLI 2.94, the AgileThinker real-time-reasoning paper, and the Gemini 3.5 Pro GA watch &mdash; none of which are restated here, only referenced where downstream developments link back (Mythos 5 export controls, Anthropic's S-1, the Five Eyes advisory, and AgileThinker as the paper that pairs with this week's world-models cluster). Today's stories take material new to the <strong>30 June&ndash;2 July</strong> window.</p>
-    <p>Generated 2 July 2026.</p>
-  </footer>
+  <footer>Curated for a 5-minute read. Generated 2 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
 </body>
 </html>

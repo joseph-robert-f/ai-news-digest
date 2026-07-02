@@ -78,8 +78,10 @@ async function main() {
     let summary = '';
     const metaTag = html.match(/<meta[^>]*\bname=["']description["'][^>]*>/i);
     if (metaTag) {
-      const content = metaTag[0].match(/\bcontent=["']([\s\S]*?)["']/i);
-      if (content) summary = decodeEntities(content[1]).replace(/\s+/g, ' ').trim();
+      // Backreference so the closing quote matches the opening one — otherwise
+      // an apostrophe inside the content (e.g. "Anthropic's") ends it early.
+      const content = metaTag[0].match(/\bcontent=(["'])([\s\S]*?)\1/i);
+      if (content) summary = decodeEntities(content[2]).replace(/\s+/g, ' ').trim();
     }
     if (!summary) {
       const ledeMatch = html.match(/<div class="lede">([\s\S]*?)<\/div>/i);
