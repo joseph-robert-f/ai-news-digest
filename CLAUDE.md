@@ -12,8 +12,8 @@ Live site: https://joseph-robert-f.github.io/ai-news-digest/
 
 Push straight to `main`. The GitHub Action (`.github/workflows/build.yml`)
 regenerates the manifest and deploys — no PR, no manual steps. Aim to have each
-day's digest committed **by ~06:30 (owner's local time)** so the site is fresh
-each morning.
+day's digest committed **by 06:30 US Eastern (ET)** so the site is fresh each
+morning.
 
 ## How to produce the daily digest
 
