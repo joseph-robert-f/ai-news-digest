@@ -1,7 +1,25 @@
 {
-  "generated": "2026-06-22T01:33:03.727Z",
-  "count": 9,
+  "generated": "2026-07-02T13:15:23.322Z",
+  "count": 11,
   "digests": [
+    {
+      "date": "2026-07-02",
+      "title": "AI News Digest — 2 July 2026",
+      "path": "2026/July/29 June - 5 July/2 July AI News Digest Report.html",
+      "year": 2026,
+      "month": "July",
+      "week": "29 June - 5 July",
+      "summary": "The last 24 hours are dominated by Anthropic's coordinated 1 July product volley: Claude Sonnet 5 — released 30 June and made the default for free/Pro users on 1 July — ships agentic performance close to Opus 4.8 at $2/$10 per M tokens through 31 August (60% cheaper on input t…"
+    },
+    {
+      "date": "2026-06-24",
+      "title": "AI News Digest — 24 June 2026",
+      "path": "2026/June/22 June - 28 June/24 June AI News Digest Report.html",
+      "year": 2026,
+      "month": "June",
+      "week": "22 June - 28 June",
+      "summary": "The single biggest story of the last 24 hours is OpenAI's offensive counter-positioning against Anthropic's still-suspended Mythos 5: on 22 June OpenAI shipped GPT&#8209;5.5&#8209;Cyber — topping the CyberGym vulnerability-reproduction benchmark at 85.6%, ahead of Mythos 5 (83…"
+    },
     {
       "date": "2026-06-15",
       "title": "AI News Digest — 15 June 2026",
