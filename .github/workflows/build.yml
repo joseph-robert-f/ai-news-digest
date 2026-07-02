@@ -8,6 +8,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Backstop: redeploy once a day even if a merge/push didn't trigger the build
+  # (e.g. a token-based merge). Runs ~08:47 US Eastern (UTC; drifts 1h at DST) —
+  # after the 06:30 ET digest routine. Idempotent: just rebuilds current main.
+  schedule:
+    - cron: "47 12 * * *"
 
 permissions:
   contents: read

@@ -44,13 +44,31 @@ function stripTags(s) {
   return decodeEntities(s.replace(/<[^>]+>/g, '')).replace(/\s+/g, ' ').trim();
 }
 
+function iso(year, month, day) {
+  return `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+}
+
 // "15 June 2026" -> "2026-06-15"
 function parseDate(text) {
   const m = text.match(/(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})/);
   if (!m) return null;
   const month = MONTHS[m[2].toLowerCase()];
   if (!month) return null;
-  return `${m[3]}-${String(month).padStart(2, '0')}-${String(+m[1]).padStart(2, '0')}`;
+  return iso(m[3], month, +m[1]);
+}
+
+// Fallback when the <title> date is missing or in an unexpected format: take the
+// year from the top-level "YYYY" folder and the "D Month" from the filename,
+// e.g. "2026/July/29 June - 5 July/2 July AI News Digest Report.html" -> 2026-07-02.
+function parseDateFromPath(path) {
+  const segs = path.split('/');
+  const year = /^\d{4}$/.test(segs[0]) ? segs[0] : null;
+  const base = segs[segs.length - 1];
+  const m = base.match(/(\d{1,2})\s+([A-Za-z]+)/);
+  if (!year || !m) return null;
+  const month = MONTHS[m[2].toLowerCase()];
+  if (!month) return null;
+  return iso(year, month, +m[1]);
 }
 
 async function main() {
@@ -67,7 +85,9 @@ async function main() {
     const html = await readFile(join(ROOT, path), 'utf8');
     const titleMatch = html.match(/<title>([\s\S]*?)<\/title>/i);
     const rawTitle = titleMatch ? decodeEntities(titleMatch[1].trim()) : null;
-    const date = parseDate(rawTitle || path);
+    // Title first (authoritative), then fall back to the folder/filename so a
+    // drifted title format never silently drops a published digest.
+    const date = (rawTitle && parseDate(rawTitle)) || parseDateFromPath(path);
     if (!date) {
       console.warn(`Skipping (no parseable date): ${path}`);
       continue;
