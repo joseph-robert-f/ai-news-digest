@@ -46,13 +46,27 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://joseph-robert-f.github.io/ai-news-digest/
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      # GitHub Pages' backend intermittently fails a deploy ("Deployment failed,
+      # try again later") or hangs in deployment_queued. Retry up to 3 times with
+      # backoff; if all fail, the job fails and the daily schedule backstop (plus
+      # the next push) retries later.
+      - name: Deploy to GitHub Pages (attempt 1)
+        id: deploy1
         uses: actions/deploy-pages@v4
-        with:
-          # Default is 600000 (10 min). Give a slow-but-alive Pages backend more
-          # room on incident days. Won't rescue a hard lock — that needs a Pages
-          # source reset in Settings — but the daily schedule backstop will retry.
-          timeout: 1200000
+        continue-on-error: true
+      - name: Back off before attempt 2
+        if: steps.deploy1.outcome == 'failure'
+        run: sleep 45
+      - name: Deploy to GitHub Pages (attempt 2)
+        id: deploy2
+        if: steps.deploy1.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Back off before attempt 3
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        run: sleep 90
+      - name: Deploy to GitHub Pages (attempt 3)
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        uses: actions/deploy-pages@v4
