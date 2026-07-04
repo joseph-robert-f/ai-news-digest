@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 4 July 2026</title>
+  <meta name="description" content="Meituan trains a 1.6T-parameter frontier coding model entirely on Chinese domestic chips and beats GPT-5.5 on SWE-bench Pro, Anthropic opens custom-chip talks with Samsung, and a Linux kernel bug exposes a real limit of AI-assisted vulnerability hunting.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>4 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: 30 June&ndash;4 July (last ~72&ndash;96 hours)</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Meituan open-sourced LongCat-2.0</strong>, a 1.6T-parameter model trained entirely on domestic Chinese chips &mdash; the first Chinese frontier-scale model to do so end-to-end, and it beats GPT&#8209;5.5 on SWE-bench Pro.</li>
+      <li><strong>Anthropic opened early, non-exclusive talks with Samsung</strong> on a custom 2nm AI chip, following OpenAI into in-house silicon while still calling Nvidia/AWS/Google TPUs central to its near-term compute.</li>
+      <li><strong>Microsoft committed $2.5B to "Frontier Company,"</strong> a new unit embedding 6,000 engineers inside customers like LSEG and Unilever &mdash; selling AI outcomes, not just tools.</li>
+      <li><strong>The UN and ITU launched an AI for Good Global Commission</strong> co-led by Paul Kagame and Marc Benioff, with Jensen Huang, Andy Jassy, Brad Smith, and Anthropic's Jack Clark among 40+ founding members; first meeting is 7&ndash;10 July in Geneva.</li>
+      <li><strong>A new "Bad Epoll" Linux kernel bug grants root</strong> from the same code path where Anthropic's Mythos model previously found a sibling bug &mdash; Mythos missed this one; a human researcher found it via Google's bug bounty.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Top story &mdash; a frontier model without Nvidia</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">Meituan</span><span class="when">30 Jun</span></div>
+    <h3>Meituan trains a 1.6T-parameter frontier model entirely on domestic Chinese chips</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is the first confirmed frontier-scale model pretrained end-to-end on non-Nvidia, domestic hardware &mdash; and it beats GPT&#8209;5.5 on a real coding benchmark, released free under an MIT license, which cuts directly against the premise that export controls keep China a generation behind.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>LongCat-2.0 is a 1.6T-parameter mixture-of-experts model (~48B active parameters on average, dynamically 33&ndash;56B per query, native 1M-token context) trained on a 50,000-card cluster of domestic AI ASICs &mdash; widely believed to be Huawei Ascend 910-series given Meituan's use of Huawei's HCCL communication library, though Meituan hasn't named the chip. It scored 59.5 on SWE-bench Pro versus GPT&#8209;5.5's 58.6. The model ran anonymously as "Owl Alpha" on OpenRouter for two months, topping the platform's usage charts, before Meituan revealed its identity and open-sourced the weights under MIT license. DeepSeek's V4-Pro, by contrast, used domestic chips only for inference, not training &mdash; making LongCat-2.0 the first Chinese lab to cross the full-pretraining threshold.</p>
+      <ul class="sources">
+        <li><a href="https://venturebeat.com/technology/meituan-open-sources-longcat-2-0-the-1-6t-near-frontier-agentic-coding-model-thats-been-leading-openrouter-trained-entirely-on-chinese-chips">VentureBeat: Meituan open-sources LongCat-2.0, trained entirely on Chinese chips</a> (primary)</li>
+        <li><a href="https://www.scmp.com/tech/tech-trends/article/3358854/china-debuts-biggest-ai-model-trained-local-chips-meituan-releases-longcat-20">South China Morning Post: China debuts biggest AI model trained on local chips</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Models &amp; infrastructure</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Anthropic &times; Samsung</span><span class="when">2 Jul</span></div>
+    <h3>Anthropic opens early talks with Samsung on a custom 2nm AI chip</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> every frontier lab now wants its own silicon &mdash; Anthropic joins OpenAI in exploring custom chips, this time via Samsung's unproven 2nm process, while still publicly calling Nvidia GPUs, AWS Trainium, and Google TPUs central to its near-term compute strategy.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>The Information reports Anthropic is in early, non-exclusive discussions with Samsung to manufacture a custom AI accelerator on Samsung's SF2 2nm foundry node (Gate-All-Around transistors, reportedly nearing 70% yield but unproven at high-volume commercial scale) with advanced packaging. Anthropic has reportedly hired an OpenAI chip veteran and hasn't yet decided the chip's target workload. Parallel conversations are underway with Microsoft and UK startup Fractile; Samsung was also a strategic investor in Anthropic's $65B Series H round.</p>
+      <ul class="sources">
+        <li><a href="https://www.theinformation.com/articles/anthropic-talks-samsung-manufacture-custom-ai-chip">The Information: Anthropic in talks with Samsung to manufacture custom AI chip</a> (primary)</li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-02/anthropic-in-talks-with-samsung-for-custom-ai-chip-information-mr3l34t4">Bloomberg: Anthropic in talks with Samsung for custom AI chip</a></li>
+        <li><a href="https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/">TechCrunch: Anthropic is discussing a new custom chip with Samsung</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Meta</span><span class="when">3 Jul</span></div>
+    <h3>Meta's AI chief says an unreleased model has "caught up" to GPT&#8209;5.5 &mdash; take it with caution</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> an internal, unpublished, benchmark-free claim from a lab under competitive pressure is a data point, not a verified result &mdash; worth watching for a public model card, not for the claim itself.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>In an internal town hall, Meta chief AI officer Alexandr Wang told staff that "Watermelon" &mdash; the successor to Muse Spark ("Avocado"), trained with "an order of magnitude more compute" &mdash; now matches GPT&#8209;5.5 on unspecified benchmarks. Neither Meta nor OpenAI has confirmed or detailed the comparison, and no reproducible results or model card have been published. Note GPT&#8209;5.5 already trails OpenAI's own gated GPT&#8209;5.6, still limited to vetted enterprise customers under the 2 June executive order (see 2&ndash;3 July digests).</p>
+      <ul class="sources">
+        <li><a href="https://www.benzinga.com/markets/tech/26/07/60264651/metas-upcoming-watermelon-ai-model-matches-openais-gpt-5-5-on-key-benchmarks-alexandr-wang-reportedly-tells-employees">Benzinga: Meta's upcoming Watermelon AI model matches GPT&#8209;5.5, Wang reportedly tells employees</a> (citing Business Insider, primary)</li>
+        <li><a href="https://www.aol.com/articles/alexandr-wang-says-metas-coming-235204000.html">AOL/Reuters wire: Alexandr Wang says Meta's coming AI has caught up with GPT&#8209;5.5</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Business &amp; markets</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Microsoft</span><span class="when">2 Jul</span></div>
+    <h3>Microsoft commits $2.5B to a new business that embeds AI engineers inside customers</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Microsoft is done selling AI tools and is now selling AI outcomes directly &mdash; a tacit admission that most enterprise AI pilots aren't reaching production on their own, and a template OpenAI, Anthropic, and Amazon have all raced to match this year with similar units.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Frontier Company is a new Microsoft operating business backed by $2.5B, embedding roughly 6,000 industry specialists and AI engineers directly inside customer organizations to co-design, deploy, and continuously optimize AI systems &mdash; moving beyond selling Copilot/Azure AI licenses toward managed delivery of what Microsoft calls "Frontier Transformation." Early clients include London Stock Exchange Group, Unilever, and Land O'Lakes; Microsoft is also partnering with Accenture, Capgemini, EY, KPMG, and PwC to scale delivery.</p>
+      <ul class="sources">
+        <li><a href="https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/">Microsoft: introducing Frontier Company</a> (primary)</li>
+        <li><a href="https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/">TechCrunch: Microsoft launches its own AI deployment company with $2.5B commitment</a></li>
+        <li><a href="https://www.geekwire.com/2026/microsoft-announces-2-5b-frontier-company-to-embed-ai-engineers-inside-customers/">GeekWire: Microsoft unveils $2.5B Frontier Company</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Venice AI</span><span class="when">1 Jul</span></div>
+    <h3>Privacy-first AI platform Venice becomes a unicorn on its debut raise</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a profitable, privacy-positioned AI platform reaching a $1B valuation on its first outside round signals that "unrestricted, no-logging" positioning has found a real paying market, not just a niche.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Venice AI, co-founded by Erik Voorhees and Jesse Proudman, raised a $65M Series A at a $1B valuation led by Dragonfly, with Coinbase Ventures and North Island Ventures participating &mdash; its first external funding round. The company says it's already profitable with $70M+ in annualized revenue, 3.5M registered users, and 1.3T tokens processed monthly across 200+ third-party models; it plans to use the funds to buy its own GPUs and build data centers rather than lease compute, to improve margins.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/">TechCrunch: Venice AI becomes a unicorn with $65M Series A</a> (primary)</li>
+        <li><a href="https://www.geekwire.com/2026/private-ai-venice-ai-led-by-crypto-vet-erik-voorhees-and-seattles-jesse-proudman-raises-65m/">GeekWire: Venice AI, led by Erik Voorhees and Jesse Proudman, raises $65M</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Policy &amp; governance</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">UN &times; ITU</span><span class="when">2 Jul</span></div>
+    <h3>UN and ITU launch an AI for Good Global Commission with Big Tech and heads of state</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is one of the most senior AI governance convenings yet, putting the chip and infrastructure side of the industry at the same table as heads of state &mdash; just as national AI rules are proliferating unevenly (see China item below).</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Rwandan President Paul Kagame, Salesforce chair/CEO Marc Benioff, and ITU Secretary-General Doreen Bogdan-Martin announced the Commission on 1&ndash;2 July, with more than 40 founding members spanning heads of state and government, industry CEOs, and UN agency heads &mdash; including Nvidia's Jensen Huang, Amazon's Andy Jassy, Microsoft's Brad Smith, Anthropic co-founder Jack Clark, and Cohere's Aidan Gomez. Its stated mandate is to identify practical pathways on trust, responsible innovation, and bridging digital divides. The first meeting is 7&ndash;10 July at the ITU's AI for Good Global Summit in Geneva.</p>
+      <ul class="sources">
+        <li><a href="https://www.axios.com/2026/07/01/un-ai-commission-ceos-world-leaders">Axios (exclusive): UN launches "AI for Good" commission</a> (primary)</li>
+        <li><a href="https://www.salesforce.com/news/press-releases/2026/07/02/ai-for-good-global-commission-announcement/">Salesforce: Global leaders launch AI for Good Global Commission</a></li>
+        <li><a href="https://www.itu.int/en/mediacentre/Pages/PR-2026-07-02-AI-for-Good-Global-Commission.aspx">ITU: press release</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">China &middot; TC260</span><span class="when">Effective 1 Jul</span></div>
+    <h3>China's national AI ethics-safety guidelines take effect</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a compliance-relevant data point for anyone operating AI in China &mdash; part of a wider wave of Chinese AI rules (anthropomorphic-AI and agent-standardization rules both follow on 15 July) moving faster and more granularly than most Western equivalents.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>TC260 (the National Technical Committee 260 on Cybersecurity, under China's Standardization Administration) released its Ethics-Safety Guidelines for AI Applications 1.0 on 19 May; they took effect 1 July, setting nine core principles &mdash; including enhancing human welfare, respect for life, and controllability/trustworthiness &mdash; and assigning distinct obligations to developers (risk controls during data collection and training), providers (secure deployment, real-time monitoring), and users (safeguards, especially for minors).</p>
+      <ul class="sources">
+        <li><a href="https://mmlcgroup.com/china-tc260-0526/">MMLC Group: China's TC260 releases Ethics-Safety Guidelines for AI Applications 1.0</a> (primary)</li>
+        <li><a href="https://www.dataguidance.com/news/china-tc260-releases-ai-safety-governance-framework">DataGuidance: China &mdash; TC260 releases AI safety governance framework</a></li>
+        <li><a href="https://www.onetrust.com/blog/chinas-tc260-releases-ai-safety-governance-framework/">OneTrust: China's TC260 releases AI safety governance framework</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security &amp; software engineering</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Linux kernel</span><span class="when">3 Jul</span></div>
+    <h3>"Bad Epoll" kernel bug grants root &mdash; and shows a live limit on AI-assisted bug hunting</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Anthropic's Mythos model had already flagged a sibling bug in the exact same kernel code path months earlier, but missed this second, related flaw, which a human researcher found instead through a bug bounty &mdash; a concrete, dated data point on where AI-assisted vulnerability research actually stands today.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>CVE&#8209;2026&#8209;46242 ("Bad Epoll") is a use-after-free race condition in the Linux kernel's epoll subsystem (affecting kernel 6.4+ and Android) that lets a local, unprivileged user escalate to root; the race window is only about six instructions wide, but a retry loop drives exploit reliability to 99%, and it's reportedly triggerable from inside Chrome's renderer sandbox. Independent researcher Jaeyoung Chung found and reported it as a zero-day to Google's kernelCTF bounty program (worth $71,337+); a patch is out, and it is not yet on CISA's Known Exploited Vulnerabilities list. Notably, this bug and an earlier one Anthropic's Claude Mythos autonomously discovered (CVE&#8209;2026&#8209;43074, fixed earlier in 2026) both trace back to the same single 2023 change to the epoll code &mdash; Mythos found one sibling bug there; a human found the other.</p>
+      <ul class="sources">
+        <li><a href="https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html">The Hacker News: new "Bad Epoll" Linux kernel flaw lets unprivileged users gain root</a> (primary)</li>
+        <li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46242">NVD: CVE&#8209;2026&#8209;46242</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 4 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>

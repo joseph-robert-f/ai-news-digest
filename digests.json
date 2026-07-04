@@ -1,7 +1,16 @@
 {
-  "generated": "2026-07-03T10:42:15.251Z",
-  "count": 12,
+  "generated": "2026-07-04T10:47:31.782Z",
+  "count": 13,
   "digests": [
+    {
+      "date": "2026-07-04",
+      "title": "AI News Digest — 4 July 2026",
+      "path": "2026/July/29 June - 5 July/4 July AI News Digest Report.html",
+      "year": 2026,
+      "month": "July",
+      "week": "29 June - 5 July",
+      "summary": "Meituan trains a 1.6T-parameter frontier coding model entirely on Chinese domestic chips and beats GPT-5.5 on SWE-bench Pro, Anthropic opens custom-chip talks with Samsung, and a Linux kernel bug exposes a real limit of AI-assisted vulnerability hunting."
+    },
     {
       "date": "2026-07-03",
       "title": "AI News Digest — 3 July 2026",
