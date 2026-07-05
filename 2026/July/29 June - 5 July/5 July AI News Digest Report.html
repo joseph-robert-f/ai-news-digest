@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 5 July 2026</title>
+  <meta name="description" content="Unsealed court emails show a Pentagon official telling Anthropic's CEO a deal was &quot;very close&quot; the day after DoD blacklisted the firm over autonomous-weapons guardrails; Tesla caps employee AI spend at $200/week; JetBrains patches critical Hub identity-service bugs.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>5 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: 1&ndash;5 July (last ~24&ndash;96 hours)</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Unsealed court emails show the Pentagon calling a deal with Anthropic "very close"</strong> the day after Defense Secretary Hegseth blacklisted the firm as a supply-chain risk &mdash; a judge called the timing "exceedingly difficult to square" with that framing.</li>
+      <li><strong>Anthropic is closing Singapore-subsidiary and VPN loopholes</strong> Chinese firms like Ant Financial and ByteDance used to reach Claude &mdash; the same week California locked in a 50% Claude discount for every state agency.</li>
+      <li><strong>Tesla caps employee AI-tool spending at $200/week</strong> starting 6 July (Grok exempt), joining Uber, Meta, Amazon, and Walmart in reining in token bills &mdash; even as staff reportedly prefer Claude over Tesla's own Grok.</li>
+      <li><strong>TwelveLabs raised a $100M Series C</strong> co-led by NEA and Naver, plus a new AWS preferred-cloud pact, to push video-native AI beyond search into full agentic reasoning.</li>
+      <li><strong>JetBrains patched three critical Hub identity-service bugs</strong> &mdash; auth bypass, predictable account-recovery codes, and privilege escalation &mdash; that could hand an attacker admin control over YouTrack and TeamCity single sign-on.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Top story &mdash; a defense contract that never closed</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">Anthropic &times; Pentagon</span><span class="when">Unsealed 2 Jul</span></div>
+    <h3>Court emails: Pentagon told Amodei a deal was "very close" a day after blacklisting Anthropic</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the documents show the fight was never really about access to Claude &mdash; it was about whether an AI lab can hold a hard line against autonomous weapons and domestic surveillance against its largest possible customer, and the paper trail undercuts the government's own justification for the blacklist.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Emails unsealed 2 July in Anthropic's lawsuit against the Pentagon (N.D. Cal.) show CEO Dario Amodei held two consistent, explicit dealbreakers across months of negotiation with Emil Michael, the Pentagon's Under Secretary of Defense for Research and Engineering: Claude could not be used to operate fully autonomous weapons (no human in the loop at engagement) or for domestic mass surveillance. Talks soured in January; Michael later wrote the guardrails were "just not workable" and, according to the filings, that Anthropic's proposed contract language would "completely remove our redlines." The day before Defense Secretary Pete Hegseth publicly designated Anthropic a supply-chain security risk, Michael emailed Amodei that the two sides were "very close" on terms &mdash; before Anthropic had been told about the coming designation. The presiding judge, Lin, quoted that exchange directly and called it "exceedingly difficult to square" with the government's contemporaneous framing of Anthropic as a hostile actor. Anthropic separately lost an appellate bid in April to block enforcement of the blacklist while the underlying suit proceeds.</p>
+      <ul class="sources">
+        <li><a href="https://gizmodo.com/read-the-tense-emails-between-the-pentagon-former-uber-exec-and-anthropic-dario-amodei-2000780849">Gizmodo: Read the tense emails between the Pentagon and Anthropic</a> (primary, quotes court filings)</li>
+        <li><a href="https://www.realcleardefense.com/2026/07/03/the_emails_revealing_how_anthropics_pentagon_relationship_fell_apart_1192428.html">RealClearDefense: the emails revealing how Anthropic's Pentagon relationship fell apart</a></li>
+        <li><a href="https://www.techtimes.com/articles/319713/20260704/pentagon-blacklisted-anthropic-over-autonomous-weapons-limits-emails-reveal-very-close-talks.htm">Tech Times: Pentagon blacklisted Anthropic over autonomous-weapons limits</a></li>
+        <li><a href="https://thenextweb.com/news/anthropic-pentagon-emails-amodei-michael-guardrails">TNW: Anthropic-Pentagon emails reveal the real fight</a></li>
+        <li><a href="https://www.cnbc.com/2026/04/08/anthropic-pentagon-court-ruling-supply-chain-risk.html">CNBC (8 Apr): Anthropic loses appeals court bid to block Pentagon blacklisting</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Policy &amp; governance</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Anthropic &times; China</span><span class="when">3 Jul</span></div>
+    <h3>Anthropic moves to shut Singapore and VPN workarounds Chinese firms used to reach Claude</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the same week Anthropic is fighting the Pentagon over military-use guardrails, it's tightening enforcement of its own China ban &mdash; closing gaps that let Ant Financial and ByteDance staff route around it via offshore entities and personal VPNs.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Per the Financial Times, Ant Financial gave employees corporate Claude accounts tied to a Singapore-incorporated entity, while ByteDance reimbursed staff for personal Claude subscriptions accessed over VPNs; other firms reached Claude through foreign-incorporated units running on Azure. Anthropic's terms have barred access for any company more than 50%-owned by China-, Russia-, Iran-, or North Korea-based entities since 2025 &mdash; CEO Dario Amodei said in February the policy has cost "several hundred million dollars" in forgone revenue. Enforcement now includes monitoring account time zones and usage patterns for signs of relay/transfer-station behavior, plus ID-and-selfie verification for flagged accounts (added April). None of this breaks US or Chinese law; it enforces Anthropic's own terms of service.</p>
+      <ul class="sources">
+        <li><a href="https://www.banklesstimes.com/articles/2026/07/03/anthropic-moves-to-block-chinese-firms-using-claude-via-offshore-workarounds/">BanklessTimes: Anthropic moves to block Chinese firms using Claude via offshore workarounds</a> (citing FT, primary)</li>
+        <li><a href="https://www.investing.com/news/stock-market-news/anthropic-targets-loopholes-used-by-chinese-firms-to-access-claude-ft-reports-4774998">Investing.com: Anthropic targets loopholes used by Chinese firms, FT reports</a></li>
+        <li><a href="https://techstory.in/anthropic-cracks-down-after-chinese-engineers-access-claude-through-hidden-routes/">TechStory: Anthropic cracks down after Chinese engineers access Claude through hidden routes</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">California</span><span class="when">29 Jun</span></div>
+    <h3>California locks in a 50%-off Claude deal for every state agency, city, and county</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a sharp contrast to the Pentagon fight above &mdash; the same model the Defense Department blacklisted over guardrail disputes is now the first AI productivity tool state-wide-licensed to every California government body, with Anthropic staff embedded to help build workflows.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Governor Newsom announced 29 June a first-of-its-kind partnership giving state agencies, cities, and counties Claude access at a 50% discount, plus free workforce training and Anthropic developer support, distributed through the California Department of Technology's new Statewide IT Shared Services (SITeS) portal. California already uses Claude for DMV service, Medicaid workflows, and cyber defense, and for "Poppy," a state-worker-built internal query tool. Newsom: "AI should not replace the human work of government; it should help our workers move faster."</p>
+      <ul class="sources">
+        <li><a href="https://www.gov.ca.gov/2026/06/29/governor-newsom-announces-a-first-of-its-kind-partnership-providing-anthropic-tools-to-state-agencies-and-improving-services-for-californians/">Governor of California: first-of-its-kind Anthropic partnership</a> (primary)</li>
+        <li><a href="https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/">TechCrunch: California government to use Claude at half price</a></li>
+        <li><a href="https://www.foxbusiness.com/politics/newsoms-office-touts-anthropic-partnership-50-discount-claude-ai-california-agencies-localities">Fox Business: Newsom's office touts Anthropic partnership</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Geneva</span><span class="when">6&ndash;10 Jul</span></div>
+    <h3>Three overlapping global AI-governance convenings open in Geneva this week</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is the densest week of multilateral AI diplomacy yet &mdash; a formal UN treaty-track dialogue, the world's largest internet-governance forum, and industry's own summit are all running back-to-back in the same city, and none of them speaks with one voice.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>The UN's first Global Dialogue on AI Governance runs 6&ndash;7 July at Geneva's Palexpo, co-chaired by El Salvador and Estonia &mdash; a General Assembly-established track distinct from the AI for Good Global Commission (see 4 July digest), whose members include Nvidia's Jensen Huang, Amazon's Andy Jassy, and Anthropic's Jack Clark and first meets 7&ndash;10 July as part of the ITU's AI for Good Global Summit. Both run inside the broader WSIS Forum 2026 (6&ndash;10 July). The overlap is intentional but the mandates differ: the UN Dialogue is government-led treaty groundwork; AI for Good is industry-and-government convening with no binding output.</p>
+      <ul class="sources">
+        <li><a href="https://www.un.org/global-dialogue-ai-governance/en">UN: Global Dialogue on AI Governance</a> (primary)</li>
+        <li><a href="https://www.itu.int/en/mediacentre/Pages/MA-2026-06-02-UN-Dialogue.aspx">ITU: Global Dialogue on AI Governance, Geneva 6&ndash;7 July</a></li>
+        <li><a href="https://www.unesco.org/en/articles/global-dialogue-ai-governance-geneva-6-7-july">UNESCO: Global Dialogue on AI Governance, Geneva 6&ndash;7 July</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Business &amp; labor markets</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Tesla</span><span class="when">Effective 6 Jul</span></div>
+    <h3>Tesla caps employee AI-tool spending at $200/week &mdash; Grok exempt</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> another major employer is capping token bills now that AI usage shows up as a real line item &mdash; and the exemption for Musk's own Grok, while engineers reportedly favor Claude, makes this as much an internal-adoption push as a cost control.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Per The Information, an internal memo tells Tesla staff that from 6 July, spending above $200/week on AI tools requires manager sign-off; the cap excludes beta xAI products. Some engineers were burning "thousands of dollars' worth of tokens" weekly, and some teams had built internal dashboards ranking employees by consumption to encourage more use. Despite the policy nudging staff toward Grok and Tesla's in-house Composer, four people familiar say many engineers still prefer Anthropic's Claude. Uber capped spend at $1,500/month in April after exhausting its 2026 AI budget; Meta, Amazon, and Walmart have introduced similar caps or cheaper-model defaults.</p>
+      <ul class="sources">
+        <li><a href="https://www.theinformation.com/articles/tesla-caps-employee-ai-spend-200-per-week-adoption-push">The Information: Tesla caps employee AI spend at $200/week</a> (primary)</li>
+        <li><a href="https://electrek.co/2026/07/02/tesla-caps-employee-ai-spending-200-week/">Electrek: Tesla caps employee AI spending at $200/week, except for Grok</a></li>
+        <li><a href="https://www.techtimes.com/articles/319710/20260704/tesla-limits-ai-tool-spending-200-weekly-while-musks-grok-stays-exempt.htm">Tech Times: Tesla limits AI tool spending to $200 weekly while Grok stays exempt</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">TwelveLabs</span><span class="when">1 Jul</span></div>
+    <h3>TwelveLabs raises $100M Series B to build "video superintelligence"</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> video remains the modality most AI systems still can't natively reason over at scale &mdash; a fresh round plus an AWS preferred-cloud pact bets that full agentic reasoning over raw footage, not just search, is the next wedge against Google's multimodal lead.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Round co-led by NEA and Naver Ventures, with Amazon, Radical Ventures, Korea Investment Partners, Index Ventures, Quadrille Capital, and Red Bull Ventures participating. TwelveLabs is pushing beyond its Marengo video-embedding models toward a full-stack system combining perception, knowledge, and reasoning over video archives; both models ship through Amazon Bedrock and TwelveLabs' own API, and Amazon is now a preferred-cloud partner. Funds go to R&amp;D in San Francisco and Seoul plus new offices in New York and London.</p>
+      <ul class="sources">
+        <li><a href="https://www.globenewswire.com/news-release/2026/07/01/3320545/0/en/twelvelabs-raises-100-million-in-series-b-funding-to-build-video-superintelligence.html">GlobeNewswire: TwelveLabs raises $100M in Series B funding</a> (primary)</li>
+        <li><a href="https://techfundingnews.com/twelvelabs-raises-100m-as-amazon-secures-aws-as-its-preferred-cloud/">Tech Funding News: TwelveLabs raises $100M as Amazon secures AWS as preferred cloud</a></li>
+        <li><a href="https://siliconangle.com/2026/07/01/twelvelabs-raises-100m-bring-superintelligence-ai-video-models/">SiliconANGLE: TwelveLabs raises $100M to bring superintelligence to AI video models</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security &amp; software engineering</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">JetBrains</span><span class="when">2 Jul</span></div>
+    <h3>JetBrains patches critical Hub identity-service bugs &mdash; auth bypass to admin, predictable account recovery</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Hub is the single sign-on backbone behind YouTrack and TeamCity &mdash; three chained, critical-severity bugs here mean an unauthenticated attacker could potentially seize admin accounts across an org's entire JetBrains server stack, not just one product.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>CVE&#8209;2026&#8209;50242 (CWE&#8209;306) lets an attacker bypass authentication via direct database access to reach administrative functions. CVE&#8209;2026&#8209;56141 (CVSS 9.8, CWE&#8209;338) stems from predictable account-restore codes generated by a weak RNG, letting an attacker enumerate valid codes and hijack any account, including admins. CVE&#8209;2026&#8209;56142 (CWE&#8209;915) allows an authenticated user to attach unauthorized authentication details to an existing account for privilege escalation. All three are fixed in Hub 2026.1.13757, with backports for the 2025.x and 2024.x branches; JetBrains advises prioritizing internet-facing Hub instances, rotating credentials, and auditing recent account-recovery and auth-mapping activity.</p>
+      <ul class="sources">
+        <li><a href="https://gbhackers.com/jetbrains-patches-critical-hub-authentication-bypass/">GBHackers: JetBrains patches critical Hub authentication bypass and account-takeover vulnerabilities</a> (primary)</li>
+        <li><a href="https://cybersecuritynews.com/jetbrains-vulnerabilities/">Cyber Security News: critical JetBrains vulnerabilities enable auth bypass and code execution</a></li>
+        <li><a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50242">NVD: CVE&#8209;2026&#8209;50242</a></li>
+        <li><a href="https://www.jetbrains.com/privacy-security/issues-fixed/">JetBrains: fixed security issues</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Developer platforms</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Anthropic</span><span class="when">1 Jul</span></div>
+    <h3>Claude in Chrome exits pilot, reaches general availability</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> browser-native agent access moves from a security-flagged pilot to a shipped default surface &mdash; the same release added background task notifications and draft-PR handoff, extending Claude Code's agentic reach from the terminal into everyday browsing.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Claude in Chrome, previously piloted with explicit security warnings around prompt-injection risk in browser contexts, shipped as generally available in Claude Code 2.1.198 on 1 July. The same release added background-task notifications, draft-PR handoff between sessions, improved failover, better session resumption, and a new <code>/dataviz</code> skill for chart and dashboard guidance.</p>
+      <ul class="sources">
+        <li><a href="https://www.anthropic.com/news/claude-for-chrome">Anthropic: Piloting Claude in Chrome</a> (primary)</li>
+        <li><a href="https://www.eweek.com/news/anthropic-claude-for-chrome/">eWeek: Anthropic launches Claude-for-Chrome pilot, warns of security risks</a></li>
+        <li><a href="https://releasebot.io/updates/anthropic/claude-code">Releasebot: Claude Code updates, July 2026</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 5 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>

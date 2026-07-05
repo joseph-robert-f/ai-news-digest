@@ -1,7 +1,16 @@
 {
-  "generated": "2026-07-04T10:47:31.782Z",
-  "count": 13,
+  "generated": "2026-07-05T10:43:48.854Z",
+  "count": 14,
   "digests": [
+    {
+      "date": "2026-07-05",
+      "title": "AI News Digest — 5 July 2026",
+      "path": "2026/July/29 June - 5 July/5 July AI News Digest Report.html",
+      "year": 2026,
+      "month": "July",
+      "week": "29 June - 5 July",
+      "summary": "Unsealed court emails show a Pentagon official telling Anthropic's CEO a deal was \"very close\" the day after DoD blacklisted the firm over autonomous-weapons guardrails; Tesla caps employee AI spend at $200/week; JetBrains patches critical Hub identity-service bugs."
+    },
     {
       "date": "2026-07-04",
       "title": "AI News Digest — 4 July 2026",
