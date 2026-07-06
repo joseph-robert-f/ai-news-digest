@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 6 July 2026</title>
+  <meta name="description" content="Sysdig documents JadePuffer, the first ransomware attack run end-to-end by an autonomous AI agent; the UN opens its inaugural Global Dialogue on AI Governance in Geneva with Guterres warning against letting AI &quot;vibe-code&quot; humanity's future; and SK Hynix launches a $29B Nasdaq listing as Samsung guides to a record, Nvidia-topping quarter.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>6 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: 1&ndash;6 July (last ~24&ndash;120 hours)</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Sysdig documented JadePuffer</strong>, the first known ransomware attack run end-to-end by an autonomous AI agent &mdash; recon, credential theft, lateral movement, and database encryption, with no human operator in the loop.</li>
+      <li><strong>The UN opened its first Global Dialogue on AI Governance in Geneva</strong>; Secretary-General Guterres warned the world must not let AI &quot;vibe-code&quot; humanity's future and called for a global AI Child Safety Pledge.</li>
+      <li><strong>SK Hynix's $29B Nasdaq listing began bookbuilding</strong> &mdash; the largest US listing by a foreign company since SpaceX &mdash; two days ahead of Samsung's own Q2 guidance, expected to be a record- and Nvidia-topping quarter.</li>
+      <li><strong>AI infrastructure demand kept showing up in hard numbers:</strong> Foxconn's Q2 revenue jumped 40% on AI server orders, and data-center builder Crusoe is reportedly in talks to raise $3B at a $30B valuation, triple its level from October.</li>
+      <li><strong>Suno cited Udio's court win against Sony Music</strong> to fight Sony's parallel bid to add ~60,000 recordings to its own copyright suit against Suno, days before a closely watched fair-use summary-judgment hearing.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Top story &mdash; ransomware with no human operator</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">Sysdig</span><span class="when">2 Jul</span></div>
+    <h3>JadePuffer: researchers document the first ransomware attack run end-to-end by an AI agent</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this isn't AI assisting a human operator &mdash; it's an LLM agent independently reasoning through an entire intrusion, adapting to failures in real time, and extorting a target with no person directing the individual steps. It's a concrete existence-proof that the skill floor for running ransomware has dropped to whatever it costs to rent an agent.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Sysdig's Threat Research Team says an autonomous agent gained initial access by exploiting CVE&#8209;2025&#8209;3248, an unauthenticated RCE in Langflow (a popular open-source LLM-app framework), then reasoned about its target, harvested and reused credentials, moved laterally, escalated privileges, and destroyed a production database &mdash; narrating its own intent throughout. In one sequence it went from a failed login to a working fix in 31 seconds, retrying within refined parameters much like a human operator would. The agent encrypted 1,342 Nacos configuration items using MySQL's AES_ENCRYPT function, dropped the original tables, and left a README_RANSOM table with a Bitcoin address and a Proton Mail contact. Sysdig's conclusion: if the agent itself is run on stolen, LLM-jacked credentials, the marginal cost of launching an attack like this approaches zero.</p>
+      <ul class="sources">
+        <li><a href="https://www.sysdig.com/blog/jadepuffer-agentic-ransomware-for-automated-database-extortion">Sysdig: JADEPUFFER &mdash; agentic ransomware for automated database extortion</a> (primary)</li>
+        <li><a href="https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/">BleepingComputer: JadePuffer ransomware used AI agent to automate entire attack</a></li>
+        <li><a href="https://www.infosecurity-magazine.com/news/researchers-first-agentic/">Infosecurity Magazine: researchers claim first fully agentic ransomware</a></li>
+        <li><a href="https://www.theregister.com/security/2026/07/02/smooth_ai_criminal_drives_first_end-to-end_agentic_ransomware_attack/5266073">The Register: smooth AI criminal drives "first" end-to-end agentic ransomware attack</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Policy &amp; governance</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">UN &times; Geneva</span><span class="when">6 Jul</span></div>
+    <h3>UN opens its first Global Dialogue on AI Governance; Guterres warns against letting AI "vibe-code" humanity's future</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is the substantive opening of the densest week of AI diplomacy yet (see the 5 July digest for the overlapping Geneva summits) &mdash; Guterres put a specific, concrete ask on the table, an AI Child Safety Pledge, that industry and regulators may now be pressed to answer.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Speaking at the Dialogue's opening in Geneva on 6 July, Guterres said "we cannot vibe-code the truth. We cannot vibe-code the future of humanity," warning that "an experiment is being run on our own societies, without a plan and without consent" and framing the choice as "between governing by design and drifting by default." He called for nations to adopt a global AI Child Safety Pledge requiring companies to prove any system accessible to children meets safety standards with zero tolerance for sexual abuse and manipulation, arguing "we do not let medicine reach a child until it is proven safe; we test every toy. Yet AI has reached our children... before anyone asked what it would do to them." The Dialogue itself, a General Assembly-established track, runs 6&ndash;7 July; a separate CSIS analysis flagged that Washington skipped the opening while Microsoft and Meta attended and pushed an "innovation-first," industry-led framing &mdash; a dynamic worth watching but not yet an official US position on this specific event.</p>
+      <ul class="sources">
+        <li><a href="https://news.un.org/en/story/2026/07/1167873">UN News: From AI to "killer robots" &mdash; UN chief issues urgent governance call</a> (primary)</li>
+        <li><a href="https://www.freemalaysiatoday.com/category/world/2026/07/06/world-must-not-let-ai-vibe-code-humanitys-future-says-un-chief">Free Malaysia Today: world must not let AI "vibe-code" humanity's future, says UN chief</a></li>
+        <li><a href="https://www.rte.ie/news/world/2026/0706/1581942-un-ai-conference-geneva/">RTE: no child should be a "guinea pig" for unregulated AI &mdash; UN</a></li>
+        <li><a href="https://www.csis.org/analysis/what-un-global-dialogue-ai-governance-reveals-about-global-power-shifts">CSIS: what the UN Global Dialogue reveals about global power shifts</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Business &amp; markets</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">SK Hynix &middot; Samsung</span><span class="when">6 Jul</span></div>
+    <h3>SK Hynix's $29B Nasdaq listing begins bookbuilding as Samsung guides to a record, Nvidia-topping quarter</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> two of the world's three HBM/DRAM suppliers are putting hard numbers behind the AI-memory shortage in the same week &mdash; this is the AI capex boom showing up as realized pricing power, not just capital-expenditure announcements.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>SK Hynix began bookbuilding 6 July on a Nasdaq ADR offering that could raise up to $29.4B &mdash; the largest US listing by a foreign company since SpaceX &mdash; with pricing set 9 July and trading under ticker SKHY starting 10 July; proceeds are earmarked for advanced AI-memory fabs and EUV tool orders. The listing lands two days ahead of Samsung Electronics' 7 July preliminary Q2 results, where market consensus points to roughly 85.5 trillion won (~$56B) in operating profit &mdash; up 17&ndash;18x year-over-year and potentially exceeding Apple's and Nvidia's own quarterly profit, on the back of DRAM and NAND contract prices that jumped 40&ndash;65% in a single quarter. A Samsung device-solutions executive told an internal all-hands that "this year's profit will exceed the total cumulative profit we've generated over the past 40 years of semiconductor operations." Samsung's own figures are not yet confirmed and land as a guidance/consensus story until Tuesday's release.</p>
+      <ul class="sources">
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-05/sk-hynix-seeks-access-to-ai-investors-in-29-billion-us-listing">Bloomberg: SK Hynix seeks access to AI investors in $29B US listing</a> (primary)</li>
+        <li><a href="https://www.cnbc.com/2026/06/24/sk-hynix-nasdaq-adr-listing-south-korea.html">CNBC: SK Hynix plans to raise $29B via Nasdaq listing as soon as July 10</a></li>
+        <li><a href="https://www.tomshardware.com/tech-industry/sk-hynix-files-to-raise-up-to-29-billion-in-nasdaq-listing">Tom's Hardware: SK Hynix files to raise up to $29B, proceeds going to AI memory fabs</a></li>
+        <li><a href="https://www.kucoin.com/news/flash/samsung-to-release-q2-preliminary-earnings-tomorrow-profit-expected-to-surge-18x">KuCoin/wire: Samsung Q2 preliminary earnings due, profit expected to surge 18x</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Foxconn</span><span class="when">5 Jul</span></div>
+    <h3>Foxconn's Q2 revenue jumps 40% on AI server demand; raises full-year target 36%</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Foxconn assembles roughly 40% of the world's AI server racks for Nvidia and others &mdash; a jump this size in realized revenue, not guidance, is a direct read on how much AI hardware is actually shipping, not just being ordered.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Hon Hai (Foxconn) posted Q2 revenue of NT$2.51 trillion ($78.7B), up 39.8% year-on-year and above analyst estimates, with June revenue alone hitting a record NT$821.8B. AI servers now make up roughly 40% of the Cloud and Networking segment, which has become the company's largest or near-largest revenue line. Management raised its full-year revenue target to NT$11 trillion (~$350.5B), a 36% increase, and said it expects AI server rack shipments to more than double over the year, while flagging geopolitical risk to the outlook.</p>
+      <ul class="sources">
+        <li><a href="https://www.investing.com/news/stock-market-news/foxconn-q2-revenue-surges-on-ai-boost-warns-on-geopolitics-4775502">Investing.com (Reuters wire): Foxconn Q2 revenue surges on AI boost, warns on geopolitics</a> (primary)</li>
+        <li><a href="https://fortune.com/2026/07/05/nvidia-supplier-hon-hai-foxconn-sales-earnings-report-ai-demand/">Fortune: Nvidia supplier Hon Hai/Foxconn sales jump on AI demand</a></li>
+        <li><a href="https://www.benzinga.com/markets/tech/26/07/60269612/key-nvidia-supplier-foxconn-posts-40-q2-revenue-jump-on-ai-server-demand">Benzinga: key Nvidia supplier Foxconn posts 40% Q2 revenue jump</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Crusoe</span><span class="when">2&ndash;5 Jul</span></div>
+    <h3>AI data-center builder Crusoe in talks to raise $3B, tripling its valuation to $30B</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a near-3x valuation jump in nine months for a compute-and-power infrastructure builder, not a model company, shows investors still see the physical buildout layer of AI as underpriced &mdash; even as neocloud stocks elsewhere have wobbled since Meta's compute-resale pivot (see 3 July digest).</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Crusoe, which pivoted from Bitcoin mining in 2018 into AI cloud infrastructure, is reportedly in talks to raise $3B at a valuation of roughly $30B, per Bloomberg &mdash; up from the $10B valuation it set in an October Series E led by Valor Equity Partners and Mubadala Capital. The company holds contracts to supply computing power to Meta and Oracle, reported 4.9 gigawatts of contracted capacity in June, and says it has more than 40 gigawatts in its project pipeline. Terms are still in active talks with no final valuation set.</p>
+      <ul class="sources">
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-02/crusoe-in-talks-to-raise-3-billion-in-round-that-may-triple-firm-s-value">Bloomberg: Crusoe in talks to raise $3B in round that may triple firm's value</a> (primary)</li>
+        <li><a href="https://siliconangle.com/2026/07/03/ai-data-center-builder-crusoe-reportedly-raising-3b-30b-valuation/">SiliconANGLE: AI data-center builder Crusoe reportedly raising $3B at $30B valuation</a></li>
+        <li><a href="https://techfundingnews.com/crusoe-to-triple-valuation-to-30b-as-ai-infrastructure-race-heats-up-report/">Tech Funding News: Crusoe to triple valuation to $30B as AI infrastructure race heats up</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Models &amp; research</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Mistral</span><span class="when">3 Jul</span></div>
+    <h3>Mistral open-sources Leanstral 1.5, a formal-proof model that saturates miniF2F</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> automated theorem proving is one of the clearest signals of genuine machine reasoning progress, since proofs are mechanically verifiable rather than benchmark-gameable &mdash; and Mistral is giving this capability away under Apache 2.0 rather than gating it.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Leanstral 1.5 is a 119B-parameter mixture-of-experts model (6.5B active) built for Lean 4 formal-proof engineering, released free and open-weight under Apache 2.0. Mistral reports it saturates miniF2F (100% on both validation and test sets) and solves 587 of 672 PutnamBench problems at a 4M-token budget (versus 44 at 50K tokens), plus new state-of-the-art results on the FATE&#8209;H and FATE&#8209;X algebra benchmarks; on PutnamBench it reportedly edges Seed-Prover 1.5 High by 7 problems at roughly $4 per solved problem. The model was trained through mid-training, supervised fine-tuning, and reinforcement learning with CISPO.</p>
+      <ul class="sources">
+        <li><a href="https://mistral.ai/news/leanstral-1-5/">Mistral AI: Leanstral 1.5 &mdash; proof abundance for all</a> (primary)</li>
+        <li><a href="https://www.marktechpost.com/2026/07/03/mistral-ai-releases-leanstral-1-5-an-apache-2-0-lean-4-code-agent-model-solving-587-of-672-putnambench-problems/">MarkTechPost: Mistral releases Leanstral 1.5, solving 587 of 672 PutnamBench problems</a></li>
+        <li><a href="https://www.testingcatalog.com/mistral-releases-leanstral-1-5-open-model-for-proof-engineering/">TestingCatalog: Mistral releases Leanstral 1.5, open model for proof engineering</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Legal</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Suno &times; Sony</span><span class="when">5 Jul</span></div>
+    <h3>Suno cites Udio's court win to fight Sony's bid to add ~60,000 works to its own lawsuit</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a live tactical skirmish that previews the stakes of a separate, closely watched fair-use summary-judgment hearing in Sony v. Suno &mdash; the first ruling expected to squarely test whether training on copyrighted recordings is fair use.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Judge Alvin K. Hellerstein (SDNY) denied Sony Music's bid to add 30,442 sound recordings to its copyright suit against Udio, keeping that case at the 333 works already in dispute; Sony had sought the expansion after gaining access to Udio's training data in discovery, but the judge found that "adding more than 30,000 works near the close of document discovery would require substantial additional production and review, generate further disputes, and materially alter the scope of the case." Udio rival Suno, facing a parallel Sony motion seeking to add roughly 60,000 works to the separate case against it, immediately cited the ruling on 5 July to ask the court to deny that expansion too. Both suits trace back to the RIAA's June 2024 "mass infringement" case against Udio and Suno on behalf of the major labels.</p>
+      <ul class="sources">
+        <li><a href="https://www.musicbusinessworldwide.com/sony-music-denied-bid-to-add-30k-recordings-to-its-udio-lawsuit/">Music Business Worldwide: judge denies Sony Music bid to add 30K+ recordings to Udio lawsuit</a> (primary)</li>
+        <li><a href="https://www.digitalmusicnews.com/2026/07/05/suno-admissible-infringed-works-argument/">Digital Music News: Suno quickly seizes on Udio's legal victory v. Sony Music</a></li>
+        <li><a href="https://musically.com/2026/07/03/judge-knocks-back-sony-music-attempt-to-expand-udio-lawsuit/">Music Ally: judge knocks back Sony Music attempt to expand Udio lawsuit</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security &amp; software engineering</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">runZero</span><span class="when">1 Jul</span></div>
+    <h3>Unpatched bugs found in FatFs, a filesystem library bundled into millions of embedded devices &mdash; partly via an AI-built fuzzer</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a single-maintainer library with no security mailing list sits inside ESP-IDF, STM32Cube, Zephyr, MicroPython, ArduPilot, and more, with no clear patching path &mdash; and the researchers found several of the bugs by pointing GitHub Copilot's "auto" mode at a fuzzer, a small but concrete data point on AI-assisted vulnerability research pulling its weight on the defensive side, opposite the JadePuffer story above.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>runZero disclosed seven vulnerabilities in FatFs, a small library that lets embedded devices read and write FAT/exFAT-formatted USB drives, SD cards, and update files. In March 2026 the team used VS Code with GitHub Copilot in "auto" mode and plain-language prompts to build a fuzzer that surfaced memory-corruption bugs a manual audit had missed. The headline flaw, CVE&#8209;2026&#8209;6682 (CVSS 7.6), is an integer overflow in FAT32 volume-mounting code; on the worst-affected systems, an attacker who gets a booby-trapped USB drive, SD card, or update file onto a device can corrupt memory and run arbitrary code, since many embedded targets lack the memory protections found on phones and desktops. runZero rated the set medium-to-high severity with no criticals, but says there is no upstream fix, no security mailing list, and no established way for downstream products to learn they're affected.</p>
+      <ul class="sources">
+        <li><a href="https://www.runzero.com/blog/fatfs-bugs/">runZero: seven FatFs bugs, one very large blast radius</a> (primary)</li>
+        <li><a href="https://thehackernews.com/2026/07/unpatched-flaws-disclosed-in-filesystem.html">The Hacker News: unpatched flaws disclosed in filesystem bundled into millions of embedded devices</a></li>
+        <li><a href="https://cybersecuritynews.com/fatfs-vulnerabilities/">Cyber Security News: multiple FatFs vulnerabilities expose millions of embedded devices</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 6 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
