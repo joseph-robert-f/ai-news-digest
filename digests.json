@@ -1,7 +1,16 @@
 {
-  "generated": "2026-07-06T10:48:03.856Z",
-  "count": 15,
+  "generated": "2026-07-07T10:47:41.833Z",
+  "count": 16,
   "digests": [
+    {
+      "date": "2026-07-07",
+      "title": "AI News Digest — 7 July 2026",
+      "path": "2026/July/6 July - 12 July/7 July AI News Digest Report.html",
+      "year": 2026,
+      "month": "July",
+      "week": "6 July - 12 July",
+      "summary": "Illinois becomes the first state to mandate third-party safety audits of frontier AI models, hours before the FTC argues state AI-bias laws like Colorado's may be federally preempted; Anthropic finds a legible 'global workspace' inside Claude, and a DRAM price-fixing suit name…"
+    },
     {
       "date": "2026-07-06",
       "title": "AI News Digest — 6 July 2026",
