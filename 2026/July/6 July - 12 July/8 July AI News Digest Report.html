@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 8 July 2026</title>
+  <meta name="description" content="Anthropic becomes the first major AI lab to require government-ID and facial-biometric verification for flagged Claude accounts, the same week the White House races to finalize a voluntary pre-release review framework with OpenAI, Google, and Anthropic; xAI completes its merger into SpaceX as SpaceXAI joins the Nasdaq-100, and two severe bugs &mdash; a CVSS 9.2 BeyondTrust auth bypass and a 16-year-old Linux KVM VM-escape flaw &mdash; get patched.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>8 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: 6&ndash;8 Jul (last ~24&ndash;72 hours)</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Anthropic became the first major AI lab to require government-ID and facial-biometric verification</strong> for a subset of Claude accounts, via third-party KYC vendor Persona, effective today.</li>
+      <li><strong>The White House is racing to finalize a voluntary pre-release review framework</strong> with OpenAI, Google, and Anthropic &mdash; up to 30 days of government access to "covered frontier models" before release &mdash; with an announcement possible as soon as this week.</li>
+      <li><strong>xAI completed its merger into SpaceX</strong>, rebranding as SpaceXAI with a new combined logo, the same week SpaceX (SPCX) joined the Nasdaq-100.</li>
+      <li><strong>Anthropic reversed course on Fable 5 pricing</strong> after user backlash, extending included access on paid plans through 12 July rather than forcing an immediate switch to per-token usage credits.</li>
+      <li><strong>Two severe bugs got patched this week:</strong> a CVSS 9.2 authentication-bypass pair in BeyondTrust's remote-access appliances, and a 16-year-old Linux KVM guest-to-host escape ("Januscape") that affects both Intel and AMD hosts.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Top story &mdash; the first ID-verification mandate</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">Anthropic</span><span class="when">8 Jul</span></div>
+    <h3>Anthropic becomes the first major AI lab to demand government ID and facial biometrics from flagged Claude users</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> no other frontier lab &mdash; not OpenAI, Google, or Meta &mdash; conditions continued account access on a government ID and a facial-geometry scan; Anthropic is setting a precedent for enforcement-by-verification that regulators and competitors will now have to react to.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Anthropic's revised consumer privacy policy, announced in late June, took effect 8 July 2026. It applies to a "small subset" of Claude accounts that have been flagged for potential policy violations but not outright banned: instead of losing access immediately, those users are routed through Persona Identities, a San Francisco-based KYC vendor, and asked to submit a photo of a government-issued ID (capturing name, date of birth, and ID number) plus a live selfie or video, which Persona converts into a "facial geometry template" that Anthropic acknowledges "may be considered biometric data in some jurisdictions." Anthropic is the data controller setting the rules; Persona is the processor executing them. The stated purpose is to let flagged users verify their identity and appeal rather than being banned outright.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/06/22/anthropic-says-claude-may-want-to-see-your-id/">TechCrunch: Anthropic says Claude may want to see your ID</a></li>
+        <li><a href="https://thenextweb.com/news/anthropic-claude-id-verification-privacy-policy-persona-biometric">The Next Web: Anthropic's new privacy policy collects biometric data from flagged Claude users</a></li>
+        <li><a href="https://mlq.ai/news/anthropic-updates-privacy-policy-to-require-government-id-and-facial-biometrics-from-some-claude-users/">MLQ News: Anthropic updates privacy policy to require government ID and facial biometrics</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Policy &amp; governance</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">White House</span><span class="when">Ongoing, week of 7 Jul</span></div>
+    <h3>White House, OpenAI, Google, and Anthropic race to finalize a voluntary frontier-model review framework</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this would be the first operational mechanism giving the U.S. government pre-release access to frontier models on a recurring basis &mdash; the biggest shift in how frontier AI gets released since the 2023 voluntary commitments, and the sticking points (what counts as "frontier," how long review takes) will shape every future model launch.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>President Trump's 2 June executive order, "Promoting Advanced Artificial Intelligence Innovation and Security," directs agencies to stand up a voluntary framework letting developers ask whether a model under development qualifies as a "covered frontier model," and, if so, to give the government access to it for up to 30 days before wider release to trusted partners, alongside a classified benchmarking process (due within 60 days) for assessing a model's cyber capabilities. Technical teams from the three companies have met consistently with White House officials through the first week of July to close out a final agreement, with reporting pointing to an announcement possible "as early as the week of July 7." The central dispute is the threshold that triggers review: the labs are pushing for a bar that catches only genuinely frontier systems, while government officials are pushing for a lower bar that would capture more routine releases. The framework follows OpenAI's GPT-5.6 Sol being restricted to government-vetted partners in late June at the administration's request, and Anthropic's brief export-style restriction (lifted in late June) over similar concerns.</p>
+      <ul class="sources">
+        <li><a href="https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/">The White House: Promoting Advanced Artificial Intelligence Innovation and Security</a> (primary)</li>
+        <li><a href="https://www.tipranks.com/news/white-house-races-to-finalize-ai-model-rules-with-openai-google-and-anthropic">TipRanks: White House races to finalize AI model rules with OpenAI, Google, and Anthropic</a></li>
+        <li><a href="https://thehill.com/policy/technology/5948098-trump-openai-ai-policy-confusion/">The Hill: Trump White House holds back new AI models, spurring confusion</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Business &amp; markets</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">SpaceX &times; xAI</span><span class="when">6&ndash;7 Jul</span></div>
+    <h3>xAI completes its merger into SpaceX, rebrands as SpaceXAI, as SpaceX joins the Nasdaq-100</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the rebrand is the visible endpoint of February's $1.25 trillion all-stock merger &mdash; the largest private merger in history &mdash; folding a frontier AI lab entirely inside a space-launch company's corporate structure just as that company enters a flagship public index.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>On 6 July, xAI's X account changed its handle to @SpaceXAI and unveiled a new combined logo, formally completing the integration that began 2 February when SpaceX acquired xAI in an all-stock deal (xAI shareholders received 0.1433 SpaceX shares per xAI share). SpaceXAI is now a wholly owned subsidiary of SpaceX &mdash; and X, the social network, sits a level further down as a subsidiary of SpaceXAI. Separately, and on the same timeline, SpaceX (ticker SPCX) joined the Nasdaq-100 index before market open on 7 July, following its June IPO.</p>
+      <ul class="sources">
+        <li><a href="https://www.cnbc.com/2026/07/06/spacex-joins-the-nasdaq-100-on-tuesday-what-it-means-for-the-stock.html">CNBC: SpaceX joins the Nasdaq-100 on Tuesday &mdash; what it means for the stock</a></li>
+        <li><a href="https://finance.yahoo.com/technology/ai/articles/spacexai-drops-logo-xai-fully-212612095.html">Yahoo Finance: Elon Musk's xAI rebrands as SpaceXAI, drops new logo as it fully merges into SpaceX</a></li>
+        <li><a href="https://dataconomy.com/2026/07/07/elon-musk-rebrands-merged-xai-and-spacex-as-spacexai/">Dataconomy: Elon Musk rebrands merged xAI and SpaceX as SpaceXAI</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Anthropic</span><span class="when">7&ndash;8 Jul</span></div>
+    <h3>Anthropic backs off Fable 5 usage-credit cutover after backlash, extends included access to 12 July</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the reversal is a tell on capacity, not generosity &mdash; Anthropic's flagship model is popular enough that pulling it from standard plans triggered immediate, public pushback, and the company chose to eat the compute cost rather than lose subscribers mid-week.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Anthropic had planned to end Fable 5's inclusion in Pro, Max, Team, and Enterprise subscriptions after midnight Pacific on 8 July, after which using Fable 5 would require Anthropic usage credits billed at API rates ($10 per million input tokens, $50 per million output tokens &mdash; roughly double Claude Opus 4.8's $5/$25). Following visible backlash from subscribers, Anthropic extended included Fable 5 access on all eligible paid plans through 12 July at 11:59:59pm PT, capped at up to 50% of a subscriber's weekly usage limit before falling back to credits or another model. The company said the credit requirement isn't meant to be permanent and that it intends to restore Fable 5 to standard plans as serving capacity allows.</p>
+      <ul class="sources">
+        <li><a href="https://www.androidauthority.com/anthropic-claude-fable-5-credits-usage-july-3684840/">Android Authority: Fable 5's second act on Claude ends today, unless you're willing to pay more</a></li>
+        <li><a href="https://www.androidauthority.com/claude-fable-5-free-extension-3685103/">Android Authority: Claude Fable 5 promotion extended after backlash over early cutoff</a></li>
+        <li><a href="https://www.techtimes.com/articles/319864/20260707/claude-fable-5-drops-subscriptions-tonight-enable-credits-lose-access.htm">Tech Times: Claude Fable 5 drops from subscriptions tonight &mdash; enable credits or lose access</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security &amp; software engineering</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">BeyondTrust</span><span class="when">7 Jul</span></div>
+    <h3>BeyondTrust patches CVSS 9.2 authentication-bypass pair in Remote Support and Privileged Remote Access</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> these are exactly the tools that grant privileged, often unattended access into customer networks &mdash; an unauthenticated bypass in that layer is close to a worst-case finding, even though BeyondTrust reports no in-the-wild exploitation yet.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Advisory BT26-03 discloses four vulnerabilities in BeyondTrust's Remote Support (RS) and Privileged Remote Access (PRA) appliances, two of them critical with a maximum CVSS v4 score of 9.2. CVE-2026-40139 allows an unauthenticated remote attacker to bypass authentication entirely through improperly processed authentication requests when a specific configuration is enabled; CVE-2026-40138 allows a network-positioned attacker to bypass access controls under certain authentication configurations and potentially gain elevated privileges, at somewhat higher attack complexity. BeyondTrust's Product Security team found the bugs internally, aided by AI-assisted vulnerability-discovery tooling. Cloud-hosted customers were auto-patched as of 21 April 2026; self-hosted customers not on automatic updates should apply the April 2026 security rollup or upgrade to RS/PRA 25.3.3 or later.</p>
+      <ul class="sources">
+        <li><a href="https://www.beyondtrust.com/trust-center/security-advisories/bt26-03">BeyondTrust: Security Advisory BT26-03</a> (primary)</li>
+        <li><a href="https://www.bleepingcomputer.com/news/security/beyondtrust-warns-of-critical-flaws-in-remote-access-software/">BleepingComputer: BeyondTrust warns of critical flaws in remote access software</a></li>
+        <li><a href="https://www.techtimes.com/articles/319870/20260707/beyondtrust-fixes-cvss-92-pam-bypass-tools-state-hackers-have-targeted-18-months.htm">Tech Times: BeyondTrust fixes CVSS 9.2 PAM bypass in tools state hackers have targeted 18 months</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Linux kernel</span><span class="when">Patched 4 Jul</span></div>
+    <h3>"Januscape": a 16-year-old Linux KVM bug let guest VMs crash and potentially escape to the host</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> nearly every Linux kernel shipped in the last 16 years carries this bug, and it works identically on both Intel and AMD hosts &mdash; any multi-tenant environment running untrusted guests with nested virtualization enabled should treat this as urgent, not routine, patching.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>CVE-2026-53359, nicknamed Januscape, is a race condition in KVM's x86 shadow memory-management unit where the host can associate a shadow page-table entry with the wrong guest frame number, corrupting host kernel state. The bug was introduced in 2010 and fixed upstream on 16 June 2026 &mdash; roughly 16 years of exposure across both Intel (VMX/EPT) and AMD (SVM/NPT) processors, making it the first known KVM bug exploitable via an identical trigger on both vendors' virtualization extensions. Exploitation requires root inside the guest VM and nested virtualization enabled on the host; a public proof-of-concept reliably panics the host within seconds to minutes using a loadable kernel module. Fixed stable kernel versions shipped 4 July 2026 (7.1.3, 6.18.38, 6.12.95, 6.6.144, 6.1.177, 5.15.211, 5.10.260). Operators who can't patch immediately can disable nested virtualization (<code>kvm_intel.nested=0</code> / <code>kvm_amd.nested=0</code>) to remove the attack path for untrusted guests.</p>
+      <ul class="sources">
+        <li><a href="https://www.securityweek.com/linux-kernel-vulnerability-allows-vm-escape-on-intel-and-amd-systems/">SecurityWeek: Linux kernel vulnerability allows VM escape on Intel and AMD systems</a></li>
+        <li><a href="https://blog.cloudlinux.com/januscape-cve-2026-53359-mitigation-and-kernel-update-on-cloudlinux/">CloudLinux: Januscape (CVE-2026-53359) &mdash; mitigation and kernel update</a></li>
+        <li><a href="https://thehackernews.com/2026/07/16-year-old-linux-kvm-flaw-lets-guest.html">The Hacker News: 16-year-old Linux KVM flaw lets guest VMs escape to host</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Developer platforms</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">DeepSeek</span><span class="when">Deadline 24 Jul</span></div>
+    <h3>DeepSeek's legacy API aliases stop working 24 July &mdash; and the reasoning-model migration has a capability trap</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the model-name swap is a one-line change, but teams that migrate <code>deepseek-reasoner</code> without checking where it now points will silently downgrade production reasoning workloads to a cheaper, lower-capability tier at the same price expectation.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>DeepSeek V4 shipped 24 April 2026 in two variants, V4-Pro and V4-Flash, available both via DeepSeek's hosted API and as open weights on Hugging Face. Any team still calling the legacy <code>deepseek-chat</code> or <code>deepseek-reasoner</code> aliases must update their model parameter before 24 July 2026, 15:59 UTC, after which those aliases stop responding with no announced extension; the fix is a same-base-URL, same-API-key swap to <code>deepseek-v4-pro</code> or <code>deepseek-v4-flash</code>. The trap: <code>deepseek-reasoner</code> maps to <code>deepseek-v4-flash</code>'s thinking mode, not to V4-Pro, so teams that assumed the alias preserved their reasoning tier will end up on Flash-tier reasoning at Flash pricing &mdash; a capability mismatch that won't surface until output quality drops.</p>
+      <ul class="sources">
+        <li><a href="https://api-docs.deepseek.com/news/news260424">DeepSeek API Docs: DeepSeek V4 preview release</a> (primary)</li>
+        <li><a href="https://api-docs.deepseek.com/updates">DeepSeek API Docs: Change log</a> (primary)</li>
+        <li><a href="https://dev.to/agdex_ai/deepseek-v4-api-migration-guide-everything-before-the-july-24-2026-deadline-4m30">DEV Community: DeepSeek V4 API migration guide &mdash; everything before the 24 July deadline</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 8 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
