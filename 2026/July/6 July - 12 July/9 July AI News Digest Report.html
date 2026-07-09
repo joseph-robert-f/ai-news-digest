@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 9 July 2026</title>
+  <meta name="description" content="OpenAI's GPT-5.6 (Sol, Terra, Luna) and xAI/SpaceXAI's Grok 4.5 both go fully public today, the first day this year all three leading U.S. labs have a flagship model simultaneously available; Prime Intellect raises a $130M Series A at a $1B valuation, DeepSeek reportedly starts building its own AI inference chip, a critical Gitea auth-bypass bug is under active exploitation, and Microsoft ships a 10x-faster, Go-native TypeScript 7.0.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>9 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: 7&ndash;9 Jul (last ~24&ndash;72 hours)</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>OpenAI's GPT-5.6 (Sol, Terra, Luna) went fully public today</strong> after a 13-day government-vetted preview, the same day xAI/SpaceXAI's Grok 4.5 also opened to the public &mdash; the first day this year all three leading U.S. frontier labs have a flagship model simultaneously available.</li>
+      <li><strong>Prime Intellect raised a $130M Series A at a $1B valuation</strong> to help enterprises train their own agentic AI systems, led by Radical Ventures with Nvidia Ventures, Intel Capital, and Dell Technologies Capital joining.</li>
+      <li><strong>DeepSeek is reportedly developing its own AI inference chip</strong> to cut reliance on Nvidia and Huawei, sending Nvidia shares lower on the news.</li>
+      <li><strong>A critical Gitea Docker vulnerability (CVSS 9.8)</strong> that lets attackers impersonate any user &mdash; including admins &mdash; with a single forged HTTP header is now under active exploitation, 13 days after disclosure.</li>
+      <li><strong>Microsoft shipped TypeScript 7.0</strong>, a full native port of the compiler to Go that delivers roughly 8&ndash;12x faster builds and true multi-threaded compilation.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Top story &mdash; frontier models converge</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">OpenAI &times; xAI</span><span class="when">9 Jul</span></div>
+    <h3>GPT-5.6 and Grok 4.5 both go fully public today, closing out the government-review era for this model generation</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> for months, frontier releases from OpenAI, Anthropic, and xAI have been staggered or restricted pending government review under the White House's national-security-testing regime &mdash; today is the first day this year all three labs' flagship models are simultaneously and fully public, resetting the competitive clock for enterprises choosing a default model.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>OpenAI's GPT-5.6 family &mdash; Sol (flagship, $5/$30 per million input/output tokens), Terra (everyday-use tier matching GPT-5.5 performance at half the price, $2.50/$15), and Luna (lowest-cost tier, $1/$6) &mdash; launched across ChatGPT, the API, and Codex on 9 July, roughly 13 days after a government-coordinated preview to vetted organizations began on 26 June. The Trump administration's Department of Commerce, through its Center for AI Standards and Innovation, ran additional testing before clearing the wider release. Separately, xAI/SpaceXAI opened Grok 4.5 &mdash; built on a 1.5-trillion-parameter "V9" foundation and trained alongside Cursor, the coding editor SpaceX agreed to acquire for $60B in June &mdash; to the public on 9 July at $2/$6 per million tokens, an "Opus-class" performance claim at roughly 80 tokens/second; it is not yet available to EU users. Both launches land in the same week Google DeepMind pushed its Gemini 3.5 Pro release back to 17 July for an architecture rebuild, leaving OpenAI and xAI to set the pace for now.</p>
+      <ul class="sources">
+        <li><a href="https://www.engadget.com/2210308/openai-rolls-out-gpt5-6-july-9/">Engadget: OpenAI gets permission to roll out GPT-5.6 to the public on July 9</a></li>
+        <li><a href="https://help.openai.com/en/articles/20001325-a-preview-of-gpt-56-sol-terra-and-luna">OpenAI Help Center: A preview of GPT-5.6 Sol, Terra, and Luna</a> (primary)</li>
+        <li><a href="https://thetechportal.com/2026/07/09/spacexai-launches-grok-4-5-its-first-ai-model-built-with-cursor-featuring-advanced-legal-and-finance-capabilities/">The Tech Portal: SpaceXAI launches Grok 4.5, its first AI model built with Cursor</a></li>
+        <li><a href="https://finance.biggo.com/news/6f0c6bb2-795f-4c57-9d09-6db691d7638a">BigGo Finance: Google delays Gemini 3.5 Pro launch to July 17 for full architectural rebuild</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Business &amp; markets</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Prime Intellect</span><span class="when">8 Jul</span></div>
+    <h3>Prime Intellect raises $130M Series A at $1B valuation to let enterprises train their own agentic AI</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the round &mdash; and its backers &mdash; is a bet that reinforcement-learning tooling lets companies stop renting frontier-lab intelligence and start building narrowly tuned agents in-house, a direct hedge against dependency on OpenAI, Anthropic, or Google.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Prime Intellect, founded in 2024, provides compute and reinforcement-learning tooling that lets organizations train their own agentic systems rather than rely on frontier labs. The Series A was led by Radical Ventures, with Nvidia Ventures, Intel Capital, Dell Technologies Capital, and Iconiq participating alongside a list of founder-angels including Aravind Srinivas (Perplexity) and Aaron Levie (Box); total funding is now over $150M. The company says it has reached a $100M annualized revenue run rate with customers including Ramp and Zapier.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/">TechCrunch: Prime Intellect raises $130M Series A to help enterprises build their own AI agents</a></li>
+        <li><a href="https://www.primeintellect.ai/blog/series-a">Prime Intellect: $130M Series A to build the open superintelligence stack</a> (primary)</li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">DeepSeek</span><span class="when">7&ndash;8 Jul</span></div>
+    <h3>DeepSeek reportedly starts building its own AI inference chip to cut Nvidia and Huawei dependence</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> even an early-stage, inference-only chip effort from China's most prominent open-model lab signals that Beijing's push for domestic AI silicon is widening beyond Huawei &mdash; though export controls mean DeepSeek's chip, if it ships, will likely be confined to the domestic market.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>DeepSeek is reportedly in early discussions with chip-design, foundry, and memory partners to develop a proprietary chip focused on inference &mdash; serving trained models to users &mdash; rather than training, according to people familiar with the matter. The effort remains early-stage; designing a competitive AI chip typically takes years and significant capital, and U.S. export controls would likely bar DeepSeek from accessing the most advanced foundry capacity needed to sell such a chip outside China. Nvidia shares dipped on the report, though analysts note the near-term competitive impact is limited given Nvidia's roughly 81% share of the AI chip market; Huawei still holds about half of China's domestic AI chip market, with Alibaba and Baidu also building their own silicon.</p>
+      <ul class="sources">
+        <li><a href="https://finance.yahoo.com/technology/ai/articles/exclusive-chinas-deepseek-developing-own-103437335.html">Yahoo Finance/Reuters: Exclusive &mdash; China's DeepSeek developing its own AI chip, sources say</a></li>
+        <li><a href="https://www.semafor.com/article/07/07/2026/deepseeks-ai-chip-plans">Semafor: DeepSeek's AI chip plans</a></li>
+        <li><a href="https://techstartups.com/2026/07/07/deepseek-is-building-its-own-ai-chip-to-cut-reliance-on-nvidia-and-huawei/">Tech Startups: DeepSeek is building its own AI chip to cut reliance on Nvidia and Huawei</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Labor market</span><span class="when">Through 8 Jul</span></div>
+    <h3>2026 tech layoffs approach 150,000 as more than half of cuts now name-check AI</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the same companies citing AI for headcount reductions are simultaneously expanding hiring in ML infrastructure, model evaluation, and AI safety &mdash; this isn't a broad AI-driven contraction so much as a reallocation, and it's happening faster than in 2025.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Tracking sites following 2026 tech layoffs put the year's total near 150,000 jobs cut, with a running tally of employers that have explicitly cited AI or automation as a factor now covering well over half of this year's layoff events &mdash; already surpassing the number of AI-attributed cuts recorded in all of 2025. The pattern is uneven: several of the same firms making cuts in recruiting, marketing, or experimental teams are simultaneously hiring for machine-learning infrastructure, model evaluation, AI safety, and applied research roles, which recruiters describe as being in acute shortage.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/">TechCrunch: Every major tech layoff in 2026 that has name-checked AI</a></li>
+        <li><a href="https://finance.yahoo.com/sectors/technology/articles/2026-tech-layoffs-near-150-110000224.html">Yahoo Finance: 2026 tech layoffs near 150,000 as companies pour money into AI</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security &amp; software engineering</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Gitea</span><span class="when">Active 8&ndash;9 Jul</span></div>
+    <h3>Critical Gitea auth-bypass bug (CVSS 9.8) now under active exploitation via a single forged HTTP header</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> any self-hosted Gitea Docker instance left on default settings with reverse-proxy auth enabled can be fully impersonated &mdash; including as an admin &mdash; by anyone who can reach it, and researchers have already traced live scanning traffic against it.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>CVE-2026-20896 lets an unauthenticated remote attacker impersonate any user, including administrators, by injecting a crafted <code>X-WEBAUTH-USER</code> HTTP header when Gitea's reverse-proxy authentication is enabled. The root cause: Gitea Docker images before 1.26.3 shipped with a default that accepted this header from any source IP instead of enforcing an allowlist. The fix landed in Gitea 1.26.3 last month, removing the permissive wildcard and making reverse-proxy auth opt-in. Thirteen days after public disclosure, researchers observed threat actors actively probing for vulnerable instances &mdash; initial reconnaissance traced to a ProtonVPN exit node consistent with a VPN-exit scanner &mdash; against an estimated 6,200-plus internet-facing Gitea instances, though it's unclear how many remain unpatched and vulnerable.</p>
+      <ul class="sources">
+        <li><a href="https://www.securityweek.com/critical-gitea-flaw-under-active-exploitation-researchers-warn/">SecurityWeek: Critical Gitea flaw under active exploitation, researchers warn</a></li>
+        <li><a href="https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html">The Hacker News: Threat actors probe Gitea Docker flaw 13 days after disclosure</a></li>
+        <li><a href="https://hivesecurity.gitlab.io/blog/gitea-forgejo-nine-cves-1263-security-release-2026/">Hive Security: One HTTP header, full admin access &mdash; Gitea's June 2026 security release explained</a> (primary technical writeup)</li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">TypeScript</span><span class="when">8 Jul</span></div>
+    <h3>TypeScript 7.0 ships as a full native Go port, roughly 8&ndash;12x faster on typical builds</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is the biggest compiler-architecture change in TypeScript's history &mdash; multi-threaded native compilation removes a long-standing bottleneck for large codebases, but teams depending on the current JS-based compiler API need to plan a migration since programmatic API parity isn't landing until 7.1.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Microsoft's TypeScript 7.0, announced 8 July, is a from-scratch native port of the compiler and language server to Go, preserving the original codebase's structure and logic to keep output consistent with the existing compiler. The rewrite unlocks true multi-threaded compilation and a rebuilt <code>--watch</code> mode built on the Parcel bundler's file-watcher, delivering roughly 8&ndash;12x faster full builds in Microsoft's benchmarks. Teams that depend on the current JavaScript-based compiler API can run the two versions side by side via the <code>@typescript/typescript6</code> compatibility package until stable programmatic APIs land in TypeScript 7.1. A native preview is already enabled by default in Visual Studio 2026 18.6 Insiders.</p>
+      <ul class="sources">
+        <li><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/">Microsoft TypeScript Blog: Announcing TypeScript 7.0</a> (primary)</li>
+        <li><a href="https://www.infoworld.com/article/4194567/revving-up-microsofts-10x-faster-typescript-7.html">InfoWorld: Revving up Microsoft's 10x faster TypeScript 7</a></li>
+        <li><a href="https://visualstudiomagazine.com/articles/2026/07/08/typescript-7-arrives-to-rock-vs-code-with-go-powered-speed.aspx">Visual Studio Magazine: TypeScript 7 arrives to rock VS Code with Go-powered speed</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 9 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
