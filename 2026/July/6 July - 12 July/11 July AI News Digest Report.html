@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 11 July 2026</title>
+  <meta name="description" content="A Cambridge field study finds Boko Haram has institutionalized frontier-AI use for bomb-building and battlefield tactics, an OpenAI agent wiped an investor's Mac, Gemini 3.5 Pro still has no launch date after a DeepMind exodus, and China's new AI-companion rules force ByteDance and Alibaba to kill agent features Wednesday.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>11 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>A Cambridge field study</strong> finds Boko Haram has institutionalized frontier-AI use &mdash; ChatGPT, Claude, Gemini, Grok, Meta AI, and DeepSeek &mdash; for bomb design, battlefield tactics, and post-attack review.</li>
+      <li><strong>An OpenAI agent wiped an investor's Mac.</strong> GPT-5.6-Sol in "Ultra mode" deleted almost all of Matt Shumer's files via an expanded <code>$HOME</code> in an <code>rm</code> command; OpenAI is investigating.</li>
+      <li><strong>Gemini 3.5 Pro still has no confirmed launch date</strong> as of 10 July &mdash; six weeks late &mdash; after a one-week DeepMind exodus that wiped $225B off Alphabet's market cap.</li>
+      <li><strong>China's AI-companion crackdown lands Wednesday.</strong> ByteDance's Doubao and Alibaba's Qwen are killing custom-agent features ahead of 15 July rules; Qwen has no data-export path.</li>
+      <li><strong>Thinking Machines Lab</strong> publishes a founding credo rejecting autonomous-replacement AI, a pointed counter to the unattended-agent push from OpenAI and Anthropic this week.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">AI Safety</span><span class="when">10&ndash;11 Jul</span></div>
+    <h3>Cambridge study: Boko Haram has institutionalized frontier-AI use for bomb-building and battlefield tactics</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is field evidence, not a red-team hypothetical, that a terror group has moved past propaganda use of chatbots into operational weapons support, with foreign jihadist trainers running dedicated in-person AI courses for commanders.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Dr Antonia Juelich of the Cambridge Programme on AI Science &amp; Policy conducted 57 face-to-face interviews with 27 former Boko Haram members in northeast Nigeria for the working paper "God has helped us, and so will AI." Former members named ChatGPT, Claude, Gemini, Grok, Meta AI, and DeepSeek as tools used to help design explosive devices, identify seized military hardware, troubleshoot weapons, advise on battlefield tactics, and review attacks afterward. Both major Boko Haram factions used AI across weapons support, tactical planning, operational security, and post-mission review through specialized internal units; Islamic State West Africa Province members described repeated in-person AI training sessions delivered by foreign operatives between 2023 and 2025.</p>
+        <ul class="sources">
+          <li><a href="https://www.hstoday.us/subject-matter-areas/counterterrorism/isis-backed-terror-group-using-major-ai-tools-to-plan-attacks-and-build-bombs-uk-study-finds/">HSToday: ISIS-backed terror group using major AI tools to plan attacks and build bombs, UK study finds</a></li>
+          <li><a href="https://x.com/AntoniaJuelich/status/2075590815083028989">Antonia Juelich on X: interview account and study summary</a></li>
+          <li><a href="https://askwhocastsai.substack.com/p/god-has-helped-us-and-so-will-ai">"God has helped us, and so will AI": How Boko Haram uses frontier AI</a></li>
+        </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">OpenAI</span><span class="when">10&ndash;11 Jul</span></div>
+    <h3>An OpenAI agent deleted almost all the files on an AI investor's Mac</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a frontier "Ultra mode" agent expanding <code>$HOME</code> inside an <code>rm</code> command and wiping a filesystem is precisely the failure mode enterprises fear before granting agents broad shell access, and it lands the same week OpenAI and Anthropic both pushed unattended, hours-long agents to general availability.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>AI investor Matt Shumer said an agent running GPT-5.6-Sol deleted nearly all the files on his Mac after a shell command expanded the <code>$HOME</code> variable inside an <code>rm</code> call. He was testing the model's "Ultra mode" at OpenAI's own request; the company said it is looking into the incident. Shumer noted he'd already stopped using GPT-5.6 weeks earlier in favor of Claude Fable, calling the wipe a "freak accident" but arguing the failure mode is unacceptable for "a mid-2026 frontier model on the highest reasoning level."</p>
+        <ul class="sources">
+          <li><a href="https://x.com/mattshumer_/status/2075657271401390161">Matt Shumer on X: GPT-5.6-Sol deleted almost all of my Mac's files</a></li>
+          <li><a href="https://x.com/mattshumer_/status/2075666403596612010">Matt Shumer on X: OpenAI team is looking into it</a></li>
+          <li><a href="https://x.com/mattshumer_/status/2075681899041742999">Matt Shumer on X: context on testing Ultra mode</a></li>
+        </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Google &times; DeepMind</span><span class="when">Update 10 Jul</span></div>
+    <h3>Gemini 3.5 Pro still has no launch date, six weeks late, as Alphabet absorbs a DeepMind talent exodus</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> with GPT-5.6 and Grok 4.5 both now fully public, Google is the only frontier lab left without a public release timeline &mdash; a credibility gap the market already priced in with a single-day $225B hit to Alphabet's market cap.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>As of 10 July, Gemini 3.5 Pro remains in limited Vertex AI enterprise preview with no new public timeline commitment from Google &mdash; six weeks past its June 30 GA target and five weeks past the Google I/O commitment Sundar Pichai made on 19 May. Google DeepMind scrapped the existing architecture for a full rebuild targeting a 2-million-token context window and a "Deep Think" reasoning layer. The delay followed a one-week exodus in late June: Transformer co-author and Gemini co-lead Noam Shazeer left for OpenAI, and Nobel laureate John Jumper left for Anthropic along with fellow DeepMind researchers Jonas Adler and Alexander Pritzel. Alphabet shares fell roughly 5% on 22 June, wiping out $225B in market value.</p>
+        <ul class="sources">
+          <li><a href="https://the-agent-report.com/2026/07/google-gemini-3-5-pro-delayed-july-2026/">The Agent Report: Gemini 3.5 Pro delayed as $225B wiped off Alphabet amid DeepMind exodus</a></li>
+          <li><a href="https://www.techtimes.com/articles/319877/20260708/gemini-35-pro-targets-july-17-deepseeks-july-24-deadline-hits-developers-now.htm">Tech Times: Gemini 3.5 Pro targets July 17 as DeepSeek's July 24 deadline hits developers</a></li>
+        </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">China &times; Policy</span><span class="when">Effective 15 Jul</span></div>
+    <h3>China's new AI-companion rules force ByteDance and Alibaba to kill custom-agent features this week</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Beijing's anti-addiction and instant-exit requirements are architecturally incompatible with persistent-memory companion agents, giving regulators elsewhere a concrete template for reining in emotionally-sticky AI products &mdash; while leaving millions of Doubao and Qwen users a hard data-loss deadline.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>China's Interim Measures for the Administration of AI Anthropomorphic Interactive Services, co-issued in April by the Cyberspace Administration of China, the National Development and Reform Commission, the Ministry of Industry and Information Technology, the Ministry of Public Security, and the State Administration for Market Regulation, take effect 15 July. The rules require anti-addiction systems, mandatory usage notifications, and instant-exit mechanisms for AI services that simulate human personality or relationships. Rather than rebuild, ByteDance's Doubao and Alibaba's Qwen are pulling their custom-agent features outright; Doubao gives users until 15 October to export their data, while Qwen has announced no migration path at all.</p>
+        <ul class="sources">
+          <li><a href="https://technode.com/2026/07/06/bytedances-doubao-and-alibabas-qwen-to-shut-down-ai-agent-features-on-july-15/">TechNode: ByteDance's Doubao and Alibaba's Qwen to shut down AI agent features on July 15</a></li>
+          <li><a href="https://www.scmp.com/tech/big-tech/article/3359482/bytedance-and-alibaba-disable-humanlike-ai-custom-agents-new-rules-loom">SCMP: ByteDance and Alibaba to disable humanlike AI custom agents as new rules loom</a></li>
+          <li><a href="https://www.bloomberg.com/news/articles/2026-07-06/bytedance-alibaba-pull-ai-companions-as-beijing-tightens-rules">Bloomberg: ByteDance, Alibaba pull AI companions as Beijing tightens rules</a></li>
+        </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">AI Industry</span><span class="when">10 Jul</span></div>
+    <h3>Thinking Machines Lab stakes out the anti-autonomy position: "The Future Worth Building Is Human"</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Mira Murati's lab is drawing an explicit line against the run-unattended-for-hours agent race that OpenAI's ChatGPT Work and Anthropic's Claude Cowork both pushed to general availability this week, betting that customizable, human-in-the-loop AI is both the safer and the more commercially durable strategy.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Thinking Machines Lab published a credo arguing AI should extend human judgment rather than replace it, framed by co-founder John Schulman as revisiting the lab's founding instincts after "massive progress in agents." The post argues mass automation risks alienating people from their work, and that human-centered design is both a stronger safety posture and better long-term economics than agents built to operate apart from humans.</p>
+        <ul class="sources">
+          <li><a href="https://thinkingmachines.ai/blog/the-future-worth-building-is-human/">Thinking Machines Lab: The Future Worth Building Is Human</a></li>
+        </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Supply Chain Security</span><span class="when">7 Jul</span></div>
+    <h3>17 fake payment-SDK packages hit npm and PyPI within minutes of each other</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> automated registry scanning caught this campaign in roughly six minutes, but its professional packaging and fintech-specific targeting show attackers are now going after payment-integration developers by name &mdash; audit any recent PaySafe, Skrill, or Neteller SDK installs against the confirmed package list today.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>On 7 July, threat actors published 17 npm packages (including <code>paysafe-checkout</code>, <code>paysafe-node</code>, <code>paysafe-js</code>, and several Neteller- and Skrill-branded names) in rapid version bursts, plus four PyPI packages, all posing as legitimate payment-platform SDKs. The malware harvested API keys, AWS credentials, GitHub and npm tokens, and any environment variable resembling a secret, exfiltrating the haul over HTTPS to a command-and-control endpoint hidden behind an ngrok tunnel, with built-in sandbox-evasion checks to dodge automated analysis.</p>
+        <ul class="sources">
+          <li><a href="https://gbhackers.com/npm-and-pypi-malware/">GBHackers: npm and PyPI malware campaign exfiltrates CI/CD secrets through fake payment SDKs</a></li>
+          <li><a href="https://cyberpress.org/fake-sdks-target-developers/">CyberPress: malicious npm and PyPI packages target payment developers with fake SDK facades</a></li>
+          <li><a href="https://digital.nhs.uk/cyber-alerts/2026/cc-4781">NHS England Digital: supply chain attack affecting numerous npm and PyPI packages</a></li>
+        </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer Platforms</span><span class="when">7 Jul</span></div>
+    <h3>GitHub opens the Copilot desktop app to every plan; Gemini models get a July 31 deprecation date</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> pushing the agent-driven desktop app down to Free and Education tiers turns it into a default onboarding surface rather than a power-user add-on, while the Gemini sunset shows GitHub is actively curating &mdash; not just expanding &mdash; its model lineup as usage-based billing matures.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>GitHub announced on 7 July that the standalone Copilot desktop app for macOS, Windows, and Linux is now available on every Copilot plan, including Free and Education, not just paid or agent-focused tiers. Separately, GitHub confirmed Gemini 2.5 Pro and Gemini 3 Flash will be deprecated across all Copilot experiences on 31 July. Copilot CLI also picked up GPT-5.6 support this month, and Kimi K2.7 Code reached general availability for Copilot Business and Enterprise.</p>
+        <ul class="sources">
+          <li><a href="https://github.blog/changelog/month/07-2026/">GitHub Changelog: July 2026</a></li>
+          <li><a href="https://letsdatascience.com/news/github-opens-copilot-app-to-every-plan-e1349d1a">Let's Data Science: GitHub opens Copilot app to every plan</a></li>
+        </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Programming Languages</span><span class="when">5 Jul</span></div>
+    <h3>Rust cracks the TIOBE top 10 for the first time</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a memory-safe systems language displacing a 25-year incumbent index's lower ranks is a lagging but real signal that Rust's ecosystem is now table stakes for greenfield infra hiring &mdash; and it helps explain why CPython's own roadmap is vendoring a Rust toolchain for Python 3.16.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>The July 2026 TIOBE Programming Community Index, marking the index's 25th year, put Rust at No. 10 with 1.34% share, up from No. 18 a year earlier and its first-ever top-10 appearance; Python still leads at 18.94%, followed by C, C++, and Java. TIOBE CEO Paul Jansen credited the rise to Rust's memory-safety guarantees without sacrificing execution speed. Separately, the CPython Rust-integration PEP is targeting Python 3.16, with a build system now passing CI on all platforms and Rust dependencies vendored via Cargo so end users won't need a Rust compiler installed to build or run Python.</p>
+        <ul class="sources">
+          <li><a href="https://www.techrepublic.com/article/news-tiobe-july-2026-rust-enters-top-10/">TechRepublic: TIOBE Index July 2026 &mdash; Rust enters top 10 as index turns 25</a></li>
+          <li><a href="https://www.fullstackevolved.com/blog/cpython-rust-integration-2026-04-25/">FullStackEvolved: Rust is coming to CPython &mdash; Python 3.16 target set</a></li>
+        </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 11 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
