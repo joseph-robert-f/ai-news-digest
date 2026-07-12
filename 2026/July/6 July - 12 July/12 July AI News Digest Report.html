@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 12 July 2026</title>
+  <meta name="description" content="Apple sues OpenAI for trade-secret theft as OpenAI's sixth senior safety leader in two years departs and its Atlas browser shuts down after nine months; SK Hynix pulls off the largest foreign IPO in U.S. history on AI-memory demand; and a trojanized npm package is caught harvesting credentials straight out of Claude Desktop, Cursor, and other AI coding tools.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>12 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: 9&ndash;12 Jul (last ~24&ndash;72 hours)</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Apple sued OpenAI for trade-secret theft</strong> on 10 July, alleging its hardware chief and other ex-Apple staff funneled confidential silicon and on-device AI IP into OpenAI's hardware push &mdash; the first direct litigation between the former partners.</li>
+      <li><strong>OpenAI's head of safety systems, Johannes Heidecke, is leaving</strong> as the safety org is folded under the research team &mdash; the sixth senior safety departure in two years.</li>
+      <li><strong>OpenAI is shutting down its Atlas browser</strong> after roughly nine months, folding its agentic-browsing features into the ChatGPT app and a Chrome extension instead.</li>
+      <li><strong>SK Hynix raised $26.5B</strong> in the largest-ever U.S. IPO by a foreign company, a direct bet that AI memory-chip demand breaks the historical boom-bust cycle.</li>
+      <li><strong>A trojanized npm package (jscrambler)</strong> was caught harvesting credentials specifically from Claude Desktop, Cursor, Windsurf, VS Code, and Zed &mdash; AI coding-tool credential stores are now a named target class for supply-chain malware.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Top story &mdash; Apple and OpenAI go to court</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">Apple &times; OpenAI</span><span class="when">10 Jul</span></div>
+    <h3>Apple sues OpenAI for trade-secret theft, turning a former partner into a litigant weeks before OpenAI's expected IPO filing</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is the first direct litigation between the two companies and reframes their relationship as fully adversarial just as both race into on-device and hardware AI &mdash; a discovery process could surface internal OpenAI hardware plans right as the company is laying groundwork for a public listing.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Apple filed suit against OpenAI on 10 July in the Northern District of California, alleging a "coordinated campaign" in which OpenAI's hardware chief Tang Tan &mdash; a former Apple VP &mdash; and other ex-Apple staff, including engineer Chang Liu, carried confidential silicon and on-device AI designs into OpenAI's hardware push (built around the former io Products team led by Jony Ive). The complaint also references a laptop-theft allegation. Apple is seeking damages and an injunction. OpenAI has not yet filed a public response.</p>
+      <ul class="sources">
+        <li><a href="https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html">CNBC: Apple sues OpenAI over alleged trade secret theft</a></li>
+        <li><a href="https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/">TechCrunch: Apple sues OpenAI over alleged trade secret theft</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-10/apple-sues-openai-for-trade-secret-theft-in-blockbuster-case">Bloomberg: Apple sues OpenAI for trade secret theft in blockbuster case</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">OpenAI &mdash; leadership and strategy</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">OpenAI</span><span class="when">10&ndash;11 Jul</span></div>
+    <h3>OpenAI's safety-systems chief departs; safety org now reports through research, not standalone</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Johannes Heidecke is the sixth senior safety-focused leader to leave OpenAI in roughly two years, and folding safety systems under the research organization &mdash; rather than keeping it independent &mdash; reads as further consolidation of safety oversight right as the company pushes toward an IPO.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Heidecke, OpenAI's head of safety systems, is leaving after an internal reshuffle that puts safety systems under VP of Research (newly titled VP of Research &amp; Safety) Mia Glaese, with Saachi Jain named interim head. The departure follows chief futurist Joshua Achiam's exit, announced the same week after nine years at the company, and continues a pattern of senior safety-focused departures stretching back roughly two years.</p>
+      <ul class="sources">
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-11/openai-safety-head-heidecke-to-leave-firm-after-reshuffle-wired">Bloomberg (via Wired): OpenAI safety head Heidecke to leave firm after reshuffle</a></li>
+        <li><a href="https://www.engadget.com/2212941/openai-head-of-safety-leaving-company-reorganization/">Engadget: OpenAI head of safety leaving amid company reorganization</a></li>
+        <li><a href="https://www.techbuzz.ai/articles/openai-s-chief-futurist-joshua-achiam-exits-after-9-years">TechBuzz: OpenAI's chief futurist Joshua Achiam exits after 9 years</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">OpenAI</span><span class="when">Announced 9 Jul</span></div>
+    <h3>OpenAI shuts down its Atlas browser after roughly nine months</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Atlas dies less than a year after launch, with OpenAI folding its agentic-browsing features into the ChatGPT desktop app and a Chrome extension &mdash; a tacit admission that the browser was a feature, not a destination, and a reminder that even well-funded agent products can get cut fast if adoption doesn't stick.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>OpenAI is discontinuing the standalone Atlas browser, with a deprecation date set for 9 August; users are being pointed back to Chrome, with Atlas's agentic-browsing capabilities moving into the main ChatGPT app and a browser extension instead. OpenAI's broader browsing ambitions continue, just without a dedicated browser shell.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/">TechCrunch: OpenAI is shutting down Atlas, but its AI browser ambitions are still growing</a></li>
+        <li><a href="https://www.theregister.com/ai-and-ml/2026/07/10/openais-atlas-browser-doesnt-make-it-to-its-first-birthday/5269818">The Register: OpenAI's Atlas browser doesn't make it to its first birthday</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Models &amp; research</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Z.ai &times; Vercel</span><span class="when">Reported 11 Jul</span></div>
+    <h3>Z.ai's open-weight GLM-5.2 beats GPT-5.5 on a long-horizon coding benchmark at a fraction of the price</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a Chinese open-weight model outscoring GPT-5.5 on real coding-agent tasks &mdash; not just a synthetic leaderboard &mdash; while costing far less is concrete evidence that the coding-agent market is no longer a closed-lab-only contest.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Z.ai (Zhipu) reports GLM-5.2 scoring 62.1% on SWE-bench Pro versus 58.6% for GPT-5.5, at roughly one-sixth the cost, a company-reported benchmark corroborated by independent tracker llm-stats.com. The model went live on Vercel's AI Gateway on 16 June, three days after release, and Vercel CEO Guillermo Rauch said publicly he was "genuinely impressed, almost shocked" by its coding ability. Note: the benchmark figures are Z.ai's own reporting, standard practice for model-launch comparisons but not an independently re-run result.</p>
+      <ul class="sources">
+        <li><a href="https://huggingface.co/blog/zai-org/glm-52-blog">Z.ai: GLM-5.2 release blog</a> (primary)</li>
+        <li><a href="https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost">VentureBeat: Z.ai's open-weight GLM-5.2 beats GPT-5.5 on multiple long-horizon coding benchmarks for 1/6th the cost</a></li>
+        <li><a href="https://llm-stats.com/benchmarks/swe-bench-pro">llm-stats.com: SWE-bench Pro leaderboard</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Business &amp; markets</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">SK Hynix</span><span class="when">10 Jul</span></div>
+    <h3>SK Hynix raises $26.5B in the largest-ever U.S. IPO by a foreign company</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> investors are betting that AI's insatiable demand for high-bandwidth memory &mdash; where SK Hynix holds roughly 60% of global supply &mdash; breaks the chip industry's historical boom-and-bust cycle; the stock popped about 14% on debut.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>SK Hynix's U.S. listing raised $26.5B, the largest-ever American IPO by a foreign company, with shares jumping roughly 14% on their debut. The company controls an estimated 60% of the global HBM (high-bandwidth memory) market, the component in shortest supply for AI accelerator buildouts, and is facing pressure from U.S. policymakers to build new domestic fabs.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/">TechCrunch: SK Hynix raises $26.5B in the biggest foreign IPO in U.S. history, is urged to build new U.S. fabs</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-10/sk-hynix-debut-is-a-bet-that-ai-breaks-boom-and-bust-chip-cycle">Bloomberg: SK Hynix debut is a bet that AI breaks boom-and-bust chip cycle</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Meta</span><span class="when">Reported 9 Jul</span></div>
+    <h3>Meta's in-house "Iris" AI chip moves into production in September, part of a bid to cut Nvidia reliance</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a working in-house training/inference chip &mdash; built with Broadcom and fabricated by TSMC &mdash; gives Meta a concrete alternative to Nvidia silicon as it plans to roughly double its AI compute capacity next year, inside 2026 capital spending guidance of $125&ndash;145B directed mostly at AI infrastructure.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Reuters reported, citing an internal memo, that Meta's "Iris" chip &mdash; part of the company's MTIA (Meta Training and Inference Accelerator) program, designed with Broadcom and fabricated by TSMC &mdash; cleared roughly six weeks of testing without major issues and will move into production in September. The chip is one of four planned MTIA generations. Meta has guided to $125&ndash;145B in total 2026 capital expenditure, with most of it aimed at AI infrastructure, and plans to roughly double compute capacity from about 7GW in 2026 to 14GW in 2027.</p>
+      <ul class="sources">
+        <li><a href="https://www.cnbc.com/2026/07/09/meta-to-put-ai-chip-into-production-in-september-report.html">CNBC (citing Reuters): Meta to put AI chip into production in September as it looks to double computing capacity</a></li>
+        <li><a href="https://finance.yahoo.com/technology/ai/articles/exclusive-meta-put-ai-chip-112222555.html">Reuters (via Yahoo Finance): Exclusive &mdash; Meta to put AI chip into production in September</a> (primary reporting)</li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Policy &amp; governance</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Federal Reserve</span><span class="when">9 Jul</span></div>
+    <h3>Federal Reserve forms an AI task force, taps Marc Andreessen to help assess AI's effect on jobs and growth</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> it's the first time the Fed has formally institutionalized an AI-impact review body, and having a prominent AI investor co-lead the "Productivity and Jobs" panel could shape how the central bank talks about AI-driven growth and employment effects in its policy messaging by year-end.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>New Fed Chair Kevin Warsh structured five external task forces reviewing aspects of monetary policy; Marc Andreessen (Andreessen Horowitz) co-leads the panel assessing AI's effects on GDP growth and employment, with a mandate to report findings by year-end.</p>
+      <ul class="sources">
+        <li><a href="https://www.washingtonpost.com/business/2026/07/09/federal-reserve-enlists-marc-andreessen-advise-ai-under-warsh/">Washington Post: Federal Reserve enlists Marc Andreessen to advise on AI under Warsh</a></li>
+        <li><a href="https://www.axios.com/2026/07/09/fed-warsh-task-force-andreessen">Axios: Fed's Warsh taps Andreessen for AI task force</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security &amp; software engineering</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Supply Chain Security</span><span class="when">11 Jul</span></div>
+    <h3>Trojanized npm package (jscrambler) caught harvesting credentials specifically from Claude Desktop, Cursor, Windsurf, VS Code, and Zed</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> AI coding-tool config and API keys are now a named target class for supply-chain malware, and the attacker adapted in real time across five package versions to defeat each new mitigation &mdash; audit any recent jscrambler installs and rotate exposed secrets today.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>The official <code>jscrambler</code> npm CLI package was compromised across five successive versions (8.14.0 through 8.20.0) on 11 July. The attacker first used a preinstall hook, then a bypass of pnpm's <code>allowScripts</code> protection, then a <code>require()</code>-time injection that defeats even <code>--ignore-scripts</code> entirely. The Rust-based infostealer specifically harvests configuration files, API keys, and MCP credentials from Claude Desktop, Cursor, Windsurf, VS Code, and Zed, alongside cloud, crypto-wallet, and password-manager secrets.</p>
+      <ul class="sources">
+        <li><a href="https://thehackernews.com/2026/07/compromised-jscrambler-8140-npm-release.html">The Hacker News: Compromised jscrambler 8.14.0+ npm releases harvest AI tool and cloud credentials</a></li>
+        <li><a href="https://socket.dev/blog/jscrambler-supply-chain-attack">Socket: jscrambler npm supply-chain attack analysis</a></li>
+        <li><a href="https://safedep.io/jscrambler-npm-supply-chain-compromise/">SafeDep: jscrambler npm supply-chain compromise</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Embedded Security</span><span class="when">10 Jul</span></div>
+    <h3>Six new U-Boot bootloader flaws undermine secure-boot assumptions on embedded and edge devices</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> two of the six bugs enable pre-OS code execution on a bootloader used across a huge swath of embedded, IoT, and edge hardware, and the vulnerable code dates back over a decade &mdash; any org shipping embedded or edge firmware should check its U-Boot version today.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Six flaws (BRLY-2026-037 through -042) disclosed 10 July affect U-Boot's FIT image and signature-verification handling. Two &mdash; a null-pointer-dereference-turned-buffer-overflow and a stack buffer underflow &mdash; enable pre-OS code execution; the rest cause denial of service. The vulnerable code traces back to U-Boot 2013.07 and spans more than 50 releases.</p>
+      <ul class="sources">
+        <li><a href="https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/">BleepingComputer: New U-Boot flaws could enable stealthy firmware attacks</a></li>
+        <li><a href="https://thehackernews.com/2026/07/six-new-u-boot-flaws-could-let.html">The Hacker News: Six new U-Boot flaws could let attackers execute pre-OS code</a></li>
+        <li><a href="https://cybersecuritynews.com/u-boot-fit-signature-verification/">Cyber Security News: U-Boot FIT signature verification flaws</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 12 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
