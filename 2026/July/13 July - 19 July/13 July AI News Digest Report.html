@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 13 July 2026</title>
+  <meta name="description" content="Meta breaks ground on its first Canadian data center, a $13B Alberta site anchoring new SanDisk, Samsung, and Sumitomo supply deals, as Nvidia's Kyber rack for Rubin Ultra slips to 2028 even after the stock closed above $5 trillion; Illinois enacts the nation's strictest AI safety law; and a critical Gitea Docker auth-bypass flaw plus two new node-tar CVEs demand action from engineering teams today.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>13 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: 6&ndash;13 Jul (last ~24&ndash;96 hours)</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Meta broke ground on its first Canadian data center</strong>, a $13B, 1GW+ site in Alberta anchoring new long-term chip and memory supply deals with SanDisk, Samsung, and Sumitomo Electric.</li>
+      <li><strong>Nvidia's next-gen Kyber rack for Rubin Ultra has slipped over a year to 2028</strong> on PCB manufacturing problems &mdash; even as the stock closed above $5 trillion &mdash; opening a competitive window for AMD and Google's in-house TPUs.</li>
+      <li><strong>Illinois enacted the nation's strictest AI safety law</strong>, requiring frontier developers to publish catastrophic-risk frameworks, undergo annual third-party audits, and report critical incidents within 72 hours or face million-dollar fines.</li>
+      <li><strong>A critical Gitea Docker authentication-bypass flaw (CVSS 9.8) is now being actively probed</strong> by threat actors &mdash; roughly 6,200 internet-facing instances are exposed; patch to 1.26.3 today.</li>
+      <li><strong>OpenAI's global Build Week kicked off</strong>, a week-long Codex-focused developer challenge running through July 21 with cash prizes and DevDay invites.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Top story &mdash; AI infrastructure buildout goes cross-border</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">Meta</span><span class="when">Announced 8&ndash;9 Jul</span></div>
+    <h3>Meta breaks ground on its first Canadian data center, a $13B Alberta site tied to new SanDisk, Samsung, and Sumitomo supply deals</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Meta is diversifying its AI buildout outside the U.S. for the first time and locking in multi-year memory and component supply well ahead of demand &mdash; a hedge against the same HBM and DRAM shortages that just powered SK Hynix's record IPO.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Meta and Alberta officials broke ground on a more than $13B data center complex in Sturgeon County, north of Edmonton &mdash; Meta's first data center in Canada and its largest facility outside the U.S. An internal memo reported the same week disclosed long-term supply agreements with SanDisk, Samsung Electronics, and Sumitomo Electric to support the buildout, part of a plan to double AI compute capacity from roughly 7GW in 2026 to 14GW in 2027. Alberta Premier Danielle Smith said Meta is funding new grid and generation infrastructure directly, so the costs aren't passed on to other ratepayers.</p>
+      <ul class="sources">
+        <li><a href="https://about.fb.com/news/2026/07/breaking-ground-on-metas-first-data-center-in-canada/">Meta: Breaking ground on Meta's first data center in Canada</a> (primary)</li>
+        <li><a href="https://www.cbc.ca/news/canada/edmonton/meta-data-centre-sturgeon-county-alberta-9.7263271">CBC News: Meta building its first Canadian data centre northeast of Edmonton</a></li>
+        <li><a href="https://www.bnnbloomberg.ca/business/company-news/2026/07/08/meta-to-build-13-billion-alberta-data-centre-its-first-in-canada/">BNN Bloomberg: Meta to build $13 billion Alberta data centre, its first in Canada</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Developer platforms</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">OpenAI</span><span class="when">13 Jul</span></div>
+    <h3>OpenAI's global Build Week kicks off, a Codex-focused developer challenge running through July 21</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> OpenAI is using a hackathon format &mdash; live sessions, 40+ local meetups, cash and DevDay-invite prizes &mdash; to drive third-party adoption of Codex and GPT-5.6 specifically, a direct bid for developer mindshare as Anthropic's Claude Code continues to out-grow ChatGPT's enterprise API revenue.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Build Week opened with a livestream at 10am PT on July 13 featuring Greg Brockman, Thibault Sottiaux, and Corey Ching, showcasing Codex and GPT-5.6 together. The challenge runs online through July 21 with submissions via Devpost, daily Discord office hours, and OpenAI Academy sessions; prizes include cash, OpenAI API credits, and invitations to future DevDay events.</p>
+      <ul class="sources">
+        <li><a href="https://openai.com/build-week/">OpenAI: Build Week</a> (primary)</li>
+        <li><a href="https://community.openai.com/t/openai-build-week-exploring-whats-possible-with-codex/1386233">OpenAI Developer Community: Build Week &mdash; Exploring what's possible with Codex</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Business &amp; markets</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Nvidia</span><span class="when">Reported 6&ndash;10 Jul</span></div>
+    <h3>Nvidia's Kyber rack for Rubin Ultra slips past a year to 2028 on PCB problems &mdash; even as the stock closes above $5 trillion</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a manufacturability snag in the midplane circuit board pushes Nvidia's flagship next-gen rack out a full generation cycle, creating a real opening for AMD and Google's in-house TPU silicon to win hyperscaler business &mdash; a rare crack in Nvidia's roadmap even as its market value keeps climbing.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Research firm SemiAnalysis, as reported by CNBC on 6 July, said Nvidia's Kyber NVL144 rack &mdash; designed to house 144 Rubin Ultra chips per cabinet &mdash; has slipped more than 12 months, from 2027 to 2028, due to difficulty manufacturing a key PCB midplane. Nvidia told Tom's Hardware only that its "roadmap is intact." The delay lands the same week Nvidia's stock closed at a record, pushing its market capitalization above $5 trillion; the company's existing Rubin and Oberon racks remain in production and begin shipping to AWS, Azure, and Google Cloud this fall.</p>
+      <ul class="sources">
+        <li><a href="https://www.cnbc.com/2026/07/06/nvidia-kyber-rack-system-delays-manufacturing-taiwan-rubin-chips-.html">CNBC: Nvidia's Kyber rack system delays on manufacturing, Taiwan, Rubin chips</a></li>
+        <li><a href="https://www.tomshardware.com/pc-components/gpus/nvidias-kyber-rack-for-rubin-ultra-slips-to-2028">Tom's Hardware: Nvidia's Kyber rack for Rubin Ultra reportedly delayed to 2028</a></li>
+        <li><a href="https://finance.yahoo.com/sectors/technology/article/nvidia-stock-clinches-record-close-pushing-market-cap-over-5-trillion-once-again-173529477.html">Yahoo Finance: Nvidia stock clinches record close, pushing market cap over $5 trillion</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Models &amp; research</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">DeepSeek</span><span class="when">Reported 7 Jul</span></div>
+    <h3>DeepSeek is reportedly developing its own AI inference chip</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a lab already known for squeezing frontier performance out of constrained hardware moving to design its own inference silicon &mdash; rather than just new models &mdash; signals China's AI ecosystem is racing toward chip self-sufficiency, not just algorithmic efficiency, as U.S. export controls persist.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Reuters reported that Chinese AI startup DeepSeek is developing its own chip, intended for running (inference) rather than training AI models. Details on partners, fab, and timeline were not disclosed. The report lands amid a broader Chinese push for AI-chip self-reliance, including reported moves to ease H200 import limits for Alibaba, ByteDance, and DeepSeek under capped volumes.</p>
+      <ul class="sources">
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-07/chinese-ai-startup-deepseek-developing-own-ai-chip-reuters-says">Bloomberg (citing Reuters): Chinese AI startup DeepSeek developing own AI chip</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Policy &amp; governance</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Illinois</span><span class="when">Signed 6 Jul</span></div>
+    <h3>Illinois enacts the nation's strictest AI safety law, with annual audits and 72-hour incident reporting</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> it's the first state law to mandate independent third-party safety audits of frontier AI systems and a 72-hour (or 24-hour for imminent-danger) incident-reporting clock, backed by $1&ndash;3M civil penalties &mdash; a template other states are likely to copy as federal AI legislation stalls.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Governor JB Pritzker signed SB 315, the Artificial Intelligence Safety Measures Act, on 6 July. It requires developers of the largest advanced AI systems to publish frameworks describing how they assess "catastrophic risk" (incidents that could kill or seriously injure 50+ people or cause $1M+ in property damage), undergo annual independent third-party safety audits, and report critical safety incidents to the state within 72 hours (24 hours if imminent danger to life). It also creates confidential reporting channels and whistleblower protections. First violations carry $1M penalties, rising to $3M for subsequent violations. The law takes effect 1 January 2028.</p>
+      <ul class="sources">
+        <li><a href="https://gov-pritzker-newsroom.prezly.com/gov-pritzker-signs-nation-leading-artificial-intelligence-safety-law">Governor Pritzker's Office: Gov. Pritzker signs nation-leading Artificial Intelligence Safety Law</a> (primary)</li>
+        <li><a href="https://capitolnewsillinois.com/news/pritzker-signs-landmark-ai-regulation-bill-that-aims-to-mitigate-risks/">Capitol News Illinois: Pritzker signs landmark AI regulation bill that aims to mitigate risks</a></li>
+        <li><a href="https://www.pymnts.com/news/artificial-intelligence/2026/illinois-governor-signs-ai-safety-law-requiring-yearly-llm-audits/">PYMNTS: Illinois governor signs AI safety law requiring yearly LLM audits</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security &amp; software engineering</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Supply Chain / Git Infra</span><span class="when">Probing detected 7&ndash;12 Jul</span></div>
+    <h3>Critical Gitea Docker auth-bypass flaw (CVSS 9.8) is now being actively probed by attackers</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> roughly 6,200 internet-facing Gitea instances trust a spoofable header by default, letting an unauthenticated attacker impersonate any known or guessable username and reach source code and secrets &mdash; patch to 1.26.3 today if you run Gitea's Docker image behind a reverse proxy.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>CVE-2026-20896 stems from Gitea's Docker image hard-coding <code>REVERSE_PROXY_TRUSTED_PROXIES = *</code>, so any client that reaches the container's HTTP port directly &mdash; not just the intended proxy &mdash; can spoof the <code>X-WEBAUTH-USER</code> header and impersonate any user. It was fixed in Gitea 1.26.3 (released last month). Cloud security firm Sysdig detected the first in-the-wild exploitation attempt from a ProtonVPN exit node roughly 13 days after disclosure; researchers describe the activity so far as reconnaissance rather than confirmed compromise, but broad automated scanning is expected to follow.</p>
+      <ul class="sources">
+        <li><a href="https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html">The Hacker News: Threat actors probe Gitea Docker flaw CVE-2026-20896, 13 days after disclosure</a></li>
+        <li><a href="https://www.securityweek.com/critical-gitea-flaw-under-active-exploitation-researchers-warn/">SecurityWeek: Critical Gitea flaw under active exploitation, researchers warn</a></li>
+        <li><a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-auth-bypass-in-gitea-docker-image/">BleepingComputer: Hackers exploit critical auth bypass in Gitea Docker image</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">npm / Node.js</span><span class="when">Disclosed 12 Jul</span></div>
+    <h3>Two new node-tar CVEs let a crafted archive hang or disk-bomb any process that extracts it</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> <code>node-tar</code> sits deep in the npm dependency graph (npm CLI, build tooling, CI pipelines), so a single malicious or malformed archive can freeze a build server or exhaust its disk &mdash; check your lockfiles for <code>tar</code> below 7.5.19 today.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>CVE-2026-59873 (decompression/parse DoS): prior to 7.5.19, node-tar enforces no upper bound on total decompressed size, entry count, or decompression ratio during extraction, letting a small crafted gzip bomb exhaust disk space and CPU. CVE-2026-59874 (infinite loop): prior to 7.5.18, <code>tar.replace</code> accepts a checksum-valid header with a negative base-256-encoded entry size, causing the archive scanner to spin on the same header indefinitely. Both are fixed in the latest 7.5.x releases; neither affects npm's own package installs, which strip Link/SymlinkLink entries, but both affect any application or CI job that extracts untrusted tarballs directly.</p>
+      <ul class="sources">
+        <li><a href="https://thewindowsupdate.com/2026/07/12/cve-2026-59873-node-tar-decompression-parse-dos-via-unlimited-input/">TheWindowsUpdate.com: CVE-2026-59873 &mdash; node-tar decompression/parse DoS via unlimited input</a></li>
+        <li><a href="https://thewindowsupdate.com/2026/07/12/cve-2026-59874-node-tar-negative-tar-entry-size-causes-infinite-loop-in-archive-replace/">TheWindowsUpdate.com: CVE-2026-59874 &mdash; node-tar negative tar entry size causes infinite loop in archive replace</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Identity Security</span><span class="when">Update 11 Jul</span></div>
+    <h3>Device-code phishing keeps compounding: 18 kits now in the wild, a 37.5x rise in detections since March</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> device-code phishing bypasses passwords, MFA, and even passkeys by attacking the OAuth authorization layer directly, and it has gone from a nation-state technique to commodity phishing-as-a-service in under two years &mdash; if your org allows the device-code login flow, restrict or monitor it now rather than relying on MFA alone.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Push Security's latest tracking, published 11 July, counts at least 18 distinct device-code phishing kits and a 37.5x increase in phishing-page detections since March (up from a 15x rise reported in March), with every major adversary-in-the-middle phishing vendor now adding the technique to its platform. Kits impersonate DocuSign, SharePoint, OneDrive, calendar invites, and voicemail/eFax notifications, and bundle AI-generated lure copy and anti-analysis protections. Earlier campaigns built on this technique, such as the EvilTokens kit, have already hit 340+ Microsoft 365 organizations across five countries.</p>
+      <ul class="sources">
+        <li><a href="https://pushsecurity.com/blog/device-code-phishing/">Push Security: Analyzing the rise in device code phishing attacks in 2026</a> (primary)</li>
+        <li><a href="https://www.bleepingcomputer.com/news/security/device-code-phishing-attacks-surge-37x-as-new-kits-spread-online/">BleepingComputer: Device code phishing attacks surge 37x as new kits spread online</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 13 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
