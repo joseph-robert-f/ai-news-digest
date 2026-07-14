@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 14 July 2026</title>
+  <meta name="description" content="A 17-publisher coalition led by The New York Times seeks court sanctions against OpenAI over alleged evidence destruction, the FTC proposes an AI-accuracy policy that could preempt state AI laws, TSMC posts a record 68% revenue jump on AI chip demand, and npm ships v12 with install scripts off by default in the biggest supply-chain hardening move in years.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>14 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: 1&ndash;13 Jul (developing stories new to this digest)</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>A 17-publisher coalition led by The New York Times filed for sanctions against OpenAI</strong> on 9 July, alleging the company misrepresented its ability to search training data and destroyed evidence after a preservation order.</li>
+      <li><strong>The FTC proposed a policy statement</strong> (comments open through 31 July) arguing undisclosed accuracy-suppressing AI guardrails can be deceptive under Section 5 &mdash; and using it to argue Colorado's new AI bias law may be federally preempted.</li>
+      <li><strong>TSMC posted an all-time-record June</strong>, revenue up 68% year-over-year, pushing first-half 2026 revenue to roughly $75B as N3 capacity and CoWoS packaging stay sold out through year-end.</li>
+      <li><strong>npm shipped v12 with install scripts, Git dependencies, and remote-URL dependencies all off by default</strong> &mdash; the largest hardening of the npm supply chain in years.</li>
+      <li><strong>CISA added four actively exploited flaws to its KEV catalog</strong>, including a maximum-severity (CVSS 10.0) Adobe ColdFusion path-traversal bug already being exploited days after its patch shipped.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Top story &mdash; publishers escalate the OpenAI copyright fight</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">OpenAI &times; Publishers</span><span class="when">9 Jul</span></div>
+    <h3>NYT-led coalition of 17 publishers seeks court sanctions against OpenAI over alleged evidence destruction</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is a direct escalation &mdash; not a new lawsuit but a bid to have a federal judge punish OpenAI mid-case &mdash; built on deposition testimony that undercuts the company's own account of what it can and can't search in its logs, and it lands as OpenAI's litigation exposure keeps compounding across multiple fronts at once.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>The New York Times, the New York Daily News, and 15 other media organizations (including the Center for Investigative Reporting, The Intercept, and Ziff Davis) filed a 52-page motion on 9 July in Manhattan federal court asking the judge to sanction OpenAI for discovery misconduct in the consolidated ChatGPT copyright litigation. The publishers point to an April 2026 deposition of OpenAI privacy engineer Vinnie Monaco, which they say revealed a roughly 78-million-conversation de-identified database and earlier internal searches that predate the lawsuits &mdash; contradicting OpenAI's earlier claims about its search capabilities. The motion alleges OpenAI deleted billions of ChatGPT outputs in violation of a preservation order and substituted logs within a 20-million-conversation sample set. OpenAI's standing defense has centered on user-privacy concerns around broad log searches; the company has not yet filed a public written response to the motion. Separately, regulatory filings cited in the coverage show the Times has now spent more than $28M litigating AI companies, including $4.2M in Q1 2026 alone. Note: these are unproven allegations in an active, unresolved motion, not court findings.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/">TechCrunch: New York Times says OpenAI hid evidence in ChatGPT copyright trial</a></li>
+        <li><a href="https://www.washingtonpost.com/business/2026/07/09/openai-new-york-times-ai-copyright-lawsuit/1f749fa0-7ba4-11f1-b194-f872dd4ec5aa_story.html">Washington Post: OpenAI, New York Times clash escalates in AI copyright lawsuit</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Policy &amp; governance</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">FTC</span><span class="when">Issued 1 Jul &middot; comments through 31 Jul</span></div>
+    <h3>FTC proposes that accuracy-suppressing AI guardrails can be deceptive &mdash; and argues it could preempt Colorado's AI bias law</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> if finalized, this reframes a broad class of AI content-moderation and bias-mitigation design choices as a potential Section 5 deception violation unless clearly disclosed, and it's the first time the FTC has explicitly argued a state AI law could be federally preempted &mdash; a direct shot at Colorado's AI Act that other states now have to watch closely.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>The FTC issued a proposed policy statement on 1 July, "Policy Statement Concerning the Suppression of Accuracy in Artificial Intelligence Systems," arguing that undisclosed steering of AI model outputs away from the most accurate answer &mdash; for example, to avoid disparate-impact liability &mdash; can constitute a deceptive act or practice under Section 5 of the FTC Act, citing survey data that more than 90% of consumers rely on AI outputs without independently fact-checking them. Companies can avoid liability via a safe harbor: clear, conspicuous, and adequate disclosure that a system prioritizes objectives other than pure accuracy. The statement separately argues that state requirements pressuring AI developers toward disparate-impact-avoiding output suppression &mdash; naming Colorado's AI Act &mdash; may be impliedly preempted by federal law. The FTC is accepting public comment through 31 July before deciding whether to finalize the statement.</p>
+      <ul class="sources">
+        <li><a href="https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-seeks-public-comment-policy-statement-addressing-ai-accuracy">FTC: FTC Seeks Public Comment on Policy Statement Addressing AI Accuracy</a> (primary)</li>
+        <li><a href="https://www.federalregister.gov/documents/2026/07/07/2026-13628/policy-statement-concerning-the-suppression-of-accuracy-in-artificial-intelligence-systems">Federal Register: Policy Statement Concerning the Suppression of Accuracy in Artificial Intelligence Systems</a> (primary)</li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Business &amp; markets</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">TSMC</span><span class="when">Reported 13 Jul</span></div>
+    <h3>TSMC posts an all-time-record June, revenue up 68% year-over-year on AI chip demand</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> June revenue typically falls month-over-month at TSMC, so a record instead is a strong forward signal ahead of the 16 July earnings call &mdash; and with advanced packaging and leading-edge capacity sold out through year-end, the AI buildout's bottleneck remains fab capacity, not chip demand.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>TSMC reported June 2026 revenue of NT$442.68B, up 67.9% year-over-year and the largest monthly total in the company's roughly four-decade history. First-half 2026 revenue reached NT$2.4T (about $75B), up 35.6% year-over-year. TSMC's N3 process node and CoWoS advanced-packaging capacity are both sold out through the end of the year; one analyst estimate cited puts TSMC's 2026 AI-chip revenue above $40B, roughly a quarter of the company's total. TSMC reports full Q2 earnings on 16 July.</p>
+      <ul class="sources">
+        <li><a href="https://www.cnbc.com/2026/07/13/tsmc-june-revenue-rises-percent-ahead-second-quarter.html">CNBC: TSMC, the world's largest contract chipmaker, reports 68% surge in June revenue</a></li>
+        <li><a href="https://www.techtimes.com/articles/320348/20260713/tsmc-sets-all-time-revenue-record-ai-demand-has-rewritten-its-calendar.htm">Tech Times: TSMC sets all-time revenue record &mdash; AI demand has rewritten its calendar</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">xAI / SpaceXAI</span><span class="when">8 Jul</span></div>
+    <h3>xAI launches Grok 4.5, its first release since the Cursor acquisition and SpaceX rebrand</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Musk is explicitly pitching Grok 4.5 as an "Opus-class" coding and agentic-work model trained alongside Cursor's data at a fraction of the price &mdash; a direct challenge to Anthropic and OpenAI on cost-per-token for engineering workloads, while the underlying $60B Cursor deal itself hasn't closed yet.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>SpaceXAI (the renamed xAI unit after SpaceX's February 2026 absorption of the company and its June 12 IPO) launched Grok 4.5 on 8 July, its first model release since announcing the roughly $60B acquisition of Cursor days after that IPO; the Cursor deal is expected to close in Q3 2026. Musk described Grok 4.5 as "an Opus-class model, but faster, more token-efficient and lower cost," pricing it at $2/$6 per million input/output tokens with a 500K-token context window. The model is live today in Grok Build, in Cursor on all plans, and via the SpaceXAI console; it is not yet available in the EU.</p>
+      <ul class="sources">
+        <li><a href="https://x.ai/news/grok-4-5">SpaceXAI: Introducing Grok 4.5</a> (primary)</li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-08/spacexai-cursor-unveil-grok-ai-model-for-legal-finance-tasks">Bloomberg: SpaceXAI, Cursor unveil Grok AI model for legal, finance tasks</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security &amp; software engineering</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">npm / Supply Chain</span><span class="when">9 Jul</span></div>
+    <h3>npm 12 disables install scripts, Git dependencies, and remote-URL dependencies by default</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is the single largest hardening of the npm ecosystem's biggest attack surface in years &mdash; lifecycle scripts have powered the majority of recent npm supply-chain compromises (including this week's Injective Labs incident below) &mdash; but it will break CI pipelines and local installs that rely on postinstall builds until teams explicitly approve them.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>GitHub shipped npm v12 with <code>allowScripts</code> off by default, meaning dependency lifecycle scripts (<code>preinstall</code>, <code>install</code>, <code>postinstall</code>) and implicit <code>node-gyp</code> builds no longer run automatically on <code>npm install</code>. <code>--allow-git</code> and <code>--allow-remote</code> now also default to none, blocking automatic resolution of Git-hosted and remote-URL dependencies. GitHub called install-time lifecycle scripts "the single largest code-execution surface in the npm ecosystem," since a single compromised package anywhere in a dependency tree can otherwise run arbitrary code on a developer machine or CI runner. Teams should upgrade to npm 11.16.0 or newer first, run a normal install to review the resulting warnings, then use <code>npm approve-scripts --allow-scripts-pending</code> to explicitly allow trusted packages' scripts and commit the result.</p>
+      <ul class="sources">
+        <li><a href="https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html">The Hacker News: npm 12 disables install scripts by default to reduce supply chain risk</a></li>
+        <li><a href="https://socket.dev/blog/npm-12">Socket: npm v12 ships with install scripts off by default</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Supply Chain Security</span><span class="when">8 Jul</span></div>
+    <h3>Injective Labs' widely used SDK is briefly backdoored via a hijacked maintainer identity</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the attacker didn't compromise a random dependency but pushed malicious code through the repo's own trusted-publisher (OIDC) pipeline under a legitimate maintainer's identity &mdash; a reminder that npm's newer, more secure publishing paths are still only as strong as the GitHub account behind them, and that this week's default-off install-script change (above) wouldn't have stopped a telemetry-based data-exfiltration payload like this one.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>On 8 July, an attacker compromised the GitHub account of a trusted maintainer of <code>@injectivelabs/sdk-ts</code> &mdash; a TypeScript SDK for the Injective blockchain pulled roughly 175,000 times a month &mdash; and pushed a malicious commit publishing version 1.20.21 with fake telemetry functionality that exfiltrated cryptocurrency wallet data. The attacker also published the same malicious version across 17 additional <code>@injectivelabs</code>-scoped packages that depended on and pinned it. The compromised release was live for approximately 49 minutes before the legitimate maintainer detected the intrusion, reverted the changes, and shipped a clean 1.20.23; no funds were reported lost.</p>
+      <ul class="sources">
+        <li><a href="https://thehackernews.com/2026/07/injective-labs-github-compromise-pushes.html">The Hacker News: Injective Labs GitHub compromise pushes wallet-key-stealing npm packages</a></li>
+        <li><a href="https://www.bleepingcomputer.com/news/security/injective-sdk-on-npm-infected-with-cryptocurrency-wallet-stealer/">BleepingComputer: Injective SDK on npm infected with cryptocurrency wallet stealer</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Vulnerability Management</span><span class="when">7 Jul</span></div>
+    <h3>CISA adds four actively exploited flaws to its KEV catalog, including a maximum-severity ColdFusion bug</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the Adobe ColdFusion path-traversal flaw was already under active exploitation within days of its patch shipping, and three of the four newly listed bugs score a perfect CVSS 10.0 &mdash; if you run ColdFusion, Langflow, or the affected Joomla page-builder extensions, treat this as urgent regardless of the federal deadline having already passed.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>CISA added four vulnerabilities to its Known Exploited Vulnerabilities catalog on 7 July: CVE-2026-48282, a path-traversal flaw in Adobe ColdFusion enabling arbitrary code execution (CVSS 10.0), exploited within days of Adobe's 30 June patch; CVE-2026-48908, an unrestricted file-upload flaw in the JoomShaper SP Page Builder Joomla extension enabling unauthenticated PHP code execution (CVSS 10.0); CVE-2026-56290, an access-control flaw in the Joomlack Page Builder extension enabling remote code execution via unauthenticated file upload (CVSS 10.0); and CVE-2026-55255, an authorization-bypass flaw in Langflow letting an authenticated attacker execute another user's flow by specifying their flow ID (CVSS 6.1). Per Binding Operational Directive 26-04, federal civilian agencies were required to patch all four by 10 July.</p>
+      <ul class="sources">
+        <li><a href="https://www.cisa.gov/news-events/alerts/2026/07/07/cisa-adds-one-known-exploited-vulnerability-catalog">CISA: CISA Adds One Known Exploited Vulnerability to Catalog</a> (primary)</li>
+        <li><a href="https://www.securityweek.com/cisa-urges-immediate-patching-of-exploited-coldfusion-langflow-joomla-flaws/">SecurityWeek: CISA urges immediate patching of exploited ColdFusion, Langflow, Joomla flaws</a></li>
+        <li><a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-max-severity-coldfusion-flaw-by-friday/">BleepingComputer: CISA orders feds to patch max severity ColdFusion flaw by Friday</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Developer platforms</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">GitHub</span><span class="when">GA 9 Jul</span></div>
+    <h3>GitHub's redesigned pull-request dashboard reaches general availability</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the framing from GitHub's own rollout is explicit &mdash; this is a response to AI-generated code driving up PR volume and review load &mdash; making it one of the clearer signals yet that agentic coding tools are now forcing changes to core review infrastructure, not just editors.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>The refreshed pull-request dashboard at github.com/pulls became generally available on 9 July after a rollout that began in public preview in March and moved to opt-out preview in April. It centers on an "Inbox" that surfaces review requests, PRs needing fixes (failing CI, new comments), and PRs ready to merge, alongside customizable, reorderable sections and saved custom views built from search queries. Coverage framed the redesign as a direct answer to the reviewer backlog created by rising volumes of AI-assisted and AI-generated pull requests.</p>
+      <ul class="sources">
+        <li><a href="https://github.blog/changelog/2026-07-09-new-pull-requests-dashboard-is-now-generally-available/">GitHub Changelog: New pull requests dashboard is now generally available</a> (primary)</li>
+        <li><a href="https://devops.com/githubs-redesigned-pr-inbox-tackles-the-review-bottleneck-ai-created/">DevOps.com: GitHub's redesigned PR inbox tackles the review bottleneck AI created</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Models &amp; research</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Anthropic</span><span class="when">6 Jul</span></div>
+    <h3>Anthropic interpretability research finds a "global workspace" inside Claude models</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is unusually strong causal (not just correlational) mechanistic-interpretability work, independently commented on by the cognitive neuroscientists who originated the "global workspace" theory it borrows from and partially replicated by a DeepMind interpretability researcher on an open-weight model &mdash; a rare case of interpretability findings holding up outside the lab that produced them.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Anthropic's interpretability team published research on 6 July identifying a small, privileged internal subspace in Claude models &mdash; dubbed "J-space," roughly 25 concepts and under 10% of activation variance &mdash; that functions similarly to the "global workspace" some neuroscientists believe underlies conscious access in humans. Using a new "J-lens" method, the team showed via decomposition experiments that this small, verbalizable subspace carries the causal load for self-report and flexible multi-step reasoning, while the much larger remainder of model activations does not; ablating J-space collapses that reasoning. Stanislas Dehaene and Lionel Naccache, the neuroscientists who co-developed the global neuronal workspace theory, offered external commentary on the paper, and Neel Nanda, who leads language-model interpretability at Google DeepMind, independently replicated some findings on an open-weight model.</p>
+      <ul class="sources">
+        <li><a href="https://www.anthropic.com/research/global-workspace">Anthropic: A global workspace in language models</a> (primary)</li>
+        <li><a href="https://venturebeat.com/technology/anthropics-new-j-lens-reveals-a-silent-workspace-inside-claude-that-mirrors-a-leading-theory-of-consciousness">VentureBeat: Anthropic's new "J-lens" reveals a silent workspace inside Claude that mirrors a leading theory of consciousness</a></li>
+        <li><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-it-can-read-claudes-thoughts-as-detailed-in-new-research-paper-models-observed-to-have-a-global-workspace-revealing-more-of-what-makes-llms-tick">Tom's Hardware: Anthropic says it can read Claude's "thoughts," as detailed in new research paper</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 14 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
