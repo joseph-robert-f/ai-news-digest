@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 15 July 2026</title>
+  <meta name="description" content="China's anthropomorphic-AI rules take effect today, forcing ByteDance's Doubao and Alibaba's Qwen to disable companion personas; DeepSeek is in talks for a $1.5B round at a $71B valuation ahead of a China IPO; Nvidia has halved its whitelist of approved Asian AI-chip buyers; OpenAI says it has no evidence Apple's trade-secret suit has merit; and attackers hijacked AsyncAPI's own GitHub Actions pipeline to backdoor npm packages with 2.9M weekly downloads.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>15 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: 8&ndash;15 Jul (developing stories new to this digest)</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>China's Interim Measures on anthropomorphic AI took effect today</strong>, forcing ByteDance's Doubao and Alibaba's Qwen to disable custom AI-companion personas and agent features nationwide.</li>
+      <li><strong>DeepSeek is in talks to raise roughly $1.5B</strong> at a $71B pre-money valuation &mdash; more than triple its April level &mdash; while prepping a mainland China IPO.</li>
+      <li><strong>Nvidia has more than halved its whitelist of approved Asian AI-chip buyers</strong>, adding field inspections and end-user interviews in Singapore, Malaysia, and Japan to choke off chip diversion to China.</li>
+      <li><strong>OpenAI says it's "not aware of any evidence"</strong> that Apple's trade-secret lawsuit has merit, its first public response since Apple sued on 10 July.</li>
+      <li><strong>Attackers hijacked AsyncAPI's own GitHub Actions pipeline</strong> via a "pwn request" flaw to backdoor npm packages with 2.9M weekly downloads with a credential-stealing RAT.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Top story &mdash; Beijing draws a line between agents that work and agents that keep you company</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">China &times; AI Regulation</span><span class="when">Effective 15 Jul</span></div>
+    <h3>China's anthropomorphic-AI rules take effect, and ByteDance and Alibaba are already switching off companion features</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is Beijing's first rulebook aimed specifically at AI that simulates a relationship rather than performs a task, and it's forcing China's two biggest consumer AI products to gut a feature category overnight &mdash; a regulatory divergence from the US and EU that product teams building companion or persona features anywhere in the China market need to account for now.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>The Cyberspace Administration of China's Interim Measures for the Administration of Anthropomorphic Artificial Intelligence Interaction Services, jointly issued 10 April with the NDRC, MIIT, Ministry of Public Security, and SAMR, took effect 15 July. The rules require AI companion and persona services to continuously and prominently disclose that a user is interacting with AI, obtain parental consent for users under 14 and bar virtual intimate-relationship features for minors entirely, add anti-addiction interventions after two-hour sessions, and provide tiered escalation protocols for users showing signs of self-harm or acute distress. ByteDance's Doubao &mdash; China's most-used AI chatbot &mdash; shut down its custom-persona feature on 15 July, keeping existing configurations and chat histories in read-only mode until 15 October before permanent deletion. Alibaba's Qwen disabled its humanlike interactive-agent and user-created-agent functions on 10 July, with broader agent functions following on 15 July. The rules target companion-style personas specifically; task-oriented coding and productivity agents are unaffected.</p>
+      <ul class="sources">
+        <li><a href="https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm">Cyberspace Administration of China: Interim Measures for the Administration of Anthropomorphic AI Interaction Services</a> (primary, Chinese)</li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-06/bytedance-alibaba-pull-ai-companions-as-beijing-tightens-rules">Bloomberg: ByteDance, Alibaba pull AI companions as Beijing tightens rules</a></li>
+        <li><a href="https://www.scmp.com/tech/big-tech/article/3359482/bytedance-and-alibaba-disable-humanlike-ai-custom-agents-new-rules-loom">South China Morning Post: ByteDance and Alibaba to disable humanlike AI custom agents as new rules loom</a></li>
+        <li><a href="https://www.techtimes.com/articles/319703/20260704/china-ai-companion-law-arrives-july-15-doubao-qwen-agent-data-will-deleted.htm">Tech Times: China AI companion law arrives July 15 &mdash; Doubao and Qwen agent data will be deleted</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Business &amp; markets</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">DeepSeek</span><span class="when">Reported 14 Jul</span></div>
+    <h3>DeepSeek is in talks to raise $1.5B at a $71B valuation, months after its first outside round, while prepping a China IPO</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a valuation that has more than tripled since April &mdash; and a raise coming barely two months after DeepSeek's first-ever external round &mdash; signals investors expect the lab's compute needs (new data centers, more chips, an agent push) to keep compounding faster than its own revenue can fund, and an IPO filing as early as late 2026 would be the first mainland listing of a frontier Chinese AI lab.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>DeepSeek has opened preliminary talks with new investors about a roughly $1.5B round at a $71B pre-money valuation, a report first from The Information's sourcing said this week, corroborated by TechCrunch. That valuation is more than triple the roughly $20B figure DeepSeek was fielding as recently as April, and a 42% premium over the post-money valuation from its $7.4B round closed in May. The company is separately preparing for an initial public offering in mainland China, with a filing possible as early as late 2026 and a listing targeted for 2027; DeepSeek's stated rationale is capital expenditure for its own data centers and additional chip purchases as it pushes further into AI agents.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/07/14/deepseek-reportedly-in-talks-to-raise-1-5b-then-ipo/">TechCrunch: DeepSeek reportedly in talks to raise $1.5B, then IPO</a></li>
+        <li><a href="https://cryptobriefing.com/deepseek-71b-valuation-funding-round/">CryptoBriefing: DeepSeek valued at $71B ahead of new funding round, per Financial Times</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Nvidia &times; Export Controls</span><span class="when">Reported 14 Jul</span></div>
+    <h3>Nvidia halves its whitelist of approved Asian AI-chip buyers as Washington's diversion crackdown bites</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Nvidia is now doing its own field due diligence &mdash; data-center visits, contract checks, end-user interviews &mdash; rather than relying on paperwork, which is a meaningful escalation in enforcement effort and a signal that regulators believe prior compliance checks weren't catching real diversion of Blackwell-class chips to China through third countries.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>The Financial Times reported, corroborated by multiple outlets on 14 July, that Nvidia has cut more than half of its previously approved Asian AI-chip customers from a new, stricter whitelist, hitting neo-cloud providers especially hard. The company has stepped up in-person diligence in Singapore, Malaysia, and Japan over recent months, sending staff to inspect data centers, verify contracts, and interview end users before granting or renewing approval. The move follows US Commerce Department guidance issued in May aimed at curbing advanced AI chips reaching overseas subsidiaries of Chinese companies, after concerns that Blackwell-class processors had reached Chinese-linked entities in countries such as Malaysia despite existing restrictions. Removed customers can reapply if they address the concerns that got them cut.</p>
+      <ul class="sources">
+        <li><a href="https://www.tomshardware.com/tech-industry/big-tech/nvidia-slashes-list-of-authorized-customers-in-asia-in-a-bid-to-reduce-ai-chip-smuggling-report-claims-company-sent-field-inspectors-called-customers-to-check-if-business-is-genuine-after-pressure-from-washington">Tom's Hardware: Nvidia slashes list of authorized customers in Asia in a bid to reduce AI chip smuggling</a></li>
+        <li><a href="https://finance.yahoo.com/technology/ai/articles/nvidia-halves-asia-buyer-list-033140201.html">Yahoo Finance (citing Financial Times): Nvidia halves Asia buyer list in China chip crackdown</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">OpenAI &mdash; litigation and governance</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">OpenAI &times; Apple</span><span class="when">14 Jul</span></div>
+    <h3>OpenAI says it's "not aware of any evidence" Apple's trade-secret lawsuit has merit</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is OpenAI's first public response to Apple's 10 July suit, and it's a flat denial rather than a substantive rebuttal of the specific allegations (that hardware chief Tang Tan and other ex-Apple staff carried confidential silicon and on-device AI designs into OpenAI's hardware push) &mdash; expect the real contest to play out in discovery, not press statements.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>OpenAI said on 14 July, four days after Apple filed suit in the Northern District of California, that "while we take these allegations seriously, we're not aware of any evidence that this complaint has merit," adding that it "believe[s] in fair competition and allowing people the freedom to work wherever they choose." The statement does not address Apple's specific claims point by point, including a laptop-theft allegation referenced in the complaint. Apple is seeking damages and an injunction; the case remains in its early stages.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/07/14/openai-pushes-back-on-apple-trade-secret-lawsuit/">TechCrunch: OpenAI pushes back on Apple trade secret lawsuit</a></li>
+        <li><a href="https://www.macrumors.com/2026/07/14/openai-apple-lawsuit-response/">MacRumors: OpenAI &mdash; no evidence Apple's trade secret complaint has merit</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">OpenAI &times; Policy</span><span class="when">Published 8 Jul</span></div>
+    <h3>OpenAI publishes National Security Principles, drawing three explicit hard limits on government use of its models</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> as OpenAI expands government and defense work in cyber and biosecurity, it's getting ahead of the "will AI companies help build surveillance or autonomous-weapons capability" question with public, self-imposed limits rather than waiting for legislation to force the issue &mdash; a document that will now be the reference point every time a government-facing OpenAI deal draws scrutiny.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>OpenAI published its National Security Principles on 8 July, developed with input from outside national-security expert David Kris and internal listening sessions spanning research, safety, policy, and government-partnerships teams. The framework sets three hard limits: no use for mass domestic surveillance, no directing of autonomous weapons, and no high-stakes automated decisions made without meaningful human judgment. OpenAI frames the principles as enabling democratic governments to use its models defensively &mdash; protecting infrastructure, aiding cyber defense and biosecurity &mdash; while committing to deployments that reinforce democratic accountability rather than concentrate power. The publication lands as OpenAI expands work with the US government and allied partners on defensive national-security use cases.</p>
+      <ul class="sources">
+        <li><a href="https://openai.com/index/government-national-security-partnerships/">OpenAI: Our approach to government and national security partnerships</a> (primary)</li>
+        <li><a href="https://ng.investing.com/news/stock-market-news/openai-publishes-national-security-principles-amid-government-ai-tensions-93CH-2591863">Investing.com: OpenAI publishes national security principles amid government AI tensions</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security &amp; software engineering</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Supply Chain / GitHub Actions</span><span class="when">14 Jul</span></div>
+    <h3>Attackers hijack AsyncAPI's own GitHub Actions pipeline via a "pwn request" to backdoor npm packages with 2.9M weekly downloads</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the attacker didn't need to steal a maintainer's credentials at all &mdash; a single malicious pull request among 37 opened as noise exploited a misconfigured <code>pull_request_target</code> workflow to steal the project's own privileged automation token, publish through the project's legitimate CI, and ship a multi-stage RAT that activates on <code>import</code> rather than <code>install</code> &mdash; a technique that defeats install-script mitigations like npm 12's new defaults entirely.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>On 14 July, an attacker opened 37 pull requests against the <code>asyncapi/generator</code> repository; one exploited a "pwn request" vulnerability class in a workflow that used <code>pull_request_target</code> (which runs with base-repository secrets) while checking out attacker-controlled pull-request code, letting the attacker exfiltrate a highly privileged personal access token. Using that token, the attacker pushed a malicious commit directly to the <code>next</code> branch at 06:58 UTC, triggering the legitimate release workflow to publish compromised versions of four packages under the <code>@asyncapi</code> namespace &mdash; including <code>@asyncapi/specs</code>, which alone accounts for roughly 2.7M of the packages' combined 2.9M weekly downloads. The payload is a hybrid info-stealer, crypto-wallet drainer, and remote access trojan that harvests browser-saved passwords and cookies, SSH keys, npm and GitHub tokens, AWS credentials, and macOS Keychain data, and maintains a live command-and-control channel; because it executes at <code>require()</code>/import time rather than at install, it isn't blocked by npm 12's new install-script defaults (covered in this digest on 14 July).</p>
+      <ul class="sources">
+        <li><a href="https://www.wiz.io/blog/m-red-team-asyncapi-supply-chain-compromise-via-github-actions">Wiz: AsyncAPI supply chain compromise via GitHub Actions</a></li>
+        <li><a href="https://socket.dev/blog/asyncapi-supply-chain-attack">Socket: Compromised npm packages in the AsyncAPI namespace deliver malware</a></li>
+        <li><a href="https://cybersecuritynews.com/asyncapi-npm-packages-with-2m-weekly-downloads/">Cyber Security News: AsyncAPI npm packages with 2M+ weekly downloads compromised via GitHub Actions</a></li>
+        <li><a href="https://www.chainguard.dev/unchained/asyncapi-supply-chain-compromise-npm-packages-backdoored-via-github-actions">Chainguard: AsyncAPI supply chain compromise &mdash; npm packages backdoored via GitHub Actions "pwn request"</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Vulnerability Management</span><span class="when">Added to KEV 14 Jul</span></div>
+    <h3>CISA adds two actively exploited SonicWall SMA1000 zero-days (CVSS 10.0) plus a Microsoft ADFS flaw to its KEV catalog</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> SonicWall itself confirmed multiple real incidents from these zero-days before a patch existed, and the unauthenticated SSRF bug alone is enough to compromise an internet-facing SMA1000 appliance &mdash; federal agencies have until 17 July to patch or disconnect, and any organization running SMA1000 for remote access should treat that deadline as the real one.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>CISA added four vulnerabilities to its Known Exploited Vulnerabilities catalog on 14 July, most notably CVE-2026-15409, a maximum-severity (CVSS 10.0) unauthenticated server-side request forgery flaw in the SMA1000 Appliance Work Place interface, and CVE-2026-15410, a high-severity (CVSS 7.2) post-authentication code-injection flaw in the SMA1000 Management Console that lets an authenticated admin run arbitrary OS commands. SonicWall disclosed both as zero-days already exploited in the wild, having investigated multiple confirmed customer incidents; fixes are available in hotfix builds 12.4.3-03453 and 12.5.0-02835. The same KEV batch added CVE-2026-56155, an access-control flaw in Microsoft Active Directory Federation Services. Per Binding Operational Directive 26-04, federal civilian agencies must remediate or disconnect affected systems by 17 July.</p>
+      <ul class="sources">
+        <li><a href="https://www.cisa.gov/news-events/alerts/2026/07/14/cisa-adds-four-known-exploited-vulnerabilities-catalog">CISA: CISA Adds Four Known Exploited Vulnerabilities to Catalog</a> (primary)</li>
+        <li><a href="https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-sma1000-flaws-exploited-in-zero-day-attacks-patch-now/">BleepingComputer: SonicWall warns of SMA1000 flaws exploited in zero-day attacks, patch now</a></li>
+        <li><a href="https://www.securityweek.com/sonicwall-issues-urgent-sma-patch-warning-for-two-zero-day-exploits/">SecurityWeek: SonicWall issues urgent SMA patch warning for two zero-day exploits</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 15 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
