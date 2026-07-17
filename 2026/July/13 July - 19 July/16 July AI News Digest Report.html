@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 16 July 2026</title>
+  <meta name="description" content="Nvidia plants a full-stack 'physical AI' flag in Japan with a 27,500-GPU national super-factory, Google's Gemini 3.5 Pro misses a third deadline, OpenAI reveals a screen-free Jony Ive speaker, and Anthropic and OpenAI split over state-vs-federal AI law.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>16 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: 15&ndash;16 July (last ~24 hours)</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Nvidia planted a full-stack "physical AI" flag in Japan</strong> &mdash; a new Cosmos 3 Edge robotics model, a Sony/Honda-led national super-factory on 27,500 Rubin GPUs, and Fanuc/Yaskawa robotics deals.</li>
+      <li><strong>Google's Gemini 3.5 Pro missed a third deadline</strong> and is now eyeing a stopgap release after a from-scratch rebuild; Alphabet shed ~$225B in market value.</li>
+      <li><strong>OpenAI's first device is a screen-free Jony Ive smart speaker</strong> built to "feel alive" &mdash; landing days after Apple sued it for trade-secret theft.</li>
+      <li><strong>Anthropic and OpenAI split publicly on AI regulation</strong> &mdash; Anthropic backing tougher state laws, OpenAI pushing a single federal standard with preemption.</li>
+      <li><strong>TSMC lifted 2026 capex to the top of its $52&ndash;56B range</strong> on "extremely robust" agentic-AI chip demand.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Top story &mdash; Physical AI goes sovereign</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">Nvidia</span><span class="when">16 Jul</span></div>
+    <h3>Nvidia plants a full-stack "physical AI" flag in Japan</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Nvidia is converting its China lockout into a sovereign-AI land grab &mdash; wiring Japan's industrial giants onto its robotics stack now sets the default platform for the next decade of factory automation.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>On a two-day Tokyo visit, Jensen Huang unveiled <strong>Cosmos 3 Edge</strong>, a new model for robots and vision agents to perceive and navigate the physical world in real time, alongside a coalition of Japanese manufacturers. Nvidia and <strong>Noetra</strong> &mdash; Japan's "national physical-AI team," which includes <strong>Sony and Honda</strong> &mdash; announced a national AI super-factory powered by <strong>27,500 Rubin GPUs</strong>. <strong>Fanuc</strong> and <strong>Yaskawa Electric</strong> signed on for AI-powered robotics, and <strong>Fujitsu, Hitachi and Kawasaki Heavy Industries</strong> joined the coalition. Huang pressed "sovereign AI" in a pitch to the Takaichi administration.</p>
+      <ul class="sources">
+        <li><a href="https://blogs.nvidia.com/blog/japan-ecosystem-2026/">NVIDIA: Japan brings full-stack AI and robotics to every industry</a> (primary)</li>
+        <li><a href="https://www.cnbc.com/2026/07/16/nvidia-reveals-new-ai-model-and-expands-japans-physical-ai-ecosystem.html">CNBC: Nvidia unveils new AI model, expands Japan's physical-AI ecosystem</a></li>
+        <li><a href="https://asia.nikkei.com/business/technology/artificial-intelligence/nvidia-cashes-in-on-sovereign-ai-setting-sights-on-japan-for-latest-tie-up">Nikkei Asia: Nvidia cashes in on sovereign AI with Japan tie-up</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Models &amp; devices</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Google</span><span class="when">16 Jul</span></div>
+    <h3>Gemini 3.5 Pro misses a third deadline; Google weighs a stopgap</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Google's flagship keeps slipping while GPT&#8209;5.6 and Grok 4.5 are already shipping &mdash; every delay cedes the enterprise-reasoning tier to rivals, and the market is pricing it in.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>After scrapping the base model and rebuilding from scratch &mdash; engineers reportedly hit structural failures in recursive tool-calling and SVG generation &mdash; Google's ~17 July target slipped again on hallucination and reliability gaps, and reporting now says Google is eyeing a stopgap release. Alphabet shed roughly <strong>$225B</strong> in market value on the news. The competitive backdrop is harsher than June's slip: <strong>GPT&#8209;5.6 Sol</strong> and <strong>Grok 4.5</strong> both went public on 9 July.</p>
+      <ul class="sources">
+        <li><a href="https://www.techtimes.com/articles/320736/20260716/rebuilt-gemini-35-pro-misses-third-deadline-google-eyes-stopgap-release.htm">TechTimes: Rebuilt Gemini 3.5 Pro misses third deadline; Google eyes stopgap</a> (primary)</li>
+        <li><a href="https://www.bloggersideas.com/after-scrapping-the-base-model/">Google delays Gemini 3.5 Pro after scrapping the base model, as Alphabet sheds $225B</a></li>
+        <li><a href="https://finance.biggo.com/news/6f0c6bb2-795f-4c57-9d09-6db691d7638a">BigGo Finance: Google delays Gemini 3.5 Pro for full architectural rebuild</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">OpenAI</span><span class="when">15&ndash;16 Jul</span></div>
+    <h3>OpenAI's first device: a screen-free speaker built to "feel alive"</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> OpenAI is betting the post-phone AI interface is an ambient, humanlike companion &mdash; not an app &mdash; putting it on a collision course with Apple both in the living room and in court.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Bloomberg and Fortune detailed the first product from <strong>io</strong>, the design firm OpenAI bought from <strong>Jony Ive</strong> for $6.5B: a portable, <strong>screenless smart speaker</strong> with mechanical elements that move to create a sense that it is alive, running a more advanced version of OpenAI's new <strong>GPT&#8209;Live</strong> voice mode. Ex-Apple design lead <strong>Evans Hankey</strong> leads development; a commercial launch is targeted for <strong>2027</strong>. It lands days after <strong>Apple sued OpenAI on 10 July</strong> for trade-secret theft.</p>
+      <ul class="sources">
+        <li><a href="https://www.bloomberg.com/opinion/articles/2026-07-16/jony-ive-s-openai-speaker-wants-a-personal-relationship-with-users">Bloomberg: Jony Ive's OpenAI speaker wants a personal relationship with users</a></li>
+        <li><a href="https://fortune.com/2026/07/15/openai-building-human-like-chatgpt-device-apple-jony-ive/">Fortune: OpenAI wants its speaker to feel alive; Apple says it's a stolen idea</a></li>
+        <li><a href="https://thenextweb.com/news/openai-jony-ive-smart-speaker-io-hardware">The Next Web: OpenAI's first Jony Ive device is a screen-free speaker</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Policy &amp; markets</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">16 Jul</span></div>
+    <h3>Anthropic backs tougher state AI laws as OpenAI pushes federal preemption</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the two leading labs are now openly lobbying opposite directions &mdash; the outcome decides whether US AI compliance becomes one federal standard or a rising 50-state patchwork.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Anthropic endorsed <strong>California's SB 53</strong>, <strong>New York's RAISE Act</strong>, an <strong>Illinois</strong> bill requiring independent third-party audits, and a <strong>Massachusetts</strong> measure, arguing Congress should not preempt state law unless it passes a federal standard at least as strong. OpenAI's global-affairs chief is pushing the opposite &mdash; a single, lighter national standard with immediate preemption, a "reverse federalism" play to get states to mirror one another.</p>
+      <ul class="sources">
+        <li><a href="https://thehill.com/policy/technology/5918733-openai-anthropic-ai-regulation/">The Hill: OpenAI, Anthropic back state AI bills in absence of federal law</a></li>
+        <li><a href="https://cryptobriefing.com/anthropic-pushes-state-level-ai-safety-laws-diverging-from-openais-national/">Crypto Briefing: Anthropic pushes state-level AI safety laws, diverging from OpenAI</a></li>
+        <li><a href="https://www.aol.com/articles/inside-anthropics-state-state-plan-120439000.html">AOL/Fortune: Inside Anthropic's state-by-state plan to ratchet up AI rules</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">16 Jul</span></div>
+    <h3>TSMC lifts capex to the top of its range on "extremely robust" AI demand</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the industry's clearest demand signal just got stronger &mdash; TSMC sees agentic AI, not just chatbots, driving a supply-constrained compute build-out through 2026.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>In Q2 results, TSMC raised its <strong>2026 capex outlook to the high end of its $52&ndash;56B range</strong> and reaffirmed full-year revenue growth of <strong>more than 30%</strong> in USD, citing "extremely robust" AI-chip demand and the shift from generative to <strong>agentic AI</strong>. Advanced nodes stay supply-constrained &mdash; more N3 capacity in Taiwan, Arizona and Japan, with N2 ramping as the next growth platform. Even so, the broader AI-stock rally stalled on the day despite the beat.</p>
+      <ul class="sources">
+        <li><a href="https://www.tipranks.com/news/citi-raises-tsmc-stock-price-target-ahead-of-q2-earnings-sees-higher-2026-revenue-guidance">TipRanks: Citi raises TSMC target, sees higher 2026 revenue guidance</a></li>
+        <li><a href="https://www.techtimes.com/articles/320142/20260711/tsmc-q2-earnings-july-16-three-cowos-signals-that-test-ais-spending-ceiling.htm">TechTimes: TSMC Q2 earnings &mdash; signals that test AI's spending ceiling</a></li>
+        <li><a href="https://www.tradingkey.com/analysis/stocks/us-stocks/262031904-tsmc-tsm-stock-forecast-july-15-2026-june-revenue-q2-earnings-tradingkey">TradingKey: TSMC June revenue up 68%, Q2 earnings</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Software engineering</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Coinbase</span><span class="when">15 Jul</span></div>
+    <h3>Coinbase says 95&ndash;100% of its code is now AI-assisted</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a regulated, security-sensitive public company reporting near-total AI-written code is a hard datapoint on how far agentic coding has moved from hype to default &mdash; with humans retreating to oversight.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Platform head <strong>Rob Witoff</strong> said <strong>95&ndash;100%</strong> of Coinbase's code is now written by or with LLMs, up from roughly <strong>40% in February</strong>; engineers run <strong>5&ndash;10 coding agents</strong> at once. Humans stay central for cryptography and core security, and Coinbase projects AI could handle work equivalent to <strong>100,000 employees by 2030</strong>. It's a striking adoption curve for a public company in a heavily regulated sector.</p>
+      <ul class="sources">
+        <li><a href="https://cointelegraph.com/news/over-95-of-coinbases-code-is-now-written-with-ai">Cointelegraph: Over 95% of Coinbase's code is now written with AI</a></li>
+        <li><a href="https://financefeeds.com/coinbase-executive-says-95-100-of-company-code-is-now-ai-assisted/">FinanceFeeds: Coinbase exec says 95&ndash;100% of code is now AI-assisted</a></li>
+        <li><a href="https://coinpedia.org/crypto-live-news/coinbase-says-ai-now-assists-nearly-all-of-its-code-development/">Coinpedia: Coinbase says AI now assists nearly all of its code development</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 16 July 2026 (catch-up edition).</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
