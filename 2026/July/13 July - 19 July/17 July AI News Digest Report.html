@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 17 July 2026</title>
+  <meta name="description" content="Xi Jinping headlines Shanghai's WAIC as China launches a 29-nation AI governance bloc, xAI sues a user over Grok-generated CSAM, and Zoom patches a CVSS-9.8 zero-click account-takeover flaw.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>17 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: 15&ndash;17 July (last ~24&ndash;48 hours)</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Xi Jinping gave his first-ever World AI Conference keynote in Shanghai</strong> as China stood up WAICO, a new 29-nation AI governance body &mdash; a direct counter-bid to US-led export controls and standard-setting.</li>
+      <li><strong>xAI sued a Grok user over alleged CSAM deepfakes</strong> &mdash; one of the first AI-company-vs-its-own-user suits &mdash; as regulators tighten around nonconsensual sexual deepfakes.</li>
+      <li><strong>Zoom patched a CVSS-9.8, zero-click account-takeover flaw</strong> in its Windows clients; CISA separately added two Fortinet FortiSandbox bugs and a SharePoint flaw to its must-patch list.</li>
+      <li><strong>NetApp acquired AI-data-infrastructure startup DataPelago</strong>, betting storage-layer GPU processing can cut AI data-pipeline costs up to 80%.</li>
+      <li><strong>PrismML open-sourced Bonsai 27B</strong>, a 1-bit, 3.9GB reasoning model that runs locally on an iPhone at usable speed.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Top story &mdash; China's AI diplomacy goes multilateral</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">China &times; AI Diplomacy</span><span class="when">17 Jul</span></div>
+    <h3>Xi Jinping headlines Shanghai's WAIC as China launches a 29-nation AI governance bloc</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> China is formalizing a rival, multilateral AI governance track just as US export controls squeeze its chip access &mdash; a bifurcating global AI order that compliance and market-access teams now have to plan around, not just US or EU rules.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Xi Jinping delivered the keynote at the <strong>World Artificial Intelligence Conference</strong> in Shanghai for the first time since it began in 2018, telling more than 1,100 exhibiting companies and 1,400 guests that "AI development should not be a solo performance by a single country, but a symphony of international cooperation," while also warning that safety risks must be contained. China pledged <strong>5,000 AI training and seminar slots</strong> for developing countries, cooperation with ASEAN, the League of Arab States and the African Union, and access for 30 countries to a Chinese AI weather-forecasting system. The speech landed a day after <strong>29 countries signed an agreement</strong> in Shanghai to found the <strong>World AI Cooperation Organization (WAICO)</strong>, to be headquartered in the city &mdash; a structural counterweight to US-led AI diplomacy.</p>
+      <ul class="sources">
+        <li><a href="https://www.npr.org/2026/07/17/nx-s1-5897285/chinas-xi-calls-for-step-up-of-global-effort-in-ai-as-us-curbs-squeeze-chinas-tech-access">NPR: China's Xi calls for step-up of global effort in AI, as US curbs squeeze China's tech access</a></li>
+        <li><a href="https://www.cnbc.com/2026/07/17/x-china-ai-summit-risks-security.html">CNBC: Xi pitches China as AI partner to developing world, warns against risks and security overreach</a></li>
+        <li><a href="https://www.nbcnews.com/tech/tech-news/xi-jinping-outlines-chinas-global-vision-ai-landmark-speech-rcna587881">NBC News: Inside the room as Xi Jinping outlines China's global vision for AI</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Policy &amp; legal</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">xAI &times; Legal</span><span class="when">15&ndash;16 Jul</span></div>
+    <h3>xAI sues its own user over alleged Grok-generated CSAM deepfakes</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> an AI company suing a user who abused its product &mdash; rather than just banning them &mdash; is a new legal-defense playbook against platform-liability suits, and it lands as jurisdictions from Baltimore to Brussels move to ban nonconsensual sexual deepfakes outright.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>xAI filed suit in the Northern District of Texas against <strong>Terry Wayne Harwood</strong>, arrested earlier this year in South Carolina, alleging he opened multiple xAI accounts and used "misleading prompts" to get Grok to generate sexually explicit deepfakes of both minors and adults from ordinary photos, circumventing built-in safeguards. xAI's complaint says it suspended <strong>52,222 accounts</strong> and filed <strong>73,604 reports</strong> to NCMEC in 2026 alone, leading to at least 244 arrests. The suit comes alongside separate active litigation against xAI itself &mdash; a Baltimore consumer-protection suit and a Tennessee class action &mdash; and days after the EU's revised AI Act added an explicit ban on AI-generated CSAM and nonconsensual intimate imagery.</p>
+      <ul class="sources">
+        <li><a href="https://www.cnn.com/2026/07/15/business/xai-sues-user-alleged-child-sexual-abuse-materials">CNN: Elon Musk's xAI sues user over allegedly creating child sexual abuse materials with Grok</a></li>
+        <li><a href="https://thehill.com/policy/technology/5971425-musk-xai-sues-over-grok-misuse/">The Hill: Musk's xAI sues man for using Grok to allegedly create child sexual abuse material</a></li>
+        <li><a href="https://www.engadget.com/2216382/xai-sues-grok-user-generating-nonconsensual-sexualized-deepfakes/">Engadget: xAI sues Grok user for generating nonconsensual sexualized deepfakes</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Vulnerability Management</span><span class="when">16 Jul</span></div>
+    <h3>Zoom patches a CVSS-9.8 zero-click account-takeover flaw in its Windows clients</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> no credentials and no user interaction are needed to hijack an account over the network &mdash; that's a top-of-the-queue patch for any enterprise still on an affected build, discovered internally with no known in-the-wild exploitation yet.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Zoom disclosed <strong>CVE-2026-53412</strong> (CVSS 9.8), an improper-input-validation bug in the <strong>Zoom Workplace</strong>, <strong>VDI</strong> and <strong>Meeting SDK</strong> clients for Windows that allows unauthenticated, network-reachable account takeover. Affected builds are Zoom Workplace prior to 7.0.0, VDI client before 7.0.10/6.6.15/6.5.18, and Meeting SDK before 7.0.0. Zoom also patched a related TOCTOU privilege-escalation bug (CVE-2026-53410, CVSS 7.0) in the same advisory batch and says the critical flaw was found internally, with no evidence of active exploitation so far.</p>
+      <ul class="sources">
+        <li><a href="https://www.bleepingcomputer.com/news/security/zoom-warns-of-critical-account-takeover-vulnerability/">BleepingComputer: Zoom warns of critical account takeover vulnerability</a></li>
+        <li><a href="https://thehackernews.com/2026/07/zoom-patches-critical-windows-flaw-that.html">The Hacker News: Zoom patches critical Windows flaw that could enable account takeover</a></li>
+        <li><a href="https://securityaffairs.com/195454/security/zoom-fixes-cve-2026-53412-a-critical-account-takeover-bug.html">Security Affairs: Zoom fixes CVE-2026-53412, a critical account takeover bug</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">CISA &times; KEV</span><span class="when">16 Jul</span></div>
+    <h3>CISA adds two Fortinet FortiSandbox bugs and a SharePoint flaw to its exploited-vulnerabilities catalog</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> federal civilian agencies now face binding patch deadlines under BOD 26-04 for both flaws &mdash; and the SharePoint bug extends a wave of on-prem exploitation already tied to IIS machine-key theft and persistence, so any enterprise still running on-prem SharePoint should treat this as urgent, not routine.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>CISA added <strong>CVE-2026-25089</strong> and <strong>CVE-2026-39808</strong>, both OS command-injection flaws in <strong>Fortinet FortiSandbox</strong>, plus <strong>CVE-2026-58644</strong>, a deserialization-of-untrusted-data bug in on-premises <strong>Microsoft SharePoint Server</strong> (Subscription Edition, 2019 and 2016), to its Known Exploited Vulnerabilities catalog based on evidence of active exploitation. The SharePoint addition follows a broader CISA alert earlier in the week warning that multiple SharePoint flaws are being chained for remote code execution and IIS machine-key theft to maintain persistent access.</p>
+      <ul class="sources">
+        <li><a href="https://www.cisa.gov/news-events/alerts/2026/07/16/cisa-adds-three-known-exploited-vulnerabilities-catalog">CISA: CISA adds three known exploited vulnerabilities to catalog</a> (primary)</li>
+        <li><a href="https://www.cisa.gov/news-events/alerts/2026/07/14/cisa-urges-sharepoint-hardening-after-new-exploitations">CISA: CISA urges SharePoint hardening after new exploitations</a> (primary)</li>
+        <li><a href="https://www.theregister.com/security/2026/07/15/cisa-sounds-alarm-over-trio-of-exploited-sharepoint-flaws/5271814">The Register: CISA sounds alarm over trio of exploited SharePoint flaws</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Markets &amp; deals</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">M&amp;A &times; AI Infrastructure</span><span class="when">16 Jul</span></div>
+    <h3>NetApp acquires DataPelago to make enterprise storage "AI-ready" at the infrastructure layer</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> storage vendors are racing to own the "AI data readiness" layer before compute vendors do &mdash; if the cost claims hold up, this is a direct lever on the data-pipeline spend that's become a hidden tax on every enterprise AI project.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>NetApp acquired <strong>DataPelago</strong>, a California AI-data-infrastructure startup, for undisclosed terms; DataPelago becomes a wholly owned subsidiary. Its core product, <strong>Nucleus</strong>, is a universal data-processing engine that uses heterogeneous CPU/GPU compute to process data where it already lives &mdash; at the storage layer &mdash; instead of moving it to external compute clusters. NetApp says the approach can cut AI data-infrastructure costs by up to <strong>80%</strong> and run up to <strong>10x faster</strong> than conventional pipelines, positioning NetApp as offering "zero-copy activation" of enterprise data for AI workloads.</p>
+      <ul class="sources">
+        <li><a href="https://www.netapp.com/newsroom/press-releases/news-rel-20260716-210092/">NetApp: NetApp acquires DataPelago, making data AI-ready at the infrastructure layer</a> (primary)</li>
+        <li><a href="https://www.businesswire.com/news/home/20260715463139/en/NetApp-Acquires-DataPelago-Making-Data-AI-Ready-at-the-Infrastructure-Layer">BusinessWire: NetApp acquires DataPelago, making data AI-ready at the infrastructure layer</a></li>
+        <li><a href="https://www.investing.com/news/company-news/netapp-acquires-datapelago-for-ai-data-processing-tech-93CH-4796454">Investing.com: NetApp acquires DataPelago for AI data-processing tech</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Microsoft &times; Enterprise AI</span><span class="when">13&ndash;16 Jul</span></div>
+    <h3>Nadella warns enterprises they're "paying twice" for AI &mdash; once in tokens, once in proprietary data</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> when a top hyperscaler CEO publicly tells customers that frontier labs may be mining their usage data to build competing products, it's a signal to push data-ownership and model-portability clauses into every enterprise AI contract, not just Microsoft's.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Microsoft CEO <strong>Satya Nadella</strong> argued in a widely circulated blog post, amplified this week by Fortune and others, that enterprises using third-party frontier models are "paying twice": once for inference tokens, and again by handing over "exhaust" data &mdash; prompts, agent tool use, and correction patterns &mdash; that labs can use to improve models that later compete with those same customers. His proposed fix is for enterprises to retain their own "proprietary learning environments" in the cloud paired with vendor-agnostic orchestration layers. Palantir's Alex Karp has raised similar concerns; the framing is also a competitive jab at OpenAI and Anthropic as Microsoft pitches Azure AI Foundry as the neutral, portable alternative.</p>
+      <ul class="sources">
+        <li><a href="https://fortune.com/2026/07/16/microsoft-ceo-satya-nadella-warns-enterprises-that-ai-labs-are-stealing-their-know-how/">Fortune: Microsoft CEO Satya Nadella warns enterprises that AI labs are quietly mining customer data</a></li>
+        <li><a href="https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/">TechCrunch: Satya Nadella has issued a shocking warning to companies using AI</a></li>
+        <li><a href="https://www.theregister.com/ai-and-ml/2026/07/13/microsoft-chief-turns-hostile-on-frontier-ai-labs-warns-companies-to-guard-their-ip/5270628">The Register: Microsoft chief turns hostile on frontier AI labs, warns companies to guard their IP</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Models &amp; products</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">On-Device AI &times; Open Source</span><span class="when">14&ndash;16 Jul</span></div>
+    <h3>PrismML squeezes a 27B reasoning model into 3.9GB, running natively on an iPhone</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a genuinely agentic, multimodal, 27B-class model that fits on a phone and keeps 90%+ of full-precision accuracy pushes serious on-device AI past cloud dependency &mdash; and it's Apache-2.0, so any developer can build on it immediately.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Caltech-founded startup <strong>PrismML</strong> released <strong>Bonsai 27B</strong>, a multimodal model built on Qwen3.6-27B with a 1-bit variant compressed to just <strong>3.9GB</strong> &mdash; small enough to run on an iPhone 17 Pro at roughly <strong>11 tokens/second</strong> &mdash; while retaining over 90% of full-precision performance across 15 benchmarks. It supports multi-step reasoning, tool calling and agentic workflows, with a 4-bit vision tower for handling screenshots and documents on-device. Both variants are open-sourced under Apache 2.0, with an mlx-swift fork enabling local inference on iPhone and iPad.</p>
+      <ul class="sources">
+        <li><a href="https://prismml.com/news/prismml-releases-bonsai-27b">PrismML: PrismML announces 1-bit Bonsai 27B &mdash; the first 27B model to run on a phone</a> (primary)</li>
+        <li><a href="https://9to5mac.com/2026/07/14/prismml-releases-bonsai-27b-claiming-first-major-ai-model-of-its-size-fit-for-iphone/">9to5Mac: PrismML releases Bonsai 27B, claiming first major AI model of its size fit for iPhone</a></li>
+        <li><a href="https://the-decoder.com/bonsai-27b-is-a-full-open-reasoning-model-that-fits-on-an-iphone/">The Decoder: Bonsai 27B is a full open reasoning model that fits on an iPhone</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Google &times; Product</span><span class="when">16 Jul</span></div>
+    <h3>Google renames NotebookLM to Gemini Notebook, brings native code execution to Pro users</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> folding NotebookLM into the Gemini brand &mdash; and pushing agentic, code-executing notebooks down to the $20/month Pro tier &mdash; broadens serious grounded-research and data-analysis tooling right as Google's own Gemini 3.5 Pro flagship keeps slipping.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Google rebranded <strong>NotebookLM</strong>, used by more than 30 million people and 600,000+ organizations, as <strong>Gemini Notebook</strong>. Every notebook now gets a secure cloud sandbox letting it write and execute code natively for source-grounded data analysis &mdash; live today for AI Ultra and Workspace Business users, rolling out to all Pro users on the web over the coming weeks. Notebooks are also becoming accessible directly inside the Gemini app, with full cross-app sync, and are set to reach AI Mode in Search.</p>
+      <ul class="sources">
+        <li><a href="https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/">Google: NotebookLM is now Gemini Notebook</a> (primary)</li>
+        <li><a href="https://workspaceupdates.googleblog.com/2026/07/notebooklm-now-gemini-notebook.html">Google Workspace Updates: NotebookLM is now Gemini Notebook</a> (primary)</li>
+        <li><a href="https://9to5google.com/2026/07/16/notebooklm-gemini-notebook/">9to5Google: Google renames NotebookLM to Gemini Notebook</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 17 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
