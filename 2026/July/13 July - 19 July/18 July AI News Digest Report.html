@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 18 July 2026</title>
+  <meta name="description" content="Moonshot's 2.8-trillion-parameter Kimi K3 closes in on Claude Fable 5 as China's largest open-weight model yet; the FTC's bid to preempt Colorado's AI Act enters its final comment stretch; Fireworks AI raises a $1.505B Series D; and WordPress patches a critical pre-auth RCE while OpenSSL quietly fixes a memory-exhaustion flaw.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>18 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: 15&ndash;18 July (last ~72 hours)</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Moonshot AI's 2.8-trillion-parameter Kimi K3 lands within striking distance of Claude Fable 5</strong> and beats GPT-5.6 Sol and Opus 4.8 on coding leaderboards &mdash; the largest open-weight model ever released and China's sharpest catch-up move yet.</li>
+      <li><strong>The FTC's bid to preempt Colorado's revised AI Act</strong> over "accuracy suppression" enters its final public-comment stretch (through July 31), setting up a federal-vs-state fight over every state AI-bias law.</li>
+      <li><strong>Nvidia resumed limited H200 chip shipments to China</strong> under a narrow Commerce Department license, reigniting a Capitol Hill fight over export-control enforcement.</li>
+      <li><strong>Fireworks AI raised a $1.505B Series D at a $17.5B valuation</strong>, saying daily inference volume nearly tripled to 40 trillion tokens since its last round.</li>
+      <li><strong>WordPress patched a critical, pre-auth RCE ("wp2shell," CVSS 9.8)</strong> exploitable on default installs, while OpenSSL quietly fixed a related 11-byte memory-exhaustion bug ("HollowByte") with no CVE issued.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Top story &mdash; the open-weight race tightens</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">China &times; Open Models</span><span class="when">16&ndash;17 Jul</span></div>
+    <h3>Moonshot's 2.8-trillion-parameter Kimi K3 closes the gap with Claude Fable 5</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the largest open-weight model ever released now claims to beat GPT-5.6 Sol and Opus 4.8 on coding benchmarks while running competitively with the current frontier &mdash; raising the bar for what "free and good enough" means for any team weighing a self-hosted model against a frontier API, and doing it despite US chip export controls.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Beijing-based <strong>Moonshot AI</strong> released <strong>Kimi K3</strong>, a 2.8-trillion-parameter Mixture-of-Experts model (896 experts, 16 active per token) built on Kimi Delta Attention hybrid linear attention, with native vision understanding and up to a 1M-token context window. Moonshot says K3 performs "competitively" with Anthropic's Fable 5 and "substantially outperforms" Anthropic's Opus 4.8 and OpenAI's GPT-5.6 Sol and GPT-5.5 on its internal evaluations; independent leaderboard results also placed it ahead of both on head-to-head coding-arena comparisons. Full model weights are due July 27. Axios framed the release as evidence China has "erased" much of the US's perceived AI lead despite ongoing chip restrictions, and the news moved AI-adjacent equities the same day.</p>
+      <ul class="sources">
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-17/china-s-powerful-new-moonshot-ai-model-closes-gap-with-us-rivals">Bloomberg: Moonshot unveils Kimi K3 AI model, narrowing gap with US rivals</a></li>
+        <li><a href="https://www.axios.com/2026/07/17/china-ai-kimi-k3-open-source-anthropic-opus">Axios: China just erased America's AI lead</a></li>
+        <li><a href="https://venturebeat.com/technology/chinas-moonshot-ai-releases-kimi-k3-the-largest-open-source-model-ever-rivaling-top-u-s-systems">VentureBeat: China's Moonshot AI releases Kimi K3, the largest open-source model ever</a></li>
+        <li><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/moonshot-releases-2-8-trillion-parameter-kimi-k3">Tom's Hardware: China's 2.8-trillion-parameter Kimi K3 beats Claude Fable 5 in Frontend Code Arena benchmark</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Policy &amp; legal</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">FTC &times; State AI Law</span><span class="when">1&ndash;17 Jul, comments through 31 Jul</span></div>
+    <h3>FTC's bid to preempt Colorado's AI Act enters its final comment stretch</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> if the FTC's implied-preemption theory holds, any state law that forces a company to alter a model's truthful outputs &mdash; bias audits, disparate-impact mandates &mdash; becomes federally challengeable as consumer deception, which is a live legal risk for every compliance team currently building to state-specific AI guardrails rather than a single federal standard.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>On July 1, the FTC voted 2-0 to publish a proposed policy statement on the "suppression of accuracy in artificial intelligence systems," arguing that state laws compelling AI developers to alter truthful model outputs &mdash; even to comply with the law &mdash; may itself be a deceptive act under Section 5 of the FTC Act. The statement singles out Colorado's revised AI Act (SB 26-189, effective January 1, 2027) as an example, and argues such state law is "impliedly preempted" to the extent it conflicts with the federal scheme; a company's motive for altering outputs to comply with state law is "irrelevant" to a Section 5 violation, per the FTC. One compliance path the agency floats: clear, prominent disclosure that a system's outputs are steered to prioritize state-law compliance over accuracy. The public comment period runs through July 31, 2026.</p>
+      <ul class="sources">
+        <li><a href="https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-seeks-public-comment-policy-statement-addressing-ai-accuracy">FTC: FTC seeks public comment on policy statement addressing AI accuracy</a> (primary)</li>
+        <li><a href="https://www.federalregister.gov/documents/2026/07/07/2026-13628/policy-statement-concerning-the-suppression-of-accuracy-in-artificial-intelligence-systems">Federal Register: Policy statement concerning the suppression of accuracy in artificial intelligence systems</a> (primary)</li>
+        <li><a href="https://www.steptoe.com/en/news-publications/ftc-proposes-policy-statement-addressing-ai-accuracy-under-state-ai-laws.html">Steptoe: FTC proposes policy statement addressing AI accuracy under state AI laws</a></li>
+        <li><a href="https://ppc.land/ftc-move-could-force-colorado-to-rewrite-new-ai-bias-law/">PPC Land: FTC move could force Colorado to rewrite new AI bias law</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Markets &amp; deals</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Chips &times; Export Policy</span><span class="when">14&ndash;17 Jul</span></div>
+    <h3>Nvidia resumes limited H200 chip shipments to China, splitting Washington</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> even a narrow resumption of advanced-chip exports to China reopens the enforcement fight over whether licensing carve-outs and offshore subsidiaries are quietly hollowing out the export-control regime &mdash; a signal to watch for any company sourcing compute or selling into both markets.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Nvidia has begun shipping a limited volume of <strong>H200</strong> AI chips into mainland China and Hong Kong after the Commerce Department approved a narrow set of export licenses. Deputy Under Secretary <strong>Jeffery Kessler</strong> told a congressional hearing on July 14 that H200 shipments to the region remain minimal in absolute terms, but the move split lawmakers: Rep. Gregory Meeks (D-NY) accused the administration of weakening safeguards, while Rep. Bill Huizenga (R-Mich.) warned that offshore Chinese subsidiaries could exploit licensing loopholes to route around restrictions on Nvidia's Blackwell line. KeyBanc raised its Nvidia price target to $330 from $310 on the news.</p>
+      <ul class="sources">
+        <li><a href="https://finance.yahoo.com/technology/ai/articles/nvidia-starts-h200-ai-chip-100704048.html">Yahoo Finance: Nvidia starts H200 AI chip shipments to China as US approves limited exports</a></li>
+        <li><a href="https://www.benzinga.com/markets/equities/26/07/60462326/nvidia-starts-h200-ai-chip-shipments-to-china-as-us-approves-limited-exports">Benzinga: Nvidia starts H200 AI chip shipments to China as US approves limited exports</a></li>
+        <li><a href="https://www.gurufocus.com/news/8959033/nvidia-nvda-faces-export-challenges-for-ai-chips-to-china">GuruFocus: Nvidia (NVDA) faces export challenges for AI chips to China</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding &times; Inference Infra</span><span class="when">16 Jul</span></div>
+    <h3>Fireworks AI raises a $1.505B Series D at a $17.5B valuation</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> model-agnostic inference platforms are pulling in mega-rounds as enterprises increasingly fine-tune and self-host specialized models instead of defaulting to a single frontier API &mdash; a bet that "own your intelligence" beats "rent a frontier model" at scale.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p><strong>Fireworks AI</strong>, founded by former PyTorch engineers, closed a <strong>$1.505 billion Series D</strong> at a <strong>$17.5 billion valuation</strong>, led by Atreides Management, Index Ventures and TCV, with Nvidia, Lightspeed, Bessemer, Menlo Ventures and others participating. Fireworks says it has surpassed <strong>$1 billion in annualized revenue</strong> (up 5x year-over-year) and now serves more than <strong>40 trillion tokens per day</strong>, up from 15 trillion at its last round, for customers including Doximity, Revolut and Shopify. The company plans to use the funds to expand compute infrastructure and engineering headcount.</p>
+      <ul class="sources">
+        <li><a href="https://fireworks.ai/blog/series-d-announcement">Fireworks AI: Fireworks secures $1.5 billion in Series D funding</a> (primary)</li>
+        <li><a href="https://www.businesswire.com/news/home/20260716264405/en/Fireworks-Raises-a-$1.5-Billion-Series-D-to-Lead-the-Specialized-Intelligence-Revolution">BusinessWire: Fireworks raises a $1.5 billion Series D to lead the specialized intelligence revolution</a></li>
+        <li><a href="https://qz.com/fireworks-ai-series-d-fundraise-valuation-open-source-071626">Quartz: Fireworks AI raises $1.5 billion Series D at $17.5 billion valuation</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">M&amp;A &times; Dev Tools</span><span class="when">15 Jul</span></div>
+    <h3>Anaconda acquires open-source coding agent Kilo Code</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> an enterprise Python/ML vendor buying a model-agnostic coding agent, rather than building or renting one, is a bet that "switch between any of 500+ models" beats vendor lock-in as the default enterprise posture &mdash; worth a look if you've standardized on Kilo's open routing.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p><strong>Anaconda</strong> acquired <strong>Kilo Code</strong>, an open-source, model-agnostic agentic coding platform used by more than 3 million developers across VS Code, JetBrains, the web and CLI, routing close to 10 trillion tokens a month across 500-plus models from over 60 providers. The deal builds on Anaconda's earlier acquisition of Outerbounds, which brought production-grade AI orchestration to the Anaconda Platform, as the company positions itself around "AI on your own terms" rather than tying customers to a single model vendor.</p>
+      <ul class="sources">
+        <li><a href="https://www.anaconda.com/blog/anaconda-acquires-kilo-code">Anaconda: AI on your own terms &mdash; Anaconda acquires Kilo Code</a> (primary)</li>
+        <li><a href="https://www.businesswire.com/news/home/20260715437804/en/Anaconda-Acquires-Kilo-Code-to-Power-the-Trillion-Token-Enterprise">BusinessWire: Anaconda acquires Kilo Code to power the trillion-token enterprise</a></li>
+        <li><a href="https://thenewstack.io/anaconda-kilo-open-source-acquisition/">The New Stack: Anaconda buys Kilo, the open source coding agent that answers to no single model maker</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Vulnerability Management</span><span class="when">17 Jul</span></div>
+    <h3>WordPress patches "wp2shell," a critical pre-auth RCE hittable on default installs</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> no login, no plugin and no special configuration are needed &mdash; a default WordPress install is exploitable by a single anonymous HTTP request, which makes this a same-day patch priority for the roughly 40% of the web still running WordPress core, not a routine update to queue for later.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>WordPress shipped <strong>7.0.2</strong> and <strong>6.9.5</strong> on July 17, fixing a flaw researchers dubbed <strong>wp2shell</strong>: <strong>CVE-2026-63030</strong>, a pre-authentication remote-code-execution bug that chains a REST API batch-request route-confusion issue with SQL injection, plus a related standalone SQL-injection flaw, <strong>CVE-2026-60137</strong>, affecting WordPress 6.8 and above. The RCE chain hits WordPress 6.9.0&ndash;6.9.4 and 7.0.0&ndash;7.0.1; sites on older branches can patch via 6.8.6. Cloudflare shipped WAF rules to shield unpatched sites in the interim.</p>
+      <ul class="sources">
+        <li><a href="https://wordpress.org/news/2026/07/wordpress-7-0-2-release/">WordPress.org: WordPress 7.0.2 release</a> (primary)</li>
+        <li><a href="https://thehackernews.com/2026/07/new-wp2shell-wordpress-core-flaw-lets.html">The Hacker News: New wp2shell WordPress core flaw lets unauthenticated attackers run code</a></li>
+        <li><a href="https://blog.cloudflare.com/wordpress-vulnerabilities/">Cloudflare: Cloudflare WAF protects WordPress applications from two high-severity vulnerabilities</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Supply Chain &times; Vulnerability</span><span class="when">17 Jul</span></div>
+    <h3>OpenSSL quietly fixes "HollowByte," an 11-byte flaw that can exhaust server memory &mdash; with no CVE</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the bug hits nearly every TLS-terminating stack &mdash; Node, Python, Ruby, PHP, MySQL, Postgres, NGINX, Apache &mdash; and shipped with no CVE, advisory or changelog entry, so it won't show up in a routine dependency scan; if you haven't explicitly upgraded to a patched OpenSSL build, you're carrying an untracked memory-exhaustion risk.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Okta security researchers detailed <strong>HollowByte</strong>: older OpenSSL versions pre-allocate a receive buffer sized to a connection's declared (but unverified) length header &mdash; up to 131KB for an inbound ClientHello &mdash; before a single body byte arrives. Combined with glibc's tendency to hold onto freed small-to-medium allocations rather than returning them to the OS, an attacker opening waves of connections with randomized declared sizes fragments the heap and drives up resident memory without ever crossing a connection-count limit. Okta's own testing OOM-killed a 1GB server using just 547MB of frozen fragments, and locked up 25% of memory on a 16GB box, using payloads as small as 11 bytes. OpenSSL silently fixed the issue in <strong>4.0.1</strong>, with silent backports to 3.6.3, 3.5.7, 3.4.6 and 3.0.21 &mdash; without assigning a CVE.</p>
+      <ul class="sources">
+        <li><a href="https://sec.okta.com/articles/2026/06/openssl-hollowbtye-a-dos-hiding-in-11-bytes/">Okta Security: OpenSSL HollowByte &mdash; a DoS hiding in 11 bytes</a> (primary)</li>
+        <li><a href="https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/">BleepingComputer: HollowByte DDoS flaw bloats OpenSSL server memory with 11-byte payload</a></li>
+        <li><a href="https://thehackernews.com/2026/07/openssl-hollowbyte-flaw-could-freeze.html">The Hacker News: OpenSSL HollowByte flaw could freeze server memory with 11-byte TLS requests</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 18 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
