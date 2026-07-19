@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 19 July 2026</title>
+  <meta name="description" content="Apple overtakes Nvidia as the world's most valuable company amid a $3.3T chip-sector selloff; Anthropic is in talks to lease $10B of compute from Meta; Thinking Machines ships its first model, Inkling; and Broadcom patches a CVSS 9.8 auth-bypass flaw in VMware's Avi Load Balancer.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>19 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: 15&ndash;19 July</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Apple retook the title of world's most valuable company from Nvidia</strong> ($4.88T vs. $4.86T) as investors rotate out of AI-capex plays and into monetization bets, amid a semiconductor-sector selloff that has erased roughly $3.3T in value since late June.</li>
+      <li><strong>Anthropic is negotiating to lease up to $10B in compute from Meta</strong> over two years to ease its capacity crunch &mdash; weeks after a similar arrangement with SpaceX's Colossus 1 data center.</li>
+      <li><strong>Mira Murati's Thinking Machines shipped Inkling</strong>, a 975B-parameter open-weight model the company admits isn't the strongest available &mdash; betting enterprises want a customizable base more than a benchmark winner.</li>
+      <li><strong>xAI confirmed Grok 4.6 is next</strong> just two days after Grok 4.5 went public, while the actual flagship, Grok 5, keeps slipping past its 2026 targets.</li>
+      <li><strong>Broadcom patched a CVSS 9.8 authentication-bypass flaw</strong> and six other severe bugs in VMware's Avi Load Balancer.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Top story &mdash; markets reassess the AI trade</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">Markets &times; Big Tech</span><span class="when">17 Jul</span></div>
+    <h3>Apple overtakes Nvidia as the world's most valuable company</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the flip is a real-time referendum on the AI trade &mdash; Wall Street is starting to reward distribution and monetization (Apple's services and hardware ecosystem) over raw infrastructure spend (Nvidia's chip supply), a rotation worth watching if your own AI roadmap is still justified purely on compute capex.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Apple closed Friday, July 17 valued at roughly <strong>$4.88 trillion</strong>, edging past <strong>Nvidia</strong> (~$4.86T) after Nvidia's stock slid 3.5% in a single session, erasing about $173B in market value. It's the first time Apple has held the title since April 2025; Nvidia had led since June 2025, when it passed Microsoft, and briefly touched $5T earlier this year. The move came alongside a broader chip-sector selloff &mdash; the PHLX Semiconductor Index is down more than 9% for the week and global semiconductor stocks have shed roughly $3.3T in value since June 22, a slide that accelerated after Moonshot AI's Kimi K3 release at Shanghai's WAIC renewed doubts about the pace of return on massive US AI-infrastructure spending. "Apple was seen as a laggard in the AI race because it wasn't spending to develop models, but now sentiment has changed," said Toni Meadows, head of investment at BRI Wealth Management. "Apple is less exposed to capex intensity and better positioned to monetize AI via services, ecosystem lock-in, and hardware upgrades."</p>
+      <ul class="sources">
+        <li><a href="https://www.cnbc.com/2026/07/17/apple-nvidia-aapl-nvda-market-cap.html">CNBC: Apple, Nvidia vie for title of world's most valuable company</a></li>
+        <li><a href="https://9to5mac.com/2026/07/17/apple-reclaims-most-valuable-company-title-from-nvidia-as-it-barrels-toward-5t/">9to5Mac: Apple overtakes Nvidia as world's most valuable company as it barrels toward $5T</a></li>
+        <li><a href="https://appleinsider.com/articles/26/07/17/aapl-capitalization-squeaks-past-nvda-apple-becomes-worlds-most-valuable-company">AppleInsider: Apple overtakes Nvidia, becomes world's most valuable company</a></li>
+        <li><a href="https://finance.yahoo.com/markets/article/semiconductor-stocks-keep-falling-as-investors-go-risk-off-chinese-startup-releases-powerful-new-ai-model-130920103.html">Yahoo Finance: Semiconductor stocks keep falling as investors go risk-off, Chinese startup releases powerful new AI model</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Models &amp; infrastructure</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Compute &times; Deals</span><span class="when">17 Jul</span></div>
+    <h3>Anthropic is in early talks to lease $10B of compute from Meta</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> even the best-funded AI lab can't out-buy the compute shortage &mdash; Anthropic, sitting on a $965B valuation and a $47B annualized revenue run-rate, is now shopping for capacity from a chip-hungry rival rather than only building or buying its way out, a sign the GPU crunch is reshaping competitive alliances as much as balance sheets.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>First reported by the New York Times on July 17, Meta is in early-stage talks to lease Anthropic up to <strong>$10 billion</strong> in computing capacity over two years, with Anthropic paying in monthly installments and either side able to exit early. Anthropic reportedly proposed the arrangement in June; the talks may not result in a final deal. It follows a similar agreement weeks earlier giving Anthropic access to compute at SpaceX's Colossus 1 data center, and comes as Meta stands up "Meta Compute," a new unit launched July 1 to sell spare AI capacity to outside customers and compete directly with AWS, Azure and Google Cloud.</p>
+      <ul class="sources">
+        <li><a href="https://www.cnbc.com/2026/07/17/anthropic-meta-ai-compute.html">CNBC: Anthropic in early talks with Meta to acquire compute power</a></li>
+        <li><a href="https://thenextweb.com/news/anthropic-meta-10-billion-compute-deal-talks">TheNextWeb: Anthropic is in early talks to lease $10 billion in compute from Meta</a></li>
+        <li><a href="https://www.thestreet.com/technology/meta-anthropic-ai-compute-deal">TheStreet: Meta, Anthropic drop bombshell news on AI market</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Open Models</span><span class="when">15 Jul</span></div>
+    <h3>Thinking Machines ships Inkling, its first model &mdash; and admits it isn't the best one out there</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Mira Murati's lab isn't trying to win the frontier-benchmark race &mdash; it's betting most enterprises would rather fine-tune a merely-good open base into something proprietary than keep renting whichever closed model tops this week's leaderboard; if that bet is right, benchmark supremacy stops being the moat.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p><strong>Thinking Machines Lab</strong>, the startup founded by former OpenAI CTO Mira Murati and valued at $12B, released <strong>Inkling</strong> on July 15: a 975-billion-parameter mixture-of-experts model that draws on roughly 41B parameters per task, trained on 45 trillion tokens of text, image, audio and video, and reasoning natively across all four. Weights are downloadable and modifiable, alongside a hosted enterprise API. The company explicitly says Inkling is "not the strongest overall model available today, open or closed" &mdash; it posts 77.6% on SWE-bench Verified and 91.4% on VoiceBench, and trails China's GLM-5.2 on several reasoning and coding-agent benchmarks (29.7% vs. 40.1% on HLE without tools; 54.3% vs. 62.1% on SWE-Bench Pro Public), while scoring 98.6% on the StrongREJECT safety benchmark. Thinking Machines frames the release as a deliberate bet that enterprises value a customizable foundation over raw leaderboard position, and notes it shipped a first model in roughly nine months, versus multi-year timelines at OpenAI and Anthropic.</p>
+      <ul class="sources">
+        <li><a href="https://thinkingmachines.ai/news/introducing-inkling/">Thinking Machines Lab: Inkling &mdash; our open-weights model</a> (primary)</li>
+        <li><a href="https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/">TechCrunch: Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling</a></li>
+        <li><a href="https://venturebeat.com/technology/thinking-machines-open-sources-first-multimodal-language-model-inkling-focused-on-low-cost-and-resistance-to-censorship">VentureBeat: Thinking Machines open sources first multimodal language model, Inkling</a></li>
+        <li><a href="https://www.axios.com/2026/07/15/mira-murati-thinking-machines-open-weight-model">Axios: Mira Murati's Thinking Machines debuts its first AI model</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">xAI &times; Roadmap</span><span class="when">16&ndash;18 Jul</span></div>
+    <h3>xAI teases Grok 4.6 two days after Grok 4.5 ships, while Grok 5 keeps slipping</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> xAI is running two clocks at once &mdash; a rapid-fire minor-version cadence to stay visible on leaderboards, and a much slower, repeatedly-delayed flagship cycle for Grok 5 &mdash; a pattern worth weighing before betting a roadmap on xAI's next "big" model landing on schedule.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p><strong>Grok 4.5</strong> went public on July 16, ranking 4th on the Artificial Analysis Intelligence Index and priced at $2/$6 per million input/output tokens. Two days later, on July 18, Elon Musk confirmed via an X reply that <strong>Grok 4.6</strong> is already "in the pipeline," with no launch date or feature details given &mdash; consistent with the roughly twice-weekly update cadence Musk has previously described. Meanwhile the actual next-generation flagship, <strong>Grok 5</strong>, has now missed both its Q1 and Q2 2026 target windows and remained in training on the Colossus 2 cluster as of July 17. Grok's user base has grown to roughly 117 million monthly actives as of March, more than triple its December 2025 figure.</p>
+      <ul class="sources">
+        <li><a href="https://www.basenor.com/blogs/news/grok-4-6-confirmed-what-we-know-from-the-xai-roadmap">Basenor: Grok 4.6 confirmed &mdash; what we know from the xAI roadmap</a></li>
+        <li><a href="https://www.axios.com/2026/07/08/spacexai-grok-new-model">Axios: Scoop &mdash; SpaceXAI launches new model, Grok 4.5</a></li>
+        <li><a href="https://www.mindstudio.ai/blog/xai-grok-roadmap-7-models-training-grok-5-10-trillion">MindStudio: xAI's Grok roadmap &mdash; 7 models in training now, Grok 5 at 10 trillion parameters</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Labor market</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Jobs &times; AI Adoption</span><span class="when">15&ndash;16 Jul</span></div>
+    <h3>AI now cited in more than half of this year's tracked layoff events</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> more than half of the 300-plus layoff events tracked so far in 2026 now explicitly name AI or automation as a driver &mdash; including roles beyond the obvious (support, QA, even traditional software engineering) &mdash; which is the clearest read yet that the labor-market impact has moved past hype-cycle prediction and into quarterly headcount plans.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>As of July 16, trackers had logged <strong>302 layoff events</strong> in 2026 affecting roughly <strong>201,754 workers</strong> &mdash; about 1,024 job losses a day &mdash; with <strong>54%</strong> of those events (168,770 workers across 164 companies) explicitly citing AI, automation or machine learning. A separate Crunchbase News tally counted at least <strong>2,115 US tech-sector layoffs</strong> in the week ended July 15, including roughly 500 engineering roles at Toronto-based Thomson Reuters. Bloomberg reports the tech and finance sectors &mdash; among the fastest to adopt AI &mdash; are now losing about 28,000 jobs a month on average. Affected roles increasingly extend beyond customer support and content moderation into data entry, QA testing and conventional software engineering, with the resulting savings redirected into AI data centers, chips and tooling.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/">TechCrunch: Every major tech layoff in 2026 that has name-checked AI</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-01/tech-and-finance-sectors-losing-28-000-jobs-monthly-show-ai-impact-on-labor">Bloomberg: Tech and finance sectors losing 28,000 jobs monthly show AI impact on labor</a></li>
+        <li><a href="https://www.cbsnews.com/news/ai-layoffs-hiring-entry-level-workers/">CBS News: AI job cuts are rising, but experts say layoffs are only part of the story</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Vulnerability Management</span><span class="when">18 Jul</span></div>
+    <h3>Broadcom patches a CVSS 9.8 auth-bypass flaw in VMware's Avi Load Balancer</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a 9.8 authentication-bypass flaw in a load balancer sits directly behind the perimeter's front door &mdash; any org running Avi LB should treat this as an emergency patch, not a routine cycle, even though Broadcom reports no evidence of active exploitation yet.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Broadcom disclosed and patched <strong>seven severe vulnerabilities</strong> in <strong>VMware Avi Load Balancer</strong> on July 18. The headline flaw, <strong>CVE-2026-47865</strong> (CVSS 9.8), is a weak-authentication bug that lets an unauthenticated remote attacker bypass login entirely. A second flaw, <strong>CVE-2026-47871</strong> (CVSS 8.8), is a directory-traversal issue in file-path validation that lets an authenticated network user read files outside intended directories; it was discovered by Lang Khuong Duy of Viettel IDC. Fixes are available across the affected 22.x through 32.x release branches (e.g., 32.1.1 users should move to 32.1.2, 31.1.1&ndash;31.2.2 to 31.2.2-2p3, and 30.1.1&ndash;30.2.6 to 30.2.7). Broadcom's advisory notes no evidence of in-the-wild exploitation at this time.</p>
+      <ul class="sources">
+        <li><a href="https://www.securityweek.com/7-severe-vulnerabilities-patched-in-vmware-avi-load-balancer/">SecurityWeek: 7 severe vulnerabilities patched in VMware Avi Load Balancer</a></li>
+        <li><a href="https://securityonline.info/vmware-avi-load-balancer-cve-2026-47865/">Security Online: VMware Avi Load Balancer authentication bypass (CVE-2026-47865, CVSS 9.8) headlines seven-flaw patch</a></li>
+        <li><a href="https://www.thehackerwire.com/vulnerability/CVE-2026-47871/">TheHackerWire: CVE-2026-47871 &mdash; high vulnerability</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Developer platforms</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">OpenAI &times; Codex</span><span class="when">13&ndash;18 Jul</span></div>
+    <h3>OpenAI restores Codex's context window after quietly shipping a quarter of what it advertised</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> OpenAI advertised a 1.05M-token context window and, for a stretch, quietly served roughly a quarter of that in the actual Codex CLI &mdash; a reminder to verify real runtime behavior against spec for any AI dependency you build against, since vendor limits and reality can drift without an announcement.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Developers using <strong>GPT-5.6 Sol</strong> in OpenAI's <strong>Codex</strong> CLI found its effective context window had been quietly cut well below the advertised 1.05M tokens &mdash; first to 353K, then to 258K &mdash; triggering a "severe regression" GitHub issue on July 13 and widespread reports of context truncation and degraded performance mid-session. OpenAI's July 18 Codex update fixed the bundled instructions for GPT-5.6 Sol, Terra and Luna and restored their context windows to <strong>272,000 tokens</strong> &mdash; still well short of the originally advertised figure, but resolving the acute regression developers had been hitting.</p>
+      <ul class="sources">
+        <li><a href="https://github.com/openai/codex/issues/32806">GitHub: [SEVERE REGRESSION] GPT-5.6 Sol context cut again: 353K &rarr; 258K despite advertised 1.05M (openai/codex#32806)</a> (primary)</li>
+        <li><a href="https://developers.openai.com/codex/changelog/">OpenAI: Codex changelog</a> (primary)</li>
+        <li><a href="https://www.getreadyforagents.com/news/codex-context-window-reduction/">Agentic Ready: Codex GPT-5.6 Sol context window reduced to 258K tokens, users report performance degradation</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 19 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
