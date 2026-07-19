@@ -1,7 +1,16 @@
 {
-  "generated": "2026-07-18T10:45:30.140Z",
-  "count": 27,
+  "generated": "2026-07-19T10:47:24.005Z",
+  "count": 28,
   "digests": [
+    {
+      "date": "2026-07-19",
+      "title": "AI News Digest — 19 July 2026",
+      "path": "2026/July/13 July - 19 July/19 July AI News Digest Report.html",
+      "year": 2026,
+      "month": "July",
+      "week": "13 July - 19 July",
+      "summary": "Apple overtakes Nvidia as the world's most valuable company amid a $3.3T chip-sector selloff; Anthropic is in talks to lease $10B of compute from Meta; Thinking Machines ships its first model, Inkling; and Broadcom patches a CVSS 9.8 auth-bypass flaw in VMware's Avi Load Balan…"
+    },
     {
       "date": "2026-07-18",
       "title": "AI News Digest — 18 July 2026",
