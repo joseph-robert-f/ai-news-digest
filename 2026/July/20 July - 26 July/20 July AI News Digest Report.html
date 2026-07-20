@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 20 July 2026</title>
+  <meta name="description" content="The EU orders Google to open 11 Android AI-assistant features and share Search data with rivals under the DMA; Gemini 3.5 Pro misses its third launch deadline; TSMC pledges another $100B for Arizona after a record quarter; and Hugging Face discloses a breach carried out end-to-end by an autonomous AI agent.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>20 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: 16&ndash;20 July</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>The EU ordered Google to open 11 Android AI-assistant features and share anonymized Search data with rivals</strong> under the Digital Markets Act &mdash; a binding order, not a fine, with implementation deadlines running into 2027&ndash;2028.</li>
+      <li><strong>Gemini 3.5 Pro missed its third consecutive launch deadline</strong>, with a from-scratch rebuild still falling short on hallucinations and reliability &mdash; leaving Google the only major lab without a shipped 2026 flagship.</li>
+      <li><strong>TSMC pledged another $100B for Arizona</strong> (total $265B, 14 facilities) days after posting a record 77.4% year-over-year Q2 profit jump on AI-chip demand.</li>
+      <li><strong>SK Group's Chey Tae-won warned AI memory demand will outstrip supply by 60&ndash;100% in 2027</strong>, with "no company" bringing meaningful new HBM capacity online &mdash; and predicted the shortage will escalate into government-to-government pressure.</li>
+      <li><strong>Hugging Face disclosed a breach executed end-to-end by an autonomous AI agent</strong> &mdash; and said its own defenders had to abandon US frontier models, whose safety guardrails blocked forensic analysis of the attack, in favor of an open-weight Chinese model.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Top story &mdash; the EU forces Google's hand on Android AI</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">EU &times; Antitrust</span><span class="when">16 Jul</span></div>
+    <h3>EU orders Google to open Android to rival AI assistants and share Search data</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is a binding structural remedy, not a fine &mdash; it forces Google to give competing AI assistants the same system-level Android access Gemini gets, which resets the competitive baseline for every non-Google assistant trying to compete on phones, and signals the EU intends to police default-AI advantages the same way it once policed default-browser advantages.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>On July 16, the European Commission issued two sets of binding specification measures against Google under the Digital Markets Act. The first requires Google to open <strong>11 Android feature groups</strong> &mdash; from voice activation (letting a rival assistant respond to a "Hey Google"-style hotword) to the ability to act across apps on a user's behalf &mdash; to competing AI assistants, which today only get restricted access compared with Gemini. The second requires Google to share anonymized Search data with rival search engines and AI developers, using a multi-layered anonymization method developed with privacy experts and aligned with draft DMA/GDPR guidance. Google must implement AI-assistant interoperability in Android 18 by <strong>August 1, 2027</strong>, with concurrent hotword detection following in Android 19 by <strong>August 1, 2028</strong>; the Search-data measures phase in through 2026, with final pricing due by January 2027.</p>
+      <ul class="sources">
+        <li><a href="https://digital-markets-act.ec.europa.eu/commission-provides-guidance-google-ai-interoperability-android-and-sharing-google-search-data-under-2026-07-16_en">European Commission (DMA): Commission provides guidance to Google for AI interoperability on Android and sharing of Google Search data</a> (primary)</li>
+        <li><a href="https://digital-strategy.ec.europa.eu/en/news/commission-provides-guidance-google-ai-interoperability-android-and-sharing-google-search-data">European Commission: Shaping Europe's digital future &mdash; same guidance</a> (primary)</li>
+        <li><a href="https://www.macrumors.com/2026/07/16/eu-google-ai-apps-android-access/">MacRumors: EU orders Google to give rival AI apps the same Android access as Gemini</a></li>
+        <li><a href="https://www.techtimes.com/articles/320760/20260716/eu-gives-rival-ai-assistants-system-level-android-access-google-reserved-gemini.htm">Tech Times: EU gives rival AI assistants system-level Android access Google reserved for Gemini</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Models &amp; infrastructure</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Google &times; Roadmap</span><span class="when">15&ndash;16 Jul</span></div>
+    <h3>Gemini 3.5 Pro misses its third launch deadline in a row</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a slipped deadline is engineering discipline; a third slip &mdash; after Google ordered a ground-up rebuild and it still falls short &mdash; suggests something structural in either the training run or Google's own bar for reliability, and it leaves Google as the only major lab still without a 2026 flagship in general production.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Google unveiled <strong>Gemini 3.5 Pro</strong> at I/O on May 19, targeting a June general-availability launch. That date slipped to July after enterprise testers flagged token-efficiency, coding-performance and multi-step-reasoning gaps. A second, more serious delay followed when Google reportedly concluded the model had structural failures in recursive tool-calling and SVG generation that fine-tuning couldn't fix, prompting a full pre-training rebuild targeting a widely leaked July 17 date. That date has now also passed: reporting from July 15&ndash;16 says the rebuilt model is still producing frequent hallucinations and falling short of internal reliability standards, and trails OpenAI's GPT-5.6 on benchmark comparisons. Google has not set a new public date.</p>
+      <ul class="sources">
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-16/google-gemini-launch-delayed-as-tech-falls-short-of-internal-goals">Bloomberg: Google Gemini launch delayed as tech falls short of internal goals</a></li>
+        <li><a href="https://9to5google.com/2026/07/16/gemini-3-5-pro-delays/">9to5Google: Gemini 3.5 Pro delays due to coding performance, upgraded Flash model in testing</a></li>
+        <li><a href="https://www.techtimes.com/articles/320736/20260716/rebuilt-gemini-35-pro-misses-third-deadline-google-eyes-stopgap-release.htm">Tech Times: Rebuilt Gemini 3.5 Pro misses third deadline, Google eyes stopgap release</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Markets &amp; deals</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Chips &times; Capex</span><span class="when">16 Jul</span></div>
+    <h3>TSMC pledges another $100B for Arizona after a record AI-driven quarter</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the world's dominant advanced-chip foundry is doubling down on US capacity specifically to keep pace with "leading US customers'" AI demand &mdash; a direct data point on how much runway chipmakers think the AI buildout still has, and a signal for anyone modeling when leading-edge capacity constraints might ease.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p><strong>TSMC</strong> announced an additional <strong>$100 billion</strong> investment in Arizona on July 16, on top of the $165 billion pledged in March 2025, bringing its total US commitment to <strong>$265 billion</strong> across roughly 14 facilities: 10 fabs, two advanced-packaging plants and an R&amp;D center. CEO C.C. Wei said the new money funds four more fabs at 2-nanometer-and-below process nodes plus advanced packaging, "to support the strong multi-year demand from our leading US customers." The pledge followed TSMC's Q2 earnings, which posted a record <strong>77.4% year-over-year profit jump</strong> on $40.2B in revenue; the company raised its 2026 capex guidance to $60&ndash;64B (from $52&ndash;56B) and its full-year revenue-growth guidance to slightly above 40% in USD terms.</p>
+      <ul class="sources">
+        <li><a href="https://www.datacenterdynamics.com/en/news/tsmc-announces-additional-100bn-investment-in-arizona-as-chipmaker-posts-402bn-revenue-for-q2-2026/">Data Center Dynamics: TSMC announces additional $100bn investment in Arizona as chipmaker posts $40.2bn revenue for Q2 2026</a></li>
+        <li><a href="https://www.phoenix.gov/newsroom/ced-news/tsmc-announces-additional--100-billion-investment-in-arizona.html">City of Phoenix: TSMC announces additional $100 billion investment in Arizona</a></li>
+        <li><a href="https://www.scmp.com/tech/tech-war/article/3360809/tsmc-pledges-extra-us100-billion-arizona-fab-expansion-amid-soaring-ai-chip-demand">South China Morning Post: TSMC pledges extra US$100 billion for Arizona fab expansion amid soaring AI chip demand</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Memory &times; Supply Chain</span><span class="when">19 Jul</span></div>
+    <h3>SK Group's Chey Tae-won: AI memory shortage is becoming a geopolitical problem</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a 60&ndash;100% projected jump in AI memory demand for 2027 with essentially no new capacity coming online is a hard capacity ceiling on every roadmap that assumes GPUs and HBM will just be available &mdash; and a memory chief warning that governments will start pressuring each other over access is a signal this shortage could turn into an export-control-style fight, the way advanced logic chips already have.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Speaking at the Korea Chamber of Commerce and Industry's Jeju Forum on July 19, <strong>SK Group Chairman Chey Tae-won</strong> said foreign governments increasingly treat AI memory access as a matter of "economic security." He warned that customers are asking for <strong>60&ndash;100% more AI memory in 2027</strong> than in 2026, while "no company has meaningful new capacity coming online next year." SK Hynix, which Chey chairs, controls roughly <strong>58% of the global HBM market</strong>. "Right now, companies absorb the pressure," he said. "Governments will start pressuring other governments soon." Earlier in the same forum he forecast overall chip demand growing at least 50% next year against roughly flat supply.</p>
+      <ul class="sources">
+        <li><a href="https://en.sedaily.com/finance/2026/07/19/chey-tae-won-speedy-capacity-expansion-is-korea-chip">Seoul Economic Daily: Chey Tae-won &mdash; "Speedy capacity expansion is Korea chip industry's lifeline"</a></li>
+        <li><a href="https://www.newkerala.com/news/a/ai-memory-shortage-threatens-trigger-geopolitical-strain-warns-697.htm">New Kerala: AI memory shortage risks geopolitical strain, warns SK Group</a></li>
+        <li><a href="https://www.kedglobal.com/korean-chipmakers/newsView/ked202607170003">KED Global: SK chief Chey urges long-term hold on SK Hynix on strong AI chip outlook</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Huawei &times; Chips</span><span class="when">17 Jul</span></div>
+    <h3>Huawei confirms Atlas 950 SuperPoD push into South Korea as an Nvidia alternative</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Huawei is now marketing directly into a US ally's AI-infrastructure market with a price/performance pitch aimed squarely at Nvidia's export-restricted H20 &mdash; worth watching for any organization sourcing AI compute in Asia, since it's a live test of whether Chinese silicon can win share where Nvidia is legally allowed to sell but priced or supply-constrained out.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p><strong>Huawei</strong> confirmed plans to bring its <strong>Atlas 950 SuperPoD</strong> and Ascend AI chips to South Korea, targeting a Q4 2026 launch. Deployment-scale clusters pack up to <strong>8,192 Ascend 950 accelerators</strong>, and Huawei claims roughly triple the inference performance of Nvidia's China-market H20 chip at about one-quarter the cost. The move follows Huawei's broader Atlas 950 rollout (up to 8 EFLOPS FP8 / 16 EFLOPS FP4 in full configuration) and comes as South Korean firms weigh Chinese AI hardware against Nvidia's supply constraints and pricing for large-scale buildouts.</p>
+      <ul class="sources">
+        <li><a href="https://en.sedaily.com/international/2026/07/17/huawei-unveils-atlas-950-superpod-linking-thousands-of-ai">Seoul Economic Daily: Huawei unveils Atlas 950 SuperPoD, linking thousands of AI chips</a></li>
+        <li><a href="https://www.tomshardware.com/tech-industry/semiconductors/chinas-huawei-to-enter-south-korean-ai-chip-market-with-new-atlas-superpods-clusters-pack-8-192-ascend-950-accelerators-per-deployment-reportedly-challenges-nvidia-dominance-with-tripled-inference-performance-of-h20-at-one-quarter-the-cost">Tom's Hardware: China's Huawei to enter South Korean AI chip market with new Atlas SuperPods</a></li>
+        <li><a href="https://www.trendforce.com/news/2026/07/02/news-huawei-reportedly-plans-4q26-korea-launch-of-ascend-ai-chips-and-atlas-950-superpod-as-nvidia-alternative/">TrendForce: Huawei reportedly plans 4Q26 Korea launch of Ascend AI chips and Atlas 950 SuperPod as Nvidia alternative</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">AI Security &times; Incident Response</span><span class="when">16 Jul</span></div>
+    <h3>Hugging Face discloses a breach carried out end-to-end by an autonomous AI agent &mdash; and says US model guardrails blocked its own investigation</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is one of the clearest public examples yet of a fully agentic attack chain, and the twist &mdash; defenders locked out of frontier-model help by the same safety guardrails meant to stop misuse &mdash; is a preview of a real operational gap: incident responders analyzing exploit code and C2 artifacts can look identical to an attacker to a safety classifier, and security teams need a sanctioned path around that before their next incident, not during it.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p><strong>Hugging Face</strong> disclosed on July 16 that a production breach of its data-processing pipeline was executed entirely by an autonomous AI agent framework. A malicious dataset exploited code-execution flaws in a remote dataset loader and a configuration-template injection to gain a foothold on a processing worker; from there, the agent escalated privileges, harvested cloud and cluster credentials, and moved laterally across internal infrastructure over a weekend, executing tens of thousands of automated actions from a swarm of short-lived sandboxes and staging command-and-control on public services. Hugging Face says internal datasets and some service credentials were compromised, but public-facing models, user data and the software supply chain were verified intact. Notably, the company's blue team first tried commercial frontier-model APIs to analyze the attack logs, but those requests were blocked by the providers' safety guardrails, which "cannot distinguish an incident responder from an attacker." The team instead ran <strong>GLM 5.2</strong>, an open-weight model from China's Z.ai, on its own infrastructure to process more than 17,000 attacker logs and reconstruct the timeline.</p>
+      <ul class="sources">
+        <li><a href="https://huggingface.co/blog/security-incident-july-2026">Hugging Face: Security incident disclosure &mdash; July 2026</a> (primary)</li>
+        <li><a href="https://www.thestack.technology/hugging-face-hacked-turned-to-chinese-llm-for-help-after-us-models-blocked-blue-team/">The Stack: Hugging Face hacked &mdash; turned to Chinese LLM for help after US models blocked blue team</a></li>
+        <li><a href="https://securityaffairs.com/195658/ai/ai-agents-turned-into-attackers-hugging-face-reveals-autonomous-intrusion-campaign.html">Security Affairs: AI agents turned into attackers &mdash; Hugging Face reveals autonomous intrusion campaign</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Developer platforms</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">GitHub &times; Pricing</span><span class="when">20 Jul</span></div>
+    <h3>GitHub Code Quality moves from preview to a paid, per-committer product today</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> more than 10,000 enterprises used Code Quality for free during preview; today it starts billing at $10 per active committer per month on enabled repos, plus consumption charges for AI-powered checks and CodeQL's use of Actions minutes &mdash; teams that didn't explicitly audit and scope which repos have it enabled are about to get a surprise line item.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p><strong>GitHub Code Quality</strong> reaches general availability on July 20 as a purchasable product, priced at <strong>$10 per active committer per month</strong> on repositories where it's enabled, plus usage-based charges for AI-powered capabilities such as Copilot code review, AI-assisted detection and Copilot Autofix; deterministic CodeQL analysis consumes GitHub Actions minutes. New GA capabilities include organization-wide deployment, org-level quality dashboards, code-coverage enforcement via rulesets, and repository- and organization-level quality scoring. GitHub shipped a license-estimate tool in preview on July 13 specifically so admins could see their active-committer counts and forecast the bill before billing started.</p>
+      <ul class="sources">
+        <li><a href="https://github.blog/changelog/2026-06-16-github-code-quality-generally-available-july-20-2026/">GitHub Changelog: GitHub Code Quality generally available July 20, 2026</a> (primary)</li>
+        <li><a href="https://github.blog/changelog/2026-07-13-github-code-quality-license-estimate-in-public-preview/">GitHub Changelog: GitHub Code Quality license estimate in public preview</a> (primary)</li>
+        <li><a href="https://devops.com/github-code-quality-moves-to-general-availability-bringing-new-costs-and-capabilities/">DevOps.com: GitHub Code Quality moves to general availability, bringing new costs and capabilities</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 20 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
