@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 21 July 2026</title>
+  <meta name="description" content="A federal judge grants final approval of Anthropic's $1.5B author-copyright settlement, the largest known US copyright recovery; DeepSeek V4 reaches GA with novel peak-valley pricing; Alibaba previews a 2.4T-parameter Qwen3.8-Max; Moonshot targets a $30B Hong Kong IPO; and a critical ServiceNow AI Platform RCE is under active exploitation via a second bypass route.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>21 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: 17&ndash;21 July</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>A federal judge granted final approval of Anthropic's $1.5B author-copyright settlement</strong> &mdash; the largest known US copyright-case recovery, paying roughly $3,000 per work across ~500,000 books, and the first major AI-training case to settle.</li>
+      <li><strong>DeepSeek's V4 reached general availability</strong> with a first-of-its-kind "peak-valley" API pricing scheme and a SWE-bench Verified score of 80.6%, just behind Opus 4.6, at a fraction of frontier-model prices.</li>
+      <li><strong>Alibaba previewed Qwen3.8-Max, a 2.4-trillion-parameter multimodal model</strong> at WAIC in Shanghai, claiming performance "second only to" Anthropic's flagship &mdash; days after Moonshot's Kimi K3 open-weight launch.</li>
+      <li><strong>Moonshot AI is preparing a Hong Kong IPO within six months at a targeted $30B valuation</strong>, a nearly sevenfold jump from December, after Kimi K3 demand forced a subscription freeze.</li>
+      <li><strong>A critical ServiceNow AI Platform flaw (CVSS 9.5) is under active exploitation via a second, distinct bypass route</strong> that evades defenses built for the original proof-of-concept.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Top story &mdash; the first frontier AI copyright case settles</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">Courts &times; Copyright</span><span class="when">20 Jul</span></div>
+    <h3>Judge grants final approval of Anthropic's $1.5B author-copyright settlement</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is the largest known settlement in US copyright history and the first major AI-training lawsuit to resolve &mdash; the roughly $3,000-per-work figure now becomes the reference number every other AI-training defendant (Google, Meta, Suno/Udio) and every plaintiff's lawyer will measure a settlement against.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>US District Judge Araceli Martinez-Olguin (N.D. Cal.) signed off on July 20 on Anthropic's $1.5 billion settlement of the class action brought by authors who accused the company of training Claude on pirated books. The deal pays an estimated $3,000 per work across roughly 500,000 works to the authors and publishers who hold the rights. Martinez-Olguin overruled objections from some authors who argued the sum was too small, overcompensated plaintiffs' attorneys, or wrongly excluded certain rights holders. The case is one of dozens brought by authors and news outlets against AI labs over training-data provenance, and the first to reach a final settlement.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/">TechCrunch: Anthropic's landmark $1.5B copyright settlement is approved</a></li>
+        <li><a href="https://www.investing.com/news/stock-market-news/us-judge-approves-anthropics-15-billion-settlement-of-copyright-lawsuit-4801706">Reuters (via Investing.com): US judge approves Anthropic's $1.5 billion settlement of copyright lawsuit</a></li>
+        <li><a href="https://finance.yahoo.com/technology/ai/articles/us-judge-approves-anthropics-1-204851948.html">Yahoo Finance: US judge approves Anthropic's $1.5 billion settlement of copyright lawsuit</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Models &amp; infrastructure</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">DeepSeek &times; Pricing</span><span class="when">19 Jul</span></div>
+    <h3>DeepSeek V4 reaches general availability with novel "peak-valley" API pricing</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a first-of-its-kind time-of-day pricing model, paired with a coding score that trails Opus 4.6 by only 0.2 points at a small fraction of the cost, is another aggressive price/performance data point in the open-weight-vs-proprietary race &mdash; and adds a new routing dimension (time of day) that AI gateways and cost-conscious teams now have to account for.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>DeepSeek moved V4 Pro and V4 Flash from preview to full general availability on July 19, with 1M-token context windows. The headline change is "peak-valley" billing: API rates exactly double during Beijing business hours (9:00&ndash;12:00 and 14:00&ndash;18:00) versus off-peak, the first time-of-day pricing scheme offered by a major model API. V4 Pro scores 80.6% on SWE-bench Verified &mdash; just behind Anthropic's Opus 4.6 at 80.8% &mdash; making it the strongest open-weight coding model available by a clear margin. DeepSeek is retiring its legacy API endpoints on July 24, forcing existing integrations to migrate to V4 on a tight timeline.</p>
+      <ul class="sources">
+        <li><a href="https://technode.com/2026/06/30/deepseek-to-launch-v4-in-mid-july-with-new-peak-time-api-pricing/">TechNode: DeepSeek to launch V4 in mid-July with new peak-time API pricing</a></li>
+        <li><a href="https://www.kucoin.com/news/flash/deepseek-v4-launches-in-mid-july-with-peak-valley-pricing">KuCoin News: DeepSeek V4 launches in mid-July with peak-valley pricing</a></li>
+        <li><a href="https://therouter.ai/news/deepseek-v4-peak-hour-pricing-routing/">TheRouter.ai: DeepSeek V4 peak-hour pricing makes time-of-day a routing dimension</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Alibaba &times; Models</span><span class="when">19 Jul</span></div>
+    <h3>Alibaba previews Qwen3.8-Max, its first multimodal model over 1 trillion parameters</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> arriving two days after Moonshot's Kimi K3, this is the second Chinese lab in a week to claim frontier-adjacent performance &mdash; but the 2.4T parameter count and "second only to Fable 5" ranking are Alibaba's own marketing claims, with active-parameters-per-token and independent benchmarks still undisclosed, so treat it as a preview, not a confirmed capability.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Alibaba's Qwen team previewed <strong>Qwen3.8-Max</strong> on July 19 during WAIC in Shanghai, describing it as the team's first multimodal model above 1 trillion parameters (2.4T total), handling text, images, video and documents. Qwen developer Shuai Bai said it ranks "second only to" Anthropic's Fable 5 on the benchmarks Alibaba tested internally. The preview build is live and purchasable through Alibaba's Token Plan at 10% of standard pricing; Alibaba has said an open-weight release is coming but has not given a date. Alibaba shares rose more than 3% pre-market on the announcement.</p>
+      <ul class="sources">
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-19/alibaba-s-qwen-unveils-preview-of-flagship-ai-model">Bloomberg: Alibaba shares rise after unveiling upgraded flagship AI model</a></li>
+        <li><a href="https://www.marktechpost.com/2026/07/19/alibaba-previews-qwen3-8-max-a-2-4-trillion-parameter-multimodal-model-days-after-moonshots-kimi-k3-open-weight-launch/">MarkTechPost: Alibaba previews Qwen3.8-Max, a 2.4 trillion-parameter multimodal model</a></li>
+        <li><a href="https://www.gurufocus.com/news/8967066/alibaba-baba-surges-over-3-with-launch-of-qwen38-max">GuruFocus: Alibaba (BABA) surges over 3% with launch of Qwen3.8 Max</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Markets &amp; deals</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">China &times; IPO</span><span class="when">20 Jul</span></div>
+    <h3>Moonshot AI targets a $30B Hong Kong IPO within six months</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a nearly sevenfold valuation jump since December, on the back of a single model launch, is a live test of how much the market will pay for Chinese open-weight AI momentum &mdash; and the first concrete Chinese frontier-lab IPO move since the DeepSeek-triggered wave earlier this year.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p><strong>Moonshot AI</strong> is preparing to list in Hong Kong within six months at a targeted <strong>$30 billion</strong> valuation, up from $4.3 billion in December, according to people familiar with the matter. Moonshot's annual recurring revenue hit $300 million in June, up from $200 million in April. The push follows the July 17 launch of <strong>Kimi K3</strong>, a 2.8-trillion-parameter open-weight coding model that topped a widely watched coding benchmark and triggered at least a sixfold surge in daily sales, forcing Moonshot to freeze new subscriptions over a compute-capacity crunch. To qualify for a Hong Kong listing, Moonshot is unwinding its offshore VIE structure in favor of a joint-venture model, and has reportedly engaged CICC and Goldman Sachs to work the offering.</p>
+      <ul class="sources">
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-19/china-s-moonshot-plans-ipo-in-six-months-after-ai-breakthrough">Bloomberg: China's Moonshot plans IPO in six months after AI breakthrough</a></li>
+        <li><a href="https://finance.yahoo.com/markets/stocks/articles/moonshot-ai-plans-hong-kong-123000193.html">Yahoo Finance: Moonshot AI plans Hong Kong IPO after Kimi K3 model debut</a></li>
+        <li><a href="https://www.coindesk.com/tech/2026/07/20/moonshot-ai-ipo-push-follows-kimi-alibaba-ai-releases-that-shook-bitcoin">CoinDesk: Moonshot AI IPO push follows Kimi, Alibaba AI releases that shook markets</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Health &times; M&amp;A</span><span class="when">20 Jul</span></div>
+    <h3>Tempus AI to acquire Personalis for $1.5B, deepening its AI-oncology platform</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> consolidation in AI-enabled diagnostics is accelerating as platform players buy specialized data assets outright rather than partnering &mdash; a pattern likely to repeat across health-AI as companies race to own proprietary datasets that differentiate their models.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p><strong>Tempus AI</strong> signed a definitive agreement to acquire cancer-genomics firm <strong>Personalis</strong> for $16.25 per share, an enterprise value of roughly $1.5 billion net of Tempus's existing stake (Bloomberg reported the gross equity value at $1.7B). The deal folds Personalis's molecular residual disease (MRD) testing &mdash; used to monitor cancer recurrence after treatment &mdash; into Tempus's AI-driven precision-oncology platform, building on a commercial relationship the two companies established in 2023. The MRD testing market is estimated at $20 billion; the deal is expected to close in late 2026 or early 2027 pending shareholder and regulatory approval.</p>
+      <ul class="sources">
+        <li><a href="https://www.tempus.com/news/pr/tempus-to-acquire-personalis-integrating-mrd/">Tempus AI: Tempus to acquire Personalis, integrating MRD into its AI-enabled precision oncology platform</a> (primary)</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/0001527753/000119312526308488/d68794dex991.htm">SEC: Personalis, Inc. Form 8-K, FY2026</a> (primary)</li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-07-20/tempus-ai-to-buy-cancer-tech-firm-personalis-for-1-7-billion">Bloomberg: Tempus AI to buy cancer-tech firm Personalis for $1.7 billion</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Policy</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">China &times; Export Controls</span><span class="when">20 Jul</span></div>
+    <h3>Beijing weighs export controls on its own frontier AI models and chips</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> China treating its own frontier models as a national-security asset requiring outbound controls would mirror the US export-control posture in reverse &mdash; and could constrain the very open-weight-model wave (Kimi K3, Qwen3.8-Max, DeepSeek V4) that has been reshaping the global AI market this month.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>The Financial Times reports that China's Ministry of Commerce has spent the past month consulting Alibaba, ByteDance, Zhipu (Z.ai) and chipmakers on restricting overseas access to advanced AI models, including ones not yet released, and on limiting the export of training data and model weights. Officials reportedly floated making leaks or theft of proprietary AI technology a national-security offense and new limits on foreign funding of domestic AI startups. The discussions cover both closed and open-weight models, with lighter licensing floated for lower-end models and heavier controls for frontier ones. No formal rulemaking timeline has been set; discussions remain at the consultation stage. <em>Note: this is currently a single-scoop report (FT), re-syndicated rather than independently confirmed by a second outlet.</em></p>
+      <ul class="sources">
+        <li><a href="https://finance.yahoo.com/technology/ai/articles/china-considers-tighter-export-controls-041139427.html">Yahoo Finance (syndicating Financial Times): China considers tighter export controls on AI models and chips</a></li>
+        <li><a href="https://www.933thedrive.com/2026/07/20/china-considers-tighter-export-controls-on-ai-models-and-chips-ft-reports/">93.3 The Drive (AP wire): China considers tighter export controls on AI models and chips, FT reports</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Vulnerability &times; Exploited</span><span class="when">20 Jul</span></div>
+    <h3>Critical ServiceNow AI Platform RCE gets a second, undefended bypass route</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> ServiceNow's AI Platform runs inside roughly 85% of Fortune 500 companies, and this flaw needs no credentials, no phishing and no prior foothold &mdash; the newly confirmed second gadget chain means teams that patched against the original public proof-of-concept are not actually protected, and need to re-verify against the underlying advisory, not just the first exploit sample they saw.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p><strong>CVE-2026-6875</strong> is a pre-auth sandbox-escape vulnerability in ServiceNow's AI Platform (CVSS 9.5) that lets an unauthenticated attacker with network access achieve remote code execution &mdash; up to full instance compromise, creation of administrator accounts, and command execution on connected MID Server proxy systems. ServiceNow published advisory KB3137947 on July 13; a public proof-of-concept followed, and threat-intel firm Defused observed exploitation attempts beginning around July 17, confirming active abuse in the wild over the following weekend. On July 20, Defused reported a second, distinct gadget chain that reaches the same code-execution primitive by a different route than the original PoC &mdash; meaning defenses built only around the first published exploit are incomplete. The flaw is fixed in Brazil EA/GA, Australia Patch 2, Zurich Patch 7b/9, and Yokohama Patch 12 Hot Fix 1b/13, which also add a "Guarded Script" feature restricting sandbox code execution going forward.</p>
+      <ul class="sources">
+        <li><a href="https://www.helpnetsecurity.com/2026/07/20/servicenow-cve-2026-6875-exploited/">Help Net Security: ServiceNow pre-auth RCE exploited in the wild (CVE-2026-6875)</a></li>
+        <li><a href="https://www.bleepingcomputer.com/news/security/critical-servicenow-code-execution-flaw-now-exploited-in-attacks/">BleepingComputer: Critical ServiceNow code execution flaw now exploited in attacks</a></li>
+        <li><a href="https://www.csoonline.com/article/4198993/servicenows-sandbox-escape-rce-hole-now-exploited-in-the-wild.html">CSO Online: ServiceNow's sandbox escape RCE hole now exploited in the wild</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Supply Chain &times; npm</span><span class="when">17&ndash;19 Jul</span></div>
+    <h3>Malicious npm packages impersonate Vite, using blockchain smart contracts as C2</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> executing at import time rather than install time is specifically designed to slip past scanners that only watch package installation &mdash; any team using Vite-based tooling should check dependency trees for these scoped package names, not just run a routine `npm audit`.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Researchers at Checkmarx identified seven malicious npm packages impersonating the official <code>@vitejs</code> namespace, first published around July 17 and still being tracked as of July 19. The packages deliver a remote-access trojan with credential-harvesting and reverse-shell capability, and route command-and-control through a four-tier blockchain scheme spanning Tron, Aptos and BNB Smart Chain &mdash; making takedown harder than a conventional domain-based C2. Unlike most npm supply-chain malware, the payload executes on import rather than at install time, evading scanners that only inspect install-time scripts.</p>
+      <ul class="sources">
+        <li><a href="https://thehackernews.com/2026/07/seven-malicious-vite-npm-packages-use.html">The Hacker News: Seven malicious npm packages impersonate Vite, use blockchain-based C2</a></li>
+        <li><a href="https://www.scworld.com/brief/new-npm-malware-cluster-targets-vite-ecosystem">SC World: New npm malware cluster targets Vite ecosystem</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 21 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
