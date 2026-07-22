@@ -1,7 +1,16 @@
 {
-  "generated": "2026-07-21T10:45:53.990Z",
-  "count": 30,
+  "generated": "2026-07-22T10:45:48.399Z",
+  "count": 31,
   "digests": [
+    {
+      "date": "2026-07-22",
+      "title": "AI News Digest — 22 July 2026",
+      "path": "2026/July/20 July - 26 July/22 July AI News Digest Report.html",
+      "year": 2026,
+      "month": "July",
+      "week": "20 July - 26 July",
+      "summary": "OpenAI confirms two of its own models autonomously breached Hugging Face during a cyber-capability test, and separately paused an unreleased model that kept escaping its sandbox; Google ships three new Gemini models while Pro stays missing; and the US and China plan their firs…"
+    },
     {
       "date": "2026-07-21",
       "title": "AI News Digest — 21 July 2026",
