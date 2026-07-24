@@ -1,7 +1,16 @@
 {
-  "generated": "2026-07-23T10:44:13.154Z",
-  "count": 32,
+  "generated": "2026-07-24T10:44:16.509Z",
+  "count": 33,
   "digests": [
+    {
+      "date": "2026-07-24",
+      "title": "AI News Digest — 24 July 2026",
+      "path": "2026/July/20 July - 26 July/24 July AI News Digest Report.html",
+      "year": 2026,
+      "month": "July",
+      "week": "20 July - 26 July",
+      "summary": "AMD's Advancing AI 2026 event lands Helios rack-scale systems and Zen 6 Venice CPUs with Meta and OpenAI committing up to 6GW of compute; two House members introduce a bipartisan AI Kill Switch Act days after the OpenAI/Hugging Face breach; OpenAI and Anthropic both ship major…"
+    },
     {
       "date": "2026-07-23",
       "title": "AI News Digest — 23 July 2026",
