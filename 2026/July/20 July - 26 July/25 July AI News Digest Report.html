@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 25 July 2026</title>
+  <meta name="description" content="Anthropic launches Claude Opus 5 at near-Fable-5 intelligence for half the price; Stripe moves toward a $10B acquisition of AI model marketplace OpenRouter while Anduril talks a $100B valuation; Intel posts its best revenue growth in 15 years on AI datacenter demand; the Pentagon signs a $7B Oracle deal; and researchers disclose a one-click 'AgentForger' flaw that could plant a rogue agent inside ChatGPT Workspace.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>25 July 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24&ndash;48 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Anthropic launched Claude Opus 5</strong>, delivering near-Fable-5 intelligence at half the price ($5/$25 per million tokens), making it the new default on Claude Max and the strongest model on Claude Pro.</li>
+      <li><strong>Stripe is in talks to acquire AI model marketplace OpenRouter for roughly $10B</strong> &mdash; nearly 8x its $1.3B valuation from just two months ago &mdash; fusing payments infrastructure with AI model routing.</li>
+      <li><strong>Anduril is in talks to raise funding at close to a $100B valuation</strong>, more than 3x the $61B mark it hit two months ago, putting the drone-and-software defense firm on par with Lockheed Martin.</li>
+      <li><strong>Intel posted its strongest revenue growth in 15 years</strong> &mdash; Q2 revenue up 25% to $16.1B, with its Data Center and AI segment up 59% &mdash; crushing EPS estimates on AI-driven demand.</li>
+      <li><strong>The Pentagon signed a nearly $7B, up-to-10-year deal with Oracle</strong> to consolidate its on-premises software licensing, its second such hyperscaler consolidation after a Microsoft deal in May.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Top story &mdash; frontier models</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">Anthropic &times; Claude</span><span class="when">24 Jul</span></div>
+    <h3>Anthropic launches Claude Opus 5, matching near-frontier intelligence at half of Fable 5's price</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this makes flagship-tier reasoning newly affordable for high-volume coding and agentic workloads without forcing a downgrade to Sonnet, while Anthropic keeps Fable 5 reserved for the longest-horizon autonomous agent work &mdash; a deliberate two-tier flagship strategy that pressures OpenAI and Google to compete on price-performance, not just benchmark headlines.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Anthropic released <strong>Claude Opus 5</strong> on July 24, pricing it at $5 per million input tokens and $25 per million output tokens &mdash; unchanged from Opus 4.8 and half of Fable 5's input price &mdash; with an optional 2.5x-faster mode at $10/$50. It becomes the default model on Claude Max, Anthropic's premium consumer tier, and the strongest model available on Claude Pro. Opus 5 scores 79.2% on SWE-bench Pro and beats Fable 5 on several other benchmarks, though Fable 5 remains Anthropic's recommendation for the most demanding multi-day autonomous agent tasks. Guardrails are looser than Fable 5's: the model can be used for legitimate security research and vulnerability scanning, but blocks methods commonly used by attackers.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/07/24/anthropic-launches-opus-5/">TechCrunch: Anthropic launches Opus 5</a></li>
+        <li><a href="https://venturebeat.com/orchestration/anthropic-launches-claude-opus-5-a-cheaper-ai-model-for-coding-agents-and-enterprise-workflows">VentureBeat: Anthropic launches Claude Opus 5, a cheaper AI model for coding, agents and enterprise workflows</a></li>
+        <li><a href="https://www.cnbc.com/2026/07/24/anthropic-claude-opus-5-ai-fable-5-cost.html">CNBC: Anthropic's Claude Opus 5 AI model rivals Fable 5 and is cheaper</a></li>
+        <li><a href="https://www.axios.com/2026/07/24/anthropic-releases-new-model-opus-5">Axios: Anthropic releases new model, Opus 5</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Funding &amp; M&amp;A</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Stripe &times; OpenRouter</span><span class="when">24 Jul</span></div>
+    <h3>Stripe in talks to acquire AI model marketplace OpenRouter for roughly $10B</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> an almost 8x valuation jump in two months would turn a payments company into a gatekeeper for enterprise AI model-switching economics, and lands as OpenRouter's own investor roster &mdash; including Nvidia's venture arm and Alphabet-backed CapitalG &mdash; shows how badly infrastructure players want a stake in the layer that routes traffic across every major model.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>The Wall Street Journal reports <strong>Stripe</strong> is in talks to acquire <strong>OpenRouter</strong> in a deal that could value the AI model marketplace near <strong>$10 billion</strong>, though negotiations remain fluid and could still collapse or draw competing bidders. OpenRouter lets enterprises compare, access, and switch between more than 400 proprietary and open-weight models, processing roughly 25 trillion tokens weekly. It raised a $113 million Series B in May 2026 at a $1.3 billion valuation, led by CapitalG with participation from Nvidia's NVentures, Andreessen Horowitz, and Menlo Ventures. OpenRouter already uses Stripe to process customer payments; several other large tech firms reportedly evaluated bids as well.</p>
+      <ul class="sources">
+        <li><a href="https://finance.yahoo.com/technology/ai/articles/stripe-talks-acquire-openrouter-potential-215104525.html">Yahoo Finance (WSJ): Stripe in talks to acquire OpenRouter in potential $10 billion deal</a></li>
+        <li><a href="https://www.axios.com/2026/07/24/stripe-openrouter-merger-ai-currency">Axios: AI currency driving Stripe's OpenRouter move</a></li>
+        <li><a href="https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/">TechCrunch: OpenRouter more than doubles valuation to $1.3B in a year</a> (background)</li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Anduril &times; Defense Tech</span><span class="when">24 Jul</span></div>
+    <h3>Anduril in talks to raise funding at close to a $100B valuation, more than triple two months ago</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a nine-year-old drone-and-software defense startup approaching Lockheed Martin- and Northrop Grumman-scale market value &mdash; at roughly 45x trailing revenue &mdash; signals investor conviction in AI-native defense tech that makes this month's other double-digit-billion compute and defense deals look almost routine by comparison.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p><strong>Anduril</strong> is in talks with investors for a new funding round that could value the company at roughly <strong>$100 billion</strong>, according to Reuters sources, though the round and valuation remain unfinalized. The company raised $5 billion at a $61 billion valuation just two months ago, led by Andreessen Horowitz and Thrive Capital. One structure under discussion is a two-stage financing where investors commit now to a second round at a higher valuation within about a year, potentially tied to Anduril hitting financial milestones. Founded by Palmer Luckey in 2017, Anduril reported $2.2 billion in 2025 revenue; its investor base also includes Founders Fund, ICONIQ, Altimeter, and Vice President JD Vance, an investor prior to taking office.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/07/24/anduril-reportedly-in-talks-to-raise-funding-at-100b-valuation-more-than-3x-last-years-mark/">TechCrunch: Anduril reportedly in talks to raise funding at $100B valuation, more than 3x last year's mark</a></li>
+        <li><a href="https://www.defensenews.com/industry/techwatch/2026/07/24/anduril-in-talks-to-raise-funding-at-about-100-billion-valuation/">Defense News: Anduril in talks to raise funding at about $100 billion valuation</a></li>
+        <li><a href="https://finance.yahoo.com/news/exclusive-defense-tech-company-anduril-100423200.html">Reuters (via Yahoo Finance): Exclusive &mdash; Defense tech company Anduril in talks to raise funding at about $100 billion valuation</a> (primary)</li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Markets</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Intel &times; Earnings</span><span class="when">23&ndash;24 Jul</span></div>
+    <h3>Intel posts its strongest revenue growth in 15 years as AI datacenter demand triples estimates</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> an AI-driven beat at Intel &mdash; long treated as the AI boom's laggard next to Nvidia and AMD &mdash; shows the capex wave is broad enough to lift even a foundry incumbent mid-turnaround, giving CEO Lip-Bu Tan real financial cover heading into the next round of 18A ramp decisions.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Intel reported Q2 2026 revenue of <strong>$16.1 billion</strong>, up 25% year over year and its fastest growth in more than 15 years. The <strong>Data Center and AI</strong> segment grew 59% to $6.3 billion, with AI-driven businesses now roughly 70% of total revenue. Non-GAAP EPS came in at $0.42 versus analyst expectations near $0.21. Client Computing revenue rose 13% to $8.9 billion, and Foundry revenue climbed 31% to $5.8 billion. CEO Lip-Bu Tan said "AI is driving unprecedented demand for compute."</p>
+      <ul class="sources">
+        <li><a href="https://finance.yahoo.com/markets/stocks/articles/intel-q2-2026-earnings-revenue-205531105.html">Yahoo Finance: Intel Q2 2026 earnings &mdash; revenue up 25%, fastest growth since 2011</a></li>
+        <li><a href="https://www.investing.com/news/company-news/intel-q2-2026-slides-revenue-surges-25-ai-drives-record-growth-93CH-4810222">Investing.com: Intel Q2 2026 slides &mdash; revenue surges 25%, AI drives record growth</a></li>
+        <li><a href="https://www.intc.com/news-events/press-releases/detail/1776/intel-reports-second-quarter-2026-financial-results">Intel Investor Relations: Intel Reports Second-Quarter 2026 Financial Results</a> (primary)</li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Moonshot AI &times; China</span><span class="when">22 Jul</span></div>
+    <h3>Moonshot AI raises its pre-IPO target to $50B, up from $30B, as Kimi K3 demand holds</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> days after Kimi K3's compute crunch forced Moonshot to pause new subscriptions, its own pre-IPO ask jumped by two-thirds &mdash; investors are reading the capacity shortage as proof of demand rather than a red flag, setting up what could be one of the largest Chinese tech listings in years.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p><strong>Moonshot AI</strong> is closing a funding round at a $31.5 billion valuation and plans to open talks in August on a final pre-IPO round targeting a valuation of up to <strong>$50 billion</strong>, ahead of a planned Hong Kong listing within six months. The escalation follows the July 16 launch of <strong>Kimi K3</strong>, a 2.8-trillion-parameter open-weight model that topped a coding leaderboard and forced Moonshot to briefly suspend new subscriptions under demand. Annual recurring revenue reached $300 million in June, up from $100 million in March. Goldman Sachs and China International Capital Corp are advising on the IPO.</p>
+      <ul class="sources">
+        <li><a href="https://finance.yahoo.com/technology/ai/articles/moonshot-ai-eyes-50-billion-151346997.html">Yahoo Finance: Moonshot AI eyes $50 billion valuation, Hong Kong IPO after Kimi K3 breakthrough</a></li>
+        <li><a href="https://technode.com/2026/07/22/moonshot-ai-reportedly-plans-final-pre-ipo-round-at-50-billion-valuation/">TechNode: Moonshot AI reportedly plans final pre-IPO round at $50 billion valuation</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Platforms &amp; models</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Black Forest Labs &times; Media</span><span class="when">23 Jul</span></div>
+    <h3>Black Forest Labs unveils FLUX 3, a unified image, video, audio and robotics model</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> training video, audio, and robotic-action prediction inside one architecture rather than bolting a video model onto an image model is a bet that "world model" training transfers directly into physical automation &mdash; and an early Audi manufacturing deployment is a concrete sign that generative video models are starting to be trusted on factory floors, not just for content generation.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p><strong>Black Forest Labs</strong> launched <strong>FLUX 3</strong>, a multimodal foundation model trained jointly on images, video, and audio. <strong>FLUX 3 Video</strong> generates clips up to 20 seconds with native audio from text, image, or existing video, and supports video continuation, keyframe transitions, and multilingual dialogue; <strong>FLUX 3 Action</strong> extends the same architecture to robotic-action prediction. Both launched in early access, with API access, private model weights, and an open-weight FLUX 3 Dev version planned later this year. In partnership with mimic, Audi has begun testing FLUX-mimic to assist production and logistics automation.</p>
+      <ul class="sources">
+        <li><a href="https://venturebeat.com/technology/black-forest-labs-launches-flux-3-capable-of-generating-images-and-20-second-video-with-audio-but-in-limited-release-to-start">VentureBeat: Black Forest Labs launches FLUX 3, capable of generating images and 20-second video with audio</a></li>
+        <li><a href="https://www.globenewswire.com/news-release/2026/07/23/3332364/0/en/black-forest-labs-unveils-flux-3-a-new-multimodal-frontier-model-for-visual-intelligence.html">GlobeNewswire: Black Forest Labs Unveils FLUX 3, A New Multimodal Frontier Model For Visual Intelligence</a> (primary)</li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Government &amp; enterprise</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Pentagon &times; Oracle</span><span class="when">23&ndash;24 Jul</span></div>
+    <h3>Pentagon signs nearly $7B, 10-year deal with Oracle to consolidate its software licensing</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is the Pentagon's second major enterprise-software consolidation in three months, after a similar Microsoft deal in May &mdash; a sign the DoD is standardizing its software supply chain around a handful of hyperscale vendors right as those same vendors race to sell it AI tooling, raising the stakes on who controls the substrate the Pentagon's future AI systems run on.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>The Pentagon announced a nearly <strong>$7 billion</strong>, up-to-10-year <strong>Enterprise Software Agreement</strong> with Oracle, negotiated by the Department of the Navy, consolidating on-premises software licenses &mdash; both perpetual and subscription &mdash; along with maintenance, consulting, and SaaS offerings into a single contract. The deal spans a five-year base term plus a five-year option and covers the entire Pentagon, the U.S. Coast Guard, and the intelligence community. Pentagon CIO Kirsten Davies said the agreement will drive at least $441 million in taxpayer savings. It follows a comparable software consolidation agreement with Microsoft in May.</p>
+      <ul class="sources">
+        <li><a href="https://www.cnbc.com/2026/07/23/oracle-wins-10-year-pentagon-software-contract-worth-up-to-7-billion.html">CNBC: Oracle signs 10-year software contract with Pentagon worth up to $7 billion</a></li>
+        <li><a href="https://defensescoop.com/2026/07/23/pentagon-awards-oracle-7b-dollar-software-licenses/">DefenseScoop: Pentagon awards Oracle $7B agreement for consolidated software tools, licenses</a></li>
+        <li><a href="https://finance.yahoo.com/technology/articles/pentagon-awards-oracle-nearly-7-210156883.html">Yahoo Finance: Pentagon awards Oracle nearly $7 billion deal in latest software consolidation push</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Zenity Labs &times; ChatGPT</span><span class="when">23 Jul</span></div>
+    <h3>Researchers disclose &ldquo;AgentForger,&rdquo; a one-click flaw that could plant a rogue agent inside ChatGPT Workspace</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a single link, no confirmation dialog, and an attacker gets a persistent AI insider that inherits the victim's email, calendar, Slack, and cloud-storage access &mdash; this is the sharpest illustration yet of the emerging "agent hijacking" threat class, and the underlying cross-site-forgery pattern will recur across every vendor now shipping workspace agents, not just OpenAI.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p><strong>Zenity Labs</strong> disclosed <strong>AgentForger</strong>, a cross-site request forgery vulnerability in OpenAI's ChatGPT Workspace Agents that let an attacker silently create, configure, publish, and schedule a malicious autonomous agent inside a victim's account through a single clicked link, with no user confirmation required. The forged agent inherited access to every enterprise application the employee had already authorized in ChatGPT &mdash; email, calendar, cloud storage, Slack, and Teams &mdash; and could exfiltrate data, harvest credentials and MFA tokens, and impersonate the employee indefinitely. Zenity reported the flaw on June 4; OpenAI fixed it by June 8, with public disclosure following on July 23. No evidence has surfaced of exploitation before the patch.</p>
+      <ul class="sources">
+        <li><a href="https://labs.zenity.io/p/agentforger-part-1-chatgpt-cross-site-agent-forgery">Zenity Labs: AgentForger, Part 1 &mdash; ChatGPT Cross-Site Agent Forgery</a> (primary)</li>
+        <li><a href="https://thehackernews.com/2026/07/chatgpt-agentforger-flaw-could-deploy.html">The Hacker News: ChatGPT AgentForger Flaw Could Deploy Rogue Workspace Agents via a Phishing Link</a></li>
+        <li><a href="https://www.securityweek.com/openai-fixes-chatgpt-agent-flaw-that-could-let-attackers-forge-an-ai-insider/">SecurityWeek: OpenAI Fixes ChatGPT Agent Flaw That Could Let Attackers Forge an AI Insider</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 25 July 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
