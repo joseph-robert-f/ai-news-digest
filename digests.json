@@ -1,7 +1,16 @@
 {
-  "generated": "2026-07-26T10:43:53.458Z",
-  "count": 35,
+  "generated": "2026-07-27T10:47:35.156Z",
+  "count": 36,
   "digests": [
+    {
+      "date": "2026-07-27",
+      "title": "AI News Digest — 27 July 2026",
+      "path": "2026/July/27 July - 2 August/27 July AI News Digest Report.html",
+      "year": 2026,
+      "month": "July",
+      "week": "27 July - 2 August",
+      "summary": "Moonshot AI's 2.8-trillion-parameter Kimi K3 becomes the largest open-weight model ever released, even as independent testing flags a near-51% hallucination rate; Nvidia is reportedly in talks to guarantee $250B for OpenAI's Ohio data-center lease; Hugging Face's CEO demands '…"
+    },
     {
       "date": "2026-07-26",
       "title": "AI News Digest — 26 July 2026",
