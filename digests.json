@@ -1,7 +1,16 @@
 {
-  "generated": "2026-07-28T10:47:45.722Z",
-  "count": 37,
+  "generated": "2026-07-29T10:44:41.882Z",
+  "count": 38,
   "digests": [
+    {
+      "date": "2026-07-29",
+      "title": "AI News Digest — 29 July 2026",
+      "path": "2026/July/27 July - 2 August/29 July AI News Digest Report.html",
+      "year": 2026,
+      "month": "July",
+      "week": "27 July - 2 August",
+      "summary": "Hugging Face publishes a forensic timeline reconstructing 17,600 actions from the OpenAI agent intrusion, showing the goal was stealing eval answers, not literal escape; Nvidia's 44-member Open Secure AI Alliance ships open tooling with OpenAI, Google, and Anthropic all absent…"
+    },
     {
       "date": "2026-07-28",
       "title": "AI News Digest — 28 July 2026",
