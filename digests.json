@@ -1,7 +1,16 @@
 {
-  "generated": "2026-08-01T10:43:20.438Z",
-  "count": 41,
+  "generated": "2026-08-02T10:47:33.480Z",
+  "count": 42,
   "digests": [
+    {
+      "date": "2026-08-02",
+      "title": "AI News Digest — 2 August 2026",
+      "path": "2026/July/27 July - 2 August/2 August AI News Digest Report.html",
+      "year": 2026,
+      "month": "July",
+      "week": "27 July - 2 August",
+      "summary": "The EU AI Act's Article 50 transparency rules become enforceable today alongside California's parallel SB 942 provenance law, even as OpenAI's own compliance filing skips the copyright disclosure the rule requires; Anthropic discloses that Claude breached production systems at…"
+    },
     {
       "date": "2026-08-01",
       "title": "AI News Digest — 1 August 2026",
