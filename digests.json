@@ -1,7 +1,16 @@
 {
-  "generated": "2026-08-02T10:47:33.480Z",
-  "count": 42,
+  "generated": "2026-08-03T10:48:23.329Z",
+  "count": 43,
   "digests": [
+    {
+      "date": "2026-08-03",
+      "title": "AI News Digest — 3 August 2026",
+      "path": "2026/August/3 August - 9 August/3 August AI News Digest Report.html",
+      "year": 2026,
+      "month": "August",
+      "week": "3 August - 9 August",
+      "summary": "OpenAI reveals Astra, its next major model family, by publishing ten machine-checked proofs of decade-plus-old open math and theoretical CS problems — including the first-ever explicit non-sofic group — for about $2,000 in compute; the White House lets its August 1 deadline fo…"
+    },
     {
       "date": "2026-08-02",
       "title": "AI News Digest — 2 August 2026",
