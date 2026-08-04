@@ -1,0 +1,35 @@
+name: Daily public GitHub activity digest
+
+on:
+  # GitHub cron is UTC. Running at both candidate UTC hours and checking the
+  # America/New_York clock in the script keeps delivery at 09:00 through DST.
+  schedule:
+    - cron: "0 13 * * *"
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: daily-public-github-activity-digest
+  cancel-in-progress: false
+
+jobs:
+  create-digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Summarize the previous 24 hours
+        run: node .github/scripts/github-activity-digest.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR_LOGIN: joseph-robert-f
+          DIGEST_REPOSITORY: ${{ github.repository }}
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          TIME_ZONE: America/New_York
+          LOOKBACK_HOURS: "24"
