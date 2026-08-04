@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 4 August 2026</title>
+  <meta name="description" content="Alibaba releases Qwen3.8-Max, a 2.4-trillion-parameter open-weight model it says matches Anthropic and OpenAI's flagships on agentic benchmarks, though the weights themselves remain unpublished; Palantir's Alex Karp, fresh off 93% revenue growth, tells shareholders frontier AI labs carry &ldquo;Marxist overtones&rdquo; and intend to &ldquo;capture the means of production&rdquo; of their enterprise customers; Google pulls its one-day-old Earth AI image generator after researchers used it to fabricate convincing satellite imagery of fake nuclear sites and bombed hospitals; Ai4 2026 opens in Las Vegas with Geoffrey Hinton, Andrew Ng, and Fei-Fei Li sharing a keynote despite open disagreement on existential AI risk; and OpenAI commits $250M through 2027 to give 100,000 academic researchers free frontier-model access.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>4 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24&ndash;48 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Alibaba released Qwen3.8-Max, a 2.4-trillion-parameter model it claims matches Anthropic and OpenAI's flagships on agentic and coding benchmarks,</strong> including a self-directed 16-day coding project &mdash; but Alibaba hasn't disclosed the active-parameter count or published the open weights it promised.</li>
+      <li><strong>Palantir's Alex Karp, fresh off 93% revenue growth to $1.94B, told shareholders frontier AI labs carry &ldquo;Marxist overtones&rdquo;</strong> and intend to &ldquo;capture the means of production&rdquo; of the enterprises paying to use them.</li>
+      <li><strong>Google pulled its Earth AI image generator one day after launch</strong> after researchers used it to fabricate convincing satellite imagery of a fake Iranian nuclear site, a fake border refugee camp, and a fake bombed Gaza hospital.</li>
+      <li><strong>Ai4 2026, the largest US AI conference, opened in Las Vegas with Geoffrey Hinton, Andrew Ng, and Fei-Fei Li sharing a keynote stage</strong> despite openly opposing views on whether AI poses an existential risk.</li>
+      <li><strong>OpenAI committed more than $250M through 2027 to give 100,000 academic scientists free access to GPT-5.6 and Codex,</strong> starting with 10,000 researchers at institutions including the Institute for Advanced Study.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">AI research &amp; models</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">Alibaba &times; Qwen</span><span class="when">3 Aug</span></div>
+    <h3>Alibaba's Qwen3.8-Max claims parity with Anthropic and OpenAI &mdash; but ships without its weights or active-parameter count</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a Chinese lab is once again publishing benchmark tables that put an open-weight model within striking distance of the best closed frontier systems, but withholding the two numbers &mdash; active parameters and a firm release date &mdash; that would let anyone verify serving cost or actually run it, a pattern that's becoming standard practice for headline-grabbing Chinese model drops.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Alibaba's Qwen team released Qwen3.8-Max on August 3, a 2.4-trillion-parameter mixture-of-experts model accepting text, image, and video input. On Alibaba's own benchmark tables, the model scores 93.0 on PaperBench (ahead of GPT-5.6 Sol's 90.5 and Claude Fable 5's 88.8), 1,668 on Frontend Code Arena (37 points behind Claude Opus 5), and 82.8 on IFBench versus 72.7 for the nearest competitor. Alibaba says the model completed a 16-day autonomous coding project and a 500-plus-step chip-design optimization task without human intervention. However, the company has not disclosed how many of the 2.4 trillion parameters are active per token &mdash; external estimates put it around 95 billion, but that figure isn't confirmed &mdash; and while Alibaba says open weights for Qwen3.8-Max and a smaller Qwen3.8-27B variant are coming "next week," no license, date, or Hugging Face repository had been published as of this release.</p>
+      <ul class="sources">
+        <li><a href="https://www.bloomberg.com/news/articles/2026-08-03/alibaba-drops-another-china-ai-model-with-breakthrough-performance">Bloomberg: Alibaba's Qwen3.8-Max AI Model Claims Benchmark Scores Rivaling Anthropic</a> (primary reporting)</li>
+        <li><a href="https://www.marktechpost.com/2026/08/03/alibaba-qwen-releases-qwen3-8-max/">MarkTechPost: Alibaba Qwen Releases Qwen3.8-Max: A 2.4 Trillion Parameter MoE Model</a></li>
+        <li><a href="https://venturebeat.com/technology/qwen3-8-max-arrives-with-a-bold-claim-it-outperforms-gpt-5-6-sol-max-and-fable-5-on-agentic-computer-use">VentureBeat: Qwen3.8-Max arrives with a bold claim &mdash; it outperforms GPT-5.6 Sol Max and Fable 5</a></li>
+        <li><a href="https://the-decoder.com/alibabas-open-weight-qwen3-8-max-takes-on-long-horizon-ai-tasks-with-2-4-trillion-parameters/">The Decoder: Alibaba's open-weight Qwen3.8-Max takes on long-horizon AI tasks</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Markets &amp; earnings</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Palantir &times; Q2 earnings</span><span class="when">3 Aug</span></div>
+    <h3>Fresh off 93% revenue growth, Palantir's Karp accuses frontier AI labs of Marxism</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Palantir just posted one of the strongest quarters of any AI-adjacent company this earnings season, and its CEO used that platform to sharpen an argument enterprise buyers are increasingly primed to hear &mdash; that renting a frontier model means handing your proprietary workflows to a company that may use them to build your replacement, a direct pitch against OpenAI, Anthropic, and Google as much as it is philosophy.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Palantir reported Q2 2026 revenue of $1.94 billion, up 93% year over year and 19% quarter over quarter, beating consensus by roughly $130 million; adjusted EPS of $0.41 beat the $0.34 estimate, and the company raised full-year revenue guidance to $8.15&ndash;8.16 billion from $7.65&ndash;7.66 billion. U.S. commercial revenue grew 149% year over year. In his accompanying shareholder letter, CEO Alex Karp wrote "there are Marxist overtones and undertones to our business," arguing that "others, including many of those building large language models, intend, knowingly or otherwise, to capture the means of production of their purported partners." The comments extend Palantir's ongoing "AI sovereignty" campaign, which argues enterprises should retain control over their own data and models rather than cede it to frontier labs that could later compete with them using knowledge learned from customer deployments.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/08/03/after-killer-quarter-palantir-ceo-alex-karp-calls-ai-industry-marxist/">TechCrunch: After killer quarter, Palantir CEO Alex Karp calls AI industry 'Marxist'</a> (primary reporting)</li>
+        <li><a href="https://www.cnbc.com/2026/08/03/palantir-pltr-earnings-q2-2026.html">CNBC: Palantir (PLTR) earnings Q2 2026</a></li>
+        <li><a href="https://www.benzinga.com/markets/tech/26/08/60896658/alex-karp-rips-frontier-ai-labs-for-marxist-overtones-after-palantirs-blowout-earnings-says-they-want-to-colonize-your-enterprise">Benzinga: Alex Karp Rips Frontier AI Labs for 'Marxist Overtones' After Palantir's Blowout Earnings</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">AI safety &amp; trust</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Google &times; Earth AI</span><span class="when">31 Jul, pulled 1 Aug</span></div>
+    <h3>Google yanks its Earth AI image generator after one day, once critics fake a bombed hospital and a nuclear site</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a SynthID watermark and a Gemini-based verification tool weren't enough to stop researchers from generating convincing fabricated satellite imagery of real places within hours of launch &mdash; a concrete demonstration that provenance tooling doesn't prevent misuse if most users never think to check it, landing the same week transparency and provenance rules became legally enforceable in the EU and California.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Google added an AI image-generation tool called Nano Banana 2, powered by Gemini, to Google Earth on July 30, letting users prompt for a scene at any real-world location using the app's satellite, aerial, and 3D data. Within a day, misinformation researcher Henk van Ess and others produced convincing fabricated images depicting a fictional nuclear facility in Iran, a nonexistent refugee camp on the US&ndash;Mexico border, and a fake bombed hospital in Gaza, prompting warnings that the tool could lend Google's credibility to fabricated real-world events. Google initially defended the feature, noting every generated image carries a SynthID digital watermark checkable via the Gemini app or Lens, but critics countered that most users never verify a photo's authenticity and that Gemini itself sometimes failed to flag the images as AI-generated. Google pulled the feature on July 31, saying it would return once "stronger guardrails" were in place.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/">TechCrunch: Google nixes its Earth AI feature one day after launch, amid criticism it would spread misinformation</a> (primary reporting)</li>
+        <li><a href="https://www.npr.org/2026/07/31/nx-s1-5914652/google-adds-ai-to-satellite-images-raising-fears-of-deepfakes-in-the-sky">NPR: Google pauses AI satellite images, after fears of deepfakes in the sky</a></li>
+        <li><a href="https://www.inc.com/kevin-haynes/google-earths-new-ai-feature-could-create-false-images-of-real-places-it-lasted-1-day/91383508">Inc.: Google Earth's New AI Feature Could Create False Images of Real Places. It Lasted 1 Day</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Industry &amp; governance</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Ai4 2026</span><span class="when">opens 4 Aug</span></div>
+    <h3>Ai4 2026 opens in Las Vegas with Hinton and Ng sharing a stage &mdash; and openly disagreeing on whether AI is dangerous</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> putting AI's most prominent doomer and its most prominent optimist on the same keynote, in front of what organizers say is the largest audience in the event's history, is a visible marker of how unresolved the basic risk question remains among the people building the technology &mdash; even as the industry pours record capital into deploying it.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Ai4 2026, billed as America's largest AI conference, opened Tuesday, August 4 at The Venetian in Las Vegas for a three-day run through August 6, with organizers projecting more than 12,000 attendees, 1,000-plus speakers, and 400-plus exhibitors. The opening keynote paired Turing Award winner Geoffrey Hinton, Google Brain co-founder Andrew Ng, and Stanford's Fei-Fei Li on the same stage to discuss frontier AI research, human-centered innovation, and governance challenges; Hinton and Ng, who hold publicly opposing views on whether advanced AI threatens humanity, are scheduled to share a dedicated stage on Wednesday, August 5, as the event's headline session. The conference's largest programming track this year is dedicated to production AI deployment, governance, and failure modes, a shift from prior years' emphasis on model capability demos.</p>
+      <ul class="sources">
+        <li><a href="https://www.techtimes.com/articles/322674/20260802/ai4-2026-opens-tuesday-hinton-ng-face-off-ais-existential-stakes.htm">Tech Times: Ai4 2026 Opens Tuesday: Hinton and Ng Face Off on AI's Existential Stakes</a> (primary reporting)</li>
+        <li><a href="https://finance.yahoo.com/news/ai4-2026-announces-dynamic-keynote-panel-150000539.html">Yahoo Finance / ACCESS Newswire: Ai4 2026 Announces Dynamic Keynote Panel Featuring Geoffrey Hinton, Fei&ndash;Fei Li &amp; Andrew Ng</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Developer platforms &amp; science</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">OpenAI &times; Academic Researchers</span><span class="when">program opened 29&ndash;30 Jul</span></div>
+    <h3>OpenAI puts $250M behind free frontier-model access for 100,000 academic researchers</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is a direct play for the scientific-discovery narrative OpenAI has been building since Astra's math proofs earlier this week &mdash; giving working scientists free GPT-5.6 and Codex access is a bet that real research output, not benchmark scores, becomes the next credibility currency between labs.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>OpenAI launched ChatGPT for Academic Researchers, a program offering free access to ChatGPT, ChatGPT Work, and Codex &mdash; including the GPT-5.6 family &mdash; to scientists, mathematicians, and engineers at qualifying institutions. The rollout starts with 10,000 researchers this summer, including participants at the Institute for Advanced Study and &Eacute;cole normale sup&eacute;rieure, and is designed to expand to 100,000 researchers across 505 recognized degree-granting institutions in 32 countries by 2027. Each participating researcher can invite up to four collaborators from their institution. OpenAI says research data won't be used to train its models by default and that the program is part of a broader commitment of more than $250 million through 2027 to support external scientific research.</p>
+      <ul class="sources">
+        <li><a href="https://openai.com/index/chatgpt-for-academic-researchers/">OpenAI: Accelerating scientific discovery with ChatGPT for Academic Researchers</a> (primary)</li>
+        <li><a href="https://siliconangle.com/2026/07/29/openai-opens-new-chatgpt-academic-researchers-program-100000-scientists/">SiliconANGLE: OpenAI opens new ChatGPT for Academic Researchers program to 100,000 scientists</a></li>
+        <li><a href="https://dataconomy.com/2026/07/30/openai-free-chatgpt-research-program-100000-scientists/">Dataconomy: OpenAI Launches Free ChatGPT Research Program For 100,000 Scientists</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Developer platforms</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">xAI &times; Grok Voice</span><span class="when">launched 29 Jul, default 5 Aug</span></div>
+    <h3>xAI's Grok Voice Think Fast 2.0 takes the #2 speech-to-speech benchmark spot, under a second to first audio</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> voice is becoming the next visible front in the model race &mdash; xAI, OpenAI, Google, and Microsoft have all shipped or previewed real-time voice models within weeks of each other &mdash; and xAI's entry claims both the highest quality-adjusted score in its speed class and the fastest response time in the top five, a combination none of its rivals currently match.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>xAI released Grok Voice Think Fast 2.0 on July 29 at $0.08 per audio minute, succeeding Think Fast 1.0. According to Artificial Analysis's Speech-to-Speech Index, the high-reasoning variant scores 82.9% overall &mdash; up from 75.7% for version 1.0 &mdash; placing #2 in the index and ahead of GPT-Realtime-2.1 (79.1%) and Gemini 3.1 Flash (69.5%); it also ranks #1 on Tau Voice for agentic performance at 56.5%. It's the only model in the index's top five with average time-to-first-audio under one second, at 0.70 seconds versus 1.14 seconds for the next fastest. xAI says the model reasons in parallel with speech generation so that tool calls typically execute before it finishes its first sentence, and cites an A/B test on Starlink's phone support line showing improved sales conversion and support containment. The `grok-voice-latest` API alias switches from Think Fast 1.0 to 2.0 by default on August 5.</p>
+      <ul class="sources">
+        <li><a href="https://x.ai/news/grok-voice-think-fast-2">xAI: Introducing Grok Voice Think Fast 2.0</a> (primary)</li>
+        <li><a href="https://x.com/ArtificialAnlys/status/2082528987272957960">Artificial Analysis: Grok Voice Think Fast 2.0 benchmark results</a></li>
+        <li><a href="https://www.testingcatalog.com/spacexai-launches-grok-voice-think-fast-2-0-on-agent-builder/">TestingCatalog: SpaceXAI launches Grok Voice Think Fast 2.0 on Agent Builder</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 4 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>

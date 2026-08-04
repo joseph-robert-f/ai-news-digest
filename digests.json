@@ -1,7 +1,16 @@
 {
-  "generated": "2026-08-03T10:48:23.329Z",
-  "count": 43,
+  "generated": "2026-08-04T10:46:46.142Z",
+  "count": 44,
   "digests": [
+    {
+      "date": "2026-08-04",
+      "title": "AI News Digest — 4 August 2026",
+      "path": "2026/August/3 August - 9 August/4 August AI News Digest Report.html",
+      "year": 2026,
+      "month": "August",
+      "week": "3 August - 9 August",
+      "summary": "Alibaba releases Qwen3.8-Max, a 2.4-trillion-parameter open-weight model it says matches Anthropic and OpenAI's flagships on agentic benchmarks, though the weights themselves remain unpublished; Palantir's Alex Karp, fresh off 93% revenue growth, tells shareholders frontier AI…"
+    },
     {
       "date": "2026-08-03",
       "title": "AI News Digest — 3 August 2026",
