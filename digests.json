@@ -1,7 +1,16 @@
 {
-  "generated": "2026-08-04T10:46:46.142Z",
-  "count": 44,
+  "generated": "2026-08-05T10:46:35.764Z",
+  "count": 45,
   "digests": [
+    {
+      "date": "2026-08-05",
+      "title": "AI News Digest — 5 August 2026",
+      "path": "2026/August/3 August - 9 August/5 August AI News Digest Report.html",
+      "year": 2026,
+      "month": "August",
+      "week": "3 August - 9 August",
+      "summary": "A self-propagating npm worm compromises 400+ packages and targets AI-IDE configs; the Ninth Circuit rules Perplexity's Comet agent doesn't violate anti-hacking law when it shops on Amazon for users; Apple escalates its trade-secrets suit against OpenAI with a preliminary-injun…"
+    },
     {
       "date": "2026-08-04",
       "title": "AI News Digest — 4 August 2026",

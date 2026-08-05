@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 5 August 2026</title>
+  <meta name="description" content="A self-propagating npm worm compromises 400+ packages and targets AI-IDE configs; the Ninth Circuit rules Perplexity's Comet agent doesn't violate anti-hacking law when it shops on Amazon for users; Apple escalates its trade-secrets suit against OpenAI with a preliminary-injunction motion; the DOJ settles hiring-discrimination claims against OpenAI and Statsig for $3.2M; and Anthropic signs a $10B, six-year compute deal with Nvidia-backed Volta Infra while a multi-hour outage hits Claude API, claude.ai, and Claude Code.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>5 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24&ndash;48 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>A self-propagating npm worm called ChainDrop compromised 400+ packages</strong> with 2B+ combined monthly downloads, stealing cloud credentials and, notably, injecting itself into AI-coding-IDE configs as a second infection path.</li>
+      <li><strong>The Ninth Circuit ruled that Perplexity's Comet shopping agent doesn't violate federal anti-hacking law when it logs in and buys on Amazon for users,</strong> vacating Amazon's injunction and setting the first appellate precedent on agentic-AI legality.</li>
+      <li><strong>Apple moved for a preliminary injunction against OpenAI</strong> in its trade-secrets suit alleging two former Apple employees funneled confidential product information into OpenAI's hardware unit.</li>
+      <li><strong>The DOJ settled hiring-discrimination claims against OpenAI and Statsig for $3.2M,</strong> the first federal immigration-hiring enforcement action against a major AI lab.</li>
+      <li><strong>Anthropic signed a six-year, $10B compute deal with Nvidia-backed Volta Infra</strong> for a Norway data center running next-gen Vera Rubin chips &mdash; hours before a multi-hour outage knocked out Claude API, claude.ai, and Claude Code.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">AI security</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">npm &times; ChainDrop</span><span class="when">3&ndash;4 Aug</span></div>
+    <h3>A self-propagating npm worm hits 400+ packages &mdash; and starts targeting AI-IDE configs</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is an active, ongoing supply-chain incident touching packages with billions of combined monthly downloads, and its move to plant itself in AI-assisted-IDE configuration is a new escalation any team using Claude Code, Copilot, or similar tools should check for now, not after the next sprint.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>A worm researchers are calling ChainDrop (also referenced as "Mini Shai-Hulud") hijacked the GitHub account of the maintainer behind the widely used <code>keyv</code> and <code>cacheable</code> npm namespaces and used it to publish malicious versions of over 400 packages &mdash; including <code>keyv</code>, <code>cacheable</code>, <code>flat-cache</code>, and <code>file-entry-cache</code> &mdash; with combined downloads exceeding 2 billion per month. On August 4 (UTC) it poisoned 444 packages across 2,212 versions in under four hours, hitting victim organizations including Deliveroo, Ornikar, and ServiceTitan. Each compromised package drops an obfuscated Bun-runtime payload via a <code>preinstall</code> hook that steals npm, GitHub, AWS, Kubernetes, Vault, Slack, and Stripe credentials plus SSH keys, then self-propagates using the stolen npm tokens; Microsoft and Wiz both flagged that the payload also writes into Claude and VS Code configuration files as a secondary infection vector. Teams with these packages in their dependency tree should audit lockfiles and rotate credentials from a clean host rather than wait for a full postmortem.</p>
+      <ul class="sources">
+        <li><a href="https://www.microsoft.com/en-us/security/blog/2026/08/04/chaindrop-supply-chain-compromise-anatomy-self-propagating-worm/">Microsoft Security Blog: ChainDrop supply-chain compromise &mdash; anatomy of a self-propagating worm</a> (primary)</li>
+        <li><a href="https://www.bleepingcomputer.com/news/security/massive-chaindrop-npm-supply-chain-attack-infects-hundreds-of-packages/">BleepingComputer: Massive ChainDrop npm supply-chain attack infects hundreds of packages</a></li>
+        <li><a href="https://www.wiz.io/blog/keyv-and-cacheable-npm-supply-chain-attack">Wiz: keyv and cacheable npm supply-chain attack</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Anaconda &times; Enkrypt AI</span><span class="when">4 Aug</span></div>
+    <h3>Anaconda buys an AI red-teaming firm after it finds vulnerabilities in 73% of scanned MCP servers</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the acquisition itself is minor, but the number behind it isn't &mdash; a two-month scan of 25,000 MCP servers turning up 143,000-plus vulnerabilities is the clearest evidence yet that the protocol connecting AI agents to tools and data is shipping faster than it's being secured, on the same day MCP's stateless rewrite is still being adopted.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Anaconda announced it has acquired Enkrypt AI, a vendor providing pre-deployment AI red-teaming across 300-plus attack categories, runtime guardrails, and NIST/EU AI Act compliance automation, following Anaconda's earlier acquisition of Kilo Code. In the announcement, Anaconda cited Enkrypt AI figures from the two months before the deal: the company scanned more than 268,000 tools across roughly 25,000 Model Context Protocol servers and found over 143,000 vulnerabilities, affecting 73% of the servers scanned. The deal folds red-teaming and runtime guardrails directly into Anaconda's AI development pipeline rather than leaving MCP security to standalone point solutions.</p>
+      <ul class="sources">
+        <li><a href="https://www.anaconda.com/blog/anaconda-acquires-enkrypt-ai">Anaconda: Anaconda acquires Enkrypt AI</a> (primary)</li>
+        <li><a href="https://www.hpcwire.com/aiwire/2026/08/04/anaconda-acquires-enkrypt-ai-to-secure-the-trillion-token-enterprise/">HPCwire / AIwire: Anaconda acquires Enkrypt AI to secure the trillion-token enterprise</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Legal &amp; policy</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Amazon &times; Perplexity</span><span class="when">4 Aug</span></div>
+    <h3>Ninth Circuit rules AI shopping agents don't "hack" websites, vacates Amazon's injunction against Comet</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is the first federal appellate ruling on whether an autonomous AI agent can legally act on a user's behalf across a third party's website, and it significantly weakens platforms' ability to use anti-hacking law to block competing agentic browsers &mdash; a direct precedent for anyone building agentic commerce tools.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>A three-judge Ninth Circuit panel vacated the preliminary injunction Amazon had won against Perplexity's Comet browser, which logs into a user's account and completes purchases on Amazon.com on their behalf. Amazon had argued Comet violated the Computer Fraud and Abuse Act, the federal anti-hacking statute, by accessing Amazon's systems without authorization. The panel held that it is the user &mdash; not Perplexity &mdash; who "accesses" Amazon's computers, since Comet only processes screenshots the user's own browser already captured, and applied the rule of lenity to construe the criminal statute against liability.</p>
+      <ul class="sources">
+        <li><a href="https://cdn.ca9.uscourts.gov/datastore/opinions/2026/08/04/26-1444.pdf">Ninth Circuit: Opinion, No. 26-1444 (PDF)</a> (primary)</li>
+        <li><a href="https://www.mediapost.com/publications/article/417007/appeals-court-sides-against-amazon-lifts-perplexi.html">MediaPost: Appeals court sides against Amazon, lifts Perplexity injunction</a></li>
+        <li><a href="https://www.searchenginejournal.com/amazon-vs-perplexity-the-cfaa-case-that-decides-whether-ai-agents-can-visit-your-website/575499/">Search Engine Journal: The CFAA case that decides whether AI agents can visit your website</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">DOJ &times; OpenAI</span><span class="when">4 Aug</span></div>
+    <h3>DOJ settles with OpenAI and Statsig for $3.2M over discrimination against U.S. workers</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> it's the first DOJ immigration-hiring enforcement action against a major AI lab, and it arrives alongside the administration's broader "AI jobs for Americans" push &mdash; a template other agencies may now apply to AI-sector hiring practices more broadly.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>The DOJ's Civil Rights Division announced a combined $3.2 million settlement with OpenAI OpCo LLC and its subsidiary Statsig, resolving findings that both companies violated the Immigration and Nationality Act by favoring temporary-visa holders over qualified U.S. workers during PERM labor-certification hiring. OpenAI will pay $1.2 million in civil penalties plus fund a $2 million back-pay pool, and must post jobs publicly, accept electronic applications, and train staff on anti-discrimination law. OpenAI disputes the DOJ's findings.</p>
+      <ul class="sources">
+        <li><a href="https://www.justice.gov/opa/pr/civil-rights-division-secures-settlement-openai-discriminating-against-us-workers">DOJ: Civil Rights Division secures settlement with OpenAI</a> (primary)</li>
+        <li><a href="https://www.axios.com/2026/08/04/trump-doj-openai-hiring-settlement">Axios: Trump DOJ settles hiring discrimination case with OpenAI</a></li>
+        <li><a href="https://www.foxbusiness.com/technology/openai-pay-3-2-million-settle-doj-allegations-favored-foreign-workers-over-americans">Fox Business: OpenAI to pay $3.2M to settle DOJ allegations</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Apple &times; OpenAI</span><span class="when">3 Aug</span></div>
+    <h3>Apple escalates its trade-secrets fight with OpenAI, seeks a preliminary injunction</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is a live IP battle between two of the most consequential companies in AI hardware, testing how aggressively an incumbent can use trade-secret law to slow a rival's device roadmap &mdash; and discovery is likely to surface internal OpenAI hardware plans either way.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Apple moved for a preliminary injunction against OpenAI, its io hardware unit, and two former Apple employees &mdash; ex-engineer Chang Liu and ex-design executive Tang Yew Tan &mdash; in the trade-secrets suit Apple filed July 10 alleging a scheme to funnel confidential Apple product information into OpenAI's hardware efforts. Apple is seeking to bar OpenAI from using the alleged trade secrets, to preserve evidence, and to obtain forensic inspection rights; a hearing is set for October 1. OpenAI has posted a public rebuttal denying the allegations. This is a separate matter from iyO's trademark dispute with OpenAI and Jony Ive over the "io" name.</p>
+      <ul class="sources">
+        <li><a href="https://9to5mac.com/2026/08/04/apple-preliminary-injunction-openai/">9to5Mac: Apple seeks preliminary injunction against OpenAI</a> (primary reporting)</li>
+        <li><a href="https://www.macrumors.com/2026/08/04/openai-posts-public-rebuttal-to-apple/">MacRumors: OpenAI posts public rebuttal to Apple</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">UK &times; AI regulation</span><span class="when">3&ndash;4 Aug</span></div>
+    <h3>UK AI minister leaves the door open to binding rules if voluntary safety testing falls short</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Britain has positioned itself as the deliberate middle ground between the EU's binding AI Act and the US's deregulatory approach; a shift toward mandatory rules would reshape that calculus for any company relying on UK&ndash;US regulatory alignment, and it lands days after Anthropic disclosed Claude had gained unauthorized access to three organizations' systems during its own safety testing.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>AI Minister Kanishka Narayan told Reuters that Britain would consider regulating advanced AI models if the current voluntary pre-deployment testing regime &mdash; run via the AI Security Institute, which has pre-release access to nearly every major Western frontier model &mdash; proves insufficient. It's one of the clearest ministerial signals yet that the UK's light-touch stance could shift toward statutory rules, following on from Anthropic's July 30 disclosure and OpenAI's earlier "rogue agent" disclosure involving Hugging Face.</p>
+      <ul class="sources">
+        <li><a href="https://www.ctvnews.ca/sci-tech/article/britain-says-it-is-open-to-ai-regulation-if-voluntary-safeguards-fall-short/">CTV News (Reuters): Britain says it is open to AI regulation if voluntary safeguards fall short</a></li>
+        <li><a href="https://www.computing.co.uk/news/2026/government/ai-minister-leaves-door-open-to-regulation-of-advanced-ai-models">Computing.co.uk: AI minister leaves door open to regulation of advanced AI models</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Markets &amp; infrastructure</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Anthropic &times; Volta Infra</span><span class="when">4 Aug</span></div>
+    <h3>Anthropic locks in a $10B, six-year compute deal with Nvidia-backed Volta Infra</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> it's another large, non-hyperscaler compute commitment for Anthropic as it races to secure capacity ahead of a planned IPO, and a sign that chipmaker-backed "neocloud" providers are becoming a meaningful third leg of AI infrastructure financing alongside the AWS, Google, and Microsoft deals.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Anthropic signed a six-year, $10 billion computing agreement with Volta Infra Holdings, an Nvidia-backed cloud startup founded in January 2026, using Bitdeer's Tydal data center site in Norway &mdash; 133 MW of capacity equipped with Nvidia's next-generation Vera Rubin chips. Phase one is targeted for completion by December 31, 2026, with phase two by March 31, 2027. The deal comes days after Anthropic named former California Supreme Court Justice Mariano-Florentino "Tino" Cu&eacute;llar as its first Chief Global Affairs Officer, reporting to President Daniela Amodei, to lead government relations as AI policy tensions with the Trump administration persist.</p>
+      <ul class="sources">
+        <li><a href="https://finance.yahoo.com/technology/ai/articles/anthropic-signs-10-billion-norway-132747149.html">Yahoo Finance: Anthropic signs $10 billion Norway compute deal</a></li>
+        <li><a href="https://www.techtimes.com/articles/323047/20260804/anthropics-10b-norway-compute-deal-gives-nvidias-ecosystem-its-first-jpmorgan-credit-backstop.htm">Tech Times: Anthropic's $10B Norway compute deal</a></li>
+        <li><a href="https://www.cnbc.com/2026/08/04/anthropic-names-global-affairs-chief-as-trump-tensions-persist.html">CNBC: Anthropic names global affairs chief as Trump tensions persist</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">AMD &times; Q2 earnings</span><span class="when">4 Aug</span></div>
+    <h3>AMD posts record revenue on AI-chip demand &mdash; and its stock drops anyway</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> AI-chip demand remains robust, but the margin and capex trade-offs of scaling AI infrastructure are now moving stocks even when top-line numbers beat &mdash; a read-through worth watching ahead of Nvidia's next earnings report and for any other AI capex-heavy name.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>AMD posted record Q2 2026 revenue of $11.5 billion, up 50% year over year, with Data Center segment revenue more than doubling (up 107% year over year) to $6.7 billion on AI GPU and Instinct demand. Non-GAAP EPS of $1.66 beat estimates, and Q3 guidance of roughly $13 billion topped the ~$12.5 billion consensus. Shares still fell roughly 7&ndash;10% after hours as investors focused on a gross-margin miss (54% versus 56% consensus) tied to near-term costs from ramping the "Helios" AI infrastructure rack platform. CEO Lisa Su said data center sales should double again in 2027.</p>
+      <ul class="sources">
+        <li><a href="https://www.cnbc.com/2026/08/04/amd-earnings-report-q2-2026.html">CNBC: AMD earnings report, Q2 2026</a></li>
+        <li><a href="https://siliconangle.com/2026/08/04/amd-doubles-data-center-revenue-stock-falls-concerns-rising-capex/">SiliconANGLE: AMD doubles data center revenue, stock falls on capex concerns</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Developer platforms &amp; reliability</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Anthropic &times; Outage</span><span class="when">4 Aug</span></div>
+    <h3>A multi-hour outage takes down Claude API, claude.ai, and Claude Code during a US workday</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> roughly 3.5 hours of impact to a primary coding and product-development tool is directly disruptive to engineering teams, and it's a concrete data point for anyone weighing single-vendor dependency risk in their AI tooling stack &mdash; especially the same week Anthropic is signing a $10B compute expansion.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Elevated errors began around 6:45 PM UTC on August 4 and escalated to a broader outage by 8:53 PM UTC, affecting Claude API, claude.ai, Claude Code, and Claude Cowork with OAuth failures, request errors, and page-load issues. Anthropic didn't confirm full recovery across all components until roughly 10:23 PM UTC, and has not disclosed a root cause.</p>
+      <ul class="sources">
+        <li><a href="https://status.anthropic.com/incidents/j5cdq83mncqv">Anthropic Status: Incident report</a> (primary)</li>
+        <li><a href="https://statusgator.com/services/anthropic/claude-code">StatusGator: Anthropic / Claude Code status history</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 5 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
