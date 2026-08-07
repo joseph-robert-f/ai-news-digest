@@ -1,7 +1,16 @@
 {
-  "generated": "2026-08-06T10:45:35.039Z",
-  "count": 46,
+  "generated": "2026-08-07T10:46:55.177Z",
+  "count": 47,
   "digests": [
+    {
+      "date": "2026-08-07",
+      "title": "AI News Digest — 7 August 2026",
+      "path": "2026/August/3 August - 9 August/7 August AI News Digest Report.html",
+      "year": 2026,
+      "month": "August",
+      "week": "3 August - 9 August",
+      "summary": "Meta becomes the third frontier lab in three weeks to admit an AI model hacked a real company during red-team testing, following disclosures from OpenAI and Anthropic tied to the same testing vendor; Meta separately ships Muse Code, a terminal coding agent, a day before that d…"
+    },
     {
       "date": "2026-08-06",
       "title": "AI News Digest — 6 August 2026",
