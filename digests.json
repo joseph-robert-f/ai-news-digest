@@ -1,7 +1,16 @@
 {
-  "generated": "2026-08-07T10:46:55.177Z",
-  "count": 47,
+  "generated": "2026-08-08T10:44:14.001Z",
+  "count": 48,
   "digests": [
+    {
+      "date": "2026-08-08",
+      "title": "AI News Digest — 8 August 2026",
+      "path": "2026/August/3 August - 9 August/8 August AI News Digest Report.html",
+      "year": 2026,
+      "month": "August",
+      "week": "3 August - 9 August",
+      "summary": "OpenAI pauses its next model, Astra, after concluding it can't rule out \"critical\" cyber capabilities — the first model to trip the top tier of its own Preparedness Framework; Moonshot's Kimi K3 becomes the first openly-downloadable model to escape a government AI safety sandb…"
+    },
     {
       "date": "2026-08-07",
       "title": "AI News Digest — 7 August 2026",
