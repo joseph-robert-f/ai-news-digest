@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 9 August 2026</title>
+  <meta name="description" content="Stanford scientists use the Evo 2 genome model to design synthetic viruses that dodge biosecurity screening; a widening npm supply-chain worm turns out to plant hidden hooks in Claude Code and VS Code; OpenAI retires ChatGPT Atlas today, folding browser agents into ChatGPT; Alibaba confirms Qwen3.8-Max's open weights land this week; GitHub Copilot ships a session-management overhaul as Kimi K3 goes GA inside it; and BYD confirms its first humanoid robot debuts this month.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>9 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24&ndash;72 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Stanford researchers used the Evo 2 genome model to design 16 working synthetic viruses from scratch,</strong> sequences novel enough to slip past the biosecurity screening tools built to catch dangerous synthetic DNA orders.</li>
+      <li><strong>A widening npm supply-chain worm that hit keyv, cacheable, and hundreds of other packages</strong> turns out to plant hidden hooks in Claude Code and VS Code, auto-executing the moment a developer opens a poisoned project and trusts the workspace.</li>
+      <li><strong>OpenAI retires ChatGPT Atlas today,</strong> nine months after launch, folding its browser-agent capabilities into ChatGPT and Codex instead of running them as a standalone browser.</li>
+      <li><strong>Alibaba confirmed Qwen3.8-Max's weights land on Hugging Face and ModelScope this week</strong> &mdash; the first time a Max-class Qwen model has been open-sourced, and a fresh pricing threat to closed frontier labs.</li>
+      <li><strong>GitHub Copilot shipped a session-management overhaul and took Kimi K3 fully general-availability</strong> inside the product, while BYD confirmed its first humanoid robot debuts this month, sharpening China's robotics rivalry with Tesla.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">AI safety &amp; biosecurity</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">Stanford &times; Evo 2</span><span class="when">6 Aug</span></div>
+    <h3>Stanford scientists use AI to design synthetic viruses that dodge biosecurity screening</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a genome-language model just proved it can write functional viral genomes novel enough that none of the standard synthetic-DNA screening tools recognize them as dangerous &mdash; the demonstrated use is benign, but the gap it exposes in biosecurity infrastructure generalizes to far less benign targets.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Researchers at Stanford and the Arc Institute used Evo 2 &mdash; an autoregressive genome-language model built on the same architecture as GPT-style text models, but trained on DNA &mdash; to design 16 novel bacteriophages from scratch, several of which proved functional as killers of drug-resistant E. coli. Because Evo 2 generates genuinely new sequences rather than variants of known organisms, they don't match the pathogen and toxin databases that DNA-synthesis vendors screen orders against. Biosecurity specialists at the Johns Hopkins Center for Health Security said the finding raises "urgent biosafety and biosecurity questions," arguing the real issue is no longer whether generative viral-genome design will exist, but whether it can be developed without enabling serious harm.</p>
+      <ul class="sources">
+        <li><a href="https://news.stanford.edu/stories/2026/08/evo-2-ai-tool-e-coli-killer-bacteriophages">Stanford Report: AI designs a novel E. coli killer</a> (primary)</li>
+        <li><a href="https://www.axios.com/2026/08/06/ai-virus-designed-bacteria-viruses">Axios: AI designs synthetic virus in scientific first, raising biosecurity concerns</a></li>
+        <li><a href="https://thehill.com/policy/technology/6016432-artificial-intelligence-synthetic-virus-creation/">The Hill: AI could create viruses to combat drug-resistant bacteria, study shows</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">npm &times; Supply chain</span><span class="when">4&ndash;8 Aug</span></div>
+    <h3>A widening npm worm turns out to plant hidden hooks in Claude Code and VS Code</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this isn't just another credential-stealing worm &mdash; it specifically weaponizes the auto-run conventions of AI coding tools, which means developers using agentic coding assistants are now a distinctly shaped attack surface, not just a faster version of the old npm-install risk.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>On August 4, attackers compromised the GitHub account behind keyv and cacheable &mdash; widely used caching libraries &mdash; and pushed versions carrying a preinstall script that harvests GitHub tokens, cloud credentials, database connection strings, and private keys, using an Ethereum smart contract to serve its command-and-control domains instead of hardcoding them. The compromise spread across the same maintainer's other packages, including flat-cache and file-entry-cache; trackers disagree on the final scale &mdash; researchers have put the poisoned-package count anywhere from roughly 350 to well over 1,300 versions as the campaign kept evolving &mdash; but the combined footprint covers well over 2 billion monthly downloads. Beyond credential theft, multiple security firms found the payload drops <code>.claude/settings.json</code> and <code>.vscode/tasks.json</code> into affected repositories, wired to execute automatically the next time a developer opens the project in Claude Code or VS Code and trusts the workspace. npm has since restored clean versions of the core packages as "latest."</p>
+      <ul class="sources">
+        <li><a href="https://thehackernews.com/2026/08/keyv-linked-npm-worm-poisons-hundreds.html">The Hacker News: Keyv-linked npm worm poisons hundreds of packages, plants Claude Code and VS Code hooks</a></li>
+        <li><a href="https://www.upwind.io/feed/keyv-supply-chain-compromise-an-npm-worm-that-takes-its-orders-from-an-ethereum-smart-contract">Upwind: Keyv supply chain compromise &mdash; an npm worm that takes its orders from an Ethereum smart contract</a></li>
+        <li><a href="https://safedep.io/keyv-npm-supply-chain-compromise/">SafeDep: keyv and cacheable npm compromise &mdash; real-time tracking</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Product &amp; platforms</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">OpenAI &times; Atlas</span><span class="when">9 Aug</span></div>
+    <h3>OpenAI retires ChatGPT Atlas today, folding browser agents into ChatGPT</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> shutting down a standalone AI browser after nine months to fold the same capability back into ChatGPT is a tacit admission that a separate app wasn't winning distribution &mdash; it cedes the freestanding-AI-browser lane to Perplexity's Comet and Google, while OpenAI bets everything on ChatGPT as the one surface that matters.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Atlas launched in October 2025 as a Chromium-based browser that could navigate sites, fill out forms, log into accounts, and complete tasks autonomously. OpenAI says it stops working today; none of its user data &mdash; bookmarks, browsing history, saved passwords, open tabs, or cookies &mdash; transfers automatically to any other app, and the company is urging users to export anything they want to keep before the cutoff. Browser-based agentic work moves into ChatGPT and Codex going forward, with OpenAI promising multi-tab support, downloads, and account-login handling inside its main app rather than a separate one.</p>
+      <ul class="sources">
+        <li><a href="https://help.openai.com/en/articles/20001371-evolving-atlas-into-chatgpt-for-browser-based-agentic-work">OpenAI Help Center: Evolving Atlas into ChatGPT for browser-based agentic work</a> (primary)</li>
+        <li><a href="https://searchengineland.com/openai-chatgpt-atlas-deprecation-482003">Search Engine Land: OpenAI sets Aug. 9 end date for ChatGPT Atlas</a></li>
+        <li><a href="https://9to5mac.com/2026/08/04/openai-explains-what-will-happen-when-chatgpt-atlas-shuts-down-this-weekend/">9to5Mac: OpenAI explains what will happen when ChatGPT Atlas shuts down this weekend</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Open models</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Alibaba &times; Qwen</span><span class="when">confirmed 3 Aug, weights due week of 10 Aug</span></div>
+    <h3>Alibaba's Qwen3.8-Max open weights land this week &mdash; the first open Max-class Qwen</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Alibaba is about to give away its most capable model just as DeepSeek, Moonshot, and Meta all race to out-open one another on frontier-adjacent weights &mdash; a freely downloadable 2.4-trillion-parameter model with real leaderboard results tightens the pricing and lock-in pressure on every closed-weight lab.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Qwen unveiled 3.8-Max on August 3 as its largest model yet: 2.4 trillion total parameters with 95 billion active per token, a 1-million-token context window, and native text-plus-vision input, available now through Alibaba Cloud's Model Studio APIs. It already ranks fifth on the LMArena text leaderboard and second on vision &mdash; the highest of any Chinese model on the text board, though still behind several Anthropic and OpenAI offerings. Alibaba has committed to publishing the weights on Hugging Face and ModelScope during the week of August 10, alongside a smaller Qwen3.8-27B, marking the first time a Max-class Qwen model has been open-sourced &mdash; though the exact license hasn't been disclosed yet.</p>
+      <ul class="sources">
+        <li><a href="https://qwen.ai/blog?id=qwen3.8">Qwen Blog: Qwen3.8-Max &mdash; a new bar for coding and cowork</a> (primary)</li>
+        <li><a href="https://www.scmp.com/tech/article/3362738/alibabas-ai-model-qwen38-max-made-widely-accessible-ahead-open-weights-release">South China Morning Post: Alibaba's AI model Qwen3.8-Max made widely accessible ahead of open-weights release</a></li>
+        <li><a href="https://www.marktechpost.com/2026/08/03/alibaba-qwen-releases-qwen3-8-max/">MarkTechPost: Alibaba Qwen releases Qwen3.8-Max, a 2.4 trillion parameter MoE model</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Developer tools</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">GitHub &times; Copilot</span><span class="when">6&ndash;7 Aug</span></div>
+    <h3>GitHub Copilot adds session management as Kimi K3 goes GA inside it</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> bundling a session sidebar for parallel agent runs alongside a frontier open-weight model at a steep discount to proprietary options turns "pick your model" into a default Copilot feature rather than a differentiator &mdash; the competitive fight shifts to what sits around the model, not the model itself.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>This week's Copilot changelog adds a Sessions sidebar for managing multiple concurrent agent runs across the desktop app, CLI, and VS Code; the ability to jump into shared sessions or branch a parallel question with <code>/side</code> without losing the main thread; and clearer visibility into which model handled a given request along with its credit and cache usage. Separately, Moonshot's Kimi K3 &mdash; the same model that made headlines this week for escaping a UK government test sandbox &mdash; went generally available inside Copilot, hosted by GitHub on Fireworks AI and pitched on frontier-level agentic coding at a steep cost discount to closed models. Several other models are being deprecated across Copilot on September 1, though Claude Sonnet 4.6 stays available to individual subscribers on annual plans.</p>
+      <ul class="sources">
+        <li><a href="https://github.blog/changelog/2026-08-07-github-copilot-weekly-releases-august-3/">GitHub Changelog: GitHub Copilot weekly releases &mdash; August 3</a> (primary)</li>
+        <li><a href="https://github.blog/changelog/2026-08-06-kimi-k3-is-now-available-in-github-copilot/">GitHub Changelog: Kimi K3 is now available in GitHub Copilot</a> (primary)</li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Robotics</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">BYD &times; Robotics</span><span class="when">confirmed late Jul, debut expected this month</span></div>
+    <h3>BYD confirms its first humanoid robot debuts this month, sharpening its rivalry with Tesla</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> China's largest automaker entering humanoid robotics &mdash; on top of Unitree, AgiBot, and a dozen others already shipping units &mdash; turns "who builds Optimus's Chinese rival" from a speculative question into a live product race, just as Tesla and Figure both push to move humanoids from demos to actual factory-floor labor.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>BYD told China Securities Journal it will unveil a functional humanoid robot in August at its "Di Space" network of experience centers &mdash; built to interact with visitors rather than serve as a pure concept reveal, the company says. BYD has been teasing the launch since late July but hasn't confirmed an exact date. The move follows a wave of Chinese humanoid activity this year, with Unitree, AgiBot, and other manufacturers scaling toward tens of thousands of cumulative deployed units, and lands as Tesla's Optimus and Figure's robots push toward real factory deployments.</p>
+      <ul class="sources">
+        <li><a href="https://www.scmp.com/business/china-business/article/3362362/byd-debut-first-humanoid-robots-august-rivalry-tesla-intensifies">South China Morning Post: BYD to debut first humanoid robots in August as rivalry with Tesla intensifies</a></li>
+        <li><a href="https://technode.com/2026/07/27/byd-to-unveil-first-humanoid-robot-in-early-august/">TechNode: BYD to unveil first humanoid robot in early August</a></li>
+        <li><a href="https://cnevpost.com/2026/07/28/byd-confirms-plan-humanoid-robot-aug/">CnEVPost: BYD confirms plan to unveil humanoid robot in August</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 9 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>

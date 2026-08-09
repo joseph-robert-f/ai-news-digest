@@ -1,7 +1,16 @@
 {
-  "generated": "2026-08-08T10:44:14.001Z",
-  "count": 48,
+  "generated": "2026-08-09T10:47:48.969Z",
+  "count": 49,
   "digests": [
+    {
+      "date": "2026-08-09",
+      "title": "AI News Digest — 9 August 2026",
+      "path": "2026/August/3 August - 9 August/9 August AI News Digest Report.html",
+      "year": 2026,
+      "month": "August",
+      "week": "3 August - 9 August",
+      "summary": "Stanford scientists use the Evo 2 genome model to design synthetic viruses that dodge biosecurity screening; a widening npm supply-chain worm turns out to plant hidden hooks in Claude Code and VS Code; OpenAI retires ChatGPT Atlas today, folding browser agents into ChatGPT; Al…"
+    },
     {
       "date": "2026-08-08",
       "title": "AI News Digest — 8 August 2026",
