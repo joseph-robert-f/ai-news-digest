@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 12 August 2026</title>
+  <meta name="description" content="Anthropic starts invisibly watermarking all Claude output worldwide under the EU AI Act and signs a $9.1B compute deal with Bitcoin miner Riot Platforms; 120+ companies including Nvidia and Microsoft draft an AI-agent security disclosure framework; xAI opens a Grok Bot agent beta inside Cursor; and AI infrastructure earnings split between blowout results and debt-driven equity pressure.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>12 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24&ndash;48 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Anthropic watermarks Claude, worldwide.</strong> Every Claude model since Aug 2 now embeds an invisible watermark in generated text, citing the EU AI Act &mdash; the first frontier lab to operationalize the rule, applied globally rather than just in Europe.</li>
+      <li><strong>Anthropic buys another 191MW of power.</strong> A $9.1B, 20-year compute deal with Bitcoin miner Riot Platforms is Anthropic's third major capacity deal in three months, pushing committed compute spend past $60B.</li>
+      <li><strong>AI infrastructure earnings split down the middle.</strong> CoreWeave and Supermicro post blowout results and raise guidance, while Alphabet shares slide on a new $25B debt offering and fresh antitrust pressure.</li>
+      <li><strong>Nvidia and AMD back the same startup.</strong> River AI, founded two months ago by ex-xAI cofounder Igor Babuschkin, raises $1.1B with both chipmakers as investors.</li>
+      <li><strong>120+ companies draft agent-breach disclosure rules.</strong> Nvidia, Microsoft, and CrowdStrike are among backers of a framework requiring AI-agent security incidents be reported within days &mdash; the industry's first concrete self-governance move since this month's containment breaches.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">Markets &amp; infrastructure</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">Anthropic &times; Compute</span><span class="when">11 Aug</span></div>
+    <h3>Anthropic signs a $9.1B, 20-year compute deal with Bitcoin miner Riot Platforms</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> it's Anthropic's third major compute-capacity deal in three months, pushing committed spend past $60B, and it underscores how crypto-mining operators sitting on cheap power and existing grid connections have become one of the fastest paths to megawatts for AI labs &mdash; often faster than a traditional data-center build.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Anthropic will take roughly 191MW of capacity from Riot Platforms' Rockdale, Texas campus under a 20-year agreement, with two 5-year extension options that could push total contract value to $16.1B. Capacity comes online in phases &mdash; 96MW by December 2027, the full 191MW by June 2028. It follows Anthropic's Google-backed $35B compute loan and this week's Theseus Infrastructure joint venture with Macquarie and GIC, three distinct financing tracks for the same underlying compute race. Riot shares jumped as much as 17&ndash;25% in after-hours trading on the news.</p>
+      <ul class="sources">
+        <li><a href="https://www.bloomberg.com/news/articles/2026-08-11/anthropic-strikes-9-billion-deal-with-cloud-computing-firm-riot">Bloomberg: Anthropic strikes $9 billion deal with cloud computing firm Riot</a></li>
+        <li><a href="https://247wallst.com/investing/2026/08/11/riot-platforms-soars-17-on-9-1b-anthropic-data-center-deal-ai-infrastructure-peers-iren-applied-digital-terawulf-head-higher/">24/7 Wall St: Riot Platforms soars on $9.1B Anthropic data-center deal</a></li>
+        <li><a href="https://finance.yahoo.com/markets/stocks/article/riot-platforms-stock-surges-on-91-billion-data-center-deal-with-anthropic-132120194.html">Yahoo Finance: Riot Platforms stock surges on $9.1B data-center deal with Anthropic</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Earnings &times; AI Infra</span><span class="when">11 Aug</span></div>
+    <h3>CoreWeave and Supermicro post blowout earnings as Alphabet slides on debt-funded AI capex</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the same week shows both sides of the AI-capex story &mdash; compute suppliers posting accelerating demand and raising guidance, while a hyperscaler funding its own buildout with fresh debt gets punished by the market; worth watching whether debt-financed capex becomes a recurring equity headwind as more of the buildout moves off balance-sheet cash.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>CoreWeave's Q2 revenue hit $2.58B (+112% YoY), beating estimates, with backlog reaching $104B and Q3 guidance of $3.4&ndash;3.6B; shares rose 12&ndash;15% even as its GAAP net loss widened to $626M. Supermicro's fiscal Q4 non-GAAP EPS of $1.70 crushed the $0.96 consensus, and its FY27 revenue guidance of $65&ndash;72B blew past the $54.4B Wall Street expected. Meanwhile Alphabet shares fell roughly 3.6% after closing a $25B senior-notes offering (maturities out to 2066) to help fund AI data-center spending, compounded by renewed antitrust pressure over its search-remedy terms and a new EU publisher complaint over AI Overviews.</p>
+      <ul class="sources">
+        <li><a href="https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html">CNBC: CoreWeave Q2 2026 earnings report</a></li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/0001375365/000137536526000019/fq42026businessupdate.htm">SEC/Supermicro: Fiscal Q4 2026 business update</a> (primary)</li>
+        <li><a href="https://www.tradingkey.com/news/market-movers/262096865-market-movers-googl-20260811">TradingKey: Market movers &mdash; Alphabet, Aug 11 2026</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding &times; River AI</span><span class="when">11 Aug</span></div>
+    <h3>Nvidia and AMD both back a $1.1B round for a two-month-old AI startup</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> two direct chip rivals co-investing in the same infrastructure bet is a rare, notable signal about where they see the next layer of value accruing &mdash; model customization and deployment tooling, not just silicon &mdash; and it's one of the largest rounds ever for a company this young.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>River AI, founded roughly two months ago by former xAI co-founder Igor Babuschkin, raised $1.1B at around a $5B post-money valuation, co-led by General Catalyst and AMP PBC, with Nvidia, AMD Ventures, Temasek, and Y Combinator also participating. River's pitch is an "open AI stack" letting companies fine-tune, reinforcement-learn, and serve custom versions of open-weight frontier models via API without owning the underlying infrastructure.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/">TechCrunch: General Catalyst leads $1.1B round into two-month-old River AI</a></li>
+        <li><a href="https://siliconangle.com/2026/08/11/personalized-ai-startup-river-ai-raises-1-1b-consortium-backed-nvidia-amd/">SiliconANGLE: River AI raises $1.1B in round backed by Nvidia, AMD</a></li>
+        <li><a href="https://www.hpcwire.com/aiwire/2026/08/11/river-ai-secures-1-1b-to-make-custom-ai-models-easier-to-train-and-deploy/">HPCwire/AIwire: River AI secures $1.1B to make custom AI models easier to train and deploy</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">AI policy &amp; governance</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Anthropic &times; EU AI Act</span><span class="when">11 Aug</span></div>
+    <h3>Anthropic starts invisibly watermarking all Claude output, worldwide</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> it's the first frontier lab to operationalize the EU AI Act's Article 50 transparency mandate &mdash; and rather than scoping the change to EU users, Anthropic applied it globally, setting a de facto standard that OpenAI and Google will face pressure to match, with real implications for AI-content detection and provenance tooling.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Every Claude model launched on or after August 2, 2026 now embeds an imperceptible statistical watermark directly into generated text, plus C2PA-based provenance metadata in generated files and images; Anthropic says the mark survives some copy/paste and light editing without changing meaning or readability. The trigger is the EU AI Act's Article 50 Code of Practice, enforceable since August 2, which carries fines up to &euro;15M or 3% of global turnover for noncompliance. Anthropic signed the Code of Practice and is working to backfill watermarking to older models ahead of a December 2 grace-period deadline.</p>
+      <ul class="sources">
+        <li><a href="https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content">Anthropic Support: How Claude marks AI-generated content</a> (primary)</li>
+        <li><a href="https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/">TechCrunch: Anthropic says it will watermark text generated by its AI models</a></li>
+        <li><a href="https://www.euronews.com/next/2026/08/11/eu-compliance-delivered-globally-anthropic-to-watermark-claudes-output-worldwide">Euronews: EU compliance, delivered globally &mdash; Anthropic to watermark Claude's output worldwide</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Industry &times; Agent Security</span><span class="when">11 Aug</span></div>
+    <h3>120+ companies including Nvidia, Microsoft, and CrowdStrike draft a mandatory AI-agent incident disclosure framework</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> it's the industry's first concrete self-governance mechanism to come out of this month's string of agent-containment breaches &mdash; a specific reporting timeline that gives any enterprise running its own agent deployments a template for what responsible disclosure should look like, regardless of whether it ever becomes binding.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>The Linux Foundation published an RFC for "SAFE" on behalf of the Open Secure AI Alliance, the 120+-member coalition that emerged from Black Hat 2026. Under the draft, member companies would confidentially report AI-agent security incidents &mdash; unauthorized system access, data exfiltration, or "near misses" &mdash; within 4 business days, publish a factual report within 30 days, and issue a remediation update within 90. It follows directly from the Meta, OpenAI, and Anthropic agent-breach disclosures already making headlines this month, turning the coalition's earlier guidelines-drafting effort into an actual reporting mechanism.</p>
+      <ul class="sources">
+        <li><a href="https://www.axios.com/2026/08/11/open-source-security-ai-agent-reporting">Axios: Tech giants draft rules for reporting AI agent security incidents</a></li>
+        <li><a href="https://www.cybersecuritydive.com/news/ai-agent-security-exchange-linux-foundation/826940/">Cybersecurity Dive: AI agent security incident exchange launched by Linux Foundation</a></li>
+        <li><a href="https://www.techtimes.com/articles/323064/20260804/ai-security-gets-its-first-voluntary-incident-disclosure-framework-black-hat.htm">Tech Times: AI security gets its first voluntary incident disclosure framework</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Agentic AI &amp; products</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">xAI &times; Agents</span><span class="when">11 Aug</span></div>
+    <h3>xAI opens a public beta of "Grok Bot," an always-on AI coworker &mdash; inside Cursor</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> persistent agents that log into a user's existing apps and work autonomously until they need approval push the agentic-coworker concept further into daily use than most rivals have shipped, and naming Cursor as a launch channel is the first visible sign of product integration ahead of the still-unclosed $60B SpaceX-Cursor acquisition.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Grok Bot gives each agent its own persistent cloud computer and access to a user's existing logins, letting it complete multi-step tasks end-to-end and surface only when it needs approval. It's priced around $120/month on SuperGrok Heavy and Cursor Ultra/Teams Premium tiers, available now on desktop and iOS with Android "coming soon"; Musk says a wider rollout ties to this week's Grok 4.6 release. Separately, Cursor told staff the SpaceX deal could close within days, and reporting suggests the Cursor brand itself may not survive the integration, with an unreleased agent code-named "Sand" potentially launching under Grok branding instead.</p>
+      <ul class="sources">
+        <li><a href="https://venturebeat.com/orchestration/spacexais-grok-bot-turns-agents-into-persistent-digital-coworkers-that-can-operate-your-apps-for-120-per-month">VentureBeat: SpaceX/xAI's Grok Bot turns agents into persistent digital coworkers</a></li>
+        <li><a href="https://www.unite.ai/xai-launches-grok-bot-always-on-ai-teammates-with-their-own-cloud-computers/">Unite.AI: xAI launches Grok Bot, always-on AI teammates with their own cloud computers</a></li>
+        <li><a href="https://www.tipranks.com/news/spacexs-60b-cursor-deal-could-close-next-week-but-the-cursor-brand-may-disappear">TipRanks: SpaceX's $60B Cursor deal could close next week, but the Cursor brand may disappear</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Developer tools</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Microsoft &times; Visual Studio</span><span class="when">11 Aug</span></div>
+    <h3>Visual Studio 2026 reaches general availability with new Copilot cost controls</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a per-request "thinking effort" dial and a dedicated skills panel turn Copilot token spend and agent-skill governance into something engineering leadership can actually manage at scale, rather than an opaque line item &mdash; worth a look for any team budgeting AI-assisted development costs.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Visual Studio 2026 shipped August 11 with a UI redesign, a more flexible settings system, and roughly 5,000 bug fixes. For Copilot specifically, a new low/medium/high "thinking effort" selector lets developers trade response quality against token spend on supported models, and a new panel surfaces every Copilot Agent Skill discovered from the workspace and user profile for easier browsing and governance. The same week, GitHub added Microsoft's MAI-Code-1.1-Flash &mdash; a lightweight coding model with native image understanding, priced well below its predecessor &mdash; to Copilot, and shipped persistent memory plus local Ollama model support for Copilot in JetBrains IDEs.</p>
+      <ul class="sources">
+        <li><a href="https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes">Microsoft Learn: Visual Studio 2026 release notes</a> (primary)</li>
+        <li><a href="https://windowsreport.com/visual-studio-2026-launches-with-updated-ui-and-github-copilot-upgrades/">Windows Report: Visual Studio 2026 launches with updated UI and GitHub Copilot upgrades</a></li>
+        <li><a href="https://github.blog/changelog/2026-08-11-mai-code-1-1-flash-available-in-github-copilot/">GitHub Changelog: MAI-Code-1.1-Flash available in GitHub Copilot</a> (primary)</li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security &times; AI Agent Platforms</span><span class="when">escalating through 11 Aug</span></div>
+    <h3>Active exploitation of a critical Langflow RCE keeps escalating, with stolen AI service keys among the payoff</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Langflow is a widely used open-source tool for building AI agent workflows, and this campaign shows attackers now specifically hunting for AI-service credentials alongside the usual botnet and cryptomining payloads &mdash; a concrete reason to audit exposure on any internet-facing agent-builder deployment.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>CISA added CVE-2026-9198, an authentication-bypass flaw in Langflow, to its Known Exploited Vulnerabilities catalog on August 4; telemetry tracked by KEVIntel shows over 650 exploitation attempts from 244 unique IPs across 41 countries since early July, with attackers chaining the bug to gain superuser access, then deploying Gafgyt DDoS botnets and cryptominers &mdash; and in some cases stealing AWS keys to reach connected AI services. The volume of attempts has kept climbing into this week even after the CISA listing.</p>
+      <ul class="sources">
+        <li><a href="https://www.securityweek.com/cisa-warns-of-exploited-langflow-n-central-and-tomcat-vulnerabilities/amp/">SecurityWeek: CISA warns of exploited Langflow, N-central, and Tomcat vulnerabilities</a></li>
+        <li><a href="https://kevintel.com/CVE-2026-9198">KEVIntel: CVE-2026-9198 exploitation tracker</a></li>
+        <li><a href="http://www.indusface.com/blog/cve-2026-9198-langflow-rce/">Indusface: CVE-2026-9198 Langflow RCE analysis</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 12 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
