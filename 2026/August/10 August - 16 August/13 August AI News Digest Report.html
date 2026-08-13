@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 13 August 2026</title>
+  <meta name="description" content="A shared encryption key let researchers extract hidden AI reasoning &mdash; and 182 real credentials &mdash; from OpenAI, Anthropic, and Google APIs; Google's Gemini app crosses 1 billion monthly users at the Pixel 11 launch; Lovable doubles its valuation to $13.3B in a Tencent-backed round; and Zoom, VMware, and a resurfaced LiteLLM supply-chain breach keep security teams busy.">
+  <style>
+    :root {
+      --ink: #17181c; --muted: #6b7280; --faint: #9aa1a9; --line: #ececef;
+      --bg: #ffffff; --panel: #fafafa; --accent: #2563eb; --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink); background: var(--bg); line-height: 1.65; margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem; }
+    .masthead h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 0.6rem; line-height: 1.15; }
+    .subline { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; color: var(--muted); font-size: 0.9rem; }
+    .subline .dot { color: var(--faint); }
+    .readtime { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; color: var(--ink); background: var(--panel); border: 1px solid var(--line); padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem; }
+    .glance { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem; }
+    .glance h2 { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem; }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li { position: relative; padding-left: 2rem; margin-bottom: 0.7rem; font-size: 0.98rem; }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before { counter-increment: g; content: counter(g); position: absolute; left: 0; top: 0.05rem; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .section-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); margin: 2.5rem 0 0.25rem; }
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story.first { border-top: none; padding-top: 0.75rem; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 { font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 0.5rem; line-height: 1.3; }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+    details { margin-top: 0.75rem; }
+    summary { cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--accent); user-select: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--faint); font-size: 0.82rem; }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>13 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24&ndash;48 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>One shared key, three labs exposed.</strong> Researchers cracked the shared encryption key OpenAI, Anthropic, and Google all use for hidden reasoning tokens, decoding 315,320 blocks from public logs and recovering 182 real credentials before all three vendors shipped fixes.</li>
+      <li><strong>Gemini crosses 1 billion monthly users.</strong> Google announced the milestone at its Pixel 11 launch, alongside a wave of new on-device Gemini features and hardware pushes into wearables and item trackers.</li>
+      <li><strong>Lovable doubles its valuation in eight months.</strong> A Tencent-backed $400M round values the "vibe-coding" startup at $13.3B, with ARR tracking toward $600M by month's end.</li>
+      <li><strong>A March supply-chain breach keeps getting bigger.</strong> CloudSEK now maps the LiteLLM compromise to 2,500+ organizations and 434,000 exposed CI/CD pipelines, including credentials tied to Nvidia, Cisco, and Siemens.</li>
+      <li><strong>Zoom and VMware patch actively-targeted flaws.</strong> A zero-click "Zoomsday" bug let any meeting participant silently hijack another attendee's device, while a critical vCenter flaw is now under exploitation across 47 countries.</li>
+    </ol>
+  </section>
+
+  <div class="section-label">AI security &amp; research</div>
+
+  <article class="story first">
+    <div class="kicker"><span class="tag">Cross-Lab &times; API Security</span><span class="when">11&ndash;12 Aug</span></div>
+    <h3>A single shared encryption key exposed hidden AI reasoning across OpenAI, Anthropic, and Google</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> any team piping reasoning-model output through agent logs, evals, or public repos should assume those traces are decodable &mdash; the flaw doubles as a credential leak, an IP-theft vector for distilling rivals' models, and a blind spot for prompt-injection payloads hidden inside "encrypted" reasoning that security tooling never inspects.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Researchers at the ELLIS Institute T&uuml;bingen and Max Planck Institute found that OpenAI, Anthropic, and Google all encrypt reasoning tokens returned between API calls with one shared global key per provider, rather than binding them to a session or account. That let the team replay reasoning blocks captured from a stronger model into a weaker, jailbroken sibling from the same provider and read the original chain of thought back out in plaintext &mdash; including from models like Claude Opus. Decoding 315,320 reasoning blocks scraped from 6,708 public agent-trajectory logs on GitHub and Hugging Face recovered 182 real credentials: 62 live API keys, 33 passwords, and 30 personal email addresses. Beyond credential theft, the researchers flagged three more attack paths: distilling a rival's proprietary reasoning patterns to train competing models, extracting private data from shared logs, and hiding prompt-injection payloads inside encrypted blocks that monitoring tools can't see. All three vendors deployed server-side mitigations after disclosure, closing the live replay path on current API builds &mdash; but reasoning blocks already posted publicly in historical logs remain decodable.</p>
+      <ul class="sources">
+        <li><a href="https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html">The Hacker News: OpenAI, Anthropic, Google API flaw let weaker AI models decode stronger models' reasoning</a></li>
+        <li><a href="https://explainx.ai/blog/stealing-reasoning-traces-encrypted-cot-vulnerability-august-2026">explainx.ai: Encrypted CoT flaw &mdash; 182 credentials leaked from public logs</a></li>
+        <li><a href="https://decrypt.co/375501/inner-thoughts-every-major-ai-model-exposed-exploit">Decrypt: "Inner thoughts" of every major AI model exposed in massive exploit</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Products &amp; platforms</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Google &times; Gemini</span><span class="when">12 Aug</span></div>
+    <h3>Google unveils the Pixel 11 lineup as the Gemini app crosses 1 billion monthly users</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> pairing a hardware launch with a hard usage number is Google's clearest answer yet to the pressure it's been under internally &mdash; Sergey Brin reportedly told DeepMind researchers to push harder on Gemini after a flagship release slipped two months on lagging coding benchmarks &mdash; and 1 billion monthly users gives Google real distribution leverage against OpenAI and Anthropic regardless of who wins the next model-quality cycle.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>At its "Made by Google" event in New York on August 12, Google introduced the Pixel 11, Pixel 11 Pro, and Pixel 11 Pro XL built on a 2nm Tensor G6 chip, alongside the Pixel Watch 5 and a new AirTag-style item tracker called Pixel Tag, plus a camera-bar "HiLite" notification LED on the Pro models. Google paired the hardware with a wave of on-device Gemini features and disclosed that the Gemini app has now surpassed 1 billion monthly users, with Gemini also embedded across Search, Gmail, and Android. The announcement lands a week after reporting that co-founder Sergey Brin directly urged DeepMind researchers to accelerate Gemini development following competitive pressure from Anthropic and OpenAI, and after Google delayed its next flagship Gemini release by roughly two months over internal testing showing it still trailed rivals on coding.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/">TechCrunch: Everything announced at Made by Google '26 &mdash; Pixel 11, Pixel Tag, and Gemini features</a></li>
+        <li><a href="https://www.androidcentral.com/phones/live/made-by-google-2026-launch-live-pixel-11-pixel-11-pro-fold-pixel-watch-5-gemini-and-all-the-news">Android Central: Made by Google 2026 launch live &mdash; Pixel 11, Pixel Watch 5, Gemini</a></li>
+        <li><a href="https://dataconomy.com/2026/08/12/google-deepmind-koray-kavukcuoglu-leadership-shakeup/">Dataconomy: Google Gemini reaches 1 billion monthly users</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">OpenAI &times; Monetization</span><span class="when">11 Aug</span></div>
+    <h3>OpenAI expands ChatGPT ads beyond the US to five more countries</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> ads moving from a US pilot to five new markets in six months signals OpenAI now treats advertising as core infrastructure for funding free-tier compute, not a side experiment &mdash; worth tracking for brand-safety and data-use questions as personalized ad targeting reaches more regulatory regimes.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>ChatGPT Ads went live on August 11 in the UK, Mexico, Brazil, Japan, and South Korea, expanding from its initial US launch on February 9. Ads appear below responses and, when personalization is enabled, can draw on the current conversation, past chats, and prior ad interactions; OpenAI says the ad system runs on separate infrastructure and advertisers cannot shape, rank, or alter model responses. Free and Go tier users may see ads, while Plus, Pro, Business, Enterprise, and Education accounts remain ad-free. OpenAI frames the revenue as subsidizing the infrastructure cost of keeping free and low-cost tiers fast and available.</p>
+      <ul class="sources">
+        <li><a href="https://openai.com/index/testing-ads-in-chatgpt/">OpenAI: Testing ads in ChatGPT</a> (primary)</li>
+        <li><a href="https://mlq.ai/news/openai-expands-chatgpt-ad-test-to-five-more-countries/">MLQ News: OpenAI expands ChatGPT ad test to five more countries</a></li>
+        <li><a href="https://www.gptadsai.com/guides/chatgpt-ads-news">GPT Ads AI: ChatGPT Ads news &mdash; rollout timeline and latest updates</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Funding &amp; markets</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding &times; Lovable</span><span class="when">12 Aug</span></div>
+    <h3>Lovable doubles its valuation to $13.3B in a Tencent-backed $400M round</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> real usage and revenue growth, not just hype, are backing this markup &mdash; and Tencent joining a Western AI-coding startup's cap table alongside Menlo Ventures and EQT is a notable cross-border signal in a sector where capital sourcing is increasingly scrutinized.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Stockholm-based Lovable raised a $400M Series C co-led by Menlo Ventures and EQT's Scaleup Europe Fund, with Tencent, Balderton Capital, and other new investors from Europe, Latin America, and Asia participating. The round values the "vibe-coding" platform at $13.3B, roughly double the $6.6B valuation it carried after a $330M raise in December &mdash; eight months earlier. Since launching in November 2024, users have created more than 60 million projects on Lovable, and apps built on the platform now draw over 900 million visits a month. Annual recurring revenue has nearly tripled from $200M and is tracking toward $600M by the end of August.</p>
+      <ul class="sources">
+        <li><a href="https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/">TechCrunch: Lovable confirms new $13.3B valuation, raises another $400M</a></li>
+        <li><a href="https://www.bloomberg.com/news/articles/2026-08-12/ai-coding-startup-lovable-raises-400-million-at-13-3-billion-valuation">Bloomberg: AI coding startup Lovable raises $400 million at $13.3 billion valuation</a></li>
+        <li><a href="https://technode.com/2026/08/13/tencent-backs-lovable-in-400-million-series-c-at-13-3-billion-valuation/">TechNode: Tencent backs Lovable in $400 million Series C at $13.3 billion valuation</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <div class="section-label">Security</div>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Supply Chain &times; LiteLLM</span><span class="when">reported 12 Aug</span></div>
+    <h3>CloudSEK maps March's LiteLLM supply-chain breach to 2,500+ organizations and 434,000 CI/CD pipelines</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a compromise that lived on PyPI for just 40 minutes back in March is still growing in scope five months later, and the stolen data specifically includes AI service keys alongside standard cloud credentials &mdash; a reminder that brief supply-chain windows can have long, expanding blast radii, and that AI infrastructure tooling is now a deliberate target, not incidental collateral.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Threat group TeamPCP compromised the CI pipeline of Aqua Security's Trivy scanner, which LiteLLM's own build process automatically pulled in, letting attackers push two poisoned LiteLLM releases (1.82.7 and 1.82.8) to PyPI for roughly 40 minutes in March. A malicious Python startup file ran on every Python process launch &mdash; not just when an application imported LiteLLM &mdash; harvesting cloud keys, repository tokens, and AI service credentials from developer workstations and CI/CD build runners. CloudSEK's newly published dataset, built from roughly 434,000 files the attackers captured, now carries high-confidence matches to corporate infrastructure at Nvidia, Samsung Electronics, Cisco Systems, Siemens, S&amp;P Global, ServiceNow, Deloitte, Vodafone, X Corp, Zscaler, FedEx, Volkswagen, Thales, and London Stock Exchange Group, among more than 2,500 organizations and 434,000 exposed CI/CD pipelines in total.</p>
+      <ul class="sources">
+        <li><a href="https://www.cloudsek.com/blog/ai-supply-chain-breach-2500-companies-434000-cicd-pipelines">CloudSEK: 2,500+ companies and 434,000 CI/CD pipelines exposed in the largest AI supply chain breach of 2026</a> (primary)</li>
+        <li><a href="https://www.securityweek.com/over-2500-organizations-impacted-by-litellm-supply-chain-attack/">SecurityWeek: Over 2,500 organizations impacted by LiteLLM supply chain attack</a></li>
+        <li><a href="https://cyberinsider.com/litellm-breach-data-shows-supply-chain-attack-impacted-2488-firms/">Cyber Insider: LiteLLM breach data shows supply chain attack impacted 2,488 firms</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security &times; VMware</span><span class="when">escalating through 12 Aug</span></div>
+    <h3>A critical VMware vCenter flaw is now under active exploitation across 47 countries</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> vCenter sits underneath a huge share of enterprise virtualization &mdash; including the infrastructure many teams run AI and other workloads on &mdash; and with no vendor workaround available, patching is the only defense while a global exploitation campaign is already underway.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>CVE-2026-59310, a directory-traversal flaw in VMware vCenter Server carrying a 9.8 CVSS score, was disclosed in Broadcom advisory VMSA-2026-0006 on July 29; an exploitation campaign began around August 3 and has since been observed hitting 361 victim IP addresses across 47 countries. Attackers chain the path-traversal bug to achieve code execution, then deploy a malicious cron job for persistence using reverse_ssh, an open-source tool that opens an SSH tunnel back to attacker-controlled infrastructure. Broadcom has not published a workaround; the only remediation is patching to vCenter 9.1.0.0300, 9.0.2.0100, or 8.0 U3k / 8.0 U2f.</p>
+      <ul class="sources">
+        <li><a href="https://thehackernews.com/2026/08/attackers-exploit-vmware-vcenter.html">The Hacker News: Attackers exploit VMware vCenter vulnerability to gain persistent remote access</a></li>
+        <li><a href="https://www.rapid7.com/blog/post/etr-critical-vmware-vcenter-vulnerabilities-allow-authentication-bypass-and-remote-code-execution-cve-2026-59309-cve-2026-59310/">Rapid7: Critical VMware vCenter vulnerabilities allow authentication bypass and remote code execution</a></li>
+        <li><a href="https://www.scworld.com/news/critical-vmware-vcenter-flaw-actively-exploited-in-47-countries">SC Media: Critical VMware vCenter flaw actively exploited in 47 countries</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security &times; Zoom</span><span class="when">patched 11 Aug</span></div>
+    <h3>Zoom patches a zero-click "Zoomsday" flaw letting meeting participants silently hijack other attendees' devices</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the bug required no clicks and no visible warning to the victim &mdash; just being in the same meeting &mdash; across every OS Zoom supports, which makes this an urgent patch-now item rather than a routine advisory, even with no known active exploitation yet.</p>
+    <details><summary>Detail &amp; sources</summary><div class="detail">
+      <p>Dubbed "Zoomsday" and tracked as CVE-2026-53413, the flaw lives in Zoom's screen-share annotation feature, which relies on a proprietary protocol opening a direct communication channel between the person sharing their screen and viewers. A malicious participant could compromise a targeted attendee's device simply by joining or hosting a meeting, with no warning or visible indication to the victim. The bug affects every OS Zoom supports &mdash; Windows, macOS, Linux, iOS, and Android. Zoom shipped fixes on August 11 across four bulletins (ZSB-26015 through ZSB-26018); users should update to Zoom Workplace 7.1.5 or 7.0.6, Zoom Rooms 7.1.5, and Meeting SDK 7.1.5. Zoom has not reported active exploitation or a public proof-of-concept so far.</p>
+      <ul class="sources">
+        <li><a href="https://www.malwarebytes.com/blog/bugs/2026/08/zoomsday-flaws-could-let-one-zoom-participant-attack-another">Malwarebytes: "Zoomsday" flaws could let one Zoom participant attack another</a></li>
+        <li><a href="https://9to5mac.com/2026/08/11/zoom-flaw-let-an-attacker-take-over-your-device-including-iphone-and-mac/">9to5Mac: Zoom flaw let an attacker take over your device, including iPhone and Mac</a></li>
+        <li><a href="https://www.privacyguides.org/news/2026/08/12/severe-zoom-vulnerabilities-allow-malicious-meeting-participants-to-take-over-your-device/">Privacy Guides: Severe Zoom vulnerabilities allow malicious meeting participants to take over your device</a></li>
+      </ul>
+    </div></details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 13 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>

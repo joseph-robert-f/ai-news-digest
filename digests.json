@@ -1,7 +1,16 @@
 {
-  "generated": "2026-08-12T10:48:41.889Z",
-  "count": 52,
+  "generated": "2026-08-13T10:44:11.977Z",
+  "count": 53,
   "digests": [
+    {
+      "date": "2026-08-13",
+      "title": "AI News Digest — 13 August 2026",
+      "path": "2026/August/10 August - 16 August/13 August AI News Digest Report.html",
+      "year": 2026,
+      "month": "August",
+      "week": "10 August - 16 August",
+      "summary": "A shared encryption key let researchers extract hidden AI reasoning — and 182 real credentials — from OpenAI, Anthropic, and Google APIs; Google's Gemini app crosses 1 billion monthly users at the Pixel 11 launch; Lovable doubles its valuation to $13.3B in a Tencent-backed rou…"
+    },
     {
       "date": "2026-08-12",
       "title": "AI News Digest — 12 August 2026",
