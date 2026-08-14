@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 14 August 2026</title>
+  <meta name="description" content="China-linked hackers ran a near-autonomous AI agent attack on Taiwan's nuclear regulator and energy firms; Anthropic pursues a $6B Decart acquisition &mdash; its largest ever &mdash; ahead of a fall IPO; Google DeepMind splits its CEO and chairman roles after model delays and a talent exodus; OpenAI gates a cyber-offense-capable model behind a vetted-partner program; and a Shai-Hulud npm worm resurfaces across 400+ packages targeting CI/CD tokens and AI coding-tool hooks.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>14 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>A near-autonomous AI agent attack hits critical infrastructure.</strong> China-linked hackers used AI agents to breach 85 Taiwanese government accounts and pivot into the island's nuclear-safety regulator and seven energy firms &mdash; the first confirmed AI-agent intrusion of a nuclear regulator.</li>
+      <li><strong>Anthropic eyes its largest-ever acquisition ahead of an IPO.</strong> Talks to buy world-model startup Decart for ~$6B would boost Anthropic's compute efficiency just as it lines up fall investor meetings for a possible October Nasdaq debut.</li>
+      <li><strong>Google DeepMind splits its top job.</strong> Demis Hassabis moves to Chairman/Alphabet Chief Scientist; Koray Kavukcuoglu becomes CEO and takes over Gemini development after reports of model delays and a talent exodus.</li>
+      <li><strong>OpenAI ships a model built to find exploits.</strong> GPT-5.6-Cyber completes 95% of advanced offensive-security tasks (vs. 1.5% for its base model) and is restricted to vetted defenders through a new two-tier Daybreak program.</li>
+      <li><strong>A worm from August 4 is still spreading through npm.</strong> The Shai-Hulud campaign has now hit 400+ packages (1,700+ versions) via keyv and cacheable, stealing CI/CD and cloud credentials &mdash; and planting hooks aimed at Claude Code and VS Code.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">13 Aug</span></div>
+    <h3>China-linked "near-autonomous" AI agents breach Taiwan's nuclear regulator</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is the first documented case of AI agents operating with minimal human oversight against a nuclear safety authority and critical-infrastructure operators &mdash; a preview of how offensive AI tooling collapses the time and headcount an intrusion into hardened targets requires.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Researchers say that over four days in early July, an operator deployed up to eight autonomous AI agents in parallel to compromise 85 Taiwanese government user accounts and exfiltrate 2,500+ personnel records, then pivoted to target Taiwan's nuclear-safety regulator and at least seven major energy companies. Investigators attribute the campaign to China-linked operators with moderate-to-high confidence, citing simplified-Chinese artifacts, and say the agents bypassed model safety guardrails by framing offensive actions as "authorized penetration testing." Taiwan's Ministry of Digital Affairs officially confirmed the attack on August 13.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnn.com/2026/08/13/tech/china-taiwan-ai-agent-cyberattack-intl-hnk">CNN Business: Hackers used autonomous AI agents to attack Taiwan (primary reporting)</a></li>
+          <li><a href="https://cyberscoop.com/near-autonomous-ai-attack-government-target-taiwan/">CyberScoop: Researchers observe first "near-autonomous" AI attack on government target</a></li>
+          <li><a href="https://www.theregister.com/security/2026/08/12/near-autonomous-ai-agents-attack-taiwans-nuclear-safety-agency/">The Register: "Near-autonomous" AI agents attack Taiwan's nuclear safety agency</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">M&amp;A</span><span class="when">13 Aug</span></div>
+    <h3>Anthropic in talks for a $6B Decart deal, its biggest ever, ahead of a fall IPO</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Buying a world-model and GPU-efficiency startup right before a possible October listing signals Anthropic wants to own compute-cost reduction and simulated-environment tech in-house rather than license it &mdash; and it's willing to spend its war chest to do so before Wall Street starts grading its margins.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Bloomberg reports Anthropic is negotiating to acquire Israeli startup Decart AI, whose Lucy model does real-time video editing and whose Oasis model builds simulated environments for robotics and autonomous-driving training, along with chip-efficiency software. The talks value Decart around $6B &mdash; up sharply from the ~$4B valuation on its $300M raise just three months ago &mdash; and could still fall through. It would be Anthropic's largest disclosed acquisition, landing as the company schedules pre-IPO investor meetings with a possible October Nasdaq debut, after a $965B Series H valuation in May and a confidential S-1 filing in June.</p>
+        <ul class="sources">
+          <li><a href="https://www.bloomberg.com/news/articles/2026-08-13/anthropic-said-in-talks-to-buy-ai-startup-decart-for-6-billion">Bloomberg: Anthropic in Talks to Buy AI Startup Decart for $6 Billion (primary)</a></li>
+          <li><a href="https://www.startuphub.ai/ai-news/ipo-watch/2026/anthropic-ipo-investor-meetings-fall-2026-07-19">StartupHub: Anthropic Lines Up IPO Investor Meetings, Targeting Fall 2026 Nasdaq Debut</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Company</span><span class="when">12 Aug</span></div>
+    <h3>Google DeepMind splits CEO and chairman roles after model delays, talent exodus</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Alphabet is handing day-to-day control of its frontier-AI unit to a operations-focused technical lead while its founder-CEO steps back &mdash; a governance change triggered by reported Gemini delays and departures, at the exact moment Google is racing OpenAI and Anthropic on model cadence.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Alphabet named Koray Kavukcuoglu CEO of Google DeepMind; he'll report directly to Sundar Pichai and oversee Gemini model development, frontier research, and the Gemini app and developer teams. Demis Hassabis becomes Chairman of Google DeepMind and Alphabet Chief Scientist, continuing to lead Isomorphic Labs and advise on research direction but stepping away from daily operations. Fortune reporting on the runup to the change cited low morale, a wave of researcher departures, and missed internal deadlines around Gemini 3.5 as context for the reshuffle.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/08/12/google-deepmind-koray-kavukcuoglu.html">CNBC: Google's new AI boss inherits a race to catch OpenAI and Anthropic</a></li>
+          <li><a href="https://fortune.com/2026/08/10/how-stalled-models-missed-deadlines-and-staff-burnout-lead-to-the-unraveling-of-googles-deepmind/">Fortune: Behind the exit of DeepMind's CEO — low morale, a talent exodus, and model delays</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">10 Aug</span></div>
+    <h3>OpenAI ships GPT-5.6-Cyber, an exploit-finding model gated to vetted defenders</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> OpenAI is now explicitly building and deploying a model tuned for offensive security work &mdash; finding zero-days, chaining exploits, bypassing authentication &mdash; on the logic that only frontier labs can outrun AI-enabled attackers like the ones now hitting Taiwan. The access-control model it's testing (partner vetting instead of open release) will likely become the template other labs follow for dual-use security models.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Built on GPT-5.6-Sol with safety training loosened for authorized security work, GPT-5.6-Cyber completed 95% of prompts on OpenAI's internal offensive-security benchmark, versus 1.5% for the unmodified base model and 57.3% for the prior GPT-5.5-Cyber. OpenAI says it used the model to discover CVE-2026-15903, a high-severity V8 (Chrome) vulnerability. Access runs through an expanded Daybreak program: Daybreak Blue offers guardrailed general-purpose models to a wider partner set, while Daybreak Red restricts GPT-5.6-Cyber itself to vetted firms including Accenture, IBM, KPMG, CrowdStrike, Palo Alto Networks, and Cloudflare.</p>
+        <ul class="sources">
+          <li><a href="https://venturebeat.com/technology/openai-launches-gpt-5-6-cyber-with-reduced-refusals-95-completion-on-advanced-cybersecurity-tasks">VentureBeat: OpenAI launches GPT-5.6-Cyber with reduced refusals, 95% completion on advanced cybersecurity tasks</a></li>
+          <li><a href="https://www.axios.com/2026/08/10/openai-gpt-astra-restrictions-safety-hacking-defenders">Axios: OpenAI introduces a new cyber model amid fears of AI cyberattacks</a></li>
+          <li><a href="https://www.infosecurity-magazine.com/news/openai-daybreak-blue-red-gpt-cyber/">Infosecurity Magazine: OpenAI Launches Two-Tier Access Program Alongside GPT-5.6-Cyber</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">4&ndash;13 Aug</span></div>
+    <h3>Shai-Hulud npm worm resurfaces, spreads through keyv to 400+ packages</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A self-propagating worm that mints its own publish credentials via GitHub Actions OIDC and ships with valid provenance attestations is a step up from typical typosquat attacks &mdash; and its choice to plant hooks targeting Claude Code and VS Code shows attackers are now specifically going after AI coding-assistant workflows as a foothold.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>On August 4, a compromised maintainer account published a poisoned keyv@6.0.0 carrying a credential stealer and worm logic; JFrog's security research team reports the campaign — a resurgence of the Shai-Hulud malware family — has since spread to 400+ packages across 1,700+ versions, including cache-manager, cacheable-request, and flat-cache, plus downstream packages from unrelated maintainers. The worm scans CI configs, exchanges a minted OIDC token for registry publish rights, and republishes itself with a bumped version, all under legitimate-looking SLSA/provenance attestations. Stolen data includes cloud credentials, registry tokens, GitHub tokens, and database connection strings; researchers found the attacker also committed VS Code and Claude Code hook files designed to fire on checkout, without requiring npm install.</p>
+        <ul class="sources">
+          <li><a href="https://research.jfrog.com/post/shai-hulud-is-back-august/">JFrog Security Research: Major Shai Hulud campaign strikes npm again, affecting keyv and 400+ packages (primary)</a></li>
+          <li><a href="https://snyk.io/blog/inside-keyv-npm-compromise-preinstall-malware-trusted-provenance-ide-hooks/">Snyk: Inside the keyv npm Supply Chain Compromise</a></li>
+          <li><a href="https://www.wiz.io/blog/keyv-and-cacheable-npm-supply-chain-attack">Wiz: keyv and cacheable npm Package Hijacked in Supply Chain Attack</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Geopolitics</span><span class="when">11 Aug</span></div>
+    <h3>Manus returns to independence as Meta unwinds its $2B acquisition</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> China's regulator blocked the deal purely on the grounds that Manus's technology and talent originated in China, regardless of its Singapore incorporation &mdash; a precedent that puts every other reincorporated Chinese-founded AI startup on notice before a Western acquirer signs a check.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Meta agreed to buy agentic-AI startup Manus for $2B last December; China's National Development and Reform Commission ordered the deal unwound in April, asserting jurisdiction despite Manus having shut its China offices and reincorporated in Singapore after a Benchmark-led raise. Meta has since cut Manus staff off from its internal systems and barred its own employees from using Manus tools. Manus told users on August 11 it will "soon return to operating as an independent company" and will delete certain user data generated since the December acquisition as part of the separation.</p>
+        <ul class="sources">
+          <li><a href="https://www.bloomberg.com/news/articles/2026-08-11/manus-to-resume-independent-operations-in-unwind-of-meta-deal">Bloomberg: Manus to Resume Independent Operations in Unwind of Meta Deal (primary)</a></li>
+          <li><a href="https://www.cnbc.com/2026/08/11/manus-china-meta-acquisition.html">CNBC: Manus to return as independent company after China forced Meta to unwind $2 billion deal</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">13 Aug</span></div>
+    <h3>California runs ~30 AI bills through a single make-or-break committee day</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> With Congress gridlocked on AI rules, California's suspense-file process is the closest thing the U.S. has to a national AI policy pipeline this year &mdash; bills that die quietly here on procedural grounds, with no recorded vote, effectively set federal-level precedent by omission.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Assembly and Senate Appropriations Committees held back-to-back suspense-file hearings on August 13, the mechanism that decides in bulk which bills with fiscal impact advance toward floor votes before the legislature adjourns August 31. Roughly 30 AI-related bills were on the docket, spanning companion-chatbot safety for minors, algorithmic management of gig and warehouse workers, healthcare-AI transparency, copyright protections for creative professionals, and a framework for voluntary frontier-model safety certification. Bills that clear move to floor votes in the coming days; bills held on suspense die without a public statement or recorded vote.</p>
+        <ul class="sources">
+          <li><a href="https://www.techtimes.com/articles/324338/20260813/california-ai-bills-face-final-vote-today-chatbot-safety-copyright-us-first-commission.htm">Tech Times: California AI Bills Face Final Vote Today</a></li>
+          <li><a href="https://www.transparencycoalition.ai/news/ai-legislative-update-august7-2026">Transparency Coalition: AI Legislative Update, August 7 2026</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">13 Aug</span></div>
+    <h3>Vantage Data Centers explores a $100B IPO or sale</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A $100B valuation target for a single hyperscale developer &mdash; which would make it the largest data-center IPO on record &mdash; is another data point that AI-driven compute demand is now the dominant force pricing infrastructure assets, ahead of Vantage's own committed pipeline of new capacity.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reuters reports Vantage Data Centers, backed by Silver Lake and DigitalBridge, is weighing an IPO or outright sale as soon as next year at a valuation around $100B, potentially raising roughly $10B. No formal process has launched and terms remain fluid. The exploration lands the same week rival operator Switch filed to raise $10B at a $50B equity valuation ($80B including debt), underscoring how compressed the data-center financing calendar has become as AI labs lock up capacity years in advance.</p>
+        <ul class="sources">
+          <li><a href="https://www.ctvnews.ca/business/article/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/">Reuters via CTV News: Vantage Data Centers explores IPO at $100 billion valuation or sale</a></li>
+          <li><a href="https://www.caproasia.com/2026/08/09/united-states-data-center-company-switch-files-for-united-states-ipo-to-raise-10-billion-at-50-billion-valuation-80-billion-include-debt-with-earliest-ipo-listing-in-2026-q4-founded-in-2000-by-r/">Caproasia: Switch files for U.S. IPO to raise $10B at $50B valuation</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 14 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
