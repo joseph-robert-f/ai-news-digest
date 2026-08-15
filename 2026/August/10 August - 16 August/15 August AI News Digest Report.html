@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 15 August 2026</title>
+  <meta name="description" content="SpaceX completes its $60B acquisition of Cursor to build an in-house AI coding stack; Anthropic investors eye a record $2T October IPO valuation; Apple has trained its own AI model for China with Alibaba's help; DeepSeek reverses course and hikes V4 API prices up to 11x as demand overwhelms its GPU fleet; and China's Z.ai holds back the public release of GLM-5.3 after it out-scored Anthropic and OpenAI on vulnerability discovery.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>15 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>SpaceX closes its $60B Cursor deal.</strong> The xAI parent completed its acquisition of AI-coding startup Anysphere on August 14, buying a ~$2.6B-ARR developer base and code-training data to compete with Anthropic and OpenAI.</li>
+      <li><strong>Anthropic investors float a $2T October IPO.</strong> Backers now expect a valuation more than double May's $965B mark, which would make it the largest stock-market debut ever, edging out SpaceX's own $1.77T June listing.</li>
+      <li><strong>Apple built its own AI model &mdash; for China only.</strong> Trained with Alibaba's help and integrating Qwen and Baidu tech, it's Apple's first proprietary generative-AI stack outside its Western Gemini/OpenAI partnerships, timed to Beijing's July registration approval.</li>
+      <li><strong>DeepSeek reverses its price-war playbook.</strong> Facing 7 trillion tokens/week of demand on a strained 20,000-GPU fleet, DeepSeek is raising V4 API prices as much as 11x effective August 16 &mdash; the clearest sign yet that cheap Chinese inference has a capacity ceiling.</li>
+      <li><strong>China holds back its own frontier model over hacking risk.</strong> Z.ai's open-weight GLM-5.3 beat Anthropic's Mythos 5 and OpenAI's GPT-5.6 Sol at finding exploitable vulnerabilities, so the company is delaying public release and gating its riskiest capabilities behind a vetted-access program.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">M&amp;A</span><span class="when">14 Aug</span></div>
+    <h3>SpaceX completes its $60B acquisition of AI coding startup Cursor</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Musk now owns one of the largest professional-developer distribution channels in AI coding &mdash; plus the code-generation data that comes with it &mdash; and is routing it through xAI's Colossus data center, turning a deal announced two months ago into a real capacity and talent play against Anthropic's Claude Code and OpenAI's Codex.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The deal for Anysphere, maker of the Cursor editor, was announced in June and became effective August 14 at a $60B valuation &mdash; the largest acquisition of a venture-backed startup on record. Cursor was generating roughly $2.6B in annualized revenue with rising enterprise sales; under the agreement it will build future products on xAI's Colossus GPU complex in Memphis. The deal hands Musk a large base of professional developers and a stream of code-generation telemetry that could sharpen Grok's coding performance.</p>
+        <ul class="sources">
+          <li><a href="https://www.nbcnews.com/tech/tech-news/spacex-buys-ai-coding-startup-cursor-60-billion-rcna350262">NBC News: SpaceX buys AI coding startup Cursor for $60 billion</a></li>
+          <li><a href="https://www.bloomberg.com/news/articles/2026-08-14/spacex-completes-its-60-billion-cursor-acquisition">Bloomberg: SpaceX Completes $60 Billion Cursor Acquisition to Expand AI Coding Tools</a></li>
+          <li><a href="https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html">CNBC: SpaceX to acquire the AI coding startup Cursor for $60 billion (original announcement)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">13 Aug</span></div>
+    <h3>Anthropic investors eye a record $2T valuation for an October IPO</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A $2T target &mdash; from backers, not company guidance &mdash; would make Anthropic's debut the largest IPO in history and implies investors are pricing in $100&ndash;120B of annualized revenue by year-end; it also raises the stakes on every open question Anthropic hasn't resolved, from Chinese-model price competition to its dispute with the U.S. government.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Financial Times reports six Anthropic backers expect the company's rapid revenue growth to support a valuation more than double its $965B mark from a May funding round, with a listing possible as soon as October. That would top SpaceX's $1.77T valuation at its June IPO. Anthropic's own executives have not set a public target, and the projection carries real risk: cheaper Chinese models, tightening AI regulation, and an unresolved dispute with Washington all sit between now and any listing.</p>
+        <ul class="sources">
+          <li><a href="https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/">Fortune: Anthropic reportedly plans a $2 trillion IPO in October &mdash; the largest ever &mdash; that will eclipse SpaceX</a></li>
+          <li><a href="https://www.forbes.com/sites/jonmarkman/2026/08/13/anthropic-eyes-2-trillion-in-october-ipo-a-record-breaking-debut/">Forbes: Anthropic Eyes $2 Trillion In October IPO, A Record-Breaking Debut</a></li>
+          <li><a href="https://seekingalpha.com/news/4632357-anthropic-investors-eye-record-2t-valuation-in-october-ipo-report">Seeking Alpha: Anthropic investors eye record $2T valuation in October IPO</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">14 Aug</span></div>
+    <h3>Apple trained its own AI model for China, with Alibaba's help</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Apple has spent two years leaning on partner models for Apple Intelligence; building a proprietary China-only model, tied to Beijing's registration approval, suggests the company sees no path to running Western models there and is willing to fragment its AI stack by geography to keep iPhone sales compliant with Chinese law.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports say Apple developed a large language model specifically for the China market with Alibaba's support, a departure from its prior reliance on third-party models. Alibaba's Qwen is set to integrate into the China version of Apple Intelligence across iOS, iPadOS, macOS, and visionOS, with Baidu's technology also part of the plan. China's Cyberspace Administration formally registered Apple's generative-AI service in July, clearing a required regulatory step; Apple Intelligence is expected to launch in China in the coming months, giving Chinese users and businesses a materially different AI stack than customers elsewhere.</p>
+        <ul class="sources">
+          <li><a href="https://www.macrumors.com/2026/08/14/apple-trained-own-ai-model-for-china/">MacRumors: Apple Trained Own AI Model for China Market With Help From Alibaba</a></li>
+          <li><a href="https://www.techrepublic.com/article/news-apple-china-ai-model-alibaba-intelligence-apac/">TechRepublic: Apple Intelligence in China: Alibaba Backs a Custom AI Model</a></li>
+          <li><a href="https://betanews.com/article/apple-ai-model-china-alibaba/">BetaNews: Apple secretly trained its own AI model for China with Alibaba's help</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">14 Aug</span></div>
+    <h3>Z.ai holds back GLM-5.3 after it out-hacks Anthropic and OpenAI</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> An open-weight Chinese model now edges out the two leading U.S. labs' restricted models at finding exploitable vulnerabilities from source code &mdash; and Z.ai's response, delaying open release and gating the sharpest capability behind vetted access, is the first time a Chinese lab has voluntarily throttled a frontier open model on offensive-security grounds rather than racing it to release.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Z.ai's GLM-5.3, announced August 14, scored 84.5% on CyberGym, a benchmark for vulnerability discovery and validation from source code &mdash; ahead of Anthropic's restricted Mythos 5 (83.8%) and OpenAI's GPT-5.6 Sol (83.6%). The company says GLM-5.3 already surfaced a serious vulnerability in Cursor. Rather than open-weighting it immediately, Z.ai plans public release roughly two weeks out, pending additional security assessment, and will keep the model's most sensitive cyber functions &mdash; exploitation, real intrusion, penetration testing &mdash; behind a "trusted access" program that screens requests by intent and task category. Z.ai says its GLM model family has now surfaced 2,400+ security flaws, including 1,000+ rated critical or high.</p>
+        <ul class="sources">
+          <li><a href="https://www.axios.com/2026/08/14/china-open-source-ai-glm-53">Axios: China's Z.ai holds GLM 5.3 release over hacking risks</a></li>
+          <li><a href="https://venturebeat.com/technology/glm-5-3-is-here-with-advanced-cyber-capabilities-and-reportedly-already-found-a-serious-vulnerability-in-cursor">VentureBeat: GLM-5.3 is here with advanced cyber capabilities &mdash; and reportedly already found a "serious vulnerability" in Cursor</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">13 Aug</span></div>
+    <h3>Google ships Gemini 3.7 Flash at half the price, aimed squarely at coding agents</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Google is undercutting its own prior Flash pricing by 50% while posting real gains on production-code and long-horizon software-engineering benchmarks &mdash; a direct pitch to teams building autonomous coding agents who were previously choosing between Gemini's context window and cheaper rivals.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Gemini 3.7 Flash ships at $0.75 per million input tokens and $3.75 per million output tokens, half of 3.6 Flash's list rate, with a 1M-token context window and up to 64K output tokens across text, image, audio, and video. Google says the gains concentrate in software engineering, document-heavy work, and web development: on FrontierCode 1.1 Main, a production-code-quality eval, it scores 43.6% versus 34.4% for 3.6 Flash, and it reaches 65.3% on the long-horizon DeepSWE v1.1 benchmark. The model card describes it as an algorithmic refinement of 3.6 Flash rather than a new pretraining run.</p>
+        <ul class="sources">
+          <li><a href="https://venturebeat.com/technology/googles-gemini-3-7-flash-targets-coding-and-agents-with-a-50-introductory-price-cut">VentureBeat: Google's Gemini 3.7 Flash targets coding and agents with a 50% introductory price cut</a></li>
+          <li><a href="https://www.marktechpost.com/2026/08/13/google-ai-just-released-gemini-3-7-flash/">MarkTechPost: Google AI Just Released Gemini 3.7 Flash</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Infrastructure</span><span class="when">13 Aug</span></div>
+    <h3>OpenAI previews Ultrafast: GPT-5.6 Sol at 14x speed via Cerebras silicon</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Running a frontier reasoning model at 750 tokens/second on dedicated wafer-scale hardware turns inference speed itself into a competitive axis &mdash; opening frontier models to latency-critical uses like live voice, incident response, and trading that previously forced a tradeoff between capability and response time.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI's new Ultrafast service tier runs GPT-5.6 Sol up to 14x faster than standard processing, generating up to 750 output tokens per second, powered by Cerebras' Wafer-Scale Engine, which keeps model weights on-chip and pipelines tokens across wafers rather than round-tripping through HBM. Ultrafast is in limited preview to a select group of API customers, with OpenAI pitching it for financial research, incident response, customer support, voice applications, and commerce; pricing has not been announced.</p>
+        <ul class="sources">
+          <li><a href="https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/">TechCrunch: OpenAI introduces 'Ultrafast,' a new mode that makes GPT-5.6 Sol work at 14x the speed</a></li>
+          <li><a href="https://www.helpnetsecurity.com/2026/08/14/openais-gpt-5-6-sol-runs-up-to-14x-faster-with-ultrafast-mode/">Help Net Security: OpenAI's GPT-5.6 Sol runs up to 14x faster with Ultrafast mode</a></li>
+          <li><a href="https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai">Cerebras: Accelerating GPT-5.6 Sol Ultrafast with OpenAI (primary, partner)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">14 Aug</span></div>
+    <h3>DeepSeek hikes V4 API prices up to 11x as its GPU fleet buckles under demand</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The lab that triggered a global AI price war eighteen months ago is now rationing access through price instead of undercutting rivals &mdash; a concrete signal that even China's most efficient inference operation is capacity-constrained, not just margin-constrained, and a data point for anyone modeling AI cost curves as permanently downward.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>DeepSeek is moving its V4 model family to peak/off-peak billing effective 16:00 UTC on August 16, with some output pricing rising as much as 11x at peak hours (off-peak rates run at half of peak). The company says it is handling roughly 7 trillion tokens of inference per week across a 20,000-GPU fleet, and that demand from the cost-efficient V4 Flash pushed both its East and West data centers to their limits after July 31, culminating in an August 4 outage that appears to have triggered the repricing. DeepSeek also moved V4-Pro to general availability the same week.</p>
+        <ul class="sources">
+          <li><a href="https://www.infoworld.com/article/4209439/deepseek-raises-some-v4-prices-by-more-than-10x-as-ai-demand-strains-capacity.html">InfoWorld: DeepSeek raises some V4 prices by more than 10x as AI demand strains capacity</a></li>
+          <li><a href="https://api-docs.deepseek.com/quick_start/pricing/">DeepSeek API Docs: Models &amp; Pricing (primary)</a></li>
+          <li><a href="https://api-docs.deepseek.com/news/news260813/">DeepSeek API Docs: DeepSeek-V4-Pro GA Release (primary)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Agents</span><span class="when">14 Aug</span></div>
+    <h3>Uber and Pony.ai plan 2,000+ robotaxis across Europe</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is the largest committed autonomous-vehicle expansion announced in Europe to date, and it pairs a Chinese Level-4 driving stack with Uber's booking and payments layer &mdash; a template other AV operators lacking Uber's distribution will likely have to match or license to scale outside their home markets.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Uber and Pony.ai announced an expanded partnership to deploy more than 2,000 robotaxis across Europe, growing beyond their existing commercial service in Zagreb, Croatia to four additional European cities plus plans in the Middle East; specific cities were not disclosed. Pony.ai supplies its Level 4 autonomous-driving technology and operational experience from paid, fully driverless services already running in Beijing, Guangzhou, Shanghai, and Shenzhen, while Uber provides the global mobility platform &mdash; booking, payments, and customer service.</p>
+        <ul class="sources">
+          <li><a href="https://techcrunch.com/2026/08/14/uber-and-pony-ai-plan-to-bring-2000-robotaxis-to-europe/">TechCrunch: Uber and Pony.ai plan to bring 2,000 robotaxis to Europe</a></li>
+          <li><a href="https://www.cnbc.com/2026/08/14/uber-partners-with-chinas-ponyai-for-2000-robotaxis-in-europe.html">CNBC: Uber partners with China's Pony.ai for 2,000 robotaxis in Europe</a></li>
+          <li><a href="https://www.euronews.com/next/2026/08/14/uber-and-chinas-pony-ai-to-launch-over-2000-robotaxis-across-europe">Euronews: Uber and China's Pony AI to launch over 2,000 robotaxis across Europe</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 15 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
