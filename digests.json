@@ -1,7 +1,16 @@
 {
-  "generated": "2026-08-15T10:44:06.875Z",
-  "count": 55,
+  "generated": "2026-08-16T10:46:44.253Z",
+  "count": 56,
   "digests": [
+    {
+      "date": "2026-08-16",
+      "title": "AI News Digest — 16 August 2026",
+      "path": "2026/August/10 August - 16 August/16 August AI News Digest Report.html",
+      "year": 2026,
+      "month": "August",
+      "week": "10 August - 16 August",
+      "summary": "Anthropic's new Risk Report discloses an unreleased, more-capable &ldquo;Model 2&rdquo; and raises its misalignment-risk rating; Alibaba open-sources Qwen3.8-27B, an Apache-licensed model that leads on agentic coding; a new lawsuit says Character.AI's design fosters unhealthy…"
+    },
     {
       "date": "2026-08-15",
       "title": "AI News Digest — 15 August 2026",

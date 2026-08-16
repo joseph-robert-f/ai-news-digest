@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 16 August 2026</title>
+  <meta name="description" content="Anthropic's new Risk Report discloses an unreleased, more-capable &ldquo;Model 2&rdquo; and raises its misalignment-risk rating; Alibaba open-sources Qwen3.8-27B, an Apache-licensed model that leads on agentic coding; a new lawsuit says Character.AI's design fosters unhealthy dependence in minors; xAI's Grok child-safety lawsuit adds two more plaintiffs; Wood Mackenzie finds most electricity requested for U.S. AI data centers will never materialize; and the world's oldest AI research conference opens in Bremen with an EU AI Act enforcer in attendance.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>16 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Anthropic discloses an unreleased, more-capable "Model 2."</strong> Its second company-wide Risk Report says an internal model beat Mythos 5 by 12.5 points on an AI-R&amp;D benchmark but isn't shipping because predeployment testing isn't finished &mdash; and misalignment risk moved from "very low" to "low" as safety evals start to saturate.</li>
+      <li><strong>Alibaba open-sources Qwen3.8-27B under Apache 2.0.</strong> The dense, 27B multimodal model handles 262K tokens of native context (1M with YaRN) and posts 73.0 on Terminal-Bench 2.1 agentic coding, more than 20 points ahead of Meta's Muse Glimmer 30B.</li>
+      <li><strong>Most AI data-center power demand won't happen, Wood Mackenzie finds.</strong> Grid operators are on track to commit to only about 28% of the 1,066 gigawatts requested for U.S. data-center projects, with the rest dismissed as "phantom" pipeline that won't clear financing or permitting.</li>
+      <li><strong>xAI's Grok child-sexual-abuse-material lawsuit adds two more plaintiffs.</strong> A woman says a relative used Grok to turn a childhood photo into more than 7,000 explicit images, widening a case that already named Stability AI as a co-defendant.</li>
+      <li><strong>IJCAI-ECAI 2026, AI's oldest research conference, opens in Bremen.</strong> Roughly 4,000 researchers from 40+ countries gather for the first time in Germany in 43 years, with an EU AI Act enforcement official on the program as the bloc's transparency rules take hold.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Safety</span><span class="when">14 Aug</span></div>
+    <h3>Anthropic's Risk Report discloses an unreleased "Model 2" and raises its misalignment rating</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A frontier lab is now routinely testing internal models more capable than anything it sells, and saying so in public &mdash; giving outsiders a rare read on the gap between what's deployed and what's already running in the lab, right as Anthropic heads toward a fall IPO that will be priced on exactly that trajectory.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Anthropic's second company-wide Risk Report, covering February 24 through July 15, 2026, discloses an unreleased internal system called Model 2 that scored 12.5 percentage points higher than the public Mythos 5 on CoBench v2, a benchmark of historical AI R&amp;D tasks Anthropic staff have solved. The company says Model 2 isn't being released because it hasn't completed the standard predeployment assessment suite, not because of a specific safety finding, and that the report estimates a model scoring 85% on the benchmark could begin to replace human researchers on some tasks &mdash; a bar Model 2 hasn't yet cleared. Separately, Anthropic nudged its internal misalignment-risk rating from "very low" to "low," and said several of its AI R&amp;D safety evaluations have "saturated," meaning current models now max out the test. The report also states Claude now authors most of the code merged into Anthropic's own production repositories.</p>
+        <ul class="sources">
+          <li><a href="https://www.anthropic.com/aug-2026-risk-report">Anthropic: Risk Report, August 2026 (primary)</a></li>
+          <li><a href="https://www.unite.ai/anthropic-raises-misalignment-risk-to-low-and-shelves-internal-model-2/">Unite.AI: Anthropic Raises Misalignment Risk to "Low" and Shelves Internal Model 2</a></li>
+          <li><a href="https://www.techtimes.com/articles/324573/20260815/anthropic-upgrades-misalignment-risk-key-safety-benchmarks-saturate.htm">Tech Times: Anthropic Upgrades Misalignment Risk as Key Safety Benchmarks Saturate</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">13&ndash;14 Aug</span></div>
+    <h3>Alibaba's Qwen3.8-27B open-weight model leads on agentic coding</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A 27B dense model that runs on a single consumer GPU is now beating a 30B rival on real agentic-coding benchmarks under a fully permissive license &mdash; another data point that the gap between "open enough to self-host" and "good enough for production agents" keeps narrowing, at China's pace rather than the West's.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Alibaba's Qwen team released Qwen3.8-27B, a dense multimodal model with 27 billion parameters, under the Apache 2.0 license alongside a larger 2.4T-parameter mixture-of-experts sibling. The 27B model natively handles 262,000 tokens of context, extensible to 1 million via YaRN, and processes images, documents, and multi-hour video in addition to text. On Terminal-Bench 2.1, a measure of agentic terminal-coding ability, it scores 73.0 versus 51.7 for Meta's similarly-sized Muse Glimmer 30B, and the company says it outperforms Alibaba's own larger Qwen3.7-Plus on coding and office tasks. Both models are available on Hugging Face and ModelScope.</p>
+        <ul class="sources">
+          <li><a href="https://the-decoder.com/alibabas-qwen-team-releases-qwen-3-8-models-with-open-weights-under-the-apache-2-0-license/">The Decoder: Alibaba's Qwen team releases Qwen3.8 models with open weights under the Apache 2.0 license</a></li>
+          <li><a href="https://officechai.com/miscellaneous/alibaba-releases-qwen-3-8-27b-beats-muse-glimmer-30b-on-many-benchmarks/">OfficeChai: Alibaba Releases Qwen3.8-27B, Beats Muse Glimmer 30B On Many Benchmarks</a></li>
+          <li><a href="https://www.warp2search.net/story/alibaba-drops-qwen38-opensource-ai-24t-moe-and-27b-visionlanguage-models-hit-huggingface">Warp2Search: Alibaba Drops Qwen3.8: Open-Source 2.4T MoE and 27B Vision-Language Models Hit Hugging Face</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Infrastructure</span><span class="when">12 Aug</span></div>
+    <h3>Most of the electricity requested for U.S. AI data centers will never materialize, Wood Mackenzie finds</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The industry-wide narrative of an unstoppable, grid-breaking AI power crunch is running well ahead of what utilities are actually willing to commit to &mdash; useful ballast for anyone modeling data-center siting, power-purchase pricing, or capex timelines off headline gigawatt figures rather than signed interconnection agreements.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Bloomberg reports that U.S. grid operators and utilities are on pace to commit to only about 28% of the 1,066 gigawatts of capacity requested for data-center projects, according to new projections from Wood Mackenzie. The gap reflects "phantom" projects &mdash; speculative site reservations, duplicate requests filed with multiple utilities for the same project, and long-shot pitches that never clear financing, permitting, or interconnection review. The finding complicates both sides of the AI infrastructure debate: it tempers fears of an imminent grid collapse, but also implies that a large share of the capital and land currently being marketed against future AI power demand is chasing capacity that will never be built out.</p>
+        <ul class="sources">
+          <li><a href="https://www.bloomberg.com/news/articles/2026-08-12/most-electricity-sought-for-ai-data-centers-in-us-will-never-materialize">Bloomberg: Most Electricity Sought for AI Data Centers in US Will Never Materialize</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">15 Aug</span></div>
+    <h3>xAI's Grok child-safety lawsuit expands with two more plaintiffs</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A case that started with three Tennessee teenagers in March has grown to include five plaintiffs and a second AI-company defendant, and each amendment adds sworn allegations about what image-generation guardrails Grok did and didn't have &mdash; a discovery record that will shape how courts and regulators think about platform liability for AI-generated abuse imagery well beyond this one case.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>A woman identified as Jane Doe 4 has joined the class-action lawsuit against xAI, alleging that a family member used Grok's image-generation features to turn a photo taken when she was 11 years old into more than 7,000 explicit images, which were then traded on other platforms. The suit, originally filed in March by three Tennessee teenagers over Grok-generated child sexual abuse material, was amended in July to add a second plaintiff and to name Stability AI as a co-defendant. The complaint brings federal claims under laws targeting the production and distribution of child sexual abuse material, along with state-law claims for negligence and unfair competition, and alleges xAI treated permissive image generation as a business opportunity rather than a risk to manage.</p>
+        <ul class="sources">
+          <li><a href="https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/">TechCrunch: Woman claims her stepfather used Grok to transform childhood photo into explicit imagery</a></li>
+          <li><a href="https://abc7.com/post/tennessee-teenagers-sue-elon-musks-xai-claiming-image-generator-made-sexually-explicit-images-minors/18741101/">ABC7: Tennessee teenagers sue Elon Musk's xAI claiming image-generator made sexually explicit images of them as minors</a></li>
+          <li><a href="https://cyberscoop.com/deepfake-csam-lawsuit-grok-xai-expands-stability-ai/">CyberScoop: Deepfake CSAM lawsuit against xAI, Grok expands</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">13 Aug</span></div>
+    <h3>Character.AI faces a new lawsuit alleging its design fosters unhealthy dependence in minors</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This suit targets the product itself &mdash; anthropomorphic persona design and simulated emotional intimacy &mdash; rather than a single failure of moderation, arguing the harm is structural to companion-chatbot products. Coming seven months after Character.AI and Google settled an earlier wave of suicide-related suits, it signals plaintiffs' firms see the underlying design pattern, not just past incidents, as the next liability target.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>A lawsuit filed August 13 in the U.S. District Court for the Northern District of California names Character Technologies, Google, and Character.AI co-founders Noam Shazeer and Daniel De Freitas as defendants. The complaint alleges the platform's design exploits the "ELIZA effect" &mdash; the tendency to attribute human understanding to a chatbot &mdash; to manipulate minors into believing its personas have genuine emotions, fostering excessive use and parasocial attachment that displaces real relationships. It follows a January 2026 settlement in which Character.AI and Google resolved earlier suits, including one brought by a mother whose 14-year-old son died by suicide after extensive use of the platform's chatbots.</p>
+        <ul class="sources">
+          <li><a href="https://www.businesswire.com/news/home/20260813331103/en/Character.AI-Charged-With-Teen-Mental-Health-Harm-in-Lawsuit-by-Gibbs-Mura-A-Law-Group">Business Wire: Character.AI Charged With Teen Mental Health Harm in Lawsuit by Gibbs Mura, A Law Group</a></li>
+          <li><a href="https://www.cnn.com/2026/01/07/business/character-ai-google-settle-teen-suicide-lawsuit">CNN: Character.AI and Google agree to settle lawsuits over teen mental health harms and suicides</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Research</span><span class="when">15 Aug</span></div>
+    <h3>IJCAI-ECAI 2026, AI's oldest research conference, opens in Bremen</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The world's longest-running AI research conference returning to Germany for the first time in 43 years, with an EU AI Act enforcement official on the program, underlines that the center of gravity for AI research convenings is diversifying beyond the usual U.S. venues just as European enforcement of frontier-model rules starts to bite.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>IJCAI-ECAI 2026 runs August 15&ndash;21 in Bremen, with workshops and tutorials at the University of Bremen from August 15&ndash;17 ahead of the main conference at the Bremen Exhibition Center starting August 18. Around 4,000 researchers, engineers, and practitioners from more than 40 countries are expected, one of the strongest international turnouts in the conference's 57-year history and the first time Germany has hosted it since 1983. The program covers human-centered AI, AI for social good, robotics, healthcare, and the safety of physical AI systems, and includes participation from an EU AI Act enforcement official, reflecting the bloc's push to enforce transparency and risk-management rules that took effect earlier this month.</p>
+        <ul class="sources">
+          <li><a href="https://www.techtimes.com/articles/324425/20260814/eu-ai-act-enforcer-joins-ijcai-ecai-2026-worlds-oldest-ai-conference-opens-saturday.htm">Tech Times: EU AI Act Enforcer Joins IJCAI-ECAI 2026 as World's Oldest AI Conference Opens Saturday</a></li>
+          <li><a href="https://www.bremen-research.de/en/services/1/press-releases/en-bremen-ijcai-ecai-2026">Bremen Research: Bremen Officially Confirmed as Host City for IJCAI-ECAI 2026 (primary)</a></li>
+          <li><a href="https://2026.ijcai.org/">IJCAI 2026: Official conference site (primary)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 16 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
