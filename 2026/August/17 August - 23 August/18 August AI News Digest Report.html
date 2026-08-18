@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 18 August 2026</title>
+  <meta name="description" content="Nvidia backs up to $100B of OpenAI's Ohio buildout inside a $500B Wall Street financing web, Anthropic posts its first-ever operating profit on $11.5B Q2 revenue, and Stripe closes its $7B OpenRouter deal.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>18 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24&ndash;48 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Nvidia's financing web widens.</strong> Nvidia is backing up to $100B of OpenAI's Ohio data-center buildout inside a new $500B Wall Street financing platform with six major asset managers.</li>
+      <li><strong>Anthropic turns its first profit.</strong> Preliminary Q2 revenue topped $11.5B with positive adjusted operating income &mdash; a first for the company, ahead of a planned fall IPO.</li>
+      <li><strong>Stripe buys OpenRouter for $7B+.</strong> A payments company now owns the routing layer in front of 400+ AI models and 8 million developers, at 5.4x its May valuation.</li>
+      <li><strong>Meta's youth-safety trial opens.</strong> Twenty-nine states are seeking as much as $200B over allegedly addictive design for minors, the same week DRAM costs gutted Meta's free cash flow.</li>
+      <li><strong>Unitree debuts on Shanghai's STAR Market tomorrow.</strong> China's largest humanoid-robot maker priced its IPO after retail demand topped subscribed shares by more than 8,000x.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Infrastructure</span><span class="when">17 Aug</span></div>
+    <h3>Nvidia backs up to $100B of OpenAI's Ohio buildout inside a $500B Wall Street financing web</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Nvidia is no longer just selling GPUs into the AI buildout &mdash; it's underwriting it, using its own chips as loan collateral through special-purpose vehicles built with Wall Street. That circularity concentrates enormous credit risk in one company's balance sheet and makes the entire buildout's financing sensitive to Nvidia's own valuation.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Nvidia and OpenAI are negotiating up to $100B in credit support and as much as $350B in GPU financing for a 10-gigawatt data-center campus at PORTS-Pike in Pike County, Ohio, built and managed by SB Energy under a 20-year lease. Nvidia is investing $1.5B directly in SB Energy alongside SoftBank and OpenAI. The Ohio deal sits inside a broader platform announced with Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs and KKR to raise $500B in third-party capital for AI data centers globally, structured as private bonds issued by special-purpose entities using compute capacity as collateral.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/08/17/nvidia-financing-open-ai-data-center-ohio.html">CNBC: Nvidia backing $105 billion in financing for OpenAI data center in Ohio</a></li>
+          <li><a href="https://fortune.com/2026/08/11/nvidia-500-billion-ai-financing/">Fortune: Nvidia taps Wall Street for $500 billion funding commitment</a></li>
+          <li><a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000069/sbeoainvidia-portsrelease.htm">SEC filing: Nvidia/SB Energy/OpenAI PORTS-Pike release</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">15&ndash;17 Aug</span></div>
+    <h3>Anthropic posts its first-ever operating profit on $11.5B+ Q2 revenue</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is the clearest proof yet that a frontier lab can run a real business, not just raise capital against a growth story &mdash; and it hands Anthropic a materially stronger pitch than OpenAI's for their competing IPOs this fall, at a moment when investors are increasingly asking AI labs to show margin, not just top-line growth.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Preliminary figures put Q2 revenue above $11.5B, up from $4.73B in Q1 and $787M a year earlier, alongside positive adjusted operating income for the first time &mdash; a metric that includes model-training costs but excludes stock-based compensation. Growth was driven largely by enterprise adoption of Claude Code and coding-agent products. The numbers are preliminary and could still move before Anthropic's formal reporting.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html">CNBC: Anthropic revenue jumps to over $11.5 billion in Q2</a></li>
+          <li><a href="https://www.forbes.com/sites/jonmarkman/2026/08/17/anthropics-groundbreaking-second-quarter-delivers-115b-in-revenue/">Forbes: Anthropic's second quarter delivers $11.5B in revenue</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">M&amp;A</span><span class="when">16&ndash;17 Aug</span></div>
+    <h3>Stripe finalizes its $7B+ acquisition of OpenRouter</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A payments company now owns the neutral routing layer sitting in front of 400+ models from every major lab, for roughly 8 million developers &mdash; a bet that model choice, not any single model, is the durable infrastructure layer, and a sign that AI-gateway startups are becoming acquisition targets rather than independent platforms.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The price is a 5.4x markup over OpenRouter's $1.3B Series B valuation from just three months earlier in May. OpenRouter lets developers route requests across models from OpenAI, Anthropic, Google, Meta and DeepSeek based on cost, latency and task fit; Stripe already processed its payments, giving it visibility into the startup's growth before the deal.</p>
+        <ul class="sources">
+          <li><a href="https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/">TechCrunch: Stripe will acquire AI gateway startup OpenRouter for $7B+</a></li>
+          <li><a href="https://dataconomy.com/2026/08/17/stripe-acquire-openrouter-deal-7-billion/">Dataconomy: Stripe acquires OpenRouter for more than $7 billion</a></li>
+          <li><a href="https://www.bloomberg.com/news/articles/2026-08-16/stripe-nears-deal-to-buy-ai-firm-openrouter-for-over-7-billion">Bloomberg: Stripe nears deal to buy AI firm OpenRouter for over $7 billion</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">17 Aug</span></div>
+    <h3>Meta's youth-safety trial opens, states seeking up to $200B</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is the largest social-media harms case yet to reach trial, testing whether internal design decisions &mdash; not just moderation failures &mdash; can carry multibillion-dollar liability. It lands the same week AI capex and a ~700% DRAM price surge crushed Meta's free cash flow to $784M, squeezing the company financially and legally at once.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>A coalition of 29 state attorneys general, led by California's Rob Bonta, opened arguments Tuesday in federal court before Judge Yvonne Gonzalez Rogers, alleging Meta knowingly designed addictive features for minors and collected data on under-13 users without consent. States have floated theoretical damages as high as $1.4T, with attorneys signaling roughly $200B as more realistic, plus platform-design changes. Separately, Meta raised its 2026 capex floor to $130B (ceiling $145B) after Q2 capex hit $31.1B, and a DRAM price spike helped push free cash flow down to $784M, freezing buybacks for a third straight quarter.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/08/17/meta-attorneys-general-california-federal-trial-astronomical-consequences.html">CNBC: Meta faces state AG trial over child-safety claims</a></li>
+          <li><a href="https://www.wsls.com/business/2026/08/17/states-take-meta-to-trial-in-california-in-the-biggest-fight-yet-over-social-media-harms-to-children/">AP via WSLS: States take Meta to trial over social-media harms to children</a></li>
+          <li><a href="https://blockspace.media/insight/meta-lifts-2026-capex-ai-infrastructure-spending/">Blockspace: Meta lifts 2026 capex to $130B as AI spending compresses cash flow</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">18 Aug</span></div>
+    <h3>Unitree set to debut on Shanghai's STAR Market tomorrow after record demand</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is mainland China's first listed general-purpose humanoid-robot maker, and retail appetite for it dwarfs anything seen on the STAR Market before &mdash; a strong signal that embodied-AI enthusiasm is now a public-markets phenomenon in China, not just a venture story.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Unitree begins trading August 19 after pricing 40.45 million new shares at CNY150.80 each (about 10% of post-IPO capital), raising roughly $904M at a roughly $9B valuation. Retail subscription demand exceeded available shares by more than 8,000x, a STAR Market record. Unitree shipped over 5,500 humanoid robots in 2025, more than any other company globally; pre-IPO derivatives markets were pricing in a debut pop of over 300%.</p>
+        <ul class="sources">
+          <li><a href="https://english.news.cn/20260818/9a5428390120473883d825a3030ec41b/c.html">Xinhua: Chinese robot maker Unitree to debut on Shanghai market Wednesday</a></li>
+          <li><a href="https://www.bloomberg.com/news/articles/2026-08-10/unitree-s-shanghai-ipo-5-526-times-subscribed-by-retail-buyers">Bloomberg: Unitree's Shanghai IPO 5,526 times subscribed by retail buyers</a></li>
+          <li><a href="https://www.bloomberg.com/news/articles/2026-08-18/unitree-crypto-futures-indicate-more-than-300-debut-pop">Bloomberg: Unitree crypto futures indicate more than 300% debut pop</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer Platforms</span><span class="when">17 Aug</span></div>
+    <h3>Google retires Imagen 4 API endpoints, forcing a pricier migration</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This isn't a drop-in model swap &mdash; the whole calling convention changes, and the replacement costs more per image for many workloads. Any team that hadn't already migrated has a broken integration as of today, a reminder that model retirements now carry real engineering and budget costs on tight timelines.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Google shut down the imagen-4.0-generate-001, imagen-4.0-ultra-generate-001 and imagen-4.0-fast-generate-001 endpoints on August 17, directing developers to gemini-3.1-flash-image. The old generate_images() method is gone entirely; image generation now runs through generate_content(), which accepts more input types and bills by output resolution. A 1K replacement image now costs $0.067, versus $0.02&ndash;$0.06 under Imagen 4.</p>
+        <ul class="sources">
+          <li><a href="https://ai.google.dev/gemini-api/docs/changelog">Google AI for Developers: Gemini API release notes</a></li>
+          <li><a href="https://kingy.ai/ai-launch-tracker/google-will-shut-down-three-imagen-4-api-models-august-17/">Kingy AI: Google Imagen 4 API shutdown window, August 17, 2026</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer Platforms</span><span class="when">12&ndash;13 Aug</span></div>
+    <h3>Agent Plugins 1.0 goes GA across Copilot, Cursor and ChatGPT</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A cross-vendor standard for packaging agent skills and MCP servers into one installable plugin means developers can finally build an integration once and ship it to multiple agent clients, instead of maintaining separate versions per vendor &mdash; a real step toward commoditizing the agent-tooling layer that every lab has been racing to lock down.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Agent Plugins 1.0, co-published by AWS, Anysphere, Microsoft, OpenAI, Vercel and Google, reached general availability in VS Code, GitHub Copilot CLI, the Copilot SDK and the Copilot app. It bundles a skill and an MCP server into one distributable plugin governed independently of any single vendor; Copilot CLI also picked up subagent management, queued prompts, headless autopilot and a /rewind command in the same release.</p>
+        <ul class="sources">
+          <li><a href="https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app/">GitHub Changelog: Agent Plugins 1.0 in VS Code, Copilot CLI, and the Copilot app</a></li>
+          <li><a href="https://www.digitalapplied.com/blog/agent-plugins-1-0-open-standard-portable-ai-skills">Digital Applied: Agent Plugins 1.0 &mdash; what the standard actually fixes</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">17 Aug</span></div>
+    <h3>Unpatched Unisoc modem flaw gives full Android kernel access via a video call</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> An attacker with a private cellular network can fully compromise a phone the moment its owner answers a video call, no user action beyond that required &mdash; and with the chipmaker unresponsive to disclosure for months, hundreds of millions of budget Android devices have no available fix.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>SSD Secure Disclosure published a two-stage exploit chain against Unisoc modem firmware on August 17, building on a March 2026 disclosure of remote code execution via a malformed SIP video call. The flaw (an improper isolation of shared SoC resources, CWE-1189) lets an attacker disable modem memory protections and pivot into Android kernel memory once a targeted video call is answered. Affected devices demonstrated or listed include the Realme C33, Xiaomi Redmi A5 and Motorola E13; researchers said Unisoc has not responded to outreach through email or LinkedIn.</p>
+        <ul class="sources">
+          <li><a href="https://thehackernews.com/2026/08/unisoc-volte-video-call-exploit-chain.html">The Hacker News: Unisoc VoLTE video call exploit chain can give attackers full Android kernel access</a></li>
+          <li><a href="https://ssd-disclosure.com/unisoc-t612-lpe/">SSD Secure Disclosure: UNISOC T612 LPE</a></li>
+          <li><a href="https://cybernews.com/security/millions-android-phones-exposed-unisoc-modem-flaw/">Cybernews: Millions of Android phones exposed to critical Unisoc modem flaw</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 18 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
