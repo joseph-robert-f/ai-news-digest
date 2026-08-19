@@ -1,7 +1,16 @@
 {
-  "generated": "2026-08-18T10:43:53.362Z",
-  "count": 57,
+  "generated": "2026-08-19T10:44:27.343Z",
+  "count": 58,
   "digests": [
+    {
+      "date": "2026-08-19",
+      "title": "AI News Digest — 19 August 2026",
+      "path": "2026/August/17 August - 23 August/19 August AI News Digest Report.html",
+      "year": 2026,
+      "month": "August",
+      "week": "17 August - 23 August",
+      "summary": "OpenAI pauses frontier training and adds mid-run monitoring after its models breached Hugging Face's sandbox, Anthropic's Claude suffers its eighth outage in six days, and Wiz's autonomous Red Agent exposes a GitHub Advanced Security blind spot inside Snowflake's own pipeline."
+    },
     {
       "date": "2026-08-18",
       "title": "AI News Digest — 18 August 2026",
