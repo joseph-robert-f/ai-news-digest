@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 20 August 2026</title>
+  <meta name="description" content="CISA's deadline for federal agencies to patch two actively-exploited open-source AI frameworks lands today, Microsoft closes a one-click Copilot flaw that hijacked its own memory to steal connected-app data, and a 19-year Treasury-yield high triggers the steepest chip-stock slide since March.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>20 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24&ndash;48 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Two open-source AI frameworks face a federal patch deadline today.</strong> CISA's three-day window to fix an actively-exploited Ray RCE bug expires August 20, right as a separate MLflow credential-theft flaw is being hit within hours of disclosure.</li>
+      <li><strong>Microsoft closes a one-click Copilot data-theft hole.</strong> "CoSnitch" chained an undocumented URL parameter with memory poisoning to auto-run prompts and exfiltrate connected Gmail, Drive and Calendar data &mdash; patched August 18 with no known in-the-wild exploitation.</li>
+      <li><strong>Chip stocks post their worst three-day stretch since March.</strong> A 30-year Treasury yield at a 19-year high sent the PHLX Semiconductor Index down 5.6% and briefly erased $153B of Nvidia's market cap, spotlighting the debt now underwriting the AI buildout.</li>
+      <li><strong>Pennsylvania makes its AI data-center rules legally binding.</strong> Gov. Shapiro's executive order forces developers to bring their own power, hit clean-energy quotas and win local approval &mdash; the strictest state guardrails on data centers yet.</li>
+      <li><strong>AI assistants keep reaching deeper into personal and business data.</strong> Meta's new Mac app pulls from Instagram/Facebook business accounts and Google Workspace, while OpenAI confirms ChatGPT Ads land in 31 European countries on August 24.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">17&ndash;20 Aug</span></div>
+    <h3>Two widely used open-source AI frameworks are under active attack; CISA's federal patch deadline hits today</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Ray and MLflow sit underneath a huge share of production ML pipelines, and both got hit with critical, actively-exploited flaws within days of each other &mdash; a reminder that the AI supply chain's infrastructure layer, not just the models, is now a live target, with federal systems on a hard clock to respond.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>CISA added a Ray code-injection flaw (CVE-2025-62593) to its Known Exploited Vulnerabilities catalog on August 17 and, under Binding Operational Directive 26-04, gave federal civilian agencies just three days &mdash; until August 20 &mdash; to patch it. The bug lets an attacker bypass Ray's User-Agent-based dashboard protection and, combined with DNS rebinding, achieve remote code execution simply by getting a victim to view a malicious webpage or ad while Ray is running; a fix shipped in version 2.52.0. Separately, an unauthenticated server-side request forgery flaw in MLflow (CVE-2026-64849, CVSS 9.3) affecting versions before 3.15.0 was assigned a CVE on August 17 and was already being scanned and exploited in the wild within hours, according to watchTowr's honeypot network &mdash; attackers use a webhook-redirect bypass to reach cloud metadata endpoints and steal credentials and secrets.</p>
+        <ul class="sources">
+          <li><a href="https://thehackernews.com/2026/08/cisa-flags-actively-exploited-ray-flaw.html">The Hacker News: CISA flags actively exploited Ray flaw that can trigger browser-based RCE</a></li>
+          <li><a href="https://www.theregister.com/security/2026/08/18/cisa-gives-feds-3-days-to-fix-actively-exploited-ray-rce-bug/5289007">The Register: CISA gives feds 3 days to fix actively exploited Ray RCE bug</a></li>
+          <li><a href="https://thehackernews.com/2026/08/attackers-exploit-mlflow-ssrf-flaw-to.html">The Hacker News: Attackers exploit MLflow SSRF flaw to steal cloud credentials and secrets</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">18 Aug</span></div>
+    <h3>Microsoft patches "CoSnitch," a one-click Copilot flaw that poisoned its own memory to exfiltrate connected-app data</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is a textbook example of the new agentic attack surface &mdash; no malware, no download, just a crafted link that made a trusted AI assistant's own built-in tools (memory, URL fetching, OAuth connections) do the attacking, with the injected instructions persisting across sessions until removed.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Security firm Varonis disclosed CoSnitch (CVE-2026-24301), a vulnerability chain in Microsoft Copilot Personal that combined an undocumented URL parameter with the standard <code>?q=</code> query parameter so that opening a single crafted link executed an attacker's prompt instantly &mdash; no click or confirmation beyond the initial visit. Once triggered, Copilot could query data from connected OAuth apps such as Gmail, Google Drive and Calendar and quietly relay it to an attacker-controlled server via its own URL-fetching feature, disguising the theft as routine traffic; a memory-poisoning component meant injected instructions could persist across future sessions. Varonis reported the flaw responsibly in December 2025, Microsoft shipped a fix on August 18, and researchers say there is no evidence of exploitation in the wild.</p>
+        <ul class="sources">
+          <li><a href="https://thehackernews.com/2026/08/microsoft-copilot-personal-flaws-could.html">The Hacker News: Microsoft Copilot Personal flaws could let one click exfiltrate data from connected apps</a></li>
+          <li><a href="https://www.theregister.com/research/2026/08/18/copilot-tricked-into-telling-reseachers-how-to-hack-itself/5288857">The Register: Copilot tricked into telling researchers how to hack itself</a></li>
+          <li><a href="https://www.varonis.com/blog/cosnitch">Varonis: CoSnitch &mdash; when your AI assistant becomes its own whistleblower</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">18&ndash;19 Aug</span></div>
+    <h3>A 19-year Treasury-yield high triggers chip stocks' steepest three-day slide since March</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The AI buildout increasingly runs on debt-financed compute, and this is the clearest sign yet that rising long-term rates &mdash; not just AI sentiment &mdash; can now move the entire sector; it lands one day after Nvidia agreed to back up to $100B of OpenAI's Ohio data-center financing, tightening the link between chipmaker balance sheets and the credit cycle.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The 30-year Treasury yield surged to 5.33% on August 18, its highest level since 2007, as oil prices climbed on Middle East tensions and inflation concerns persisted. The PHLX Semiconductor Index fell roughly 5.6% that day with all 30 components down; Nvidia briefly shed as much as $153B in market value intraday. On August 19 the S&P 500 closed down 0.7% at 7,691.76 and the Nasdaq Composite fell 1.3% to 26,289.71 despite a broader market recovery in cyclicals and health care; Intel and AMD each fell roughly 4% while Nvidia held roughly flat, helped by a looming China-demand thaw and its August 26 earnings date. Treasury's announcement that it would more than double its debt-buyback program helped stabilize yields late in the session.</p>
+        <ul class="sources">
+          <li><a href="https://247wallst.com/investing/2026/08/19/intel-and-amd-fall-4-nvidia-unchanged-as-chip-selloff-defies-bond-yield-relief/">24/7 Wall St: Intel and AMD fall 4%, Nvidia unchanged as chip selloff defies bond yield relief</a></li>
+          <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-19-2026">TheStreet: Stock Market Today (Aug. 19, 2026)</a></li>
+          <li><a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-18-2026">TheStreet: Stock Market Today (Aug. 18, 2026)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">18 Aug</span></div>
+    <h3>Pennsylvania makes its AI data-center guardrails legally binding &mdash; the strictest in the nation</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This converts what had been a voluntary incentive program into hard law, forcing developers to internalize the power and water costs of AI buildouts rather than shifting them to ratepayers &mdash; a template other states weighing grid strain from data centers are likely to study closely.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Gov. Josh Shapiro signed an executive order on August 18 making Pennsylvania's "GRID" standards &mdash; previously a voluntary path to state support &mdash; legally binding on AI data-center developers. Projects now require a Consent Order committing developers to bring and pay for their own power, source an increasing share from clean sources like solar, advanced nuclear and battery storage, hire locally, meet environmental-protection standards and win local approval; all data-center proposals were also pulled from the state's Permit Fast Track program. The order follows stalled legislation in the state Senate to codify the GRID standards after the House passed a bill in June; critics quoted by Pennsylvania Capital-Star argue the order still leaves gaps a future administration could unwind.</p>
+        <ul class="sources">
+          <li><a href="https://www.pa.gov/governor/newsroom/2026-press-releases/governor-shapiro-signs-executive-order-on-data-center-developmen">Commonwealth of Pennsylvania: Governor Shapiro signs executive order on data center development in PA</a></li>
+          <li><a href="https://thehill.com/policy/technology/6037158-shapiro-signs-ai-data-center-order/">The Hill: Josh Shapiro signs order restricting AI data centers in Pennsylvania</a></li>
+          <li><a href="https://penncapital-star.com/technology-information/gov-shapiro-signs-data-center-executive-order-critics-say-it-falls-short/">Pennsylvania Capital-Star: Gov. Shapiro signs data center executive order. Critics say it falls short.</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer Platforms</span><span class="when">19 Aug</span></div>
+    <h3>Meta AI ships a Mac app that reads business accounts, ad performance and Google Workspace data</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Meta is positioning its assistant as a hub that spans a user's social accounts, ad campaigns and a rival's productivity suite in one desktop app &mdash; a significant widening of its data footprint that lands the same week its data practices with minors are on trial in federal court.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Meta launched a standalone Mac app for Meta AI in beta on August 19, aimed at creators and small businesses. Desktop-exclusive features include screen sharing, so the assistant can see what's on-screen, and system-wide dictation usable inside any Mac app. On the business side, it connects to Google Workspace inboxes, calendars and docs, and reads engagement and ad-performance data from professional Facebook and Instagram accounts, including competitor brand performance. The app is a free download, but deeper capabilities sit behind new Plus ($7.99/month) and Premium ($19.99/month) subscription tiers.</p>
+        <ul class="sources">
+          <li><a href="https://www.macrumors.com/2026/08/19/meta-ai-mac-app/">MacRumors: Meta AI launches Mac app with screen sharing and dictation</a></li>
+          <li><a href="https://www.axios.com/2026/08/19/metas-new-mac-app-helps-influencers-and-small-biz-harness-ai">Axios: Meta AI Mac app designed for creators, small businesses</a></li>
+          <li><a href="https://appleinsider.com/articles/26/08/19/meta-brings-its-personal-assistant-app-to-mac-for-better-and-worse">AppleInsider: Meta AI comes to Mac in a new desktop app</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer Platforms</span><span class="when">18 Aug</span></div>
+    <h3>OpenAI confirms ChatGPT Ads land in 31 European countries on August 24</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> OpenAI is scaling its ad business straight into the EU's stricter privacy and transparency regime just weeks after the bloc's AI Act transparency rules took effect &mdash; a sign monetizing the free tier is becoming central to its path toward a targeted 2027 IPO.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI announced on August 18 that ChatGPT Ads will begin serving across 31 European markets &mdash; including Germany, France, Spain, Italy and the Netherlands &mdash; starting August 24, six months after the format's initial U.S. tests. Ads will show only to users on the Free and Go plans; Plus, Pro and Enterprise subscribers remain ad-free. Access initially runs through OpenAI's Ads Solutions team and agency and technology partners, with self-service access via an Ads Manager to follow. The expansion brings ChatGPT Ads to 35 countries total.</p>
+        <ul class="sources">
+          <li><a href="https://openai.com/index/chatgpt-ads-expands-across-europe/">OpenAI: ChatGPT Ads expands across Europe</a></li>
+          <li><a href="https://searchengineland.com/chatgpt-ads-are-expanding-to-31-european-countries-485468">Search Engine Land: ChatGPT Ads are expanding to 31 European countries</a></li>
+          <li><a href="https://dataconomy.com/2026/08/19/openai-chatgpt-ads-launch-european-markets-august-24/">Dataconomy: OpenAI to launch ChatGPT Ads in 31 European markets on August 24</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Autonomous Vehicles</span><span class="when">14 Aug</span></div>
+    <h3>Waymo wins approval to blanket California in robotaxi service across 18 counties</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is the broadest state-level green light any robotaxi operator has received, covering the majority of California's population in one ruling &mdash; a strong signal that regulators are moving from city-by-city pilots to statewide frameworks for autonomous ride-hailing.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The California Public Utilities Commission approved an updated Passenger Safety Plan for Waymo on August 14, clearing it to operate driverless ride-hailing across 18 counties spanning the full San Francisco Bay Area (from Brentwood to Sonoma County's Sea Ranch), an expanded Los Angeles footprint, and new service in Sacramento and San Diego. Waymo says the rollout will be gradual and guided by its existing safety framework, with San Diego service targeted for later this summer; no firm dates were set for the other new markets. The approval follows Waymo surpassing 220 million autonomous rider-only miles and 500,000 weekly paid trips across its existing markets.</p>
+        <ul class="sources">
+          <li><a href="https://www.benzinga.com/markets/tech/26/08/61239145/waymo-gets-california-green-light-for-robotaxi-expansion-across-bay-area-and-los-angeles">Benzinga: Waymo gets California green light for robotaxi expansion across Bay Area and Los Angeles</a></li>
+          <li><a href="https://electrek.co/2026/08/14/waymo-cpuc-approval-california-expansion-18-counties/">Electrek: Waymo wins California approval to expand robotaxis across 18 counties</a></li>
+          <li><a href="https://www.cbsnews.com/sacramento/news/waymo-approved-sacramento-san-diego-expand-los-angeles-bay-area/">CBS Sacramento: Waymo approved to start rides in Sacramento, San Diego and expand in Los Angeles, Bay Area</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 20 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>

@@ -1,7 +1,16 @@
 {
-  "generated": "2026-08-19T10:44:27.343Z",
-  "count": 58,
+  "generated": "2026-08-20T10:45:18.490Z",
+  "count": 59,
   "digests": [
+    {
+      "date": "2026-08-20",
+      "title": "AI News Digest — 20 August 2026",
+      "path": "2026/August/17 August - 23 August/20 August AI News Digest Report.html",
+      "year": 2026,
+      "month": "August",
+      "week": "17 August - 23 August",
+      "summary": "CISA's deadline for federal agencies to patch two actively-exploited open-source AI frameworks lands today, Microsoft closes a one-click Copilot flaw that hijacked its own memory to steal connected-app data, and a 19-year Treasury-yield high triggers the steepest chip-stock sl…"
+    },
     {
       "date": "2026-08-19",
       "title": "AI News Digest — 19 August 2026",
