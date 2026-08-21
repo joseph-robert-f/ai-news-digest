@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 21 August 2026</title>
+  <meta name="description" content="Google locks in a $12.2B stake option in Marvell and SK Hynix cancels a record $28.6B in shares as the AI chip trade keeps widening, new engineering data shows AI already authors half of Linear's issues while review queues stall, and Anthropic researchers show self-propagating 'mind virus' prompts can jump between AI agents unassisted.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>21 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24&ndash;48 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>The AI chip trade keeps widening.</strong> Google secured a $12.2B option to buy Marvell stock tied to future TPU-supply-chain purchases (sinking Broadcom), while SK Hynix approved South Korea's largest-ever share cancellation at $28.6B on AI-driven memory demand.</li>
+      <li><strong>AI now writes half of everything created in Linear.</strong> A new benchmark of 8.1 million pull requests finds coding-agent teams tripled weekly PR volume, but AI-assisted PRs merge at less than half the rate of human code and wait over 5x longer for review.</li>
+      <li><strong>A "blind" benchmark exposes a real ceiling on AI hypothesis generation.</strong> Stripped of any chance to leak from training data, frontier models solo-recover published research ideas from bibliographies alone just 3&ndash;15% of the time; a multi-agent tournament setup only reaches 42%.</li>
+      <li><strong>Anthropic and EPFL show AI agents can catch "mind viruses" from each other.</strong> Self-propagating prompts embedded in shared memory files spread between agents and survive context wipes in testing &mdash; though a one-paragraph warning cut transmission to near zero.</li>
+      <li><strong>AI keeps reaching further into daily life.</strong> ChatGPT on Mac can now read, draft and send iMessages, SMS and RCS texts, arriving the same week Amazon confirmed a sixfold expansion of its AI-guided drone-delivery network to nearly 500 U.S. cities and towns.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets &amp; Infrastructure</span><span class="when">19 Aug</span></div>
+    <h3>Google locks in a $12.2B stake option in Marvell, diversifying its custom-chip supply beyond Broadcom</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Google is turning a chip-supply relationship into an equity bet, tying its financial upside directly to how much silicon it actually buys &mdash; a structure that gives Marvell a captive anchor customer and signals Google no longer wants a single supplier (Broadcom) holding all the leverage on its TPU roadmap.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Marvell granted Google a warrant to buy up to 58.97 million Marvell shares at $206.58 each &mdash; worth $12.18B if fully exercised, which would make Google roughly the fifth-largest Marvell shareholder. Only about 1.4 million of those warrant shares vest in year one; the rest unlock in tranches tied to every $500M in chips Google actually buys from Marvell, covering processors, storage controllers and networking silicon used alongside Google's TPUs. Marvell said the arrangement could generate roughly $120B in revenue through fiscal 2033 if Google hits its purchase targets. Marvell shares jumped nearly 8% on the news, while Broadcom &mdash; Google's larger existing custom-chip partner &mdash; fell more than 5%.</p>
+        <ul class="sources">
+          <li><a href="https://www.bloomberg.com/news/articles/2026-08-19/marvell-gives-google-right-to-buy-up-to-12-2-billion-in-shares">Bloomberg: Google secures $12.2 billion share purchase right in Marvell AI chip deal</a></li>
+          <li><a href="https://www.cnbc.com/2026/08/19/marvell-google-ai-chips.html">CNBC: Marvell's stock pops 10% on AI chip deal that lets Google buy up to $12.2 billion in shares</a></li>
+          <li><a href="https://www.investing.com/news/stock-market-news/marvell-gives-google-option-to-buy-122-billion-stake-in-custom-chip-deal-4867472">Reuters via Investing.com: Marvell gives Google option to buy $12.2 billion stake in custom chip deal</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">19&ndash;20 Aug</span></div>
+    <h3>SK Hynix cancels a record $28.6B in shares as AI memory demand floods its balance sheet</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is the largest treasury-share cancellation in South Korean corporate history, and it's a memory maker &mdash; not a chip designer or a hyperscaler &mdash; cashing in on the AI boom; it underscores how much of the buildout's economics now run through HBM and DRAM supply, which SK Hynix says it can't produce fast enough even after raising $26B last month.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>SK Hynix's board approved buying back and cancelling 40 trillion won ($28.61B) in treasury shares &mdash; about 24.07 million shares, or roughly 3.3% of shares outstanding &mdash; with the repurchase window running August 20 through November 19. The company also committed to directing more than 50% of free cash flow generated between 2025 and 2027 to shareholder returns, and separately approved 54 trillion won ($38B) to build two new fabs in South Korea, one for DRAM in Yongin and one for NAND flash in Cheongju. The move followed a share-price slide despite last month's record $26B+ share sale, the largest ever by a non-U.S. company; SK Hynix, SanDisk and Micron shares all rose the day the buyback was announced.</p>
+        <ul class="sources">
+          <li><a href="https://www.bloomberg.com/news/articles/2026-08-19/sk-hynix-announces-28-6-billion-share-buy-back-on-ai-boom">Bloomberg: SK Hynix plans $28.6 billion share buyback as AI demand drives cash flow</a></li>
+          <li><a href="https://www.semafor.com/article/08/19/2026/sk-hynix-to-buy-back-286-billion-in-shares">Semafor: SK Hynix to buy back $28.6 billion in shares</a></li>
+          <li><a href="https://247wallst.com/investing/2026/08/19/sk-hynix-rises-6-on-29b-buyback-sandisk-gains-5-micron-climbs-3-as-memory-names-rebound/">24/7 Wall St: SK Hynix rises 6% on $29B buyback, SanDisk gains 5%, Micron climbs 3%</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer Platforms</span><span class="when">21 Aug</span></div>
+    <h3>AI now authors half of all Linear issues &mdash; but AI-assisted pull requests merge at half the rate of human code</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is the clearest data yet that agentic coding is genuinely reshaping output &mdash; not just hype &mdash; but it also quantifies the bottleneck everyone suspected: teams are generating far more code than they can review, and the growing backlog sits squarely on human reviewers, not the agents.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Linear's own product data shows AI now creates just under half of everything made inside Linear, up from fewer than one in a thousand items two years ago, and at the current growth rate AI will soon author more than humans and integrations combined. Separately, LinearB's 2026 Engineering Benchmarks report, drawn from 8.1 million pull requests across roughly 4,800 teams, found that teams running a connected coding agent roughly tripled weekly PR volume (21 to 65 over two years) versus a modest rise (8 to 10) for teams without one. But 84.5% of manually written PRs merge within 30 days versus just 32.7% of AI-assisted ones; reviewer pickup time has stretched from about 200 minutes to roughly 1,050, and AI-assisted PRs run nearly two and a half times larger (400+ lines at the 75th percentile versus 157 for human-written code). Developer AI adoption overall reached 88.3% in the same report, up from under 72% in early 2024.</p>
+        <ul class="sources">
+          <li><a href="https://linear.app/data">Linear: AI usage patterns in software teams</a></li>
+          <li><a href="https://linearb.io/blog/8-million-prs-engineering-productivity">LinearB: 8 million pull requests reveal where engineering productivity breaks down</a></li>
+          <li><a href="https://linearb.io/dev-interrupted/podcast/linearb-2026-benchmarks-ai-pr-merge-rate">Dev Interrupted: Why AI-assisted PRs merge at half the rate of human code &mdash; LinearB's 2026 Benchmarks</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Research</span><span class="when">17&ndash;19 Aug</span></div>
+    <h3>A leak-proof benchmark finds frontier AI recovers published research ideas from bibliographies alone just 3&ndash;15% of the time</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Most claims about AI "scientific reasoning" are hard to trust because models may simply have memorized the paper being tested; this benchmark is specifically designed so that can't happen, and the resulting scores suggest genuine hypothesis generation &mdash; proposing a novel idea from what prior work implies, not retrieving one &mdash; remains a real, unsolved ceiling for even the best models.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>"Reconstruction: A Blind Benchmark for Recovering Research Ideas from Pre-Publication Bibliographies," posted to arXiv August 17 and revised August 19, gives models only a paper's pre-publication bibliography (with anonymized references and a temporal citation cutoff) and asks them to propose the paper's actual research idea, which an independent LLM judge then scores against the real, held-out idea. Because the target papers were published after the cutoff, the seed idea provably cannot be in the model's training data, eliminating the retrieval shortcut that undermines most reasoning benchmarks. Solo frontier models scored just 3&ndash;15%; a multi-agent Swiss-tournament pipeline that pits candidate hypotheses against each other across rounds reached 42% &mdash; better, but still exposing a structural gap between what current models can retrieve versus what they can genuinely originate.</p>
+        <ul class="sources">
+          <li><a href="https://arxiv.org/abs/2608.16645">arXiv: Reconstruction &mdash; A Blind Benchmark for Recovering Research Ideas from Pre-Publication Bibliographies</a></li>
+          <li><a href="https://www.techtimes.com/articles/324932/20260819/blind-benchmark-catches-frontier-ai-just-three-percent-research-idea-recovery.htm">Tech Times: Blind benchmark catches frontier AI at just three percent on research idea recovery</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">10 Aug (ongoing coverage)</span></div>
+    <h3>Anthropic and EPFL show self-propagating "mind virus" prompts can spread between AI agents and outlast memory wipes</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> As agent fleets increasingly hand off state to each other through shared or persistent memory files, this demonstrates a genuinely new propagation vector &mdash; one that needs no code execution or network exploit, just an idea an agent is induced to pass along &mdash; though the same paper finds a simple, cheap mitigation that works well today.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Researchers from Anthropic and EPFL (Vassilis Papadopoulos, McNair Shah, Sam Zimmerman and Jack Lindsey) published "Mind Viruses: Self-Propagating Ideas in Multi-Agent LLM Systems" on arXiv August 10. Using a simple evolutionary algorithm, they bred prompt payloads that induce an agent to transmit the same idea onward through editable system-prompt or memory files that agent harnesses use to carry state across sessions, and tested spread in two settings: a six-agent simulated coding collaboration, and a chain of paired agents modeled on the open-source OpenClaw (formerly Clawdbot/Moltbot) assistant. Harmful payloads propagated less reliably than benign ones but still sometimes succeeded, and frontier models proved more resistant than older ones; a one-paragraph warning added to an agent's system prompt cut transmission to near zero across every payload tested. The researchers found no evidence of the technique spreading in the wild, and published every tested payload and the code that generated them under an MIT license.</p>
+        <ul class="sources">
+          <li><a href="https://arxiv.org/abs/2608.10218">arXiv: Mind Viruses &mdash; Self-Propagating Ideas in Multi-Agent LLM Systems</a></li>
+          <li><a href="https://thehackernews.com/2026/08/ai-mind-viruses-can-spread-between.html">The Hacker News: AI "mind viruses" can spread between agents through persistent prompt files</a></li>
+          <li><a href="https://www.ibtimes.co.uk/ai-mind-viruses-study-reveals-self-propagating-ideas-1814955">IBTimes UK: Anthropic co-authored study finds AI "mind viruses" that spread between agents and outlast memory wipes</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer Platforms</span><span class="when">20 Aug</span></div>
+    <h3>ChatGPT on Mac can now read, draft and send iMessages, SMS and RCS texts</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This hands a general-purpose chatbot direct read/write access to a user's private text-message history and the ability to send messages under a human's name &mdash; a meaningful widening of the assistant's reach into personal communication, guarded so far only by a per-message approval prompt that OpenAI itself warns users not to disable.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI's new Apple Messages plugin, announced August 20, lets the ChatGPT desktop app on Apple Silicon Macs (not Intel) search and analyze iMessage, SMS and RCS conversation history, summarize threads, draft replies and send messages through Apple's Messages app on the user's behalf. It's available across all ChatGPT plans, including Work and Codex. Outgoing messages require the user to approve the message and its recipient by default; OpenAI's own guidance discourages enabling an optional "persistent approval" setting, warning that it removes the user's last chance to review a message before it sends.</p>
+        <ul class="sources">
+          <li><a href="https://www.macrumors.com/2026/08/20/chatgpt-imessages-mac/">MacRumors: ChatGPT can now read and send iMessages on Mac</a></li>
+          <li><a href="https://9to5mac.com/2026/08/20/chatgpt-update-adds-apple-messages-integration-on-mac/">9to5Mac: ChatGPT update adds Apple Messages integration on Mac</a></li>
+          <li><a href="https://www.engadget.com/2241390/openai-chatgpt-imessage-integration/">Engadget: ChatGPT on Mac can now read and respond to Apple iMessages</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Robotics</span><span class="when">19 Aug</span></div>
+    <h3>Amazon confirms a sixfold expansion of Prime Air drone delivery to nearly 500 U.S. cities and towns</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This moves autonomous last-mile delivery from a handful of pilot metros to national scale in one announcement &mdash; the broadest commitment yet from any operator, and a sign the underlying autonomy and airspace-coordination stack has matured enough for Amazon to bet on rapid, wide-footprint rollout rather than another year of city-by-city trials.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Amazon said Prime Air drone delivery will expand to nearly 500 U.S. cities and towns by the end of 2026, a roughly sixfold increase from its current 11 metro areas across seven states (Arizona, Florida, Kansas, Louisiana, Michigan, Nebraska and Texas), with Chicago, Atlanta, Cleveland, Syracuse and Boise among the next markets to launch. Drones carry packages up to 5 pounds &mdash; covering more than 60% of Amazon's most-ordered items &mdash; with delivery in as fast as 30 minutes; Prime members get free drone delivery on orders of $50+, with a $2.99 fee below that threshold ($4.99 for non-members). Amazon says it already completes thousands of drone deliveries daily across its existing footprint.</p>
+        <ul class="sources">
+          <li><a href="https://www.aboutamazon.com/news/transportation/amazon-prime-air-drone-delivery-expansion">Amazon: Prime Air drone delivery expands to nearly 500 US cities and towns by 2026</a></li>
+          <li><a href="https://techcrunch.com/2026/08/19/amazons-prime-air-is-taking-off-in-nearly-500-u-s-cities/">TechCrunch: Amazon's Prime Air is taking off in nearly 500 US cities</a></li>
+          <li><a href="https://abcnews.com/Business/amazon-expand-drone-delivery-500-us-cities-towns/story?id=135767567">ABC News: Amazon will expand drone delivery to 500 US cities and towns by end of 2026</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 21 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
