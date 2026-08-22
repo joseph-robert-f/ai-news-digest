@@ -1,7 +1,16 @@
 {
-  "generated": "2026-08-21T10:44:41.762Z",
-  "count": 60,
+  "generated": "2026-08-22T10:45:09.116Z",
+  "count": 61,
   "digests": [
+    {
+      "date": "2026-08-22",
+      "title": "AI News Digest — 22 August 2026",
+      "path": "2026/August/17 August - 23 August/22 August AI News Digest Report.html",
+      "year": 2026,
+      "month": "August",
+      "week": "17 August - 23 August",
+      "summary": "Anthropic moves to file for an IPO that could top SpaceX's record raise, Nvidia pays AI coding startup Poolside $6B in a deal structured to dodge antitrust review, a critical MLflow flaw is under active exploitation for cloud-credential theft, and GitHub details the cascading…"
+    },
     {
       "date": "2026-08-21",
       "title": "AI News Digest — 21 August 2026",

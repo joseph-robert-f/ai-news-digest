@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 22 August 2026</title>
+  <meta name="description" content="Anthropic moves to file for an IPO that could top SpaceX's record raise, Nvidia pays AI coding startup Poolside $6B in a deal structured to dodge antitrust review, a critical MLflow flaw is under active exploitation for cloud-credential theft, and GitHub details the cascading failure behind its Aug 17 outage.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>22 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24&ndash;48 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Anthropic is accelerating its IPO.</strong> It could publicly file within days, targeting a raise that matches or tops SpaceX's record-setting debut.</li>
+      <li><strong>Nvidia is paying $6B to license AI coding startup Poolside's model-training software</strong> and hiring 100+ of its staff &mdash; a deal shaped to sidestep acquisition antitrust review.</li>
+      <li><strong>A critical MLflow flaw is under active exploitation.</strong> CVE-2026-64849 lets attackers steal cloud credentials from exposed ML tracking servers; CISA has issued a warning.</li>
+      <li><strong>GitHub detailed the cascade behind its Aug 17 outage:</strong> a misconfigured Istio sidecar limit, worsened by a latent VS Code bug that amplified retry traffic roughly 10x.</li>
+      <li><strong>Google's Mandiant used an AI agent pipeline to find 100+ critical code vulnerabilities in two days,</strong> netting 12 real-world CVEs including two in Drupal.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets &amp; Funding</span><span class="when">21 Aug</span></div>
+    <h3>Anthropic moves up its IPO timeline, aiming to match or beat SpaceX's record raise</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A public filing this month would put Anthropic ahead of OpenAI to market in the rivalry defining the sector, and the scale being discussed &mdash; enough to challenge history's largest US listing &mdash; would make Anthropic's IPO a bellwether for how public markets price frontier-AI economics.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Anthropic is preparing to publicly file IPO paperwork as soon as the end of August, according to Bloomberg, after confidentially submitting a draft S-1 to the SEC on June 1. The company is working with Morgan Stanley, Goldman Sachs and JPMorgan, and is reportedly borrowing a page from SpaceX's playbook by planning supervoting shares for founders. Matching SpaceX's record raise &mdash; $75B in the base offering, $86.2B including the overallotment option, at a valuation near $1.77T &mdash; would require selling tens of billions in stock; Anthropic's most recent primary-round reference point is a $965B post-money valuation from its May Series H. Bloomberg's reporting confirms the scale of Anthropic's ambition, not a locked outcome: size, valuation and timing can all still change before any public filing.</p>
+        <ul class="sources">
+          <li><a href="https://www.bloomberg.com/news/articles/2026-08-20/anthropic-expects-to-match-spacex-s-record-ipo-size-or-top-it">Bloomberg: Anthropic Expects to Match SpaceX's Record IPO Size or Top It</a></li>
+          <li><a href="https://www.benzinga.com/markets/private-markets/26/08/61345435/anthropic-is-coming-for-spacexs-86-billion-ipo-record">Benzinga: Anthropic Is Coming for SpaceX's $86 Billion IPO Record</a></li>
+          <li><a href="https://www.anthropic.com/news/confidential-draft-s1-sec">Anthropic: Anthropic confidentially submits draft S-1 to the SEC</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">M&amp;A</span><span class="when">20&ndash;21 Aug</span></div>
+    <h3>Nvidia pays AI coding startup Poolside $6B to license its model factory, hires 100+ staff</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is the reverse-acquihire playbook &mdash; license the technology, hire the team, leave the corporate shell independent &mdash; now applied directly to a company building open-weight coding models, and it shows Nvidia reaching past chips into the software layer that decides how those chips get used, all while avoiding the merger scrutiny a straight acquisition would draw.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Nvidia agreed to pay $6B for a non-exclusive license to Poolside's "Model Factory" &mdash; the pipeline Poolside uses to build its Laguna family of open-weight coding models &mdash; and will extend job offers to more than 100 Poolside employees, according to The Information and Bloomberg/Newcomer. Separately, Nvidia is investing $1B in the remaining company at a $12B valuation. Poolside's three co-founders stay in place and the company continues operating independently; nothing about the structure requires antitrust clearance the way a full acquisition would. It's part of a broader pattern of similar Nvidia licensing-plus-hiring deals with AI startups this year.</p>
+        <ul class="sources">
+          <li><a href="https://www.theinformation.com/briefings/nvidia-reportedly-pay-6-billion-licensing-hiring-deal-ai-model-startup-poolside">The Information: Nvidia to Reportedly Pay $6 Billion in Licensing and Hiring Deal With AI Model Startup Poolside</a></li>
+          <li><a href="https://www.newcomer.co/p/sources-poolside-strikes-6-billion">Newcomer: Poolside Strikes $6 Billion Licensing Deal With Nvidia &amp; Raises $1 Billion at $12 Billion Valuation</a></li>
+          <li><a href="https://www.pymnts.com/news/artificial-intelligence/2026/nvidia-pays-6-billion-to-license-poolside-ai-model-development-software/">PYMNTS: Nvidia Pays $6 Billion to License Poolside AI Model-Development Software</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">18&ndash;20 Aug</span></div>
+    <h3>A critical MLflow flaw is under active exploitation, letting attackers lift cloud credentials from exposed servers</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> MLflow tracking servers sit at the center of ML pipelines with direct access to cloud IAM roles and secrets, and this flaw needs no authentication &mdash; if your team stood one up without locking it behind a network boundary, it may already have been scanned and hit.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>CVE-2026-64849, an unauthenticated server-side request forgery flaw affecting all MLflow versions before 3.15.0, was disclosed August 18; watchTowr's honeypot network detected exploitation attempts within hours. The default MLflow Tracking Server exposes its model-registry webhooks API without authentication, and one endpoint returns the full upstream response to the caller &mdash; letting an attacker reach internal cloud metadata services and pull AWS IAM tokens, GCP service-account keys or Azure Managed Identity credentials. An SSRF protection added in version 3.10.0 can be bypassed. CISA has warned federal agencies and organizations running exposed MLflow instances to patch immediately, audit logs for prior compromise, and rotate any credentials that may have been reachable.</p>
+        <ul class="sources">
+          <li><a href="https://thehackernews.com/2026/08/attackers-exploit-mlflow-ssrf-flaw-to.html">The Hacker News: Attackers Exploit MLflow SSRF Flaw to Steal Cloud Credentials and Secrets</a></li>
+          <li><a href="https://www.securityweek.com/mlflow-vulnerability-exploited-for-cloud-credential-theft/">SecurityWeek: MLflow Vulnerability Exploited for Cloud Credential Theft</a></li>
+          <li><a href="https://decipher.sc/2026/08/18/mlflow-bug-actively-exploited-to-steal-credentials/">Decipher: MLflow Bug Actively Exploited to Steal Credentials</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer Platforms</span><span class="when">19 Aug</span></div>
+    <h3>GitHub's postmortem on its Aug 17 outage: a monitoring gap plus a VS Code retry bug turned a capacity blip into 8 hours down</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The root cause wasn't a single dramatic failure but a misconfigured alert that missed a sidecar's concurrency limit, then a latent client-side bug that turned millions of laptops into an accidental traffic amplifier &mdash; a reminder that retry logic without limits is a load generator waiting for the right trigger, at any company's scale.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>GitHub's blog postmortem says the outage began when traffic hit a new peak at its Central US facility and an Istio sidecar reached its concurrency limit &mdash; a limit a misconfigured monitoring policy tracked on the host service but not on the sidecar itself, so no alert fired before it cascaded. Four HAProxy nodes then exhausted their own flow limits, degrading the gateway auth path and causing widespread authentication failures. Separately, delayed replies from one internal endpoint triggered a latent retry bug in VS Code that amplified traffic roughly 10x and delayed recovery of the Copilot Token Service specifically. At peak, web and API error rates hit about 20% and archive/raw-content downloads about 50%; the incident ran 7 hours 47 minutes, with Actions degraded until roughly 18:03 UTC and Copilot fully recovered by 21:02 UTC. GitHub says it's now applying consistent retry limits and retry budgets across service-to-service calls and reviewing lower-priority CPU/memory alerts that could miss the next cascading failure.</p>
+        <ul class="sources">
+          <li><a href="https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/">GitHub Blog: The August 17 outage, and the work ahead</a></li>
+          <li><a href="https://www.theregister.com/saas/2026/08/19/github-blames-8-hour-outage-on-autoscaling-fail-and-vs-code-retry-storm/5289547">The Register: GitHub blames 8-hour outage on autoscaling fail and VS Code retry storm</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">AI Research &amp; Security</span><span class="when">19 Aug</span></div>
+    <h3>Google's Mandiant used an AI agent pipeline to find 100+ critical vulnerabilities in stolen source code &mdash; in two days</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This isn't a lab demo &mdash; Mandiant has run the system for about 10 months across real incident-response and red-team work, and it's already produced CVEs in shipped software, which means offense-and-defense AI-assisted code auditing has moved from research promise to operational tool on both sides.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Mandiant's Agentic Vulnerability Discovery Harness (AVDH) combines specialized LLM agents with deterministic orchestration and expert-defined security methodology: an Explorer agent profiles a target codebase and picks what to focus on, specialist agents dig into authentication, authorization, routing and domain-specific attack surfaces, and a synthesis agent builds a threat model before findings go to human validation. Applied to stolen corporate source-code repositories, AVDH surfaced more than 100 critical true-positive vulnerabilities within two days. Over roughly 10 months of internal use across incident response, penetration tests, red-team exercises and proactive code review, the system has run thousands of analysis pipelines, generated tens of thousands of findings, and produced 12 assigned CVEs in widely deployed open-source software and browser extensions, including two in Drupal (CVE-2026-13242, CVE-2026-55803). Mandiant is publishing the methodology and recommends any team adopting similar systems keep human validation in the loop, since a share of findings are discarded after manual review.</p>
+        <ul class="sources">
+          <li><a href="https://www.helpnetsecurity.com/2026/08/19/google-mandiant-avdh-ai-vulnerability-discovery-tool/">Help Net Security: Google's AI security agents found 100+ critical software vulnerabilities in just two days</a></li>
+          <li><a href="https://gbhackers.com/google-mandiant-ai-agents-find-over-100-critical-vulnerabilities/">GBHackers: Google Mandiant AI Agents Find Over 100 Critical Vulnerabilities in Source Code Within Two Days</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Enterprise AI</span><span class="when">20&ndash;21 Aug</span></div>
+    <h3>Harvey drops its closed-model-only strategy, launches Tenet &mdash; a legal AI model built on Moonshot's open-weight Kimi K3</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> An OpenAI-backed company betting its core product on post-training a Chinese open-weight base rather than customizing GPT, Claude or Gemini is a concrete signal that rising frontier-model costs are pushing even well-funded application companies toward open weights &mdash; and toward owning their own model layer.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Harvey announced Tenet, its first in-house post-trained model, built on Moonshot AI's open-weight Kimi K3 base using asynchronous reinforcement learning over synthetic data, publicly available legal data and human expert annotations. Harvey says Tenet performs competitively against frontier closed models from Anthropic, OpenAI and Google on legal agent and knowledge benchmarks. Until now Harvey's product was built by customizing those firms' proprietary models for legal work; co-founder Gabe Pereyra said Tenet could eventually let individual law firms train custom models on their own institutional knowledge, pushing Harvey further toward a professional-services model rather than a pure model-wrapper.</p>
+        <ul class="sources">
+          <li><a href="https://www.law.com/legaltechnews/2026/08/20/harvey-introduces-tenet-its-first-post-trained-ai-model-for-legal-/">Law.com: Harvey Introduces Tenet, Its First Post-Trained AI Model for Legal</a></li>
+          <li><a href="https://dataconomy.com/2026/08/21/openai-backed-harvey-launches-new-legal-model-based-on/">Dataconomy: OpenAI-backed Harvey Launches New Legal Model Based on Kimi K3 System</a></li>
+          <li><a href="https://www.harvey.ai/blog/post-training-update-harvey-tenet">Harvey: Update on Harvey's Post-Training Effort</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy &amp; Markets</span><span class="when">20&ndash;21 Aug</span></div>
+    <h3>Nvidia denies plans to ship a China-specific AI chip by year-end, disputing a report citing its own employees</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The flat denial &mdash; against a report citing two named-role employees and claimed customer orders &mdash; shows how sensitive any hint of a China-tailored product line is right now, sitting on top of an export-control regime that only recently let Nvidia resume H200 shipments to a handful of approved Chinese buyers.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Information reported, citing two Nvidia employees, that the company planned small-batch shipments by year-end of an AI chip &mdash; a language processing unit built on technology from its Groq-adjacent LPU work &mdash; tailored for Chinese customers, with several customers said to have already placed orders. Nvidia issued a flat denial: "The reporting in The Information on Nvidia's LPU is incorrect. We have no LPU sales in the China market today, and no China-specific LPU product in our roadmap." The dispute comes weeks after Washington's May approval let a limited group of Chinese firms &mdash; including Alibaba, Tencent and ByteDance &mdash; begin receiving H200 shipments, and after CEO Jensen Huang said in May that Nvidia had "largely conceded" China's AI chip market to Huawei.</p>
+        <ul class="sources">
+          <li><a href="https://www.investing.com/news/stock-market-news/nvidia-to-ship-ai-chip-for-china-by-yearend-the-information-reports-4870258">Investing.com (Reuters): Nvidia to ship AI chip for China by year-end, The Information reports</a></li>
+          <li><a href="https://www.tomshardware.com/tech-industry/semiconductors/nvidia-denies-report-it-will-ship-groq-based-lpus-to-china-by-year-end">Tom's Hardware: Nvidia denies report it will ship Groq-based LPUs to China by year-end</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets &amp; Robotics</span><span class="when">20 Aug</span></div>
+    <h3>Global humanoid robot shipments nearly quadruple in H1 2026, with China holding 97% of supply</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The mix has flipped from novelty to utility &mdash; more than 70% of shipped units now go into industrial and commercial deployments rather than demos &mdash; and the concentration of both manufacturing and buying in China means most of the humanoid-robot learning curve is currently accruing to Chinese firms, led by AgiBot's overtake of Unitree.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Counterpoint Research puts global humanoid robot shipments up nearly 300% year-over-year in H1 2026 to more than 22,000 units; a separate tracker from Smart Analytics Global puts the figure at 19,100 units, up 272% from 5,100 a year earlier &mdash; the gap reflects differing methodologies, but both show the same order-of-magnitude surge. Chinese vendors shipped roughly 97% of units and Chinese buyers absorbed about 85% of demand; AgiBot overtook Unitree as the leading vendor, with the two together controlling around 75% of shipments. Smart Analytics Global expects full-year 2026 shipments to approach 60,000 units, on a trajectory toward roughly half a million by 2030.</p>
+        <ul class="sources">
+          <li><a href="https://counterpointresearch.com/en/insights/global-humanoid-robot-shipments-soar-nearly-300-percent-yoy-in-h1-2026">Counterpoint Research: Global Humanoid Robot Shipments Soar Nearly 300% YoY in H1 2026</a></li>
+          <li><a href="https://www.forbes.com/sites/johnkoetsier/2026/08/20/humanoid-robot-shipments-up-300-up-to-30000-so-far-in-2026/">Forbes: Humanoid Robot Shipments Up 300%: Up To 30,000 So Far In 2026</a></li>
+          <li><a href="https://technode.com/2026/08/11/chinese-makers-accounted-for-more-than-97-of-global-humanoid-robot-shipments-in-h1-2026/">TechNode: Chinese Makers Accounted for More Than 97% of Global Humanoid Robot Shipments in H1 2026</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 22 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
