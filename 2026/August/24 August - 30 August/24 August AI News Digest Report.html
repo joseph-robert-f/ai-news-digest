@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 24 August 2026</title>
+  <meta name="description" content="OpenAI brings ChatGPT ads to 31 European markets, Waymo discloses its first custom silicon to cut Nvidia dependence, a mystery 'Ox Alpha' model fingerprinted as a Zhipu GLM variant tops coding benchmarks, and CISA flags four actively-exploited critical flaws across Windows, SharePoint, vCenter and macOS.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>24 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24&ndash;48 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>OpenAI brings ChatGPT ads to 31 European markets starting today,</strong> its biggest ad-business expansion since the US pilot launched six months ago.</li>
+      <li><strong>Waymo discloses its first custom silicon:</strong> a 5nm, 1,000+ TOPS ASIC now riding in every new robotaxi, cutting its reliance on third-party chips including Nvidia's.</li>
+      <li><strong>A free, anonymous "stealth" model called Ox Alpha is topping coding benchmarks on OpenRouter;</strong> independent fingerprinting points to a next-gen Zhipu GLM variant, but it remains officially unconfirmed.</li>
+      <li><strong>CISA flags four actively-exploited critical flaws</strong> &mdash; a wormable Windows IKE bug, SharePoint auth bypass, VMware vCenter path traversal and a macOS auth flaw &mdash; all scoring 9.1+.</li>
+      <li><strong>xAI's Grok 4.6 lands on Google's Enterprise Agent Platform,</strong> the same week Next.js and Kubernetes both queue critical-fix and GA releases for August 26.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets &amp; Policy</span><span class="when">24 Aug</span></div>
+    <h3>OpenAI expands ChatGPT ads to 31 European markets, its biggest ad rollout yet</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Six months after quietly testing ads in the US, OpenAI is now monetizing free-tier ChatGPT usage across a continent with stricter privacy law &mdash; a concrete signal that advertising, not just subscriptions, is becoming a core revenue lever for the company as it burns cash on compute.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Starting August 24, ChatGPT ads roll out to 31 European markets including Germany, France, Spain, Italy, Poland, the Benelux countries and the Nordics. Ads appear only for users on the Free and Go tiers &mdash; Plus, Pro and Enterprise stay ad-free &mdash; and OpenAI says ads are visually separated from ChatGPT's own responses and that advertisers get no access to users' chat histories. Initial ad-buying runs through OpenAI's own Ads Solutions team and agency/technology partners, with self-serve access via Ads Manager planned for later this year; OpenAI says its privacy approach has been adapted to meet GDPR requirements.</p>
+        <ul class="sources">
+          <li><a href="https://openai.com/index/chatgpt-ads-expands-across-europe/">OpenAI: ChatGPT Ads expands across Europe</a></li>
+          <li><a href="https://www.adweek.com/media/openai-is-taking-its-ad-business-to-31-new-european-markets/">Adweek: OpenAI Is Taking Its Ad Business to 31 New European Markets</a></li>
+          <li><a href="https://searchengineland.com/chatgpt-ads-are-expanding-to-31-european-countries-485468">Search Engine Land: ChatGPT Ads are expanding to 31 European countries</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">AI Infrastructure &amp; Robotics</span><span class="when">20&ndash;23 Aug</span></div>
+    <h3>Waymo discloses its first custom chip, a 5nm ASIC now riding in every new robotaxi</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is Alphabet extending its custom-silicon playbook &mdash; already proven with TPUs &mdash; into physical autonomy, diversifying Waymo's compute supply away from third-party vendors including Nvidia and giving it direct control over the performance-per-watt tradeoffs that matter for a car that has to compute in real time on a power budget.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Waymo revealed a purpose-built 5-nanometer ASIC, fabricated by TSMC, that pre-processes raw sensor data before it reaches the core self-driving "brain" &mdash; delivering more than 1,000 TOPS of processing power, which Waymo says matches current Nvidia automotive-compute performance levels. Each robotaxi carries two of the chips for redundancy so the vehicle can still operate safely if one fails. The chip is already shipping inside Waymo's newest vehicle, the Ojai, now available to riders across San Francisco, Phoenix and Los Angeles. Waymo frames the move explicitly as reducing dependence on third-party silicon suppliers as it scales toward profitability.</p>
+        <ul class="sources">
+          <li><a href="https://www.bloomberg.com/news/articles/2026-08-20/google-s-waymo-has-built-a-custom-chip-for-its-robotaxis">Bloomberg: Alphabet's Waymo Has Built a Custom Chip for Its Robotaxis</a></li>
+          <li><a href="https://techcrunch.com/2026/08/23/techcrunch-mobility-the-custom-chip-driving-waymos-robotaxi-ambitions/">TechCrunch: The custom chip driving Waymo's robotaxi ambitions</a></li>
+          <li><a href="https://www.semafor.com/article/08/21/2026/waymo-builds-custom-chip-for-robotaxi-fleet">Semafor: Waymo builds custom chip for robotaxi fleet</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">AI Research &amp; Models</span><span class="when">20&ndash;23 Aug</span></div>
+    <h3>A free, anonymous "Ox Alpha" model is topping coding benchmarks &mdash; fingerprinting points to Zhipu, but nobody's confirmed it</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Stealth releases let labs gather real-world usage data before a launch commits them to a brand and a price &mdash; a pattern every one of the last four such releases has come from a Chinese lab &mdash; and the viral benchmark number driving the frenzy is a 10-task user test, not an audited result, a useful reminder to separate signal from social-media momentum.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Ox Alpha appeared on OpenRouter and OpenCode around August 20 under no company name, accepting text, image and video input with a million-token context window, and is free to use through August 27. The claim spreading fastest &mdash; that it scores above 80% on DeepSWE software-engineering tasks versus roughly 65% for Claude and 52% for GPT-5.6 Sol &mdash; comes from an unaudited 10-task user test, not a published leaderboard. Independent researchers have since gone beyond vibes-based guessing: serving-layer forensics, including a Java stack trace naming Zhipu AI's internal API classes, an error-code dialect matching Zhipu's GLM models, and tokenizer fingerprint matches across 30 of 30 probes, point with roughly 90% confidence to an unreleased Zhipu GLM variant served through Z.ai infrastructure. Neither Zhipu nor OpenRouter has confirmed or denied the attribution on the record.</p>
+        <ul class="sources">
+          <li><a href="https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/">TechCrunch: Who's behind the new 'stealth model' Ox Alpha?</a></li>
+          <li><a href="https://www.orcarouter.ai/blog/ox-alpha-stealth-model-what-we-know">OrcaRouter: Ox Alpha likely GLM-5.3 &mdash; the mystery model's fingerprint</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">18&ndash;21 Aug</span></div>
+    <h3>CISA flags four actively-exploited critical flaws in Windows, SharePoint, VMware vCenter and macOS</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Three of the four score a critical 9.8, and the Windows flaw needs no authentication at all &mdash; an unauthenticated attacker can get SYSTEM-level code execution on any machine that answers IKE traffic, which is exactly the kind of wormable bug that turns a single unpatched host into a fleet-wide incident.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>CISA added four vulnerabilities to its Known Exploited Vulnerabilities catalog on August 18 based on evidence of active exploitation: CVE-2026-33824 (a double-free in Microsoft's Internet Key Exchange service that allows unauthenticated remote code execution as SYSTEM), CVE-2026-55040 (a SharePoint weak-authentication bypass), CVE-2026-59310 (a Broadcom VMware vCenter path-traversal flaw) and CVE-2026-65400 (an Apple macOS improper-authentication issue). Federal agencies were required to patch by August 21 under CISA's binding directive; all four are now considered frequent attack vectors for opportunistic and targeted intrusions alike, and organizations running any of the affected products outside the federal deadline should treat patching as urgent.</p>
+        <ul class="sources">
+          <li><a href="https://www.cisa.gov/news-events/alerts/2026/08/18/cisa-adds-four-known-exploited-vulnerabilities-catalog">CISA: CISA Adds Four Known Exploited Vulnerabilities to Catalog</a></li>
+          <li><a href="https://thehackernews.com/2026/08/critical-macos-sharepoint-vcenter-and.html">The Hacker News: Critical macOS, SharePoint, vCenter, and Microsoft IKE Flaws Under Active Exploitation</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">AI Platforms</span><span class="when">21&ndash;22 Aug</span></div>
+    <h3>xAI's Grok 4.6 lands on Google's Enterprise Agent Platform as a partner model</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A rival frontier lab's model now sits inside Google's own managed enterprise platform, alongside Gemini &mdash; letting customers already built on Google Cloud call Grok with unified billing and governance rather than standing up a separate xAI account, which is a small but real concession that platform reach now matters as much as any single model's benchmark scores.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Grok 4.6 &mdash; xAI's flagship model for coding, agentic work and long-running tasks, with a 500k context window and configurable reasoning effort levels &mdash; became available in preview through Model Garden on Google's Enterprise Agent Platform (Vertex AI) on August 21. It's accessed as a partner model via an OpenAI-compatible API, including the Responses and Chat Completions endpoints, giving Google Cloud customers enterprise security, governance and unified billing without a separate xAI integration.</p>
+        <ul class="sources">
+          <li><a href="https://x.ai/news/grok-4-6-vertex-ai">xAI: Grok 4.6 on Google Enterprise Agent Platform</a></li>
+          <li><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/grok/grok-4-6">Google Cloud Documentation: Grok 4.6 | Gemini Enterprise Agent Platform</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer Platforms</span><span class="when">Ships 26 Aug</span></div>
+    <h3>Next.js pre-announces a critical-severity security release, giving teams a week's notice before the patch lands</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Vercel is following the same advance-notice pattern it used for prior Next.js security releases &mdash; flagging severity and a firm patch date before publishing exploit details &mdash; which gives teams running Next.js in production a concrete window to plan an upgrade before the vulnerability itself becomes public.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Vercel announced that a scheduled Next.js security release landing August 26 will patch one critical-severity vulnerability, shipping as versions 16.3.3 and 15.5.24. The full advisory &mdash; including impact, affected version ranges and upgrade instructions &mdash; publishes alongside the patched releases rather than in advance, consistent with how Vercel has handled prior Next.js security disclosures this year (including a January denial-of-service issue and a May RCE-class vulnerability). Teams on 16.3.x or 15.5.x should plan to upgrade promptly once the release goes out.</p>
+        <ul class="sources">
+          <li><a href="https://nextjs.org/blog/upcoming-nextjs-security-release-august-2026">Next.js: Upcoming Next.js August Security Release</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer Platforms</span><span class="when">Ships 26 Aug</span></div>
+    <h3>Kubernetes v1.37 ships this week with the Metrics API reaching general availability</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The Metrics API underpins autoscaling and resource-visibility tooling that most clusters already depend on informally; graduating it to GA after years in beta gives operators a stable, supported contract to build on rather than relying on an interface that could still change.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Kubernetes 1.37, scheduled for release on August 26, brings the Metrics API to general availability, alongside pod eviction coordination improvements and alpha-stage support for binding service account tokens to webhook configurations. The release also deprecates the <code>--filename</code>/<code>-f</code> flag for <code>kubectl run</code>. It's a routine quarterly release rather than a single flagship feature drop, but the Metrics API graduation closes out a long-running beta that many cluster-autoscaling and observability tools have quietly depended on for years.</p>
+        <ul class="sources">
+          <li><a href="https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/">Kubernetes Blog: Kubernetes v1.37 Sneak Peek</a></li>
+          <li><a href="https://kubernetes.io/releases/">Kubernetes: Releases</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 24 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
