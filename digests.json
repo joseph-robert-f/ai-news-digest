@@ -1,7 +1,16 @@
 {
-  "generated": "2026-08-23T10:45:39.512Z",
-  "count": 62,
+  "generated": "2026-08-24T10:52:55.746Z",
+  "count": 63,
   "digests": [
+    {
+      "date": "2026-08-24",
+      "title": "AI News Digest — 24 August 2026",
+      "path": "2026/August/24 August - 30 August/24 August AI News Digest Report.html",
+      "year": 2026,
+      "month": "August",
+      "week": "24 August - 30 August",
+      "summary": "OpenAI brings ChatGPT ads to 31 European markets, Waymo discloses its first custom silicon to cut Nvidia dependence, a mystery 'Ox Alpha' model fingerprinted as a Zhipu GLM variant tops coding benchmarks, and CISA flags four actively-exploited critical flaws across Windows, Sh…"
+    },
     {
       "date": "2026-08-23",
       "title": "AI News Digest — 23 August 2026",
