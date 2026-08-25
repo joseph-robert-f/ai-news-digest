@@ -1,7 +1,16 @@
 {
-  "generated": "2026-08-24T10:52:55.746Z",
-  "count": 63,
+  "generated": "2026-08-25T10:46:30.978Z",
+  "count": 64,
   "digests": [
+    {
+      "date": "2026-08-25",
+      "title": "AI News Digest — 25 August 2026",
+      "path": "2026/August/24 August - 30 August/25 August AI News Digest Report.html",
+      "year": 2026,
+      "month": "August",
+      "week": "24 August - 30 August",
+      "summary": "Alabama's AG subpoenas OpenAI over its own model's hack of Hugging Face, Hugging Face itself reportedly fields a $13B+ buyout, Nvidia warns of 15%+ AI server price hikes on memory costs, and CISA adds two more max-severity actively-exploited flaws in Oracle WebLogic and Zimbra."
+    },
     {
       "date": "2026-08-24",
       "title": "AI News Digest — 24 August 2026",
