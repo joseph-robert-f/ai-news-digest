@@ -1,7 +1,16 @@
 {
-  "generated": "2026-08-25T10:46:30.978Z",
-  "count": 64,
+  "generated": "2026-08-26T10:44:01.927Z",
+  "count": 65,
   "digests": [
+    {
+      "date": "2026-08-26",
+      "title": "AI News Digest — 26 August 2026",
+      "path": "2026/August/24 August - 30 August/26 August AI News Digest Report.html",
+      "year": 2026,
+      "month": "August",
+      "week": "24 August - 30 August",
+      "summary": "OpenAI's homegrown Jalape&ntilde;o chip posts benchmark-beating inference numbers, a critical Gitea RCE joins CISA's must-patch list, Thomson Reuters and Google both ship competing legal-AI platforms the same week, and Anthropic hires Google's TPU founder to build its own sili…"
+    },
     {
       "date": "2026-08-25",
       "title": "AI News Digest — 25 August 2026",
