@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 26 August 2026</title>
+  <meta name="description" content="OpenAI's homegrown Jalape&ntilde;o chip posts benchmark-beating inference numbers, a critical Gitea RCE joins CISA's must-patch list, Thomson Reuters and Google both ship competing legal-AI platforms the same week, and Anthropic hires Google's TPU founder to build its own silicon.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>26 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24&ndash;48 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>OpenAI unveils Jalapeño,</strong> its first custom inference chip built with Broadcom, claiming up to 1.9x more work per watt and 3.6x lower latency than existing systems on independent benchmarks.</li>
+      <li><strong>A critical, actively-exploited Gitea RCE</strong> (CVSS 9.8) joins CISA's must-patch list &mdash; any self-registered user can trigger it, and federal agencies have until August 28.</li>
+      <li><strong>Thomson Reuters and Google both shipped competing legal-AI platforms this week,</strong> betting on opposite strategies: proprietary data versus flexible multi-model orchestration.</li>
+      <li><strong>Anthropic hires Amir Salek,</strong> the founder of Google's TPU program, adding to a pattern of frontier labs building in-house chips rather than depending solely on Nvidia.</li>
+      <li><strong>A headless Chinese robot breaks the human 100m world record,</strong> running 8.86 seconds at Beijing's World Humanoid Robot Games &mdash; beating its own record from three days earlier.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">AI Infrastructure</span><span class="when">25 Aug</span></div>
+    <h3>OpenAI ships its first custom inference chip, Jalapeño, with benchmarks beating Nvidia, AMD and Google silicon</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> OpenAI is no longer just a model company buying compute &mdash; it's now shipping its own inference silicon with third-party benchmarks that beat incumbent GPU vendors on throughput-per-watt, underscoring that custom hardware has become core, not optional, to frontier-lab economics as Nvidia's own prices climb.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI published first benchmark results for Jalapeño, an inference-optimized chip co-designed with Broadcom, on August 25. Tested across GPT-OSS 120B, DeepSeek R1 and Kimi K2.5 1T, and independently verified on SemiAnalysis's InferenceX benchmark, the chip delivered up to 1.9x more work per watt and 3.6x lower latency than existing systems, registering more tokens per user and more throughput per kilowatt than currently available state-of-the-art inference processors. The design minimizes data movement by keeping model state, including the KV cache, local to the compute doing the work. OpenAI plans to deploy Jalapeño into its own infrastructure by year-end.</p>
+        <ul class="sources">
+          <li><a href="https://openai.com/index/jalapeno-first-results/">OpenAI: Jalapeño's first results show industry-leading speed and efficiency in AI inference</a></li>
+          <li><a href="https://techcrunch.com/2026/08/25/openais-jalapeno-chip-is-built-for-fast-inference-at-scale-benchmarks-show/">TechCrunch: OpenAI's Jalapeño chip is built for fast inference at scale, benchmarks show</a></li>
+          <li><a href="https://www.freepressjournal.in/tech/we-made-a-chip-and-it-is-fast-openai-unveils-jalapeno-ai-inference-chip-with-major-gains-in-speed-latency-and-power-efficiency">Free Press Journal: OpenAI unveils Jalapeño AI inference chip with major gains in speed, latency and power efficiency</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">25 Aug</span></div>
+    <h3>Critical, actively-exploited Gitea RCE joins CISA's Known Exploited Vulnerabilities catalog</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A CVSS 9.8 bug that any self-registered user can trigger on self-hosted Gitea instances (a popular self-hosted alternative to GitHub/GitLab) is now confirmed under active exploitation with a cryptominer payload &mdash; teams running Gitea internally need to patch immediately, not on the usual cadence.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>CVE-2026-60004 lets an attacker with ordinary repository write access execute arbitrary shell commands as the Gitea OS user, by abusing the diffpatch endpoint to install and run a malicious Git hook from repository-controlled content. Because Gitea ships with open registration by default, an unauthenticated visitor can obtain the required write access simply by signing up and creating a repository. The flaw affects all versions from 1.17 onward and is patched in 1.27.1. CISA added it to its Known Exploited Vulnerabilities catalog on August 25 after a developer reported a real-world attack that deployed a cryptocurrency-miner-like dropper; federal agencies have until August 28 to remediate.</p>
+        <ul class="sources">
+          <li><a href="https://www.cisa.gov/news-events/alerts/2026/08/25/cisa-adds-one-known-exploited-vulnerability-catalog">CISA: CISA Adds One Known Exploited Vulnerability to Catalog</a></li>
+          <li><a href="https://thehackernews.com/2026/08/critical-gitea-rce-actively-exploited.html">The Hacker News: Critical Gitea RCE Actively Exploited as Reported Attack Drops Miner-Like Payload</a></li>
+          <li><a href="https://www.securityweek.com/cisa-warns-of-exploited-gitea-vulnerability/">SecurityWeek: CISA Warns of Exploited Gitea Vulnerability</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Enterprise AI</span><span class="when">24&ndash;25 Aug</span></div>
+    <h3>Thomson Reuters and Google both launch competing legal-AI platforms in the same week</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Two very different bets on the same market, in the same week &mdash; Thomson Reuters betting proprietary data moats win, Google betting flexible multi-model orchestration wins &mdash; is an early test of which strategy actually captures enterprise legal budgets, with implications for how other vertical incumbents think about build-versus-integrate.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Thomson Reuters launched Thomson, its first proprietary large language model, on August 24 &mdash; trained from an open-source base on decades of Westlaw, Practical Law and news content, backed by a $40M compute-and-talent investment. It initially powers Tabular Analysis, a high-volume document-review feature inside CoCounsel Legal, while the company continues running frontier models from OpenAI and Anthropic elsewhere. A day later, Google rolled out Gemini Enterprise for Legal, which plugs into legal-tech systems via MCP integrations (including iManage, Harvey, RelativityOne and Thomson Reuters itself) and adds agents for drafting, research and matter management; early adopters include Cleary Gottlieb, Freshfields, Weil and Williams &amp; Connolly.</p>
+        <ul class="sources">
+          <li><a href="https://www.thomsonreuters.com/en/press-releases/2026/august/thomson-reuters-leverages-its-world-class-data-assets-to-launch-its-own-frontier-model">Thomson Reuters: Thomson Reuters Leverages its World-Class Data Assets to Launch Its Own Frontier Model</a></li>
+          <li><a href="https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-for-legal">Google Cloud Blog: Introducing Gemini Enterprise for Legal</a></li>
+          <li><a href="https://www.lawnext.com/2026/08/thomson-reuters-launches-thomson-its-own-proprietary-llm-trained-on-westlaw-and-practical-law-content.html">LawSites: Thomson Reuters Launches Thomson, Its Own Proprietary LLM</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets &amp; Infrastructure</span><span class="when">21&ndash;22 Aug</span></div>
+    <h3>Anthropic hires Google's TPU program founder as frontier labs race to build their own chips</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> OpenAI shipping Jalapeño, Nvidia countering with faster inference silicon of its own, and now Anthropic recruiting the person who built Google's entire TPU line &mdash; the frontier labs are converging on internalizing chip design rather than depending solely on Nvidia, a multi-year bet that will reshape Nvidia's own customer base by the end of the decade.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Anthropic has hired Amir Salek, who founded and ran Google's TPU program through seven chip generations until leaving in 2022, to join its compute team reporting to James Bradbury. Anthropic currently sources chips from Nvidia, Google and Amazon and has already signed a $250M order with UK chip startup Fractile; the Salek hire signals a more serious in-house semiconductor push as the company builds out roughly $71B in compute commitments and competes with OpenAI's Broadcom-designed Jalapeño chip.</p>
+        <ul class="sources">
+          <li><a href="https://www.bloomberg.com/news/articles/2026-08-21/anthropic-taps-google-chip-veteran-as-part-of-push-into-hardware">Bloomberg: Anthropic Taps Google Chip Veteran as Part of Push Into Hardware</a></li>
+          <li><a href="https://finance.yahoo.com/technology/ai/articles/anthropic-taps-google-chip-veteran-195955567.html">Yahoo Finance: Anthropic Taps Google Chip Veteran as Part of Push Into Hardware</a></li>
+          <li><a href="https://fourweekmba.com/ai-anthropic-amir-salek-tpu-chip-compute-strategy/">FourWeekMBA: Anthropic Hires the Founder of Google's TPU Program</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Hardware &amp; Markets</span><span class="when">24 Aug</span></div>
+    <h3>Nvidia's Groq 3 LPX inference accelerator enters full production, extending Vera Rubin for agentic workloads</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Record token-generation speed shows Nvidia responding directly to specialized-inference challengers by folding that speed into its own roadmap &mdash; reinforcing platform lock-in even as memory-driven price hikes push some buyers toward custom ASICs.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>At Hot Chips 2026, Nvidia announced that Groq 3 LPX &mdash; a dedicated inference accelerator built from its $20B Groq acquisition &mdash; has entered full production and slots into the Vera Rubin NVL72 platform, with up to 256 LPX accelerators per rack. Nvidia says the combination delivers up to 35x higher inference throughput per megawatt for latency-sensitive agentic workloads, and cited a record 3,400 output tokens per second in Artificial Analysis benchmarking on the open-source Gemma 4 31B model with a 100,000-token context. Separately, Nvidia detailed its Vera CPU architecture (88 custom Olympus cores across six chiplets), which it claims delivers roughly 1.8x speedup on agentic workloads versus Grace Blackwell.</p>
+        <ul class="sources">
+          <li><a href="https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/">NVIDIA Blog: With Groq 3 LPX in Full Production, NVIDIA Extends Vera Rubin Inference for Agents</a></li>
+          <li><a href="https://siliconangle.com/2026/08/24/nvidias-dedicated-inference-accelerator-groq-3-lpx-enters-full-production-to-supercharge-ai-agents/">SiliconANGLE: Nvidia's dedicated inference accelerator Groq 3 LPX enters full production</a></li>
+          <li><a href="https://www.servethehome.com/nvidia-vera-rubin-nvl72-rack-at-hot-chips-2026/">ServeTheHome: NVIDIA Vera Rubin NVL72 Rack at Hot Chips 2026</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer Platforms</span><span class="when">24&ndash;25 Aug</span></div>
+    <h3>OpenAI reinstates the 5-hour Codex and ChatGPT Work usage cap for Plus subscribers</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Teams that scaled agentic coding workflows onto ChatGPT Plus during the unrestricted weeks need to revisit those plans &mdash; a reminder that "unlimited" agentic-coding access on lower-tier plans is elastic to OpenAI's compute constraints, not a stable baseline to build around.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI's technical lead for Codex and ChatGPT Work, Thibault Sottiaux, announced on August 24 that the five-hour usage cap on Codex and ChatGPT Work is returning for $20/month ChatGPT Plus subscribers starting August 25, ending a temporary relaxation that began in July. OpenAI said the cap helps "smoothen the load" on compute while keeping weekly quotas generous, and that some Plus users had been accidentally exhausting a full week's allowance in one sitting. The $100 Pro and $200 Pro tiers remain exempt from the five-hour limit for the coming months.</p>
+        <ul class="sources">
+          <li><a href="https://9to5mac.com/2026/08/24/openai-restores-5-hour-codex-and-work-limits-for-chatgpt-plus-users/">9to5Mac: OpenAI restores 5-hour Codex and Work limits for ChatGPT Plus users</a></li>
+          <li><a href="https://en.shiftdelete.net/openai-reintroduces-5-hour-codex-limit-for-chatgpt-plus-users/">ShiftDelete.Net: OpenAI Reintroduces 5-Hour Codex Limit for ChatGPT Plus Users</a></li>
+          <li><a href="https://www.ithinkdiff.com/openai-codex-five-hour-limit/">iThinkDiff: OpenAI Restores Five-Hour Codex Limit for ChatGPT Plus on August 25</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Research &amp; Robotics</span><span class="when">22&ndash;25 Aug</span></div>
+    <h3>A headless Chinese robot breaks the human 100m world record at Beijing's humanoid games</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The headline is viral, but the underlying signal &mdash; a robot maker treating competitive athletics as a public R&amp;D benchmark and shaving its own record by half a second every few days &mdash; shows how fast the actuator and control-stack progress is compounding, at a pace increasingly relevant to industrial and logistics deployment timelines.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Tiangong Ultra, a headless humanoid built by the Beijing Humanoid Robot Innovation Center, ran the 100m in 8.86 seconds on August 25 at the second World Humanoid Robot Games in Beijing, lowering its own 9.39-second mark set just three days earlier at the event's opening. Both times beat the men's 9.58-second world record set by Usain Bolt in 2009. The games, an Olympic-style competition, featured more than 2,000 robots across 1,300+ events including sprinting, long jump and table tennis &mdash; alongside less flattering moments, including a robot that caught fire after colliding with an obstacle during the same 100m event.</p>
+        <ul class="sources">
+          <li><a href="https://www.usnews.com/news/business/articles/2026-08-25/a-chinese-humanoid-robot-sets-a-new-100-meter-sprint-record-at-beijing-games">AP via US News: A Chinese humanoid robot sets a new 100-meter sprint record at Beijing Games</a></li>
+          <li><a href="https://www.aljazeera.com/sports/2026/8/25/chinese-robot-tiangong-clocks-sub-9-second-100-metres-in-beijing">Al Jazeera: Chinese robot Tiangong clocks sub-9-second 100 metres in Beijing</a></li>
+          <li><a href="https://news.cgtn.com/news/2026-08-26/Chinese-humanoid-robot-sprints-100m-in-8-86-seconds-breaks-own-record-1PV0aSpZ91S/p.html">CGTN: Chinese humanoid robot sprints 100m in 8.86 seconds, breaks own record</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 26 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
