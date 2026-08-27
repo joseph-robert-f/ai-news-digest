@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 27 August 2026</title>
+  <meta name="description" content="Nvidia posts a record $96.2B quarter but the stock shrugs while supply commitments double on memory costs, Nvidia reportedly agrees to buy Hugging Face for $12.9B, Salesforce and CrowdStrike pop on AI-driven beats, Meta settles a 29-state teen-safety suit for $16.68B while prepping a $200/month agent, and Sam Altman tells Time OpenAI expects an internal AGI system by year-end.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>27 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24&ndash;48 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Nvidia posts a record $96.2B quarter and the stock barely moves,</strong> as supply commitments more than double to $279B quarter-over-quarter &mdash; mostly for memory.</li>
+      <li><strong>Nvidia reportedly agrees to buy Hugging Face for $12.9B,</strong> which would hand it the default distribution hub for open-weight AI.</li>
+      <li><strong>Salesforce and CrowdStrike pop double digits on AI-driven earnings beats,</strong> a sharp contrast to Nvidia's muted reaction the same week.</li>
+      <li><strong>Meta agrees to pay $16.68B</strong> and rebuild teen-safety guardrails to end a 29-state addiction lawsuit, while prepping a $199.99/month "Hatch" AI agent.</li>
+      <li><strong>Sam Altman tells Time OpenAI expects an internal "AGI" system by year-end,</strong> built around its Astra research agent, alongside a Q4 IPO target.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets &amp; Infrastructure</span><span class="when">26 Aug</span></div>
+    <h3>Nvidia posts a record $96.2B quarter, but Wall Street reads the fine print instead of the top line</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Nvidia beat on revenue and data-center sales again, but the number that moved analysts wasn't the top line &mdash; it was supply commitments more than doubling quarter-over-quarter, driven largely by memory procurement, while the stock traded roughly flat despite the beat. The market is starting to price the memory and supply-chain squeeze as the real constraint on AI capex, not GPU demand.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Nvidia's Q2 fiscal 2027 results (quarter ended July 26): revenue of $96.2B, up 18% sequentially and 106% year-over-year; GAAP and non-GAAP gross margins of 75.0%; GAAP EPS of $2.46 and non-GAAP EPS of $2.22. Data center revenue hit $89B, above the $86.33B analyst estimate and up 117% year-over-year, now 92% of total sales. Guidance for the current quarter came in at roughly $108B, plus or minus 2%. The standout line item was supply commitments, which jumped from $119B last quarter to $279B, which Nvidia said was "primarily related to the procurement of memory." Shares were down roughly 1% despite the beat.</p>
+        <ul class="sources">
+          <li><a href="https://www.globenewswire.com/news-release/2026/08/26/3351702/0/en/nvidia-announces-financial-results-for-second-quarter-fiscal-2027.html">NVIDIA (GlobeNewswire): Announces Financial Results for Second Quarter Fiscal 2027</a></li>
+          <li><a href="https://www.cnbc.com/2026/08/26/nvidia-nvda-earnings-report-q2-2027-live-updates.html">CNBC: Nvidia (NVDA) Q2 2027 earnings report: Live updates</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">M&amp;A</span><span class="when">26&ndash;27 Aug</span></div>
+    <h3>Nvidia reportedly agrees to buy Hugging Face for $12.9 billion</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If it closes, Nvidia would own the default distribution hub for open-weight models and datasets that rival chipmakers and labs treat as neutral infrastructure &mdash; extending its grip from the compute layer into the model-distribution layer at nearly 3x Hugging Face's last funding valuation.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Information first reported Wednesday night that Nvidia has agreed to buy Hugging Face for $12.9B, citing a person familiar with the matter; CNBC, TechCrunch and other outlets have corroborated the report, but neither Nvidia nor Hugging Face has confirmed a signed agreement, and talks could still fall apart. The deal follows earlier reporting over the weekend of August 22&ndash;23 that Hugging Face was fielding buyout interest at $13B+. Hugging Face last raised money in 2023 at a $4.5B valuation in a round led by Salesforce Ventures, and had earlier this year turned down a $500M Nvidia investment at a $7B valuation, saying it didn't want a single dominant investor.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/08/27/nvidia-hugging-face-acquisition.html">CNBC: Nvidia agrees to buy Hugging Face for $12.9 billion, report says</a></li>
+          <li><a href="https://techcrunch.com/2026/08/26/nvidia-closes-in-on-hugging-face-acquisition/">TechCrunch: Nvidia closes in on Hugging Face acquisition</a></li>
+          <li><a href="https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/">TechCrunch: Hugging Face reportedly in talks to be acquired for $13B</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">26&ndash;27 Aug</span></div>
+    <h3>Salesforce and CrowdStrike pop double digits the same night Nvidia's stock shrugs</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Enterprise software and security vendors are starting to show AI agents converting into new, monetizable revenue rather than just cost-cutting &mdash; the divergence from Nvidia's muted reaction suggests investors are rotating conviction from chip supply toward proof of AI monetization further up the stack.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Salesforce's Q2 FY27 results, reported August 26, showed annualized revenue from its Agentforce AI products topping $1.5B, up 240% year-over-year, with current remaining performance obligation of $33.5B versus $33.22B expected. CrowdStrike beat on both lines &mdash; revenue of $1.47B versus $1.44B expected (up 26% year-over-year), adjusted EPS of $0.31 versus $0.29 expected, net new ARR of $255.8M (up 32%), total ARR of $5.51B, and non-GAAP operating margin expanding to 24% from 18% &mdash; with CEO George Kurtz calling it the company's best quarter ever; the stock rose more than 11% after hours. Okta also rallied on its own results the same night.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/08/26/salesforce-crm-q2-earnings-report-2027.html">CNBC: Salesforce (CRM) Q2 earnings report 2027</a></li>
+          <li><a href="https://www.cnbc.com/2026/08/26/crowdstrike-crwd-earnings-q2-2027.html">CNBC: CrowdStrike (CRWD) earnings Q2 2027</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy &amp; Regulation</span><span class="when">26 Aug</span></div>
+    <h3>Meta agrees to pay $16.68B and rebuild teen guardrails to end a 29-state addiction lawsuit</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> One of the largest consumer-tech settlements ever locks in specific, enforceable product changes &mdash; mandatory overnight access blocks, default daily time caps, blocked notifications during school hours &mdash; turning what had been voluntary "well-being" features into contractual obligations, disclosed mid-trial with Instagram's own chief already having testified.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The settlement, disclosed in a court filing on August 26 during an ongoing federal trial in Oakland, resolves claims from 29 states that Meta engineered Facebook and Instagram to be addictive to children, deceived the public about platform safety, and unlawfully collected data from minors. Required changes include blocking teen access between midnight and 6 a.m., a default two-hour daily time limit, blocking notifications during school hours, prompts after every 15 minutes of continuous use, disabling like-counts and cosmetic-surgery/makeup filters for teen accounts, stronger age verification, and expanded parental controls. Meta denied wrongdoing in agreeing to settle.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/08/26/meta-social-media-trial-settlement.html">CNBC: Meta settles social media addiction case with California, other states for $16.7 billion</a></li>
+          <li><a href="https://www.forbes.com/sites/zacharyfolk/2026/08/26/meta-agrees-to-1668-billion-settlement-in-social-media-addiction-trial/">Forbes: Meta Agrees To $16.68 Billion Settlement In Social Media Addiction Trial</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Product</span><span class="when">25&ndash;26 Aug</span></div>
+    <h3>Meta preps a $199.99/month consumer AI agent, betting subscriptions can outrun ad revenue</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Meta is the last of the big consumer platforms to commit to a paid, task-completing agent tier &mdash; testing whether people will pay premium prices for an agent that books, orders and files tasks across third-party services, just as the company absorbs a $16.68B settlement bill and looks for AI-driven revenue beyond advertising.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Hatch, the consumer-facing version of Meta's internal "OpenClaw" agent, could launch as early as late August or early September, according to internal documents reviewed by The Information. It's designed to complete tasks across services such as DoorDash, Etsy, Reddit, Yelp and Microsoft Outlook, and Meta has considered a premium subscription tier priced as high as $199.99/month for higher usage limits. A new in-house model codenamed "Watermelon" is expected to follow in October as part of the same monetization push.</p>
+        <ul class="sources">
+          <li><a href="https://www.investing.com/news/stock-market-news/meta-to-launch-hatch-ai-agent-platform-in-coming-weeks-the-information-93CH-4874295">Investing.com (citing The Information): Meta to launch Hatch AI agent platform in coming weeks</a></li>
+          <li><a href="https://www.pymnts.com/news/artificial-intelligence/2026/metas-consumer-focused-ai-agent-could-be-weeks-from-launch/">PYMNTS: Meta's Consumer-Focused AI Agent Could Be Weeks From Launch</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">26 Aug</span></div>
+    <h3>CISA's latest must-patch list pairs a new Citrix NetScaler flaw with five vulnerabilities as old as 2015</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A fresh, actively-exploited Citrix NetScaler bug demands patching by August 29, but the unusual inclusion of five long-dormant CVEs is the more important signal &mdash; attackers are still succeeding against legacy, unpatched infrastructure that many teams assumed was no longer a live risk.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>CISA added six CVEs to its Known Exploited Vulnerabilities catalog on August 26. The new one, CVE-2026-8452, is a pre-authentication heap-memory overflow in NetScaler ADC/Gateway's SAML/AAA handling; researchers have already demonstrated a path to pre-auth remote code execution following public proof-of-concept code, with attackers observed dropping web shells. The other five are older bugs resurfacing as actively exploited: CVE-2015-3246 (Red Hat libuser race condition), CVE-2015-5287 (Red Hat ABRT privilege escalation), CVE-2019-1068 (Microsoft SQL Server RCE), CVE-2021-23758 (Ajax.NET Professional deserialization) and CVE-2022-0995 (Linux kernel out-of-bounds write). Federal agencies must remediate the NetScaler flaw by August 29.</p>
+        <ul class="sources">
+          <li><a href="https://www.cisa.gov/news-events/alerts/2026/08/26/cisa-adds-six-known-exploited-vulnerabilities-catalog">CISA: CISA Adds Six Known Exploited Vulnerabilities to Catalog</a></li>
+          <li><a href="https://www.sentinelone.com/vulnerability-database/cve-2026-8452/">SentinelOne: CVE-2026-8452 &mdash; Citrix NetScaler ADC vulnerability database entry</a></li>
+          <li><a href="https://labs.watchtowr.com/youre-back-in-the-room-citrix-netscaler-pre-auth-rce-cve-2026-8452/">watchTowr Labs: You're Back In The Room (Citrix NetScaler Pre-Auth RCE CVE-2026-8452)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">AI Labs</span><span class="when">26 Aug</span></div>
+    <h3>Altman tells Time OpenAI expects an internal "AGI" system by year-end, built around Astra</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is OpenAI's clearest public timeline commitment yet on AGI, tied to a concrete internal system rather than a vague roadmap &mdash; and it lands alongside a visible strategic narrowing, with Sora, the Disney partnership and the Atlas browser being wound down ahead of a targeted Q4 IPO.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>In a Time interview published August 26, Sam Altman said OpenAI would have an internal system by the end of 2026 that meets his definition of AGI &mdash; a highly autonomous system that outperforms humans at most economically valuable work &mdash; while acknowledging OpenAI is "not quite yet" there; chief research officer Mark Chen put the company at "80% of the way." The vehicle for that claim is Astra, described internally as an automated AI research intern capable of coordinating multiple agents to work a research-math problem for days and, in demos, of navigating desktop software to complete work across applications. Altman briefed lawmakers in Washington on Astra's capabilities days before the interview ran. OpenAI is winding down Sora, its Disney content partnership and the Atlas browser to refocus resources, and is targeting a fourth-quarter 2026 IPO.</p>
+        <ul class="sources">
+          <li><a href="https://time.com/article/2026/08/26/openai-sam-altman-interview/">Time: Inside OpenAI's Reboot</a></li>
+          <li><a href="https://the-decoder.com/sam-altman-says-openai-will-have-agi-by-the-end-of-2026-if-you-accept-his-definition/">The Decoder: Sam Altman says OpenAI will have AGI by the end of 2026 if you accept his definition</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 27 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
