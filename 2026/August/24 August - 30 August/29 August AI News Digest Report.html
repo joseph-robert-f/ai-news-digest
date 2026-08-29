@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 29 August 2026</title>
+  <meta name="description" content="A federal judge rules the Pentagon's blacklisting of Anthropic illegal, OpenAI moves to cut off Cursor's model access after its SpaceX acquisition, Nvidia pauses AI-cloud revenue-share financing deals over antitrust concerns, Marvell's record quarter still costs it a 10% stock drop, and a16z raises $1.1B for a fund dedicated to AI's physical buildout.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>29 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24&ndash;48 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>A federal judge rules the Pentagon's blacklisting of Anthropic unlawful,</strong> calling the "supply chain risk" designation illegal retaliation for Anthropic's AI-safety stance and a First Amendment violation.</li>
+      <li><strong>OpenAI moves to cut off Cursor's direct model access on November 12,</strong> ending its partnership with the AI coding tool now that SpaceX owns it, citing past contract friction with Musk-controlled companies.</li>
+      <li><strong>Nvidia pauses its AI-cloud revenue-sharing financing program</strong> after employees flagged antitrust exposure and partners balked at Nvidia dictating which customers could use rented capacity.</li>
+      <li><strong>Marvell posts record $2.74B quarterly revenue but its stock drops 10%,</strong> as thin custom-chip margins and vague timing on its $12.2B Google deal overshadow the beat.</li>
+      <li><strong>a16z raises a $1.1B "Machine Age Fund"</strong> dedicated purely to AI's physical buildout &mdash; chips, memory, networking, data centers and robotics.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy &amp; Law</span><span class="when">28 Aug</span></div>
+    <h3>Federal judge rules the Pentagon's blacklisting of Anthropic was "illegal and baseless"</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is the first time a court has struck down a government attempt to punish an AI lab for refusing a military use case &mdash; a precedent that limits how far agencies can lean on supply-chain-risk designations to retaliate against companies that draw their own safety lines.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>U.S. District Judge Rita Lin issued a 59-page order on August 28 blocking the Department of Defense's designation of Anthropic as a "supply chain risk," a status that had cut the company off from certain military contracts. The designation, ordered by Defense Secretary Pete Hegseth, followed Anthropic's refusal to let the Pentagon use Claude for domestic surveillance or autonomous-weapons applications; it marked the first time a U.S. company had been publicly designated a supply-chain risk under the procurement statute, which is intended to guard against foreign sabotage of military systems. Anthropic sued in March, arguing the move violated its First Amendment right to free speech and its Fifth Amendment right to due process, since it was never given a chance to contest the designation. Judge Lin agreed, writing that "the empty invocation of national security is not a blank check to punish and retaliate against government critics," and finding the Pentagon acted with a "desire to make a public example" of Anthropic. The government is expected to appeal.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/08/28/judge-blocks-pentagon-blacklist--anthropic-.html">CNBC: Judge blocks Pentagon blacklist of Anthropic as supply chain risk</a></li>
+          <li><a href="https://www.nbcnews.com/business/business-news/anthropic-pentagon-blacklist-claude-judge-rcna594825">NBC News: Federal judge blocks Pentagon blacklisting of Anthropic, calling it 'illegal and baseless'</a></li>
+          <li><a href="https://www.aljazeera.com/news/2026/8/28/us-judge-blocks-pentagon-blacklisting-of-ai-firm-anthropic">Al Jazeera: US judge blocks Pentagon blacklisting of AI firm Anthropic</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer Platforms</span><span class="when">28 Aug</span></div>
+    <h3>OpenAI moves to cut off Cursor's model access after SpaceX completes its $60B acquisition</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A huge slice of Cursor's user base builds on OpenAI models by default, and OpenAI just signaled it will pull that access in under three months &mdash; forcing an accelerated migration for developers and turning the Musk-Altman rivalry into a direct disruption of a widely used coding tool.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI announced on August 28 that it is ending its model-supply partnership with Cursor (maker Anysphere) following SpaceX's completed acquisition of the company this month, a deal first announced in April at a $60B all-stock valuation. Under OpenAI's proposal, Cursor's direct access to OpenAI's models would end November 12. OpenAI said its contract allows it to cancel the partnership within a limited window after a change of control, and that it "cannot be confident" SpaceX will use its technology within OpenAI's terms of service, citing its own experience with Musk-controlled companies &mdash; including Twitter/X and xAI &mdash; violating past agreements. OpenAI said it recognizes the decision most directly affects developers who rely on its models inside Cursor and that it is working through the transition.</p>
+        <ul class="sources">
+          <li><a href="https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/">OpenAI: Our decision on Cursor following its acquisition by SpaceX</a></li>
+          <li><a href="https://www.freepressjournal.in/business/openai-to-end-cursor-model-access-after-spacex-acquisition">Free Press Journal: OpenAI To End Cursor Model Access After SpaceX Acquisition</a></li>
+          <li><a href="https://www.emirates247.com/business/openai-to-end-cursor-ai-model-access-after-spacex-acquisition-escalating-musk-altman-clash/5024">Emirates 24|7: OpenAI to end Cursor AI model access after SpaceX acquisition, escalating Musk-Altman clash</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">AI Infrastructure</span><span class="when">27&ndash;29 Aug</span></div>
+    <h3>Nvidia pauses its AI-cloud revenue-sharing financing program amid internal antitrust concerns</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Nvidia's own staff flagged that a financing structure giving it 50% of upside revenue and a say over which customers could use rented capacity looked too much like market control &mdash; a sign that even Nvidia is treading carefully around how deep its leverage over the AI-cloud supply chain can go before regulators take notice.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Wall Street Journal reported that Nvidia has paused some deals under its AI Compute Partnership, a credit program launched less than two months ago to help smaller "neocloud" AI-cloud providers finance GPU purchases. Under the structure, Nvidia agreed to rent back computing capacity a provider couldn't sell itself, splitting revenue above an agreed hourly rate roughly 50/50. Some Nvidia employees warned the arrangement could draw antitrust scrutiny, and early partners objected to the extent of control Nvidia sought, including restrictions on which end customers could use the capacity. Nvidia is said to have stepped back from the initiative last week and could revamp or fold it into another program later; the company has publicly denied fully pausing its cloud-commitments efforts.</p>
+        <ul class="sources">
+          <li><a href="https://money.usnews.com/investing/news/articles/2026-08-27/marvell-technology-forecasts-quarterly-revenue-above-estimates">U.S. News (via Reuters/WSJ reporting): Nvidia Pauses Revenue-Sharing Deals With AI Cloud Companies, WSJ Reports</a></li>
+          <li><a href="https://finance.yahoo.com/technology/ai/articles/nvidia-pauses-ai-cloud-revenue-120700044.html">Yahoo Finance: Nvidia pauses AI cloud revenue-sharing deals over antitrust concerns</a></li>
+          <li><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-denies-pausing-ai-cloud-commitments-initiative-after-reported-partner-backlash-report-claims-company-told-cloud-providers-it-could-only-lease-its-gpus-to-nvidia-approved-customers">Tom's Hardware: Nvidia denies pausing AI cloud commitments initiative after reported partner backlash</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">27&ndash;28 Aug</span></div>
+    <h3>Marvell posts a record quarter but its stock slides 10% on soft guidance and a vague Google timeline</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Custom AI silicon is growing fast for Marvell, but growing fast at lower margins &mdash; and investors punished the stock for exactly the tension Nvidia doesn't have to manage: big hyperscaler design wins that take years to become profitable, with the Google payoff still not itemized.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Marvell reported fiscal Q2 revenue of $2.739B, up 37% year-over-year and a company record, with adjusted EPS of $0.94 beating the $0.92 estimate. Shares still fell more than 10% on August 28 after the company guided third-quarter gross margin to 57.5&ndash;58.5%, down from 58.9% the prior quarter, as its faster-growing but lower-margin custom AI chip business dilutes overall profitability. Investors also pressed for more detail on the timing of revenue from Marvell's custom chip agreement with Google, announced the prior week, which lets Google buy up to roughly 59 million Marvell shares at $206.58 tied to purchase targets through fiscal 2033 and covers AI inference chips, storage controllers and network interface controllers built for Google's TPU systems; management said the deal would contribute more meaningfully only in later fiscal years.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/08/28/marvell-mrvl-q2-earnings-outlook.html">CNBC: Marvell stock tumbles 6% as outlook underwhelms despite Google deal</a></li>
+          <li><a href="https://seekingalpha.com/news/4637817-marvell-slides-as-guidance-disappoints-wall-street-wants-more-details-on-google-revenue">Seeking Alpha: Marvell slides as guidance disappoints; Wall Street wants more details on Google revenue</a></li>
+          <li><a href="https://www.benzinga.com/markets/tech/26/08/61490291/marvell-mrvl-stock-falls-record-quarter-margins-custom-silicon">Benzinga: Why Marvell Stock Is Falling After A Beat-And-Raise Quarter</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Venture &amp; Infrastructure</span><span class="when">28 Aug</span></div>
+    <h3>a16z raises a $1.1B "Machine Age Fund" dedicated to AI's physical buildout</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A top-tier VC firm creating a fund exclusively for the physical layer &mdash; chips, memory, networking, data centers, robotics and home AI hardware &mdash; is a bet that the next investable bottleneck in AI isn't models or software, it's atoms, mirroring the same supply-chain strain visible in Nvidia's memory costs and Marvell's margin math this week.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Andreessen Horowitz announced on August 28 that it has raised $1.1B for a new vehicle, the Machine Age Fund, aimed at what the firm calls accelerating "the physical buildout of AI." The fund will invest across the AI hardware and infrastructure stack &mdash; chips, memory, networking and storage &mdash; as well as full systems including data centers, robotics platforms and home AI appliances. It is distinct from a16z's American Dynamism Fund II, which separately closed at $1.176B the same week for investments serving U.S. national security and industrial interests, bringing the firm's combined dedicated hardware/infrastructure and dynamism capital to roughly $2.9B.</p>
+        <ul class="sources">
+          <li><a href="https://pitchbook.com/news/articles/a16zs-new-1-1b-fund-admits-hardware-is-eating-the-world-too">PitchBook: A16z's new $1.1B fund admits hardware is eating the world, too</a></li>
+          <li><a href="https://a16z.com/the-machine-age-fund/">Andreessen Horowitz: The Machine Age Fund</a></li>
+          <li><a href="https://cryptorank.io/insights/deals/andreessen-horowitz-lp-raise-2026-08-28-9">CryptoRank: a16z launches $1.1B Machine Age Fund for AI infrastructure and hardware</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Privacy &amp; Consumer AI</span><span class="when">28 Aug</span></div>
+    <h3>Meta closes the loophole letting people cover the LED to keep secretly recording on its AI glasses</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The capture-indicator light is the only cue bystanders get that Meta's smart glasses are recording, and this is Meta's second privacy patch in under two months &mdash; a sign the company is playing catch-up on a hardware design flaw only after repeated public reports of people using the glasses to record others covertly.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Meta is rolling out a software update, reported August 28, that stops an active video recording on its AI-powered smart glasses if the wearer covers the front-facing capture LED mid-recording. Previously, the glasses blocked filming if the light was already obstructed before a recording started, but did nothing if someone began recording first and covered the light afterward &mdash; a gap that let wearers discreetly keep recording despite the indicator being designed as a bystander-consent cue. It's the second privacy-focused firmware change in under two months, following an earlier update that disables the camera if the LED itself is tampered with or destroyed; Meta has also launched a public-education push explaining what the capture LED means.</p>
+        <ul class="sources">
+          <li><a href="https://www.digitaltrends.com/wearables/meta-says-its-glasses-cant-secretly-record-you-anymore-at-least-not-this-way/">Digital Trends: Meta says its glasses can't secretly record you anymore, at least not this way</a></li>
+          <li><a href="https://www.makeuseof.com/meta-fixing-smart-glasses-light-privacy/">MakeUseOf: Meta is finally fixing the dumbest privacy loophole in its smart glasses</a></li>
+          <li><a href="https://phandroid.com/2026/08/28/people-are-still-using-meta-glasses-to-harass-and-record-others-so-metas-pushing-a-new-update/">Phandroid: People are Still Using Meta Glasses to Harass and Record Others, so Meta's Pushing a New Update</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Robotics &amp; Autonomy</span><span class="when">27 Aug</span></div>
+    <h3>Waymo publicly rebuts camera-only self-driving, says lidar and radar are "indispensable"</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is Waymo putting its own safety data behind a direct architectural counter-argument to Tesla's vision-only bet, at a moment both companies are racing to scale robotaxis into new U.S. cities &mdash; the sensor-stack debate isn't academic anymore, it determines which approach regulators and riders end up trusting first.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Waymo VP of onboard software Srikanth Thirumalai published a blog post on August 27 arguing, without naming Tesla directly, that "cameras are incredible, but they aren't enough" for safe Level 4 autonomy. Drawing on more than 200 million fully autonomous miles, the post says combining cameras, lidar and radar creates a "rich, redundant world view that no single sensor can replicate," and that Waymo's internal testing found visibility notably degrades when any one sensor type is removed. Waymo's newest hardware suite, used in its Ojai van platform, combines 13 cameras, 4 lidar units and 6 radars. The post follows Tesla's continued push to scale a camera-only robotaxi approach and lands the same week both companies are expanding into new state markets.</p>
+        <ul class="sources">
+          <li><a href="https://www.axios.com/2026/08/26/waymo-ai-shortcut-self-driving">Axios: Exclusive: Waymo says there's no AI shortcut to self-driving</a></li>
+          <li><a href="https://insideevs.com/news/806201/waymo-tesla-cameras-ai-blog/">InsideEVs: Waymo Just Took A Not-So-Subtle Dig At Tesla's Self-Driving Strategy</a></li>
+          <li><a href="https://www.thestreet.com/technology/waymo-ceo-tesla-robotaxis-need-lidar-to-work">TheStreet: Waymo CEO takes a not-so-subtle shot at Tesla Robotaxi over Lidar</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">25 Aug</span></div>
+    <h3>Researchers show invisible HTML text can silently hijack an AI email summarizer's output</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> As inboxes fill with AI-generated summaries that people read instead of the underlying email, an attacker only needs to hide a few hundred characters of zero-size, white-on-white text to rewrite what the reader believes the email said &mdash; with no visual sign of tampering in the client itself.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Forcepoint's X-Labs research team published a proof-of-concept on August 25 demonstrating an indirect prompt-injection attack against AI email summarizers. The team embedded hidden instructions in an email using HTML styled with zero font size and white-on-white color, invisible in a client like Outlook but fully present in the raw content passed to the summarization model; the visible email held 537 characters, while 1,009 characters &mdash; including 472 characters of hidden injection text &mdash; were sent to the LLM. In the test, the hidden payload successfully altered the summarizer's output, changing an invoice deadline and deleting information, without any visible indication to the reader that the message had been tampered with. Forcepoint says the issue isn't specific to any one LLM provider or summarizer, but reflects a general risk in feeding untrusted email content directly to a model without sanitization.</p>
+        <ul class="sources">
+          <li><a href="https://www.forcepoint.com/blog/x-labs/html-payload-hijacks-email-summarizer">Forcepoint X-Labs: An Invisible HTML Payload Silently Hijacked Every Email Summarizer Run</a></li>
+          <li><a href="https://www.darkreading.com/cyber-risk/hidden-prompts-trick-ai-false-email-summaries">Dark Reading: Hidden Prompts Trick AI Into False Email Summaries</a></li>
+          <li><a href="https://www.csoonline.com/article/4214814/ai-can-be-made-to-read-an-email-much-differently-than-you-do.html">CSO Online: AI can be made to read an email much differently than you do</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 29 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
