@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 30 August 2026</title>
+  <meta name="description" content="Z.ai ships GLM-5.3's open weights after a two-week safety hold over the model's own hacking ability, a 6,000-executive NBER survey finds 89% see no AI productivity gain, the AI memory shortage is set to push PC prices up as much as 20%, Nvidia logs its first H200 shipments into China, and AWS deepens its OpenAI partnership on Bedrock.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>30 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24&ndash;48 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Z.ai releases GLM-5.3's open weights</strong> after an unprecedented two-week safety hold triggered by the model's own emergent hacking ability, which topped Anthropic and OpenAI on a cyber-offense benchmark.</li>
+      <li><strong>A 6,000-executive NBER survey finds 89% report no productivity gain from AI</strong> and over 90% see no employment effect, despite 69% of firms actively using the technology.</li>
+      <li><strong>The AI-driven memory shortage is set to push PC prices up as much as 20% in 2026,</strong> with Lenovo, Dell, HP, Acer and Asus all confirming hikes as DRAM and NAND get diverted to AI accelerators.</li>
+      <li><strong>Nvidia logs its first H200 chip sales into China,</strong> nearly eight months after Washington approved the exports, though volumes remain under 1% of data-center revenue.</li>
+      <li><strong>AWS deepens its OpenAI partnership,</strong> bringing GPT-5.5, Codex and Managed Agents to Bedrock in limited preview alongside a new "Amazon Quick" work assistant.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">AI Labs &amp; Security</span><span class="when">28&ndash;29 Aug</span></div>
+    <h3>Z.ai ships GLM-5.3's open weights after holding them back over the model's own hacking skill</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A frontier open-weight model that outperforms Anthropic's and OpenAI's flagships at finding and exploiting real vulnerabilities is now downloadable by anyone &mdash; security teams get a free automated pentesting tool, but so does every other party running a checkpoint locally with no usage terms to enforce.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Chinese lab Z.ai launched GLM-5.3 on August 14 but restricted access to vetted security partners through its GLM Coding Plan and ZCode agent, delaying the public weights release for about two weeks &mdash; the first time the company has held back a GLM release explicitly for safety review. During evaluation, GLM-5.3 surfaced 2,436 vulnerabilities across 269 open-source projects, 1,097 of them rated critical or high severity, and scored 84.5% on CyberGym, a benchmark for finding known security flaws, beating Anthropic's Fable 5 and OpenAI's GPT-5.6 Sol. Z.ai said the model's coding and cybersecurity capability came back higher in internal testing than expected, prompting the extra safety pass. The company posted on X that "GLM-5.3 is now open-weight" and published the weights &mdash; a 744B-parameter mixture-of-experts model with roughly 40B active parameters and a 200K context window &mdash; to Hugging Face on August 28.</p>
+        <ul class="sources">
+          <li><a href="https://x.com/Zai_org/status/2093354097122455713">Z.ai on X: GLM-5.3 is now open-weight</a></li>
+          <li><a href="https://huggingface.co/zai-org/GLM-5.3">Hugging Face: zai-org/GLM-5.3</a></li>
+          <li><a href="https://www.techtimes.com/articles/324426/20260814/glm-53-post-training-produced-exploit-chains-zai-never-planned-finds-1097-critical-bugs.htm">Tech Times: GLM-5.3 post-training produced exploit chains Z.ai never planned, finds 1,097 critical bugs</a></li>
+          <li><a href="https://www.axios.com/2026/08/14/china-open-source-ai-glm-53">Axios: China's Z.ai holds GLM-5.3 release over hacking risks</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Enterprise AI &amp; Research</span><span class="when">this week</span></div>
+    <h3>New NBER survey of 6,000 executives: 89% see no productivity gain from AI</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is the most direct data point yet that enterprise AI spend and enterprise AI payoff have decoupled &mdash; boards funding large AI budgets on the promise of near-term efficiency gains are, per this survey, mostly not seeing them show up in the numbers, even as adoption itself keeps climbing.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>A National Bureau of Economic Research working paper, "Artificial Intelligence, Productivity, and the Workforce: Evidence from Corporate Executives," surveyed nearly 6,000 CEOs, CFOs and senior executives across the U.S., U.K., Germany and Australia and got renewed news coverage this week. It found that 69% of firms are actively using AI, yet 89% of executives reported no measurable effect on labor productivity and more than 90% reported no effect on employment at their firm over the past three years. Despite the absence of current gains, executives still told researchers they expect AI to raise productivity by an average of 1.4% over the next three years &mdash; a modest number given the scale of current AI capital spending. The findings widen an already visible gap between AI adoption metrics, which keep rising, and hard evidence of return on that investment.</p>
+        <ul class="sources">
+          <li><a href="https://www.nber.org/papers/w34984">NBER: Artificial Intelligence, Productivity, and the Workforce: Evidence from Corporate Executives (Working Paper 34984)</a></li>
+          <li><a href="https://www.itpro.com/business/business-strategy/ai-productivity-business-nber-study-white-collar-work">IT Pro: CEOs aren't seeing any AI productivity gains, yet some tech leaders still expect AI to upend white-collar work</a></li>
+          <li><a href="https://startupfortune.com/nearly-90-of-firms-report-no-ai-investment-productivity-gains-nber-finds/">Startup Fortune: Nearly 90% of Firms Report No AI Investment Productivity Gains, NBER Finds</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets &amp; Supply Chain</span><span class="when">this week</span></div>
+    <h3>The AI memory shortage is about to show up on your next hardware invoice</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Every enterprise laptop and server refresh budgeted this year just got more expensive, and it isn't a one-quarter blip &mdash; forecasters now expect elevated DRAM and NAND prices to persist into 2027 as fabs keep favoring the high-bandwidth memory that feeds AI accelerators over ordinary consumer and server RAM.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>PC makers including Lenovo, Dell, HP, Acer and Asus have now confirmed laptop price increases of 15&ndash;20%, with high-end configurations up as much as 30%, and industry warnings point to computer prices rising as much as 20% overall in 2026. A mainstream 32GB DDR5-6000 kit now costs around $392, up from $110&ndash;140 as recently as Q3 2025, while a 64GB kit has jumped 485% to $1,118 and a single DDR4 chip has hit a record $42.45; DRAM spot prices are up roughly 700% over the past year. The root cause is capacity reallocation: Samsung, SK Hynix and Micron, which together control more than 95% of global DRAM production, have shifted fab capacity toward the high-bandwidth memory used in AI accelerators, starving consumer-grade DRAM and NAND supply. Beyond sticker prices, manufacturers are also quietly trimming standard configurations &mdash; shipping 16GB where 32GB used to be standard, or 512GB SSDs in place of 1TB &mdash; to hold price points.</p>
+        <ul class="sources">
+          <li><a href="https://www.tomshardware.com/pc-components/ram/memory-price-surge-begins-to-cool-as-consumers-hit-affordability-limit-ai-demand-still-keeps-dram-and-nand-prices-climbing-through-q3-2026">Tom's Hardware: Memory price surge begins to cool as consumers hit affordability limit &mdash; AI demand still keeps DRAM and NAND prices climbing through Q3 2026</a></li>
+          <li><a href="https://www.pcworld.com/article/3021660/computer-prices-could-go-up-by-20-due-to-ram-shortage-pc-makers-warn.html">PCWorld: Computer prices could go up by 20% due to RAM shortage, PC makers warn</a></li>
+          <li><a href="https://www.notebookcheck.net/Lenovo-hints-at-PC-price-hikes-in-2026-as-AI-driven-memory-shortages-worsen-despite-a-50-inventory-stockpile.1169546.0.html">Notebookcheck: Lenovo hints at PC price hikes in 2026 as AI-driven memory shortages worsen</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets &amp; Policy</span><span class="when">26 Aug</span></div>
+    <h3>Nvidia logs its first H200 chip sales into China, eight months after Washington cleared them</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The bottleneck on China AI-chip revenue has quietly shifted from the U.S. export-approval side to Beijing's own reluctance to approve the imports &mdash; a reminder that even a green light from Washington doesn't guarantee Nvidia can convert China demand into recognized revenue.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Bloomberg reported on August 26 that Nvidia sold a small number of H200 chips to customers in China during its fiscal second quarter (ended July 26), marking the first confirmed shipments since the Trump administration formally approved China-bound H200 sales in January under a 25% surcharge, third-party testing requirements and a cap limiting China to no more than half of the total H200 volume sold to U.S. customers. Even so, sales to Chinese buyers made up less than 1% of Nvidia's data-center revenue for the quarter. Despite roughly $10 billion in approved export licenses, actual shipments have stayed minimal because Chinese authorities have been slow to approve the imports, reportedly over security-review concerns about the chips themselves &mdash; the inverse of the export-control friction that dominated the story for most of the past year.</p>
+        <ul class="sources">
+          <li><a href="https://www.bloomberg.com/news/articles/2026-08-26/nvidia-steps-back-into-china-market-with-first-h200-chip-sales">Bloomberg: Nvidia Steps Back Into China Market With First H200 Chip Sales</a></li>
+          <li><a href="https://www.cnbc.com/2026/01/14/trump-nvidia-h200-china-ai-chips.html">CNBC: Trump administration clears way for Nvidia H200 chip sales to China with a 25% surcharge</a></li>
+          <li><a href="https://www.cnbc.com/2026/08/19/china-ai-nvidia-chips-us-export-controls.html">CNBC: The U.S. banned Nvidia's best chips from going to China. Now it's trying to close a crucial loophole</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer Platforms</span><span class="when">27&ndash;28 Aug</span></div>
+    <h3>AWS brings GPT-5.5, Codex and Managed Agents to Bedrock, launches Amazon Quick</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> AWS is deliberately diluting its own-model advantage on Bedrock to keep enterprise workloads on its cloud regardless of which lab's model a customer prefers &mdash; a bet that owning the infrastructure and agent tooling matters more than owning the model itself.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>At its "What's Next with AWS" event this week, Amazon Web Services announced it is expanding its partnership with OpenAI to bring GPT-5.5, Codex and OpenAI's Managed Agents to Amazon Bedrock in limited preview, giving Bedrock customers direct access to OpenAI's models alongside Anthropic's and Amazon's own Nova family on the same infrastructure. AWS also launched Amazon Quick, a new AI work assistant with a desktop app and expanded third-party integrations, and extended Amazon Connect into four packaged agentic AI solutions covering supply chain, hiring, customer experience and healthcare workflows. The moves continue AWS's strategy of positioning Bedrock as a neutral, multi-model layer rather than steering customers exclusively toward Amazon's own models.</p>
+        <ul class="sources">
+          <li><a href="https://www.computerworld.com/article/4164691/aws-unveils-trio-of-key-ai-strategy-announcements.html">Computerworld: AWS unveils trio of key AI strategy announcements</a></li>
+          <li><a href="https://aws.amazon.com/blogs/aws/top-announcements-of-the-whats-next-with-aws-2026/">AWS News Blog: Top announcements of the What's Next with AWS, 2026</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Privacy &amp; Security</span><span class="when">28 Aug</span></div>
+    <h3>Federal judge consolidates class actions over Suno's undisclosed 55M-user breach</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Suno sat on a breach of names, addresses, phone numbers and partial card data for roughly eight months before disclosing it &mdash; the kind of AI-company breach-notification lag regulators and plaintiffs' lawyers are now treating as its own separate liability, on top of the underlying security failure.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>A federal judge in Massachusetts has consolidated two proposed class-action lawsuits over a November 2025 data breach at AI music generator Suno that was not publicly disclosed until July 2026, roughly eight months after it occurred. Both suits &mdash; filed July 24 and July 28 &mdash; name Cambridge-based Suno as the sole defendant and allege negligence and breach of implied contract. The breach reportedly compromised the personal data of about 55 million users, including names, physical addresses, email addresses, phone numbers, purchase history and partial payment card numbers with expiration dates, the latter pulled from Suno's Stripe account. The consolidation is a procedural step that will let the litigation proceed as a single combined case rather than two parallel actions.</p>
+        <ul class="sources">
+          <li><a href="https://www.digitalmusicnews.com/2026/08/28/suno-data-breach-lawsuits-consolidated/">Digital Music News: Federal Judge Consolidates Two Suno Data Breach Lawsuits</a></li>
+          <li><a href="https://www.musicbusinessworldwide.com/suno-hit-with-class-action-lawsuit-over-data-breach-reportedly-affecting-55m-users/">Music Business Worldwide: Suno faces proposed class action lawsuit over data breach</a></li>
+          <li><a href="https://musically.com/2026/07/29/suno-data-breach-class-action-lawsuit-and-company-statement/">Music Ally: Suno data breach: class-action lawsuit and company statement</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets &amp; Product</span><span class="when">24&ndash;26 Aug</span></div>
+    <h3>Nvidia reportedly weighs a $30B Perplexity stake as Perplexity ships an on-device agent</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Nvidia keeps recycling AI infrastructure profits into equity stakes in the companies buying its chips, and a Perplexity deal would extend that pattern into consumer AI search and agents &mdash; while Perplexity's push to run agents locally on Nvidia silicon gives Nvidia a reason beyond the cap table to want the deal done.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Nvidia is reportedly weighing another investment in Perplexity AI that would value the search-and-agent startup at more than $30 billion, according to a report this week, with Nvidia said to have also floated licensing Perplexity's technology and hiring some of its employees. The talks landed the same week Perplexity launched Portable Computer, an on-device version of its cloud-based "Perplexity Computer" agent (which debuted in February) designed to run multi-step tasks, such as building simple web apps, locally on desktops equipped with Nvidia silicon rather than in the cloud. The pairing gives Nvidia a stake in demonstrating that its GPUs can run capable agentic AI outside the data center, a use case it has been eager to showcase as PC-class AI hardware becomes a bigger part of its pitch to OEMs.</p>
+        <ul class="sources">
+          <li><a href="https://siliconangle.com/2026/08/24/nvidia-reportedly-eyes-another-investment-in-perplexity-ai-at-a-30b-valuation/">SiliconANGLE: Nvidia reportedly eyes another investment in Perplexity AI at a $30B valuation</a></li>
+          <li><a href="https://siliconangle.com/2026/08/25/perplexity-ai-launches-portable-computer-on-device-ai-agent/">SiliconANGLE: Perplexity AI launches Portable Computer on-device AI agent</a></li>
+          <li><a href="https://www.theregister.com/ai-and-ml/2026/08/26/now-perplexity-is-trying-to-get-into-the-local-ai-action/5292449">The Register: Now Perplexity is trying to get into the local AI action</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 30 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
