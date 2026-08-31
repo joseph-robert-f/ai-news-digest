@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 31 August 2026</title>
+  <meta name="description" content="John Ternus takes over as Apple CEO tomorrow with AI as his defining test, Anthropic warns infostealer malware is hijacking Claude sessions to drain paid usage, DeepSeek nears a $7.4B raise at a $74B valuation ahead of a 2027 IPO, and Texas halts state funding for Flock's AI license-plate cameras.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>31 August 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Apple's AI test begins.</strong> John Ternus takes over as CEO tomorrow with Tim Cook moving to executive chairman &mdash; and no answer yet to Apple's AI question.</li>
+      <li><strong>Claude sessions under attack.</strong> Anthropic is signing out users and refunding charges after infostealer malware hijacked live login sessions to drain paid usage.</li>
+      <li><strong>DeepSeek's war chest grows.</strong> The Chinese lab is closing a $7.4B round at a $74B valuation this week, setting up a 2027 Shanghai IPO.</li>
+      <li><strong>Chatbots beat search on propaganda.</strong> An NPR/NewsGuard test found leading AI chatbots debunk foreign disinformation more reliably than search engines and AI Overviews.</li>
+      <li><strong>Texas turns on AI surveillance.</strong> Gov. Abbott halted state funding for Flock's AI license-plate cameras after an investigation found $30M in grants behind the buildout.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Big Tech</span><span class="when">30-31 Aug</span></div>
+    <h3>Tim Cook hands Apple to John Ternus tomorrow, and the AI report card starts immediately</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Ternus inherits a hardware empire but no compelling AI story &mdash; his first major product event is just eight days into the job, and investors are watching whether a 25-year hardware veteran can make Apple Intelligence feel indispensable rather than optional.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Cook becomes executive chairman on 1 September after 15 years as CEO; Ternus, a mechanical engineer who led iPad, AirPods, iPhone and Mac hardware, has never run Apple's software or AI efforts. Apple has so far avoided the heavy AI capex of Microsoft, Google, Amazon and Meta, and is reportedly moving toward treating outside models &mdash; including Gemini and Claude &mdash; as interchangeable infrastructure inside its own products rather than building a comparable frontier model in-house.</p>
+        <ul class="sources">
+          <li><a href="https://www.bloomberg.com/news/articles/2026-08-30/apple-s-new-ceo-john-ternus-takes-reins-from-tim-cook-focusing-on-ai">Bloomberg: Apple's New CEO John Ternus Takes Reins From Tim Cook, Focusing on AI</a></li>
+          <li><a href="https://www.euronews.com/next/2026/08/31/who-is-the-man-set-to-lead-apple-into-the-world-of-artificial-intelligence">Euronews: Who is the man set to lead Apple into the world of AI?</a></li>
+          <li><a href="https://gulfnews.com/technology/new-apple-ceo-john-ternus-takes-over-on-sept-1-ahead-of-iphone-18-launch-amid-ai-race-what-to-know-1.500657538">Gulf News: New Apple CEO John Ternus takes over on Sept. 1</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">29-30 Aug</span></div>
+    <h3>Infostealer malware is hijacking live Claude sessions to burn through paid usage</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> because the malware steals already-authenticated session cookies rather than passwords, it bypasses 2FA and SSO entirely &mdash; a reminder that account security for AI tools now hinges on endpoint hygiene, not just credential strength.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Anthropic said it has identified Vidar, LummaC2, StealC, RedLine and Acreed infections on Windows plus Atomic Stealer on a small number of Macs replaying stolen Claude sessions to consume victims' usage limits. The company is signing affected users out, wiping saved payment methods, and refunding unauthorized charges &mdash; but warns that signing out doesn't remove the malware itself, so a still-infected machine can have its next session stolen the same way.</p>
+        <ul class="sources">
+          <li><a href="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-warns-infostealer-malware-is-hijacking-claude-sessions-to-drain-usage/">BleepingComputer: Anthropic warns infostealer malware is hijacking Claude sessions to drain usage</a></li>
+          <li><a href="https://cybersecuritynews.com/hackers-steal-claude-login-sessions/">Cyber Security News: Hackers Steal Claude Login Sessions With Infostealer Malware</a></li>
+          <li><a href="https://securityaffairs.com/198166/ai/infostealers-are-hijacking-claude-sessions-and-draining-subscriptions.html">Security Affairs: Infostealers Are Hijacking Claude Sessions and Draining Subscriptions</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">28-29 Aug</span></div>
+    <h3>DeepSeek closes in on a $7.4B raise at a $74B valuation, eyeing a 2027 Shanghai listing</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a second multibillion-dollar round in three months shows Chinese state and private capital still backing a domestic frontier lab even as it undercuts Western pricing &mdash; and a 2027 STAR Market IPO would be the first major test of public markets for a Chinese AI lab.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The roughly 50 billion yuan round is targeted to close by end of August, on top of a similarly sized raise in June that made it the largest private AI financing in Chinese history. Proceeds are earmarked for model R&amp;D and compute buildout; DeepSeek is reportedly targeting an IPO filing as soon as this year, ahead of a 2027 debut on Shanghai's STAR Market.</p>
+        <ul class="sources">
+          <li><a href="https://www.chinamoneynetwork.com/2026/08/29/deepseek-nears-7-4-billion-funding-round-at-74-billion-valuation-ahead-of-2027-ipo">China Money Network: DeepSeek Nears $7.4B Funding Round at $74B Valuation Ahead of 2027 IPO</a></li>
+          <li><a href="https://finance.yahoo.com/technology/ai/articles/deepseek-raises-7-4-billion-204747028.html">Yahoo Finance: DeepSeek Raises $7.4 Billion, Targets 2027 IPO as AI Price War Intensifies</a></li>
+          <li><a href="https://techstartups.com/2026/08/28/deepseek-nears-7-4-billion-funding-round-at-74-billion-valuation-ahead-of-2027-ipo/">Tech Startups: DeepSeek nears $7.4 billion funding round at $74 billion valuation</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Research</span><span class="when">30 Aug</span></div>
+    <h3>NPR/NewsGuard test: AI chatbots debunk foreign propaganda more reliably than search engines</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> chatbots correctly rebutted roughly three-quarters of false narratives from China, Iran and Russia, outperforming Google, Bing, DuckDuckGo and Yandex &mdash; but AI-generated summaries sitting on top of search results fared markedly worse, suggesting the safety gap is architectural, not just model quality.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>NewsGuard researchers built 30 test questions from false narratives that first circulated between December 2025 and July 2026, then ran them against major chatbots and search engines, scoring responses against NewsGuard's own fact-check database. The finding complicates the narrative that generative AI is inherently worse than search for spreading disinformation &mdash; direct chatbot answers held up better than AI Overviews layered onto search.</p>
+        <ul class="sources">
+          <li><a href="https://www.npr.org/2026/08/30/nx-s1-5876436/chatbots-search-propaganda">NPR: AI chatbots may be better than search engines in guarding against foreign propaganda</a></li>
+          <li><a href="https://www.kpbs.org/news/science-technology/2026/08/30/we-tested-how-ai-chatbots-would-handle-foreign-propaganda-they-did-surprisingly-well">KPBS/NPR: We tested how AI chatbots would handle foreign propaganda</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">28-30 Aug</span></div>
+    <h3>Texas Gov. Abbott halts state funding for Flock's AI license-plate cameras as cities bail out</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the order lands the same week a Texas Tribune investigation found a state agency had funneled at least $30M in grants to build out the surveillance network &mdash; adding a red state to the growing list of local governments pulling back from AI-powered automated license plate readers over data-sharing and misuse concerns.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Abbott's Thursday-night order blocks state agencies from spending money on Flock Safety's cameras, which use AI to identify vehicle make, model, color and features like bumper stickers. It follows Pflugerville's city council voting to remove all 28 of its Flock readers and Hood County disconnecting its three cameras pending removal.</p>
+        <ul class="sources">
+          <li><a href="https://www.texastribune.org/2026/08/28/texas-greg-abbott-flock-cameras-order-state-money/">Texas Tribune: Abbott blocks state agencies from spending money on Flock cameras</a></li>
+          <li><a href="https://kvia.com/news/2026/08/30/gov-abbott-blocks-state-agencies-from-spending-money-on-flock-cameras/">KVIA: Gov. Abbott blocks state agencies from spending money on Flock cameras</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Enterprise</span><span class="when">30 Aug</span></div>
+    <h3>Caterpillar is porting its mining-autonomy playbook straight into enterprise AI</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a company that has safely moved 11 billion tonnes of material with autonomous trucks is betting that "deploying a model" and "transforming how people work" are separate problems &mdash; and is putting $100M behind retraining 118,000 employees over five years rather than assuming the technology sells itself.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Caterpillar is applying lessons from decades of autonomous-truck deployment to jobsites, quarries and its own software organization, using AI agents to scan sites and build digital twins, modernize legacy code, generate and test new software, and catch defects earlier. Executives frame the harder problem as organizational: existing workflows and roles have to change alongside the technology, not after it.</p>
+        <ul class="sources">
+          <li><a href="https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/">TechCrunch: Caterpillar is bringing to AI deployment what it learned from automating mining</a></li>
+          <li><a href="https://www.caterpillar.com/en/news/corporate-press-releases/h/ai-powered-future.html">Caterpillar: Caterpillar Unveils AI-Powered Future and Invests in the Workforce Building It</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Research</span><span class="when">27 Aug</span></div>
+    <h3>MIT framework pushes protein design past sequences that already exist in nature</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> most generative protein models still lean on sequences resembling natural proteins even when asked to design something new; folding physical stability principles directly into the model raises the odds a truly novel, non-natural sequence will actually fold and function &mdash; a meaningful unlock for drug and enzyme design pipelines.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The MIT Biology framework, PottsMPNN, incorporates the physics governing protein structure and stability to better predict how mutations affect stability and to generate structurally feasible sequences that don't resemble any known native protein. The work was published in the Proceedings of the National Academy of Sciences.</p>
+        <ul class="sources">
+          <li><a href="https://news.mit.edu/2026/looking-beyond-natural-sequences-0827">MIT News: Looking beyond natural sequences</a></li>
+          <li><a href="https://phys.org/news/2026-08-ai-potentially-stable-protein-sequences.html">Phys.org: AI model designs potentially stable protein sequences beyond those found in nature</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 31 August 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
