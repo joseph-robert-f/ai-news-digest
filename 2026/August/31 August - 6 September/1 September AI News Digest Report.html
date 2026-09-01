@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 1 September 2026</title>
+  <meta name="description" content="The Pentagon adds ChatGPT and Grok to its military AI portal while racing to purge Anthropic by month's end, OpenAI's ad business crosses a $1B run rate, and Google ships Gemini 3.1 Pro.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>1 September 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Pentagon widens its AI portal, not its Anthropic tolerance.</strong> GenAI.mil now offers ChatGPT Mil and Grok for Government alongside Gemini to 1.7M users, while the Claude purge deadline holds at 30 September despite a court loss.</li>
+      <li><strong>OpenAI's ad business hits a $1B run rate in 200 days.</strong> Self-serve ads go live in 40+ countries as OpenAI chases a $40B annualized run rate ahead of an IPO.</li>
+      <li><strong>Clay raises at a $7B pre-money valuation.</strong> Wellington Management leads, 40% above the $5B mark set just eight months ago.</li>
+      <li><strong>Google ships Gemini 3.1 Pro to Vertex AI and Gemini Enterprise.</strong> Google claims a verified 77.1% on ARC-AGI-2, more than double Gemini 3 Pro's score.</li>
+      <li><strong>Grok 4.6 lands inside Microsoft Foundry.</strong> Enterprises can now benchmark xAI's flagship coding model alongside GPT and Gemini under Microsoft's own governance controls.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Defense</span><span class="when">1 Sep</span></div>
+    <h3>Pentagon adds ChatGPT and Grok to its military AI portal, keeps pressing to purge Claude</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The Defense Department is diversifying its sanctioned AI stack rather than pausing to reconsider Anthropic, signaling the September 30 removal deadline holds even after a federal judge called the blacklist "illegal and baseless."</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>GenAI.mil &mdash; the DoD's secure portal for commercial frontier models &mdash; now bundles OpenAI's "ChatGPT Mil" and Starshield/xAI's "Grok for Government" alongside Google's Gemini, which launched on the platform in December. More than 1.7 million of the department's 3 million personnel have already onboarded. Separately, reporting indicates the Air Force pushed contractors to purge Anthropic products by September 1, with a department-wide deadline of September 29&ndash;30, even though a California court found the designation illegally retaliatory. Anthropic's suit to overturn the blacklist continues.</p>
+        <ul class="sources">
+          <li><a href="https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/">TechCrunch: The Pentagon now has its own version of ChatGPT and Grok</a></li>
+          <li><a href="https://defensescoop.com/2026/08/31/grok-chatgpt-added-to-genai-mil/">DefenseScoop: Grok, ChatGPT added to GenAI.mil</a></li>
+          <li><a href="https://breakingdefense.com/2026/07/air-force-pushing-contractors-to-purge-anthropic-by-sept-1-memo/">Breaking Defense: Air Force pushing contractors to purge Anthropic by Sept. 1</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Business</span><span class="when">31 Aug</span></div>
+    <h3>OpenAI's ChatGPT ad business crosses $1B annualized revenue &mdash; in 200 days</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Ads are becoming a real diversification leg for OpenAI's revenue story ahead of an expected IPO, not a side experiment &mdash; the company is now targeting roughly $40B in annualized revenue, about double its end-of-2025 run rate.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI's self-serve ad platform, which began testing in the U.S. in February, has expanded to more than 40 countries and this week opened to marketers in India, Europe, the Middle East, and North Africa. Ads run only for free-tier and Go-subscription users, are labeled, and OpenAI says are kept separate from how ChatGPT generates answers. The company is targeting $2.5B in ad revenue this year.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/08/31/open-ai-chatgpt-ads-revenue.html">CNBC: OpenAI's ad business hits $1 billion annualized revenue run rate</a></li>
+          <li><a href="https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/">OpenAI: A milestone in expanding access to AI</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">31 Aug</span></div>
+    <h3>Clay is raising at a $7B pre-money valuation, led by Wellington</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The AI-native sales and marketing platform's valuation jumped 40% in eight months, another sign that "GTM AI" tooling &mdash; not just foundation models &mdash; is where late-stage capital is chasing outsized growth.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Clay had already reached a $5B valuation via a $55M employee tender led by DST in January 2026. The new round, led by Wellington Management, values the company at $7B pre-money.</p>
+        <ul class="sources">
+          <li><a href="https://www.axios.com/pro/all-deals/2026/08/31/clay-7-billion-pre-money-valuation">Axios: Clay inks deal to be valued at $7 billion pre-money</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">1 Sep</span></div>
+    <h3>Google ships Gemini 3.1 Pro to Vertex AI and Gemini Enterprise</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Google is pitching 3.1 Pro as a meaningfully cheaper, more reliable reasoning upgrade rather than a new flagship &mdash; fewer output tokens for comparable or better results is a direct pitch at enterprise inference cost, not just benchmark bragging rights.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Gemini 3.1 Pro is available in preview via Vertex AI, Gemini Enterprise, the Gemini API in Google AI Studio, Android Studio, Google Antigravity, and Gemini CLI. Google reports up to 15% improvement over the best Gemini 3 Pro Preview runs and a verified 77.1% on ARC-AGI-2, more than double Gemini 3 Pro's reasoning score on that benchmark.</p>
+        <ul class="sources">
+          <li><a href="https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-pro-on-gemini-cli-gemini-enterprise-and-vertex-ai">Google Cloud Blog: Gemini 3.1 Pro on Gemini CLI, Gemini Enterprise, and Vertex AI</a></li>
+          <li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/">Google Blog: Gemini 3.1 Pro</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Dev tools</span><span class="when">31 Aug&ndash;1 Sep</span></div>
+    <h3>Grok 4.6 lands in Microsoft Foundry as GitHub Copilot retires six older models</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Two of Microsoft's coding surfaces moved on the same model in the same week &mdash; xAI's frontier coding model is now benchmarkable enterprise-wide in Foundry, while Copilot itself is culling its lineup down to fewer, more capable defaults for agentic work.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Grok 4.6 &mdash; built on xAI's 1.5T-scale model family with a 500k context window and configurable reasoning effort &mdash; is now in public preview on Microsoft Foundry, letting enterprises benchmark and deploy it under Microsoft's own governance controls. Separately, GitHub Copilot's August 31 model refresh retires six older models in favor of newer alternatives, with Grok 4.6 itself now rolling out inside Copilot for agentic, multi-step coding work.</p>
+        <ul class="sources">
+          <li><a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/grok-4-6-comes-to-microsoft-foundry-models-built-for-long-horizon-reasoning-and-/4547578">Microsoft Tech Community: Grok 4.6 comes to Microsoft Foundry Models</a></li>
+          <li><a href="https://github.blog/changelog/2026-07-31-upcoming-august-2026-model-deprecations-in-github-copilot/">GitHub Changelog: Upcoming August 2026 model deprecations in GitHub Copilot</a></li>
+          <li><a href="https://github.blog/changelog/2026-08-28-github-copilot-in-visual-studio-august-update-2/">GitHub Changelog: GitHub Copilot in Visual Studio &mdash; August update</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">31 Aug</span></div>
+    <h3>Moonshot retires Kimi K2.5, leaving the 2.8T-parameter K3 as its sole flagship</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The generational cutover is complete: calls to K2.5 and the older moonshot-v1 line now return a flat 404, forcing every integrator still pinned to the old models to migrate to K3's 1M-token context window and native visual understanding.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Kimi K2.5 and the moonshot-v1 series were officially retired on August 31, 2026. K3, a roughly 2.8-trillion-parameter mixture-of-experts model built on a KDA hybrid linear-attention mechanism, launched July 16 and is now the only current flagship on Moonshot's platform.</p>
+        <ul class="sources">
+          <li><a href="https://finance.biggo.com/news/87dc9670-9bba-43d7-83ef-6b3aff4af97c">BigGo Finance: Moonshot AI's Kimi K2.5 to retire end of August; K3 takes over</a></li>
+          <li><a href="https://www.interconnects.ai/p/kimi-k3-the-open-weights-escalation">Interconnects: Kimi K3, the open-weights escalation</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 1 September 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
