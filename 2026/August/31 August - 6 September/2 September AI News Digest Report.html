@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 2 September 2026</title>
+  <meta name="description" content="Anthropic's IPO clock starts, Apple accuses OpenAI of destroying evidence in their trade-secrets suit, and SB Energy's S-1 shows how thin the AI-datacenter buildout still is.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>2 September 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Anthropic's IPO clock starts.</strong> A prospectus is expected within days for a fall listing that could rank among the largest ever.</li>
+      <li><strong>Apple says OpenAI destroyed evidence.</strong> New court filings escalate the trade-secrets fight ahead of an Oct. 1 injunction hearing.</li>
+      <li><strong>SB Energy's S-1 exposes the buildout's thin base.</strong> $439B in leases and $5.5B of OpenAI warrants, but zero live data centers yet.</li>
+      <li><strong>Anthropic reverses data-retention policy.</strong> Enterprise Claude data will now live in customers' own clouds, free of charge.</li>
+      <li><strong>Nvidia buys a $3.5B stake in MediaTek.</strong> Its largest bet outside the US pairs NVLink Fusion with a new custom-silicon rival to Broadcom.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">1&ndash;2 Sep</span></div>
+    <h3>Anthropic's IPO clock starts: prospectus expected within days</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A listing as soon as late September or October would be one of the largest IPOs ever, and it forces every enterprise built on Claude to start pricing in public-market scrutiny of Anthropic's burn rate, governance, and safety commitments.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Multiple outlets report Anthropic is targeting a public listing this fall, with a prospectus expected to surface right after Labor Day; underwriters reportedly include Morgan Stanley, Goldman Sachs, and JPMorgan. Reported valuation figures vary widely by outlet &mdash; from the $965B mark set in its last private round to speculative IPO targets near $2T &mdash; and should be treated as unconfirmed until a filing lands.</p>
+        <ul class="sources">
+          <li><a href="https://finance.yahoo.com/markets/stocks/articles/anthropic-sets-fall-ipo-eyeing-185032639.html">Yahoo Finance: Anthropic sets fall IPO, eyeing a top-tier valuation</a></li>
+          <li><a href="https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/">Fortune: Anthropic weighs an IPO that could top $2 trillion</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Legal</span><span class="when">31 Aug</span></div>
+    <h3>Apple accuses OpenAI of destroying evidence in trade-secrets case</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> New forensic evidence in Apple's suit over a former engineer who allegedly took trade secrets to OpenAI raises the stakes ahead of an Oct. 1 injunction hearing, and spotlights the 400-plus former Apple staff Apple says now work at OpenAI.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Apple's Monday court filing says a forensic review of former engineer Chang Liu's old company laptop shows he instructed an OpenAI colleague to destroy evidence once he learned Apple was investigating him, and that she confirmed compliance. OpenAI's own Monday filing called the dispute &ldquo;a mess of Apple's own making.&rdquo; A judge hears arguments on Apple's injunction motion Oct. 1.</p>
+        <ul class="sources">
+          <li><a href="https://www.bloomberg.com/news/articles/2026-08-31/apple-says-openai-is-destroying-evidence-in-trade-secrets-case">Bloomberg: Apple says OpenAI is destroying evidence in trade-secrets case</a></li>
+          <li><a href="https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/">TechCrunch: Apple shares evidence against former employee accused of stealing data for OpenAI</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Infrastructure</span><span class="when">1 Sep</span></div>
+    <h3>SB Energy's IPO filing shows how thin the AI-datacenter buildout still is</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The SoftBank/OpenAI/Nvidia-backed developer's S-1 is a rare primary-source look at how leveraged the AI-capex boom is on OpenAI's promises: a $439B lease backlog and $5.5B of OpenAI warrants, against zero operating data centers and a $3.2B first-half loss.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>SB Energy filed for a US IPO on Tuesday, disclosing 17 leases covering roughly 8GW of capacity in Ohio, $500M of direct OpenAI equity investment, and just $139M in revenue to date. It is the clearest public accounting yet of how much of the AI-infrastructure buildout rests on OpenAI's future commitments rather than signed, operating capacity.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/09/01/sb-energy-ipo-softbank-open-ai-nvidia.html">CNBC: SB Energy files for IPO as it bets big on OpenAI</a></li>
+          <li><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/09/01/softbank-backed-sb-energy-files-for-us-ipo-as-ai-turbocharges-infrastructure-demand/">BNN Bloomberg: SoftBank-backed SB Energy files for US IPO</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Enterprise</span><span class="when">1 Sep</span></div>
+    <h3>Anthropic reverses course, will store enterprise Claude data in customers' own clouds</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> After enterprise pushback on June's 30-day-retention policy, Anthropic will keep the retention window but move the data into customer-controlled cloud environments at no extra cost &mdash; a concrete concession that shows how much leverage large Claude customers now hold.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The new "Enterprise Frontier Safeguards" rollout keeps the 30-day retention window introduced alongside Claude Fable 5/Mythos 5, but data will sit in the customer's own cloud rather than Anthropic's. It rolls out in phases, with broader availability expected this fall.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/09/01/anthropic-data-retention.html">CNBC: Anthropic changes data-retention policy after enterprise pushback</a></li>
+          <li><a href="https://the-decoder.com/anthropic-changes-data-retention-policy-after-enterprise-pushback/">The Decoder: Anthropic changes data-retention policy after enterprise pushback</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Chips</span><span class="when">1 Sep</span></div>
+    <h3>Nvidia buys $3.5B stake in MediaTek, its largest bet outside the US</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Pairing MediaTek's custom data-center ASIC ambitions with Nvidia's NVLink Fusion positions Qualcomm's smartphone-chip rival as a new Broadcom-style challenger in custom AI silicon &mdash; another sign Nvidia is buying influence across the whole chip stack, not just selling GPUs.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Nvidia bought $3.5B of MediaTek convertible bonds as part of a $3.9B raise that also included Alphabet. MediaTek will adopt NVLink Fusion so its custom AI ASICs can plug directly into Nvidia rack-scale systems; shares jumped roughly 10% in Taipei trading on the news.</p>
+        <ul class="sources">
+          <li><a href="https://www.bloomberg.com/news/articles/2026-08-31/nvidia-to-invest-3-5-billion-in-chipmaker-mediatek">Bloomberg: Nvidia to invest $3.5 billion in chipmaker MediaTek</a></li>
+          <li><a href="https://www.cnbc.com/2026/09/01/nvidia-deal-mediatek-shares.html">CNBC: Nvidia deal sends MediaTek shares higher</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">2 Sep</span></div>
+    <h3>Meta's $18B teen-safety settlement is being framed as a clearing event for its AI launches</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Morgan Stanley argues the settlement removes a legal overhang the way Google's did last year, potentially freeing Meta to push out its rumored "Hatch" consumer AI agent and a new foundation model in October &mdash; a reminder that legal resolution, not just model quality, is gating AI product launches at Big Tech.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Meta's roughly $18B settlement over Facebook and Instagram's effects on minors will be paid out over 10 years, with a $10B legal charge hitting Q3. Analyst Brian Nowak's note ties the resolution directly to Meta's AI roadmap, including a possible $199.99/month premium agent tier and a foundation model codenamed "Watermelon."</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/09/02/meta-18-billion-settlement-ai-products.html">CNBC: Meta's $18B settlement could clear the way for AI products</a></li>
+          <li><a href="https://www.pymnts.com/news/artificial-intelligence/2026/metas-consumer-focused-ai-agent-could-be-weeks-from-launch/">PYMNTS: Meta's consumer-focused AI agent could be weeks from launch</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Autonomy</span><span class="when">1 Sep</span></div>
+    <h3>Waymo and Zoox both expand robotaxi service on the same day</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Waymo now spans 14 cities and over 500K rides a week (targeting 1M by year-end) while Amazon's Zoox pushes into Houston and San Diego &mdash; the pace of simultaneous expansion signals the robotaxi race is shifting from pilot to scale faster than regulators may be ready for.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Waymo opened fully autonomous public rides in Denver, San Diego, and Tampa. Zoox began testing with retrofitted vehicles in Houston and San Diego, reaching 12 US locations, though Las Vegas remains its only paid service to date.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/09/01/waymo-and-zoox-expand-into-more-us-markets-as-robotaxi-race-heats-up.html">CNBC: Waymo and Zoox expand into more US markets as robotaxi race heats up</a></li>
+          <li><a href="https://ca.investing.com/news/stock-market-news/amazons-zoox-alphabets-waymo-expand-robotaxi-services-to-more-us-cities-4824452">Investing.com: Amazon's Zoox, Alphabet's Waymo expand robotaxi services</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Dev Platforms</span><span class="when">1 Sep</span></div>
+    <h3>GitHub Copilot's promotional credits expire: same price, up to 44% less usage</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Included AI credits for Business and Enterprise plans dropped sharply on Sept. 1 while subscription prices held steady, continuing the industry-wide shift from flat-rate AI coding subscriptions to metered usage &mdash; engineering budget owners should recheck team consumption now.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The promotional credit period that ran from June 1 through Aug. 31 has ended. Copilot Business included credits fall from $30 to $19 worth per seat per month, and Enterprise from $70 to $39, per GitHub's own changelog; further billing updates are slated for Oct. 1.</p>
+        <ul class="sources">
+          <li><a href="https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/">GitHub Changelog: Upcoming changes to GitHub Copilot policies and billing</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 2 September 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
