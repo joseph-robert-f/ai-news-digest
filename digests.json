@@ -1,7 +1,16 @@
 {
-  "generated": "2026-09-02T10:44:06.131Z",
-  "count": 72,
+  "generated": "2026-09-03T10:47:57.367Z",
+  "count": 73,
   "digests": [
+    {
+      "date": "2026-09-03",
+      "title": "AI News Digest — 3 September 2026",
+      "path": "2026/August/31 August - 6 September/3 September AI News Digest Report.html",
+      "year": 2026,
+      "month": "August",
+      "week": "31 August - 6 September",
+      "summary": "OpenAI says its Astra model is the first to cross its own \"Critical\" cyber-risk threshold, Google ships its third Flash model in six weeks, and record Dell and Broadcom AI orders collide with a bond-driven chip selloff."
+    },
     {
       "date": "2026-09-02",
       "title": "AI News Digest — 2 September 2026",
