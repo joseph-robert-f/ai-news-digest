@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 3 September 2026</title>
+  <meta name="description" content="OpenAI says its Astra model is the first to cross its own &quot;Critical&quot; cyber-risk threshold, Google ships its third Flash model in six weeks, and record Dell and Broadcom AI orders collide with a bond-driven chip selloff.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>3 September 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>OpenAI's Astra crosses the "Critical" cyber threshold.</strong> It chained two unknown zero-days into a sandbox-escaping exploit; offensive access is now gated to a vetted defender coalition.</li>
+      <li><strong>Google ships its third Flash model in six weeks.</strong> Gemini 3.8 Flash lands everywhere at 3.7 Flash pricing, alongside a gated "Flash Cyber" variant for vulnerability research.</li>
+      <li><strong>Dell's AI-server backlog hits $95B; Broadcom's AI chip revenue triples.</strong> Yet a bond-yield spike hit chip stocks the same week, testing how durable the AI-capex trade really is.</li>
+      <li><strong>CrowdStrike and Perplexity ship dueling answers to agentic-AI risk.</strong> Nvidia-powered autonomous red/blue-team models on one side, on-device "hybrid compute" to keep sensitive files off the cloud on the other.</li>
+      <li><strong>McKinsey: a third of enterprises now build instead of buy.</strong> Agentic coding tools are cutting into software purchases even as enterprise-level AI ROI stays flat.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">AI Safety</span><span class="when">1 Sep</span></div>
+    <h3>OpenAI says Astra is the first model to cross its "Critical" cyber-risk threshold</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Astra didn't just ace a known-exploit benchmark &mdash; it autonomously found two unknown zero-days and chained them into an exploit that broke out of a browser sandbox, the clearest signal yet that frontier models have crossed from theoretical to operational offensive-cyber capability, and a preview of the vetted-access-only model other labs will likely be forced to adopt.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI says Astra scored 100% on a known exploit-development benchmark under its Preparedness Framework, then in a separate evaluation autonomously discovered two previously-unknown zero-day vulnerabilities and chained them into a working exploit that escaped its browser sandbox and executed commands on the host &mdash; triggered simply by opening a malicious HTML file &mdash; plus a second chain that escalated from an unprivileged OS user to root. OpenAI is not broadly releasing Astra's full cyber capability; critical-tier offensive tooling access is restricted to a vetted "Daybreak" defender coalition (Daybreak Blue/Daybreak Red) that includes Akamai, Cisco, Cloudflare, CrowdStrike, Fortinet, Oracle, Palo Alto Networks and Zscaler, alongside government and critical-infrastructure testers. OpenAI says it is disclosing the zero-days to the affected maintainers.</p>
+        <ul class="sources">
+          <li><a href="https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/">OpenAI: Responding to the next frontier of critical cyber capabilities</a></li>
+          <li><a href="https://www.cnbc.com/2026/09/01/open-ai-astra-cyber-model.html">CNBC: OpenAI says its Astra model is first to cross critical cyber threshold</a></li>
+          <li><a href="https://securityaffairs.com/198317/ai/openai-astra-brings-autonomous-zero-day-exploitation-to-ai.html">Security Affairs: OpenAI's Astra brings autonomous zero-day exploitation to AI</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">2 Sep</span></div>
+    <h3>Google ships Gemini 3.8 Flash &mdash; its third Flash release in six weeks</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Google is now iterating on its mid-tier model at a cadence that rivals OpenAI and Anthropic's release pace, and it used the same launch to plant a flag in AI-driven vulnerability research &mdash; directly overlapping with the offensive-security ground OpenAI's Astra just claimed.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Gemini 3.8 Flash refines August's 3.7 Flash with less verbose output and gains in software engineering, agentic tasks and multi-step reasoning, at the same introductory pricing ($0.75/$3.75 per million input/output tokens through year-end). It's live now in the Gemini app, AI Studio, Vertex AI/Gemini Enterprise, Android Studio, Antigravity, Search's AI Mode and Google Sheets. Gemini 3.8 Flash Cyber, a variant tuned for vulnerability discovery, is not broadly available &mdash; it's gated behind an invite-only "Fairwind Program" for governments, national cyber authorities and critical-infrastructure operators.</p>
+        <ul class="sources">
+          <li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/">Google Blog: Gemini 3.8 Flash and Gemini 3.8 Flash Cyber</a></li>
+          <li><a href="https://www.theregister.com/ai-and-ml/2026/09/02/with-gemini-38-flash-google-reminds-everyone-its-still-in-the-race/">The Register: With Gemini 3.8 Flash, Google reminds everyone it's still in the race</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Infrastructure</span><span class="when">1&ndash;2 Sep</span></div>
+    <h3>Dell's AI-server backlog hits $95B as Broadcom's AI chip revenue triples &mdash; but a bond selloff hits chip stocks anyway</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Two of the clearest bellwethers for enterprise AI-infrastructure demand both beat big this week, yet Broadcom still sold off on softer guidance and a broader yield-driven chip rout &mdash; a reminder that even record real demand isn't insulating AI infrastructure stocks from macro repricing.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Dell's Q2 FY27 revenue rose 58% YoY to $46.97B on record AI server orders of $60.9B and a $95B backlog; it raised full-year revenue guidance by $25B to roughly $192B. Broadcom's Q3 FY26 AI semiconductor revenue jumped 221% YoY to $16.7B, and CEO Hock Tan raised FY27 AI revenue guidance to $115B with a first FY28 projection of $230B &mdash; but Q4 revenue guidance of $34.8B missed the $35.03B consensus, and shares fell roughly 5&ndash;6% after hours. The drop came alongside a broader semiconductor selloff (Intel -3%, AMD -2%) as a global bond selloff pushed long-term yields to a one-year high.</p>
+        <ul class="sources">
+          <li><a href="https://www.businesswire.com/news/home/20260901574850/en/Dell-Technologies-Delivers-Second-Quarter-Fiscal-2027-Financial-Results">Dell Technologies: Delivers Second-Quarter Fiscal 2027 Financial Results</a></li>
+          <li><a href="https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html">CNBC: Broadcom Q3 2026 earnings report</a></li>
+          <li><a href="https://247wallst.com/investing/2026/09/01/semiconductor-stocks-slide-as-global-bond-selloff-lifts-yields-intel-drops-3-nvidia-and-amd-slip/">24/7 Wall St: Semiconductor stocks slide as global bond selloff lifts yields</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">1 Sep</span></div>
+    <h3>CrowdStrike pairs offense and defense AI models, built on Nvidia's open Nemotron line</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> An autonomous red-team model probing a live digital twin of a customer's environment while a defense model remediates in a closed loop is a concrete step beyond "AI writes a report" security tooling &mdash; and a validation of Nvidia's push to get its open Nemotron models embedded in enterprise security stacks.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Unveiled at Fal.Con, CrowdStrike's SafeMind pairs an offensive model ("Red Tempest," which emulates adversary techniques) with a defensive model ("Blue Solano"), both fine-tuned from Nvidia's open Nemotron models using CrowdStrike's own threat telemetry and 15 years of incident-response data. Red Tempest probes a digital twin of a customer's environment built with Nvidia simulation technology; Blue Solano remediates, and the cycle repeats inside Falcon.</p>
+        <ul class="sources">
+          <li><a href="https://www.crowdstrike.com/en-us/press-releases/crowdstrike-launches-frontier-models-for-cybersecurity-with-nvidia/">CrowdStrike: CrowdStrike Launches Frontier Models for Cybersecurity, with Nvidia</a></li>
+          <li><a href="https://siliconangle.com/2026/09/01/autonomous-red-teaming-crowdstrike-falcon/">SiliconANGLE: CrowdStrike unveils autonomous AI red-teaming inside Falcon</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Dev Platforms</span><span class="when">1 Sep</span></div>
+    <h3>Perplexity splits agent tasks between the cloud and local Mac models to keep sensitive files private</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> "Hybrid Compute" is a concrete, shipped answer to the objection that's dogged agentic AI all year &mdash; that letting an agent touch your files means sending them to the cloud &mdash; and it comes free, pressuring other agent vendors to match it rather than charge a privacy premium.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Perplexity's Computer agent now routes tasks between frontier cloud models and local models running on Apple silicon (macOS 15+, 24GB+ unified memory), gated by an on-device privacy classifier that keeps sensitive files &mdash; tax returns, medical records, litigation documents &mdash; off the network entirely. It ships with three local models (Gemma 4 E4B, Qwen3.6 35B-A3B, and an in-house Perplexity model); locally-run tasks are free. Perplexity also open-sourced the on-device PII classifier, built with the Secure Intelligence Institute.</p>
+        <ul class="sources">
+          <li><a href="https://www.perplexity.ai/hub/blog/introducing-hybrid-compute-on-mac">Perplexity: Introducing Hybrid Compute on Mac</a></li>
+          <li><a href="https://www.macstories.net/news/perplexity-introduces-hybrid-compute-to-keep-sensitive-data-local/">MacStories: Perplexity introduces Hybrid Compute to keep sensitive data local</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Enterprise</span><span class="when">2 Sep</span></div>
+    <h3>McKinsey: a third of enterprises now skip software purchases in favor of building with AI agents</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is the clearest survey data yet that agentic coding tools are cutting into enterprise software spend, not just developer productivity &mdash; but the same survey shows enterprise-level EBIT impact still flat, so the build-vs-buy shift is running well ahead of proof it pays off.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>McKinsey's State of AI 2026 survey (1,719 respondents, 97 countries, fielded May&ndash;June) found 32% of organizations have skipped at least one software purchase because they could build the equivalent with agentic coding tools, and the share of large enterprises scaling agents in at least one business function rose from 27% to 40%. Yet only 37% of respondents report any enterprise-level EBIT impact from AI, versus 80% reporting individual productivity gains, and one in five organizations now cite AI operating costs as a real constraint.</p>
+        <ul class="sources">
+          <li><a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai">McKinsey: The State of AI in 2026</a></li>
+          <li><a href="https://finance.yahoo.com/technology/ai/articles/build-vs-buy-shift-32-113806700.html">Yahoo Finance: Build vs. buy shift &mdash; 32% of enterprises skip software purchases</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">1 Sep</span></div>
+    <h3>AIR raises $50M to vet the skills and plug-ins AI agents pull into enterprise environments</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> As agents increasingly install their own tools, skills and MCP servers at runtime, software supply-chain risk shifts from "what did a developer import" to "what did an autonomous agent decide to fetch" &mdash; this raise is an early bet that governing that becomes its own security category.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Israeli startup, founded by Unit 8200 veterans, came out of stealth with $50M raised across two seed rounds &mdash; $10M led by Sequoia, $40M led by Greenoaks &mdash; to help enterprises vet and monitor the skills, plug-ins, MCP servers and other add-ons that AI agents pull in at runtime.</p>
+        <ul class="sources">
+          <li><a href="https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use/">TechCrunch: AIR raises $50M to help companies vet the skills and add-ons AI agents use</a></li>
+          <li><a href="https://www.pymnts.com/news/investment-tracker/2026/ai-agent-security-startup-air-raises-50-million-to-guard-enterprise-supply-chains/">PYMNTS: AI agent security startup AIR raises $50 million</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 3 September 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
