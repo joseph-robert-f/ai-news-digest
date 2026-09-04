@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News Digest &mdash; 4 September 2026</title>
+  <meta name="description" content="Nvidia agrees to buy Hugging Face for $13B, OpenAI launches GPT-6 Astra with a $1B pledge to cyber defenders, and the Pentagon publicly breaks with Commerce over Anthropic's blacklist.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>4 September 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Nvidia agrees to buy Hugging Face for ~$13B.</strong> Its second-largest deal ever, pairing GPU dominance with the platform 18M+ developers use to share and deploy open models.</li>
+      <li><strong>OpenAI launches GPT-6 Astra, its first "critical" cyber-tier model.</strong> Rollout starts with vetted defenders under a new $1B Daybreak for Frontline Defenders program.</li>
+      <li><strong>The Trump administration splits publicly over Anthropic.</strong> Commerce says it's "back on the right side"; the Pentagon says the supply-chain blacklist stands regardless.</li>
+      <li><strong>G20 adopts light-touch "Carolina Principles" for AI &mdash; as the EU's high-risk AI Act rules go live.</strong> The world's two largest regulatory blocs are now moving in opposite directions at the same moment.</li>
+      <li><strong>Meta cuts Muse Spark 1.3 prices up to 95% for developers who let it train on their prompts.</strong> A blunt preview of how AI labs may pay for data access as scaling pressure grows.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">M&amp;A</span><span class="when">3 Sep</span></div>
+    <h3>Nvidia agrees to buy Hugging Face for nearly $13 billion</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Nvidia is buying the default distribution layer for open-weight AI &mdash; the platform 18 million developers already use to find and ship models &mdash; rather than just selling the chips underneath it, extending its reach further up the AI stack than any deal since Groq.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Nvidia will pay about $12.93B for Hugging Face plus an equity retention pool worth up to roughly $1B for employees who join Nvidia, per an 8-K filed with the SEC. It's Nvidia's second-largest acquisition on record, after December's $20B purchase of Groq's assets. Nvidia says Hugging Face will keep operating as "an open platform for the entire AI ecosystem" and continue supporting open-weight and open-source models; more than 18 million developers and 200,000 companies use the platform, which hosts over 3 million models. The deal is expected to close in the first half of 2027, pending regulatory approval.</p>
+        <ul class="sources">
+          <li><a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000078/nvda-20260902.htm">SEC: Nvidia Corp 8-K filing</a></li>
+          <li><a href="https://www.cnbc.com/2026/09/03/nvidia-agrees-to-buy-hugging-face-for-almost-13-billion-ai-expansion.html">CNBC: Nvidia agrees to buy Hugging Face for almost $13 billion</a></li>
+          <li><a href="https://www.cnn.com/2026/09/03/tech/nvidia-hugging-face-ai-acquisition">CNN Business: Nvidia inks $13 billion deal to buy Hugging Face</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">3 Sep</span></div>
+    <h3>OpenAI launches GPT-6 Astra, pledges $1B to arm cyber defenders with its own "critical"-tier model</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> OpenAI isn't just disclosing that a model crossed its critical cyber threshold anymore &mdash; it's shipping that model and simultaneously trying to arm the defensive side first, a real-world test of whether a vetted-access model can outrun the offensive risk it created.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>GPT-6 Astra began rolling out Thursday, first to vetted defenders in OpenAI's Daybreak program, with ChatGPT Plus/Pro/Business/Enterprise, API, and AWS Bedrock/Azure availability following over the coming days. OpenAI says Astra scored 100% on ExploitBench and is the first model classified at its Preparedness Framework's "critical" cybersecurity tier; the defender-facing release can do secure code review and patching but is designed to refuse proof-of-concept exploit generation. Alongside the launch, OpenAI introduced Daybreak for Frontline Defenders, a $1B commitment to give subsidized model access, training, and technical support to water utilities, electricity providers, banks, local governments, and other under-resourced critical-infrastructure operators. Separately, CEO Sam Altman said the AI industry has "fumbled" communicating the technology's benefits to the public.</p>
+        <ul class="sources">
+          <li><a href="https://openai.com/index/gpt-6-astra/">OpenAI: GPT-6 Astra, a new generation of intelligence</a></li>
+          <li><a href="https://www.bloomberg.com/news/articles/2026-09-03/openai-rolls-out-gpt-6-astra-model-with-added-cyber-guardrails">Bloomberg: OpenAI rolls out GPT-6 Astra model with added cyber guardrails</a></li>
+          <li><a href="https://www.nbcnews.com/tech/tech-news/openai-debuts-gpt-6-astra-security-measures-rcna595940">NBC News: OpenAI debuts GPT-6 Astra, says it triggered security measures</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Defense</span><span class="when">3 Sep</span></div>
+    <h3>Pentagon publicly breaks with Commerce over Anthropic's blacklist</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A day after Commerce Secretary Howard Lutnick said Anthropic was "back on the right side," a top Pentagon official flatly contradicted him &mdash; the clearest sign yet that the September 30 purge deadline isn't a negotiating position the administration can settle with one phone call.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Pentagon Chief Technology Officer Emil Michael posted Thursday that "Anthropic is still a designated Supply Chain Risk at @DeptofWar and for the Defense Industrial Base," directly rebutting Lutnick's comments to Axios a day earlier that he trusts the company and considers the dispute resolved. Anthropic executives have told the administration the blacklist could cost the company billions in sales and lasting reputational damage. The split leaves contractors racing toward the department's month-end deadline with no clear signal on whether it will actually be enforced.</p>
+        <ul class="sources">
+          <li><a href="https://www.axios.com/2026/09/03/pentagon-reaffirms-anthropic-blacklist">Axios: Top Pentagon official reaffirms Anthropic blacklist despite Lutnick comments</a></li>
+          <li><a href="https://www.bloomberg.com/news/articles/2026-09-03/pentagon-says-its-anthropic-ban-is-on-despite-lutnick-remarks">Bloomberg: Pentagon says its Anthropic ban is on despite Lutnick remarks</a></li>
+          <li><a href="https://finance.yahoo.com/news/anthropic-executives-pentagon-blacklisting-could-020003461.html">Yahoo Finance: Anthropic executives say Pentagon blacklisting could hit billions in sales</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">1&ndash;2 Sep</span></div>
+    <h3>G20 unanimously adopts light-touch "Carolina Principles" for AI &mdash; just as the EU's high-risk AI Act rules take effect</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The world's largest economies just endorsed Washington's preference for treating AI regulation case-by-case rather than model-by-model, at the exact moment the EU's binding rules for high-risk uses (hiring, credit, education, policing) became enforceable &mdash; global AI governance is now visibly forking, and multinational deployers have to build for both regimes at once.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>At a G20 "innovation" meeting hosted in Chapel Hill, North Carolina, Commerce Secretary Howard Lutnick and OSTP Director Michael Kratsios secured unanimous G20 sign-on to the "Carolina Principles," which commit countries to "reserve new regulation for novel considerations" rather than writing bespoke rules for every new AI capability. The agreement is non-binding but signals a coordinated push against EU-style, capability-triggered regulation. It lands the same week the EU AI Act's high-risk obligations became enforceable, and after the European Commission sent information requests to more than 30 AI companies as a preliminary compliance step.</p>
+        <ul class="sources">
+          <li><a href="https://www.bloomberg.com/news/articles/2026-09-02/us-strikes-light-touch-ai-regulation-accord-with-g20-members">Bloomberg: US strikes light-touch AI regulation accord with G20 members</a></li>
+          <li><a href="https://www.aljazeera.com/news/2026/9/2/us-pushes-looser-approach-to-ai-regulation-while-eu-pushes-new-law">Al Jazeera: US pushes looser approach to AI regulation, while EU pushes new law</a></li>
+          <li><a href="https://www.usnews.com/news/top-news/articles/2026-09-01/us-to-urge-hands-off-ai-regulation-at-g-20-official-says">US News: US urges hands-off approach to AI regulation at G20 tech meeting</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Research</span><span class="when">3 Sep</span></div>
+    <h3>Google DeepMind ships WeatherNext 3, an hourly AI weather model built on live satellite data</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Bypassing the six-hour lag of traditional numerical weather prediction with hourly, 5km-resolution forecasts is a concrete example of AI beating physics-based simulation on a problem with immediate commercial stakes &mdash; power-market forecasting, logistics, insurance &mdash; not just a benchmark win.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>WeatherNext 3 ingests live geostationary satellite data to refresh forecasts every hour and trains directly on sparse ground-station observations to better capture local topography, a sharp jump from predecessor WeatherNext 2's 25km, six-hour-increment grid. Google claims up to 50% more accurate precipitation forecasts a day or more out. It began powering weather features across Search, Gemini, Maps, the Google Maps Platform Weather API, and Google Earth Engine on Thursday.</p>
+        <ul class="sources">
+          <li><a href="https://deepmind.google/blog/">Google DeepMind: News</a></li>
+          <li><a href="https://www.bloomberg.com/news/articles/2026-09-03/deepmind-s-new-ai-weather-model-goes-hourly-for-power-markets">Bloomberg: DeepMind's new AI weather model goes hourly for power markets</a></li>
+          <li><a href="https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/">TechCrunch: Google's latest AI weather model gives you no excuse to forget your umbrella</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Dev Platforms</span><span class="when">3 Sep</span></div>
+    <h3>Meta cuts Muse Spark 1.3 prices up to 95% for developers who let it train on their prompts</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Meta is putting an explicit price on your data instead of burying the trade-off in terms of service &mdash; a "Contributor" tier that's roughly 21x cheaper on input tokens is a direct, quantified answer to "how much is my usage data worth to a model developer," and a preview of how labs may compete for training data as easy web-scale text runs thin.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Muse Spark 1.3, Meta's latest coding- and agent-focused model rolling out across Muse Code and its Model API, ships with two tiers: Standard, which excludes prompts and outputs from training, and Contributor, which allows Meta to use that data and cuts input-token prices from $1.25 to $0.10 per million and output tokens from $4.25 to $0.20 per million (cached inputs drop 75x). The Contributor tier caps throughput at 60 requests per minute versus 3,000 on Standard. Meta says Muse-integrated daily interactions have jumped 60% since the rollout began.</p>
+        <ul class="sources">
+          <li><a href="https://techcrunch.com/2026/09/03/meta-is-paying-to-peek-at-how-you-use-their-latest-ai-model/">TechCrunch: Meta is paying to peek at how you use their latest AI model</a></li>
+          <li><a href="https://finance.biggo.com/news/260a2e70-167c-4ccd-b6d0-aa3fd5dca44b">BigGo Finance: Meta's Muse Spark 1.3 offers 21-fold price cut for users willing to share data</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Dev Tools</span><span class="when">2&ndash;3 Sep</span></div>
+    <h3>xAI ships Grok Bot, a persistent agent platform, alongside a stable Grok 4.7</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Moving from a chat window to a roster of always-on bots with computer access and routines that "start without a prompt" is xAI chasing the same agentic-assistant surface Google, OpenAI, and Anthropic are all racing to own &mdash; the model race is increasingly a wrapper race.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Grok Bot restructures xAI's product around persistent Bots rather than one-off chats, adding a bot roster, presence indicators, computer-use access, inline cards and widgets, shared group chats, and scheduled routines that can kick off work without a user prompt. It arrives days after Grok 4.7 moved from preview to stable release on September 2, and after Grok 4.6 landed in Microsoft Foundry earlier this week.</p>
+        <ul class="sources">
+          <li><a href="https://x.ai/news">xAI: News</a></li>
+          <li><a href="https://venturebeat.com/technology/spacexai-debuts-grok-4-6-overtaking-kimi-k3s-performance-and-matching-gpt-5-6-sol-for-worlds-third-best-on-artificial-analysis">VentureBeat: SpaceXAI debuts Grok 4.6, matching GPT-5.6 Sol for world's third best</a></li>
+          <li><a href="https://docs.x.ai/developers/release-notes">xAI: Developer release notes</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 4 September 2026.</footer>
+</main>
+
+<script>
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+</script>
+</body>
+</html>
