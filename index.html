@@ -100,7 +100,19 @@
     latestEl.innerHTML = (isLatest ? 'Latest &middot; ' : 'Showing &middot; ') +
       '<strong>' + escapeHtml(formatDate(entry.date)) + '</strong>';
     document.title = 'AI News Digest — ' + formatDate(entry.date);
-    frame.addEventListener('load', () => { statusEl.style.display = 'none'; });
+    frame.addEventListener('load', () => {
+      statusEl.style.display = 'none';
+      // Source links should leave the site in a new tab, not load inside the
+      // frame. Digests are same-origin, so we can retarget them after load.
+      try {
+        frame.contentDocument.querySelectorAll('a[href]').forEach((a) => {
+          if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+          }
+        });
+      } catch (e) { /* cross-origin frame: leave links as-is */ }
+    });
   } catch (err) {
     statusEl.className = 'status error';
     statusEl.textContent = (err && err.message) ? err.message : String(err);
