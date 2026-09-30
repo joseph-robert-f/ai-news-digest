@@ -1,7 +1,16 @@
 {
-  "generated": "2026-09-05T10:43:58.726Z",
-  "count": 75,
+  "generated": "2026-09-30T01:46:02.726Z",
+  "count": 76,
   "digests": [
+    {
+      "date": "2026-09-29",
+      "title": "AI News Digest — 29 September 2026",
+      "path": "2026/September/28 September - 4 October/29 September AI News Digest Report.html",
+      "year": 2026,
+      "month": "September",
+      "week": "28 September - 4 October",
+      "summary": "Anthropic's IPO prospectus targets a $2 trillion-plus valuation, OpenAI launches always-on Dots agents at DevDay, and AMD pays $8.2B for Fei-Fei Li's World Labs."
+    },
     {
       "date": "2026-09-05",
       "title": "AI News Digest — 5 September 2026",
