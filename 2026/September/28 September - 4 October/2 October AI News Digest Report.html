@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 2 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Google, OpenAI and Anthropic move toward a joint frontier-AI standards body, while US&ndash;China tech controls tighten on chips, data-center gear and AI talent.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>2 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours (quiet day; some items are fresh angles on recent news)</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Self-regulation.</strong> Google, OpenAI and Anthropic are shaping a joint frontier-AI standards body.</li>
+      <li><strong>Price.</strong> OpenAI&rsquo;s GPT-6.1 Sol claims Astra-class coding at one-fifth the price.</li>
+      <li><strong>Markets.</strong> Anthropic&rsquo;s IPO: Nasdaq, three lead banks, November target.</li>
+      <li><strong>Decoupling.</strong> A US draft ban on Chinese data-center gear meets Chinese AI-talent travel limits.</li>
+      <li><strong>Security.</strong> Chip smuggling cases and hallucinated-package attacks are the risks to watch.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">Reported 26 Sep+</span></div>
+    <h3>Google, OpenAI and Anthropic push a joint frontier-AI standards body (&ldquo;SAFA&rdquo;)</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Rivals are writing their own safety rules before regulators do; expect shared testing and incident-reporting norms to become procurement and compliance baselines.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The tentative name is Standards Authority for Frontier AI. Reports say it could launch late 2026 or early 2027 and cover third-party pre-deployment testing, incident reporting and auditor qualification. It follows Demis Hassabis&rsquo;s July call for a FINRA-style body. Critics say a body built by the labs themselves raises independence concerns. This is new to this series; the 29 Sep accord covered a different, voluntary pledge.</p>
+        <ul class="sources"><li><a href="https://techcrunch.com/2026/07/14/deepmind-ceo-calls-for-an-independent-standards-body-to-regulate-frontier-ai/">TechCrunch: DeepMind CEO calls for an independent standards body (14 Jul)</a></li><li><a href="https://www.govinfosecurity.com/google-openai-anthropic-plan-frontier-ai-standards-body-a-32926">GovInfoSecurity: Google, OpenAI, Anthropic plan frontier AI standards body</a></li><li><a href="https://www.winzheng.com/en/article/google-openai-anthropic-frontier-ai-standards-authority">Winzheng: independence concerns</a></li><li><a href="https://www.thestreet.com/technology/google-openai-anthropic-launch-ai-safety-safa-regulatory-body">TheStreet: SAFA report</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">29 Sep</span></div>
+    <h3>OpenAI&rsquo;s GPT-6.1 Sol matches flagship-class coding at one-fifth the price</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If OpenAI&rsquo;s claims hold, mid-tier Sol is the default for agent workloads: re-benchmark your Astra-priced workflows before the next budget cycle.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Released at DevDay (29 Sep). Listed API price is $2 per 1M input and $10 per 1M output tokens, versus $10/$50 for Astra. OpenAI says it nearly matches Astra on agentic coding, computer use and professional work. These are vendor claims; independent benchmarks are still arriving. Earlier digests covered DevDay but not this model.</p>
+        <ul class="sources"><li><a href="https://www.datacamp.com/blog/gpt-6-1-sol">DataCamp: GPT-6.1 Sol features, benchmarks, pricing</a></li><li><a href="https://openrouter.ai/openai/gpt-6.1-sol">OpenRouter: GPT-6.1 Sol listing</a></li><li><a href="https://artificialanalysis.ai/models/releases/gpt-6-1-sol">Artificial Analysis: GPT-6.1 Sol</a></li><li><a href="https://www.geeky-gadgets.com/openai-dev-day-2026-announcements/">Geeky Gadgets: DevDay 2026 announcements</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">Update</span></div>
+    <h3>Anthropic IPO: Nasdaq, three lead banks, and a November target</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The largest listing on record now looks like a post-October event; plan for supply-chain and valuation news flow through November.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>New since the 28&ndash;29 Sep prospectus coverage: reports name Nasdaq as the venue and Morgan Stanley, Goldman Sachs and JPMorgan as lead underwriters. Timing reports conflict: earlier stories said October, later ones say November (pre-Thanksgiving). Valuation talk is around $2 trillion. Nothing here is confirmed by an SEC public filing date.</p>
+        <ul class="sources"><li><a href="https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-targets-pre-thanksgiving-ipo-at-2-trillion-valuation/">PYMNTS: pre-Thanksgiving IPO at $2T</a></li><li><a href="https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/">Fortune: $2T October IPO plan (13 Aug)</a></li><li><a href="https://techcrunch.com/2026/09/28/anthropics-prospectus-details-losses-growth-and-yes-a-warning-that-its-ai-could-end-humanity">TechCrunch: prospectus details</a></li><li><a href="https://finance.yahoo.com/technology/article/anthropic-could-publicly-file-ipo-paperwork-as-soon-as-this-month-192026244.html">Yahoo Finance: IPO paperwork timing</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Platforms</span><span class="when">Rolling out</span></div>
+    <h3>Adobe puts hands-on editing and a marketing &ldquo;coworker&rdquo; inside ChatGPT</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> First big DevDay plugin proof: ChatGPT is becoming an app shell, so creative and marketing tools will compete on being inside it.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Since 29 Sep, Adobe has rolled out interactive image, design and PDF editors (Photoshop, Express, Acrobat) in ChatGPT side panels. Adobe&rsquo;s CX Enterprise Coworker is also live, and enterprises can apply existing OpenAI spend to its license through OpenAI&rsquo;s Marketplace.</p>
+        <ul class="sources"><li><a href="https://business.adobe.com/blog/cx-enterprise-coworker-in-chatgpt">Adobe: CX Enterprise Coworker in ChatGPT</a></li><li><a href="https://agilebrandguide.com/adobe-adds-hands-on-editing-controls-to-its-chatgpt-plugin-at-openai-devday/">The Agile Brand Guide: editing controls at DevDay</a></li><li><a href="https://t2online.in/tech/tech-news/adobe-adds-interactive-image--design-and-pdf-editing-to-its-chatgpt-plugin/2008354">T2 Online: interactive editing</a></li><li><a href="https://9to5mac.com/2026/08/06/new-adobe-plugin-in-chatgpt-combines-photoshop-firefly-premiere-acrobat-and-more/">9to5Mac: Adobe plugin in ChatGPT (6 Aug)</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Geopolitics</span><span class="when">Oct</span></div>
+    <h3>US readies a ban on Chinese data-center gear as Beijing restricts AI talent travel</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Tech decoupling now covers the whole AI stack, from optics to people; check supplier exposure in data-center builds.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The FCC is reportedly drafting limits on Chinese data-center components, including optical transceivers. China now requires approval for travel by family members of top AI talent, under exit rules effective 15 Sep. The ban is a draft, not final.</p>
+        <ul class="sources"><li><a href="https://asiatimes.com/2026/10/us-bans-chinese-data-center-gear-as-beijing-grounds-its-ai-talent/">Asia Times: US bans Chinese data center gear as Beijing grounds AI talent</a></li><li><a href="https://www.usnews.com/news/top-news/articles/2026-08-04/exclusive-trump-administration-drafting-ban-on-chinese-data-center-devices-sources-say">U.S. News/Reuters: administration drafting ban (4 Aug)</a></li><li><a href="https://www.axios.com/2026/07/28/trump-administration-bans-chinese-hardware-ai-race">Axios: hardware ban (28 Jul)</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Chips</span><span class="when">1 Oct</span></div>
+    <h3>Bloomberg: Nvidia faces questions as AI-chip smuggling cases spread</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Enforcement is moving from chipmakers to freight and server vendors; expect tighter customer-verification demands across the supply chain.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Taiwan indicted an Nvidia manager and eight others over 74 servers with B300 chips routed to China via Japan and Indonesia, and also indicted two Super Micro employees. The US is probing Singapore-based Apex Logistics, a Kuehne+Nagel unit, in what could be the first action against a carrier. These are allegations, not verdicts. Bloomberg&rsquo;s 1 Oct feature is paywalled; details here come from earlier reports.</p>
+        <ul class="sources"><li><a href="https://bloomberg.com/news/features/2026-10-01/nvidia-faces-questions-over-china-ai-chip-smuggling-cases">Bloomberg: Nvidia faces questions over China smuggling cases (1 Oct)</a></li><li><a href="https://www.bloomberg.com/news/articles/2026-08-24/taiwan-indicts-nvidia-manager-following-chip-smuggling-probe">Bloomberg: Taiwan indicts Nvidia manager (24 Aug)</a></li><li><a href="https://www.bloomberg.com/news/articles/2026-08-27/us-probes-apex-logistics-over-alleged-nvidia-ai-chip-smuggling">Bloomberg: US probes Apex Logistics (27 Aug)</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Dev security</span><span class="when">Ongoing</span></div>
+    <h3>Hallucinated packages remain a live supply-chain risk for AI coding agents</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Agents that install dependencies unattended can pull attacker-registered packages; require lockfiles, allow-lists and human review of new dependencies.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Slopsquatting means attackers register package names that models invent. Research cited 19.7% of recommended packages did not exist, with 43% repeating across prompts. A July paper, HalluSquatting, showed the same idea can push coding assistants to install botnet malware. A 1 Oct agent-news roundup also flagged the concern. No new incident is claimed here.</p>
+        <ul class="sources"><li><a href="https://thehackernews.com/2026/07/new-hallusquatting-attack-could-trick.html">The Hacker News: HalluSquatting (Jul)</a></li><li><a href="https://www.endorlabs.com/learn/slopsquatting-when-ai-agents-hallucinate-malicious-packages">Endor Labs: slopsquatting</a></li><li><a href="https://venturebeat.com/security/forget-typosquatting-slopsquatting-is-the-software-supply-chain-threat-created-by-ai-coding-tools">VentureBeat: slopsquatting</a></li><li><a href="https://aiagentsdirectory.com/news/ai-agents-news-brief-october-1-2026">AI Agents Directory: 1 Oct brief</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 2 October 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
