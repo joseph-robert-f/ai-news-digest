@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 3 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Google unveiled Gemini 4 Argon, a frontier model that retakes benchmark lead but ships first to vetted cyber defenders, while Microsoft warns AI has handed attackers the edge and OpenAI fires three safety researchers.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>3 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li>Google's Gemini 4 Argon claims the benchmark lead, but ships first to vetted cyber defenders.</li>
+      <li>Microsoft: median time from vulnerability to weaponization is now under 24 hours.</li>
+      <li>Armadin raises $255.5M at $2.5B+ to sell AI attack swarms to defenders.</li>
+      <li>OpenAI and Synopsys will build GPT-Synopsys to operate chip-design tools.</li>
+      <li>OpenAI parts ways with three safety researchers over alleged information handling.</li>
+    </ol>
+  </section>
+
+  <!-- One <article> per story. Headline + a single "why it matters" line up top;
+       bury depth and sources inside <details> so the default view stays skimmable. -->
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">30 Sep</span></div>
+    <h3>Google unveils Gemini 4 Argon, but only cyber defenders get it first</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Google says it retakes the frontier lead, yet access-gating a cyber-capable model sets a template for how top labs may release from here.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Argon has a 1M-token output limit (up from 64K) and targets long-horizon coding, knowledge work and cyber defense. It rolls out first to vetted defenders through Google's Fairwind Program, then to paid API tiers and Google AI Ultra. Trusted defenders and Google teams get it &ldquo;without cyber guardrails.&rdquo; Reported introductory pricing is $2 per million input tokens and $10 per million output tokens. The benchmark-lead claim comes from Google and press coverage of its materials; independent evaluation is still pending.</p>
+        <ul class="sources">
+          <li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/">Google: Gemini 4 Argon</a></li>
+          <li><a href="https://venturebeat.com/technology/google-unveils-gemini-4-argon-retaking-benchmark-lead-over-openai-and-anthropic-but-in-limited-release">VentureBeat: Google unveils Gemini 4 Argon, retaking benchmark lead</a></li>
+          <li><a href="https://www.ghacks.net/2026/10/02/google-launches-gemini-4-argon-with-a-1-million-token-output-limit-starting-with-cyber-defenders/">gHacks: 1 million token output limit, starting with cyber defenders</a></li>
+          <li><a href="https://www.devx.com/artificial-intelligence-ai/gemini-4-argon-pricing-benchmarks-cyber-defense/">DevX: Pricing, benchmarks and rollout</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">1 Oct</span></div>
+    <h3>Microsoft: attackers now weaponize vulnerabilities in under 24 hours</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Enterprise patch cycles of 30&ndash;60 days no longer match attacker speed, so patching and testing pipelines need automation.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Microsoft's 2026 Digital Defense Report says AI has shifted the near-term advantage to attackers. Post-compromise steps such as credential discovery and lateral movement shrink from days to minutes. In controlled tests, frontier models chained 32 attack steps to full domain compromise of an emulated network without human direction. CVE counts are on track for a record of about 72,000 in 2026.</p>
+        <ul class="sources">
+          <li><a href="https://www.microsoft.com/en-us/corporate-responsibility/topics/cybersecurity/reports/microsoft-digital-defense-report/">Microsoft Digital Defense Report 2026</a></li>
+          <li><a href="https://www.helpnetsecurity.com/2026/10/02/ai-cybersecurity-threats-microsoft-report/">Help Net Security: AI is giving attackers a head start</a></li>
+          <li><a href="https://www.scworld.com/brief/microsoft-report-ai-accelerates-cyberattacks-challenging-defenders">SC Media: AI accelerates cyberattacks, challenging defenders</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">1 Oct</span></div>
+    <h3>Kevin Mandia's Armadin raises $255.5M at a $2.5B+ valuation</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Investors are betting that defense will be sold as agent swarms, the same shape as the attacks Microsoft describes.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Series B was co-led by Andreessen Horowitz and Accel, with GV, In-Q-Tel, Kleiner Perkins and others. Armadin deploys swarms of AI agents to find vulnerabilities in a customer's infrastructure. Total funding is $445M, including $189.9M of seed and Series A announced in March.</p>
+        <ul class="sources">
+          <li><a href="https://www.securityweek.com/kevin-mandias-armadin-raises-255-million-at-2-5-billion-valuation/">SecurityWeek: Armadin raises $255 million at $2.5 billion valuation</a></li>
+          <li><a href="https://www.scworld.com/brief/armadin-raises-255-5-million-for-ai-powered-cybersecurity-platform">SC Media: Armadin raises $255.5 million</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Enterprise</span><span class="when">1 Oct</span></div>
+    <h3>OpenAI and Synopsys to build GPT-Synopsys for chip design</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A model that drives licensed design tools directly could shorten chip-design cycles and shows how labs will tie models to incumbent software.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The multi-year deal has OpenAI license Synopsys EDA tools so the model can run design workflows, read tool output and iterate toward power, performance, area, timing and verification goals. Engineers set objectives and review results. The service will run on OpenAI-hosted infrastructure with joint go-to-market and revenue sharing. Synopsys says early engagements with chip customers are under way.</p>
+        <ul class="sources">
+          <li><a href="https://www.hpcwire.com/aiwire/2026/10/02/synopsys-and-openai-partner-to-develop-specialized-ai-model-for-chip-design/">AIwire: Synopsys and OpenAI partner on a chip-design model</a></li>
+          <li><a href="https://convergedigest.com/openai-synopsys-gpt-synopsys-ai-chip-design/">Converge Digest: GPT-Synopsys</a></li>
+          <li><a href="https://www.business-standard.com/technology/artificial-intelligence/gpt-synopsys-openai-synopsys-team-up-to-build-gpt-model-for-ai-powered-chip-design-126100100428_1.html">Business Standard: OpenAI, Synopsys team up</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Industry</span><span class="when">2 Oct</span></div>
+    <h3>OpenAI parts ways with three safety researchers over information handling</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Governance and leak-control tension inside a lab that is also co-founding an industry safety body is a reputational risk worth watching.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI said it &ldquo;parted ways with three individuals for violating our policies on accessing and handling sensitive company information.&rdquo; Reports name Jasmine Wang, Tomek Korbak and Mikita Balesni and say they shared information with an unnamed third-party AI-safety group; Bloomberg, as relayed by press, says it concerned infrastructure architecture. The individuals' side of the story is not yet in the coverage reviewed.</p>
+        <ul class="sources">
+          <li><a href="https://www.theregister.com/ai-and-ml/2026/10/02/openai-shows-three-staff-the-door-over-alleged-information-misuse/5300820">The Register: OpenAI shows three staff the door</a></li>
+          <li><a href="https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html">The Hacker News: OpenAI parts ways with three safety researchers</a></li>
+          <li><a href="https://www.foxbusiness.com/technology/openai-fires-3-safety-researchers-accused-sharing-confidential-company-information-report">Fox Business: OpenAI fires 3 safety researchers</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Platforms</span><span class="when">25 Sep</span></div>
+    <h3>Microsoft rebuilds Copilot around Code and an always-on Autopilot agent</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Microsoft is positioning Copilot as a governed digital coworker with its own directory identity, which may suit IT teams wary of unmanaged agents.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>New in this update: Home, Code and Autopilot. Code turns a written description into an app, dashboard or automation in a sandbox that firms can host in their own Microsoft 365 environment. Autopilot monitors channels, follows up on threads and resumes work days later, under permissions admins control. Home and Code roll out through the Frontier program in coming weeks; Autopilot expands to private preview at the end of September. This is a follow-up on earlier-week coverage of workplace agents.</p>
+        <ul class="sources">
+          <li><a href="https://www.technology.org/2026/09/28/microsoft-copilot-code-autopilot-agent-office/">Technology.org: Microsoft rebuilds Copilot with Code and Autopilot</a></li>
+          <li><a href="https://gizmodo.com/microsoft-thinks-its-finally-figured-out-copilot-this-time-2000817460">Gizmodo: Microsoft thinks it has figured out Copilot</a></li>
+          <li><a href="https://finimize.com/content/microsoft-turns-copilot-into-an-always-on-digital-coworker">Finimize: Copilot as an always-on digital coworker</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 3 October 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
