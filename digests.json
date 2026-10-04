@@ -1,7 +1,16 @@
 {
-  "generated": "2026-10-03T09:34:09.985Z",
-  "count": 80,
+  "generated": "2026-10-04T09:34:16.905Z",
+  "count": 81,
   "digests": [
+    {
+      "date": "2026-10-04",
+      "title": "AI News Digest — 4 October 2026",
+      "path": "2026/September/28 September - 4 October/4 October AI News Digest Report.html",
+      "year": 2026,
+      "month": "September",
+      "week": "28 September - 4 October",
+      "summary": "Washington tightens its grip on AI — a White House AI czar, a bipartisan agent-hacking liability bill and California's first AI-firing law — while Supabase and FieldAI raise $850M for agent and robot infrastructure."
+    },
     {
       "date": "2026-10-03",
       "title": "AI News Digest — 3 October 2026",

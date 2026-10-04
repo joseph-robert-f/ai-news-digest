@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 4 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Washington tightens its grip on AI — a White House AI czar, a bipartisan agent-hacking liability bill and California's first AI-firing law — while Supabase and FieldAI raise $850M for agent and robot infrastructure.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>4 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>White House picks an AI czar.</strong> DNI Jay Clayton will lead a 120-day federal review of AI risk.</li>
+      <li><strong>Congress targets rogue agents.</strong> Hawley and Murphy's bill would make operators and developers liable for agent hacking.</li>
+      <li><strong>California bars AI-only firings.</strong> SB 947 is the first US law requiring human review of AI-driven discipline.</li>
+      <li><strong>Treasury pushes back.</strong> Bessent told frontier-lab CEOs who want regulation to &ldquo;slow down.&rdquo;</li>
+      <li><strong>Agent infrastructure keeps raising.</strong> Supabase takes $150M and buys Turso; FieldAI nears $700M at $10B.</li>
+    </ol>
+  </section>
+
+  <!-- One <article> per story. Headline + a single "why it matters" line up top;
+       bury depth and sources inside <details> so the default view stays skimmable. -->
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">3 Oct</span></div>
+    <h3>Trump names DNI Jay Clayton as AI czar with a 120-day review</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> expect federal AI posture to be set by a security-and-securities lawyer, not a technologist; the review's findings will shape oversight rules you may have to meet.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports say Clayton will keep his intelligence role while leading a new White House task force. It has 120 days to report on AI risks and opportunities and to recommend the federal role in overseeing the technology. Items are based on press reports; a formal announcement was not confirmed in the sources below.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html">CNBC: Trump taps Jay Clayton as AI czar</a></li>
+          <li><a href="https://www.cnn.com/2026/10/02/politics/jay-clayton-white-house-ai-czar">CNN: Trump is expected to name Jay Clayton as AI czar</a></li>
+          <li><a href="https://www.washingtonpost.com/technology/2026/10/02/trump-expected-name-intelligence-chief-jay-clayton-new-ai-czar/">Washington Post: Trump expected to name Clayton</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">1 Oct</span></div>
+    <h3>Hawley–Murphy bill would make agent hacking a liability for operators and developers</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> if you deploy autonomous agents, legal exposure for what they do may soon sit with you; agent permissions and safeguards become a compliance item.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The bipartisan AI Agent Accountability Act would use the Computer Fraud and Abuse Act to hold operators liable when they knowingly run an agent that causes damage, and would reach developers who skip reasonable safeguards. It follows the FTC probe of OpenAI, Anthropic and METR covered on 1 October (new here: the bill itself).</p>
+        <ul class="sources">
+          <li><a href="https://www.cdomagazine.tech/aiml/ai-agent-liability-bill-puts-data-access-and-accountability-in-focus">CDO Magazine: AI agent liability bill</a></li>
+          <li><a href="https://startupfortune.com/hawley-and-murphy-bill-would-send-ai-executives-to-prison-over-rogue-agent-hacks/">Startup Fortune: Hawley and Murphy bill</a></li>
+          <li><a href="https://www.tampafp.com/missouri-and-connecticut-senators-team-up-on-bipartisan-bill-targeting-ai-driven-cyberattacks/">Tampa Free Press: bipartisan bill on AI-driven cyberattacks</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Regulation</span><span class="when">30 Sep</span></div>
+    <h3>California signs the &ldquo;No Robo Bosses&rdquo; Act</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> any HR workflow that lets AI drive firing or discipline now needs human corroboration and written notice in California from 1 July 2027.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>SB 947 bars employers from relying only on automated systems to fire or discipline workers. Employers that rely mainly on AI must have a human check the decision against other inputs, and tell the worker in writing what data was used and whom to contact. Newsom vetoed a broader version in 2025.</p>
+        <ul class="sources">
+          <li><a href="https://sd05.senate.ca.gov/news/newsom-signs-mcnerneys-no-robo-bosses-act-2026-requiring-human-oversight-ai-workplace">Office of Sen. McNerney: Newsom signs SB 947</a></li>
+          <li><a href="https://www.kqed.org/news/12102337/newsom-signs-slate-of-ai-workplace-laws-barring-robo-bosses-and-surveillance">KQED: Newsom signs slate of AI workplace laws</a></li>
+          <li><a href="https://www.californiaworkplacelawblog.com/2026/10/articles/california/california-passes-no-robo-bosses-act/">California Workplace Law Blog: California passes No Robo Bosses Act</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">3 Oct</span></div>
+    <h3>Bessent to AI CEOs who ask for regulation: &ldquo;then they should slow down&rdquo;</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the administration will not act as a liability shield for labs; plan for a tough, split Washington on safety rules.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>On The Axios Show, the Treasury Secretary said alarm without solutions is not leadership and that government will not take on responsibility the labs hold. It follows September calls from several lab leaders to slow frontier work.</p>
+        <ul class="sources">
+          <li><a href="https://thenextweb.com/news/bessent-says-ai-alarmism-without-solutions-is-not-leadership">The Next Web: Bessent on AI alarmism</a></li>
+          <li><a href="https://startupfortune.com/bessent-compares-ai-safety-warning-ceos-to-hannibal-lecter/">Startup Fortune: Bessent and the Hannibal Lecter remark</a></li>
+          <li><a href="https://www.yahoo.com/news/politics/articles/scott-bessent-compares-ai-ceos-203502069.html">Yahoo News: Bessent compares AI CEOs to Hannibal Lecter</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">3 Oct</span></div>
+    <h3>Supabase raises $150M and buys Turso as agents create most new databases</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> AI agents now create about 70% of Supabase's new databases, so database vendors are rebuilding for machine-speed provisioning; check your stack for agent-ready data layers.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>GIC led the round, with CapitalG, IronArc and SquarePeg, four months after a $500M Series F. The Turso deal (price undisclosed) adds a SQLite-based agent database; founder Glauber Costa becomes Head of Agentic Services. Part of the round gives employees liquidity.</p>
+        <ul class="sources">
+          <li><a href="https://www.tipranks.com/news/private-companies/supabase-raises-150-million-and-acquires-turso-to-scale-agentic-database-infrastructure">TipRanks: Supabase raises $150M, acquires Turso</a></li>
+          <li><a href="https://www.trendingtopics.eu/supabase-150-million-turso/">Trending Topics: Supabase $150M Turso</a></li>
+          <li><a href="https://en.wowtale.net/2026/10/03/235372/">WOWTALE: Supabase raises $150M, acquires Turso</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">2 Oct</span></div>
+    <h3>FieldAI set to raise $700M at $10B for a universal robot &ldquo;brain&rdquo;</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> investors are paying robot-software prices that are close to Physical Intelligence (~$11B) and Skild AI ($14B+); licensing models for robots look like the next platform race.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The deal is reported as a signed non-binding term sheet, so terms may change. FieldAI licenses its software to robot makers, including Boston Dynamics Spot fleets used on construction sites. Backers include NVentures, Intel Capital, Bezos Expeditions and Khosla Ventures.</p>
+        <ul class="sources">
+          <li><a href="https://siliconangle.com/2026/10/02/robotics-ai-developer-fieldai-reportedly-raising-700m-in-funding/">SiliconANGLE: FieldAI reportedly raising $700M</a></li>
+          <li><a href="https://thenextweb.com/news/fieldai-10b-europe-robot-brains">The Next Web: FieldAI set to raise $700M at $10B</a></li>
+          <li><a href="https://www.benzinga.com/markets/tech/26/10/62150844/fieldai-700-million-10-billion-valuation-physical-ai">Benzinga: FieldAI raises $700M at $10B</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Business</span><span class="when">3 Oct</span></div>
+    <h3>OpenAI: 35M weekly Codex and ChatGPT Work users, and a new $500 Pro plan</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> agentic coding and work tools are now a mass-market line, and the top price tier moves to $500 while the $200 plan gets less usage; budget for higher heavy-user costs.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI gave the figure at DevDay: more than 35 million weekly users of Work and Codex, up from about 10 million earlier this year. The $500 plan includes ultrafast processing in Codex and ChatGPT, and the $200 Pro plan usage is reported cut by half. New here: usage and pricing details; the GPT-6.1 Sol launch was covered on 2 October.</p>
+        <ul class="sources">
+          <li><a href="https://cryptobriefing.com/openais-chatgpt-codex-hit-35m-weekly-users-unveils-500-pro-plan/">Crypto Briefing: ChatGPT, Codex hit 35M weekly users; $500 Pro plan</a></li>
+          <li><a href="https://thenextweb.com/news/openai-devday-pro-200-usage-cut-pro-500-plan">The Next Web: OpenAI halves Pro 200 usage, launches $500 plan</a></li>
+          <li><a href="https://the-decoder.com/chatgpt-now-reaches-1-2-billion-people-every-week-openai-says/">The Decoder: ChatGPT reaches 1.2 billion weekly people</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 4 October 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
