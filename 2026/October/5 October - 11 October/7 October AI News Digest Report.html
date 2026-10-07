@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 7 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Mistral ships a 1T-parameter open-weight model from Europe, Anthropic's leaked S-1 exposes $518B in compute commitments, and Waymo's $5B debut loan shows lenders will fund robotaxis.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>7 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Mistral Large 4.</strong> A 1.05T-parameter open-weight model from Europe; weights due 27 October.</li>
+      <li><strong>Anthropic S-1 details.</strong> $4.6B revenue, $8B loss and $518B of compute commitments ahead of a November IPO.</li>
+      <li><strong>Waymo.</strong> Debut private loan upsized to $5B for robotaxi expansion.</li>
+      <li><strong>OpenAI Codex.</strong> A 28-day shipping sprint starts with faster GPT-6 models and a $500 plan.</li>
+      <li><strong>Washington.</strong> Jay Clayton leads the new Super Intelligence Force.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">6 Oct</span></div>
+    <h3>Mistral previews Large 4, a 1.05T-parameter open-weight model, with weights due 27 October</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Europe now has a credible sovereign alternative to US and Chinese frontier models, and the open weights land in three weeks, so procurement and data-residency options change.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Mistral Large 4 (&ldquo;Le Chonk&rdquo;) is a mixture-of-experts model with 1.05T total and 49B active parameters, a 1M-token context window and 160+ languages. It was trained in two months on 4,000 Nvidia Grace Blackwell GPUs in Mistral&rsquo;s own European data centres. Public preview is on the Mistral Studio API; Mistral says it is the strongest open-weight model built outside China. That is a vendor claim and independent benchmarks are not yet available.</p>
+        <ul class="sources"><li><a href="https://www.marktechpost.com/2026/10/06/mistral-ai-releases-mistral-large-4-le-chonk-a-1-05t-parameter-open-weight-multimodal-moe/">MarkTechPost: Mistral releases Large 4</a></li><li><a href="https://thenextweb.com/news/mistral-releases-large-4-a-1-trillion-parameter-open-weight-ai-model">The Next Web: Mistral launches Large 4</a></li><li><a href="https://qz.com/mistral-large-4-open-weight-ai-model-launch-100626">Quartz: Mistral launches Large 4</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">Leaked 30 Sep, in focus 5&ndash;7 Oct</span></div>
+    <h3>Anthropic S-1 shows $4.6B revenue, an $8B operating loss and $518B of compute commitments</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> New detail on the 5 October IPO story: growth is steep but fixed costs are heavy, so the November listing is a bet on continued demand.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The leaked 261-page prospectus reports 2025 revenue up about 12x to nearly $4.6B and an operating loss of $8B (from $3B). Nearly a quarter of revenue came from two customers, and about 80 pages are risk factors, including &ldquo;catastrophic or existential&rdquo; risk language. Compute commitments are at least $518B, roughly 80% non-cancelable. The company targets a valuation of up to $2T, marketing from the week of 9 November. These figures come from a leak, not a final filing.</p>
+        <ul class="sources"><li><a href="https://www.cnn.com/2026/10/05/business/anthropic-ipo-stock-market">CNN: Anthropic expected to IPO despite market uncertainty</a></li><li><a href="https://www.bloomberg.com/news/articles/2026-10-01/anthropic-said-to-target-mega-ipo-before-thanksgiving-holiday">Bloomberg: Anthropic targets November IPO</a></li><li><a href="https://www.theringer.com/2026/09/30/tech/anthropic-ipo-numbers-leak-dario-amodei">The Ringer: Anthropic IPO numbers leak</a></li><li><a href="https://letsdatascience.com/blog/anthropic-ipo-prospectus-nearly-a-third-is-risk-factors">Let&rsquo;s Data Science: prospectus is nearly a third risk factors</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">6 Oct</span></div>
+    <h3>Waymo upsizes its first private loan to $5B, led by Pimco, Blackstone and Sixth Street</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Credit markets will fund capital-heavy autonomy at scale, which gives Waymo runway to expand while rivals depend on equity.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The deal grew from an initial target above $3B and is priced 5.25 points over the benchmark rate. It funds paid robotaxi expansion in more US cities and preparation for Japan and Singapore. Waymo raised $16B at a $126B valuation earlier this year.</p>
+        <ul class="sources"><li><a href="https://www.bloomberg.com/news/articles/2026-10-06/waymo-boosts-private-debt-deal-to-5-billion-in-push-for-growth">Bloomberg: Waymo boosts private debt deal to $5B</a></li><li><a href="https://www.investing.com/news/stock-market-news/waymo-upsizes-debut-private-loan-to-5-billion-to-fund-expansion--bloomberg-4935138">Investing.com: Waymo upsizes debut private loan</a></li><li><a href="https://www.privateequitywire.co.uk/waymo-expands-private-debt-raise-to-5bn-to-fund-robotaxi-growth/">Private Equity Wire: Waymo expands private debt raise</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Dev platforms</span><span class="when">6 Oct</span></div>
+    <h3>OpenAI starts a 28-day Codex shipping sprint: GPT-6 models 50% faster, $500 Pro plan, EU text watermarking</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Coding-agent speed and pricing tiers are moving fast, so review team seat plans and any policy on AI-text labelling in the EU.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Day 1 of the sprint made GPT-6 Astra and GPT-6.1 Sol about 50% faster by default, per the Codex engineering lead. The changelog also lists a new Pro 500 plan at $500 a month and text watermarking for eligible ChatGPT and Codex users in the EU. Codex 0.160.1 shipped on 6 October. The speed and plan details come from a changelog tracker; check the official changelog before acting on them.</p>
+        <ul class="sources"><li><a href="https://developers.openai.com/codex/changelog">OpenAI: ChatGPT &amp; Codex changelog</a></li><li><a href="https://releasebot.io/updates/openai/codex">Releasebot: Codex updates, October 2026</a></li><li><a href="https://thenewstack.io/openai-codex-shipping-sprint/">The New Stack: Codex shipping sprint</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">Announced 4 Oct</span></div>
+    <h3>White House names a Super Intelligence Force led by Jay Clayton</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A single federal task force now coordinates AI policy and will consult industry, so expect it to be the main channel for federal asks of AI companies.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Follow-up to the 4 October brief on Washington&rsquo;s tightening grip. The task force is led by Jay Clayton, the director of national intelligence, with FTC chair Andrew Ferguson, Pentagon CTO Emil Michael and OPM director Scott Kupor. It reports to the President and chief of staff Susie Wiles, and will consult consumers, public-interest groups, critical-infrastructure providers and AI companies. It follows last week&rsquo;s voluntary self-policing accord signed by AI executives.</p>
+        <ul class="sources"><li><a href="https://www.hawaiinewsnow.com/2026/10/04/trump-names-national-intelligence-director-jay-clayton-lead-new-federal-ai-task-force/">AP via Hawaii News Now: Trump names Jay Clayton to lead a new federal AI task force</a></li><li><a href="https://news3lv.com/news/nation-world/trump-launches-super-intelligence-force-sif-to-keep-us-leading-ai-names-top-officials-federal-trade-commission-andrew-ferguson-pentagon-chiefl-technology-officer-emil-michael-director-of-the-office-of-personnel-management-scott-kupor">News3LV: Trump launches Super Intelligence Force</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 7 October 2026. Quiet day on verified primary sources: five stories.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
