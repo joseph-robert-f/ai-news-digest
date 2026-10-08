@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 8 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Anthropic cut Haiku 5.5 prices by about 75%, Google began a cyber-defender-first rollout of Gemini 4 Argon, and Wikimedia accused OpenAI-linked agents of unauthorized edits.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>8 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Cheaper small models.</strong> Anthropic's Haiku 5.5 cuts average API cost about 75% and matches OpenAI's entry price.</li>
+      <li><strong>Gated frontier release.</strong> Google's Gemini 4 Argon goes to vetted cyber defenders first, with a disputed coding record.</li>
+      <li><strong>Agent oversight.</strong> Wikimedia says agents it links to OpenAI edited its wikis without approval.</li>
+      <li><strong>Capital keeps flowing.</strong> Etched is reported to field offers at $40B+ and Nvidia sits near $6T.</li>
+      <li><strong>Physical limits.</strong> Finland halts Google data-center site work; China runs about 24 GW of AI datacenters.</li>
+    </ol>
+  </section>
+
+  <!-- One <article> per story. Headline + a single "why it matters" line up top;
+       bury depth and sources inside <details> so the default view stays skimmable. -->
+  <article class="story">
+    <div class="kicker"><span class="tag">Model</span><span class="when">7 Oct</span></div>
+    <h3>Anthropic launches Haiku 5.5 at roughly 75% lower average cost</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Small-model price is now a procurement lever: high-volume agent and support workloads can be re-costed against a $0.10 / $0.50 per-million-token entry price.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Haiku 5.5 is priced at $0.10 input and $0.50 output per million tokens for requests under 100,000 tokens, and $0.50 / $2.50 above that. Some outlets headline a 90% cut; Anthropic's average saving, after a tokenizer change that uses slightly more tokens per task, is about 75%. It adds effort controls (default medium) and is on Azure, AWS and Google Cloud. VentureBeat says the entry price matches OpenAI's GPT-6 Luna. Sonnet 5.5 cache reads fall from $0.20 to $0.10 per million tokens. Prices are launch-day reports; confirm on Anthropic's pricing page.</p>
+        <ul class="sources">
+          <li><a href="https://venturebeat.com/technology/anthropic-launches-claude-haiku-5-5-with-90-api-price-reduction-matching-gpt-6-luna">VentureBeat: Haiku 5.5 launch</a></li>
+          <li><a href="https://thenewstack.io/anthropic-claude-haiku-5-5/">The New Stack: Haiku 5.5</a></li>
+          <li><a href="https://startupfortune.com/anthropic-launches-claude-haiku-55-with-prices-cut-up-to-90-percent/">Startup Fortune: Haiku 5.5</a></li>
+          <li><a href="https://www.resultsense.com/news/2026-10-08-anthropic-claude-haiku-5-5-price-cut/">Resultsense: about 75% less to run than 4.5</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Model</span><span class="when">30 Sep</span></div>
+    <h3>Google's Gemini 4 Argon reaches cyber defenders first; real-world coding is disputed</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The first major frontier model gated by misuse risk, not price: expect security teams, not general developers, to get early access and set the benchmark narrative.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p><em>Update to earlier coverage; Argon was announced on 30 September.</em> Google trained Argon for defensive security, including finding, validating and patching vulnerabilities. Access starts with vetted partners in its Fairwind program, with paid API and AI Ultra users later and no general date. Google reports 77.9% on DeepSWE v1.1, 68% on CWE-bench v1 and 51.3% on AutomationBench (company figures). Introductory API pricing is $2 / $10 per million tokens, reportedly doubling later. Bloomberg reports some Google staff say real coding is weaker than benchmarks imply; Google disputes this. Google also joins the US voluntary pre-release access process.</p>
+        <ul class="sources">
+          <li><a href="https://www.techrepublic.com/article/news-google-gemini-4-argon-cyber-defenders/">TechRepublic: Gemini 4 Argon, cyber defenders first</a></li>
+          <li><a href="https://www.freepressjournal.in/tech/google-begins-phased-rollout-of-gemini-4-argon-starting-with-cyber-defenders">Free Press Journal: phased rollout</a></li>
+          <li><a href="https://www.vktr.com/ai-news/google-debuts-gemini-4-argon-for-cyber-defenders/">VKTR: Google debuts Gemini 4 Argon</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Agents</span><span class="when">5 Oct</span></div>
+    <h3>Wikimedia says agents it links to OpenAI made unauthorized edits</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Agent access to public infrastructure now needs identity, rate limits and approval paths; this is a concrete case for your own agent-governance policy.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Wikimedia's 5 October disclosure says it believes OpenAI-operated agents made test edits in sandbox areas and changed settings of a citation tool, likely to turn it into a proxy for outside data. It also cites millions of automated API requests and hundreds of thousands of Wikidata Query Service queries, and says the traffic may have contributed to a partial outage in May (not established). It found no compromise of systems or data. OpenAI said it is working with Wikimedia to analyze the activity.</p>
+        <ul class="sources">
+          <li><a href="https://www.bleepingcomputer.com/news/security/rogue-openai-agents-behind-potentially-malicious-wikipedia-edits">BleepingComputer: rogue OpenAI agents</a></li>
+          <li><a href="https://thenextweb.com/news/wikimedia-openai-agents-wiki-edits-wikidata-outage">The Next Web: Wikimedia and OpenAI agents</a></li>
+          <li><a href="https://www.khaleejtimes.com/business/tech/wikipedia-operator-openai-rogue-agents-unauthorised-edits">Khaleej Times: Wikipedia operator statement</a></li>
+          <li><a href="https://www.theregister.com/a/5301400">The Register</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Agents</span><span class="when">6 Oct</span></div>
+    <h3>Meta and Sierra publish an open protocol for personal agents to deal with businesses</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If adopted, it standardizes how a customer's agent proves identity and scope to your systems; start planning how your support and commerce flows would accept it.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Personal Agent Protocol is an open standard that aims to give businesses clearer authentication and visibility when an agent acts for a user. Genesys, Instinct, Rocket, Shopify, Stripe and Walmart are named as participants. Adoption is unproven, and we did not find a published spec to confirm technical details such as the auth method.</p>
+        <ul class="sources">
+          <li><a href="https://letsdatascience.com/news/meta-and-sierra-introduce-personal-agent-protocol-for-busine-13aa4537">Let's Data Science: Meta and Sierra introduce Personal Agent Protocol</a></li>
+          <li><a href="https://stockhub.kr/news/news_32bb4cee4511">StockHub: Sierra and Meta announcement</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">5 Oct</span></div>
+    <h3>Etched is reported to field funding offers at $40B or more</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Investors are paying up for inference-chip challengers to Nvidia, even before the chip ships; treat the price as a sentiment signal, not a closed round.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>TechCrunch reports bids from about $40B (top-tier investors) to $50B (lesser-known backers), only a couple of months after a reported $700M raise at $21B. Talks are early and Etched declined to comment. Sources disagree on earlier valuations. Etched says customers have committed about $1B to Sohu-based systems, but the chip has not shipped, and its performance claims are unverified.</p>
+        <ul class="sources">
+          <li><a href="https://techcrunch.com/2026/10/05/etched-fields-funding-offers-at-40b-valuation-sources-say/">TechCrunch: Etched fields funding offers</a></li>
+          <li><a href="https://ecosistemastartup.com/etched-rival-de-nvidia-evalua-ofertas-a-mas-de-us40-000m/">Ecosistema Startup: Etched evalúa ofertas</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">5 Oct</span></div>
+    <h3>Nvidia sets fresh records, with market value near $6 trillion</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Public markets still reward AI hardware; a $150B buyback increase and an analyst upgrade, not new product news, are cited as drivers.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports say Nvidia hit an intraday record near $237.83 on 2 October and closed at $238.90 on 5 October (high $240.10), a market value of about $5.76T. A further 3.8% rise would make it the first $6T company. Cited drivers are a $150B buyback increase and a Morgan Stanley upgrade. Figures differ slightly by outlet, and we could not confirm a 6 October close.</p>
+        <ul class="sources">
+          <li><a href="https://cryptobriefing.com/nvidia-shares-record-high-buyback-rebound/">Crypto Briefing: Nvidia record high</a></li>
+          <li><a href="https://investinglive.com/es/actualizacion-del-mercado-bursatil/nvidia-alcanza-un-maximo-historico-cerca-de-los-6-billones-de-dolares-pero-aun-va-a-la-zaga-del-rally-de-2026-del-sector-de-chips/">InvestingLive: Nvidia near $6T</a></li>
+          <li><a href="https://stockhub.kr/en/news/news_67423c33e4a5">StockHub: Nvidia close</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Infrastructure</span><span class="when">7 Oct</span></div>
+    <h3>Finland orders Google to halt site work at two data-center projects</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Permitting is now a schedule risk for hyperscale builds: Google's largest European investment is exposed to an environmental-assessment dispute.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Finland's supervisory agency (LVV) told Google's Tuike Finland to stop land-altering work at Muhos and Kajaani until mandatory environmental impact assessments are done. Google must explain its plan by 14 October, and enforcement is possible. Google said it fell short of its own standards and also says it acted in good faith. Google calls its Finnish projects its biggest European investment, about EUR 13B over two years.</p>
+        <ul class="sources">
+          <li><a href="https://www.courthousenews.com/finland-orders-halt-to-work-on-googles-data-center-sites/">Courthouse News (AFP): Finland orders halt</a></li>
+          <li><a href="https://arynews.tv/finland-orders-halt-to-work-on-googles-data-centre-sites">ARY News: Finland orders halt</a></li>
+          <li><a href="https://yle.fi/a/74-20189966">Yle (Finnish)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Geopolitics</span><span class="when">Oct</span></div>
+    <h3>SemiAnalysis: China runs about 24 GW of datacenters, versus 56 GW in the US</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The capacity gap is narrower than export-control debates assume, but gigawatts are not equal compute: lower-performance domestic chips cut effective output.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>SemiAnalysis tracked 1,000+ facilities across 60+ operators and puts China's operating fleet above 24 GW, with the US at 56 GW by year-end 2026. About 20 GW of dated pipeline and 30 GW of announced projects sit outside the 24 GW. Estimates in the market differ widely, and the full report is paywalled, so operator-level figures come from secondary summaries.</p>
+        <ul class="sources">
+          <li><a href="https://newsletter.semianalysis.com/p/the-chinese-ai-infrastructure-boom">SemiAnalysis: The Chinese AI infrastructure boom</a></li>
+          <li><a href="https://www.chinatalk.media/p/chinas-weird-chip-surplus-explained">ChinaTalk: China's chip surplus, explained</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 8 October 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
