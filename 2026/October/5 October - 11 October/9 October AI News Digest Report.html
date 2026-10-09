@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 9 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="OpenAI’s revenue reset rattled AI stocks while GPT-6 reached ChatGPT users, Google’s new work agent opened to Claude, and OpenAI’s unreviewed math claims drew scrutiny.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>9 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Revenue reset.</strong> OpenAI’s annualized revenue is about $50B, not ~$70B; AI stocks fell.</li>
+      <li><strong>GPT-6 ships.</strong> ChatGPT’s 1.2B weekly users get GPT-6 with interactive “Intelligent UI.”</li>
+      <li><strong>Rival models, one agent.</strong> Google’s Gemini agent routes work to Claude as well as Gemini.</li>
+      <li><strong>Maths claims.</strong> OpenAI posted 372 result families, including a Unique Games proof; peer review is pending.</li>
+      <li><strong>Cyber access.</strong> Anthropic merges Glasswing and its verification program into three tiers.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">Oct 8</span></div>
+    <h3>OpenAI’s annualized revenue is about $50B, and AI stocks sold off</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A headline demand metric for AI reset lower; expect tougher questions on compute contracts that assume steep growth.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI told investors annualized revenue reached about $50B at end-September, versus roughly $68–70B in earlier investor estimates (FT, as relayed by Investing.com; CNN).</p>
+        <p>Part of the gap may be method: Anthropic counts sales through cloud partners such as AWS and Google Cloud, and OpenAI does not, so the two figures are not like-for-like.</p>
+        <p>Nvidia closed down about 2.9%, AMD 3.9% and Micron 4.8%; the Nasdaq fell about 1.3–1.4%. A hawkish Fed comment also weighed on the day.</p>
+        <ul class="sources">
+          <li><a href="https://www.investing.com/news/stock-market-news/openai-annualized-revenue-at-50bn-far-below-reports--ft-4939530">Investing.com (FT): OpenAI annualized revenue at $50bn, far below reports</a></li>
+          <li><a href="https://krdo.com/money/cnn-business-consumer/2026/10/08/tech-stocks-drop-after-report-that-openais-revenue-is-lower-than-expected/">CNN via KRDO: Tech stocks drop after report that OpenAI’s revenue is lower than expected</a></li>
+          <li><a href="https://www.kiplinger.com/investing/stocks/openai-revenue-woes-weigh-on-tech-stocks-stock-market-today">Kiplinger: Nasdaq sinks 345 points as OpenAI revenue woes weigh</a></li>
+          <li><a href="https://finance.yahoo.com/markets/stocks/articles/openais-revenue-lower-previously-reported-202129526.html">Yahoo Finance: OpenAI’s revenue was lower than previously reported</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">Oct 7–8</span></div>
+    <h3>GPT-6 reaches ChatGPT with “Intelligent UI” for all tiers</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Answers become interactive tools (charts, forms, calculators), which raises the bar for every chat product and for apps built on ChatGPT.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Paid tiers got GPT-6 Sol in the Chat tab on 7 October; Free and Go users were due GPT-6 Luna on 8 October. Users can reduce the visual elements.</p>
+        <p>OpenAI cites more than 1.2B weekly ChatGPT users. The change covers Chat only, not Work or Codex. This is new versus the 7 October digest, which covered the Codex sprint and not the ChatGPT rollout.</p>
+        <p>Details come from secondary coverage of OpenAI’s announcement; the Free-tier rollout was not independently confirmed.</p>
+        <ul class="sources">
+          <li><a href="https://letsdatascience.com/news/openai-brings-gpt-6-and-intelligent-ui-to-chatgpt-4f0d797c">Let’s Data Science: OpenAI rolls out GPT-6 and Intelligent UI in ChatGPT</a></li>
+          <li><a href="https://fourweekmba.com/ai-openai-brings-gpt-6-to-chatgpts-1-2-billion-weekly-users/">FourWeekMBA: OpenAI brings GPT-6 to ChatGPT’s 1.2 billion weekly users</a></li>
+          <li><a href="https://scalevise.com/resources/gpt-6-intelligent-ui-chatgpt-rollout/">Scalevise: GPT-6 and Intelligent UI across ChatGPT tiers</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Agents</span><span class="when">Oct 8</span></div>
+    <h3>Google Cloud’s Gemini agent can route work to Anthropic’s Claude</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A major cloud vendor is making its flagship enterprise agent model-neutral; buyers should expect to choose agents on workflow and cost controls, not on one model family.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Announced at Google’s Gemini at Work event on 8 October as a “universal agent for work” that answers questions, produces documents and media, and writes and runs code.</p>
+        <p>Google says it picks the best model per job across Gemini and Claude. It is in private preview, with no public pricing or general release date; Claude versions are not specified on Google’s page.</p>
+        <p>Reported controls include spend caps and per-agent identity. No comparative quality or cost results were published.</p>
+        <ul class="sources">
+          <li><a href="https://9to5google.com/2026/10/08/gemini-agent-google-cloud/">9to5Google: Google Cloud announces ‘Gemini agent’ as ‘universal agent for work’</a></li>
+          <li><a href="https://www.marktechpost.com/2026/10/08/google-cloud-launches-gemini-agent-one-universal-agent-for-enterprise-work/">MarkTechPost: Google Cloud launches Gemini agent</a></li>
+          <li><a href="https://runtimewire.com/article/google-cloud-gemini-agent-work">Runtime Wire: Google Cloud’s new work agent can route jobs to Claude</a></li>
+          <li><a href="https://xenospectrum.com/en/gemini-agent-enterprise-coworker-memory/">XenoSpectrum: Google Cloud unveils Gemini agent</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Research</span><span class="when">Oct 6–7</span></div>
+    <h3>OpenAI posts 372 maths result families; a Unique Games proof claim is unreviewed</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If even a fraction holds, AI-generated mathematics moves from demo to workflow; until experts check it, treat the headline claims as unverified.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI published 722 manuscripts grouped into 372 result families from an unreleased internal model, with Lean artifacts for some. Sam Altman highlighted proofs of the Unique Games Conjecture and the quasi-Riemann hypothesis, among others.</p>
+        <p>OpenAI itself says unformalized results may have errors. None is peer reviewed. Scott Aaronson called the day among the biggest in mathematics; Quanta reports researchers raced to publish related results.</p>
+        <p>Coverage is mostly secondary. Check the OpenAI repository and expert reviews before relying on any single claim.</p>
+        <ul class="sources">
+          <li><a href="https://quantamagazine.org/as-ai-closed-in-on-unique-games-proof-researchers-raced-to-beat-the-machines-20261007">Quanta: As AI closed in on Unique Games proof, researchers raced to beat the machines</a></li>
+          <li><a href="https://theprint.in/tech/weeks-after-claiming-ai-cracked-90-yr-old-maths-puzzle-openai-drops-the-mother-lode-on-mathematicians/3064174/">ThePrint: OpenAI drops the mother lode on mathematicians</a></li>
+          <li><a href="https://officechai.com/ai/openai-releases-over-300-mathematical-results-produced-by-an-internal-model/">OfficeChai: OpenAI releases over 300 mathematical results</a></li>
+          <li><a href="https://ecosistemastartup.com/?p=115708">Ecosistema Startup: OpenAI publishes 372 theorems</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">Oct 6–7</span></div>
+    <h3>Anthropic merges Glasswing and its Cyber Verification Program into three tiers</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Vetted defenders and red teams get fewer model safeguards under a single application; security teams can now apply for stronger tooling.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Tier 1 (Defense Access) covers SOC work, incident response, malware analysis and vulnerability validation. Tier 2 (Red Team Access) adds authorized penetration testing for organizations. Tier 3 (Specialized Access) covers high-risk systems such as power grids and telecoms and is vetted with the US government.</p>
+        <p>All tiers include Opus 5.5, Sonnet 5.5 and Mythos 5.1. Real-time blocks remain on activity that could cause physical harm or widespread disruption, such as ransomware deployment.</p>
+        <p>Tier details differ slightly across outlets; check Anthropic’s documentation. This follows Google’s Gemini 4 Argon cyber-defender-first release (3 October digest).</p>
+        <ul class="sources">
+          <li><a href="https://www.csoonline.com/article/4231812/anthropic-widens-access-to-ai-cyber-capabilities-for-vetted-security-teams.html">CSO Online: Anthropic widens access to AI cyber capabilities for vetted security teams</a></li>
+          <li><a href="https://letsdatascience.com/news/anthropic-expands-claude-cyber-verification-into-three-tiers-50d2767e">Let’s Data Science: Anthropic expands Claude cyber verification into three tiers</a></li>
+          <li><a href="https://news.cgtn.com/news/2026-10-07/Anthropic-opens-its-most-powerful-AI-models-to-more-security-teams-1R2CBVpQ44E/p.html">CGTN: Anthropic opens its most powerful AI models to more security teams</a></li>
+          <li><a href="https://xenospectrum.com/en/anthropic-cyber-verification-three-tiers/">XenoSpectrum: Anthropic cyber verification three tiers</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Government</span><span class="when">Oct 7</span></div>
+    <h3>Pentagon’s Tradewinds lets AI vendors win buyers with five-minute videos</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Defense AI procurement is getting faster and less competitive on paper; vendors with accepted products can close deals in days, so compliance and security evidence matter more.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Tradewinds, run by the Pentagon’s CDAO, admits products to a marketplace after a panel reviews five-minute video pitches. Accepted items count as “post-competitive,” so buyers can skip a full bid.</p>
+        <p>A DOD official says some awards took under a week; that is a best case, not typical. As of June 2026 the marketplace listed 4,064 submissions and $3.67B in contracts awarded.</p>
+        <p>Most reporting traces to one WIRED story of 7 October; the official figures come from an unnamed source.</p>
+        <ul class="sources">
+          <li><a href="https://dnyuz.com/2026/10/07/the-pentagon-hopes-to-speed-up-kill-chain-ai-buys-with-5-minute-videos/">DNyuz (WIRED): The Pentagon hopes to speed up ‘kill chain’ AI buys with 5-minute videos</a></li>
+          <li><a href="https://www.wiley.law/newsletter-Defense-Departments-Updated-Procurement-Process-Allows-Quicker-Access-to-Private-Sector-AI-Products">Wiley: Defense Department’s updated procurement process</a></li>
+          <li><a href="https://meritalk.com/?p=199404">MeriTalk: Tradewinds AI procurement</a></li>
+          <li><a href="https://www.winzheng.com/en/article/pentagon-tradewinds-ai-procurement">Winzheng: Pentagon Tradewinds AI procurement</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">Oct 5–8</span></div>
+    <h3>Policy watch: UN rights chief urges AI guardrails; EU cloud-and-AI bill draws criticism</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Regulatory pressure is rising on two fronts, rights safeguards and infrastructure permitting; both affect where and how fast data centers and models can ship.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>UN human rights chief Volker Türk warned that time to set AI guardrails is running out and called for mandatory human-rights safeguards.</p>
+        <p>The digital-rights group EDRi criticizes the EU’s proposed Cloud and AI Development Act for fast-tracking permits and limiting public participation and legal recourse. A new Connecticut law on AI subscriptions also took effect in October.</p>
+        <p>These are advocacy positions and a state-level rule, not binding new EU or US federal obligations.</p>
+        <ul class="sources">
+          <li><a href="https://news.un.org/en/story/2026/10/1168529">UN News: ‘The clock on AI regulation is ticking’</a></li>
+          <li><a href="https://edri.org/our-work/edri-gram-8-october-2026/">EDRi: EDRi-gram, 8 October 2026</a></li>
+          <li><a href="https://dailycampus.com/2026/09/30/new-ai-regulation-law-goes-into-effect-oct-1/">Daily Campus: New AI regulation law goes into effect Oct. 1</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 9 October 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
