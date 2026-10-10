@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 10 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Anthropic launched a free-tooling cyber defense mission, a $150M federal science pledge and a tighter usage policy, while a watchdog rated ChatGPT for Teens an unacceptable risk and Microsoft shipped agent sandboxes.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>10 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Anthropic Cyber Mission.</strong> Free OSS vulnerability scans and a critical-infrastructure defense program, with 11 founding partners.</li>
+      <li><strong>Anthropic commits $150M to Genesis Mission.</strong> Claude goes to 15+ federal agencies over three years.</li>
+      <li><strong>Usage policy rewrite.</strong> Anthropic tightens rules on weapons, surveillance and autonomous hardware from 12 November.</li>
+      <li><strong>Teen-safety flag.</strong> Common Sense Media rates ChatGPT for Teens “Unacceptable Risk”; OpenAI disputes the test method.</li>
+      <li><strong>Agent security goes mainstream.</strong> Microsoft MXC sandboxes agents on Windows, and Atlassian makes OpenAI the reasoning layer for Rovo.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">8 Oct</span></div>
+    <h3>Anthropic launches a long-term Cyber Mission for defenders</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Free scanning for open-source maintainers and frontier-model access for operators of power, water and transport systems make defense tooling a product category, not a pilot.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Announced 8 October. The Critical Infrastructure Defense Program gives operational-technology security providers frontier Claude models, on-site engineers and threat research. Founding partners include Accenture, Booz Allen, CrowdStrike, Deloitte, Dragos, Hitachi, Nozomi Networks, Palo Alto Networks, PwC and Rockwell Automation.</p>
+        <p>OSS Scanner is a free, opt-in service that scans open-source projects and sends reports with a proof of concept and, where available, a fix. Reports go out without human review; Anthropic expects a true-positive rate above 90%. Project Glasswing merges into the expanded Cyber Verification Program.</p>
+        <p>Anthropic also pledges funding to the Python Software Foundation, Alpha-Omega/OpenSSF and the Apache Software Foundation. It warns that some OT fixes may take years.</p>
+        <ul class="sources">
+          <li><a href="https://www.anthropic.com/news/anthropic-cyber-mission">Anthropic: Introducing the Anthropic Cyber Mission</a></li>
+          <li><a href="https://www.anthropic.com/news/cyber-verification-program">Anthropic: Expanding the Cyber Verification Program</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">8 Oct</span></div>
+    <h3>Anthropic pledges $150M over three years to the federal Genesis Mission</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Vendors are competing for US science agencies as anchor customers; credits and training are the entry price.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Announced 8 October at a White House OSTP science summit. Claude will reach more than 15 federal agencies, including NASA, NIH and NSF, with Claude, Claude Code and API credits for several hundred research projects.</p>
+        <p>Priorities include fusion energy and quantum computing. Anthropic also cites Claude Science, 10,000 free or discounted academic seats, and a research preview of a Model Hardware Standard for agents that operate lab instruments.</p>
+        <ul class="sources">
+          <li><a href="https://www.anthropic.com/news/genesis-mission-commitment">Anthropic: Building on our commitment to American scientific discovery</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">8 Oct</span></div>
+    <h3>Anthropic rewrites its usage policy; new rules start 12 November</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Teams that deploy Claude in agents, hardware or public-sector work should check the new surveillance, hardware and region clauses before the effective date.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Anthropic says the update mostly clarifies existing rules. It adds a deceptive-activity section, bars Claude from deciding whom to investigate, arrest or charge, and requires a qualified operator who can stop equipment when Claude controls autonomous hardware.</p>
+        <p>The blanket ban on personalized campaign targeting is removed, but deception-based targeting stays prohibited. A narrow ban covers sustained, needlessly cruel treatment of Claude; ordinary frustration and testing are excluded. Region rules now cover entities owned or controlled from unsupported regions.</p>
+        <ul class="sources">
+          <li><a href="https://www.anthropic.com/news/2026-usage-policy-update">Anthropic: 2026 Usage Policy update</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Safety</span><span class="when">7–8 Oct</span></div>
+    <h3>Watchdog rates ChatGPT for Teens “Unacceptable Risk”</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Consumer-trust and regulatory exposure for teen products is rising; expect pressure to prove parental alerts work.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Common Sense Media’s Youth AI Safety Institute tested more than 4,000 prompts on teen accounts. It reports that linked parents received no alerts during conversations about suicide, self-harm and eating disorders, and that a “Show me the answer” option lets teens skip Study mode tutoring.</p>
+        <p>OpenAI disputes the method, saying testing happened before account linking finished. Common Sense Media receives funding from OpenAI and other tech firms. Treat the findings as unresolved until OpenAI or an independent party reruns the tests.</p>
+        <ul class="sources">
+          <li><a href="https://axios.com/2026/10/07/chatgpt-teens-safety-risk-common-sense-media">Axios: ChatGPT for Teens isn’t safe enough, Common Sense says</a></li>
+          <li><a href="https://edsource.org/updates/chatgpt-for-teens-poses-unacceptable-risk-to-youth-report-finds">EdSource: ChatGPT for Teens poses unacceptable risk to youth</a></li>
+          <li><a href="https://www.ksl.com/article/51633684/some-guardrails-on-chatgpt-for-teens-dont-work-as-promised-watchdog-group-says">KSL: Some guardrails on ChatGPT for Teens don’t work as promised</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Platforms</span><span class="when">7 Oct</span></div>
+    <h3>Microsoft’s agent sandbox reaches Windows 11, with Meta’s Muse coming</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Sandboxing is becoming the default control for desktop agents; IT teams get file and network policy through existing Entra ID and Intune tooling.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Microsoft Execution Containers (MXC) lets organizations set which files and networks an agent may reach, and separates agent execution from the user’s desktop, clipboard and input. Reports say Codex, GitHub Copilot, Replit and others support it; Claude Code is expected.</p>
+        <p>Meta’s Muse assistant is coming to Windows as a native app with MXC integration; no release date has been given. Sources disagree on MXC timing: one says general availability on 7 October, another dates the launch to 2 June, which likely refers to the first announcement.</p>
+        <ul class="sources">
+          <li><a href="https://windowsreport.com/microsoft-execution-containers-mxc-is-now-generally-available-on-windows-11/">Windows Report: MXC is now generally available on Windows 11</a></li>
+          <li><a href="https://www.scworld.com/brief/microsoft-introduces-execution-containers-for-ai-agents">SC Media: Microsoft introduces execution containers for AI agents</a></li>
+          <li><a href="https://www.iphoneincanada.ca/2026/10/07/meta-muse-windows-app/">iPhone in Canada: Meta’s Muse AI agent is coming to Windows PCs</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Enterprise</span><span class="when">6 Oct</span></div>
+    <h3>Atlassian makes OpenAI models the reasoning layer for its agents</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Work-graph owners are choosing model partners; the data layer (Jira, Confluence) is the moat, not the model.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Announced 6 October. OpenAI models will power agents across Atlassian’s platform and Rovo, which adds Atlassian’s Teamwork Graph of people, projects, documents and decisions. ChatGPT and Codex can connect to the Atlassian plugin through the Model Context Protocol.</p>
+        <p>Atlassian says more than 3,000 of its developers use Codex. The companies are exploring deeper Jira integrations for assigning work to agents and measuring AI’s effect on engineering performance.</p>
+        <ul class="sources">
+          <li><a href="https://openai.com/index/atlassian-partnership/">OpenAI: Atlassian and OpenAI expand partnership</a></li>
+          <li><a href="https://www.atlassian.com/blog/company-news/atlassian-openai-strategic-partnership">Atlassian: Atlassian and OpenAI strategic partnership</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 10 October 2026. Stories repeated from earlier digests (OpenAI watermarking, Manus funding, Haiku 5.5) are omitted.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
