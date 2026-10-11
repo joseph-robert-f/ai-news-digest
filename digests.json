@@ -1,7 +1,16 @@
 {
-  "generated": "2026-10-10T09:33:53.153Z",
-  "count": 87,
+  "generated": "2026-10-11T09:34:33.468Z",
+  "count": 88,
   "digests": [
+    {
+      "date": "2026-10-11",
+      "title": "AI News Digest — 11 October 2026",
+      "path": "2026/October/5 October - 11 October/11 October AI News Digest Report.html",
+      "year": 2026,
+      "month": "October",
+      "week": "5 October - 11 October",
+      "summary": "Anthropic cut live internet access from its internal agent evaluations and the White House made AI incident reporting mandatory, while Cloudflare absorbed Deno and Manus raised more than $500 million."
+    },
     {
       "date": "2026-10-10",
       "title": "AI News Digest — 10 October 2026",
