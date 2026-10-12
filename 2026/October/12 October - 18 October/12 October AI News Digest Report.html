@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 12 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Ukrainian drones knocked out two Yandex data centres in Russia, Nous Research raised a reported $90 million to take its open-source Hermes agent into enterprises, and a new study found AI agents still fall short at original research.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>12 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours (quiet Monday; thin verified news)</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Data centres are targets.</strong> Drones disabled two Yandex sites in Russia within two days.</li>
+      <li><strong>Open-source agents go enterprise.</strong> Nous Research reportedly raised $90M for Hermes for Businesses.</li>
+      <li><strong>Agent hype check.</strong> A multi-university study finds agents cannot yet do publishable research.</li>
+      <li><strong>Quiet day.</strong> Most other items found were single-source and are on the watch list.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Infrastructure</span><span class="when">8&ndash;9 Oct</span></div>
+    <h3>Drone strikes disable two Yandex data centres in Russia</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Data centres are now military targets; any firm with AI or cloud capacity in a conflict zone should model physical risk, not only cyber risk.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Yandex said a drone attack on its Sasovo site (Ryazan region) caused a fire and stopped operations, and that several modules at its Kaluga site were then &ldquo;completely disabled&rdquo; about two days later. Media report that Sasovo hosts two of Yandex&rsquo;s three supercomputers. Yandex has not given a restoration timeline.</p>
+        <p>Ukraine has not officially confirmed the strikes; President Zelenskiy said Ukraine responds &ldquo;in mirror-like fashion&rdquo; to Russian attacks on Ukrainian data centres. Reported knock-on effects include banking services, RuTube and Russian Railways, and a drop of about 4% in Yandex shares. Note: these events are 3&ndash;4 days old; they are new to this archive and were not covered in earlier digests.</p>
+        <ul class="sources">
+          <li><a href="https://www.thestar.com.my/tech/tech-news/2026/10/09/russia039s-yandex-says-second-data-centre-hit-by-drone-attack">The Star (Oct 9): Russia&rsquo;s Yandex says second data centre hit by drone attack</a></li>
+          <li><a href="https://meduza.io/en/news/2026/10/09/several-modules-of-yandex-s-data-center-in-russia-completely-knocked-out-by-ukrainian-drone-strike">Meduza: Several modules of Yandex&rsquo;s data center completely knocked out</a></li>
+          <li><a href="https://datacenterdynamics.com/en/news/second-yandex-data-center-hit-in-drone-strikes-in-russia">Data Center Dynamics: Second Yandex data center hit in drone strikes</a></li>
+          <li><a href="https://www.computing.co.uk/news/2026/ukraine-takes-out-russian-datacentre-drone-strike">Computing: Ukraine takes out Russian datacentre with drone strike</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">Reported</span></div>
+    <h3>Nous Research raises a reported $90M to sell its open-source Hermes agent to enterprises</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Open-source agents are now being packaged with SSO, audit logs and self-hosting; buyers get a non-frontier-lab option and a vendor to hold accountable.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports say Robot Ventures led the Series B, with NVIDIA, Microsoft&rsquo;s M12, Samsung, Union Square Ventures, Y Combinator and Menlo Ventures taking part. Funding goes to &ldquo;Hermes for Businesses&rdquo;: single sign-on, audit logs and workspace controls, with deployment on a customer&rsquo;s own cloud or on-premises.</p>
+        <p>Caveats: the $1.5 billion valuation is attributed to press reports (the company&rsquo;s announcement did not state one), one outlet gives $75 million instead of $90 million, and the traction figures (24 million clones, about 2.5% of global token usage, about $36 million annualised revenue) are company or secondary estimates.</p>
+        <ul class="sources">
+          <li><a href="https://www.digitaltoday.co.kr/en/view/112594/open-source-ai-agent-hermes-raises-series-b-at-1-5-billion-valuation-targets-enterprises">Digital Today: Open-source AI agent Hermes raises Series B at $1.5B valuation</a></li>
+          <li><a href="https://mezha.net/eng/?p=3729422">Mezha: Nous Research raises $90 million to build business AI agents</a></li>
+          <li><a href="https://runtimewire.com/article/nous-research-90m-series-b-hermes-agent">RuntimeWire: Nous Research raises $90M to take Hermes into business</a></li>
+          <li><a href="https://techjacksolutions.com/?p=94481">TechJack Solutions: Nous Research Series B</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Research</span><span class="when">This week</span></div>
+    <h3>Study: AI agents can run experiments but do not yet produce publishable research</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Treat &ldquo;autonomous researcher&rdquo; claims as unproven; keep human verification in any workflow where agents report their own results.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Researchers from Princeton, the UK AI Security Institute, Stanford and Toronto gave agents questions from two unpublished NeurIPS 2026 submissions, six days and compute. The agents handled engineering well (debugging, experiments, GPU allocation) but produced no contribution a top venue would publish; the original authors rejected both resulting papers. Only two projects were tested, so generalisation is limited. Details come from secondary coverage, not the paper itself.</p>
+        <p>Related preprints report the same pattern: agents overstate success when they rely on their own report files, and one prompt-only agent claimed success on all eight tasks with none verified until verification gates were added.</p>
+        <ul class="sources">
+          <li><a href="https://www.gncrypto.news/news/ai-agents-fail-produce-publishable-neurips-papers/">GN Crypto: AI agents failed to produce publishable NeurIPS papers</a></li>
+          <li><a href="https://the-decoder.com/study-contradicts-anthropic-and-openai-claims-that-autonomous-ai-research-is-within-reach/">The Decoder: Study contradicts claims that autonomous AI research is within reach</a></li>
+          <li><a href="https://arxiv.org/pdf/2601.03315">arXiv: Why LLMs Aren&rsquo;t Scientists Yet</a></li>
+          <li><a href="https://arxiv.org/pdf/2608.05179">arXiv: Autonomous Research Agents &mdash; the Verification Gap</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Watch list</span><span class="when">Unconfirmed</span></div>
+    <h3>Single-source signals: DeepSeek mega-round and Mistral Large 4 preview</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Do not act on these yet; they have one aggregator source and no company confirmation.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>One briefing says Bloomberg and Reuters reported on 6 Oct that DeepSeek is close to raising at least &yen;80 billion, with Tencent and CATL among backers; none of the companies confirmed it. The same briefing says Mistral opened a public preview of Mistral Large 4 on 6 Oct (about 1 trillion parameters, 49B active) with open weights planned for late October. We could not corroborate either claim.</p>
+        <ul class="sources">
+          <li><a href="https://toolnavs.com/article/2378-oct-7-ai-briefing-deepseek-funding-tops-80b-as-mistrals-new-flagship-enters-prev">ToolNavs: Oct 7 AI briefing</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 12 October 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
