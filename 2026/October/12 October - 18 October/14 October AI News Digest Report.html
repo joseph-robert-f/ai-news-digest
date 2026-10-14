@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 14 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="OpenAI says its own models helped trace a hidden recording device in its office, Meta ships its first frontier model, and Anthropic&rsquo;s IPO timeline firms up.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>14 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Security.</strong> OpenAI says an employee planted a recording device in an executive room; the FBI made an arrest.</li>
+      <li><strong>Models.</strong> Meta releases Muse Wonder, its first frontier model, closed-weight and priced below rivals.</li>
+      <li><strong>Markets.</strong> Anthropic&rsquo;s investor day is today; reports point to a roadshow in the week of 9 November.</li>
+      <li><strong>Chips.</strong> A 44% fall in Nvidia China shipments is single-sourced; we could not verify it.</li>
+    </ol>
+  </section>
+
+  <!-- One <article> per story. Headline + a single "why it matters" line up top;
+       bury depth and sources inside <details> so the default view stays skimmable. -->
+    <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">14 Oct</span></div>
+    <h3>OpenAI says an employee hid a recording device in an executive conference room</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Insider risk at AI labs is now a live threat to unreleased plans; review physical and device controls around leadership spaces.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI said it found a &ldquo;sophisticated recording device&rdquo; and that its own models helped trace it. Reports say security staff found it on 30 September, plugged into a TV in an executive conference room. Prosecutors reportedly allege that the engineer, arrested on 9 October, also left a bag with a second device on 5 October. OpenAI reports no sign that model weights, source code or customer data were taken. The allegations are unproven and the case is active.</p>
+        <ul class="sources"><li><a href="https://www.engadget.com/2286084/openai-says-it-found-a-sophisticated-recording-device-hidden-in-its-offices/">Engadget: OpenAI says it found a sophisticated recording device</a></li><li><a href="https://www.nbcnews.com/tech/tech-news/openai-employee-arrested-hidden-listening-device-company-says-rcna603262">NBC News: OpenAI employee arrested over hidden listening device</a></li><li><a href="https://www.thenationalnews.com/future/technology/2026/10/14/openai-says-saudi-citizen-arrested-over-hidden-recording-device-in-office/">The National: Saudi citizen arrested over hidden recording device</a></li><li><a href="https://www.foxbusiness.com/technology/saudi-national-accused-planting-recording-device-openai-executive-conference-room">Fox Business: Saudi national accused of planting recording device</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">12 Oct</span></div>
+    <h3>Meta releases Muse Wonder, its first frontier model</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Meta is now a paid, closed-weight API competitor; test it on price, but treat its benchmark claims as vendor-reported.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Meta&rsquo;s Superintelligence Lab released Muse Wonder and Muse Wonder Full. Reports give API pricing of $4 per million input tokens and $20 per million output tokens, and a 1M-token context window. Wonder Full is limited to Muse Code subscribers. Meta says performance is comparable to rivals&rsquo; top models. Artificial Analysis&rsquo;s index reportedly scores Wonder Full at 56 and Wonder at 52, against 58 for Claude Opus 5.5. The models are closed-weight, a break from Meta&rsquo;s open-source history.</p>
+        <ul class="sources"><li><a href="https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder">TechCrunch: Meta releases its first frontier model, Muse Wonder</a></li><li><a href="https://aiweekly.co/alerts/meta-releases-muse-wonder-its-first-frontier-class-ai-model">AI Weekly: Meta releases Muse Wonder</a></li><li><a href="https://propakistani.pk/2026/10/13/meta-enters-ai-frontier-with-new-wonder-models/">ProPakistani: Meta enters AI frontier with new Wonder models</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">14 Oct</span></div>
+    <h3>Anthropic investor day today; reports point to a roadshow in the week of 9 November</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> New since yesterday: the timeline has firmed up. A listing before Thanksgiving would set the sector&rsquo;s valuation reference; schedule and figures can still change.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports citing people familiar say Anthropic invited institutional investors to an event at its San Francisco headquarters on 14 October. Formal marketing could start the week of 9 November, allowing trading before 26 November. Investors reportedly see fair value of $1.8 to $2 trillion. Anthropic filed a confidential draft registration on 1 June, and declined to comment. Treat figures as unconfirmed.</p>
+        <ul class="sources"><li><a href="https://news.bgov.com/banking-law/anthropic-said-to-target-mega-ipo-before-thanksgiving-holiday">Bloomberg Government: Anthropic said to target mega-IPO before Thanksgiving</a></li><li><a href="https://www.implicator.ai/anthropic-could-start-ipo-roadshow-week-of-nov-9-putting-debut-before-thanksgiving/">Implicator: Anthropic could start IPO roadshow week of Nov 9</a></li><li><a href="https://stocktwits.com/news-articles/markets/equity/anthropic-reportedly-sends-investors-ipo-invitations/cZD0ZdRRB0S">Stocktwits: Anthropic reportedly sends investors IPO invitations</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Chips</span><span class="when">Unverified</span></div>
+    <h3>A reported 44% fall in Nvidia&rsquo;s China AI shipments is not yet confirmed</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Do not plan around the figure until IDC or Reuters publish it; the verified data shows Chinese vendors gaining share.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>One daily roundup cited IDC data of 678,000 Nvidia accelerators shipped in China in H1 2026, down 44%. We found no second source. Verified IDC data for full-year 2025, reported by Reuters, shows about 4 million cards shipped in China: Nvidia 55%, Chinese vendors 41%, with Huawei at about 812,000 units.</p>
+        <ul class="sources"><li><a href="https://the-decoder.com/chinese-chipmakers-now-control-41-percent-of-chinas-ai-accelerator-market/">The Decoder: Chinese chipmakers now control 41% of China&rsquo;s AI accelerator market</a></li><li><a href="https://finance.yahoo.com/sectors/technology/articles/chinese-chipmakers-claim-nearly-half-091441324.html">Yahoo Finance (Reuters): Chinese chipmakers claim nearly half of local market</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 14 October 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
