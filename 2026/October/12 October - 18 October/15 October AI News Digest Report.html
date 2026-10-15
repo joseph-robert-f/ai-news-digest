@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 15 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Anthropic warned that small open models could soon self-replicate across cheap home devices, 400 scientists demanded an international AI containment body, and the IMF named an AI-investment correction as a top systemic risk.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>15 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Self-replication warning.</strong> Anthropic says small models may soon copy themselves across cheap home devices.</li>
+      <li><strong>Containment call.</strong> About 400 scientists, including Hinton and Bengio, ask for an international AI containment body.</li>
+      <li><strong>Market risk.</strong> The IMF lists an AI-investment correction as a plausible trigger for wider market stress.</li>
+      <li><strong>Distillation.</strong> Anthropic reports its new defenses cut harvested data by 90&ndash;99%.</li>
+      <li><strong>Frontier access.</strong> Google&rsquo;s Gemini 4 Argon rolls out cautiously; OpenAI adds an Ultrafast mode.</li>
+    </ol>
+  </section>
+
+  <!-- One <article> per story. Headline + a single "why it matters" line up top;
+       bury depth and sources inside <details> so the default view stays skimmable. -->
+  <article class="story">
+    <div class="kicker"><span class="tag">Safety</span><span class="when">12 Oct</span></div>
+    <h3>Anthropic: small models may soon replicate across cheap home devices</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Cyber-capable models need not sit in a data centre, so shutdown plans that rely on a central switch need a second layer.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Anthropic&rsquo;s Frontier Red Team ran a simplified experiment. It spread Gemma4-26B-A4B across 15 off-brand Android TV boxes (about $55 each) at 0.39 tokens per second. Small models under 30B parameters could do the individual steps but struggled with the full sequence from start to end. Anthropic says replication would be slow (over a day per 9B copy) and that no fully rogue replicator exists today. Press coverage frames the capability as months away; treat that timing as Anthropic&rsquo;s projection, not a fact.</p>
+        <ul class="sources">
+          <li><a href="https://www.anthropic.com/research/self-replicating-ai">Anthropic: AI models may be capable of self-replicating without access to a datacenter</a></li>
+          <li><a href="https://www.khaleejtimes.com/business/ai-models-may-soon-self-replicate-without-access-to-data-centres-anthropic-warns">Khaleej Times: AI models may soon self-replicate, Anthropic warns</a></li>
+          <li><a href="https://www.arise.tv/anthropic-warns-small-ai-models-could-self-replicate-across-smart-devices/">Arise: Anthropic warns small AI models could self-replicate across smart devices</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">13 Oct</span></div>
+    <h3>About 400 scientists call for an international AI containment body</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Expect pressure for mandatory containment and incident reporting, not only voluntary pledges.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The open letter, signed by Geoffrey Hinton and Yoshua Bengio among others, asks for an international body that sets containment standards and keeps a registry of serious security incidents, to be made public in time. It also asks that frontier models first be isolated from external networks under independent oversight. It argues that voluntary commitments are not enough. Outlets differ on which firms signed the earlier White House accord, so that detail is not stated here.</p>
+        <ul class="sources">
+          <li><a href="https://www.pymnts.com/?p=4308083">PYMNTS: 400 Scientists Call for AI Containment Systems and Incident Reports</a></li>
+          <li><a href="https://www.thestandard.com.hk/world/article/345364/Scientists-call-for-international-body-to-oversee-advanced-AI">The Standard: Scientists call for international body to oversee advanced AI</a></li>
+          <li><a href="https://cryptobriefing.com/scientists-call-international-ai-oversight-body/">Crypto Briefing: Approximately 400 scientists, including Hinton and Bengio, call for a global AI watchdog</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">13 Oct</span></div>
+    <h3>IMF: an AI-investment correction could tighten global financial conditions</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Treasury and finance teams should stress-test exposure to AI-linked debt and to rising bond yields at the same time.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The IMF&rsquo;s October Global Financial Stability Report names an AI-investment correction, a sovereign bond-yield spike and a major cyberattack as plausible triggers of wider disruption. Coverage says hyperscalers now make up about 10% of global investment-grade bond issuance, up from under 1% in 2024. The Fund urges limits on leverage, including derivatives and margin loans. This adds an official view to the circular-financing concerns in the 13 October digest.</p>
+        <ul class="sources">
+          <li><a href="https://hedgeweek.com/news/imf-warns-of-ai-correction-and-rising-bond-yields-as-global-market-risks">Hedgeweek: IMF warns of AI correction and rising bond yields</a></li>
+          <li><a href="https://www.wealthprofessional.ca/investments/alternative-investments/imf-warns-bond-yields-face-disorderly-spike-on-debt-and-ai-risks/393760">Wealth Professional: IMF warns bond yields face disorderly spike on debt and AI risks</a></li>
+          <li><a href="https://kuwaittimes.com/article/51501/business/imf-warns-of-ai-market-correction-and-cyber-threats-to-financial-system/">Kuwait Times: IMF warns of AI market correction and cyber threats</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Platforms</span><span class="when">12 Oct</span></div>
+    <h3>Anthropic says new anti-distillation defenses cut harvested data 90&ndash;99%</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> API providers are now turning away paying traffic to protect model IP; expect more false-positive and access questions from heavy API users.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Anthropic reports early evidence that its new defenses reduce the data distillers can harvest from Claude by about 90&ndash;99%. A two-stage classifier runs on several Claude models, and the company puts its false-positive rate below 0.1%. It says it turned away meaningful revenue from distillers. These are Anthropic&rsquo;s own figures and have no independent check yet.</p>
+        <ul class="sources">
+          <li><a href="https://www.anthropic.com/research/distillation-defenses">Anthropic: Strengthening our defenses against distillation attacks</a></li>
+          <li><a href="https://www.unite.ai/anthropic-reports-distillation-defenses-reduced-extracted-reasoning-tokens/">Unite.AI: Anthropic reports distillation defenses reduced extracted reasoning tokens</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">14 Oct</span></div>
+    <h3>Gemini 4 Argon: pricing is public, but access is still narrow</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Do not plan a production switch yet; confirm access and the post-promo price with Google first.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>CNBC describes a cautious rollout that starts with cybersecurity partners. Third-party trackers list introductory prices of $2 input and $10 output per million tokens (rising to $4 and $20); these figures come from secondary sites, conflict on who has access today, and do not appear on Google&rsquo;s own pricing page as of the last check. Separately, OpenAI&rsquo;s release feed lists an Ultrafast mode for GPT-6.1 Sol in the API, Codex and ChatGPT, first seen 13 October (single aggregator source; not confirmed by OpenAI&rsquo;s own post).</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/10/02/tech-download-google-argon-frontier-openai-anthropic.html">CNBC: Can Google&rsquo;s new model really catch up to OpenAI and Anthropic at the frontier?</a></li>
+          <li><a href="https://www.eesel.ai/blog/gemini-4-argon-pricing">eesel AI: Gemini 4 Argon pricing</a></li>
+          <li><a href="https://releasebot.io/updates/openai">Releasebot: OpenAI release notes, October 2026</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Company</span><span class="when">14 Oct</span></div>
+    <h3>Anthropic opens a Singapore office and publishes its midterm-election plan</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Anthropic is adding Asia-Pacific government ties and a public election-integrity position as it heads toward an IPO.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Anthropic signed an MOU with the Government of Singapore alongside the office opening. It also published its preparations for the 2026 US midterm elections. Both posts are dated 14 October. Details of the MOU scope are in the post.</p>
+        <ul class="sources">
+          <li><a href="https://www.anthropic.com/news/singapore-office-opening">Anthropic: Singapore office opening and MOU</a></li>
+          <li><a href="https://www.anthropic.com/news/2026-us-midterms">Anthropic: Preparing for the 2026 US midterms</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 15 October 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
