@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 16 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Anthropic's reported $16.8B Q3 revenue sets the bar for its IPO, while eight US states sue OpenAI over ChatGPT safety and CoreWeave's near-15% bond yields test the AI-financing story.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>16 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Anthropic Q3 revenue reportedly $16.8B (+45%).</strong> IPO likely slips to after the US midterms; target valuation above $2T.</li>
+      <li><strong>Eight Republican-led states sue OpenAI.</strong> First coordinated state action: child safety, consumer protection, and a bar on self-improving models.</li>
+      <li><strong>OpenAI engineer federally charged.</strong> Hidden recorder in an executive room; detention hearing is 19 October.</li>
+      <li><strong>CoreWeave bonds near 15% yield.</strong> The market now prices AI-infrastructure credit risk.</li>
+      <li><strong>Google Play allows private vibe-coded apps.</strong> Apple went the other way in May.</li>
+    </ol>
+  </section>
+
+  <!-- One <article> per story. Headline + a single "why it matters" line up top;
+       bury depth and sources inside <details> so the default view stays skimmable. -->
+  <article class="story">
+    <div class="kicker"><span class="tag">Finance</span><span class="when">15 Oct</span></div>
+    <h3>Anthropic Q3 revenue reportedly up 45% to $16.8B ahead of IPO</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> an investor-day number that makes a $2T valuation arguable, but the listing now looks like a post-midterm event.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reuters, citing an investor at the 14 October meeting in San Francisco, reports Q3 revenue of $16.8B, up 45%, from $11.6B in Q2 and $4.7B in Q1. Reuters says the debut is likely pushed until after the November midterms; the valuation target is reported above $2T. The figure is not yet in an official filing. Our earlier digest covered the investor day itself; this is the numbers.</p>
+        <ul class="sources">
+          <li><a href="https://whtc.com/2026/10/14/anthropics-q3-revenue-surges-45-to-nearly-17-billion/">Reuters via WHTC: Anthropic's Q3 revenue surges 45% to nearly $17 billion</a></li>
+          <li><a href="https://www.cnbc.com/2026/10/13/anthropic-q3-financials-ipo.html">CNBC: Anthropic to disclose new revenue numbers</a></li>
+          <li><a href="https://cryptobriefing.com/anthropic-q3-revenue-jumps-46-to-17b-ahead-of-potential-november-ipo/">Crypto Briefing: Anthropic Q3 revenue jumps 46% ahead of potential November IPO</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">14 Oct</span></div>
+    <h3>Eight US states sue OpenAI over ChatGPT harm to young users</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> this is the largest coordinated state action against an AI lab, and it lands as OpenAI prepares to list.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Arkansas, Arizona, Idaho, Iowa, Kansas, Montana, Nebraska and West Virginia filed on 14 October. They allege deceptive safety claims and public nuisance, and seek penalties plus orders that include barring self-improving models not shown to be aligned. Florida filed the first such suit in June. OpenAI had not responded at the time of reporting. Filing format differs by report: some say separate state-court filings.</p>
+        <ul class="sources">
+          <li><a href="https://engadget.com/2287111/iowa-nebraska-and-six-other-states-are-suing-openai-for-endangering-children">Engadget: Iowa, Nebraska and six other states are suing OpenAI</a></li>
+          <li><a href="https://www.devdiscourse.com/article/international/3992568-eight-us-states-sue-openai-claiming-chatgpt-harms-young-users">Devdiscourse (Reuters): Eight US states sue OpenAI</a></li>
+          <li><a href="https://www.pcgamer.com/software/ai/8-us-states-sue-openai/">PC Gamer: 8 US states sue OpenAI</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">13 Oct</span></div>
+    <h3>OpenAI engineer charged over hidden recorder in executive conference room</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> frontier labs are now insider-risk targets, and this case is a criminal matter, not a trade-secret story.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Justice Department charged Abdulrahman Alfozan, 35, with intercepting oral communications. Staff found a device behind a TV on 30 September; OpenAI told the FBI and fired him. The maximum penalty is five years. A detention hearing is set for 19 October. No link to the Apple trade-secret suit is reported, and he is presumed innocent. This updates the earlier report that an employee hid a device.</p>
+        <ul class="sources">
+          <li><a href="https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/">SF Standard: OpenAI engineer arrested</a></li>
+          <li><a href="https://thenextweb.com/news/openai-employee-arrested-device">The Next Web: An OpenAI engineer is charged over a listening device</a></li>
+          <li><a href="https://aiweekly.co/alerts/openai-engineer-charged-with-bugging-executive-conference-room">AI Weekly: Charged with bugging executive conference room</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">14 Oct</span></div>
+    <h3>CoreWeave bond yields near 15% and the stock drops as much as 16%</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> if the most visible AI-infrastructure borrower pays near 15%, the cost of capital for the whole buildout is repricing.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>CoreWeave's 9.625% notes due 2032 hit a 15% intraday yield on 13 October and closed near 14.5%; shares fell as much as 16% on 14 October, and Oracle and Nebius also fell. CEO Michael Intrator called the circular-financing criticism "ridiculous". CoreWeave reported a $104.2B backlog at 30 June. The Reuters report on a wider Asia rout was not available to us, so we do not rely on it.</p>
+        <ul class="sources">
+          <li><a href="https://cryptobriefing.com/coreweave-shares-plunge-bond-yields-15/">Crypto Briefing: CoreWeave shares plunge 16% as bond yields near 15%</a></li>
+          <li><a href="https://www.kucoin.com/news/flash/coreweave-stock-falls-13-as-bond-yields-hit-15">KuCoin News: CoreWeave stock falls 13% as bond yields hit 15%</a></li>
+          <li><a href="https://www.roic.ai/news/coreweave-ceo-blames-share-drop-on-market-acting-irrationally-10-14-2026">ROIC: CoreWeave CEO blames share drop on market acting irrationally</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Platforms</span><span class="when">13 Oct</span></div>
+    <h3>Google Play now hosts private, vibe-coded apps with no developer account</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> personal software is becoming a platform category; Apple removed vibe-coded apps in May, so the two stores now diverge.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Apps stay out of search and listings and only the creator can use them. The launch covers select markets, including the US, for users 18 and over. Sharing with small circles is planned in the coming months.</p>
+        <ul class="sources">
+          <li><a href="https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/">TechCrunch: Google Play now supports private vibe-coded apps</a></li>
+          <li><a href="https://androidauthority.com/google-play-vibe-coded-apps-3722347">Android Authority: Google Play vibe-coded apps</a></li>
+          <li><a href="https://fourweekmba.com/ai-google-play-opens-to-private-vibe-coded-apps/">FourWeekMBA: Google Play opens to private vibe-coded apps</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Election</span><span class="when">14 Oct</span></div>
+    <h3>Lula campaign takes Meta AI image filtering to Brazil's electoral court</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> uneven AI guardrails are now an election-integrity claim; expect more campaigns to test chatbots this way.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Several Brazilian outlets tested Meta AI on WhatsApp: requests tied to Lula's "13" were refused, while Flávio Bolsonaro's "22" were fulfilled. Meta says it temporarily banned candidate image generation and denies deliberate interference. Results were not uniform across users, and the court has not ruled.</p>
+        <ul class="sources">
+          <li><a href="https://tecnoblog.net/noticias/meta-ai-barra-lula-mas-gera-imagens-com-referencia-a-flavio/">Tecnoblog: Meta AI barra Lula, mas gera imagens com referência a Flávio</a></li>
+          <li><a href="https://www.acessa.com/noticias/2026/10/342269-campanha-de-lula-vai-ao-tse-apos-ia-da-meta-restringir-buscas.html">Acessa: Campanha de Lula vai ao TSE</a></li>
+          <li><a href="https://sbtnews.sbt.com.br/noticia/politica/ia-da-meta-faz-post-flavio-22-mas-barra-lula-13">SBT News: IA da Meta faz post 'Flávio 22', mas barra 'Lula 13'</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 16 October 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
