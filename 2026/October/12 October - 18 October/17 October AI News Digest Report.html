@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 17 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="A quiet Saturday: Bank of America says Anthropic’s Mythos forced a 1,000-contractor patching push, Google shipped Universal Cart, and Gemini 4 Argon and Meta’s Muse Wonder both got clearer market positioning.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>17 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Mythos has a bill.</strong> Bank of America says AI-found flaws needed 1,000 extra contractors.</li>
+      <li><strong>Agentic shopping ships.</strong> Google launched Universal Cart in the US.</li>
+      <li><strong>Gemini 4 Argon opens up.</strong> Broad access, with intro pricing to 30 November.</li>
+      <li><strong>Meta trails Opus 5.5.</strong> Muse Wonder scores 56 vs 58, and its best variant has no API.</li>
+      <li><strong>Massachusetts AI rules.</strong> Frontier-lab audit mandate still in conference.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">14 Oct</span></div>
+    <h3>Bank of America put 1,000 contractors on flaws that Mythos found</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> AI-found vulnerabilities are now a budgeted operating cost at big banks, not a lab demo; expect other regulated firms to size similar remediation teams.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>CEO Brian Moynihan told CNBC on 14 October that the contractors were added in the second quarter and are still on site, alongside about 3,000 existing staff. He put spending at &ldquo;a couple hundred million plus&rdquo;; one outlet notes that figure also covers anti-money-laundering work, so it is not the cost of Mythos alone. One report says a scan flagged more than 23,000 potential issues, mostly low to moderate severity.</p>
+        <ul class="sources"><li><a href="https://techradar.com/pro/security/bank-of-america-had-to-hire-1-000-contractors-to-patch-software-flaws-spotted-by-anthropic-mythos">TechRadar</a></li><li><a href="https://www.itpro.com/technology/artificial-intelligence/bank-of-america-hired-1-000-security-consultants-to-address-mythos-spotted-flaws">ITPro</a></li><li><a href="https://thenextweb.com/news/bank-of-america-1000-contractors-mythos-flaws">The Next Web</a></li><li><a href="https://cybernews.com/news/bank-of-america-mythos/">Cybernews</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Products</span><span class="when">15 Oct</span></div>
+    <h3>Google launches Universal Cart in the US across Search and Gemini</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Agentic shopping is now a shipping product with big-retailer partners, so retail teams must plan for carts, price alerts and checkout that start inside Google.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The cart tracks saved items, sends price-drop and back-in-stock alerts, and shows promo codes. Users can pay with Google Pay or finish on the retailer&rsquo;s site; the retailer stays merchant of record. Launch partners include Nike, Sephora, Target, Ulta Beauty, Walmart and Wayfair. Reports say YouTube and Gmail were not part of this launch and that Europe is excluded; Google has given no reason.</p>
+        <ul class="sources"><li><a href="https://thenextweb.com/news/google-universal-cart-us-only-eu">The Next Web</a></li><li><a href="https://www.androidauthority.com/google-announces-universal-cart-3668669/">Android Authority</a></li><li><a href="https://ppc.land/googles-universal-cart-reaches-us-search-and-gemini-but-not-youtube/">PPC Land</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">13 Oct</span></div>
+    <h3>Gemini 4 Argon is now broadly available, with intro pricing to 30 November</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Buyers can now test Google&rsquo;s flagship at half the standard price for about six weeks; plan any bake-off against Claude and GPT inside that window.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>This updates the 15 October note that access was narrow. Google&rsquo;s Gemini app post is dated 13 October. Reports say the model reached cyber-defence partners first on 30 September, and now covers the Gemini API, AI Studio, the Gemini app and AI Mode in Search, with plan limits that differ by surface. One report gives the intro API price as $2 per million input and $10 per million output tokens until 30 November, rising to $4 and $20. Benchmarks are mostly vendor-reported; independent measurement is still early.</p>
+        <ul class="sources"><li><a href="https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-availability">Google: Gemini 4 availability</a></li><li><a href="https://letsdatascience.com/news/google-releases-gemini-4-argon-for-scientific-computing-644a49ff">Let&rsquo;s Data Science: API and pricing</a></li><li><a href="https://mezha.ua/en/news/google-gemini-4-argon-316145/">Mezha</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">13 Oct</span></div>
+    <h3>Independent score puts Meta&rsquo;s Muse Wonder just behind Claude Opus 5.5</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Meta is at near-frontier quality but its best variant has no API, so enterprise buyers cannot yet use it as a drop-in alternative.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Follow-up to the 14 October Muse Wonder item. Per Artificial Analysis&rsquo;s index as relayed by one outlet, Opus 5.5 scores 58, Muse Wonder Full 56 and the API-facing Muse Wonder 52. Wonder Full runs only inside Meta&rsquo;s Muse Code agent on its two priciest plans. Wonder is priced at $4 and $20 per million tokens, the same as Opus 5.5. These are secondary reports; check the index directly before relying on the numbers.</p>
+        <ul class="sources"><li><a href="https://propakistani.pk/2026/10/13/meta-enters-ai-frontier-with-new-wonder-models/">ProPakistani</a></li><li><a href="https://letsdatascience.com/blog/metas-best-model-skips-api-coding-plan-trains-on-your-code">Let&rsquo;s Data Science</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">16 Oct</span></div>
+    <h3>Massachusetts weighs some of the strictest state AI rules in the US</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A state-level audit mandate for frontier labs could become a template that labs must meet outside California and New York.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Senate passed its economic development bill on 23 July. It would require independent reviews of catastrophic-risk of frontier models at least every 120 days, published safety frameworks, and attorney-general enforcement. The state could not use findings to halt development. The bill is still in conference. OpenAI wants alignment with Illinois-style annual audits; Anthropic wants stronger evaluations. The governor backs independent safety evaluations, while a business group urges dropping the frequent-testing rules.</p>
+        <ul class="sources"><li><a href="https://www.wbur.org/news/2026/10/16/ai-regulation-tech-economic-development-bill">WBUR, 16 Oct</a></li><li><a href="https://www.mass.gov/news/governor-healey-calls-for-strong-ai-safety-and-transparency-protections-in-mass-wins-act">Governor Healey&rsquo;s office</a></li><li><a href="https://www.bostonglobe.com/2026/07/23/newsletters/massachusetts-senate-ai-openai-anthropic-the-scrum/">Boston Globe</a></li><li><a href="https://hoodline.com/2026/07/mass-senate-rolls-out-325m-power-play-to-jump-start-housing-and-tame-ai/">Hoodline</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">Unconfirmed</span></div>
+    <h3>Reports of a $60B debt package for Anthropic&rsquo;s Google TPU capacity do not match earlier figures</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Compute financing size is a key IPO diligence item; treat the $60B figure as unproven until a primary source confirms it.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>One outlet reports a $60 billion Broadcom-linked package with an $18 billion junior tranche led by Blackstone. Earlier Bloomberg-sourced coverage described a $35&ndash;36 billion structure arranged with Apollo to buy TPUs that Anthropic leases. Sources disagree on size, arranger and tranches, and it is unclear whether this is a new deal or a re-report. No filing was found.</p>
+        <ul class="sources"><li><a href="https://news.bloomberglaw.com/us-law-week/apollo-shops-36-billion-debt-to-buy-ai-chips-for-anthropic-1">Bloomberg Law (earlier, $36B)</a></li><li><a href="https://www.dealstreetasia.com/stories/apollo-blackstone-weigh-36b-debt-deal-for-anthropic-483879">DealStreetAsia</a></li><li><a href="https://aiweekly.co/alerts/broadcom-and-blackstone-amass-60b-debt-to-fund-anthropic-chips">AI Weekly ($60B report)</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 17 October 2026. Quiet day: several unverified single-source claims were left out.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
