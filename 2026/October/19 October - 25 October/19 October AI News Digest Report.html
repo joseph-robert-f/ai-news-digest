@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 19 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Anthropic pledged 5% of its shares to a public benefit fund, Schwab and JPMorgan moved to block outside AI agents from moving client money, and Character.AI filed for Chapter 11 with Disney as the opening bidder.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>19 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Anthropic’s share pledge.</strong> It will commit 5% of its shares to a public benefit fund, pending stockholder approval.</li>
+      <li><strong>Banks vs. agents.</strong> Schwab and JPMorgan block outside AI agents from moving money; read-only access only.</li>
+      <li><strong>Compute.</strong> Reuters says Anthropic signed its first Canadian data-center lease, in Nova Scotia.</li>
+      <li><strong>Character.AI.</strong> Chapter 11 filing, with Disney as a $20M opening bidder for a licence and some claims.</li>
+      <li><strong>Retail pricing.</strong> Walmart’s shelf-label rollout meets state bills against algorithmic pricing.</li>
+    </ol>
+  </section>
+
+  <!-- One <article> per story. Headline + a single "why it matters" line up top;
+       bury depth and sources inside <details> so the default view stays skimmable. -->
+  <article class="story">
+    <div class="kicker"><span class="tag">Anthropic</span><span class="when">18 Oct</span></div>
+    <h3>Anthropic will commit 5% of its shares to a public benefit fund</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A pre-IPO pledge of this size turns Anthropic’s “AI job disruption” message into a governance and valuation question investors must price.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports say the pledge needs stockholder approval and may be joined by an optional extra 2% tied to growth in value. Anthropic said it will share how the fund is governed in the coming months. Elon Musk replied on X that the shares should go directly to the public. We could not open the full articles; details come from the outlets’ headlines and search summaries.</p>
+        <ul class="sources">
+          <li><a href="https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund">TechCrunch: Anthropic says it’s committing 5% of its shares to a ‘public benefit fund’</a></li>
+          <li><a href="https://cnbc.com/2026/10/18/anthropic-ai-public-benefit-fund.html">CNBC: Anthropic commits 5% of shares to new public benefit fund</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Agents &amp; finance</span><span class="when">13–19 Oct</span></div>
+    <h3>Schwab and JPMorgan block outside AI agents from moving client money</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Large financial firms are setting the rules for agent access first: read-only data and firm-approved MCP links, not agents that log in as the customer.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Schwab CEO Rick Wurster told Bloomberg TV the firm blocks unauthorized agents, including Meta’s Muse, and plans MCP servers that allow balance checks and research but not money movement. On the 13 October earnings call, Jamie Dimon said outside agents inside the bank are “too risky,” and said customers who grant access face a “liability transfer.” Some observers say the deeper motive is protecting cash-sweep revenue; that is opinion, not confirmed by the firms. We rely on secondary coverage of the Bloomberg interview.</p>
+        <ul class="sources">
+          <li><a href="https://thenextweb.com/news/schwab-blocks-ai-agents-meta-muse">The Next Web: Schwab and JPMorgan are blocking AI agents from moving customer money</a></li>
+          <li><a href="https://www.americanbanker.com/news/schwab-blocks-unauthorized-ai-agents-points-clients-to-charley">American Banker: Schwab blocks unauthorized AI agents</a></li>
+          <li><a href="https://cybernews.com/security/jpmorgan-chase-blocks-outside-ai-agents/">Cybernews: JPMorgan blocks outside AI agents from customer accounts</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Infrastructure</span><span class="when">16 Oct</span></div>
+    <h3>Reuters: Anthropic signs its first Canadian data-center lease, in Nova Scotia</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Compute is still the binding constraint; a late-2027 site shows how far ahead frontier labs now book capacity.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>EverWind’s own announcement named only an unnamed “leading frontier AI developer” with a 20-year lease at Point Tupper. The Anthropic link comes from Reuters, syndicated by other outlets. The plan is $8B for the campus and $2B for onshore wind; the site is expected to open in late 2027, before the wind farms are ready. Local reaction is mixed. Job postings separately suggest Anthropic is also looking at Alberta.</p>
+        <ul class="sources">
+          <li><a href="https://thedailyguardian.com/news/science-tech/anthropic-signs-lease-for-first-canadian-data-center-766710/">The Daily Guardian (Reuters): Anthropic signs lease for first Canadian data center</a></li>
+          <li><a href="https://www.ctvnews.ca/atlantic/nova-scotia/article/everwind-says-10b-ai-data-centre-proposal-largest-private-investment-in-ns-history/">CTV News Atlantic: EverWind $10B AI data centre proposal</a></li>
+          <li><a href="https://betakit.com/anthropic-job-posting-suggests-its-eyeing-alberta-for-data-centre-buildout/">BetaKit: Anthropic job posting suggests it is eyeing Alberta</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets &amp; legal</span><span class="when">12–13 Oct</span></div>
+    <h3>Character.AI files Chapter 11; Disney is the $20M opening bidder</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A teen-safety lawsuit and IP-pressure story has become a court-run asset sale, a template for how small consumer-AI firms may exit.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Character Technologies filed in Delaware on 12 October for a Section 363 sale. Disney’s stalking-horse bid is a perpetual, non-exclusive licence to some IP plus certain claims, not the whole business; rivals can outbid it. The service keeps running during the sale, which is expected to close in late November or early December. Court papers estimate assets and liabilities at $50–100M each. Earlier lawsuits over a teen’s death and an FTC inquiry preceded the filing.</p>
+        <ul class="sources">
+          <li><a href="https://thenextweb.com/news/character-ai-files-for-bankruptcy-as-disney-bids-20m-for-some-assets">The Next Web: Character.AI files for bankruptcy as Disney bids $20M</a></li>
+          <li><a href="https://pymnts.com/business/2026/character-ai-files-for-bankruptcy-and-signs-20-million-disney-deal">PYMNTS: Character AI files for bankruptcy and signs $20 million Disney deal</a></li>
+          <li><a href="https://betanews.com/article/character-ai-bankruptcy-chapter-11/">BetaNews: Character.AI bankruptcy, Chapter 11</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Robotics</span><span class="when">Reported</span></div>
+    <h3>Altman says OpenAI is building a humanoid robot, with a demo due in 2027</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> OpenAI is widening from software into hardware, but there is no product, price or date, so treat it as a signal, not a plan.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Several outlets quote Altman saying that in 2027 “we’ll have a cool demo,” with robots walking the streets only “a few years after that.” Reports say hiring for motors, drives and electronics has started. The source dates conflict, and these are secondary reports, so the claim rests on agreement between them.</p>
+        <ul class="sources">
+          <li><a href="https://dev.ua/en/news/humanoidnyi-robot-vid-openai-1789463163">dev.ua: Humanoid robot from OpenAI</a></li>
+          <li><a href="https://pasqualepillitteri.it/news/14373/openai-hardware-full-stack-chip-robot">Pasquale Pillitteri: Altman confirms humanoid robots, OpenAI reaches hardware</a></li>
+          <li><a href="https://incrussia.ru/news/openai-pokazhet-sobstvennogo-chelovekopodobnogo-robota-v-2027-godu/">Inc. Russia: OpenAI to show its own humanoid robot in 2027</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">Ongoing</span></div>
+    <h3>Walmart’s digital shelf labels meet state bills on algorithmic pricing</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If pricing algorithms face store-level limits, retailers that use AI for markdowns will need audit trails and plain-language disclosure.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Walmart plans electronic shelf labels across its U.S. stores within a year, with about half already installed (store counts differ by source). Walmart says prices do not vary by demand, time or shopper and that its 2026 AI patents are “people-led.” Bills to limit dynamic pricing are filed in Maryland, Pennsylvania, Minnesota and New York; the UFCW backs them, and two Democratic senators filed a federal bill. The retail trade group calls the fears hypothetical. We found trade and business outlets, not the AP report some roundups cite.</p>
+        <ul class="sources">
+          <li><a href="https://finance.yahoo.com/sectors/technology/articles/walmart-just-patented-system-lets-155051251.html">Yahoo Finance: Walmart just patented a system that lets algorithms push prices</a></li>
+          <li><a href="https://www.shopifreaks.com/walmart-wins-ai-pricing-and-markdown-patents-as-state-legislators-push-to-ban-algorithmic-pricing/">Shopifreaks: Walmart wins AI pricing patents as legislators push to ban algorithmic pricing</a></li>
+          <li><a href="https://abasto.com/en/news/walmart-electronic-shelf-labels-face-growing-political-pressure/">Abasto: Walmart electronic shelf labels face growing political pressure</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 19 October 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
