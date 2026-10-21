@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 21 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="An AI-agent crew broke into 100+ company sites for about $50 each, Microsoft moved to throttle risky agents at runtime, and the US barred DeepSeek from civilian agencies as OpenAI and Anthropic race toward the public markets.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>21 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Coverage: last 24 hours</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Agent-run hacking.</strong> Reuters: one hacker used open-source agent software to breach 100+ company sites, about $50 each.</li>
+      <li><strong>Agent controls.</strong> Microsoft previews runtime limits that cut an agent&rsquo;s rights as its risk score rises.</li>
+      <li><strong>DeepSeek ban.</strong> DHS order bars the Chinese models from US civilian agencies; it reached the Federal Register on 19 October.</li>
+      <li><strong>OpenAI funding.</strong> Reported talks for a round at $1.2&ndash;1.4 trillion; reports disagree on size and terms.</li>
+      <li><strong>Anthropic IPO.</strong> October Nasdaq timing is still unconfirmed; no public pricing date.</li>
+    </ol>
+  </section>
+
+  <!-- One <article> per story. Headline + a single "why it matters" line up top;
+       bury depth and sources inside <details> so the default view stays skimmable. -->
+    <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">19 Oct</span></div>
+    <h3>One hacker used AI agents to breach 100+ company sites for about $50 each</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Attack cost has fallen to a few dollars of tokens per site, so patch cycles and exposed admin panels now matter more than attacker skill.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reuters reports that a Chinese-speaking hacker used Cairn, an open-source tool that coordinates AI agents, to breach more than 100 company websites. NorForge researcher Snorre Fagerland found exposed Cairn control panels and saw over 1,200 sites targeted. He estimates each successful intrusion took about 23 hours and about $50 in tokens. Named victims include Deere, SharkNinja and Cummins. Deere saw no sign sensitive data was accessed; SharkNinja said only a standalone support site was hit. Reuters could not establish how much data was taken. Reports differ on which AI models the agents used, so we do not name them.</p>
+        <ul class="sources">
+          <li><a href="https://capital.com/en-ke/news/how-one-hacker-used-ai-agents-and-a-few-thousand">Capital.com (Reuters): How one hacker used AI agents and a few thousand dollars to break into scores of sites</a></li>
+          <li><a href="https://thenextweb.com/news/ai-agents-hacker-cairn-100-sites-deere-norforge">The Next Web: AI agents broke into 100+ sites for one hacker at $50 each</a></li>
+          <li><a href="https://www.staradvertiser.com/2026/10/19/breaking-news/how-one-hacker-used-ai-agents-to-break-into-over-100-company-websites/">Honolulu Star-Advertiser (Reuters): How one hacker used AI agents to break into over 100 company websites</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Agents &amp; security</span><span class="when">19 Oct</span></div>
+    <h3>Microsoft previews runtime controls that cut an AI agent&rsquo;s rights as its risk rises</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Security teams get a way to grant agents narrow, expiring access, which may decide how fast firms let agents touch real systems.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Microsoft extends Entra Conditional Access to agents. An agent at higher risk can first lose write access, then need human approval for high-impact actions, and at the top of the scale be isolated or stopped. Dynamic Permissions give an agent only what one task needs, and the access ends with the task. Monitoring runs outside the agent&rsquo;s execution container so a compromised agent cannot switch it off. The features are in private preview; broader availability is planned for Microsoft&rsquo;s November Ignite conference, per the reports.</p>
+        <ul class="sources">
+          <li><a href="https://siliconangle.com/2026/10/19/microsoft-targets-the-agentic-insider-with-new-controls-for-rogue-ai-agents/">SiliconANGLE: Microsoft targets the agentic insider with new controls for rogue AI agents</a></li>
+          <li><a href="https://digg.com/tech/x9hwch9e">Digg: Microsoft unveils tools to monitor and restrict risky AI agents</a></li>
+          <li><a href="https://torre.news/en/microsoft-unveils-tool-to-help-companies-control-track-ai-agents">Torre News: Microsoft unveils tool to help companies control, track AI agents</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">19 Oct</span></div>
+    <h3>US orders civilian agencies to remove DeepSeek from government systems</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Any vendor that embeds DeepSeek models may now be unusable for federal civilian work, so check supply chains for hidden dependencies.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Department of Homeland Security order, dated 24 July and signed by Secretary Markwayne Mullin, covers DeepSeek products and third-party services built on its models. It rests on the Federal Acquisition Supply Chain Security Act of 2018 and was posted to the Federal Register on 19 October. DHS cites the risk that user data could reach Beijing under Chinese security law, and warns the models may hide malware or flaws. The order covers civilian agencies only; private firms and individuals are not affected. We found no statement from Beijing in the coverage; the Chinese embassy and DeepSeek did not comment to outlets.</p>
+        <ul class="sources">
+          <li><a href="https://thenextweb.com/news/us-bars-deepseek-federal-agencies">The Next Web: US orders civilian federal agencies to remove DeepSeek from their systems</a></li>
+          <li><a href="https://decrypt.co/381347/us-orders-civilian-agencies-rip-deepseek-out-government-systems">Decrypt: US orders civilian agencies to rip DeepSeek out of government systems</a></li>
+          <li><a href="https://news.bgov.com/california-brief/us-moves-to-bar-deepseek-from-federal-agencies-and-contracts">Bloomberg Government: US moves to bar DeepSeek from federal agency systems</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">Ongoing</span></div>
+    <h3>OpenAI is reported to seek a pre-IPO round at $1.2&ndash;1.4 trillion</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A round at that value would reset the OpenAI&ndash;Anthropic valuation comparison just as Anthropic nears a listing; the terms are not firm.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Bloomberg-sourced reports say OpenAI is in talks for new funding ahead of an IPO. Figures conflict: one summary says a valuation above $1.2 trillion; another says at least $30 billion at about $1.4 trillion pre-money, as bridge financing. Sam Altman has said an IPO will not happen in 2026. OpenAI&rsquo;s last closed round was $122 billion at $852 billion in March. We found no confirmation that any new round has closed, and we found no primary source. This is a continuing story, not a new 24-hour event.</p>
+        <ul class="sources">
+          <li><a href="https://www.techzine.eu/news/applications/144326/openai-discusses-new-pre-ipo-funding-round-at-1-2-t-valuation/">Techzine: OpenAI discusses new pre-IPO funding round at $1.2T valuation</a></li>
+          <li><a href="https://dealroom.co/news/158082-openai-seeks-30b-at-1-4t-valuation-as-ipo-waits/">Dealroom: OpenAI seeks $30B at $1.4T valuation as IPO waits</a></li>
+          <li><a href="https://gizmodo.com/rumored-round-of-funding-could-make-openai-more-valuable-than-anthropic-again-perhaps-briefly-2000812142">Gizmodo: Rumored round of funding could make OpenAI more valuable than Anthropic again</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">Ongoing</span></div>
+    <h3>Anthropic&rsquo;s Nasdaq IPO: October timing reported, no date confirmed</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Watch for a public S-1 or pricing date; until then, treat any October listing claim as unconfirmed.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports say Anthropic filed a confidential draft S-1 on 1 June, and that Goldman Sachs, JPMorgan and Morgan Stanley were scheduling investor meetings for an October Nasdaq listing, sized above $60 billion. Its last private valuation was $965 billion (Series H, May). We found no official Anthropic announcement of a date or ticker. These sources are mostly secondary, and some are aggregators.</p>
+        <ul class="sources">
+          <li><a href="https://www.startuphub.ai/ai-news/ipo-watch/2026/anthropic-ipo-roadshow-investor-meetings-2026-07-21">StartupHub: Anthropic nears IPO as bankers schedule investor meetings ahead of Nasdaq debut</a></li>
+          <li><a href="https://cryptobriefing.com/anthropic-nasdaq-ipo-listing-2026/">Crypto Briefing: Anthropic selects Nasdaq for IPO listing</a></li>
+          <li><a href="https://www.bitmex.com/blog/anthropic-ipo-guide">BitMEX Blog: Anthropic IPO date, price and valuation</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 21 October 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
