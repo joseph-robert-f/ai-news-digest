@@ -1,0 +1,21 @@
+name: Check digest presentation
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  editorial-framing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Rebuild manifest
+        run: node scripts/build-manifest.mjs
+      - name: Check template and latest digest
+        run: node --test scripts/editorial-framing.test.mjs
