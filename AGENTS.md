@@ -17,8 +17,10 @@ morning.
 
 ## How to produce the daily digest
 
-1. **Research** the last ~24 hours of AI news (models, agents, funding/markets,
-   policy, developer platforms, notable research). Prefer primary sources.
+1. **Research** the latest AI news and noteworthy updates (models, agents,
+   funding/markets, policy, developer platforms, notable research). Prefer
+   primary sources. Prioritize new or valuable developments rather than a strict
+   24-hour cutoff; include older context when it helps explain an update.
 2. **Start from** `templates/digest-template.html`. Keep it fully self-contained
    (inline `<style>`, no external assets).
 3. **Write for a ≤5-minute executive skim.** Structure, in order:
@@ -42,6 +44,9 @@ morning.
 
 ## Quality bar
 
+- Use **"Latest AI news and noteworthy updates"** in the masthead.
+- Keep each story's date visible in its `.when` label; use "Ongoing" for
+  continuing stories and label older background explicitly when useful.
 - Every claim carries a source link (inside `Detail & sources`).
 - Lead with "so what," not chronology. One takeaway line per story.
 - Five glance bullets max; if the day is quiet, fewer is better.

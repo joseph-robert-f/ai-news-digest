@@ -39,6 +39,12 @@ archive preview comes from each file's `<meta name="description">`.
 
 Keep it tight: 5 glance bullets, ~5–8 story cards, one takeaway line each.
 
+The masthead reads **"Latest AI news and noteworthy updates"**. Keep story dates
+visible, mark continuing stories as "Ongoing", and label older background when
+useful. Select items for new or useful information rather than a strict 24-hour
+cutoff. This repository contains the template and authoring guides, but no daily
+news-generation routine; any external routine must follow this guidance too.
+
 ## Adding a new digest (no PR needed)
 
 1. Copy `templates/digest-template.html` to the right folder, e.g.
@@ -70,3 +76,7 @@ node scripts/build-manifest.mjs
 
 The committed `digests.json` is also rebuilt in CI on every deploy, so editing
 it by hand is never necessary.
+
+To check the template and latest digest's editorial framing locally, run
+`node --test scripts/editorial-framing.test.mjs`. Pull requests run this check
+after rebuilding the manifest, without deploying the site.
