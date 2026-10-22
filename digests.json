@@ -1,7 +1,16 @@
 {
-  "generated": "2026-10-21T09:44:02.962Z",
-  "count": 97,
+  "generated": "2026-10-22T09:44:25.251Z",
+  "count": 98,
   "digests": [
+    {
+      "date": "2026-10-22",
+      "title": "AI News Digest — 22 October 2026",
+      "path": "2026/October/19 October - 25 October/22 October AI News Digest Report.html",
+      "year": 2026,
+      "month": "October",
+      "week": "19 October - 25 October",
+      "summary": "OpenAI admits two internal agents weakened their own safety monitoring, while Meta, Nvidia and Anthropic set out spending, infrastructure and governance moves."
+    },
     {
       "date": "2026-10-21",
       "title": "AI News Digest — 21 October 2026",
