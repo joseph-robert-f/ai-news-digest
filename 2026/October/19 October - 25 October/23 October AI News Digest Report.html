@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 23 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Meta's filing shows about $825 billion in AI spending commitments, a China-linked group used an AI pentest tool against hundreds of organizations, and Agent Skills moves to a neutral foundation.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>23 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Meta&rsquo;s AI bill is now about $825B in commitments.</strong> Its latest quarterly filing sent the stock down roughly 7%.</li>
+      <li><strong>A China-linked group ran an AI hacking tool against hundreds of targets.</strong> Microsoft says Storm-0940 used the open-source ARTEX framework.</li>
+      <li><strong>Agent Skills moves to a neutral foundation.</strong> Anthropic donated the standard to the Linux Foundation&rsquo;s AAIF.</li>
+      <li><strong>OpenAI models reach Google Cloud.</strong> Invite-only preview; all three big US clouds now sell them.</li>
+      <li><strong>OpenAI seeks $30B at $1.25T.</strong> TechCrunch reports terms are still being negotiated.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">22 Oct</span></div>
+    <h3>Meta discloses about $825B in future AI commitments; shares fall about 7%</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Meta now owes more to data-center and cloud suppliers than most rivals earn in years, so funding risk is the story, not demand.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Update to yesterday&rsquo;s capex item. Reports on the new filing put commitments near $825B (about $355.7B in data-center leases and $454.5B in cloud and other contracts), up from nearly $700B in July. Meta also floated non-voting stock. Figures come from secondary reports and differ on the size of the drop; check the 10-Q. For scale, the June 10-Q showed $349.31B of non-cancelable commitments.</p>
+        <ul class="sources">
+          <li><a href="https://investinglive.com/stocks/meta-shares-fall-7-on-huge-spending-plans/">InvestingLive: Meta shares fall 7% on huge spending plans</a></li>
+          <li><a href="https://www.gurufocus.com/news/9126030/meta-stocks-fall-as-135b-ai-cashburn-forecast-raises-funding-questions">GuruFocus: Meta stocks fall as $135B AI cash-burn forecast raises funding questions</a></li>
+          <li><a href="https://www.sec.gov/Archives/edgar/data/0001326801/000162828026050705/meta-20260630.htm">SEC: Meta Form 10-Q, quarter ended 30 June 2026 (background)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">21 Oct</span></div>
+    <h3>Microsoft: China-linked Storm-0940 used an AI pentest tool to compromise ConnectWise</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Attackers can now scale intrusions with off-the-shelf agent tooling, so patch windows and cloud-persistence checks need to be faster.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reuters (syndicated) reports the group used ARTEX, an open-source framework that runs any AI model to automate penetration-testing tasks, against hundreds of organizations in defense, finance, government and semiconductors. Most attempts failed, but the group gained privileged cloud persistence at many. A secondary blog citing Microsoft&rsquo;s report says over 2,250 tenants were reached, sometimes in under 3 hours; I could not verify that figure. Microsoft says the activity did not come from a compromise of its own systems. ConnectWise said on 16 October it was investigating unauthorized access to its Cloud Backup environment.</p>
+        <ul class="sources">
+          <li><a href="https://whtc.com/2026/10/21/chinese-linked-hackers-compromise-connectwise-target-hundreds-in-global-attack-microsoft-says/">Reuters via WHTC: Chinese-linked hackers compromise ConnectWise</a></li>
+          <li><a href="https://kfgo.com/2026/10/21/chinese-linked-hackers-compromise-connectwise-target-hundreds-in-global-attack-microsoft-says/">Reuters via KFGO (same report)</a></li>
+          <li><a href="https://fourweekmba.com/ai-microsoft-discloses-ai-run-attack-that-reached-2250-tenants/">FourWeekMBA: Microsoft discloses AI-run attack that reached 2,250 tenants (unverified figure)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer platforms</span><span class="when">22 Oct</span></div>
+    <h3>Anthropic donates Agent Skills to the Agentic AI Foundation</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The skills format is now vendor-neutral, so teams can invest in it without betting on one model vendor.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The donation covers the open standard, its name and logo, the GitHub organization and the agentskills.io domain. The AAIF sits under the Linux Foundation, was co-founded by Anthropic, Block and OpenAI, and also hosts MCP. Anthropic says more than 70 agent platforms support skills, with 1 million published and nearly 280 million installs (Anthropic figures). Proposed next steps: versioned releases, a formal proposal process and security guidance for skill authors.</p>
+        <ul class="sources">
+          <li><a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation">Anthropic: Donating Agent Skills to the Agentic AI Foundation</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Cloud</span><span class="when">21 Oct</span></div>
+    <h3>OpenAI frontier models and Codex enter Google Cloud&rsquo;s Model Garden</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Buyers can now spend existing cloud commitments on OpenAI models on every major US cloud, which weakens single-cloud lock-in as a procurement argument.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Access starts as a limited, invite-only preview through Google Cloud Marketplace, with general availability &ldquo;in the coming weeks&rdquo; and no date. Zero Data Retention and Confidential Compute are planned for later. Model names in the preview come from a secondary report and are not confirmed.</p>
+        <ul class="sources">
+          <li><a href="https://openai.com/index/openai-models-google-cloud">OpenAI: OpenAI models are coming to Google Cloud</a></li>
+          <li><a href="https://scalevise.com/resources/openai-models-google-cloud-model-garden/">Scalevise: OpenAI models reach Google Cloud Model Garden</a></li>
+          <li><a href="https://alphasignal.ai/news/openai-brings-codex-and-frontier-models-to-google-cloud">AlphaSignal: OpenAI brings Codex and frontier models to Google Cloud</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">22 Oct</span></div>
+    <h3>OpenAI reportedly works on a $30B raise at a $1.25T pre-money valuation</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A raise this size before an IPO sets the price anchor for every other AI listing and private round.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>This adds a dollar amount to the pre-IPO round reported on 21 October. TechCrunch says terms are still being negotiated and could change. We could not open the article, so treat this as a headline-level report.</p>
+        <ul class="sources">
+          <li><a href="https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/">TechCrunch: OpenAI working on new $30B raise at $1.25T valuation ahead of IPO</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">21 Oct</span></div>
+    <h3>Flapping Airplanes raises $1B at $6B with no product</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Investors are paying frontier-lab prices for a bet on training with less data and compute, a thesis that pays off only if chips and data stay scarce.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Index Ventures and Lux Capital led, with Sequoia, GV, Kleiner Perkins and Nvidia reported as participants. The valuation is four times the January level. Bloomberg first reported it; outlets differ on the January baseline.</p>
+        <ul class="sources">
+          <li><a href="https://thenextweb.com/news/flapping-airplanes-1b-6b-valuation">The Next Web: Flapping Airplanes is now worth $6B</a></li>
+          <li><a href="https://dealroom.co/news/164826-flapping-airplanes-raises-1b-for-ai-research-hitting-6b-valuation/">Dealroom: Flapping Airplanes raises $1B for AI research</a></li>
+          <li><a href="https://aiweekly.co/alerts/flapping-airplanes-lands-1b-at-6b-from-index-and-lux-four-times-its-january">AI Weekly: Flapping Airplanes lands $1B at $6B</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Agents</span><span class="when">Ongoing</span></div>
+    <h3>Banks split on outside AI agents: Citi and Bank of America restrict, Morgan Stanley opens up</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Agent access to money is turning into a liability and deposit-flight question, and each firm is choosing a different answer.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Follows the 19 October item on Schwab and JPMorgan. The FT reportedly says Citi bars third-party agents from logging in or trading, and Bank of America limits agent access to deposits until liability for AI-approved payments is settled. Morgan Stanley is reportedly opening its stock-plan platforms to corporate clients&rsquo; agents, with early access now and all 3,400 clients next year. Details come from digest summaries of FT reporting, not the original articles.</p>
+        <ul class="sources">
+          <li><a href="https://digg.com/ai/c61euovc">Digg: Citi bars third-party AI agents from customer accounts</a></li>
+          <li><a href="https://digg.com/ai/jhvzvq5l">Digg: US banks restrict third-party AI agents</a></li>
+          <li><a href="https://www.retailbankerinternational.com/news/morgan-stanley-stock-plan-ai/">Retail Banker International: Morgan Stanley stock plan AI</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Research</span><span class="when">15 Oct</span></div>
+    <h3>Goodfire argues single neurons are more interpretable than assumed</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If it holds, safety teams could audit models neuron by neuron, but the result is unreplicated and from a company that sells interpretability.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Older background, still being debated. In preliminary Qwen3-32B audits, about 90% of neuron poles had one main function, about 7% had two, and 2&ndash;4% were unexplained. The companion paper is not out. A critique argues that knowing what a neuron responds to does not explain how neurons combine to compute.</p>
+        <ul class="sources">
+          <li><a href="https://fourweekmba.com/ai-goodfire-90-of-qwen3-32b-neuron-poles-have-one-main-job/">FourWeekMBA: 90% of Qwen3-32B neuron poles have one main job</a></li>
+          <li><a href="https://www.theneuron.ai/news/could-ai-models-be-easier-to-understand-than-scientists-thought/">The Neuron: Could AI models be easier to understand?</a></li>
+          <li><a href="https://www.lesswrong.com/posts/rfnjfHCdKJTGgLP8L/why-clean-neurons-are-not-enough">LessWrong: Why clean neurons are not enough</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 23 October 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
