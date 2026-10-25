@@ -1,7 +1,16 @@
 {
-  "generated": "2026-10-23T09:43:57.145Z",
-  "count": 99,
+  "generated": "2026-10-25T09:43:39.191Z",
+  "count": 100,
   "digests": [
+    {
+      "date": "2026-10-25",
+      "title": "AI News Digest — 25 October 2026",
+      "path": "2026/October/19 October - 25 October/25 October AI News Digest Report.html",
+      "year": 2026,
+      "month": "October",
+      "week": "19 October - 25 October",
+      "summary": "Anthropic opens a waitlist for Claude Duet, an always-on background agent; the US bars DeepSeek from civilian agencies as the lab nears a roughly $12B raise; and PHP2Shell flaws put millions of web servers at risk."
+    },
     {
       "date": "2026-10-23",
       "title": "AI News Digest — 23 October 2026",

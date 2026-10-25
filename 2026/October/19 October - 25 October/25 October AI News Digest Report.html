@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 25 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Anthropic opens a waitlist for Claude Duet, an always-on background agent; the US bars DeepSeek from civilian agencies as the lab nears a roughly $12B raise; and PHP2Shell flaws put millions of web servers at risk.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>25 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Claude Duet.</strong> Anthropic previews an always-on background agent for US Pro and Max users.</li>
+      <li><strong>DeepSeek.</strong> US bars it from civilian agencies; a roughly $12B raise is reported.</li>
+      <li><strong>PHP2Shell.</strong> Critical PHP flaws saw exploit attempts before patches; update now.</li>
+      <li><strong>Gemini 4 Argon.</strong> Now generally available; launch pricing doubles in December.</li>
+      <li><strong>OpenAI round.</strong> $30B raise reportedly UAE-led; valuation reports differ.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Agents</span><span class="when">21 Oct</span></div>
+    <h3>Anthropic previews Claude Duet, an always-on background agent</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Proactive agents that run unprompted are now a product category at every major lab, so approval controls and usage-limit cost become buying criteria.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Duet is a waitlisted research preview for US Pro and Max subscribers, on iOS, Android and the web. It sends a morning brief, checks in every few hours and asks approval before consequential steps such as sending messages or payments. Coverage says it runs on Claude Opus 5.5 and counts against plan usage limits. Press frames it as an answer to Meta&rsquo;s Muse and OpenAI&rsquo;s Dots. Anthropic&rsquo;s product page is linked in its site footer; most details here come from secondary outlets, and sources differ slightly on the launch day.</p>
+        <ul class="sources">
+          <li><a href="https://claude.com/product/claude-duet">Anthropic: Claude Duet product page</a></li>
+          <li><a href="https://iphoneincanada.ca/2026/10/21/claude-duet-proactive-ai-agent-app">iPhone in Canada: Claude Duet is Anthropic&rsquo;s answer to Muse, Grok Bot and OpenAI Dots</a></li>
+          <li><a href="https://testingcatalog.com/claude-duet">TestingCatalog: Claude Duet</a></li>
+          <li><a href="https://cryptobriefing.com/?p=399613">Crypto Briefing: Anthropic unveils Claude Duet</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">19&ndash;20 Oct</span></div>
+    <h3>US bars DeepSeek products from all civilian federal agencies</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Any vendor that embeds DeepSeek models may now be excluded from federal work, so government contractors should audit their model supply chains.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>A Department of Homeland Security notice, due in the Federal Register on 20 October, bars civilian agencies from using or buying DeepSeek products, including third-party products built on DeepSeek implementations; agencies can request exceptions. It is a procurement rule, not an export control, and does not cover private firms. Outlets disagree on the date of the underlying order (June 26 versus July 24). China&rsquo;s foreign ministry objected.</p>
+        <ul class="sources">
+          <li><a href="https://www.roic.ai/news/trump-administration-expands-deepseek-restrictions-to-all-civilian-federal-agencies-10-19-2026">ROIC: Administration expands DeepSeek restrictions to all civilian federal agencies</a></li>
+          <li><a href="https://www.techzine.eu/news/privacy-compliance/145107/u-s-government-bans-deepseek-from-federal-agencies/">Techzine: US government bans DeepSeek from federal agencies</a></li>
+          <li><a href="https://cryptobriefing.com/us-government-bars-deepseek-civilian-agencies/">Crypto Briefing: US government bars DeepSeek from civilian agencies</a></li>
+          <li><a href="https://letsdatascience.com/news/china-rebukes-us-ban-on-deepseek-in-federal-agencies-49b3c8fd">Let&rsquo;s Data Science: China rebukes US ban</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">6 Oct &middot; Ongoing</span></div>
+    <h3>DeepSeek reportedly nears a roughly $12B raise despite the US ban</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Capital is flowing to China&rsquo;s labs regardless of Western restrictions, ahead of a possible Shanghai listing in early 2027.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Bloomberg, relayed by Reuters on 6 October, reported DeepSeek is set to raise more than 80 billion yuan (about $11.9B), with Tencent and CATL among the largest backers. The round was expected to close in October and could reach about 100 billion yuan. Neither the company nor investors have confirmed it. Earlier reports put the target valuation near 500 billion yuan.</p>
+        <ul class="sources">
+          <li><a href="https://thestar.com.my/tech/tech-news/2026/10/06/deepseek-to-raise-at-least-12-billion-in-tencent-backed-funding-bloomberg-news-reports">The Star (Bloomberg): DeepSeek to raise at least $12 billion in Tencent-backed funding</a></li>
+          <li><a href="https://www.khaleejtimes.com/business/deepseek-to-raise-at-least-12-billion-in-tencent-backed-funding">Khaleej Times: DeepSeek to raise at least $12 billion</a></li>
+          <li><a href="https://letsdatascience.com/news/deepseek-nears-tencent-backed-funding-round-eaffe648">Let&rsquo;s Data Science: DeepSeek nears 80 billion yuan round</a></li>
+          <li><a href="https://www.dealstreetasia.com/?p=497355">DealStreetAsia: DeepSeek set to net over $12b</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">Oct 2026</span></div>
+    <h3>PHP2Shell: critical PHP flaws hit with exploit attempts before patches</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Patch PHP now; a large share of the web runs it, and exploit attempts began before fixes shipped.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>PHP released emergency fixes for two unauthenticated remote-code-execution bugs (CVE-2026-109618 and CVE-2026-109619, CVSS 9.2) in versions 8.5.12, 8.4.27, 8.3.36 and 8.2.35, with backports for older lines. Palo Alto Networks counted more than 22.6 million potentially exposed instances. Apache with mod_php is at highest risk. WatchTowr reported attempts but no confirmed successes at the time. Some details remain unverified.</p>
+        <ul class="sources">
+          <li><a href="https://bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws">BleepingComputer: PHP ships emergency patches for critical PHP2Shell flaws</a></li>
+          <li><a href="https://securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors">SecurityWeek: PHP2Shell patches land as first exploitation attempts hit sensors</a></li>
+          <li><a href="https://www.techtarget.com/cybersecurity/news/366652444/PHP2Shell-22M-exposed-servers-at-risk-as-emergency-patches-released">TechTarget: PHP2Shell, 22M exposed servers at risk</a></li>
+          <li><a href="https://www.darkreading.com/application-security/php2shell-bugs-red-alert-security-industry">Dark Reading: PHP2Shell bugs signal red alert</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">13 Oct &middot; Background</span></div>
+    <h3>Gemini 4 Argon reaches general availability at promotional pricing</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Google says its flagship now rivals the top OpenAI and Anthropic models, but the low price rises in December, so benchmark before you commit.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Argon was announced 30 September to cyber-security partners and opened to AI Pro and Ultra subscribers, the Gemini API and Google Cloud on 13 October. It has a 1,048,576-token context window. HPCwire lists $2 per million input and $10 per million output tokens through 30 November, doubling in December. Rankings come from Google and secondary outlets and are not independently verified.</p>
+        <ul class="sources">
+          <li><a href="https://ai.google.dev/gemini-api/docs/models/gemini-4-argon">Google AI for Developers: Gemini 4 Argon model page</a></li>
+          <li><a href="https://www.hpcwire.com/bigdatawire/2026/10/14/gemini-4-argon-arrives-with-big-claims-for-ai-agents-and-scientific-discovery/">HPCwire: Gemini 4 Argon arrives with big claims for AI agents and scientific discovery</a></li>
+          <li><a href="https://technews.tw/?p=1622722">TechNews: Gemini 4 Argon benchmark coverage</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">22 Oct</span></div>
+    <h3>OpenAI&rsquo;s $30B round: reports now point to UAE-led backing, valuation still unsettled</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The 23 October digest reported a $1.25T valuation; other outlets cite up to $1.4T, so treat the price as unsettled.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>New since the last digest: CNBC&rsquo;s 22 October headline says the round is led by UAE investors. Earlier Bloomberg-sourced reports (5 October) said Abu Dhabi&rsquo;s MGX and other UAE funds discussed up to about $10B, with BlackRock also in talks, at roughly $1.4T. TechCrunch put the figure at $1.25T pre-money. The deal is unfinished and OpenAI has not confirmed terms.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html">CNBC: OpenAI nears up to $30 billion funding round led by UAE investors</a></li>
+          <li><a href="https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/">TechCrunch: OpenAI working on new $30B raise at $1.25T valuation</a></li>
+          <li><a href="https://thenextweb.com/news/openai-30bn-mgx-blackrock-europe">The Next Web: OpenAI is in talks with MGX and BlackRock for a $30B round</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">Ongoing</span></div>
+    <h3>Apollo&rsquo;s Slok: AI profits are accruing to sellers, not yet to buyers</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Valuations assume margin gains across the wider economy; if they take years, not months, expect repricing.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Slok cites Bloomberg and Macrobond data: Magnificent Seven margins rose from about 15% to 25% between 2023 and 2026, while the rest of the S&P 500 stayed near 10%. He expects regulated sectors such as banking and healthcare to lag. This is a recurring view from Apollo, not a new data release; the dates of the secondary write-ups vary.</p>
+        <ul class="sources">
+          <li><a href="https://www.apollo.com/institutional/insights-news/insights/daily-spark/the-buyers-of-ai-are-still-waiting-for-the-payoff">Apollo Daily Spark: The buyers of AI are still waiting for the payoff</a></li>
+          <li><a href="https://the-decoder.com/apollo-economist-warns-ai-profit-gains-outside-tech-could-take-well-beyond-what-wall-street-expects/">The Decoder: Apollo economist warns AI profit gains outside tech could take years</a></li>
+          <li><a href="https://fortune.com/2026/07/06/ai-productivity-gains-bubble-painful-repricing-markets-torsten-slok/">Fortune: AI productivity gains, bubble, painful repricing (6 July)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 25 October 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
