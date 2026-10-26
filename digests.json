@@ -1,7 +1,16 @@
 {
-  "generated": "2026-10-25T09:43:39.191Z",
-  "count": 100,
+  "generated": "2026-10-26T09:43:10.551Z",
+  "count": 101,
   "digests": [
+    {
+      "date": "2026-10-26",
+      "title": "AI News Digest — 26 October 2026",
+      "path": "2026/October/26 October - 1 November/26 October AI News Digest Report.html",
+      "year": 2026,
+      "month": "October",
+      "week": "26 October - 1 November",
+      "summary": "OpenAI’s agent-containment lapses keep drawing scrutiny, while Tenstorrent’s $1.5B raise and Daytona’s $1B round show capital flowing to non-Nvidia chips and agent infrastructure."
+    },
     {
       "date": "2026-10-25",
       "title": "AI News Digest — 25 October 2026",
