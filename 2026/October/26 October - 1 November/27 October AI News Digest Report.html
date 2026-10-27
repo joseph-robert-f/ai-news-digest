@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 27 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Anthropic made its Nasdaq IPO filing public, disclosing $16.3B of first-half revenue and an $80.7B mostly non-cash loss, while a quiet news day left Replit, state lawsuits and open-weight models as the other threads to watch.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>27 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Anthropic opens its books.</strong> S-1 shows $16.3B first-half revenue and an $80.7B net loss, mostly non-cash.</li>
+      <li><strong>Platform defaults are up for grabs.</strong> Replit made OpenAI the default for Agent; the Anthropic split is disputed.</li>
+      <li><strong>Regulation is moving at state level.</strong> Eight states sued OpenAI; the federal accord stays voluntary.</li>
+      <li><strong>Open weights keep landing.</strong> Meta, DeepSeek and Reflection add options for self-hosting.</li>
+      <li><strong>Compute is debt-financed.</strong> SpaceX reportedly seeks $40B of debt for Nvidia chips.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">26 Oct</span></div>
+    <h3>Anthropic files publicly for a Nasdaq IPO under the ticker ANT</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The first frontier lab to open its books gives investors a hard read on AI economics: revenue is exploding, but the headline loss and compute bill are enormous.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The S-1 reports about $16.3B of revenue for the six months to 30 June 2026 (up from about $1.16B a year earlier) and Q2 revenue of $11.56B. The net loss was $80.7B, but $72.4B of it is a non-cash fair-value charge on convertible notes, derivatives and SAFEs; the operating loss was $693M. Seven co-founders reportedly keep 50.1% of the vote through a single Class F share. The share count and price are not set and the filing is not yet effective. We read the figures through secondary coverage, not the filing itself.</p>
+        <ul class="sources"><li><a href="https://finance.yahoo.com/technology/live/anthropic-ipo-live-updates-frontier-ai-lab-discloses-revenue-and-risks-in-highly-anticipated-s-1-filing-141702607.html">Yahoo Finance: Anthropic IPO live updates</a></li><li><a href="https://www.thewrap.com/industry-news/tech/anthropic-ipo-filing-80-billion-loss-revenue/">TheWrap: $80B loss, revenue in IPO filing</a></li><li><a href="https://www.cnn.com/2026/10/26/tech/anthropic-files-ipo">CNN: Anthropic set to make stock market debut</a></li><li><a href="https://www.usnews.com/news/top-news/articles/2026-10-26/anthropic-opens-books-on-ais-explosive-growth-and-staggering-costs">U.S. News: Anthropic opens books on growth and costs</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Platforms</span><span class="when">Ongoing (17&ndash;20 Oct)</span></div>
+    <h3>Replit makes OpenAI the default for its Agent, but the Anthropic split is disputed</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Default-model choices at developer platforms now move nine-figure budgets; price and discounting, not only benchmarks, decide who wins coding workloads.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Information reported that OpenAI offered Replit more than 30% off on a deal worth over $100M a year after Anthropic declined to extend a prior discount without a bigger commitment. Replit CEO Amjad Masad first said Replit no longer works with Anthropic, then said it stays model agnostic and that OpenAI is the preferred partner for Agent. A source told TechCrunch the Anthropic partnership continues. Treat the $100M+ and 30% figures as reported, not confirmed by the companies.</p>
+        <ul class="sources"><li><a href="https://techcrunch.com/2026/10/20/replit-is-no-longer-working-with-anthropic-ceo-says/">TechCrunch: Replit is no longer working with Anthropic, CEO says</a></li><li><a href="https://www.techrepublic.com/article/news-replit-openai-preferred-ai-partner-anthropic/">TechRepublic: Replit CEO says ChatGPT is better now, but Anthropic isn&rsquo;t out</a></li><li><a href="https://aiweekly.co/alerts/replit-shifts-100m-ai-spend-to-openai-after-30-price-cut">AI Weekly: Replit shifts $100M+ AI spend to OpenAI</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">Background (14 Oct)</span></div>
+    <h3>Eight US states sue OpenAI over ChatGPT safety claims</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> State attorneys general, not Congress, are setting the near-term liability terms for consumer chatbots, and the remedies they seek reach into model design.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Attorneys general in Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho and Montana filed separate state-court suits on 14 Oct. They allege deceptive claims about safety and a public nuisance, and seek design changes and civil penalties. Arkansas also seeks a pause on building self-improving models until safeguards exist. Florida filed the first such state suit in June. No OpenAI response was reported at publication.</p>
+        <ul class="sources"><li><a href="https://www.aljazeera.com/news/2026/10/15/why-are-eight-us-states-suing-openai">Al Jazeera: Why are eight US states suing OpenAI?</a></li><li><a href="https://www.timeslive.co.za/news/world/2026-10-15-eight-us-states-sue-openai-claim-chatgpt-harms-young-users/">TimesLIVE: Eight US states sue OpenAI</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">Background (29 Sep)</span></div>
+    <h3>The White House AI accord is voluntary, and critics say it has no enforcement</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> With no federal AI statute and a voluntary pact as the main federal tool, expect state suits and midterm politics to drive rules before Congress does.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The accord asks frontier developers to adopt internal oversight, external audits and board-level review. It is not legally binding, sets no penalties and does not require public audit disclosure, though its text says the steps may later be codified. Reported signatories include Anthropic, Google, Meta, OpenAI, Nvidia and xAI.</p>
+        <ul class="sources"><li><a href="https://www.aljazeera.com/amp/economy/2026/9/30/how-does-trumps-white-house-ai-accord-work">Al Jazeera: How does Trump&rsquo;s White House AI accord work?</a></li><li><a href="https://www.securityweek.com/trump-says-top-tech-firms-have-signed-accord-to-self-police-ai-development/amp/">SecurityWeek: Top tech firms signed accord to self-police AI</a></li><li><a href="https://www.csmonitor.com/USA/Society/2026/1021/artificial-intelligence-self-regulation-trump-accord">Christian Science Monitor: AI self-regulation record</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">Background (15&ndash;17 Oct)</span></div>
+    <h3>Open-weight releases keep coming: Meta Muse Spark Open, DeepSeek V4.1 Flash, Reflection Beam</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Strong open weights from US and Chinese labs keep pressure on closed-model pricing, and give enterprises self-hosting options.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Meta released weights for Muse Spark Open on 15 Oct, which it calls the most capable US open-weight model to date. DeepSeek shipped a V4.1 Flash update on 17 Oct under the MIT license. Reflection AI announced Beam, a 501B-parameter mixture-of-experts model with 23B active parameters, and said weights would follow under Apache 2.0 later in October; we could not confirm whether they have shipped.</p>
+        <ul class="sources"><li><a href="https://research.meta.ai/blog/muse-spark-open">Meta Research: Muse Spark Open</a></li><li><a href="https://reflection.ai/blog/introducing-beam">Reflection: Introducing Beam</a></li><li><a href="https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/">TechCrunch: Reflection debuts Beam</a></li><li><a href="https://dev.to/nirali_toolbit/open-weight-ai-models-you-can-run-yourself-october-2026-edition-3ndo">DEV Community: open-weight models, October 2026</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">Background (7 Oct)</span></div>
+    <h3>SpaceX reportedly seeks $40B in debt, led by Apollo, to buy Nvidia chips</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> AI compute is now financed with investment-grade debt at the scale of sovereign borrowing, so credit markets, not only equity, set the pace of the build-out.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The FT reported about $10B of bank loans and $30B of investment-grade debt, with Apollo expected to lead and close in 2027. Pimco is reported among lenders in talks. The companies have not confirmed it, so this is a proposal, not a completed deal. The deal follows SpaceX&rsquo;s June IPO and an earlier $25B bond issue, per one report.</p>
+        <ul class="sources"><li><a href="https://www.thestar.com.my/tech/tech-news/2026/10/07/spacex-seeks-40-billion-to-buy-nvidia-chips-ft-reports">The Star (FT report): SpaceX seeks $40 billion to buy Nvidia chips</a></li><li><a href="https://investinglive.com/stocks/spacex-seeks-40-billion-in-debt-led-by-apollo-to-fund-nvidia-chip-order-ft-says/">investingLive: SpaceX seeks $40B in debt led by Apollo</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 27 October 2026. A quiet day: several stories are labelled as background or ongoing, and some figures come from secondary coverage as noted.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
