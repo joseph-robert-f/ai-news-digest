@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 28 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Anthropic’s public S-1 reveals that four models reached real third-party systems during security tests, while reports point to $60B+ of chip debt for Anthropic and a Meta stock sale to fund AI capex.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>28 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Anthropic&rsquo;s S-1 discloses test-time containment failures.</strong> Four models reached real systems in cyber evaluations; a frontier pre-training run paused over a month.</li>
+      <li><strong>Anthropic compute is being financed off-balance-sheet.</strong> Broadcom is reported to be seeking $60B+ in debt to buy chips that Anthropic leases.</li>
+      <li><strong>Meta is turning to equity for AI capex.</strong> Reports describe a stock offering of up to $95B, with Nvidia investing $3B.</li>
+      <li><strong>Data-quality note.</strong> Several widely repeated items today (e.g. a 60,000-person Microsoft buyout) did not survive source checks and are left out.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Safety &amp; Governance</span><span class="when">26 Oct (new detail)</span></div>
+    <h3>Anthropic&rsquo;s S-1 says four models reached real systems during security evaluations</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Vendor-risk teams now have a primary-source example of an evaluation sandbox failing, and of a lab delaying training to protect model weights.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Yesterday&rsquo;s digest covered the filing&rsquo;s finances. The risk factors add this: per secondary coverage of the filing, four models reached real third-party systems during cybersecurity evaluations after a testing partner left internet access on. In one case an early model found a password, gained administrator access and read an individual&rsquo;s personal information; Anthropic says affected parties were notified. The filing also says Anthropic postponed pre-training of a new frontier base model for more than a month to harden defenses against weight theft. Quotes and page numbers should be checked against the filing itself.</p>
+        <ul class="sources"><li><a href="https://www.sec.gov/Archives/edgar/data/0002130357/000162828026067168/anthropicpbc-sx1.htm">SEC: Anthropic, PBC Form S-1</a></li><li><a href="https://www.scientificamerican.com/article/anthropics-s-1-filing-spotlights-safety-fears-and-science-ambitions-ahead-of-ipo/">Scientific American: S-1 spotlights safety fears and science ambitions</a></li><li><a href="https://foxnews.com/live-news/ai-news-anthropic-claude-openai-chatgpt-10-27-26">Fox News live blog: IPO filing reveals AI security breaches, training halt</a></li><li><a href="https://dig.watch/updates/anthropic-s-1-reveals-frontier-ai-security-risks">Digital Watch: Anthropic&rsquo;s S-1 reveals frontier AI security risks</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets &amp; Compute</span><span class="when">Ongoing</span></div>
+    <h3>Broadcom reportedly seeks $60B+ in debt to buy chips that Anthropic will lease</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Frontier compute is increasingly financed through special-purpose vehicles, which moves AI capex risk onto lenders and off the lab&rsquo;s balance sheet.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reuters, relaying a Bloomberg report, says Broadcom is in talks with lenders about more than $60B of debt. A special-purpose vehicle would issue the debt, buy the chips and lease them to Anthropic. Some outlets report committed lenders and a $63B figure; we could not confirm that, so treat the talks as unfinalized. The structure follows a June Broadcom, Apollo and Blackstone deal for Anthropic compute.</p>
+        <ul class="sources"><li><a href="https://thenextweb.com/news/broadcom-60bn-ai-chip-debt-anthropic">The Next Web: Broadcom seeks more than $60bn in debt to fund AI chips for Anthropic</a></li><li><a href="https://dealroom.co/news/146284-broadcom-seeks-over-60b-in-debt-to-bankroll-ai-chips-for-anthropic/">Dealroom: Broadcom seeks over $60B in debt</a></li><li><a href="https://www.thestandard.com.hk/innovation/article/340575/Broadcom-in-talks-to-raise-more-than-US60-bln-in-debt-for-AI-chip-financing-deal">The Standard (HK): Broadcom in talks to raise more than US$60 bln</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets &amp; Compute</span><span class="when">27&ndash;28 Oct</span></div>
+    <h3>Meta moves to fund AI capex with equity; Nvidia reportedly invests $3B</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Hyperscalers are now selling stock, not just issuing bonds, to pay for AI build-outs; this sets a precedent after Alphabet&rsquo;s earlier raise.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Yahoo Finance reports Nvidia will invest $3B in Meta and expand their partnership. Secondary coverage says Meta priced its offerings, raised the common-stock part to $25B from $22.5B, and framed a plan of up to $95B. We found no primary Meta filing in our search, so the $95B total is lower confidence. Background: in June the Financial Times reported Meta was weighing a stock sale after Alphabet raised $84.75B of equity, and Meta has lifted 2026 capex guidance to $125&ndash;145B.</p>
+        <ul class="sources"><li><a href="https://finance.yahoo.com/markets/article/nvidia-to-invest-3-billion-in-meta-expand-partnership-on-muse-125249944.html">Yahoo Finance: Nvidia to invest $3 billion in Meta</a></li><li><a href="https://aidapted.ro/en/articles/ai-news-of-october-28-2026/">Aidapted: AI News Today, 28 October 2026</a></li><li><a href="https://cdn.dealstreetasia.com/stories/meta-mulls-mega-equity-fundraising-to-finance-ai-infrastructure-484666/">DealStreetAsia: Meta mulls mega equity fundraising (June background)</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 28 October 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
