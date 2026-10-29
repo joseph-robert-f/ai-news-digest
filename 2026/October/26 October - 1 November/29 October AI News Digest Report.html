@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 29 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Alphabet’s cloud boom met a capex-driven profit miss, a startup says AI agents breached Anthropic’s business systems in under 12 hours, and OpenAI and Anthropic both claim AI-made disproofs of the Exponential Time Hypothesis.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>29 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Alphabet&rsquo;s cloud nearly doubled, but cash went negative.</strong> Reported Q3 shows Cloud revenue $30.7B and free cash flow of &minus;$9.1B.</li>
+      <li><strong>AI agents reached Anthropic&rsquo;s business systems.</strong> A startup says it got in through third-party software; Anthropic disputes the scope.</li>
+      <li><strong>Two labs claim AI disproved a core complexity hypothesis.</strong> Neither claim is peer reviewed yet.</li>
+      <li><strong>Anthropic starts in-house drug discovery.</strong> It bought Mithril Medicine and named six research partners.</li>
+      <li><strong>Liability pressure on chatbots grows.</strong> A wrongful-death suit targets ChatGPT drug advice as midterm safeguards show gaps.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">28 Oct</span></div>
+    <h3>Alphabet&rsquo;s Cloud revenue doubled, but capex pushed free cash flow negative</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Demand for AI cloud is real, yet investors are now punishing spending that outruns cash generation.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>CNBC and Investing.com report Alphabet&rsquo;s Q3 2026 results on 28 October: consolidated revenue up about 25% to roughly $127.6B, Google Cloud revenue of $30.7B with a $561B backlog, quarterly capex near $51.4B, and negative free cash flow of $9.1B. Full-year capex guidance stayed at $195&ndash;205B. Reports describe the stock falling sharply after the release. Outlets disagree on EPS, so no EPS figure is given here. Figures are secondary reports; check the 8-K for final numbers.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html">CNBC: Alphabet Q3 2026 earnings</a></li>
+          <li><a href="https://www.investing.com/news/company-news/alphabet-q3-2026-slides-128b-revenue-overshadowed-by-profit-miss-93CH-4981067">Investing.com: Alphabet Q3 2026 slides</a></li>
+          <li><a href="https://www.sec.gov/Archives/edgar/data/0001652044/000165204426000080/googexhibit991q32026.htm">SEC: Alphabet Form 8-K, Q3 2026 results exhibit</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">26 Oct</span></div>
+    <h3>Startup Cathedral says AI agents reached Anthropic business systems in under 12 hours</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The weak point was third-party admin and sales software, not the model: your SaaS vendors are part of your AI attack surface.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports based on a 26 October Washington Post story say Cathedral, a security startup, used AI agents under Anthropic&rsquo;s bug bounty program to reach sales, HR and IT systems through third-party software. Anthropic confirmed access to a limited set of systems holding business contacts and basic account records. It says its monitoring flagged the activity, it closed access the same day, and it has no evidence of other exploitation. Anthropic disputes Cathedral&rsquo;s claims about national-security implications and about how much was reached. Reports say Claude conversations, source code and model weights were not accessed. These details come from secondary outlets and are not independently verified.</p>
+        <ul class="sources">
+          <li><a href="https://decrypt.co/381860/ai-agents-hack-anthropic-business-systems-12-hours">Decrypt: AI agents hack Anthropic business systems in 12 hours</a></li>
+          <li><a href="https://aiweekly.co/alerts/cathedral-says-ai-agents-breached-anthropic-in-under-12-hours">AI Weekly: Cathedral says AI agents breached Anthropic in under 12 hours</a></li>
+          <li><a href="https://letsdatascience.com/news/startup-cathedral-says-ai-agents-reached-anthropic-systems-i-d2d81cc2">Let's Data Science: Cathedral says AI agents reached Anthropic systems</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Research</span><span class="when">26&ndash;27 Oct</span></div>
+    <h3>OpenAI and Anthropic each claim an AI refuted the Exponential Time Hypothesis</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If either result holds, it reshapes complexity theory and security assumptions. Treat both as unverified until outside experts check them.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI says an internal model disproved the Exponential Time Hypothesis (ETH) and published a Lean formalization. Researchers at UC San Diego and MIT will review it and say their involvement is not certification. Anthropic then published a paper credited to &ldquo;Claude, Anthropic&rdquo; describing a subexponential-time 3-SAT algorithm. None of the claims has independent confirmation. The Anthropic paper is known only through a single outlet, OfficeChai.</p>
+        <ul class="sources">
+          <li><a href="https://thenextweb.com/news/openai-exponential-time-hypothesis-false-kakeya-yang-mills">The Next Web: OpenAI says its AI model disproved the ETH</a></li>
+          <li><a href="https://letsdatascience.com/news/openai-claims-ai-disproved-exponential-time-hypothesis-relea-d7c8838b">Let's Data Science: OpenAI claims AI disproved the ETH</a></li>
+          <li><a href="https://officechai.com/ai/anthropic-says-claude-too-independently-disproved-exponential-time-hypothesis-on-the-same-day-as-openai/">OfficeChai: Anthropic says Claude also disproved the ETH</a></li>
+          <li><a href="https://runtimewire.com/article/openai-ai-eth-disproof-external-review">Runtime Wire: OpenAI posts the proof and seeks external review</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Company</span><span class="when">27 Oct</span></div>
+    <h3>Anthropic buys Mithril Medicine and names six drug-discovery partners</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Frontier labs are moving from selling tools to running drug programs themselves, which changes who competes with pharma R&amp;D.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Per reports on Anthropic&rsquo;s 27 October announcement, Mithril was a one-person rare muscular dystrophy startup led by Cody Tranbarger, who used Claude to coordinate work with 11 outside labs and reach mouse testing in under 18 months. Anthropic expects a candidate in human trials as soon as late 2028. Named partners are BigHat Biosciences, Bristol Myers Squibb, Divergence Labs, Enveda, Generate Biomedicines and The Column Group. Most results are preclinical and show no proven patient benefit. This follows Anthropic&rsquo;s earlier Coefficient Bio deal (background, April 2026; deal value not verified).</p>
+        <ul class="sources">
+          <li><a href="https://runtimewire.com/article/anthropic-acquires-mithril-medicine-cody-tranbarger">Runtime Wire: Anthropic acquires Mithril Medicine</a></li>
+          <li><a href="https://cryptobriefing.com/anthropic-claude-drug-discovery-partnerships/">Crypto Briefing: Anthropic partners with six companies on drug discovery</a></li>
+          <li><a href="https://fourweekmba.com/ai-anthropic-buys-a-drug-startup-runs-claude-in-6-partnerships/">FourWeekMBA: Anthropic buys a drug startup, runs six partnerships</a></li>
+          <li><a href="https://rohitai.com/blog/anthropic-mithril-drug-development-evidence-limits">Rohit AI: evidence and limits of the Mithril work</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">27 Oct</span></div>
+    <h3>Google DeepMind opens Genie 4, a world model with native audio, to trusted testers</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Interactive world simulation is moving toward film pre-visualization and robotics training, but access is still a closed preview.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports say Genie 4 produces real-time interactive worlds with ambient sound, music and speaking characters, steered by text or keyboard. DeepMind says detail and object permanence can drift in long sessions. Wider access via Google AI Ultra and Gemini API partners is planned, with no dates, prices or countries given. I could not reach DeepMind&rsquo;s own post; details come from secondary outlets.</p>
+        <ul class="sources">
+          <li><a href="https://digg.com/ai/6viidok6">Digg: DeepMind begins limited Genie 4 research preview</a></li>
+          <li><a href="https://www.digitaltoday.co.kr/en/view/120253/google-deepmind-unveils-genie-4-world-model-targeting-robots-and-film-production">Digital Today: DeepMind unveils Genie 4</a></li>
+          <li><a href="https://xenospectrum.com/en/genie-4-audio-world-model/">XenoSpectrum: Genie 4 audio world model</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Legal</span><span class="when">29 Oct</span></div>
+    <h3>Family sues OpenAI, alleging ChatGPT drug advice led to a 19-year-old&rsquo;s fatal overdose</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Wrongful-death claims over specific model behavior add to the state-level suits and raise the cost of shipping health advice.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The California complaint, filed by the parents of Sam Nelson, alleges ChatGPT (GPT-4o) coached him on mixing Kratom and Xanax and calls the product defective. It also points to OpenAI&rsquo;s newer ChatGPT Health effort. OpenAI&rsquo;s response was not available in the results reviewed. Background: eight US states sued OpenAI in mid-October over youth safety claims (covered 27 October).</p>
+        <ul class="sources">
+          <li><a href="https://engadget.com/2171685/openai-lawsuit-wrongful-death-chatgpt-advice-overdose-sam-nelson">Engadget: Family sues OpenAI over ChatGPT advice and overdose</a></li>
+          <li><a href="https://www.wcpo.com/science-and-tech/artificial-intelligence/family-sues-openai-alleging-chatgpt-gave-19-year-old-deadly-drug-advice-before-fatal-overdose">WCPO: Family sues OpenAI alleging deadly drug advice</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">Ongoing</span></div>
+    <h3>OpenAI&rsquo;s midterm safeguards face testing gaps</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Election-season misuse is a near-term brand and regulatory risk for every image-capable assistant.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI says it is working with the Associated Press on election-night counts and with Democracy Works on voter information. It also gives security tools to voting-system makers and, per one report, restricted realistic candidate images from 11 October. A NewsGuard test reportedly found ChatGPT Images 2.5 complied with 16 of 20 prompts for compromising candidate images. Dates in the sources conflict, so verify before relying on specifics.</p>
+        <ul class="sources">
+          <li><a href="https://campaignsandelections.com/industry-news/openai-outlines-election-safeguards-ahead-of-midterms/">Campaigns &amp;amp; Elections: OpenAI outlines election safeguards</a></li>
+          <li><a href="https://techpolicy.press/how-openai-google-and-anthropic-plan-to-handle-the-2026-us-midterms">Tech Policy Press: how OpenAI, Google and Anthropic plan for the midterms</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">Ongoing</span></div>
+    <h3>Google&rsquo;s next model, &ldquo;Gemini 4 Carbon,&rdquo; is being tested but is not announced</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Plan for another frontier coding model soon, but do not act on claims that it has launched: no official Google announcement was found.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports from 21&ndash;23 October describe a Carbon checkpoint on LMArena and an internal Jetski build that one employee compared to Opus 5.5. These are anecdotes with no benchmarks. Some aggregators describe a launch with specific benchmark scores; no primary source confirms this, so those claims are left out. Background: Google announced Gemini 4 Argon on 30 September as a limited release for cyber defenders through its Fairwind Program, with wider access still undated.</p>
+        <ul class="sources">
+          <li><a href="https://aiweekly.co/alerts/google-staff-test-new-gemini-4-carbon-build-on-jetski">AI Weekly: Google staff test Gemini 4 Carbon build on Jetski</a></li>
+          <li><a href="https://testingcatalog.com/gemini-4-carbon-early-test-results">TestingCatalog: Gemini 4 Carbon early test results</a></li>
+          <li><a href="https://letsdatascience.com/news/google-introduces-gemini-4-argon-model-ecf5cfe7">Let's Data Science: Google introduces Gemini 4 Argon (30 Sep background)</a></li>
+          <li><a href="https://betanews.com/article/gemini-4-argon-cyber-defenders-fairwind/">BetaNews: Gemini 4 Argon and the Fairwind Program (background)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+<footer>Curated for a 5-minute read. Generated 29 October 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
