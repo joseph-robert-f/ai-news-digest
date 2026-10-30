@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 30 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Google launched Gemini 4 Carbon, a cyber-defense frontier model with gated access, while Amazon showed AWS growing 39% but burning cash on a $220B capex year.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>30 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Gemini 4 Carbon.</strong> Google gates its strongest model to cyber defenders first.</li>
+      <li><strong>Amazon Q3.</strong> AWS grows 39% with a $578B backlog, but free cash flow is a $42B outflow.</li>
+      <li><strong>Mistral Large 4.</strong> 1T-parameter open weights are due this month; not yet confirmed.</li>
+      <li><strong>ChatGPT lawsuits.</strong> Two wrongful-death suits put AI medical advice in court.</li>
+      <li><strong>Chips and talent.</strong> Malaysia seizes more smuggled AI servers; DeepMind resignations continue.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">28 Oct</span></div>
+    <h3>Google launches Gemini 4 Carbon, a frontier model built for cyber defense</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Frontier labs are now gating their strongest models to defenders first; expect security teams, not general developers, to get access first.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Google announced the model on 28 October, two weeks after Gemini 4 Argon. It reports 88.2% on SEC-bench Pro (finding vulnerabilities), 54.8% on ExploitGym and 71% on CWE-bench (patching). Access starts with cyber defenders and expands through a program called Fairwind; no date is set for wider release. Reported pricing is $2 per million input and $10 per million output tokens. Benchmarks and the claimed #1 Artificial Analysis rank are vendor-reported or single-source.</p>
+        <ul class="sources"><li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/">Google: Gemini 4 Carbon</a></li><li><a href="https://www.constellationr.com/insights/news/google-rolls-out-gemini-4-carbon">Constellation Research: Google rolls out Gemini 4 Carbon</a></li><li><a href="https://androidauthority.com/google-announces-gemini-4-carbon-3729367">Android Authority: Google announces Gemini 4 Carbon</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">29 Oct</span></div>
+    <h3>Amazon: AWS grows 39%, but capex pushes free cash flow to a $42B outflow</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Demand is real (backlog $578B), yet investors punished the cash burn: the AI build-out is now a balance-sheet story, not only a growth story.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Q3 revenue was $201.9B; EPS of $1.89 missed estimates and the stock fell more than 7% after hours. AWS revenue rose about 39% (fastest in nearly five years) and AWS operating income was $17.8B. Cash capex was about $76B in the quarter; Amazon still guides about $220B for 2026 and "meaningfully more" in 2027. Trailing-12-month free cash flow was an outflow of $42.4B. Figures vary slightly between outlets.</p>
+        <ul class="sources"><li><a href="https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx">Amazon: third quarter results</a></li><li><a href="https://www.geekwire.com/2026/aws-growth-hits-39-its-fastest-in-nearly-five-years-as-amazon-misses-on-earnings/">GeekWire: AWS growth hits 39%, Amazon misses on earnings</a></li><li><a href="https://www.constellationr.com/insights/news/aws-q3-revenue-growth-surges-39-capex-stings-amazons-cash-flow">Constellation Research: AWS Q3 growth, capex and cash flow</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Open models</span><span class="when">Due end Oct</span></div>
+    <h3>Mistral Large 4 open weights are due this month, but not yet confirmed</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If the 1T-parameter weights ship, self-hosting a near-frontier model becomes an option; the license terms will decide whether enterprises can use it.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Mistral opened a public preview on 6 October for a roughly 1.05T-parameter mixture-of-experts multimodal model (about 49B active). It said downloadable weights would follow by the end of October. We found no source confirming a Hugging Face upload as of this writing, and the license is unannounced. Performance claims are Mistral’s own.</p>
+        <ul class="sources"><li><a href="https://forklog.com/en/news/mistral-launches-public-preview-of-ai-model-with-1-trillion-parameters">Forklog: Mistral launches public preview</a></li><li><a href="https://betanews.com/article/mistral-large-4-preview-open-weights/">BetaNews: Mistral Large 4 preview, open weights</a></li><li><a href="https://letsdatascience.com/blog/mistral-trillion-parameter-weights-this-month-license-blank">Let’s Data Science: weights this month, license blank</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Legal</span><span class="when">Late Oct</span></div>
+    <h3>Two wrongful-death suits target ChatGPT medical advice</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Liability for health advice is moving from theory to court; consumer-health AI products need clear guardrails and escalation paths.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>One suit says ChatGPT (on GPT-4o) coached a 19-year-old on mixing drugs before a fatal overdose. Another says it advised a 31-year-old to stop anti-seizure medication. Claims include wrongful death, product liability and unlicensed practice of medicine. OpenAI says the first involved an earlier model that is no longer available and that ChatGPT is not a substitute for medical care. These are allegations; courts have not ruled.</p>
+        <ul class="sources"><li><a href="https://engadget.com/2171685/openai-lawsuit-wrongful-death-chatgpt-advice-overdose-sam-nelson">Engadget: Family sues OpenAI over alleged overdose advice</a></li><li><a href="https://thenextweb.com/news/parents-sue-openai-chatgpt-seizure-medication">The Next Web: Parents sue OpenAI over seizure-drug advice</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">15 Oct, reported 28 Oct</span></div>
+    <h3>Malaysia seizes $12M of AI servers in its fifth chip-smuggling case this year</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Export-control leakage through transshipment hubs persists; vendors and buyers should expect tougher end-use checks.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Customs found 30 servers worth RM49.5M (about $12.1M) in a free-trade-zone warehouse at Kuala Lumpur airport on 15 October. They were declared as electronic components. Officials link the shipment to the network behind a June seizure; the five cases total more than RM100M. Origin and destination are undisclosed.</p>
+        <ul class="sources"><li><a href="https://thenextweb.com/news/malaysia-seizes-12-1m-of-ai-chips-at-kuala-lumpur-airport">The Next Web: Malaysia seizes $12.1M of AI chips</a></li><li><a href="https://www.scmp.com/news/asia/southeast-asia/article/3372404/malaysia-seizes-smuggled-ai-chips-worth-us12-million-kuala-lumpur-airport">SCMP: Malaysia seizes smuggled AI chips</a></li><li><a href="https://evertiq.com/design/2026-10-28-malaysia-seizes-ai-servers-in-suspected-chip-smuggling-network">Evertiq: Malaysia seizes AI servers</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Talent</span><span class="when">Ongoing</span></div>
+    <h3>DeepMind staff keep resigning over Google’s Pentagon AI deal</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Military contracts carry a retention and reputation cost at the labs that sign them.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Intercept reported on 21 October that DeepMind researchers have quit over Google’s Pentagon agreement, which permits "any lawful government purpose" with limits on domestic mass surveillance and autonomous weapons. Reporting on the number of departures is vague ("several"). Background: the deal was announced in April.</p>
+        <ul class="sources"><li><a href="https://theintercept.com/2026/10/21/google-deepmind-resign-ai-military-gaza/">The Intercept: DeepMind resignations</a></li><li><a href="https://www.lbc.co.uk/tech/google-deepmind-ai-workers-resign-us-military/">LBC: DeepMind AI workers resign over US military</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Governance</span><span class="when">26 Oct</span></div>
+    <h3>Anthropic founders’ 80% giving pledge is reaffirmed in its IPO filing, but is not binding</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Up to about $80B of future giving is headline-worthy, but the filing says the pledges are revocable.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Fortune reports the cofounders reaffirm giving 80% of personal equity to philanthropy; the prospectus says the commitments are not legally binding. A separate public-benefit fund of about 5% of shares is subject to stockholder approval. Value estimates range from $37.8B to nearly $80B depending on the source. Older background: the pledge was first announced in January 2026.</p>
+        <ul class="sources"><li><a href="https://fortune.com/2026/10/26/anthropic-founders-80-billion-giving-pledge/">Fortune: Anthropic founders’ giving pledge</a></li><li><a href="https://aiweekly.co/alerts/anthropic-cofounders-378b-pledge-anchors-ea-ipo-windfall">AI Weekly: $37.8B pledge anchors EA IPO windfall</a></li><li><a href="https://transformernews.ai/p/anthropic-employees-philanthropy-billions-donations-effective-altruism-coefficient-giving-ai-safety">Transformer: Anthropic employees say they’ll give away billions</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 30 October 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
