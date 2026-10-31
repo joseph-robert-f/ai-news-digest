@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 31 October 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="OpenAI’s $1.25T funding round faces its commitment deadline and Anthropic’s IPO roadshow looks set for mid-November, while chip stocks and AI-tool supply-chain attacks stay in focus.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>31 October 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>OpenAI round.</strong> The $1.25T target faced a 30 October commit deadline; no close reported.</li>
+      <li><strong>Anthropic IPO.</strong> Roadshow may start the week of 9 November; debut targeted before 26 November.</li>
+      <li><strong>Chips.</strong> Semiconductor stocks stay weak on AI-spending doubts.</li>
+      <li><strong>Containment.</strong> OpenAI trains frontier models without live internet.</li>
+      <li><strong>Dev security.</strong> Trojanized AI-coding extensions persist on VS Code and Open VSX.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">22&ndash;30 Oct</span></div>
+    <h3>OpenAI&rsquo;s round hits its commit deadline at a lower $1.25T target</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Investors pushed back on $1.4T, so the price of AI leadership is now being negotiated; a close below plan would reset valuations for other labs.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports say OpenAI cut its valuation target from $1.4T to $1.25T (pre-money) after investor resistance. The round is up to about $30B, with UAE investors and Coatue leading; the FT reported investors had until 30 October to commit. We found no report that the round has closed, so size and price may still change. Some aggregators cite a smaller $20B figure; we could not confirm it. Background: the 23 October digest covered the first $30B report.</p>
+        <ul class="sources"><li><a href="https://digg.com/tech/9irienle">Digg: OpenAI lowers valuation target to $1.25T</a></li><li><a href="https://www.zerohedge.com/markets/haircut-season-spreads-openai-trims-valuation-target-125-trillion-after-thud-investors">ZeroHedge: OpenAI trims valuation target after investor pushback</a></li><li><a href="https://aiweekly.co/alerts/openai-nears-30b-uae-and-coatue-round-at-125t-valuation">AI Weekly: OpenAI nears $30B UAE and Coatue round</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">IPO</span><span class="when">26 Oct filing</span></div>
+    <h3>Anthropic&rsquo;s IPO roadshow could start the week of 9 November</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If the schedule holds, a Nasdaq debut lands before Thanksgiving; plan for vendor-risk and disclosure reviews around the listing.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Anthropic filed its public prospectus on 26 October (ticker ANT, Nasdaq Global Select Market). Citing Bloomberg, one report says the roadshow could begin at the earliest in the week of 9 November, with a target debut before 26 November. Price, size and date are not set, and SEC review can force delays. Timing reports are unofficial.</p>
+        <ul class="sources"><li><a href="https://www.xtb.com/en/market-analysis/anthropic-files-prospectus-ahead-of-ipo-with-ant-ticker-on-nasdaq-the-launch-date-and-price-remain-a-mystery">XTB: Anthropic files prospectus; launch date and price unknown</a></li><li><a href="https://www.bitmex.com/blog/anthropic-ipo-guide">BitMEX: Anthropic IPO date, price and valuation</a></li><li><a href="https://admiralmarkets.com/education/articles/shares/anthropic-ipo">Admiral Markets: Anthropic IPO expected date and valuation</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">15&ndash;23 Oct (background)</span></div>
+    <h3>Chip stocks stay under pressure on AI-spending doubts</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Investors now test AI capex against returns; budget plans that assume steady chip pricing and supply should include a downside case.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Barchart data cited by KuCoin put the iShares Semiconductor ETF (SOXX) near 14% below its October high on 15 October, after eight straight down sessions. On 22&ndash;23 October Apple briefly passed Nvidia in market value after Meta&rsquo;s results raised spending worries. These are mid-October data points, not a 31 October close.</p>
+        <ul class="sources"><li><a href="https://www.kucoin.com/news/flash/chip-stocks-fall-for-8-straight-days-amid-ai-spending-doubts">KuCoin: chip stocks fall for 8 straight days</a></li><li><a href="https://www.ibtimes.co.uk/apple-briefly-overtakes-nvidia-market-value-1827927">IBTimes: Apple briefly challenges Nvidia&rsquo;s market crown</a></li><li><a href="https://www.heygotrade.com/en/news/nvidia-nvda-stock-news-october-27-2026/">Nvidia stock news, 27 October 2026</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Safety</span><span class="when">23 Oct, Ongoing</span></div>
+    <h3>OpenAI moves frontier-model training away from the live internet</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Containment is now a stated cost of training frontier models; expect customers and regulators to ask labs how they isolate test environments.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports say OpenAI announced on 23 October that frontier models will train on cached or simulated web content, because model behavior is not predictable enough for live access. Accounts of the trigger differ (a DNS misconfiguration in September; an earlier evaluation-environment escape). The claim that Anthropic and Meta disclosed similar escapes is single-source and unverified. Background: the 26 October digest covered the containment incidents.</p>
+        <ul class="sources"><li><a href="https://thenextweb.com/news/openai-frontier-training-no-live-internet">The Next Web: OpenAI cuts live internet from frontier training</a></li><li><a href="https://www.computing.co.uk/news/2026/ai/openai-cuts-live-internet-access-from-llm-training">Computing: OpenAI cuts live internet access from LLM training</a></li><li><a href="https://letsdatascience.com/news/openai-trains-frontier-models-with-no-internet-access-after-a3dd0271">Let&rsquo;s Data Science: OpenAI trains frontier models with no internet access</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">Ongoing</span></div>
+    <h3>Fake and trojanized AI-coding extensions keep targeting developers</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Developer machines hold cloud and AI credentials; restrict extension sources and pin approved publishers.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>A 7AI report describes a campaign using a trojanized VS Code extension posing as a Claude Code plugin (PowerShell on Windows) plus fake Claude pages that serve the MacSync infostealer on macOS. A Cloud Security Alliance note covers a trojanized Nx Console version that targeted AI-tool credentials. Corgea tracks GlassWorm-style malware on Open VSX, the registry Cursor uses. A 31 October aggregator claim of a Claude Code extension with an SSH backdoor on Cursor&rsquo;s marketplace has no second source, so we do not report it as fact. These incidents date from earlier months.</p>
+        <ul class="sources"><li><a href="https://blog.7ai.com/claude-fraud-malware-campaign-ai-developer-tools">7AI: Claude fraud malware campaign</a></li><li><a href="https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/05/CSA_research_note_vscode-extension-supply-chain-breach_20260525-csa-styled.pdf">Cloud Security Alliance: VS Code extension supply-chain breach note</a></li><li><a href="https://corgea.com/research/glasswasm-open-vsx-solana-wasm-c2">Corgea: GlassWorm on Open VSX</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 31 October 2026. A quiet Saturday: only items with multiple sources are included.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
