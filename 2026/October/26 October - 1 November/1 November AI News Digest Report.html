@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 1 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="A quiet Sunday: AI labs and platforms back a shared training opt-out signal, finance-agent startup Hyphenate raises $45M, and a delayed GPT-6.1 Astra tops the watch list.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>1 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Training opt-out goes cross-vendor.</strong> OpenAI, Google, Microsoft and Anthropic reportedly back one voluntary robots.txt token; timelines differ.</li>
+      <li><strong>Agents for finance get funded.</strong> Hyphenate raised a $45M Series A led by Nexus Venture Partners.</li>
+      <li><strong>GPT-6.1 Astra is unconfirmed.</strong> A reported alignment regression may have delayed it; OpenAI has given no date.</li>
+      <li><strong>Gemini 4 Carbon stays gated.</strong> Cyber defenders only for now; $2/$10 per million tokens; claims unverified.</li>
+      <li><strong>Capex anxiety persists.</strong> Meta&rsquo;s raised 2026 spend guidance still weighs on the sector.</li>
+    </ol>
+  </section>
+
+  <!-- One <article> per story. Headline + a single "why it matters" line up top;
+       bury depth and sources inside <details> so the default view stays skimmable. -->
+  <!-- Keep the story date visible in .when. Use "Ongoing" for continuing
+       stories and label older background explicitly when useful. -->
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">30 Oct</span></div>
+    <h3>Four AI giants reportedly agree on one robots.txt opt-out for AI training</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Publishers may soon block training with a single rule, but the pledge is voluntary and the dates are far apart.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports say OpenAI, Google, Microsoft and Anthropic will back one shared robots.txt token. Anthropic says it has started; OpenAI and Microsoft point to coming months; Google is described as early 2027. No law or regulator is involved. Source quality is mixed: these are secondary outlets, and an official vendor post was not found. Treat the details as unconfirmed. Cloudflare separately says Microsoft support for a robots.txt no-training preference is targeted for early 2027.</p>
+        <ul class="sources"><li><a href="https://tech-insider.org/ai-training-opt-out-standard-openai-google-microsoft-anthropic-robots-txt-2026/">Tech Insider: AI training opt-out standard</a></li><li><a href="https://shattered.io/ai-training-opt-out-robots-txt-token-openai-google-microsoft-anthropic-2026/">Shattered: AI training opt-out token</a></li><li><a href="https://www.searchenginejournal.com/cloudflare-lets-sites-disallow-ai-training-without-blocking-googlebot/">Search Engine Journal: Cloudflare lets sites disallow AI training</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">27 Oct</span></div>
+    <h3>Hyphenate raises $45M for AI agents that run corporate finance</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Investors keep paying for agents that do real back-office work, not chat; finance is an early proving ground.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Hyphenate (formerly Maximor) says revenue grew 86x since its seed round about 13 months ago. B Capital joined; Foundation Capital and BoldCap returned. Total funding is $54M. The growth figure is company-reported. One site lists a $270M valuation; no second source confirms it.</p>
+        <ul class="sources"><li><a href="https://bloomberg.com/news/articles/2026-10-27/microsoft-alumni-score-funding-to-build-ai-agents-for-finance">Bloomberg: Microsoft alumni score funding to build AI agents for finance</a></li><li><a href="https://aiweekly.co/alerts/hyphenate-raises-45m-series-a-from-nexus-venture-partners-for-rl-driven">AI Weekly: Hyphenate raises $45M Series A</a></li><li><a href="https://ventureburn.com/hyphenate-raises-45-million-to-build-ai-finance-agents/">Ventureburn: Hyphenate raises $45 million</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">Ongoing</span></div>
+    <h3>GPT-6.1 Astra: reported delay, no official date</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Plan around GPT-6 Astra and GPT-6.1 Sol for now; do not budget for an Astra upgrade until OpenAI confirms.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>One model-tracking page says the Wall Street Journal reported on 28 September that OpenAI shelved an October launch after alignment evaluations showed regressions, and that a Codex lead said &ldquo;coming soon&rdquo; on X. This is a single secondary source and an informal reply. Background: OpenAI launched GPT-6 Astra on 3 September and GPT-6.1 Sol on 29 September (per secondary reports).</p>
+        <ul class="sources"><li><a href="https://www.datalearner.com/ai-models/pretrained-models/gpt-6-1-astra">DataLearner: GPT-6.1 Astra</a></li><li><a href="https://www.constellationr.com/insights/news/openai-launches-gpt-6-astra">Constellation Research: OpenAI launches GPT-6 Astra</a></li><li><a href="https://aiindigo.com/blog/ai-arena-gpt-6-1-sol-release">AI Indigo: GPT-6.1 Sol release</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">28 Oct (follow-up)</span></div>
+    <h3>Gemini 4 Carbon: access stays limited, pricing now public</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Cyber-defense gains are Google&rsquo;s own numbers; wait for independent tests before changing security tooling.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Follow-up to the 30 October digest. Google says Carbon goes first to selected cyber defenders via its Fairwind Program, with no date for general availability. Reported pricing is $2 per million input tokens and $10 per million output tokens, matching Gemini 4 Argon. Coverage notes the results are not independently verified.</p>
+        <ul class="sources"><li><a href="https://www.constellationr.com/insights/news/google-rolls-out-gemini-4-carbon">Constellation Research: Google rolls out Gemini 4 Carbon</a></li><li><a href="https://winbuzzer.com/2026/10/28/gemini-4-carbon-ai-leads-test-for-fixing-vulnerable-code-xcxwbn/">WinBuzzer: Gemini 4 Carbon</a></li><li><a href="https://runtimewire.com/article/google-gemini-4-carbon-cybersecurity-launch">Google launches Gemini 4 Carbon with restricted access</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">21&ndash;22 Oct (background)</span></div>
+    <h3>Meta&rsquo;s capex guidance hit the Nasdaq; the spending debate is not over</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Investors now punish capex that outruns cash flow, even when revenue beats. Expect the same test for every hyperscaler.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Older background. Meta reported Q3 revenue of $64.6B (up 26%) and raised 2026 capex guidance to $135&ndash;145B. Reports say the stock fell about 7% the next day and the Nasdaq fell 2.6%. Sources disagree on some details, such as the after-hours move.</p>
+        <ul class="sources"><li><a href="https://www.mitrade.com/insights/news/live-news/article-8-2191928-20261025">Mitrade: Meta Q3 revenue beats, stock drops nearly 7%</a></li><li><a href="https://fourweekmba.com/ai-metas-q3-explained-capex-outran-its-cash-by-2-1-billion/">FourWeekMBA: Meta Q3 explained</a></li><li><a href="https://www.insiderfinance.io/news/meta-earnings-show-capex-rise-new-class-c-shares">Insider Finance: Meta earnings show capex rise</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Products</span><span class="when">19 Oct (background)</span></div>
+    <h3>Wabi opens its personal AI assistant on iOS, Android and Mac</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A consumer &ldquo;group assistant&rdquo; from the Replika founder tests whether people want agents that plan with them, not only for them.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Wabi, founded by Eugenia Kuyda, opened public download on 19 October after an invite-only rollout from 28 September. A reported $55M raise at a $1.25B valuation could not be confirmed in today&rsquo;s checks, so it is not stated as fact.</p>
+        <ul class="sources"><li><a href="https://www.unite.ai/es/wabi-opens-its-personal-ai-assistant-on-ios-android-and-mac/">Unite.AI: Wabi opens its personal AI assistant</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 1 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
