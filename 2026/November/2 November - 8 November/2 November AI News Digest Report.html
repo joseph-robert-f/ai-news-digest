@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 2 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="A thin Monday: Anthropic’s IPO roadshow window opens as early as 10 November, Apple’s China AI rollout reaches developer beta, and agent-analytics startup Hex raises $100M at $1.2B.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>2 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Anthropic IPO:</strong> roadshow could start as early as 10 November; no date is confirmed.</li>
+      <li><strong>Apple:</strong> first China Apple Intelligence features reach developer beta this week, without Siri AI.</li>
+      <li><strong>Funding:</strong> Hex raised $100M at $1.2B for agent-ready analytics.</li>
+      <li><strong>Watch:</strong> Google and Meta launches are rumored for 5 November; unconfirmed.</li>
+    </ol>
+  </section>
+
+  <p class="lead" style="margin-bottom:1.5rem;color:var(--muted);font-size:.9rem">Quiet news day with few primary sources. Older items are labeled as background.</p>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">Ongoing</span></div>
+    <h3>Anthropic’s IPO roadshow could start as early as 10 November</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The biggest AI listing yet may price before US Thanksgiving; every date is still a report, not a schedule.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Not new since 31 October: the timeline. Reports say marketing could begin mid-November, with pricing before 26 November. One outlet notes that a confidential filer must make its filing public 15 days before the roadshow; from a 26 October public filing, that gives 10 November as the earliest start. Another report cites the week of 16 November. No date is confirmed until an amended S-1 with a price range appears.</p>
+        <ul class="sources"><li><a href="https://www.ifre.com/equities/2499407/anthropic-pushes-ahead-with-mid-november-ipo">IFRE: Anthropic pushes ahead with mid-November IPO</a></li><li><a href="https://leverageshares.com/us/insights/when-is-the-anthropic-ipo/">Leverage Shares: When is the Anthropic IPO?</a></li><li><a href="https://www.itiger.com/news/1130016239">Tiger Brokers: Anthropic races toward Thanksgiving-eve IPO</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Consumer AI</span><span class="when">This week</span></div>
+    <h3>Apple’s China AI rollout reaches developer beta without Siri AI</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Apple finally has a compliant path into the world’s largest phone market, but only with older features and local models.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Apple said the first iOS 27.3 developer beta arrives this week and enables some Apple Intelligence features in China. WWDC 2026 features, including Siri AI and Image Playground, are excluded. Public release is planned for December. Bloomberg-sourced reports say the rollout uses Alibaba’s Qwen models. The exact beta date was not confirmed in primary sources.</p>
+        <ul class="sources"><li><a href="https://macrumors.com/2026/10/30/apple-says-ios-27-3-beta-coming-next-week/">MacRumors: Apple says iOS 27.3 beta coming next week</a></li><li><a href="https://macrumors.com/2026/10/14/apple-intelligence-china-ios-27-3">MacRumors: Apple Intelligence coming to China in December</a></li><li><a href="https://letsdatascience.com/news/apple-intelligence-reportedly-set-for-china-rollout-in-decem-68d81cf3">Let’s Data Science: China rollout without Siri AI</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">27 Oct</span></div>
+    <h3>Hex raises $100M at $1.2B after rebuilding its analytics product for AI agents</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Investors are paying up for data tools rebuilt around agents rather than dashboards.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Peak XV and 137 Ventures anchored the Series D, with a16z, Redpoint, Sequoia and others joining. The round came with Hex 4.0, a code-first platform rebuilt from scratch for agents; one outlet reports 2,500+ customers. The announcement is a few days old; it is included because it was widely re-reported on 2 November.</p>
+        <ul class="sources"><li><a href="https://www.cooley.com/news/coverage/2026/2026-10-30-hex-raises-100-million-series-d-at-1-2b-valuation">Cooley: Hex raises $100M Series D at $1.2B</a></li><li><a href="https://dealstreetasia.com/stories/peak-xv-co-anchors-hex-funding-499490">DealStreetAsia: Peak XV co-anchors Hex round</a></li><li><a href="https://runtimewire.com/article/hex-100m-agent-analytics-rebuild">Runtime Wire: Hex rebuilds analytics for AI agents</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">Background (2 Sep)</span></div>
+    <h3>Gemini 3.8 Flash and a gated Cyber variant set Google’s cadence: three Flash models in six weeks</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Cheap, fast agent models now refresh every few weeks; plan for rolling model upgrades, not annual ones.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Older background, relevant to this week’s expected Google and Meta launches (unconfirmed, from aggregators). Google describes 3.8 Flash as aimed at long-horizon coding and agents. A Cyber variant is limited to vetted defenders, the same gated pattern as Gemini 4 Carbon on 30 October. Third-party pricing reports conflict; check Google’s page.</p>
+        <ul class="sources"><li><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/">Google: Introducing Gemini 3.8 Flash and 3.8 Flash Cyber</a></li><li><a href="https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/gemini/3-8-flash">Google Cloud: Gemini 3.8 Flash on Vertex AI</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">Background (Aug)</span></div>
+    <h3>The White House AI model-testing framework is still unpublished</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Frontier labs are being tested against a standard the public, and most of industry, cannot read.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The framework was finished by its 1 August deadline but not released. Axios reports it covers closed, state-of-the-art models and excludes open models; the White House has not confirmed this. Critics call the regime a black box. One 2 November aggregator suggests the administration is again declining to share the full draft; I could not confirm that against a primary source.</p>
+        <ul class="sources"><li><a href="https://axios.com/2026/08/04/white-house-ai-framework-under-wraps">Axios: White House plans to keep AI framework under wraps</a></li><li><a href="https://fortune.com/2026/08/04/baffling-white-house-wont-publicly-release-ai-model-evaluation-framework-it-reviewed-today-with-openai-anthropic-microsoft-and-others">Fortune: White House won’t release AI evaluation framework</a></li><li><a href="https://www.akingump.com/en/insights/ai-law-and-regulation-tracker/white-house-completes-closed-door-ai-framework-required-by-executive-order">Akin Gump: Closed-door AI framework completed</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">Background (Mar)</span></div>
+    <h3>North Korean hacking groups are moving AI into routine attack work</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Assume state attackers already use AI in phishing, fake identities and IT-worker fraud; update defenses and hiring checks.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Microsoft’s March 2026 report rated eight North Korean groups on AI adoption; three reached “operational integration.” A 2 November aggregator suggests renewed coverage; the report itself is not new. Treat this as context, not breaking news.</p>
+        <ul class="sources"><li><a href="https://letsdatascience.com/news/microsoft-details-how-north-korean-groups-use-ai-in-attacks-9c39b454">Let’s Data Science: Microsoft details North Korean AI use</a></li><li><a href="https://www.secureworld.io/industry-news/ai-full-lifecycle-weapon-north-korea">SecureWorld: AI as a full-lifecycle weapon</a></li><li><a href="https://oecd.ai/en/incidents/2026-03-06-8766">OECD.AI: North Korean threat actors use AI in IT worker schemes</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <footer>Curated for a 5-minute read. Generated 2 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
