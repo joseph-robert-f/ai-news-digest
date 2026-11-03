@@ -1,7 +1,16 @@
 {
-  "generated": "2026-11-02T10:43:13.590Z",
-  "count": 108,
+  "generated": "2026-11-03T10:43:24.376Z",
+  "count": 109,
   "digests": [
+    {
+      "date": "2026-11-03",
+      "title": "AI News Digest — 3 November 2026",
+      "path": "2026/November/2 November - 8 November/3 November AI News Digest Report.html",
+      "year": 2026,
+      "month": "November",
+      "week": "2 November - 8 November",
+      "summary": "Anthropic's IPO timetable is still unsettled, Mistral open-sourced a 1-trillion-parameter model, and a trojanized Claude Code extension shows how fragile the AI developer supply chain remains."
+    },
     {
       "date": "2026-11-02",
       "title": "AI News Digest — 2 November 2026",

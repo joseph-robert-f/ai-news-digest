@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 3 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Anthropic's IPO timetable is still unsettled, Mistral open-sourced a 1-trillion-parameter model, and a trojanized Claude Code extension shows how fragile the AI developer supply chain remains.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>3 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Anthropic IPO timing slips in reports.</strong> Roadshow now reported for the week of 9 or 16 November.</li>
+      <li><strong>Mistral Large 4 weights are public.</strong> A 1.05T-parameter open model, under a new licence.</li>
+      <li><strong>Trojanized Claude Code extension.</strong> Up to 5,000 Cursor users got a bad build for about 11 hours.</li>
+      <li><strong>Stolen AI keys are a business.</strong> Set spend caps on every key.</li>
+      <li><strong>Policy watch.</strong> China draft AI export controls; UK warns of AI attacks by 2028.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">Ongoing</span></div>
+    <h3>Anthropic IPO date is still unclear: reports now split between the weeks of 9 and 16 November</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Plan any exposure or vendor-concentration review around a mid-November listing, but do not treat a date as fixed until an amended filing sets a price range.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Anthropic reportedly filed its public S-1 on 26 October. Reuters (via SBS) said the roadshow could start the week of 9 November. Other coverage cites a Wall Street Journal report of the week of 16 November. One analyst note says the 15-day rule for confidential filers prevents a roadshow before 10 November. Size and valuation figures differ by outlet and are unconfirmed. Anthropic has not commented beyond published reports. What is new since 2 November: the later-date report. A claim that an S-1/A added a recursive self-improvement section appears in one aggregator only, so it is not reported here.</p>
+        <ul class="sources"><li><a href="https://news.sbs.co.kr/english/endPagePrintPopup.do?news_id=N1008811298">SBS (Reuters): Anthropic IPO timeline</a></li><li><a href="https://leverageshares.com/us/insights/when-is-the-anthropic-ipo/">Leverage Shares: When is the Anthropic IPO?</a></li><li><a href="https://tech-insider.org/anthropic-ipo-biggest-listings-ant-22-banks-542b-spend-2026/">Tech Insider: Anthropic IPO listing details</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Open models</span><span class="when">29 Oct</span></div>
+    <h3>Mistral releases Large 4 weights: 1.05T parameters, 49B active, new license</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A near-frontier open-weight model for coding is now free to self-host, but the licence changed from Apache 2.0, so legal should read it before adoption.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Mistral put the weights on Hugging Face on 29 October after a 6 October API-only preview. Reported specs: multimodal, 1.05 trillion parameters, 49 billion active per token. The Mistral Ecosystem Open-Weight licence is a modified MIT licence; Large 3 used Apache 2.0. The claim that it is the best open-weight coding model is Mistral's own and independent replication was still pending. It ranked high on Hacker News on 3 November.</p>
+        <ul class="sources"><li><a href="https://letsdatascience.com/news/mistral-releases-open-weights-for-1-trillion-parameter-mistr-d712eb0e">Let's Data Science: Mistral releases open weights for Large 4</a></li><li><a href="https://www.vals.ai/models/mistralai_mistral-large-4-oss">Vals.ai: Mistral Large 4 OSS</a></li><li><a href="https://mistral.ai/news/mistral-large-4-oss/">Mistral announcement</a></li><li><a href="https://news.ycombinator.com/item?id=50289418">Hacker News discussion</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">29 Oct</span></div>
+    <h3>A trojanized Claude Code extension sat on Cursor's marketplace for about 11 hours</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Treat IDE extensions as production dependencies: pin versions, allow-list publishers, and rotate SSH keys on any machine that ran version 2.1.313.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Cursor said at most 5,000 users were affected. Researchers at Phorion reported that the build tried to plant a persistent SSH backdoor, and that removing the extension may not remove the dropped scripts. Users should move to 2.1.314. Anthropic said it did not build the malicious version. The CLI and npm package were not reported as affected. The source of the bad build is disputed: Cursor says its marketplace, other reports say Open VSX. Details come from secondary outlets; check the primary notices from Cursor and Anthropic.</p>
+        <ul class="sources"><li><a href="https://www.helpnetsecurity.com/2026/10/30/claude-code-extension-ssh-backdoor/">Help Net Security: Claude Code extension poisoned with persistent SSH backdoor</a></li><li><a href="https://letsdatascience.com/news/trojanized-claude-code-extension-tries-to-install-persistent-c0f3005c">Let's Data Science: Trojanized Claude Code extension</a></li><li><a href="https://news.ycombinator.com/item?id=50300683">Phorion write-up (via Hacker News)</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">Ongoing</span></div>
+    <h3>Stolen AI API keys are now resold through "transfer stations"; one case reached nearly $1M</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Set hard spend caps and alerts on every model key today; providers may not refund charges that look like valid, authenticated use.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Palo Alto Networks Unit 42 calls the pattern "AI token jacking". Exposed credentials were placed into a resale proxy within minutes. Attackers create new keys, remove billing limits and disable alerts and logging. The near-$1M figure is from one incident-response case. Other figures (a Gemini key at about $82,000 in 48 hours) come from less consistent sources. This item is background from earlier in 2026 that was circulated again on 3 November.</p>
+        <ul class="sources"><li><a href="https://unit42.paloaltonetworks.com/ai-token-jacking/">Unit 42: AI token jacking</a></li><li><a href="https://blog.gridinsoft.com/ai-token-jacking-stolen-api-keys/">Gridinsoft: AI token jacking</a></li><li><a href="https://cybernews.com/security/ai-token-theft-powers-cybercrime-transfer-stations/">Cybernews: token theft as an industry</a></li><li><a href="https://www.okta.com/blog/threat-intelligence/signing_in_without_actually_signing_in/">Okta: signing in without actually signing in</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">16 Oct (background)</span></div>
+    <h3>China's first frontier-AI export controls remain a draft to watch</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If finalised, rules covering model weights, agents and AI-enabled cyber capability could limit access to Chinese open models that many teams now use.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>MOFCOM Announcement No. 48 of 2026 is described as China's first frontier-AI export-control measure. Coverage uses "proposed" and "draft", so status is not settled. Reuters-based reports say 23 AI technologies are in scope, including models, agents and computing clusters. A blog gives specific thresholds (2T parameters, 10^26 FLOP); this is not corroborated and is not relied on here. Check the official MOFCOM text.</p>
+        <ul class="sources"><li><a href="https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/">Cloud Security Alliance: MOFCOM Announcement No. 48</a></li><li><a href="https://www.gdnonline.com/Details/1409943/Beijing-seeks-tighter-grip-on-AI-exports">GDN Online: Beijing seeks tighter grip on AI exports</a></li><li><a href="https://techrepublic.com/article/news-apac-china-ai-export-controls">TechRepublic: China considers export controls on AI models</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">3 Nov</span></div>
+    <h3>UK cyber chief repeats: AI-enabled attacks on critical infrastructure are likely by 2028</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Boards of infrastructure operators should budget now to patch or replace ageing systems, which are the first targets for AI-assisted exploitation.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Manila Times reported the warning on 3 November. The underlying NCSC assessment, reported in June 2026, judged it "highly likely" that AI tools will exploit known weaknesses in ageing technology by 2028. NCSC CEO Richard Horne also said about 75% of 200+ incidents affecting UK critical systems over the past year link to state actors, and that adversaries are pre-positioning in infrastructure technology.</p>
+        <ul class="sources"><li><a href="https://www.manilatimes.net/2026/11/03/world/americas-emea/uk-cyber-chief-says-the-uk-will-face-ai-cyberattacks-on-critical-infrastructure-by-2028/2460205">Manila Times: UK cyber chief warns of AI cyberattacks by 2028</a></li><li><a href="https://therecord.media/britain-nation-state-cyberattacks-richard-horne-rusi">The Record: NCSC CEO Richard Horne</a></li><li><a href="https://www.ncsc.gov.uk/news/ncsc-ceo-hostile-states-linked-to-three-quarters-of-cyber-attacks">NCSC: Hostile states linked to three-quarters of attacks</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 3 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
