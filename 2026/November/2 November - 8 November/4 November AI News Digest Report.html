@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 4 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Marvell agrees a stock deal to buy Lumentum, OpenAI trims its funding target, and Anthropic's IPO waits on a price range as the roadshow window nears.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>4 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Marvell to buy Lumentum</strong> in an all-stock deal valued near $115B.</li>
+      <li><strong>OpenAI trims its round</strong> to about $20B at $1.25T, per the FT.</li>
+      <li><strong>Anthropic's IPO</strong> still lacks a price range; roadshow earliest 10 Nov.</li>
+      <li><strong>Gemini 3.1 preview voice models</strong> shut down 17 Nov.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">2 Nov</span></div>
+    <h3>Marvell agrees to buy optics maker Lumentum in an all-stock deal</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> AI networking and optics are now worth acquiring at scale; expect more chip-and-interconnect consolidation and closer antitrust scrutiny.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Companies announced the definitive agreement on 2 November. Lumentum holders receive 4.5 Marvell shares per share, an implied enterprise value of about $115 billion and a premium of about 23.9% to the 28 October unaffected price. Marvell holders would own about 67% of the combined company. Bloomberg first reported talks on 28 October. One internal Lumentum email cites about $100 billion; the filing figure is used here. The deal still needs closing approvals.</p>
+        <ul class="sources"><li><a href="https://www.sec.gov/Archives/edgar/data/0001633978/000119312526442758/d163169dex991.htm">SEC: Lumentum Form 8-K, press release exhibit</a></li><li><a href="https://www.sec.gov/Archives/edgar/data/0001633978/000119312526442760/d163169d425.htm">SEC: Lumentum Form 425 filing</a></li><li><a href="https://thenextweb.com/news/marvell-lumentum-deal-talks-bloomberg">The Next Web: Marvell nears a deal to buy Lumentum</a></li><li><a href="https://www.fool.com/investing/2026/10/29/why-marvell-stock-is-down-today/">Motley Fool: why Marvell stock is down</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">30 Oct</span></div>
+    <h3>OpenAI cuts its funding target to about $20B at a $1.25T valuation</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Even the best-funded lab faces limits when AI-spending worries hit tech stocks; this is a read-across for IPO pricing and vendor-payment risk.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Financial Times reported on 30 October that OpenAI lowered its target by $10 billion from $30 billion at $1.4 trillion. The Wall Street Journal reported about $11 billion in commitments so far. UAE investors and Coatue are reported to lead. The round is still open and figures may change. These are reports of the FT story; OpenAI has not confirmed the numbers.</p>
+        <ul class="sources"><li><a href="https://thenextweb.com/news/openai-funding-round-20bn-target-cut-ft">The Next Web: OpenAI cuts its funding round target to $20bn</a></li><li><a href="https://kfgo.com/2026/10/30/openai-cuts-funding-target-by-10-billion-ft-reports/">KFGO (Reuters wire): OpenAI cuts funding target by $10 billion</a></li><li><a href="https://dealroom.co/news/168544-openai-has-only-about-11b-committed-after-cutting-its-round-target-by-10/">Dealroom: OpenAI has about $11B committed</a></li><li><a href="https://runtimewire.com/article/openai-11b-commitments-30b-target-125t-valuation">Runtime Wire: WSJ report on $11B commitments</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">IPO</span><span class="when">Ongoing</span></div>
+    <h3>Anthropic's IPO still has no price range; the roadshow can start 10 November</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Public investors cannot price the largest AI listing yet; watch for an amended S-1 with a range before the roadshow. Update to the 2 and 3 November items: no new date has been confirmed.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Anthropic filed its public S-1 on 26 October with the share count and price range blank. Because it first filed privately, the roadshow cannot start until 15 days later, so 10 November is the earliest date. Press reports point to the second half of November. Sources disagree on September-quarter revenue and total compute commitments; check EDGAR before relying on any figure.</p>
+        <ul class="sources"><li><a href="https://www.sec.gov/Archives/edgar/data/0002130357/000162828026067168/anthropicpbc-sx1.htm">SEC: Anthropic Form S-1</a></li><li><a href="https://www.newsquawk.com/headlines/anthropic-will-drop-its-s-1-at-9am-et-and-that-while-market-conditions-have-shifted-the-plan-for-a-mid-november-ipo-fox-reports-citing-a-source">Newsquawk: S-1 release and mid-November plan (Fox report)</a></li><li><a href="https://leverageshares.com/us/insights/when-is-the-anthropic-ipo/">Leverage Shares: Anthropic IPO timeline</a></li><li><a href="https://www.alpha-sense.com/api/html-embed/file-4c88b5685d7120f5cdcdc99545773cca679d25fd-html/">Alpha-Sense: company primer on the public S-1</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer platforms</span><span class="when">Deadline 17 Nov</span></div>
+    <h3>Google will shut down Gemini 3.1 preview TTS and Live models on 17 November</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Teams on these preview endpoints have under two weeks to move; a failed migration breaks voice features without warning.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Google's deprecations page lists several Gemini 3.1 preview text-to-speech and Live models with a 17 November shutdown and suggests Gemini 3.8 variants as replacements. Check each model name in your code against the table.</p>
+        <ul class="sources"><li><a href="https://ai.google.dev/gemini-api/docs/deprecations">Google AI for Developers: Gemini API deprecations</a></li><li><a href="https://deepmind.google/">Google DeepMind: Gemini models</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">13 Oct (background)</span></div>
+    <h3>OpenAI engineer charged over a hidden recording device in an executive room</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Insider risk at AI labs is a board-level issue: executive meetings discuss unreleased models and deals. OpenAI says it has no sign that weights, code or customer data were taken.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI found the device on 30 September. The FBI complaint charges an engineer with intercepting oral communications. He remains in custody. It is unclear what, if anything, was recorded. This is older background, included because follow-up coverage continued this week.</p>
+        <ul class="sources"><li><a href="https://abcnews.com/Technology/wireStory/employee-arrested-after-listening-device-found-openai-conference-room-137239998">ABC News (AP): employee arrested after listening device found</a></li><li><a href="https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/">SF Standard: OpenAI engineer arrested</a></li><li><a href="https://www.bostonglobe.com/2026/10/13/business/employee-openai-arrested-fbi/">Boston Globe: employee of OpenAI arrested</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">8 Oct (background)</span></div>
+    <h3>OpenAI says an Iran-origin network placed about 100 fake-byline articles in US outlets</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Any outlet that takes freelance pitches is exposed; AI makes plausible personas cheap, so editorial vetting needs to adapt.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI's 8 October report describes seven invented journalist personas, called Bogus Bylines, and rates the campaign 4 on its six-point scale. The Washington Post reported at least 20 outlets, more than OpenAI's figure of about a dozen. Some outlets removed the articles. Older background, kept because it shapes midterm-season policy talk.</p>
+        <ul class="sources"><li><a href="https://letsdatascience.com/news/openai-disrupts-iran-fake-journalist-network-90ffceb4">Let's Data Science: OpenAI disrupts Iran fake journalist network</a></li><li><a href="https://www.fdd.org/analysis/bogus-bylines-ai-lets-one-iran-origin-operation-run-the-full-influence-playbook/">FDD: Bogus Bylines policy brief</a></li><li><a href="https://english.aawsat.com/node/5327930">Asharq Al-Awsat: OpenAI disrupts influence operations linked to Russia and Iran</a></li><li><a href="https://cryptobriefing.com/openai-iranian-bogus-bylines-influence-operation/">Crypto Briefing: Iranian operatives used ChatGPT to plant articles</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 4 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
