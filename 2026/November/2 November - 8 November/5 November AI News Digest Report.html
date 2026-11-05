@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 5 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Anthropic's amended IPO filing shows $17B in Q3 revenue but slower growth and a $895B compute bill, while Nvidia reportedly caps Chinese cloud business at 49% and Meta taps bond markets for up to $25B.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>5 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Anthropic’s numbers are out.</strong> Amended S-1: ~$17B Q3 revenue, growth slowed to 47%, back to an operating loss, ~$895B compute commitments.</li>
+      <li><strong>Nvidia tightens China exposure.</strong> Reportedly tells cloud partners to keep Chinese customers under 49% of new contracts.</li>
+      <li><strong>Meta borrows for AI.</strong> Markets a $20–25B bond sale as capex runs $135–145B this year.</li>
+      <li><strong>Publishers escalate against AI search.</strong> NYT and three other papers sue Brave over scraping and paywall bypass.</li>
+      <li><strong>Watch Friday.</strong> OpenAI may ship new Astra, Sol and Cyber models as early as 6 November (unconfirmed).</li>
+    </ol>
+  </section>
+
+  <!-- One <article> per story. Headline + a single "why it matters" line up top;
+       bury depth and sources inside <details> so the default view stays skimmable. -->
+  <!-- Keep the story date visible in .when. Use "Ongoing" for continuing
+       stories and label older background explicitly when useful. -->
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">2 Nov</span></div>
+    <h3>Anthropic’s amended S-1 shows ~$17B quarterly revenue, but growth slowed and compute costs jumped</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> IPO investors now have hard numbers: huge scale, decelerating growth and a very large fixed-cost commitment, which frames the valuation debate.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The filing, amended on 2 November, shows Q3 revenue of about $17B, up roughly 47% from Q2 (versus about 144% growth the prior quarter), and a return to an operating loss after a Q2 operating profit. Outlets differ on the loss size, so check EDGAR for exact figures. It also discloses about $895B in compute and infrastructure commitments. No price range has been set yet; earlier digests covered the 10 November roadshow earliest date.</p>
+        <ul class="sources">
+          <li><a href="https://fortune.com/2026/11/02/anthropics-growth-slowed-and-costs-jumped-in-the-third-quarter-updated-ipo-filing-shows/">Fortune: Anthropic’s growth slowed and costs jumped in Q3</a></li>
+          <li><a href="https://uk.finance.yahoo.com/news/anthropics-amended-ipo-paperwork-reveals-153730799.html">Yahoo Finance: Amended IPO paperwork reveals Q3 revenue and compute bill</a></li>
+          <li><a href="https://www.sec.gov/Archives/edgar/data/0002130357/000162828026067168/anthropicpbc-sx1.htm">SEC EDGAR: Anthropic, PBC Form S-1</a></li>
+          <li><a href="https://financefeeds.com/anthropics-s-1-shows-17-billion-in-revenue/">FinanceFeeds: $17B quarter, $895B commitments</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Chips &amp; policy</span><span class="when">3 Nov</span></div>
+    <h3>Nvidia reportedly tells cloud partners to keep Chinese customers under 49% of new contracts</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If real, this extends US-aligned export control into private contract terms and reduces the offshore cloud route Chinese labs use to reach Nvidia compute.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Financial Times reported the rule on 3 November, citing anonymous sources. It reportedly covers data center operators worldwide, applies to new contracts only, and asks for end-user reporting. Nvidia has not published the rule; its public statement was that America cannot win the AI race unless its infrastructure wins worldwide. Background (4 September): Bloomberg reported DeepSeek plans to order about 160,000 Huawei Ascend 950DT chips for a Mongolian site, mainly for inference, which shows the pressure on Chinese buyers to localize. DeepSeek and Huawei have not confirmed.</p>
+        <ul class="sources">
+          <li><a href="https://thenextweb.com/news/nvidia-cloud-partners-cap-china-business">The Next Web: Nvidia tells cloud partners to cap Chinese business at 49%, FT reports</a></li>
+          <li><a href="https://www.tomshardware.com/tech-industry/data-centers/nvidia-tells-data-center-operators-to-limit-business-from-chinese-customers-with-new-global-restrictions-report-claims-allegedly-restricted-to-49-percent-of-the-total-ensuring-51-percent-are-non-chinese-outfits">Tom’s Hardware: Nvidia tells data center operators to limit Chinese customers</a></li>
+          <li><a href="https://www.techzine.eu/news/infrastructure/145501/nvidia-imposes-strict-requirements-on-cloud-providers/">Techzine: Nvidia imposes strict requirements on cloud providers</a></li>
+          <li><a href="https://news.bgov.com/artificial-intelligence/deepseek-plans-big-huawei-ai-chip-order-to-power-new-data-center">Bloomberg Government: DeepSeek plans big Huawei AI chip order</a></li>
+          <li><a href="https://thenextweb.com/news/deepseek-huawei-ai-chip-order-data-centre">The Next Web: DeepSeek plans large Huawei chip order</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">3 Nov</span></div>
+    <h3>Meta markets a $20–25B bond sale to fund AI infrastructure</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> AI capex is now funded by debt at hyperscaler scale, and rating agencies are starting to push back, which raises the cost of falling behind on utilization.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>CNBC and others reported a multi-tranche investment-grade offering of about $20–25B. S&amp;P reportedly moved Meta’s outlook from stable to negative on capex and negative free cash flow. Meta guided full-year capex to $135–145B in its Q3 report. Order-book figures in some headlines are unconfirmed.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/11/03/meta-bond-sale-ai-funding.html">CNBC: Meta bond sale targets up to $25 billion for AI spending</a></li>
+          <li><a href="https://www.marketscreener.com/news/meta-platforms-reportedly-targeting-up-to-25-billion-in-bond-sale-ce785fdedb8ff627">MarketScreener: Meta reportedly targeting up to $25 billion</a></li>
+          <li><a href="https://www.briefs.co/news/meta-lines-up-20b-to-25b-bond-sale-as-ai-spending-ramps/">Briefs: Meta lines up $20B–$25B bond sale</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Legal</span><span class="when">2 Nov</span></div>
+    <h3>NYT and three other US papers sue Brave over AI scraping and paywall bypass</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Publishers are moving from suing model makers to suing the search and browser layer, which could set rules for any product that grounds answers in news.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Complaints filed in Manhattan allege Brave sells scraped articles to AI firms, returns near-verbatim passages in its Ask Brave feature, and offers a setting that bypasses paywalls. The Chicago Tribune, Daily News and Orlando Sentinel publishers filed a separate suit. Brave says it only indexes content as every search engine must. These are allegations, not findings. News Corp also countersued Brave in July.</p>
+        <ul class="sources">
+          <li><a href="https://thenextweb.com/news/nyt-newspapers-sue-brave-ai-scraping">The Next Web: NYT and three other US papers sue Brave</a></li>
+          <li><a href="https://www.thewrap.com/industry-news/tech/new-york-times-chicago-tribune-brave-ai-copyright-lawsuit/">TheWrap: NYT, Chicago Tribune sue Brave</a></li>
+          <li><a href="https://www.searchenginejournal.com/ny-times-accuses-brave-of-scraping-and-exploiting-content/595679/">Search Engine Journal: NYT accuses Brave of scraping</a></li>
+          <li><a href="https://semafor.com/article/07/21/2026/newscorp-accuses-search-engine-brave-of-ai-copyright-infringement">Semafor: News Corp accuses Brave (21 July, background)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">Rumor, 6 Nov</span></div>
+    <h3>OpenAI may release next-generation Astra, Sol and Cyber models as early as Friday</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Plan for a possible model refresh this week, but do not change roadmaps on a rumor; OpenAI has not confirmed timing.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports citing The Information say new Astra and Sol series models and a cybersecurity-focused Cyber model could ship on 6 November. Some outlets call them GPT-6.2; a model tag was reportedly spotted in Codex logs. No pricing or benchmarks are known. Treat as unconfirmed until OpenAI posts.</p>
+        <ul class="sources">
+          <li><a href="https://www.kucoin.com/news/flash/openai-may-release-astra-sol-and-cyber-models-as-early-as-nov-6">KuCoin News: OpenAI may release Astra, Sol and Cyber models as early as Nov 6</a></li>
+          <li><a href="https://www.chaincatcher.com/en/article/2301899">ChainCatcher: OpenAI will release the Astra, Sol, and Cyber models</a></li>
+          <li><a href="https://panews.io/articles/01a1a962-7fc9-74c0-88b5-37a9195bce98">PANews: GPT-6.2 Astra, Sol and Cyber models may launch as soon as Friday</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">Ongoing</span></div>
+    <h3>EU AI Act: high-risk deadlines pushed out, transparency rules already apply</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Compliance planning for EU high-risk systems can slip to late 2027, but Article 50 transparency duties are already live.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Older background: the Digital Omnibus entered into force on 27 July 2026, moving stand-alone high-risk requirements to 2 December 2027 and product-integrated ones to 2 August 2028. Article 50 transparency obligations began applying in early August. No new EU action was found in the last day.</p>
+        <ul class="sources">
+          <li><a href="https://www.aljazeera.com/news/2026/8/6/what-came-into-force-with-the-eus-ai-act-this-week-and-what-didnt">Al Jazeera: What came into force with the EU’s AI Act this week</a></li>
+          <li><a href="https://www.theparliamentmagazine.eu/news/article/why-the-eu-rewroteits-landmark-ai-law">The Parliament Magazine: EU AI Act changes explained</a></li>
+          <li><a href="https://www.legal500.com/intelligence/european-union/technology/eu-ai-act-update-provisional-deal-would-delay-high-risk-ai-rules">Legal 500: Provisional deal would delay high-risk AI rules</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 5 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
