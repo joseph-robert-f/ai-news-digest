@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 6 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Voters backed data-center limits in 40 of 41 local ballot measures, Google ties school Search to AI, and Anthropic says recursive self-improvement may be near.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>6 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Voters push back on data centers.</strong> 40 of 41 local measures on 3 November restricted or paused them.</li>
+      <li><strong>Google ties school Search to AI.</strong> Schools that opt out of AI lose Search; critics call it coercion.</li>
+      <li><strong>Anthropic: self-improving AI may be near.</strong> Its amended S-1 says none of its models have crossed the line yet.</li>
+      <li><strong>Apple flags rogue agents as a business risk.</strong> Its 10-K says agents may conceal actions or deceive.</li>
+      <li><strong>OpenAI launch rumoured, not confirmed.</strong> Reports point to Astra, Sol and Cyber models as early as today.</li>
+    </ol>
+  </section>
+
+  <!-- One <article> per story. Headline + a single "why it matters" line up top;
+       bury depth and sources inside <details> so the default view stays skimmable. -->
+  <!-- Keep the story date visible in .when. Use "Ongoing" for continuing
+       stories and label older background explicitly when useful. -->
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">3 Nov</span></div>
+    <h3>Voters back data-center limits in 40 of 41 local measures</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> siting risk is now an electoral risk; expect longer permitting and more moratoriums for AI build-outs.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Ballotpedia and CNBC figures, as reported, show voters restricted or paused data centers in 40 of 41 local measures across 10 states; Ohio had 21 of them. Wells, Maine passed a 180-day moratorium with over 80% support. One measure, in Harwood, North Dakota, went the other way. Many results are unofficial.</p>
+        <ul class="sources"><li><a href="https://www.scientificamerican.com/article/2026-election-results-show-widespread-opposition-to-ai-data-centers/">Scientific American: 2026 election results show widespread opposition to AI data centers</a></li><li><a href="https://www.forbes.com/sites/zacharyfolk/2026/11/04/heres-where-voters-are-rejecting-data-centers-at-the-ballot-full-list/">Forbes: where voters are rejecting data centers (full list)</a></li><li><a href="https://www.foxbusiness.com/politics/data-centers-ballot-voters-sent-unmistakable-message">Fox Business: voters reject data center expansion</a></li><li><a href="https://www.newsweek.com/map-shows-how-data-center-measures-fared-across-10-states-12670558">Newsweek: map of how measures fared</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Platforms</span><span class="when">3 Nov</span></div>
+    <h3>Google will cut Search for schools that turn off its AI tools</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> bundling AI with a core product invites regulatory and public backlash, and gives rivals such as DuckDuckGo an opening in education.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Google says AI features and Search will be off by default for K-12 student accounts until administrators enable them. Schools that bar AI lose Search in school accounts. From early 2027 districts that allow AI choose between AI Overviews and chats, or Guided Learning. Former FTC chair Lina Khan called it coercion.</p>
+        <ul class="sources"><li><a href="https://www.cbsnews.com/news/google-search-access-schools-ai-tools/">CBS News: Google search access and schools&#x27; AI tools</a></li><li><a href="https://edsource.org/updates/google-will-turn-off-search-feature-next-year-for-schools-that-opt-out-of-its-ai-tools">EdSource: Google will turn off search for schools that opt out</a></li><li><a href="https://gizmodo.com/google-is-holding-its-search-engine-hostage-from-schools-that-dont-want-ai-2000834544">Gizmodo: Google is holding its search engine hostage</a></li><li><a href="https://www.bostonglobe.com/2026/11/03/nation/google-schools-ai/">Boston Globe: Google schools AI</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Safety</span><span class="when">2 Nov</span></div>
+    <h3>Anthropic's S-1 says recursive self-improvement may be &ldquo;imminent&rdquo;</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> investors and regulators now have a formal disclosure on AI-driven R&amp;D; watch for changes to Anthropic's Responsible Scaling Policy.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>New in the 2 November amended filing (not in the 26 October draft): internal estimates point to a possible near-term crossing of the RSP threshold. Anthropic says no model has crossed it and it will keep humans in the R&amp;D loop. It also reports Claude wrote over 90% of codebase contributions in September 2026. Commentators note an S-1 also serves as marketing. The revenue figures in this filing were covered on 5 November.</p>
+        <ul class="sources"><li><a href="https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/">TechCrunch: Anthropic warns it is very close to RSI capability</a></li><li><a href="https://wccftech.com/anthropic-warns-self-improving-ai-milestone-may-be-imminent-as-claude-writes-over-90-of-its-code/">Wccftech: over 90% of code written by Claude</a></li><li><a href="https://www.androidheadlines.com/2026/11/anthropic-recursive-self-improvement-ai-warning.html">Android Headlines: self-improving AI could arrive sooner</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Governance</span><span class="when">3 Nov</span></div>
+    <h3>Apple's 10-K names rogue AI agents as a business risk</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> agent oversight is now boilerplate risk language at the largest public companies; expect procurement and audit questions on agent controls.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Apple's annual filing says agents may conceal actions, withhold or manipulate information, or give deceptive outputs, and that its oversight of third-party agents may be limited. Fortune notes Alphabet made a similar point recently, and Microsoft announced controls to monitor and restrict agents.</p>
+        <ul class="sources"><li><a href="https://fortune.com/2026/11/03/apple-warns-rogue-ai-agents-could-cause-unintended-consequences/">Fortune: Apple warns rogue AI agents could cause unintended consequences</a></li><li><a href="https://fourweekmba.com/ai-apples-10-k-filing-warns-ai-agents-may-resist-instructions/">FourWeekMBA: Apple 10-K says AI agents may resist instructions</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">6 Nov (unconfirmed)</span></div>
+    <h3>Reports: OpenAI may ship Astra, Sol and Cyber models as early as today</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> plan for a possible model change in Codex and API workflows, but do not act until OpenAI confirms.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Lower-quality outlets cite The Information and IT Home. A &ldquo;gpt-6.2-astra&rdquo; label was reportedly seen in Codex usage stats. No pricing or benchmarks are known. Earlier OpenAI pages list GPT-6 Astra (4 September) and GPT-6 Sol and Luna (22 September), so the details conflict. Treat as unverified.</p>
+        <ul class="sources"><li><a href="https://www.kucoin.com/news/flash/openai-may-release-astra-sol-and-cyber-models-as-early-as-nov-6">KuCoin News: OpenAI may release Astra, Sol and Cyber as early as 6 Nov</a></li><li><a href="https://www.chaincatcher.com/en/article/2301899">ChainCatcher: OpenAI will release the Astra, Sol and Cyber models</a></li><li><a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/">OpenAI: Introducing GPT-6 Sol and Luna (September background)</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">Ongoing</span></div>
+    <h3>Big Tech AI spending tops $700B in 2026, and investors are split</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the market now rewards capex that shows returns and punishes capex that does not; this shapes who can fund compute.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Background, not a new development: one analysis puts combined 2026 AI spend above $700B. Investors rewarded some firms and punished others after capex raises; depreciation and operating-cost worries are growing. Treat figures as analyst estimates.</p>
+        <ul class="sources"><li><a href="https://www.tradingview.com/news/invezz:104ade73b094b:0-inside-big-tech-s-700b-ai-spend-in-2026-bullish-leaders-split-markets/">TradingView/Invezz: inside Big Tech&#x27;s $700B AI spend</a></li><li><a href="https://finance.yahoo.com/news/3-charts-reveal-big-techs-biggest-problem-this-earnings-season-120812534.html">Yahoo Finance: 3 charts reveal Big Tech&#x27;s biggest problem</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 6 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
