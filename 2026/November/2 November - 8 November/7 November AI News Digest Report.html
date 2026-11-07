@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest — 7 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Thinking Machines is reportedly raising $5–6B, Goldman pulls coding agents from non-engineers, and OpenAI reportedly launches a gated GPT-6 Cyber.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>7 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Capital.</strong> Thinking Machines is reportedly raising $5–6B at $40B+, with Nvidia in talks.</li>
+      <li><strong>Enterprise.</strong> Goldman pulled coding agents from about 10,000 non-engineers.</li>
+      <li><strong>Security models.</strong> OpenAI's GPT-6 Cyber is reportedly out, gated and priced above rivals.</li>
+      <li><strong>Policy.</strong> Four big labs back one robots.txt training opt-out; rollout runs into 2027.</li>
+      <li><strong>Quiet Saturday.</strong> Most items are recent background, so we label dates on each card.</li>
+    </ol>
+  </section>
+
+  <!-- One <article> per story. Headline + a single "why it matters" line up top;
+       bury depth and sources inside <details> so the default view stays skimmable. -->
+  <!-- Keep the story date visible in .when. Use "Ongoing" for continuing
+       stories and label older background explicitly when useful. -->
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">6 Nov (reported talks)</span></div>
+    <h3>Thinking Machines is reportedly raising $5–6B at a $40B+ pre-money valuation</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a Nvidia-backed round at $40B+ would show investors still fund second-tier frontier labs, but at a lower mark than the $50B+ the company sought last year.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Next Web, citing The Information, says the raise has grown from about $1B to $5–6B, with Accel expected to lead and Nvidia supplying roughly $2.5–3B. It is unclear whether Nvidia's share sits inside or on top of the total. No source confirms the round has closed. One low-quality site lists wildly different figures ($400B); we ignored it because every other source disagrees.</p>
+        <ul class="sources">
+          <li><a href="https://thenextweb.com/news/thinking-machines-lab-6bn-round-nvidia-accel">The Next Web: Thinking Machines is in talks to raise $6bn</a></li>
+          <li><a href="https://the-decoder.com/thinking-machines-lab-reportedly-seeks-up-to-5-billion-dollars-in-new-funding/">The Decoder: Thinking Machines reportedly seeks up to $5B</a></li>
+          <li><a href="https://dealroom.co/news/148714-thinking-machines-lab-in-talks-for-1b-series-a-at-40b-valuation/">Dealroom: earlier talks at a $40B valuation</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Enterprise</span><span class="when">2 Nov (reported)</span></div>
+    <h3>Goldman Sachs pulls Claude Code and Copilot from bankers and traders</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> one of the most AI-forward banks is narrowing agentic coding tools to about 12,000 engineers on productivity and risk grounds. Expect other regulated firms to review who gets coding agents.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Bloomberg reported on 2 November that Goldman removed the tools from roughly 10,000 non-engineers in October, after a period when staff were encouraged to build prototypes (&ldquo;vibe coding&rdquo;). Its in-house assistant stays widely available. An unconfirmed single-source report says Apple cut some engineers' daily AI spend caps; we did not include it as a story.</p>
+        <ul class="sources">
+          <li><a href="https://dealroom.co/news/169162-goldman-restricts-claude-code-github-for-traders-and-bankers/">Dealroom: Goldman restricts Claude Code and GitHub for traders and bankers</a></li>
+          <li><a href="https://www.crowdfundinsider.com/?p=321098">Crowdfund Insider: Goldman limits Claude Code and GitHub access to engineers</a></li>
+          <li><a href="https://www.newsbytesapp.com/news/business/goldman-sachs-limits-access-to-advanced-ai-tools-to-engineers/tldr">NewsBytes: Goldman limits access to advanced AI tools to engineers</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">Ongoing (reported ~6 Nov)</span></div>
+    <h3>OpenAI reportedly launches GPT-6 Cyber with gated access and higher prices</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> cyber-capable models are now sold as vetted-access products, priced above rivals. Security teams must now compare vendors on gated access, not only on public benchmarks.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>VentureBeat reports the model finds and exploits software vulnerabilities, needs approval for access, and costs more per API token than Anthropic and Google equivalents. Praise from CodeRabbit's CEO is a customer claim; there is no independent cross-vendor benchmark. Earlier Fortune reporting said an alpha ran in OpenAI's application-only Daybreak Red programme. We could not open VentureBeat's page in this session, so we rely on its headline and search summary. Treat details as unverified until OpenAI's own post is checked.</p>
+        <ul class="sources">
+          <li><a href="https://venturebeat.com/technology/openai-launches-gpt-6-cyber-with-stronger-exploit-research-and-higher-api-price-than-anthropic-and-google">VentureBeat: OpenAI launches GPT-6 Cyber</a></li>
+          <li><a href="https://www.ksl.com/article/51628388/openai-to-preview-gpt-6-cyber-within-days-fortune-reports">KSL (Fortune report): OpenAI to preview GPT-6 Cyber within days</a></li>
+          <li><a href="https://thenextweb.com/news/openai-gpt-6-cyber-preview-fortune">The Next Web: OpenAI preparing a GPT-6 Cyber preview</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">30 Oct (background)</span></div>
+    <h3>Google, Microsoft, OpenAI and Anthropic back one robots.txt opt-out for AI training</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> publishers get one signal instead of many bot rules, but it does not reach data already used, and rollout is slow.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The shared token is <code>__usage_ai-training</code>. Sources disagree on who has committed: most list all four, some list three. Google and Microsoft are reported to start support in 2027. AI Overviews and AI Mode keep a separate Google control. The standard does not remove content from existing models.</p>
+        <ul class="sources">
+          <li><a href="https://thenextweb.com/news/ai-training-opt-out-robots-txt-google-openai-microsoft-anthropic">The Next Web: one AI training opt-out</a></li>
+          <li><a href="https://searchenginejournal.com/google-microsoft-openai-shared-ai-training-opt-out/595387">Search Engine Journal: shared AI training opt-out</a></li>
+          <li><a href="https://www.how2shout.com/ai/shared-robots-txt-ai-training-opt-out-google-openai-microsoft-anthropic.html">How2Shout: sites can soon refuse AI training with one rule</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">28 Oct (background)</span></div>
+    <h3>Google previews Gemini 4 Carbon, limited to vetted cyber defenders</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the top Gemini model is not for general sale. Google and OpenAI now both stage their strongest models through security-first programmes.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Carbon is available first through Google's Fairwind Program, not in the Gemini app or public API, with no date for wider release. Gemini 4 Argon remains the generally available model. Google joins a voluntary US-government pre-release test. Reported prices conflict ($2/$10 vs $4/$20 per million tokens), and the benchmark figures are Google's own.</p>
+        <ul class="sources">
+          <li><a href="https://betanews.com/article/gemini-4-carbon-cyber-defenders/">BetaNews: Gemini 4 Carbon for cyber defenders</a></li>
+          <li><a href="https://www.khaleejtimes.com/google-launches-gemini-4-carbon-ai-model-with-cybersecurity-focus-2">Khaleej Times: Google launches Gemini 4 Carbon</a></li>
+          <li><a href="https://www.vals.ai/models/google_gemini-4-carbon">Vals.ai: Gemini 4 Carbon</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">26 Oct (background)</span></div>
+    <h3>GPT-6.1 Terra halves the price of OpenAI's computer-use model</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> at $1/$5 per million tokens, agent workloads that were too costly last quarter may now pay back. OpenAI itself points the hardest coding work to Sol or Astra.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI says Terra is about three times faster on computer-use tasks and cuts error rates on its own hallucination-prone test from 53.6% to 16.7%. Vals.ai ranks it #10 of 28 on its index at 60.17%. One comparison puts Claude Opus 5.5 slightly ahead at higher cost per task. Benchmarks are mostly vendor claims.</p>
+        <ul class="sources">
+          <li><a href="https://openai.com/is-IS/index/introducing-gpt-6-1-terra/">OpenAI: Introducing GPT-6.1 Terra</a></li>
+          <li><a href="https://bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing">BleepingComputer: GPT-6.1 Terra, 3x faster agents, 50% lower pricing</a></li>
+          <li><a href="https://vals.ai/models/openai_gpt-6.1-terra">Vals.ai: GPT-6.1 Terra</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 7 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
