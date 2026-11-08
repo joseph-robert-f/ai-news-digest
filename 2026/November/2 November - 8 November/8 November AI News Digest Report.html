@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 8 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Nvidia looks to retrofit old telecom buildings as data-center backlash grows, while OpenAI and Anthropic both face tougher pricing from investors.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>8 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Data-center backlash.</strong> Nvidia is reportedly pitching Apollo on small AI sites in old telecom buildings to avoid local opposition.</li>
+      <li><strong>OpenAI raise.</strong> About $11B is in so far at a $1.25T valuation, well below the $30B first sought.</li>
+      <li><strong>Anthropic IPO.</strong> Investors are reportedly pushing the valuation to about $1.5–1.6T, down from $2T talk.</li>
+      <li><strong>Chip supply.</strong> OpenAI reportedly plans to buy Google TPUs, and Oracle will offer TPUs in its cloud from 2027.</li>
+      <li><strong>Cyber AI.</strong> OpenAI says GPT-6 Cyber found 81 high-severity Firefox flaws; most fixes shipped in Firefox 159.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Infrastructure</span><span class="when">Reported 7 Nov</span></div>
+    <h3>Nvidia reportedly pitches Apollo on small AI data centers in old telecom buildings</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If local bans keep spreading, siting capacity in existing powered buildings may become the faster route to new compute.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Information reports Nvidia approached Apollo about converting more than 130 buildings of Brightspeed, a telecom reportedly near bankruptcy, into small AI sites across as many as 20 states. Coverage cites roughly 1 GW of available power and Nvidia's modular DSX POD design. This is a single paywalled report with secondary pickup; neither company has confirmed it. It follows the local data-center ballot results in the 6 November brief.</p>
+        <ul class="sources">
+          <li><a href="https://www.theinformation.com/articles/nvidias-workaround-data-center-backlash-retrofitting-old-telephone-buildings">The Information: Nvidia's workaround to data-center backlash (paywalled)</a></li>
+          <li><a href="https://aiweekly.co/alerts/nvidia-pitches-apollo-on-converting-130-brightspeed-telecom-buildings-into-1gw">AI Weekly: Nvidia pitches Apollo on Brightspeed buildings</a></li>
+          <li><a href="https://stocktwits.com/news-articles/markets/equity/nvidia-eyes-apollo-s-struggling-telecom-sites-to-sidestep-data-center-moratoriums-report/cNG1vn9R94o">Stocktwits: Nvidia eyes Apollo's telecom sites</a></li>
+          <li><a href="https://cryptobriefing.com/nvidia-retrofits-old-buildings-data-center-backlash/">Crypto Briefing: Nvidia bets on old buildings</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">Late Oct (ongoing)</span></div>
+    <h3>OpenAI has raised about $11B of a $30B target, at a lower $1.25T valuation</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Even the top lab is meeting price resistance, which affects how rivals and suppliers should read frontier-lab valuations.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Press reports say OpenAI cut its valuation goal from $1.4T after resistance from private-wealth clients. The reported maximum raise is now about $20B. Outlets differ on whether $1.25T is pre- or post-money, and the round is not officially announced. For scale, the March 2026 round valued OpenAI at $852B.</p>
+        <ul class="sources">
+          <li><a href="https://hedgeco.net/news/11/2026/openai-cut-its-funding-round-target-to-up-to-20-billion-at-a-1-25-trillion-valuation.html">HedgeCo: OpenAI cuts funding target to up to $20B at $1.25T</a></li>
+          <li><a href="https://pasqualepillitteri.it/en/news/29142/openai-raises-11-billion-of-30-billion-cuts-target-20-billion">Pasquale Pillitteri: OpenAI raises $11B of $30B</a></li>
+          <li><a href="https://digg.com/tech/9irienle">Digg: OpenAI lowers valuation target to $1.25T</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">Early Nov</span></div>
+    <h3>Anthropic IPO investors reportedly push valuation to about $1.5–1.6T</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A lower IPO price would reset how public markets value frontier labs, ahead of OpenAI's own listing.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reuters-sourced coverage says some investors discussed about $1.5T at an investor event on 14 October, down from about $2T. A WSJ-based summary puts institutional buyers at $1.5–1.6T. The cited reasons are slower quarter-on-quarter growth and infrastructure-spend worries. The S-1 details were covered on 5 and 6 November. The WSJ figure is secondhand here, so treat it as unconfirmed.</p>
+        <ul class="sources">
+          <li><a href="https://aiweekly.co/alerts/reuters-anthropic-ipo-investors-push-valuation-down-to-15t-from-2t-over-q3">AI Weekly: Reuters on Anthropic IPO valuation</a></li>
+          <li><a href="https://letsdatascience.com/blog/anthropic-grew-45-percent-quarter-investors-1-5-trillion">Let's Data Science: Anthropic grew 45% in the quarter</a></li>
+          <li><a href="https://fourweekmba.com/ai-anthropic-ipo-investors-push-1-5t-1-6t-22-24x-q3-pace/">FourWeekMBA: Anthropic IPO investors push $1.5T–$1.6T</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Compute</span><span class="when">27–28 Oct</span></div>
+    <h3>OpenAI reportedly plans to buy Google TPUs; Oracle will offer TPUs from 2027</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Nvidia's largest customers are lining up alternatives, which strengthens buyer leverage on price and supply.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Information reported on 27 October that OpenAI plans to buy Google's AI chips, citing one person. OpenAI has rented TPUs through Google Cloud since 2025. Oracle and Google separately said TPUs will come to Oracle Cloud in 2027. Neither OpenAI nor Google has confirmed the purchase plan.</p>
+        <ul class="sources">
+          <li><a href="https://trendforce.com/news/2026/10/28/news-openai-reportedly-plans-to-buy-google-tpus-oracle-to-bring-tpus-to-its-cloud-in-2027-adding-pressure-on-nvidia">TrendForce: OpenAI reportedly plans to buy Google TPUs</a></li>
+          <li><a href="https://thenextweb.com/news/oracle-ai-world-google-tpus-openai-chatgpt">The Next Web: Oracle will sell Google's TPUs in its cloud</a></li>
+          <li><a href="https://www.datacenterdynamics.com/en/news/openai-to-use-googles-tpus-report/">DCD: OpenAI to use Google's TPUs</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">Launched 7 Nov; fixes 27 Oct</span></div>
+    <h3>GPT-6 Cyber: OpenAI says it found 81 new high-severity Firefox flaws</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Security teams should expect AI-found vulnerabilities to arrive faster than patch cycles are built for.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>This adds a detail to the 7 November launch story. Coverage says most fixes landed in Firefox 159 on 27 October and that access is limited to vetted Daybreak Red customers. OpenAI rates the model "Critical" in its Preparedness Framework. Mozilla's advisory does not name the model, and the benchmark figures (48.5% on ExploitGym) come from OpenAI.</p>
+        <ul class="sources">
+          <li><a href="https://thenextweb.com/news/openai-gpt-6-cyber-launch-firefox-linux-daybreak-red">The Next Web: GPT-6 Cyber found 81 Firefox flaws</a></li>
+          <li><a href="https://pupuweb.com/ai-news-update-what-does-openais-gpt-6-cyber-release-and-the-new-ai-data-center-bans-mean-for-tech-markets-and-more">PupuWeb: GPT-6 Cyber release and data-center bans</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Market context</span><span class="when">Ongoing (27 Jul)</span></div>
+    <h3>Gartner: data-center systems spend to reach about $822B in 2026</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is background for the infrastructure stories above: demand forecasts keep rising even as local politics and investor pricing tighten.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Older background. Gartner's July update raised 2026 data-center systems growth to 62.5%, from nearly 56% in April. It also put total IT spending at $6.37T, up 14.2%.</p>
+        <ul class="sources">
+          <li><a href="https://www.gartner.com/en/newsroom/press-releases/2026-07-27-gartner-forecasts-worldwide-it-spending-to-grow-14-point-2-percent-in-2026-totaling-6-point-37-trillion">Gartner: worldwide IT spending forecast, 27 July 2026</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 8 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
