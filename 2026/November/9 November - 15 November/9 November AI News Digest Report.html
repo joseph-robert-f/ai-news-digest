@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 9 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="DOJ launches a Super Intelligence Task Force and Trump signals openness to AI guardrails, while an AI system claims a proof of a quantum-computing conjecture and Microsoft winds down a 2023 Oracle AI rental.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>9 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>DOJ task force.</strong> The Justice Department formed a Super Intelligence Task Force to prosecute AI misuse.</li>
+      <li><strong>Trump on guardrails.</strong> He says he “doesn’t mind guardrails,” but no rule exists.</li>
+      <li><strong>Open-weight race.</strong> Thinking Machines shipped Inkling 2 Small; Apache 2.0 weights are promised.</li>
+      <li><strong>AI math claim.</strong> A startup says its AI proved a quantum-computing conjecture; review is pending.</li>
+      <li><strong>Compute churn.</strong> Microsoft reportedly lets a 2023 Oracle AI rental lapse.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">5 Nov</span></div>
+    <h3>DOJ forms a Super Intelligence Task Force to prosecute AI misuse</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Enforcement against AI misuse now has a dedicated federal team, so compliance and security leads should expect criminal-law scrutiny, not only regulation.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Justice Department announced the task force on 5 November. It targets foreign state actors, transnational criminal groups and corporate actors who misuse advanced AI. Reports say it absorbs the earlier AI Litigation Task Force, which challenged state AI laws. DOJ gave no timeline. Some details come from secondary outlets.</p>
+        <ul class="sources"><li><a href="https://www.govexec.com/technology/2026/11/department-justice-forms-ai-task-force/417075/">GovExec: Department of Justice forms AI task force</a></li><li><a href="https://www.nextgov.com/artificial-intelligence/2026/11/department-justice-forms-ai-task-force/417074/">Nextgov: Department of Justice forms AI task force</a></li><li><a href="https://decrypt.co/382672/doj-creates-super-intelligence-task-force-to-guard-against-ai-abuse">Decrypt: DOJ creates Super Intelligence task force</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">8 Nov</span></div>
+    <h3>Trump says AI risks are manageable and he “doesn’t mind guardrails”</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> It is a softer tone than his September stance against more guardrails, but it is words only: no new rule exists and the level of any safeguard is unclear.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>In a 60 Minutes interview aired 8 November, Trump reportedly said he is open to working with Democrats on safeguards. He also said the US must not fall into “a deep second position” behind China. Background (September): he called calls for guardrails a “conspiracy” against AI. The sources here are mixed in quality, so treat details with care.</p>
+        <ul class="sources"><li><a href="https://ntd.com/trump-says-ai-risks-can-be-managed-signals-openness-to-guardrails_1184118.html">NTD: Trump says AI risks can be managed</a></li><li><a href="https://fourweekmba.com/ai-trump-says-ai-risk-is-manageable-doesnt-mind-guardrails/">FourWeekMBA: Trump says AI risk is manageable</a></li><li><a href="https://www.koreatimes.co.kr/world/20260915/trump-dismisses-need-for-guardrails-as-a-sick-conspiracy-against-ai">Korea Times (Sept background): Trump dismisses need for guardrails</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">5 Nov</span></div>
+    <h3>Thinking Machines ships Inkling 2 Small, a 594B-parameter model, with weights promised later</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A US lab may soon offer a top-scoring non-Chinese open-weight option; watch whether the Apache 2.0 release arrives after safety testing.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The mixture-of-experts model (594B total, 17B active parameters) is available first on the Tinker platform. Weights are closed for now; the company says it will release them under Apache 2.0 after external safety testing. Benchmark gains are company-reported. Funding context: a roughly $5B round at a $40B pre-money valuation is reported but not confirmed (covered 7 Nov).</p>
+        <ul class="sources"><li><a href="https://officechai.com/ai/thinking-machines-releases-inkling-2-small-to-become-top-scoring-non-chinese-model-on-artificial-analysis-intelligence-index-once-weights-release/">OfficeChai: Inkling 2 Small release</a></li><li><a href="https://runtimewire.com/article/thinking-machines-inkling-2-small-open-weights">RuntimeWire: Inkling 2 Small on Tinker with closed weights</a></li><li><a href="https://letsdatascience.com/news/thinking-machines-lab-reportedly-nears-5-billion-round-at-40-fcc2bde1">LetsDataScience: Thinking Machines nears $5B round</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Research</span><span class="when">6 Nov</span></div>
+    <h3>Startup says its AI system proved the Aaronson–Ambainis conjecture</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If it holds, it is a strong sign that AI can solve open math problems; wait for expert review before you rely on it.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Physical Superintelligence announced the result on 6 November. It says the system ran a non-public Anthropic model and that Lean accepted the proof. The claim is not peer reviewed, and experts must still check that the Lean statement matches the original conjecture. One report says the guarantee proved is weaker than the final form. An earlier 2019 attempt was retracted.</p>
+        <ul class="sources"><li><a href="https://thequantuminsider.com/2026/11/06/ai-assisted-proof-settles-longstanding-question-about-quantum-speedups/">The Quantum Insider: AI-assisted proof</a></li><li><a href="https://officechai.com/ai/us-startup-physical-superintelligence-proves-aaronson-ambainis-conjecture-a-key-open-problem-in-quantum-computing/">OfficeChai: PSI proves the conjecture</a></li><li><a href="https://fourweekmba.com/ai-psi-says-anthropic-model-proved-18-year-quantum-conjecture/">FourWeekMBA: PSI says Anthropic model proved conjecture</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Research</span><span class="when">2 Nov</span></div>
+    <h3>Anthropic open-sources FlashProve to prove which model answered</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Cryptographic proof of model identity could let buyers audit that a vendor serves the model it sells, though cost makes it an audit tool, not a default.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>FlashProve uses a zkSNARK to check a response against a committed model without revealing weights. Anthropic built it with EPFL, MIT and StarkWare and released it under Apache 2.0. Proofs cost roughly 70–95 times the GPU time of normal serving and cover up to 1,024 tokens with greedy decoding. Anthropic has no plan to deploy it. Background: this release is from 2 November.</p>
+        <ul class="sources"><li><a href="https://www.helpnetsecurity.com/?p=390217">Help Net Security: Anthropic open-sources FlashProve</a></li><li><a href="https://thenextweb.com/news/anthropic-flashprove-provable-inference-ai-model-identity">The Next Web: FlashProve and model identity</a></li><li><a href="https://letsdatascience.com/news/anthropic-open-sources-flashprove-a-zksnark-prototype-for-pr-70e97488">LetsDataScience: FlashProve zkSNARK prototype</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Infrastructure</span><span class="when">6 Nov</span></div>
+    <h3>Microsoft reportedly lets a 2023 Oracle AI-capacity rental lapse</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> It shows that older GPU capacity can lose value fast, which matters for anyone signing long AI compute contracts.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Bloomberg reported that Microsoft is winding down a 2023 deal to rent AI computing from Oracle, which served Bing AI features and used older Nvidia chips. The contract size is not public. Oracle says demand for its AI infrastructure stays strong and that it renewed four-year-old GPU contracts at about a 20% premium. One report says Oracle shares fell about 3%. These accounts relay Bloomberg.</p>
+        <ul class="sources"><li><a href="https://thenextweb.com/news/microsoft-winds-down-oracle-ai-cloud-capacity-deal">The Next Web: Microsoft winds down Oracle AI deal</a></li><li><a href="https://www.marketscale.com/industries/software-and-technology/microsoft-winding-down-oracle-ai-cloud-capacity-deal">MarketScale: Microsoft winding down Oracle AI cloud capacity deal</a></li><li><a href="https://investinglive.com/news/microsoft-is-reportedly-winding-down-it-s-oracle-deal-to-wind-down-ai-cloud-capacity/">InvestingLive: Microsoft reportedly winding down Oracle deal</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 9 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
