@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 11 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Google split its TPU line again with a confidential-computing chip, Fireworks AI widened its breach disclosure to customer secrets and model weights, and ChatGPT Enterprise became buyable against AWS cloud commitments.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>11 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Quiet day, three verified items.</strong> Infrastructure, security and enterprise channels moved; no new frontier model confirmed.</li>
+      <li><strong>Google adds TPU 8tx and 8i Max.</strong> Encrypted inference and long-context chips aimed at regulated buyers.</li>
+      <li><strong>Fireworks AI breach widened.</strong> Attackers reached billing data and, for some customers, secrets, datasets and partial model weights.</li>
+      <li><strong>ChatGPT Enterprise lands on AWS Marketplace.</strong> Spend can count toward AWS commitments.</li>
+    </ol>
+  </section>
+
+  <!-- One <article> per story. Headline + a single "why it matters" line up top;
+       bury depth and sources inside <details> so the default view stays skimmable. -->
+  <!-- Keep the story date visible in .when. Use "Ongoing" for continuing
+       stories and label older background explicitly when useful. -->
+  <article class="story">
+    <div class="kicker"><span class="tag">Chips</span><span class="when">9 Nov</span></div>
+    <h3>Google unveils TPU 8tx for confidential AI and TPU 8i Max for long context</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Hardware-level encryption gives security-bound buyers (finance, health, government) a reason to run sensitive inference on Google silicon instead of waiting for on-prem GPUs.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>TPU 8tx uses the TPU 8t silicon with hardware encryption and AMD EPYC CPUs; Google claims up to 2x lower latency than TPU 8t with near-zero penalty, and may let select customers deploy it in their own data centers. TPU 8i Max pairs two TPU 8i chips for double the compute, SRAM and HBM bandwidth and 384 GB of HBM. Performance figures are Google's own and not independently verified. The 8t/8i generation itself was first shown in April 2026 (older background).</p>
+        <ul class="sources"><li><a href="https://www.constellationr.com/insights/news/google-launches-tpu-8tx-tpu-8i-max">Constellation Research: Google launches TPU 8tx, TPU 8i Max</a></li><li><a href="https://datacenterknowledge.com/data-center-chips/google-adds-tpu-8tx-8i-max-for-enterprise-ai">Data Center Knowledge: Google adds TPU 8tx, 8i Max for enterprise AI</a></li><li><a href="https://aiweekly.co/alerts/google-unveils-tpu-8tx-and-8i-max-for-secure-long-context-ai">AI Weekly: Google unveils TPU 8tx and 8i Max</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">9 Nov</span></div>
+    <h3>Fireworks AI says its October breach reached customer secrets, datasets and partial model weights</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If you fine-tune or host on a third-party inference platform, rotate keys now and ask the vendor what stored training data and checkpoints it holds.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Fireworks first detected the intrusion on 6 October and first said only evaluation-job environment variables were exposed. Its 9 November update says attackers reached account and billing information and, for a limited group of customers, stored secrets, datasets and incomplete model weights. Fireworks says it found no impact to Inference, the Training SDK or Nexus (zero data retention by default) and that it does not store card numbers. Outside coverage varies on whether personal data was involved; the vendor bulletin is the authority. Update: this widens the October disclosure.</p>
+        <ul class="sources"><li><a href="https://fireworks.ai/security/bulletins/october-2026-security-incident-update">Fireworks AI: October 2026 security incident update</a></li><li><a href="https://runtimewire.com/article/fireworks-ai-second-security-breach-customer-data">Runtime Wire: Fireworks says cloud-provider breach exposed billing data and model weights</a></li><li><a href="https://ai-tldr.dev/releases/fireworks-ai-october-breach-update/">AI-TLDR: Fireworks AI breach update</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Enterprise</span><span class="when">9 Nov</span></div>
+    <h3>OpenAI sells ChatGPT Enterprise through AWS Marketplace</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> AWS-committed buyers can now fund ChatGPT from existing cloud commitments, which removes a procurement barrier and sharpens the cloud-channel fight with Microsoft and Anthropic.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI is the seller; pricing is by private offer. The bundle covers ChatGPT, ChatGPT Work and Codex, and eligible customers can add the Healthcare and Financial Services editions. Buying through Marketplace does not guarantee that all customer data stays on AWS infrastructure. Reporting notes that credit-to-invoice mechanics and AWS's revenue share were not disclosed. This builds on OpenAI models arriving on Amazon Bedrock earlier in 2026 (background).</p>
+        <ul class="sources"><li><a href="https://openai.com/index/chatgpt-enterprise-aws-marketplace/">OpenAI: ChatGPT Enterprise on AWS Marketplace</a></li><li><a href="https://ppc.land/aws-customers-can-now-buy-chatgpt-enterprise-against-cloud-commitments/">PPC Land: AWS customers can now buy ChatGPT Enterprise against cloud commitments</a></li><li><a href="https://aws.amazon.com/marketplace/pp/prodview-sscra4m7iracg">AWS Marketplace listing</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 11 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
