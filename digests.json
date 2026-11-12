@@ -1,7 +1,16 @@
 {
-  "generated": "2026-11-11T10:42:31.261Z",
-  "count": 116,
+  "generated": "2026-11-12T10:42:54.011Z",
+  "count": 117,
   "digests": [
+    {
+      "date": "2026-11-12",
+      "title": "AI News Digest — 12 November 2026",
+      "path": "2026/November/9 November - 15 November/12 November AI News Digest Report.html",
+      "year": 2026,
+      "month": "November",
+      "week": "9 November - 15 November",
+      "summary": "Anthropic shipped Fable 5.2 and a vetted-access Mythos 5.2 ahead of its IPO, Nvidia's board is probing its CEO, and OpenAI's shelved GPT-6.1 Astra shows the safety bar rising."
+    },
     {
       "date": "2026-11-11",
       "title": "AI News Digest — 11 November 2026",
