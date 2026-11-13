@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 13 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Nvidia CEO Jensen Huang resigned, Anthropic's IPO drew roughly six times demand ahead of a 19 November listing, and Washington moved to tighten China's access to AI chips.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>13 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Nvidia loses its CEO.</strong> Jensen Huang resigned on 12 November; CFO Colette Kress is interim CEO.</li>
+      <li><strong>Financing bet in doubt.</strong> Huang's exit raises questions over Nvidia's reported $500B AI-infrastructure financing pacts.</li>
+      <li><strong>Anthropic IPO about 6x oversubscribed.</strong> Pricing is reported for 18 November and Nasdaq trading for 19 November.</li>
+      <li><strong>Revenue race.</strong> OpenAI reportedly told investors Q3 revenue was about $10B; Anthropic's is reported near $17B.</li>
+      <li><strong>China chip curbs tighten.</strong> Commerce is reportedly readying a remote-access rule while Congress weighs four bills.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Company</span><span class="when">12 Nov</span></div>
+    <h3>Nvidia CEO Jensen Huang resigns; CFO Colette Kress steps in as interim</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The AI supply chain's most important leader is gone with no named successor, so expect partner and customer uncertainty until the board picks one.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>New since the 12 November report of a board probe: Nvidia's 8-K says Huang resigned, and Kress is interim CEO while remaining CFO. Reports say Huang also left the board and the president role, and Harvey Jones became the first board chairman. The filing gives no reason. Press reports link the exit to allegations about personal relationships and a suspected China espionage link; these are unconfirmed by the company. Successor names (Tim Cook, Ian Buck and others) are speculation.</p>
+        <ul class="sources">
+          <li><a href="https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm">SEC: Nvidia Form 8-K on CEO transition</a></li>
+          <li><a href="https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html">CNBC: Nvidia CEO Jensen Huang resigns, live updates</a></li>
+          <li><a href="https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress">Al Jazeera: Why did Huang resign, and who is Colette Kress?</a></li>
+          <li><a href="https://www.axios.com/2026/11/12/nvidia-next-ceo-jensen-huang-predictions">Axios: Nvidia's next CEO, possible successors</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">12 Nov</span></div>
+    <h3>Huang's exit puts Nvidia's $500B AI financing pacts under a question mark</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Lenders and data-centre developers that lean on Nvidia's relationships should check how much of their plan depends on one executive.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>CNBC reports the exit casts doubt on Nvidia's memorandums of understanding with six financial firms meant to mobilise more than $500 billion for AI infrastructure. Chinese AI shares also fell on Friday on fears of tighter chip access (Digitimes).</p>
+        <ul class="sources">
+          <li><a href="https://cnbc.com/2026/11/12/nvidia-ceo-exit-ai-financing.html">CNBC: Huang's Nvidia exit and the $500B AI financing bet</a></li>
+          <li><a href="https://www.digitimes.com/news/a20261113VL224/nvidia-china-ai-chip-regulation-security.html">Digitimes: Chinese AI firms race for overseas compute</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">12 Nov</span></div>
+    <h3>Anthropic's IPO is reported about six times oversubscribed</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The largest tech listing on record looks set to price at the top, which will reset valuation benchmarks for every AI lab.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Update to the 12 November roadshow item. Bloomberg, via Reuters, reports orders near six times supply. Reported terms: 825 million shares at $70-$78, up to $64.4B, or $90.4B with a $26B private placement from seven tech companies. Valuation is reported at up to $1.4T, with bankers reportedly considering $1.5T. Pricing is expected around 18 November and Nasdaq trading on 19 November under ANT. All figures trace to one Bloomberg report and could change.</p>
+        <ul class="sources">
+          <li><a href="https://www.investing.com/news/stock-market-news/anthropics-ipo-is-about-six-times-oversubscribed-bloomberg-news-reports-5023345">Reuters via Investing.com: Anthropic's IPO is about six times oversubscribed</a></li>
+          <li><a href="https://finance.yahoo.com/technology/ai/articles/anthropic-seeking-raise-over-90-153907895.html">Yahoo Finance: Anthropic seeking to raise over $90.4 billion</a></li>
+          <li><a href="https://opentools.ai/news/anthropic-ipo-multiple-times-oversubscribed-roadshow">OpenTools: IPO multiple times oversubscribed as roadshow begins</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">10 Nov</span></div>
+    <h3>OpenAI reportedly tells investors Q3 revenue was about $10B, up 50% on Q2</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Enterprise now drives more than half of OpenAI's sales, and the reported gap to Anthropic shows the revenue lead has changed hands.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Information reported OpenAI's figure on 10 November. OpenAI does not file revenue, so the number is unaudited. Anthropic is reported to have filed near $17B for the same quarter. Treat both as reports until audited.</p>
+        <ul class="sources">
+          <li><a href="https://aiweekly.co/alerts/the-information-openai-tells-investors-q3-revenue-hit-roughly-10b-up-50-from-q2">AI Weekly: The Information on OpenAI Q3 revenue</a></li>
+          <li><a href="https://fourweekmba.com/ai-openais-q3-said-to-reach-10b-anthropics-filed-q3-is-1-7x/">FourWeekMBA: OpenAI Q3 said to reach $10B; Anthropic filed Q3 is 1.7x</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">Reported 12-13 Nov</span></div>
+    <h3>Commerce reportedly readies a rule to block China's remote access to AI chips</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If it lands, cloud and data-centre providers abroad must screen customers for Chinese AI firms, which closes the rental loophole.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The rule would stop Chinese AI firms renting Nvidia GPU capacity in third countries. Officials reportedly plan to announce it this month. Baker McKenzie argues Commerce lacks the legal authority; a related bill passed the House but not the Senate. Timing is not confirmed.</p>
+        <ul class="sources">
+          <li><a href="https://aiweekly.co/alerts/commerce-readies-rule-to-block-chinas-remote-ai-chip-access">AI Weekly: Commerce readies rule on China's remote AI chip access</a></li>
+          <li><a href="https://www.digitimes.com/news/a20261113VL224/nvidia-china-ai-chip-regulation-security.html">Digitimes: Chinese AI firms fear chip curbs</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">12-13 Nov</span></div>
+    <h3>Lawmakers push four chip-control bills; OpenAI backs them, Anthropic funds the cause</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> AI labs now lobby for tighter chip limits, so export policy is moving from a chipmaker issue to an industry-wide one.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Congress is weighing four proposals, including the AI Overwatch Act and the Chip Security Act. OpenAI is reported to back a bipartisan effort. Background (21 July): Anthropic gave Public First Action a further $20M, for $40M in total, to support AI policy work including export controls; it says the funds cannot back candidates.</p>
+        <ul class="sources">
+          <li><a href="https://www.business-standard.com/amp/world-news/us-lawmakers-push-for-tougher-curbs-on-advanced-ai-chip-exports-to-china-126111300657_1.html">Business Standard: US lawmakers push for tougher curbs</a></li>
+          <li><a href="https://www.tokenpost.com/news/regulation/56230">TokenPost: OpenAI backs US bills to tighten China AI chip controls</a></li>
+          <li><a href="https://www.anthropic.com/news/donation-public-first-action">Anthropic: donation to Public First Action</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 13 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
