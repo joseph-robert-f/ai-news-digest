@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 15 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="A quiet Sunday: TSMC joins the Anthropic IPO queue, Notion and United show how fast AI vendors and AI agents are being fenced in, and EU leaders hold their first AI-only summit.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>15 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>TSMC buys in.</strong> Up to $500M each in Anthropic (at IPO price) and OpenAI.</li>
+      <li><strong>Vendor risk.</strong> Notion says AI chats may be exposed through Fireworks AI.</li>
+      <li><strong>Agents fenced.</strong> United bars unauthorized third-party AI agents from booking.</li>
+      <li><strong>Policy.</strong> EU leaders held their first AI-only summit; no binding outcome expected.</li>
+      <li><strong>Open weights.</strong> Inkling 2 Small is closed for now; Apache 2.0 release still promised.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">10&ndash;15 Nov</span></div>
+    <h3>TSMC approves up to $1B in Anthropic and OpenAI stakes</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The chip foundry is moving from supplier to shareholder, and the Anthropic stake is priced at the IPO, so it is a direct read on supplier confidence.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>On 10 November TSMC&rsquo;s board approved up to $500M for Anthropic common shares at the IPO price and up to $500M for OpenAI preferred stock. The filing gives no valuation, share count or closing date. Anthropic launched its roadshow the same day: 825M Class A shares, a $70&ndash;$78 range and a Nasdaq listing as &ldquo;ANT&rdquo;. I could not confirm a pricing date from a primary source; reports of 18&ndash;19 November are unverified. Earlier digests covered the range and the $26B supplier placement; this is the new TSMC piece.</p>
+        <ul class="sources">
+          <li><a href="https://anthropic.com/news/roadshow-launch">Anthropic: roadshow launch</a></li>
+          <li><a href="https://www.rttnews.com/3712632/anthropic-sets-ipo-price-range-at-70-78-per-share-launches-roadshow.aspx">RTTNews: Anthropic sets IPO price range, launches roadshow</a></li>
+          <li><a href="https://letsdatascience.com/news/tsmc-board-approves-up-to-1-billion-in-anthropic-openai-stak-2ce4f59c">Let&rsquo;s Data Science: TSMC board approves up to $1B</a></li>
+          <li><a href="https://stockanalysis.com/news/tsmc-invest-1-billion-anthropic-openai/">StockAnalysis: TSMC to invest up to $1B</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">6&ndash;9 Nov</span></div>
+    <h3>Notion&rsquo;s own advisory: AI chats may be exposed via Fireworks AI</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Your AI vendor&rsquo;s vendor is now part of your breach surface; ask suppliers which inference hosts they use and whether prompts are logged.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Notion says Fireworks AI told it on 6 November of an incident that may affect fewer than 1% of workspaces. The data came from the Insights feature. Notion says most records cannot identify the speaker or workspace, but advises treating the data as exposed and rotating any credentials pasted into Notion AI chats. It disabled Insights and stopped serving open-weight models through Fireworks. This adds Notion&rsquo;s side to the Fireworks breach in the 11 November digest. The exact number of affected workspaces is not confirmed.</p>
+        <ul class="sources">
+          <li><a href="https://www.notion.com/security/advisories/security-incident-involving-a-third-party-ai-vendor-nov9">Notion: security incident involving a third-party AI vendor</a></li>
+          <li><a href="https://runtimewire.com/article/notion-says-ai-chats-used-for-insights-may-have-been-exposed-in-fireworks-breach">Runtime Wire: Notion AI chats may have been exposed</a></li>
+          <li><a href="https://smartscope.blog/en/blog/notion-ai-fireworks-ai-incident-affected-under-1-2026/">SmartScope: Notion and Fireworks AI incident</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Agents</span><span class="when">11 Nov</span></div>
+    <h3>United bans unauthorized third-party AI agents from booking travel</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Airlines are choosing approved integrations over open agent access, so any agent-commerce plan needs a direct partnership, not scraping.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>United says its contract of carriage now bars AI agents from making, changing or servicing tickets, even when a customer supervises. Bookings made that way can be cancelled without notice. It cites security, privacy and regulatory risk, and says it has no third-party agent partnerships today. Southwest has opened inventory to ChatGPT users, and Delta says it supports agents that can be authenticated. Whether United can detect agent bookings made through aggregators is disputed. Extends the 12 November item on sites shutting out shopping agents.</p>
+        <ul class="sources">
+          <li><a href="https://skift.com/2026/11/11/united-airlines-moves-to-block-personal-ai-agents-from-booking-flights/">Skift: United moves to block personal AI agents</a></li>
+          <li><a href="https://airlinegeeks.com/2026/11/11/united-bans-ai-agents-from-booking-flights-for-customers/">Airline Geeks: United bans AI agents</a></li>
+          <li><a href="https://www.phocuswire.com/news/technology/united-blocks-third-party-ai-agents-from-app-website">PhocusWire: United blocks third-party AI agents</a></li>
+          <li><a href="https://www.businesstravelnews.com/Transportation/Air/united-restricts-unauthorized-third-party-ai-agent-access">Business Travel News: United restricts agent access</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">13 Nov</span></div>
+    <h3>EU leaders hold their first AI-only summit in Dublin</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Europe is debating dependence and sovereignty at head-of-government level; expect follow-up in 2027, not binding rules now.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The 27 EU leaders met informally in Dublin with AI as the only agenda item. Topics were reducing critical dependencies, building European AI capability and infrastructure. Mistral CEO Arthur Mensch and Geoffrey Hinton were due to speak. Informal meetings take no formal decisions, and Council President Costa expects leaders to return to AI in 2027. I found no report of the outcome, only previews, so treat results as unconfirmed.</p>
+        <ul class="sources">
+          <li><a href="https://irish-presidency.consilium.europa.eu/en/events/international-ai-summit">Council of the EU: International AI Summit</a></li>
+          <li><a href="https://www.brusselstimes.com/2390745/eu-leaders-to-meet-in-dublin-for-ai-summit-next-week">Brussels Times: EU leaders to meet in Dublin for AI summit</a></li>
+          <li><a href="https://www.lovguiden.dk/en/det-offentlige/raadet-for-den-europaeiske-union/2026-11-03-eu-leaders-meet-in-dublin-on-artificial-intelligence-sovereignty-and-safety">Lovguiden: EU leaders meet in Dublin on AI sovereignty and safety</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">5 Nov (open weights pending)</span></div>
+    <h3>Thinking Machines ships Inkling 2 Small closed, promises Apache 2.0 weights</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A US lab may soon offer a frontier-class open-weight option; do not plan on it until the weights are actually published.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Inkling 2 Small (reported 594B-parameter mixture-of-experts, 17B active) launched on 5 November on the Tinker platform with closed weights. The lab says it will publish Apache 2.0 checkpoints after external safety testing; sources say next week or mid-November. That is a stated plan. I found no confirmation the weights are out as of 15 November. Specs and the earlier July Inkling Small are sometimes confused in coverage.</p>
+        <ul class="sources">
+          <li><a href="https://letsdatascience.com/news/thinking-machines-lab-releases-inkling-2-small-a-594b-moe-mo-2b2a96ce">Let&rsquo;s Data Science: Inkling 2 Small released</a></li>
+          <li><a href="https://runtimewire.com/article/thinking-machines-inkling-2-small-open-weights">Runtime Wire: Inkling 2 Small, closed weights</a></li>
+          <li><a href="https://www.webpronews.com/thinking-machines-inkling-2-small-tinker-apache-weights/">WebProNews: Apache 2.0 weights planned</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Legal</span><span class="when">Ongoing (filed 18 Sep)</span></div>
+    <h3>Antitrust suit says Anthropic, OpenAI, SpaceXAI and Google colluded to slow AI</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Safety coordination between rivals now carries antitrust risk, which matters as labs discuss shared limits and a federal framework.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Background: four paying subscribers filed Buist et al. v. Anthropic PBC et al. (N.D. Cal., 26-cv-10693) on 18 September, seeking class status, damages and an injunction. They argue a joint slowdown reduces what subscribers get; they do not object to a single company slowing down. The suit followed a September essay by Dario Amodei that Altman, Musk and Hassabis publicly backed. No ruling found.</p>
+        <ul class="sources">
+          <li><a href="https://www.tomshardware.com/tech-industry/big-tech/anthropic-openai-spacexai-and-google-face-antitrust-lawsuit-for-agreeing-to-slow-ai-development-plaintiffs-say-plan-has-been-in-motion-for-months-before-calls-agreement-self-serving">Tom&rsquo;s Hardware: AI labs face antitrust lawsuit</a></li>
+          <li><a href="https://www.euronews.com/next/2026/09/21/for-once-big-tech-agreed-on-something-now-its-being-sued-for-it">Euronews: Big tech agreed on something, now it is being sued</a></li>
+          <li><a href="https://www.koreatimes.co.kr/world/20260920/lawsuit-says-anthropic-openai-spacexai-and-google-made-illegal-agreement-on-ai-slowdown">Korea Times (AP): Lawsuit says labs made illegal agreement</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 15 November 2026. Quiet-day note: several widely circulated claims could not be confirmed from primary sources and were left out.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
