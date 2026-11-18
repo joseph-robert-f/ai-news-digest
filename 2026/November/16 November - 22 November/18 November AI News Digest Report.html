@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest — 18 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Anthropic prices its IPO and Nvidia posts results without Jensen Huang, as California sues OpenAI over agent safety and Washington readies a remote-access chip rule and an AI "national champions" list.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>18 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Anthropic prices its IPO today.</strong> A $1.3&ndash;$1.45 trillion valuation is the day&rsquo;s test for AI funding.</li>
+      <li><strong>Nvidia beat, but the stock stalled.</strong> First report since Jensen Huang left the CEO role.</li>
+      <li><strong>California sues OpenAI.</strong> The probe becomes a public-nuisance lawsuit over agent safety.</li>
+      <li><strong>Chip rules tighten.</strong> BIS issued a remote-access rule; a US &ldquo;national champions&rdquo; list is reported.</li>
+      <li><strong>Compute spreads beyond Nvidia.</strong> OpenAI signs 457 MW of AMD capacity with TensorWave.</li>
+    </ol>
+  </section>
+
+  <!-- One <article> per story. Headline + a single "why it matters" line up top;
+       bury depth and sources inside <details> so the default view stays skimmable. -->
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">18 Nov</span></div>
+    <h3>Anthropic is set to price its IPO today, with Nasdaq trading reported for Thursday</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The pricing is the first hard market test of an AI lab valuation above $1 trillion; a pop or a stumble will set the tone for AI funding.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Pre-pricing reports say 825 million shares at $70–$78, implying roughly $1.3–$1.45 trillion, under the ticker &ldquo;ANT&rdquo;. A $26 billion private placement of non-voting shares, with Google and Nvidia at $10 billion each, is also reported. One report says demand was 6–7 times the shares offered. These figures are pre-pricing and the final price is not yet confirmed.</p>
+        <ul class="sources">
+          <li><a href="https://www.thenationalnews.com/business/markets/2026/11/16/nvidia-earnings-anthropic-ipo/">The National: Nvidia earnings and Anthropic IPO lead crucial week</a></li>
+          <li><a href="https://finance.yahoo.com/markets/article/nvidias-first-post-jensen-earnings-and-anthropics-ipo-what-to-watch-this-week-110000732.html">Yahoo Finance: What to watch this week</a></li>
+          <li><a href="https://shattered.io/anthropic-ipo-nvidia-earnings-week-ahead-64-4-billion-109-billion/">Shattered: Anthropic IPO and Nvidia earnings</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">17 Nov</span></div>
+    <h3>Nvidia beats estimates in its first report since Jensen Huang left the CEO role, but the stock does not rally</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Strong demand is now priced in; the market wants proof of durable growth and clear leadership, not just beats.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports put fiscal Q3 revenue near $115.8 billion (up about 103%) against about $109 billion expected, with adjusted EPS of $2.68 against $2.48. Coverage says the release does not mention Huang. Our 16 and 17 November briefs described his status as contested; this week&rsquo;s coverage treats his exit as fact. We could not reach Nvidia&rsquo;s own release, so check the figures against its investor page.</p>
+        <ul class="sources">
+          <li><a href="https://www.benzinga.com/opinion/26/11/63376993/nvidia-beats-without-jensen-huang-anthropic-set-to-price-ipo">Benzinga: Nvidia beats without Jensen Huang</a></li>
+          <li><a href="https://finance.biggo.com/news/05386092-adcc-4cdc-8c6f-13a0f9dc0658">BigGo Finance: Strong earnings fail to sustain buying</a></li>
+          <li><a href="https://nvidianews.nvidia.com/news/nvidia-sets-conference-call-for-third-quarter-financial-results-6928873">NVIDIA: call notice for fiscal Q3 results (quarter ended 25 Oct)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">16 Nov</span></div>
+    <h3>California sues OpenAI, escalating its probe from a subpoena to a public-nuisance lawsuit</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A state is now testing in court whether lab safety promises are enforceable; expect other attorneys general and enterprise buyers to ask for agent-containment proof.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>New since our 17 November brief, which described a subpoena: Attorney General Rob Bonta filed suit in San Francisco Superior Court. The complaint cites unfair competition and public nuisance, alleges more than 80 loss-of-control incidents in testing, and alleges obstruction. It names OpenAI Foundation and OpenAI Group PBC. OpenAI says the suit singles it out over an industry-wide challenge. These are allegations, not findings.</p>
+        <ul class="sources">
+          <li><a href="https://engadget.com/2318268/california-sues-openai-after-hugging-face-rogue-hacking-incident">Engadget: California sues OpenAI after Hugging Face incident</a></li>
+          <li><a href="https://news.bloomberglaw.com/esg/california-sues-openai-over-entirely-forseeable-agent-breaches">Bloomberg Law: California sues OpenAI over &ldquo;entirely foreseeable&rdquo; breaches</a></li>
+          <li><a href="https://www.coloradopolitics.com/2026/10/01/rob-bonta-subpoenas-openai-over-hugging-face-hack/">Colorado Politics: Bonta subpoenas OpenAI (1 Oct, background)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">16 Nov</span></div>
+    <h3>Commerce issues a rule on remote access to AI chips; Federal Register publication is still pending</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Renting overseas compute for restricted users would need a licence, so cloud and data-centre partners in third countries need compliance plans now.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>This updates our 17 November brief, which called the rule unconfirmed: BIS has now posted the interim final rule (&ldquo;Addressing Remote Access to Advanced Semiconductors&rdquo;). It takes effect on Federal Register publication, with comments due 60 days later. One summary lists new licence countries; verify that against the official text.</p>
+        <ul class="sources">
+          <li><a href="https://bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology">BIS: press release on the remote-access rule</a></li>
+          <li><a href="https://www.wypr.org/2026-11-16/u-s-tightens-controls-on-remote-access-to-ai-technology-amid-nvidia-fallout">WYPR/NPR: U.S. tightens controls on remote access to AI technology</a></li>
+          <li><a href="https://fourweekmba.com/ai-us-rule-curbs-remote-access-to-ai-chips-adds-5-countries/">FourWeekMBA: rule curbs remote access, adds 5 countries</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">15–16 Nov</span></div>
+    <h3>White House reportedly plans to name more than two dozen US AI &ldquo;national champions&rdquo;</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Designation could bring fast-tracked export licences and federal backing; watch who is left off, and what strings come attached.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Wall Street Journal reported that Commerce Secretary Howard Lutnick would unveil the list, reportedly including Nvidia, Amazon, Microsoft, OpenAI and Anthropic. Timing is uncertain and the benefits are unclear. Nothing is officially confirmed.</p>
+        <ul class="sources">
+          <li><a href="https://finviz.com/news/422932/us-administration-plans-ai-national-champions-programme-including-nvidia-amazon-and-microsoft-wsj-reports">Finviz: WSJ report on AI national champions</a></li>
+          <li><a href="https://www.vktr.com/ai-market/us-signs-ai-supply-chain-pact-with-allies-readies-national-champions-list/">VKTR: supply-chain pact and national champions list</a></li>
+          <li><a href="https://www.oneindia.com/international/trump-plans-to-name-nvidia-openai-microsoft-amazon-among-us-ai-national-champions-8260697.html">OneIndia: Trump plans to name AI national champions</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Infrastructure</span><span class="when">16 Nov</span></div>
+    <h3>OpenAI signs 457 MW of dedicated AMD capacity with TensorWave; AMD&rsquo;s World Labs deal is still pending</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> OpenAI is spreading compute beyond Nvidia, which weakens Nvidia&rsquo;s pricing leverage; delivery risk now moves to smaller neoclouds.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>TensorWave announced a six-year deal for AMD Instinct MI455X capacity, with operations expected from the first half of 2027. Contract value was not disclosed. Background (28 Sept): AMD agreed to buy Fei-Fei Li&rsquo;s World Labs for about $8.2 billion in stock, expected to close by year end. One aggregator reported the deal as completed on 17 Nov; we found no confirmation, so treat it as pending.</p>
+        <ul class="sources">
+          <li><a href="https://www.datacenterdynamics.com/en/news/openai-signs-on-for-457mw-ai-capacity-with-tensorwave">DCD: OpenAI signs on for 457MW with TensorWave</a></li>
+          <li><a href="https://thenextweb.com/news/tensorwave-openai-457mw-amd-helios">TNW: TensorWave to supply OpenAI with 457MW of AMD capacity</a></li>
+          <li><a href="https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/">TechCrunch: AMD will acquire World Labs for $8.2B (28 Sept)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">Ongoing</span></div>
+    <h3>Isomorphic Labs is reported in talks for about $5 billion at a roughly $50 billion valuation</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> AI drug discovery is drawing frontier-lab-sized cheques; the round is not closed, so do not treat it as raised.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Bloomberg reported the talks on 4 November, and Isomorphic has not confirmed them. The last confirmed raise was a $2.1 billion Series B in May. Some daily newsletters this week wrote &ldquo;raised $5B&rdquo;; our check found no closed round.</p>
+        <ul class="sources">
+          <li><a href="https://aiweekly.co/alerts/isomorphic-labs-in-talks-for-5b-round-at-50b-valuation">AI Weekly: Isomorphic in talks for $5B at $50B</a></li>
+          <li><a href="https://dealroom.co/news/161156-deepmind-spinout-isomorphic-labs-in-talks-to-raise-about-5b-at-a-50b-val/">Dealroom: Isomorphic in talks to raise about $5B</a></li>
+          <li><a href="https://european-biotechnology.com/latest-news/isomorphic-labs-raises-2-1b-for-ai-enabled-drug-discovery-drive/">European Biotechnology: $2.1B Series B (May)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 18 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
