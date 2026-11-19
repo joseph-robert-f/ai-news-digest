@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 19 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Anthropic priced its IPO at $83 and starts trading on Nasdaq today, while OpenAI ships GPT-6.2, a US remote-access chip rule takes effect, and AI-debt risk transfer grows.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>19 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Anthropic priced at $83.</strong> Above the $70&ndash;78 range, about $1.5T valuation; Nasdaq trading as ANT starts today.</li>
+      <li><strong>OpenAI ships GPT-6.2 Astra and Sol.</strong> Reported live in ChatGPT and the API since 17 November, with the Critical cyber tier.</li>
+      <li><strong>Chip rule hits cloud access.</strong> Commerce reportedly issued an interim final rule on remote access to AI chips; legal authority is contested.</li>
+      <li><strong>Financing strain shows.</strong> A $480M ByteDance chip loan is reportedly frozen; Barclays seeks cover on $10B+ of AI loans.</li>
+      <li><strong>Treat Gemini 4 &ldquo;Neon&rdquo; as a rumour.</strong> It is a code reference, not a Google announcement.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">18&ndash;19 Nov</span></div>
+    <h3>Anthropic prices its IPO at $83 a share, above range</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The largest listing on record is a live test of whether public markets will pay AI-lab multiples; ANT&rsquo;s first-day trading sets the tone for OpenAI&rsquo;s listing.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports say 980 million shares were priced at $83 (range was $70&ndash;78), valuing Anthropic near $1.5 trillion, with proceeds of about $81 billion, ahead of SpaceX&rsquo;s roughly $75 billion June IPO. Goldman Sachs and Morgan Stanley lead. Trading on Nasdaq as ANT is due today; first-day results were not available when this brief was written. Totals differ by source if a private placement is included.</p>
+        <ul class="sources">
+          <li><a href="https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html">CNBC: Anthropic IPO raises over $81 billion</a></li>
+          <li><a href="https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/">TechCrunch: Anthropic prices IPO at $83 a share</a></li>
+          <li><a href="https://www.pbs.org/newshour/economy/anthropic-prices-its-ipo-at-83-per-share-valuing-the-ai-giant-at-1-5-trillion">AP via PBS: IPO values Anthropic at $1.5 trillion</a></li>
+          <li><a href="https://www.rttnews.com/3716267/anthropic-prices-ipo-at-83-per-share.aspx">RTTNews: Anthropic prices IPO at $83 per share</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">17 Nov</span></div>
+    <h3>OpenAI releases GPT-6.2 Astra and GPT-6.2 Sol</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A cheaper, stronger top-tier model resets price-performance for coding and document work, and the Critical cyber rating adds a compliance question for enterprise buyers.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reports say both models went live in ChatGPT and the API on 17 November. Astra targets demanding work and is claimed to beat its predecessor at under a third of the cost; both are rated Critical for cybersecurity under OpenAI&rsquo;s Preparedness Framework. Claims are vendor-reported; test on your own workloads.</p>
+        <ul class="sources">
+          <li><a href="https://siliconangle.com/?p=854681">SiliconANGLE: OpenAI GPT-6.2 launch</a></li>
+          <li><a href="https://cryptobriefing.com/openai-launches-gpt-6-2-astra-sol/">Crypto Briefing: OpenAI launches GPT-6.2 Astra and Sol</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">16&ndash;19 Nov</span></div>
+    <h3>US remote-access chip rule reportedly takes effect immediately</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Renting GPUs in third countries for Chinese customers may now need a licence, so cloud and neocloud contracts need a compliance review.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Update to the 18 November item that said publication was pending: coverage now describes an interim final rule dated 16 November, &ldquo;Addressing Remote Access to Advanced Semiconductors&rdquo;, effective immediately. Reported scope includes licences for chips going to data centres that serve China, and added licensing for shipments to Singapore, Malaysia, Indonesia, Thailand and Brazil. Details come from secondary coverage; the Federal Register text was not confirmed. Export-control lawyers have questioned whether Commerce has authority over remote access. The Remote Access Security Act passed the House 369&ndash;22 in January.</p>
+        <ul class="sources">
+          <li><a href="https://www.bostonglobe.com/2026/11/16/nation/trump-block-china-indirect-access-american-ai-technology/">Boston Globe: Trump moves to block China&rsquo;s indirect access</a></li>
+          <li><a href="https://www.techrepublic.com/article/news-us-ai-chip-cloud-access-restrictions/">TechRepublic: US targets AI chip cloud loophole</a></li>
+          <li><a href="https://tomshardware.com/tech-industry/artificial-intelligence/new-us-rules-aim-to-restrict-remote-access-to-ai-servers-and-infrastructure-seeks-to-combat-cloud-rental-workarounds-to-gpu-export-controls">Tom's Hardware: new US rules on remote access to AI servers</a></li>
+          <li><a href="https://letsdatascience.com/news/commerce-department-reportedly-finalizing-rule-blocking-chin-4894721b">Let&rsquo;s Data Science: Commerce finalizing rule</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Chips</span><span class="when">17 Nov</span></div>
+    <h3>Lenders reportedly freeze a $480M Nvidia-chip loan for ByteDance</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Banks are pricing export-rule risk into AI financing, so expect slower credit for any buyer with China exposure.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Bloomberg is reported to say the loan is paused, not cancelled, because lenders fear it could breach the new US rule. This rests on anonymous sources and I found no second outlet. One aggregator also said Nvidia stopped some China shipments; I could not verify that.</p>
+        <ul class="sources">
+          <li><a href="https://letsdatascience.com/news/banks-reportedly-pause-480-million-nvidia-chip-loan-tied-to-64e77bce">Let&rsquo;s Data Science: Banks reportedly pause $480M loan</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">Ongoing (since late Oct)</span></div>
+    <h3>Barclays seeks insurance on $10B+ of AI infrastructure loans</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Banks are moving AI data-centre credit risk off their books, and thin insurer capacity may raise financing costs for builders.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Older background, reported 29&ndash;30 October. Barclays has sounded out insurers on default cover for more than $10 billion of AI-infrastructure loans. Premiums are reported at 50&ndash;70% of what banks earn on that exposure, and some insurers say data-centre capacity is near full. Deutsche Bank and Morgan Stanley are reported to be exploring similar transfers.</p>
+        <ul class="sources">
+          <li><a href="https://www.insurancebusinessmag.com/us/news/breaking-news/ai-lending-surge-tests-credit-insurance-capacity-as-banks-seek-cover-596963.aspx">Insurance Business: AI lending surge tests credit insurance capacity</a></li>
+          <li><a href="https://www.insurancejournal.com/news/international/2026/10/29/890719.htm">Insurance Journal: AI lending and risk transfer</a></li>
+          <li><a href="https://letsdatascience.com/news/barclays-reportedly-seeks-insurance-on-10b-of-ai-data-center-009c4335">Let&rsquo;s Data Science: Barclays seeks insurance</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">10&ndash;14 Nov</span></div>
+    <h3>Mega-rounds keep coming: Mercor, Mirendil, LangChain</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Capital is concentrating in agent tooling, data and talent-led labs, which sets the price of your vendors and rivals.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Mercor said on 10 November it raised $750 million at a $20 billion valuation. Mirendil, founded by former Anthropic researchers, reportedly raised $1 billion led by Kleiner Perkins and Clearlake. LangChain confirmed $300 million at a $3 billion valuation on 13 November. A reported $15 billion OpenAI raise at $1.25 trillion is not confirmed by OpenAI. Roundups disagree on totals.</p>
+        <ul class="sources">
+          <li><a href="https://beststartup.us/us-startup-funding-november-2026/?noamp=mobile">Start-up funding roundup, November 2026</a></li>
+          <li><a href="https://aifunding.me/insights/november-2026">AI funding, November 2026</a></li>
+          <li><a href="https://fourweekmba.com/ai-rounds-of-100m-raised-5-59b-in-a-week-1-7x-the-last/">Four Week MBA: weekly AI rounds</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">16 Nov</span></div>
+    <h3>&ldquo;Gemini 4 Neon&rdquo; is a code sighting, not a launch</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Do not plan around Gemini 4 yet; some daily digests called it released, but Google has announced nothing.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>A reference was spotted in Gemini web code and flagged on 16 November. Google DeepMind&rsquo;s Koray Kavukcuoglu has said Gemini 4 is in early post-training and could ship before year-end. Claims of a release conflict across sources; check Google&rsquo;s blog and API notes.</p>
+        <ul class="sources">
+          <li><a href="https://investinglive.com/stocks/google-readies-gemini-4-launch-as-it-seeks-to-regain-ground-in-the-ai-model-race/">InvestingLive: Google readies Gemini 4 launch</a></li>
+          <li><a href="https://www.infoworld.com/article/4226642/google-plans-gemini-4-release-before-year-end-2.html">InfoWorld: Google plans Gemini 4 release before year-end</a></li>
+          <li><a href="https://www.infoworld.com/article/4229615/google-makes-gemini-4-ai-model-available-to-a-trusted-few.html">InfoWorld: Gemini 4 to a trusted few</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Research</span><span class="when">Background: 27 Oct</span></div>
+    <h3>Genie 4 is still a research preview, not a consumer product</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Real-time interactive world models are real, but a consumer date is not set, so treat it as a trusted-tester tool.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Older background. DeepMind announced Genie 4 on 27 October with real-time audio and steering, open to trusted testers. Google plans Project Genie access for AI Ultra subscribers; one 19 November digest said consumers got it, but I found no date or confirmation.</p>
+        <ul class="sources">
+          <li><a href="https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/">Google DeepMind: Genie 4</a></li>
+          <li><a href="https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/">TechCrunch: Genie 4 adds audio and real-time steering</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 19 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
