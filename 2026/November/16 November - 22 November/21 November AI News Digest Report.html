@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 21 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Microsoft pushed its own MAI coding models and agent governance at Ignite, OpenAI showed Codex agents triaging ChatGPT regressions, Nvidia halted licensed Hopper shipments to China, and Deutsche Telekom put €100M into Mistral.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>21 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Microsoft goes first-party.</strong> Ignite brought MAI Code 2 models and Agent 365 controls for managing agents.</li>
+      <li><strong>Agents fix agents.</strong> OpenAI says Codex agents root-caused 600+ ChatGPT performance regressions.</li>
+      <li><strong>China chip supply.</strong> Nvidia says it no longer ships licensed Hopper chips to China.</li>
+      <li><strong>Europe&rsquo;s sovereign AI.</strong> Deutsche Telekom invests &euro;100M in Mistral&rsquo;s Series D.</li>
+      <li><strong>Quiet Saturday.</strong> Anthropic IPO and chip-rule follow-ups are in the 19 and 20 November briefs.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer platforms</span><span class="when">17 Nov</span></div>
+    <h3>Microsoft ships MAI Code 2 and Code 2 Flash, its own coding models</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Microsoft is building a first-party model option next to its partner models in GitHub Copilot. Expect pricing and vendor-mix talks to change.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Coverage describes Code 2 as an agentic coding model and Code 2 Flash as the cheaper, high-volume option. Reports say both are generally available in GitHub Copilot. Foundry availability differs between reports, so check Microsoft&rsquo;s own pages before you plan around it.</p>
+        <ul class="sources">
+          <li><a href="https://www.aichatdaily.com/ai-models/microsoft-unveils-code-2-coding-models-cyber-2">AI Chat Daily: Microsoft unveils Code 2 coding models, Cyber 2</a></li>
+          <li><a href="https://www.thurrott.com/?p=343999">Thurrott: Ignite 2026, Microsoft AI announces 7 new models</a></li>
+          <li><a href="https://windowsforum.com/news/microsoft-ignite-2026-mai-code-2-and-new-ai-models-target-lower-costs.452751/">Windows Forum: MAI Code 2 and new models target lower costs</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Agents</span><span class="when">17 Nov</span></div>
+    <h3>Microsoft Agent 365 adds cost and business analytics; Entra agent identity reaches GA</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Agent sprawl is now a governance and budget problem. Identity, cost and outcome tracking for agents is becoming standard enterprise tooling.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Nadella reportedly said Agent 365 already tracks more than 50 million agents. Reports list Business Analytics and Cost Management features. These are early event reports; the final Microsoft recap may differ.</p>
+        <ul class="sources">
+          <li><a href="https://www.constellationr.com/insights/news/ignite-2026-microsoft-makes-case-be-your-work-operating-system-intelligence-layer">Constellation Research: Microsoft makes the case to be your work operating system</a></li>
+          <li><a href="https://rcpmag.com/articles/2026/11/17/microsoft-ignite-2026-nadella-makes-the-case.aspx">RCPmag: Ignite 2026, Nadella makes the case</a></li>
+          <li><a href="https://aiweekly.co/alerts/microsoft-ignite-opens-agent-365-azure-catalyst-and-entra-agent-identity-ga-for">AI Weekly: Agent 365, Azure Catalyst and Entra Agent Identity GA</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Research &amp; engineering</span><span class="when">19 Nov</span></div>
+    <h3>OpenAI details &ldquo;Performance Factory&rdquo;: Codex agents that fix ChatGPT regressions</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> This is a concrete, measured case of agents running production operations. The adversarial-review step is a pattern to copy.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>A summary of OpenAI&rsquo;s post says the workflow root-caused over 600 cases in about three months, around 17 investigations a day. Early agents sometimes stopped at the first plausible cause, so OpenAI added a second Codex session that tries to disprove each diagnosis. The figures come from a secondary summary of the post.</p>
+        <ul class="sources">
+          <li><a href="https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/">OpenAI: How the Performance Factory keeps ChatGPT fast</a></li>
+          <li><a href="https://letsdatascience.com/news/openai-details-performance-factory-its-codex-system-for-fixi-2e32dbed">Let&rsquo;s Data Science: OpenAI details Performance Factory</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Chips &amp; policy</span><span class="when">17 Nov</span></div>
+    <h3>Nvidia says it no longer ships licensed Hopper chips to China</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> China is out of Nvidia&rsquo;s guidance for these products, even though the US approved H200 sales. Plan for no China-side demand from this line.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>This was disclosed on the 17 November earnings call; this brief did not cover that call&rsquo;s China detail before. Reports say Nvidia sold $2.4B of licensed Hopper products to China in the quarter to 25 October. Nvidia gave no reason. Reports also say Beijing restricted H200 imports, but no source links the two. The remote-access chip rule is in the 18&ndash;20 November briefs.</p>
+        <ul class="sources">
+          <li><a href="https://www.tweaktown.com/news/114771/nvidia-stops-shipping-licensed-hopper-ai-chips-including-h200-to-china/index.html">TweakTown: Nvidia stops shipping licensed Hopper AI chips to China</a></li>
+          <li><a href="https://www.techrepublic.com/article/news-nvidia-h200-ai-chip-sales-china-stalled/">TechRepublic: US approves Nvidia H200 sales to China, shipments stalled</a></li>
+          <li><a href="https://www.inquirer.com/news/nation-world/ai-chip-loophole-nvidia-trump-administration-china-commerce-lutnick-bessent-20261116.html">Inquirer (NYT): the Commerce data-center chip rule</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">19 Nov</span></div>
+    <h3>Deutsche Telekom invests &euro;100M in Mistral&rsquo;s Series D</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A large European carrier is tying its sovereign-cloud offer to a European model vendor. That is a real alternative for EU buyers with data-residency rules.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Telekom&rsquo;s T.Capital Tech Fund made the investment. Telekom calls it a first step toward a wider partnership. Secondary sources put the full round at about &euro;3B; Telekom did not state the round size or its stake in its release, so treat those as unconfirmed.</p>
+        <ul class="sources">
+          <li><a href="https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/11/deutsche-telekom-advances-sovereign-ai-in-germany">Deutsche Telekom: advances sovereign AI in Germany</a></li>
+          <li><a href="https://www.telecomtv.com/content/ai/deutsche-telekom-advances-sovereign-ai-in-germany-t-capital-tech-fund-invests-in-mistral-56713/">TelecomTV: T.Capital Tech Fund invests in Mistral</a></li>
+          <li><a href="https://www.boerse-online.de/dpa-afx/deutsche-telekom-beteiligt-sich-an-mistral-ai-567253.html">dpa-AFX via B&ouml;rse Online: Telekom beteiligt sich an Mistral AI</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 21 November 2026. A quiet Saturday: five stories, not more.</footer>
+</main>
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,7 +1,16 @@
 {
-  "generated": "2026-11-20T10:42:35.781Z",
-  "count": 125,
+  "generated": "2026-11-21T10:42:39.138Z",
+  "count": 126,
   "digests": [
+    {
+      "date": "2026-11-21",
+      "title": "AI News Digest — 21 November 2026",
+      "path": "2026/November/16 November - 22 November/21 November AI News Digest Report.html",
+      "year": 2026,
+      "month": "November",
+      "week": "16 November - 22 November",
+      "summary": "Microsoft pushed its own MAI coding models and agent governance at Ignite, OpenAI showed Codex agents triaging ChatGPT regressions, Nvidia halted licensed Hopper shipments to China, and Deutsche Telekom put €100M into Mistral."
+    },
     {
       "date": "2026-11-20",
       "title": "AI News Digest — 20 November 2026",
