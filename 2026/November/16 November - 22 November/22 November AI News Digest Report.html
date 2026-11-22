@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 22 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="A quiet Sunday: a House committee published licence data showing about 879,000 Nvidia and AMD chips approved for China, Google gave Gemini computer use on the Mac, Dutch regulators warned against AI camera glasses, and Meta is re-evaluating its 2030 net-zero goal after a 45% emissions jump.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>22 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Chips.</strong> A House panel says Commerce approved about 879,000 Nvidia and AMD chips for China.</li>
+      <li><strong>Agents.</strong> Gemini for Mac can now operate desktop apps and websites.</li>
+      <li><strong>Devices.</strong> Dutch regulator advises consumers not to buy AI camera glasses.</li>
+      <li><strong>Power.</strong> Meta emissions rose 45%; its 2030 net-zero goal is under review.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy &middot; Chips</span><span class="when">19 Nov</span></div>
+    <h3>House panel publishes licences: about 879,000 Nvidia and AMD chips approved for China</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The approvals are far larger than the shipments seen so far, so export-control rules and congressional pressure matter more to China-facing revenue than headline licence counts do.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The House Foreign Affairs Committee, chaired by Brian Mast, released Commerce Department licence records. They show approvals covering 879,000 Nvidia and AMD chips for Chinese firms between December 2025 and May 2026, including 75,000 for Alibaba, 150,000 for Tencent, 43,000 for Baidu and 4,000 for BYD. Companies had sought about 3.4 million. Some approvals covered firms the Pentagon lists as Chinese military companies. Nvidia said the licences carried strict conditions and limited volumes, and that &ldquo;despite receiving some licenses, we have since stopped shipping H200s to China.&rdquo; <strong>What is new:</strong> the 21 November digest covered Nvidia ending licensed Hopper shipments; this item adds the scale of what Commerce had approved. The committee&rsquo;s own numbers come via press reports; we did not see the primary release, so treat exact totals as reported figures.</p>
+        <ul class="sources"><li><a href="https://www.thestandard.com.hk/world/article/349075/US-signed-off-on-sales-of-nearly-900000-AI-chips-to-China-in-six-months-committee-says">The Standard (HK): US signed off on sales of nearly 900,000 AI chips to China, committee says</a></li><li><a href="https://tradersunion.com/news/regulators/show/4328119-us-export-ai-chips-china/">Traders Union: US export approvals cover more than 879,000 AI chips for China, House panel says</a></li><li><a href="https://aiweekly.co/alerts/house-foreign-affairs-chair-mast-discloses-commerce-approved-879000-nvidia-and">AI Weekly: Mast discloses Commerce approved 879,000 Nvidia and AMD AI chips for China</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Product &middot; Agents</span><span class="when">19 Nov</span></div>
+    <h3>Gemini for Mac can now operate desktop apps and websites for you</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Google now matches OpenAI and Anthropic on desktop agents, which moves the competition to permissions, auditability and which tasks IT will allow an agent to run.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Google began rolling out computer use in the Gemini Mac app on 19 November. Users add &ldquo;@Computer use&rdquo; to a prompt and Gemini clicks, types and fills in forms in an isolated background window. It is limited to US English, personal accounts and Google AI Plus, Pro and Ultra subscribers on Apple-silicon Macs. Users pick which apps Gemini can reach, can stop it at any time, and approve sensitive actions first. Google&rsquo;s post does not say which model powers it.</p>
+        <ul class="sources"><li><a href="https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/">Google blog: Let Gemini tackle repetitive chores on your Mac</a></li><li><a href="https://9to5google.com/2026/11/19/gemini-mac-computer-use/">9to5Google: Gemini Mac computer use</a></li><li><a href="https://siliconangle.com/2026/11/19/google-adds-computer-use-capabilities-to-geminis-mac-app/">SiliconANGLE: Google adds computer use capabilities to Gemini&rsquo;s Mac app</a></li><li><a href="https://ppc.land/gemini-can-now-operate-mac-apps-in-a-background-window-from-4-99/">PPC Land: Gemini can now operate Mac apps in a background window</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Regulation &middot; Devices</span><span class="when">19 Nov</span></div>
+    <h3>Dutch privacy regulator tells consumers not to buy AI camera glasses</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> A regulator citing a hallucinated emergency call, not only privacy, is a new kind of product-safety argument that could shape rules for AI wearables in the EU.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Dutch data protection authority (AP) tested six camera-equipped AI glasses. In a simulated resuscitation, one pair said it had called 112 and that an ambulance was coming, which the AP called a hallucination. It also cited hidden recording and hacking risk, and repeated its call for bans in hospitals, courts and places of worship. The advice is not binding, and the AP did not name the six models. Related background: consumer groups sued Meta in October over its glasses, with a preliminary hearing on 26 November, and two Dutch retailers paused sales.</p>
+        <ul class="sources"><li><a href="https://nltimes.nl/node/93265">NL Times: Dutch regulator advises against AI camera glasses</a></li><li><a href="https://www.insurancejournal.com/news/international/2026/11/19/893118.htm">Insurance Journal: 19 Nov 2026 report</a></li><li><a href="https://www.analyticsinsight.net/news/why-dutch-privacy-officials-are-warning-against-smart-glasses">Analytics Insight: Why Dutch privacy officials are warning against smart glasses</a></li><li><a href="https://www.ibtimes.co.uk/dutch-retailers-pull-meta-ai-glasses-amid-covert-filming-fears-nonprofits-demand-sales-halt-1823415">IBTimes UK: Dutch retailers pull Meta AI glasses</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Infrastructure &middot; Climate</span><span class="when">19 Nov</span></div>
+    <h3>Meta&rsquo;s emissions rose 45% and it is &ldquo;re-evaluating&rdquo; its 2030 net-zero goal</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> AI capacity growth is now colliding with public climate pledges at a hyperscaler, so expect more gas-backed power deals and tougher questions on data-centre permits.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Meta&rsquo;s 2026 sustainability report shows greenhouse gas emissions up 45% and electricity use up 35%. Executives said they are reviewing timelines and milestones for the 2030 net-zero goal, and gave no replacement target. Meta backs new gas capacity, including seven proposed Entergy units in Louisiana (over 5,200 MW) and a 200 MW plant approved in Ohio. Water use fell 4% overall but rose 24% in highly water-stressed regions.</p>
+        <ul class="sources"><li><a href="https://axios.com/2026/11/19/meta-ai-emissions-rise">Axios: Meta rethinks climate goal as AI emissions soar 45%</a></li><li><a href="https://letsdatascience.com/news/meta-reconsiders-2030-net-zero-goal-after-45-emissions-jump-0375f9bd">Let&rsquo;s Data Science: Meta reconsiders 2030 net-zero goal after 45% emissions jump</a></li><li><a href="https://trellis.net/article/meta-2026-sustainability-report/">Trellis: Meta 2026 sustainability report</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Quiet Sunday: four verified stories. Items we could not corroborate (a reported market selloff, a claimed Riemann proof, and a Thinking Machines launch) were left out. Generated 22 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
