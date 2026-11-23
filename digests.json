@@ -1,7 +1,16 @@
 {
-  "generated": "2026-11-22T10:44:17.565Z",
-  "count": 127,
+  "generated": "2026-11-23T10:42:49.515Z",
+  "count": 128,
   "digests": [
+    {
+      "date": "2026-11-23",
+      "title": "AI News Digest — 23 November 2026",
+      "path": "2026/November/23 November - 29 November/23 November AI News Digest Report.html",
+      "year": 2026,
+      "month": "November",
+      "week": "23 November - 29 November",
+      "summary": "Public-market enthusiasm for AI cooled after Anthropic's record IPO, OpenAI published data showing agents now finish 46% of multi-hour research tasks and launched ChatGPT for Sales, and Dragos found prompts leaking through AI hosting providers and resellers."
+    },
     {
       "date": "2026-11-22",
       "title": "AI News Digest — 22 November 2026",

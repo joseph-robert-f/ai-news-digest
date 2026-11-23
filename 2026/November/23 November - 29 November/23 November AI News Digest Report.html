@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 23 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Public-market enthusiasm for AI cooled after Anthropic's record IPO, OpenAI published data showing agents now finish 46% of multi-hour research tasks and launched ChatGPT for Sales, and Dragos found prompts leaking through AI hosting providers and resellers.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>23 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>AI trade cools.</strong> The S&amp;P 500 fell six straight days even after Anthropic's record $81.3B IPO.</li>
+      <li><strong>Agents gain ground.</strong> OpenAI says agents finish 46% of 2–4 hour research tasks, up from 23% in March.</li>
+      <li><strong>Agents reach sales teams.</strong> OpenAI launched ChatGPT for Sales with a Sales plugin and 30+ partner plugins.</li>
+      <li><strong>Prompt privacy risk.</strong> Dragos traced seeded prompts to at least three compromised AI hosting providers.</li>
+      <li><strong>Open-weight watch.</strong> Thinking Machines' Inkling 2 Small is closed for now; open weights are promised.</li>
+    </ol>
+  </section>
+
+  <!-- One <article> per story. Headline + a single "why it matters" line up top;
+       bury depth and sources inside <details> so the default view stays skimmable. -->
+  <!-- Keep the story date visible in .when. Use "Ongoing" for continuing
+       stories and label older background explicitly when useful. -->
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">20 Nov (ongoing)</span></div>
+    <h3>AI stocks wobble even after the largest IPO on record</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Anthropic's debut did not revive risk appetite, so expect valuation scrutiny across AI names, and read chip-export risk as a live driver.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Anthropic priced 980 million shares at $83 (above the $70–$78 range) and raised $81.3 billion. Underwriters hold a 30-day option on about 147 million more shares. One aggregator says that option was fully exercised; this digest could not confirm it in a primary filing. Bloomberg's market wrap said the S&amp;P 500 fell for a sixth straight day, its longest slide since April 2024, while the shares held about 17% above the IPO price. Alibaba warned that US chip limits may curb growth, and AMD fell after a short-seller report it denies.</p>
+        <ul class="sources">
+          <li><a href="https://www.bostonglobe.com/2026/11/19/business/anthropic-sells-813-billion-worth-shares-worlds-largest-ipo/">Boston Globe: Anthropic sells $81.3B of shares</a></li>
+          <li><a href="https://www.renaissancecapital.com/IPO-Center/News/122776/Anthropic-prices-upsized-IPO-at-$83-above-the-range">Renaissance Capital: upsized IPO priced at $83</a></li>
+          <li><a href="https://www.koreatimes.co.kr/world/20261120/wall-st-slides-as-anthropics-debut-fails-to-revive-ai-trade-optimism">Korea Times: Wall St slides as Anthropic's debut fails to revive AI trade optimism</a></li>
+          <li><a href="https://www.swissinfo.ch/eng/stocks-fall-as-anthropic-debut-not-an-ai-all-clear%3a-markets-wrap/92404209">Bloomberg via Swissinfo: markets wrap</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Research</span><span class="when">18 Nov</span></div>
+    <h3>OpenAI: agents now finish 46% of 2–4 hour research tasks</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Treat this as a directional signal for planning agent-heavy R&amp;D, not a benchmark: it is OpenAI's own internal, unaudited measure.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>OpenAI's report "Research acceleration: The jagged frontier" says estimated autonomous success on tasks needing 2–4 hours of human work rose from 23% (March) to 46% (October). For 4–8 hour tasks it rose from 13% to 35%. The hours are estimated human effort, not agent runtime. OpenAI changed its method, so the gain is not all model progress.</p>
+        <ul class="sources">
+          <li><a href="https://openai.com/index/research-acceleration-jagged-frontier/">OpenAI: Research acceleration — the jagged frontier</a></li>
+          <li><a href="https://aiweekly.co/alerts/openai-says-coding-agents-finish-46-of-2-4-hour-research-tasks">AI Weekly: 46% of 2–4 hour research tasks</a></li>
+          <li><a href="https://letsdatascience.com/news/openai-reports-agents-complete-an-estimated-46-of-two-to-fou-d2271f4e">Let's Data Science: OpenAI reports agents complete an estimated 46%</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Agents</span><span class="when">17 Nov</span></div>
+    <h3>OpenAI ships ChatGPT for Sales</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Vendors now package agents as role-specific plugins, so test a sales pilot against your CRM and review rules before admins switch it on.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The product pairs an OpenAI-built Sales plugin (account choice, call prep, follow-up drafts) with 30+ partner plugins. Business and Enterprise admins enable it in the Admin Console. OpenAI warns its always-on agents can make mistakes and that consequential work needs review. Partner features vary by plan and region.</p>
+        <ul class="sources">
+          <li><a href="https://openai.com/index/introducing-chatgpt-for-sales/">OpenAI: Introducing ChatGPT for Sales</a></li>
+          <li><a href="https://www.unite.ai/?p=523045">Unite.ai: AI models and platforms</a></li>
+          <li><a href="https://cryptobriefing.com/openai-launches-chatgpt-for-sales/">CryptoBriefing: OpenAI launches ChatGPT for Sales</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">Recent</span></div>
+    <h3>Dragos: seeded prompts leaked through three AI hosting providers</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Check where your prompts travel: resellers and inference marketplaces can log and keep them, so add canary data and retention terms to vendor reviews.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Dragos sent nearly two million seeded prompts and found activity pointing to data theft at three hosting providers; one attacker seems to have breached two of them. It also found resellers on an inference marketplace could read and keep prompts through ordinary logging, with no exploit needed. Provider names were not disclosed in the summary reviewed here.</p>
+        <ul class="sources">
+          <li><a href="https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens">Dragos: Three breaches, endless leaks</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Security</span><span class="when">Ongoing</span></div>
+    <h3>Stolen AI credentials feed a growing LLM proxy economy</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Rotate and scope API keys and watch usage anomalies: stolen access is now resold at scale.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>CSO Online reports Team Cymru found more than 4,000 China- and Hong Kong-linked IP addresses connecting through 304 relay services on US VPS providers. Team Cymru could not see prompt content. SANS describes an AI agent that harvests and re-serves LLM access. This is background to the Dragos finding.</p>
+        <ul class="sources">
+          <li><a href="https://www.csoonline.com/article/4227199/stolen-ai-credentials-feed-growing-llm-proxy-economy.html">CSO Online: Stolen AI credentials feed growing LLM proxy economy</a></li>
+          <li><a href="https://isc.sans.edu/diary/53">SANS ISC: The Self-Expanding Stolen Inference Supply Chain</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">5 Nov (background)</span></div>
+    <h3>Thinking Machines launches Inkling 2 Small, weights still closed</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Do not plan on self-hosting yet: the 594B-parameter model is API-only on Tinker until the promised Apache 2.0 release.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reported specs: 594B mixture-of-experts, about 17B active parameters, image input, and up to 1M context (Tinker offers 64K and 256K tiers). Benchmarks are company-supplied. The lab says weights follow after external safety testing; one outlet said the next week, but no release was confirmed. One aggregator named a "Mini" variant; this digest found no evidence of one.</p>
+        <ul class="sources">
+          <li><a href="https://letsdatascience.com/news/thinking-machines-lab-releases-inkling-2-small-a-594b-moe-mo-2b2a96ce">Let's Data Science: 594B MoE model</a></li>
+          <li><a href="https://runtimewire.com/article/thinking-machines-inkling-2-small-open-weights">Runtime Wire: launched on Tinker with closed weights</a></li>
+          <li><a href="https://techenclave.com/news/items/thinking-machines-releases-inkling-2-small-for-text-and-image-tasks">TechEnclave: Inkling 2 Small for text and image tasks</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 23 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
