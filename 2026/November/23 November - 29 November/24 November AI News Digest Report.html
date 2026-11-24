@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 24 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Nvidia's board reversed course and reinstated Jensen Huang as CEO, while the Fed's survey ranks AI as the top financial-stability risk and Anthropic's IPO tests AI's circular financing.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>24 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+    <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Nvidia reverses itself.</strong> The board reinstated Jensen Huang as CEO on 23 Nov, days after saying it would not.</li>
+      <li><strong>Fed survey.</strong> 87% of surveyed market contacts name AI as the top financial-stability risk.</li>
+      <li><strong>Anthropic IPO.</strong> Press analysis frames the listing as a test of AI&rsquo;s circular financing.</li>
+      <li><strong>AI code review.</strong> Anthropic reports more internal pull requests pass after one review-and-fix round.</li>
+      <li><strong>Safety coordination.</strong> OpenAI has asked whether a coordinated frontier slowdown would breach antitrust law.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Chips &amp; Leadership</span><span class="when">23 Nov</span></div>
+    <h3>Nvidia&rsquo;s board reinstates Jensen Huang as CEO, effective immediately</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The world&rsquo;s most valuable AI chip supplier has a settled CEO again, but an independent investigation is still open &mdash; expect governance and China-policy questions to continue.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Nvidia says the board voted unanimously to reinstate Huang as President, CEO and director after talks with him, and that it received input from senior US government officials. Colette Kress, interim CEO since the 12 Nov resignation, remains CFO. An independent-director committee will finish its investigation. This is a material change from 17&ndash;18 Nov, when chair Harvey Jones said the board had no plan to reinstate him. Press accounts of the reasons for the resignation differ, and only the company statements are used here.</p>
+        <ul class="sources"><li><a href="https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Board-Reinstates-Jensen-Huang-as-President-CEO-and-Board-Director/default.aspx">NVIDIA: Board reinstates Jensen Huang</a></li><li><a href="https://www.foxbusiness.com/markets/nvidia-reinstates-jensen-huang-ceo">Fox Business: Nvidia reinstates Huang</a></li><li><a href="https://www.aljazeera.com/economy/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo">Al Jazeera: Nvidia board reinstates Huang</a></li><li><a href="https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-politics-market.html">CNBC: Six key questions raised by Huang&rsquo;s return</a></li><li><a href="https://www.scmp.com/tech/article/3374812/nvidia-board-says-it-has-no-plans-reinstate-jensen-huang-ceo">SCMP: Board said it had no plans to reinstate (earlier)</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets &amp; Risk</span><span class="when">13 Nov (background)</span></div>
+    <h3>Fed survey: AI is now the most-cited risk to the financial system</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Regulators&rsquo; contacts now see AI-linked valuations as a bigger threat than a broad market correction &mdash; boards should expect more questions on AI exposure.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>In the Fed&rsquo;s 13 Nov Financial Stability Report, 87% of surveyed market contacts named AI as a risk, up from 50% in spring. The sample was small (23 contacts) and measures how often a risk was named, not its probability. A risk-asset correction was named by 52%.</p>
+        <ul class="sources"><li><a href="https://stockanalysis.com/news/fed-financial-stability-report-ai-risk-november-2026/">StockAnalysis: AI tops the risks in the Fed survey</a></li><li><a href="https://www.ibtimes.com/ai-biggest-threat-us-financial-stability-fed-survey-3809770">IBTimes: AI biggest threat, Fed survey</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Funding</span><span class="when">19 Nov (follow-up)</span></div>
+    <h3>Anthropic&rsquo;s IPO becomes the test case for circular AI financing</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If the supplier-investor loop works as a liquid public market, expect copycat structures; if not, AI infrastructure financing gets harder to price.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>TechCrunch says Amazon and Google hold stakes worth about $307.9B combined at the $83 IPO price, and that Anthropic expects about $220B in cash after the IPO and a $26B private placement. Fortune, citing the prospectus, reports a Broadcom backstop on a $63B equipment-financing arrangement and a filing warning that compute expansion depends on a few partners and financiers. These figures come from press accounts of the prospectus, not the SEC filing itself. The listing itself was covered on 23 Nov.</p>
+        <ul class="sources"><li><a href="https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/">TechCrunch: Anthropic&rsquo;s IPO puts circular financing to the test</a></li><li><a href="https://fortune.com/2026/11/04/dario-amodei-wants-a-country-of-geniuses-in-a-data-center-realizing-that-vision-requires-tricky-financial-mechanics-anthropics-ipo-filing-shows/">Fortune: Anthropic IPO filing shows tricky financial mechanics</a></li><li><a href="https://www.ifre.com/equities/2505731/anthropic-takes-to-stormy-waters-with-us100bn-sink-or-swim-ipo">IFR: Anthropic takes to stormy waters with $100bn IPO</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer Platforms</span><span class="when">Nov</span></div>
+    <h3>Anthropic: more internal PRs pass after one AI review-and-fix round</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> AI review is becoming a throughput tool, not just a safety net &mdash; but humans still own the approval decision.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>InfoQ reports that, per Anthropic, the share of internal pull requests passing after one review and fix round rose from 65% to 78%. Only InfoQ was found carrying these numbers. Anthropic&rsquo;s Code Review (launched March 2026 for Team and Enterprise) does not approve pull requests; that stays with human reviewers. It was priced at roughly $15&ndash;25 per review at launch, per TechCrunch.</p>
+        <ul class="sources"><li><a href="https://infoq.com/news/2026/11/claude-code-review">InfoQ: Claude Code Review (Nov 2026)</a></li><li><a href="https://claude.com/resources/articles/code-review">Anthropic: Bringing Code Review to Claude Code</a></li><li><a href="https://techcrunch.com/2026/03/09/anthropic-launches-code-review-tool-to-check-flood-of-AI-generated-code/">TechCrunch: Anthropic launches Code Review (Mar 2026)</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy &amp; Safety</span><span class="when">Ongoing (Sept background)</span></div>
+    <h3>OpenAI explores whether a coordinated frontier slowdown is legal</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Any industry-wide pause needs antitrust clarity first; watch for Congress or regulators to address it.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reporting first published by WIRED says OpenAI asked members of Congress whether coordinating a slowdown would break antitrust law. OpenAI&rsquo;s own policy post argues shared standards are needed on when development should slow or stop. This is September background, included for context; no formal agreement among labs was found.</p>
+        <ul class="sources"><li><a href="https://openai.com/index/ai-policy-window/">OpenAI: AI policy window</a></li><li><a href="https://techrepublic.com/article/news-openai-ai-slowdown-antitrust-congress">TechRepublic: OpenAI fears antitrust rules could get in the way</a></li><li><a href="https://thenewstack.io/openai-slowing-ai-development/">The New Stack: OpenAI slowing AI development</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 24 November 2026.</footer>
+</main>
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
