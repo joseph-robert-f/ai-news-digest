@@ -1,7 +1,16 @@
 {
-  "generated": "2026-11-24T10:43:13.616Z",
-  "count": 129,
+  "generated": "2026-11-26T10:42:59.669Z",
+  "count": 130,
   "digests": [
+    {
+      "date": "2026-11-26",
+      "title": "AI News Digest — 26 November 2026",
+      "path": "2026/November/23 November - 29 November/26 November AI News Digest Report.html",
+      "year": 2026,
+      "month": "November",
+      "week": "23 November - 29 November",
+      "summary": "Anthropic says Claude rewrote its Messages API in Rust (70% less CPU), OpenAI posted a 9/4 matrix-multiplication preprint, and US chip curbs on remote access to Nvidia compute are reshaping China's AI supply."
+    },
     {
       "date": "2026-11-24",
       "title": "AI News Digest — 24 November 2026",

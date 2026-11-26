@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 26 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="Anthropic says Claude rewrote its Messages API in Rust (70% less CPU), OpenAI posted a 9/4 matrix-multiplication preprint, and US chip curbs on remote access to Nvidia compute are reshaping China's AI supply.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>26 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <!-- The 5 things a busy exec needs. One line each. Keep it to five. -->
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Claude rewrote Claude's API.</strong> Anthropic moved its Messages API from Python to Rust, cutting CPU about 70% and memory over 80%.</li>
+      <li><strong>OpenAI claims a maths result.</strong> An unreviewed preprint says the matrix-multiplication exponent is exactly 9/4.</li>
+      <li><strong>China's compute workaround is closing.</strong> The US remote-access rule is already pushing chip sellers to offload GPUs.</li>
+      <li><strong>Model and agent shipping continues.</strong> GPT-6.2 Sol reaches ChatGPT Chat; Claude Ship and Meta's Muse DM agent launch.</li>
+      <li><strong>Capital keeps flowing.</strong> Cognition (about $75B) and ElevenLabs ($33B) are reported in funding talks; Huang faces Congress 1&ndash;3 Dec.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Engineering</span><span class="when">25 Nov</span></div>
+    <h3>Anthropic rewrote its Messages API in Rust, using Claude agents to do most of the work</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> a 70% CPU and 80% memory cut on the service that serves Claude is a real cost lever. The lesson is in the method: verification, not code generation, was the hard part.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Anthropic's engineering post says a partial Rust component called from Python gave only 8&ndash;10% CPU savings, because each reply crossed the language boundary three times. A full rewrite followed. An early build passed about 98% of tests but matched only about 25% of production-like inputs, so the team diffed old and new services on live traffic until behaviour matched 99.6% before cutover. Public traffic moved in September without downtime. Median time to first token fell about 20% for Claude Code requests. These are Anthropic's own figures, reported by several outlets.</p>
+        <ul class="sources">
+          <li><a href="https://www.infoworld.com/article/4253460/anthropic-says-it-moved-its-claude-api-from-python-to-rust-with-no-downtime.html">InfoWorld: Anthropic says it moved its Claude API from Python to Rust with no downtime</a></li>
+          <li><a href="https://thenextweb.com/news/anthropic-claude-messages-api-rust-migration">The Next Web: Claude rewrote the API that serves Claude</a></li>
+          <li><a href="https://mlq.ai/news/anthropic-rewrites-claudes-api-in-rust-cutting-cpu-per-request-70/">MLQ: Anthropic rewrites Claude's API in Rust</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Research</span><span class="when">24 Nov</span></div>
+    <h3>OpenAI preprint claims the matrix-multiplication exponent is exactly 9/4</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> if it holds, it settles a decades-old open problem and shows AI-assisted maths reaching core computer science. It is unreviewed, so treat it as a claim, not a result.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The 111-page preprint, credited to &ldquo;OpenAI&rdquo; and dated 24 November, claims the exponent equals 9/4 over every field. An earlier 2 October OpenAI preprint showed 9/4 is reachable over the complex numbers. Coverage notes the lower bound covers division-free circuits, the strongest claim is not machine-checked, and the result is asymptotic with no practical speed-up. An independent arXiv exposition of the upper bound exists.</p>
+        <ul class="sources">
+          <li><a href="https://aiweekly.co/alerts/openai-claims-matrix-multiplication-exponent-is-exactly-94">AI Weekly: OpenAI claims matrix multiplication exponent is exactly 9/4</a></li>
+          <li><a href="https://i10x.ai/news/openai-matrix-multiplication-exponent-9-4-lower-bound-preprint">i10X: what is proven</a></li>
+          <li><a href="https://www.unite.ai/openai-preprint-reports-9-4-bound-for-matrix-multiplication/">Unite.AI: OpenAI preprint reports 9/4 bound</a></li>
+          <li><a href="https://arxiv.org/pdf/2611.04175">arXiv: Semidirect sums of tensors and the matrix multiplication exponent</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">Ongoing &middot; rule of 16 Nov</span></div>
+    <h3>US remote-access chip rule starts to bite: sellers offload GPUs</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> renting compute abroad is no longer a clean workaround for China-linked firms, so plan for licence checks, KYC and more supply in the secondary market.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Background, 16 November: Commerce's BIS issued an interim final rule requiring licences for data centres supplying more than 12 million aggregate TPP to firms in China or other D:5 countries. Existing operators have 90 days to get a licence. The rule adds licensing for advanced chips shipped to Malaysia, Singapore, Indonesia, Thailand and Brazil. <strong>New:</strong> by 25 November, reports say chip sellers who supplied overseas facilities are offloading GPUs, and Chinese firms are seeking other routes to Nvidia compute.</p>
+        <ul class="sources">
+          <li><a href="https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/">TechCrunch: US tightens AI chip export controls (16 Nov)</a></li>
+          <li><a href="https://www.lw.com/en/insights/us-commerce-department-adopts-rule-restricting-remote-access-to-advanced-ai-chips">Latham &amp; Watkins: rule summary</a></li>
+          <li><a href="https://www.orrick.com/en/Insights/2026/11/US-Government-Establishes-Export-Controls-to-Address-China-AI-Remote-Access-Concerns">Orrick: export controls on remote access</a></li>
+          <li><a href="https://wisevoter.com/world/2026/11/25/us-curbs-chinese-remote-access-nvidia-chips">Wisevoter: chip sellers seek buyers (25 Nov)</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">OpenAI</span><span class="when">23 Nov</span></div>
+    <h3>GPT-6.2 Sol becomes the Chat-tab model for paid ChatGPT plans</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the default model for paying users changes now, and GPT-5.6 Sol is retired on 23 December, so check any workflow that pins it.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The chat-tuned model rolls out to Plus, Pro, Business and Enterprise (Enterprise depends on admin settings). Free and Go users are excluded. GPT-6.2 Astra and Sol were already in ChatGPT Work and Codex. OpenAI reports a 71.7% image-understanding score against 47.4% for GPT-6 in its own tests; these are vendor numbers.</p>
+        <ul class="sources">
+          <li><a href="https://www.macrumors.com/2026/11/23/openai-gpt-6-2-sol-chatgpt/">MacRumors: OpenAI brings GPT-6.2 Sol to ChatGPT's Chat tab</a></li>
+          <li><a href="https://www.digitaltrends.com/computing/chatgpt-is-getting-a-chat-tuned-gpt-6-2-sol-and-it-can-offer-to-watch-for-a-price-drop/">Digital Trends: chat-tuned GPT-6.2 Sol</a></li>
+          <li><a href="https://community.openai.com/t/gpt-6-2-astra-and-sol-are-now-available/1417531">OpenAI Developer Community: GPT-6.2 Astra and Sol are now available</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Developer tools</span><span class="when">23 Nov</span></div>
+    <h3>Anthropic launches Claude Ship: agents that review, fix and approve code changes</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> routine code review can now be policy-driven and billed by token. Set the human sign-off rules before you switch it on.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Follow-up to the 24 November item on Anthropic's internal review results. Claude Ship bundles Code Review (generally available) with two beta agents: PR Steward and Claude Approvals. Teams set review depth and can require human approval. Admins can set spend limits. Press coverage warns it can still miss bugs and security flaws.</p>
+        <ul class="sources">
+          <li><a href="https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/">TechCrunch: Anthropic launches Claude Ship</a></li>
+          <li><a href="https://www.techedt.com/anthropic-introduces-claude-ship-to-automate-code-reviews-and-software-fixes">Tech Edition: Claude Ship</a></li>
+          <li><a href="https://finance.yahoo.com/news/anthropic-launches-claude-ship-beta-102850078.html">Yahoo Finance: Claude Ship beta</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Consumer agents</span><span class="when">24 Nov</span></div>
+    <h3>Meta puts its Muse agent inside Instagram DMs</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> agents are moving into private messaging. Expect privacy scrutiny, and note Meta says Muse acts only with user permission.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Rolling out in the US, Canada, Mexico, Japan and Singapore. Users can share posts or Reels with Muse to plan trips, find deals or summarise missed threads. The save-to-collections prompt launches only in the US and Canada. Meta says users can ask Muse to forget information or undo actions. Early reader reaction centres on privacy.</p>
+        <ul class="sources">
+          <li><a href="https://www.macrumors.com/2026/11/24/meta-muse-instagram-dms/">MacRumors: Meta's Muse AI agent comes to Instagram DMs</a></li>
+          <li><a href="https://www.neowin.net/news/metas-muse-ai-assistant-is-coming-to-instagram-dms/">Neowin: Muse is coming to Instagram DMs</a></li>
+          <li><a href="https://tech.yahoo.com/ai/meta-ai/articles/meta-brings-muse-ai-assistant-170000672.html">Yahoo Tech: Meta brings Muse into Instagram DMs</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">20&ndash;25 Nov</span></div>
+    <h3>Cognition and ElevenLabs are reported in new funding talks</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> late-stage money still favours coding agents and voice, but both are talks, not closed rounds.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Bloomberg reports Cognition is in talks at a $75 billion valuation, possibly raising $2 billion or more, two months after its last round. Bloomberg also reports ElevenLabs is in early talks at a $33 billion valuation, with a close expected in 2027; its last round valued it at $22 billion. Neither company has confirmed.</p>
+        <ul class="sources">
+          <li><a href="https://www.bloomberg.com/news/articles/2026-11-20/cognition-in-talks-for-75-billion-value-with-new-funding">Bloomberg: Cognition in talks for $75 billion value</a></li>
+          <li><a href="https://bloomberg.com/news/articles/2026-11-25/elevenlabs-in-early-talks-for-2027-funding-at-33-billion-value">Bloomberg: ElevenLabs in early talks at $33 billion</a></li>
+          <li><a href="https://siliconangle.com/2026/11/25/voice-ai-startup-elevenlabs-reportedly-seeking-new-funding-at-33b-valuation/">SiliconANGLE: ElevenLabs reportedly seeking funding at $33B</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">Upcoming &middot; 1&ndash;3 Dec</span></div>
+    <h3>Jensen Huang is due before Congress next week; dates still differ by report</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> the Nvidia export-control scandal moves to Capitol Hill days after his reinstatement, so expect fresh chip-policy headlines.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Follow-up to the 24 November reinstatement item. Outlets report closed-door House interviews with Huang and Nvidia's general counsel starting 1 December (some say 1&ndash;2, one says 3). The Senate Banking chair requested a 3 December appearance; reports differ on whether that is confirmed. One outlet says Trump is floating a pardon; treat that as unverified. Check committee notices.</p>
+        <ul class="sources">
+          <li><a href="https://www.axios.com/2026/11/17/nvidia-jensen-huang-congress-testify-dates">Axios: Huang agrees to face Congress</a></li>
+          <li><a href="https://www.cnbc.com/2026/11/17/nvidia-jensen-huang-house-committee.html">CNBC: Huang, Nvidia lawyer to appear before House panels</a></li>
+          <li><a href="https://www.nbcnews.com/politics/congress/congress-criticism-jensen-huang-nvidia-reinstated-ceo-trump-rcna610926">NBC News: Congress reacts to reinstatement</a></li>
+          <li><a href="https://www.cbsnews.com/news/jensen-huang-congress-reinstatement-nvidia/">CBS News: Huang still set to testify</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Models</span><span class="when">18 Nov &middot; background</span></div>
+    <h3>Google's Gemini 4 Neon: priced at $3/$15 per million tokens with a 1M-token context</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Google now has a mid-priced model aimed at GPT-6.2 Sol; compare it on your own coding and agent tasks.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Older background, still relevant this week. Neon is in the Gemini API, Google AI Studio and Gemini for business. Pro and Ultra subscribers can pick it in the Gemini app and Antigravity. It is not a free-tier model. Benchmark claims are Google's and not independently verified.</p>
+        <ul class="sources">
+          <li><a href="https://9to5google.com/2026/11/18/gemini-4-neon-announcement/">9to5Google: Google launches Gemini 4 Neon</a></li>
+          <li><a href="https://tbreak.com/gemini-4-neon-google-launch/">TechBreak: Gemini 4 Neon for complex coding</a></li>
+        </ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 26 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
