@@ -1,7 +1,16 @@
 {
-  "generated": "2026-11-26T10:42:59.669Z",
-  "count": 130,
+  "generated": "2026-11-27T10:42:24.484Z",
+  "count": 131,
   "digests": [
+    {
+      "date": "2026-11-27",
+      "title": "AI News Digest — 27 November 2026",
+      "path": "2026/November/23 November - 29 November/27 November AI News Digest Report.html",
+      "year": 2026,
+      "month": "November",
+      "week": "23 November - 29 November",
+      "summary": "S&P put Nvidia&rsquo;s AA rating on CreditWatch over governance after the Huang episode, the FCC cleared SpaceX&rsquo;s million-satellite orbital data-center plan, and OpenAI began testing Private Inference for business prompts."
+    },
     {
       "date": "2026-11-26",
       "title": "AI News Digest — 26 November 2026",

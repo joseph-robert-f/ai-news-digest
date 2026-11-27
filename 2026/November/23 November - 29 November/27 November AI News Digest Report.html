@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 27 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="S&amp;P put Nvidia&rsquo;s AA rating on CreditWatch over governance after the Huang episode, the FCC cleared SpaceX&rsquo;s million-satellite orbital data-center plan, and OpenAI began testing Private Inference for business prompts.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>27 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Nvidia on watch.</strong> S&amp;P may cut its AA rating over governance after the Huang episode.</li>
+      <li><strong>Compute in orbit.</strong> FCC approved up to one million SpaceX data-center satellites.</li>
+      <li><strong>Private prompts.</strong> OpenAI is testing confidential-compute Private Inference for business.</li>
+      <li><strong>Usage limits.</strong> ChatGPT is merging Chat and Work onto one meter.</li>
+      <li><strong>Toy ban.</strong> New York banned AI chatbot toys for five years.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Markets</span><span class="when">25 Nov</span></div>
+    <h3>S&amp;P puts Nvidia&rsquo;s AA rating on CreditWatch over governance</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The risk is leadership and board structure, not earnings; a one-notch cut would raise Nvidia&rsquo;s borrowing costs and tests how much AI-supply-chain concentration lenders will accept.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>S&amp;P cited board independence, weak succession planning and &ldquo;key man&rdquo; risk after Jensen Huang&rsquo;s brief ouster and reinstatement (covered 24 Nov). It expects to finish the review within 90 days; any cut would be AA to AA-. Moody&rsquo;s cut its outlook to stable from positive on 18 Nov. No downgrade has happened yet.</p>
+        <ul class="sources"><li><a href="https://www.cnbc.com/2026/11/26/nvidia-market-governance-risk.html">CNBC: S&amp;P warns Nvidia credit rating could be cut</a></li><li><a href="https://finance.yahoo.com/markets/stocks/articles/p-considers-nvidia-credit-downgrade-224432360.html">Yahoo Finance: S&amp;P considers Nvidia credit downgrade</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Infrastructure</span><span class="when">25 Nov</span></div>
+    <h3>FCC approves SpaceX&rsquo;s plan for up to one million orbital data-center satellites</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Regulators are now treating space-based compute as a real power-supply option, but deployment is years away and the licence does not require all one million to launch.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>FCC Chairman Brendan Carr announced approval of the &ldquo;Starmind&rdquo; constellation. Amazon, Viasat and the American Astronomical Society opposed it. Per Newsweek, deployment must start by November 2033 with 10% by 2035; SpaceX&rsquo;s IPO filing points to first compute satellites as early as 2028. Outlets differ on some detail, so treat the schedule as reported, not final.</p>
+        <ul class="sources"><li><a href="https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html">CNBC: SpaceX wins FCC approval</a></li><li><a href="https://www.cbsnews.com/news/spacex-fcc-approval-data-centers-space/">CBS News: SpaceX gets FCC approval</a></li><li><a href="https://www.nbcnews.com/science/space/spacex-fcc-authorizes-1-million-satellites-data-centers-space-rcna611341">NBC News: green light for 1 million satellites</a></li><li><a href="https://www.newsweek.com/fcc-approves-1-million-spacex-satellites-as-china-ai-race-heats-up-12769380">Newsweek: deadlines and China context</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Enterprise AI</span><span class="when">25 Nov</span></div>
+    <h3>OpenAI starts alpha tests of Private Inference for business prompts</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If it works, regulated buyers could use frontier models on sensitive data without trusting the vendor&rsquo;s staff; today it is an alpha with no price or date.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Sam Altman announced the test on X. Prompts and replies run in hardware-isolated confidential-computing environments that OpenAI says can be independently verified. It is the second part of OpenAI&rsquo;s &ldquo;Private Intelligence&rdquo; package, after Private Safety Processing. Coverage is secondary; OpenAI&rsquo;s product page is the primary reference.</p>
+        <ul class="sources"><li><a href="https://thenextweb.com/news/openai-private-inference-testing-customers">The Next Web: OpenAI is testing a way to shield business prompts</a></li><li><a href="https://the-decoder.com/openai-wants-companies-to-trust-it-with-sensitive-work-by-promising-not-to-look-at-their-data/">The Decoder: OpenAI promises not to look at customer data</a></li><li><a href="https://channelinsider.com/enterprise/news-openai-private-inference-alpha-msp">Channel Insider: Private Inference alpha</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Products</span><span class="when">25 Nov</span></div>
+    <h3>ChatGPT merges Chat and Work onto one usage meter</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Heavy Pro users may hit limits sooner, so teams that mix chat and agentic work should watch their quotas before the wider December rollout.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Rollout began with a small group of Pro subscribers. Instant chats stay outside the shared meter. An OpenAI spokesperson said most users will not see more frequent resets. Pro users objected online. Sources are secondary reports; I did not check OpenAI&rsquo;s help page directly.</p>
+        <ul class="sources"><li><a href="https://aiweekly.co/alerts/openai-merges-chatgpt-chat-and-work-into-one-usage-meter">AI Weekly: OpenAI merges Chat and Work into one usage meter</a></li><li><a href="https://oodaloop.com/briefs/technology/openai-rolls-out-its-merged-chatgpt-chat-and-work-tabs-with-a-shared-usage-meter/">OODAloop: merged tabs with a shared meter</a></li><li><a href="https://mlq.ai/news/openai-merges-chatgpts-chat-and-work-tabs-heavy-users-may-hit-limits-sooner/">MLQ: heavy users may hit limits sooner</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">24 Nov</span></div>
+    <h3>New York bans AI chatbot toys for five years</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Consumer AI hardware now faces a state-level moratorium; any firm shipping talking AI toys must plan for a New York exit by February 2027.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Gov. Kathy Hochul signed the bill on 24 Nov. It bars making, distributing or selling toys with embedded AI chatbots. Penalties reach $15,000 per day per violation, enforced by the Attorney General. It takes effect 90 days after signing. One outlet gives 22 Feb 2027; check the bill text. It follows an October law limiting chatbot features for minors.</p>
+        <ul class="sources"><li><a href="https://www.governor.ny.gov/news/consumers-begin-their-holiday-shopping-season-governor-hochul-signs-five-year-ban-ai-chatbot">Governor of New York: press release</a></li><li><a href="https://www.fox5ny.com/news/new-york-bans-ai-chatbot-toys-kathy-hochul-holiday-shopping.amp">Fox 5 NY: 5-year ban and 90-day delay</a></li><li><a href="https://qz.com/new-york-ai-chatbot-toys-ban-five-year-112526">Quartz: child-safety ban</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Chips</span><span class="when">Ongoing (since 27 Oct)</span></div>
+    <h3>AMD&rsquo;s Helios racks are running at Meta and Microsoft, but only in testing</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> AMD is gaining credible second-source status against Nvidia, yet no rack counts or deployment dates are public, so treat it as a roadmap signal, not capacity.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Background: AMD said first Helios systems (72 MI455X GPUs per rack) are installed at Meta, alongside a plan to invest $1 billion in Meta equity, within a multi-generation deal of up to 6 gigawatts. On 23 Nov AMD said Microsoft powered up its first Helios rack in an Azure lab. These are AMD&rsquo;s own statements, not independent benchmarks.</p>
+        <ul class="sources"><li><a href="https://www.techtarget.com/news/amd-to-invest-1-billion-in-meta-as-helios-systems-enter-testing/873198/">TechTarget: AMD to invest $1 billion in Meta</a></li><li><a href="https://thenextweb.com/news/amd-1bn-meta-equity-helios-running">The Next Web: Helios racks start running at Meta</a></li><li><a href="https://www.ventureatlas.org/news/2026-11-23-amd-helios-azure-lab">Venture Atlas: Microsoft tests Helios for Azure</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Policy</span><span class="when">Ongoing (since 30 Oct)</span></div>
+    <h3>Google, Microsoft, OpenAI and Anthropic back one robots.txt opt-out for AI training</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Publishers get one directive instead of per-bot rules, but it covers training only, is still an IETF draft, and cannot stop crawling or undo past scraping.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Reported dates differ: Microsoft says support starts 1 Feb 2027, Google says early 2027, OpenAI says &ldquo;coming months&rdquo;, and Anthropic reportedly already supports it. Robots.txt is advisory; use a WAF for hard blocks. Verify dates against each firm&rsquo;s announcement.</p>
+        <ul class="sources"><li><a href="https://www.engadget.com/2303225/google-openai-anthropic-ai-crawling-controls/">Engadget: Google joins OpenAI and Anthropic</a></li><li><a href="https://completeaitraining.com/news/google-microsoft-anthropic-and-openai-back-new-standard-to/">Complete AI Training: single robots.txt entry</a></li><li><a href="https://www.itechpost.com/articles/237707/20261103/google-openai-anthropic-unite-introduce-new-ai-scraping-controls.htm">iTech Post: new scraping controls</a></li></ul>
+      </div>
+    </details>
+  </article>
+
+  <footer>Curated for a 5-minute read. Generated 27 November 2026. Earlier coverage of Huang&rsquo;s reinstatement: <a href="24 November AI News Digest Report.html">24 November</a>.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
