@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- IMPORTANT: keep the date as "D Month YYYY" — the site reads it from here. -->
+  <title>AI News Digest &mdash; 28 November 2026</title>
+  <!-- One-line executive summary. The site uses this as the archive preview. -->
+  <meta name="description" content="A quiet Saturday: Black Friday weekend tests Adobe's AI-shopping forecast, Huawei's memory squeeze persists, Nous Research ships an open model tuned against state-aligned answers, and the Apple-OpenAI trade-secret fight grinds on.">
+  <style>
+    :root {
+      --ink: #17181c;
+      --muted: #6b7280;
+      --faint: #9aa1a9;
+      --line: #ececef;
+      --bg: #ffffff;
+      --panel: #fafafa;
+      --accent: #2563eb;
+      --maxw: 720px;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+    .masthead { margin-bottom: 2.25rem; }
+    .eyebrow {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+    }
+    .masthead h1 {
+      font-size: 2rem; font-weight: 700; letter-spacing: -0.02em;
+      margin: 0 0 0.6rem; line-height: 1.15;
+    }
+    .subline {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem;
+      color: var(--muted); font-size: 0.9rem;
+    }
+    .subline .dot { color: var(--faint); }
+    .readtime {
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-weight: 600; color: var(--ink);
+      background: var(--panel); border: 1px solid var(--line);
+      padding: 0.12rem 0.55rem; border-radius: 999px; font-size: 0.82rem;
+    }
+
+    .glance {
+      background: var(--panel); border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.25rem 1.5rem 1.4rem; margin-bottom: 2.5rem;
+    }
+    .glance h2 {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted); margin: 0 0 0.85rem;
+    }
+    .bullets { margin: 0; padding: 0; list-style: none; counter-reset: g; }
+    .bullets li {
+      position: relative; padding-left: 2rem; margin-bottom: 0.7rem;
+      font-size: 0.98rem;
+    }
+    .bullets li:last-child { margin-bottom: 0; }
+    .bullets li::before {
+      counter-increment: g; content: counter(g);
+      position: absolute; left: 0; top: 0.05rem;
+      width: 1.4rem; height: 1.4rem; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      font-size: 0.75rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bullets li strong { font-weight: 700; }
+
+    .story { padding: 1.5rem 0; border-top: 1px solid var(--line); }
+    .story:first-of-type { border-top: none; padding-top: 0; }
+    .kicker { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+    .tag {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--accent);
+    }
+    .kicker .when { font-size: 0.78rem; color: var(--faint); }
+    .story h3 {
+      font-size: 1.18rem; font-weight: 700; letter-spacing: -0.01em;
+      margin: 0 0 0.5rem; line-height: 1.3;
+    }
+    .lead { margin: 0; font-size: 1rem; color: #2c2f36; }
+    .lead .wm { font-weight: 700; color: var(--ink); }
+
+    details { margin-top: 0.75rem; }
+    summary {
+      cursor: pointer; list-style: none; display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.82rem; font-weight: 600; color: var(--accent);
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "›"; transition: transform 0.15s ease; font-size: 1rem; }
+    details[open] summary::after { transform: rotate(90deg); }
+    .detail { padding-top: 0.6rem; color: #33363d; font-size: 0.95rem; }
+    .detail p { margin: 0 0 0.75rem; }
+    ul.sources { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.85rem; color: var(--muted); }
+    ul.sources li { margin-bottom: 0.2rem; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+      color: var(--faint); font-size: 0.82rem;
+    }
+    @media (max-width: 480px) { main { padding: 2rem 1.15rem 3rem; } .masthead h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+<main>
+  <header class="masthead">
+    <div class="eyebrow">AI Executive Brief</div>
+    <h1>28 November 2026</h1>
+    <div class="subline">
+      <span class="readtime" id="readtime">&mdash; min read</span>
+      <span class="dot">&middot;</span>
+      <span>Latest AI news and noteworthy updates</span>
+    </div>
+  </header>
+
+  <section class="glance">
+    <h2>At a glance</h2>
+    <ol class="bullets" data-summary>
+      <li><strong>Quiet day.</strong> No verified frontier-model launch in the last 24 hours; this brief leans on ongoing stories, each labelled with its date.</li>
+      <li><strong>Holiday AI traffic.</strong> Adobe forecast AI-referred retail traffic up 95% on Black Friday; final results are not yet published.</li>
+      <li><strong>Huawei memory squeeze.</strong> Reported HBM shortage keeps pushing Ascend customers to source their own memory.</li>
+      <li><strong>Open model.</strong> Nous Research&rsquo;s Arete-27B cuts state-aligned answers from 22% to 0.9% on its own test.</li>
+      <li><strong>Legal.</strong> Apple v. OpenAI continues; a reported OpenAI countersuit is not confirmed.</li>
+    </ol>
+  </section>
+
+  <article class="story">
+    <div class="kicker"><span class="tag">Commerce</span><span class="when">Ongoing &middot; forecast from Sep</span></div>
+    <h3>Black Friday weekend is the first big test of AI-driven shopping traffic</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> Retail and marketing teams should watch Adobe&rsquo;s final numbers: they will show whether AI assistants are sending buyers or only browsers.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Adobe forecast AI-referred traffic to US retail sites up 130% over the holiday season, up 95% on Black Friday and up 159% on Thanksgiving Day. It says most AI users still finish the purchase on a separate site or app. Adobe had not published final Black Friday 2026 results at the time of writing, so these are forecasts, not outcomes.</p>
+        <ul class="sources"><li><a href="https://news.adobe.com/news/2026/09/adobe-us-holiday-shopping-season-to-hit-record">Adobe: U.S. holiday shopping season forecast (Sep 2026)</a></li><li><a href="https://digitalcommerce360.com/2026/09/29/adobe-projection-2026-online-holiday-sales-275-billion">Digital Commerce 360: Adobe projection, $275B online holiday sales</a></li><li><a href="https://www.retailtouchpoints.com/news/adobe-forecasts-record-275.1-billion-in-u.s.-holiday-online-sales/621583/">Retail TouchPoints: Adobe forecasts record $275.1B</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Chips</span><span class="when">Ongoing &middot; reported 2&ndash;3 Nov</span></div>
+    <h3>Huawei reportedly asks some customers to source their own HBM for Ascend 960DT</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> US export controls keep constraining China&rsquo;s AI compute supply; memory, not logic, is the bottleneck to watch.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>The Information reported that Huawei told some customers its next flagship chip, due in Q1 2027, will run largely on Samsung and SK hynix memory and that customers should source it themselves. Outlets relaying the report did not independently verify it, and Huawei has not confirmed it. SK hynix says it has not supplied Huawei since US restrictions took effect.</p>
+        <ul class="sources"><li><a href="https://thenextweb.com/news/huawei-hbm-smuggling-samsung-sk-hynix-ascend-960dt">The Next Web: Huawei tells some clients to source their own HBM</a></li><li><a href="https://aiweekly.co/alerts/huawei-tells-clients-ascend-960dt-runs-on-samsung-sk-hynix-hbm">AI Weekly: Huawei tells clients Ascend 960DT runs on Samsung, SK hynix HBM</a></li><li><a href="https://epoch.ai/publications/huaweis-roadmap-to-2031">Epoch AI: Huawei&rsquo;s roadmap to 2031</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Open models</span><span class="when">Background &middot; 7 Nov</span></div>
+    <h3>Nous Research releases Arete-27B, a Qwen fine-tune aimed at state-aligned answers</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> If you deploy open Chinese-origin models, this is a cheap, auditable recipe for reducing political skew &mdash; but the evidence is the vendor&rsquo;s own.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Arete-27B is Qwen3.8-27B after supervised fine-tuning only (about 52.8M tokens), with Thinking Machines&rsquo; Inkling as teacher. On Nous&rsquo;s own 803-prompt test, flagged answers fell from 22% to 0.9%. Independent testing is thin, and temperature settings differed between rows. Weights and data are on Hugging Face.</p>
+        <ul class="sources"><li><a href="https://www.marktechpost.com/2026/11/07/nous-research-arete-27b-qwen3-8-27b-propaganda-fine-tune/">MarkTechPost: Arete-27B</a></li><li><a href="https://letsdatascience.com/news/nous-research-fine-tunes-qwen38-27b-to-cut-state-propaganda-39c47bfc">Let&rsquo;s Data Science: Nous fine-tunes Qwen3.8-27B</a></li><li><a href="https://aiweekly.co/alerts/nous-researchs-arete-27b-cuts-qwen-propaganda-from-22-to-09">AI Weekly: Arete-27B cuts propaganda 22% to 0.9%</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <article class="story">
+    <div class="kicker"><span class="tag">Legal</span><span class="when">Ongoing &middot; since July</span></div>
+    <h3>Apple v. OpenAI trade-secret case: no confirmed new filing today</h3>
+    <p class="lead"><span class="wm">Why it matters:</span> The case could shape hiring and hardware plans across AI labs; treat claims of a new countersuit as unconfirmed until a docket entry appears.</p>
+    <details>
+      <summary>Detail &amp; sources</summary>
+      <div class="detail">
+        <p>Apple sued OpenAI in July over alleged trade-secret theft tied to OpenAI&rsquo;s hardware effort. OpenAI replied with a public rebuttal in August and a filing calling the dispute &ldquo;a mess of Apple&rsquo;s own making.&rdquo; Some aggregator pages dated 28 November describe an OpenAI countersuit; I found no primary or second source for it. Case: Apple Inc. v. Chang Liu et al., N.D. Cal., 5:26-cv-07078.</p>
+        <ul class="sources"><li><a href="https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/">TechCrunch: Apple sues OpenAI (10 Jul)</a></li><li><a href="https://fortune.com/2026/08/04/openai-fires-back-at-apple-publishing-private-emails-to-counter-trade-secret-claims/">Fortune: OpenAI fires back at Apple (4 Aug)</a></li><li><a href="https://axios.com/2026/09/01/apple-openai-lawsuit-ai-gpt-devices">Axios: Apple-OpenAI fight keeps escalating (1 Sep)</a></li><li><a href="https://thenextweb.com/news/openai-apple-trade-secret-filing-response">The Next Web: a mess of Apple&rsquo;s own making</a></li></ul>
+      </div>
+    </details>
+  </article>
+  <footer>Curated for a 5-minute read. Generated 28 November 2026.</footer>
+</main>
+
+<script>
+  // Reading time based on the skim surface (glance + headlines + leads),
+  // since the details are collapsed by default.
+  (function () {
+    var nodes = document.querySelectorAll('.bullets li, .story h3, .story .lead');
+    var text = Array.prototype.map.call(nodes, function (n) { return n.textContent; }).join(' ');
+    if (!text.trim()) text = document.body.textContent;
+    var words = (text.trim().match(/\S+/g) || []).length;
+    var mins = Math.max(1, Math.round(words / 220));
+    var el = document.getElementById('readtime');
+    if (el) el.textContent = mins + ' min read';
+  })();
+
+  // Open external (source) links in a new tab.
+  (function () {
+    Array.prototype.forEach.call(document.querySelectorAll('a[href]'), function (a) {
+      if (/^https?:$/.test(a.protocol) && a.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
+    });
+  })();
+</script>
+</body>
+</html>
